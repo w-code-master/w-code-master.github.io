@@ -1,5 +1,9 @@
-document.addEventListener("DOMContentLoaded", function() {
+$(function() {
 
-	// Custom JS
+$(".about__slider").owlCarousel({
+	items: 4,
+	dots: true,
+	loop: true
+});
 
 });
