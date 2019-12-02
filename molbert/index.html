@@ -13,80 +13,204 @@
   </head>
   <body>
     
-    <div class="container">
-    	<div class="header-top">
-    		<a href="#" class="logo"></a>
-    		<a href="#" class="btn b-t-n">+ Продать работу</a>
-    		<form action="#" class="search-form">
-    			<input type="search" class="form-control search-form__input" placeholder="например: цветы, автор, акварель">
-    			<button type="submit" class="search-form__btn"><i class="i-search"></i></button>
-    		</form>
-    		<div class="header-bar">
-    			<a href="#" class="header-bar__item">
-    				<span>4</span>
-    				<i class="i-favorite"></i>
-    			</a>
-    			<a href="#" class="header-bar__item">
-    				<span>20</span>
-    				<i class="i-cart"></i>
-    			</a>
-    			<a href="#" class="header-bar__item exit">
-    				<i class="i-exit"></i>
-    			</a>
-    		</div>
-    		<!-- /.header-bar -->
-    	</div>
-    	<!-- /.header-top -->
-    </div>
-    <!-- /.container -->
-
-	<header class="header">
-		<div class="container">
-			<div class="header__content">
-				<picture class="user-photo"><img src="img/user.jpg" alt="#"></picture>
-				<span class="user-name">Зубцова Елена</span>
-				<a href="#" class="user-reg"><i class="i-pen"></i> <span>редактировать о себе</span></a>
-			</div>
-			<!-- /.header__content -->
-		</div>
-		<!-- /.container -->
-	</header>
-	<!-- /.header -->
-
-    <!-- <div class="container">
-        <div class="menu-wrap">
-            <ul class="menu">
-                <li>
-                    <a href="#">Новости</a>
-                </li>
-                <li>
-                    <a href="#">Проекты</a>
-                </li>
-                <li>
-                    <a href="#">Книги</a>
-                </li>
-                <li>
-                    <a href="#">Новости</a>
-                </li>
-                <li>
-                    <a href="#">Проекты</a>
-                </li>
-                <li>
-                    <a href="#">Книги</a>
-                </li>
-                <li>
-                    <a href="#">Новости</a>
-                </li>
-                <li>
-                    <a href="#">Проекты</a>
-                </li>
-                <li>
-                    <a href="#">Книги</a>
-                </li>
-            </ul>
+    <div class="wrap">
+        <div class="container">
+            <div class="header-top">
+                <a href="#" class="logo"></a>
+                <a href="#" class="btn b-t-n">+ Продать работу</a>
+                <form action="#" class="search-form">
+                    <input type="search" class="form-control search-form__input" placeholder="например: цветы, автор, акварель">
+                    <button type="submit" class="search-form__btn"><i class="i-search"></i></button>
+                </form>
+                <div class="header-bar">
+                    <a href="#" class="header-bar__item">
+                        <span>4</span>
+                        <i class="i-favorite"></i>
+                    </a>
+                    <a href="#" class="header-bar__item">
+                        <span>20</span>
+                        <i class="i-cart"></i>
+                    </a>
+                    <a href="#" class="header-bar__item exit">
+                        <i class="i-exit"></i>
+                    </a>
+                </div>
+                <!-- /.header-bar -->
+            </div>
+            <!-- /.header-top -->
         </div>
-    </div> -->
-    <!-- /.container -->
+        <!-- /.container -->
+
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <picture class="user-photo"><img src="img/user.jpg" alt="#"></picture>
+                    <span class="user-name">Зубцова Елена</span>
+                    <a href="#" class="user-reg"><i class="i-pen"></i> <span>редактировать о себе</span></a>
+                </div>
+                <!-- /.header__content -->
+            </div>
+            <!-- /.container -->
+        </header>
+        <!-- /.header -->
+
+        <div class="container">
+            <nav class="nav">
+                <ul>
+                    <li class="active"><a href="#"><span>Мои работы</span></a></li>
+                    <li><a href="#"><span>Мои художники</span></a></li>
+                    <li><a href="#"><span>Избранное</span></a></li>
+                    <li><a href="#"><span>Продвижение работ</span></a></li>
+                </ul>
+            </nav>
+            <!-- /.nav -->
+            <div class="content-bar">
+                <a href="#" class="btn b-t-n outline hover-blue">+ Продать работу</a>
+                <div class="content-bar--right">
+                    <a href="#" class="content-bar__link">Отменить выделение</a>
+                    <a href="#" class="content-bar__link">Выделить все</a>
+                    <a href="#" class="btn b-t-n outline normal hover-red">Удалить выделенные</a>
+                </div>
+            </div>
+            <!-- /.content-bar -->
+            <div class="content-work">
+                <div class="content-work__title">7 работ</div>
+                <ul class="content-work__list">
+                    <li class="content-work__item">
+                        <picture><img src="img/work/1.jpg" alt="#"></picture>
+                        <div class="content-work__info">
+                            <label class="check">
+                                <input class="check__input" type="checkbox">
+                                <span class="check__box"></span>
+                            </label>
+                            <strong>Сказочный пейзаж</strong>
+                            <p>2 500 грн</p>
+                            <button class="btn-reg"><i class="i-pen"></i></button>
+                        </div>
+                    </li>
+                    <li class="content-work__item">
+                        <picture><img src="img/work/2.jpg" alt="#"></picture>
+                        <div class="content-work__info">
+                            <label class="check">
+                                <input class="check__input" type="checkbox">
+                                <span class="check__box"></span>
+                            </label>
+                            <strong>Золотая осень в Нормандии</strong>
+                            <p>1000 грн</p>
+                            <button class="btn-reg"><i class="i-pen"></i></button>
+                        </div>
+                    </li>
+                    <li class="content-work__item">
+                        <picture><img src="img/work/3.jpg" alt="#"></picture>
+                        <div class="content-work__info">
+                            <label class="check">
+                                <input class="check__input" type="checkbox" checked>
+                                <span class="check__box"></span>
+                            </label>
+                            <strong>Сирень</strong>
+                            <p>800 грн</p>
+                            <button class="btn-reg"><i class="i-pen"></i></button>
+                        </div>
+                    </li>
+                    <li class="content-work__item">
+                        <picture><img src="img/work/4.jpg" alt="#"></picture>
+                        <div class="content-work__info">
+                            <label class="check">
+                                <input class="check__input" type="checkbox">
+                                <span class="check__box"></span>
+                            </label>
+                            <strong>Виола</strong>
+                            <p>800 грн</p>
+                            <button class="btn-reg"><i class="i-pen"></i></button>
+                        </div>
+                    </li>
+                    <li class="content-work__item">
+                        <picture><img src="img/work/5.jpg" alt="#"></picture>
+                        <div class="content-work__info">
+                            <label class="check">
+                                <input class="check__input" type="checkbox">
+                                <span class="check__box"></span>
+                            </label>
+                            <strong>Маки</strong>
+                            <p>2 500 грн</p>
+                            <button class="btn-reg"><i class="i-pen"></i></button>
+                        </div>
+                    </li>
+                    <li class="content-work__item">
+                        <picture><img src="img/work/6.jpg" alt="#"></picture>
+                        <div class="content-work__info">
+                            <label class="check">
+                                <input class="check__input" type="checkbox">
+                                <span class="check__box"></span>
+                            </label>
+                            <strong>Натюрморт с подсолнухами в корзинке в солнечный...</strong>
+                            <p>1000 грн</p>
+                            <button class="btn-reg"><i class="i-pen"></i></button>
+                        </div>
+                    </li>
+                    <li class="content-work__item">
+                        <picture><img src="img/work/7.jpg" alt="#"></picture>
+                        <div class="content-work__info">
+                            <label class="check">
+                                <input class="check__input" type="checkbox" checked>
+                                <span class="check__box"></span>
+                            </label>
+                            <strong>Ромашки и васильки</strong>
+                            <p>800 грн</p>
+                            <button class="btn-reg"><i class="i-pen"></i></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.content-work -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.wrap -->
+
+    <footer class="footer">
+        <div class="container">
+            <article class="footer__info">
+                <h6>Площадка вдохновления</h6>
+                <p>Покупка и продажа авторских картин ручной работы, картин под заказ.</p>
+                <p>Сообщество вовлеченных в искусство авторов.</p>
+            </article>
+            <div class="footer__nav">
+                <nav>
+                    <h6>Покупателям</h6>
+                    <ul>
+                        <li><a href="#">Купить картину</a></li>
+                        <li><a href="#">Художники</a></li>
+                        <li><a href="#">Скульпторы</a></li>
+                        <li><a href="#">Фотографы</a></li>
+                        <li><a href="#">Как происходит покупка</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h6>Авторам</h6>
+                    <ul>
+                        <li><a href="#">Продать работу</a></li>
+                        <li><a href="#">Размещение работ</a></li>
+                        <li><a href="#">Продажа работ</a></li>
+                        <li><a href="#">Продвижение работ</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h6>О нас</h6>
+                    <ul>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Конфиденциальность</a></li>
+                        <li><a href="#">Помочь проекту</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- /.footer__nav -->
+        </div>
+        <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
