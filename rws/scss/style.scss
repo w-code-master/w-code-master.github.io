@@ -134,6 +134,12 @@
 	background-color: $silver-light;
 	padding: 80px 0 90px;
 	position: relative;
+	.i-fsc {
+		position: absolute;
+		left: 50%;
+		top: 30px;
+		transform: translateX(-50%);
+	}
 	h3 {
 		text-align: center;
 		position: relative;
@@ -279,7 +285,7 @@
 	    }
 	}
 	.main-header {
-		padding-top: 186px;
+		// padding-top: 186px;
 	}
 }
 

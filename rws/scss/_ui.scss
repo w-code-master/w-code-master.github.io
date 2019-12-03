@@ -571,3 +571,25 @@
 	height: 20px;
 	background: url('../img/svg/lang-de.svg') no-repeat center;
 }
+
+.i-fsc {
+	display: block;
+	width: 76px;
+	margin: 0 auto;
+	text-align: center;
+	&:before {
+		content: '';
+		display: block;
+		width: 76px;
+		height: 92px;
+		background: url('../img/fsc.png') no-repeat center;
+		margin-bottom: 10px;
+	}
+	span {
+		display: block;
+		color: #2B2523;
+		font: bold 11px 'Source Sans Pro', sans-serif;
+		text-transform: uppercase;
+		padding-left: 10px;
+	}
+}
