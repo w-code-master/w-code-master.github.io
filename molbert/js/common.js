@@ -39,3 +39,21 @@ $('.js-textarea-counter').textareaCounter();
 $('.beefup').beefup({
   openSingle: true
 });
+
+
+///////////////////////////////////////////////
+// menu
+$(".sandwich-box").click(function() {
+  $(".sandwich-icon").toggleClass("active");
+});
+$(".wrapper-nav li a").click(function() {
+  $(".wrapper-nav").fadeOut(600);
+  $(".sandwich-icon").toggleClass("active");
+});
+$(".sandwich-box").click(function() {
+  if($(".wrapper-nav").is(":visible")) {
+    $(".wrapper-nav").fadeOut(600);
+  } else {
+    $(".wrapper-nav").fadeIn(600);
+  };
+});

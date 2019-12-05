@@ -434,14 +434,6 @@
 
 
 .btn {
-	&.btn-lg {
-		font-size: 19px;
-		line-height: 23px;
-		font-weight: 600;
-		border-radius: 3px;
-		background-color: $red;
-		padding: 14px 18px;
-	}
 	&-default {
 		height: 44px;
 		line-height: 44px;
@@ -461,6 +453,14 @@
 		padding: 0 14px;
 		font-size: 15px;
 		font-weight: 600;
+	}
+	&.btn-lg {
+		height: 52px;
+		font-size: 19px;
+		line-height: 52px;
+		font-weight: 600;
+		border-radius: 3px;
+		padding: 0 18px;
 	}
 }
 
@@ -521,6 +521,7 @@
 	}
 	&-header {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
 		margin-bottom: 7px;
@@ -538,8 +539,8 @@
 }
 
 .form-container {
-	.row {
-		padding-bottom: 18px;
+	.form-control {
+		margin-bottom: 18px;
 	}
 }
 .form-control {
@@ -612,4 +613,105 @@
 	width: 24px;
 	height: 24px;
 	background: url('../img/i-pdf.svg') no-repeat center;
+}
+
+.wrapper-nav {
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(#000, .85);
+	position: fixed;
+	z-index: 99;
+	font-size: 18px;
+	text-align: center;
+	text-transform: uppercase;
+	a {
+		color: #fff;
+		text-decoration: none;
+		transition: .5s;
+		&:hover {
+			color: $blue;
+		}
+		&:active {
+			color: $blue;
+			transition: none;
+		}
+	}
+	ul {
+		height: 100%;
+		padding-top: 55px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	li {
+		padding: 12px 0;
+		&.active a {
+			color: $blue;
+		}
+	}
+}
+
+.sandwich-box {
+  display: none;
+  width: 20px;
+  height: 12px;
+  cursor: pointer;
+  z-index: 102;
+  margin-left: 20px;
+}
+.sandwich-icon {
+  width: 20px;
+  height: 12px;
+  position: relative;
+}
+.sw-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background: #000;
+    transition: transform 0.5s, top 0.2s;
+}
+
+.sw-center {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  top: 5px;
+  left: 0;
+  background: #000;
+  border: none;
+  transition: transform 0.5s, top 0.2s;
+  transition-delay: 0.2s, 0s;
+}
+.sw-bottom {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  top: 10px;
+  background: #000;
+  border: none;
+  transition: all 0.5s;
+  transition-delay: 0.1s;
+}
+.sandwich-icon.active {
+	position: fixed;
+  & .sw-top {
+    top: 4px;
+    transform: rotate(-45deg);
+    background: #fff;
+  }
+  & .sw-center {
+    top: 4px;
+    transform: rotate(45deg);
+    background: #fff;
+  }
+  & .sw-bottom {
+    opacity: 0;
+    top: 0;
+    transform: rotate(180deg);
+    background: #fff;
+  }
 }
