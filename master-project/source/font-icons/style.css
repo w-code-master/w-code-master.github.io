@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'font-icons';
+  src:
+    url('fonts/font-icons.ttf?mcl0ai') format('truetype'),
+    url('fonts/font-icons.woff?mcl0ai') format('woff'),
+    url('fonts/font-icons.svg?mcl0ai#font-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="i-"], [class*=" i-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'font-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-phone:before {
+  content: "\e90c";
+}
+.i-mail:before {
+  content: "\e900";
+}
+.i-smartphone:before {
+  content: "\e901";
+}
+.i-clock:before {
+  content: "\e902";
+}
+.i-location-solid:before {
+  content: "\e903";
+}
+.i-location:before {
+  content: "\e904";
+}
+.i-info:before {
+  content: "\e905";
+}
+.i-right:before {
+  content: "\e906";
+}
+.i-down:before {
+  content: "\e907";
+}
+.i-doc:before {
+  content: "\e908";
+}
+.i-pdf:before {
+  content: "\e909";
+}
+.i-txt:before {
+  content: "\e90a";
+}
+.i-xls:before {
+  content: "\e90b";
+}

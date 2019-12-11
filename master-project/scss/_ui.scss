@@ -1,0 +1,111 @@
+.logo {
+	display: block;
+	width: 272px;
+	height: 71px;
+	background: url('../img/logo.png') no-repeat center;
+	background-size: cover;
+	margin: 0 auto;
+	&.light {
+		width: 244px;
+		height: 64px;
+		background: url('../img/logo-light.png') no-repeat center;
+	}
+}
+
+.btn {
+	display: inline-block;
+	height: 48px;
+	border: 0;
+	outline: none;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 48px;
+	color: #fff;
+	background-color: $red;
+	cursor: pointer;
+	border-radius: 4px;
+	text-transform: uppercase;
+	padding: 0 24px;
+}
+
+.call-box {
+	text-align: right;
+	strong {
+		display: block;
+		font-size: 24px;
+		letter-spacing: -.015em;
+	}
+}
+
+.link-burger {
+	font-size: 14px;
+	.i-burger {
+		vertical-align: middle;
+		margin-top: 1px;
+	}
+}
+
+.header-title {
+	overflow: hidden;
+	margin-bottom: 21px;
+	.link-burger {
+		float: right;
+	    margin-top: 20px;
+	}
+}
+
+.red-box-title {
+	width: 316px;
+	height: 311px;
+	padding: 13px 18px 48px 18px;
+	background: url('../img/bg-red-box.png') no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.link-more {
+	font-weight: 500;
+	text-transform: uppercase;
+	color: $blue;
+	.i-right {
+		margin-left: 10px;
+		color: $blue-light;
+	}
+}
+
+.link-dashed {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 1;
+	&:hover {
+		text-decoration: none;
+	}
+	.underline {
+		display: inline-block;
+		border-bottom: 1px dashed $blue-normal;
+	}
+	.i-right-arrow {
+		margin-left: 3px;
+	}
+}
+
+.nav-bread {
+	display: flex;
+	font-size: 14px;
+	color: #999;
+	margin-bottom: 15px;
+	.i-right-arrow {
+		font-size: 17px;
+		margin-top: -2px;
+		margin-right: 8px;
+	}
+	a {
+		margin-right: 8px;
+		&.active {
+			color: inherit;
+			cursor: default;
+		}
+	}
+}
