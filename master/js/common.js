@@ -1,8 +1,5 @@
 $(function() {
 
-	$('.information__tabs').tabulous();
-
-
 	// menu
 	$(".sandwich-box").click(function() {
 	  $(".sandwich-icon").toggleClass("active");
@@ -17,6 +14,17 @@ $(function() {
 	  } else {
 	    $(".mobile-nav").fadeIn(600);
 	  };
+	});
+
+	$('.information__tabs').tabulous();
+
+	$('.beefup').beefup({
+	  openSingle: true
+	});
+
+	$('.link-popup-call').magnificPopup({
+		removalDelay: 900,
+		mainClass: 'mfp-fade'
 	});
 
 });

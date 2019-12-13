@@ -88,14 +88,14 @@
 						<div class="col-4">
 							<div class="call-box">
 								<strong>8 (800) 777-60-18</strong>
-								<a href="#" class="link-dashed">
+								<a href="#back-call" class="link-dashed link-popup-call">
 									<span class="underline">Обратный звонок</span>
 									<i class="i-right-arrow">&#8594;</i>
 								</a>
 							</div>
 							<!-- /.call-box -->
 							<div class="request-call-phone">
-								<a href="#call-modal">
+								<a href="#back-call" class="link-popup-call">
 									<svg class="svg-call" width="32px" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511 510.85"><defs><style>.cls-1{fill:#020202;}</style></defs><title>005-telephone</title>
 									  <path class="cls-1 phone-line-4" d="M290.85,1a10,10,0,1,0,0,20C401.23,21,491,110.76,491,221.15a10,10,0,0,0,20,0C511,99.76,412.24,1,290.85,1Z" transform="translate(0 -1)"/>
 									  <path class="cls-1 phone-line-3" d="M290.85,61a10,10,0,0,0,0,20C368.12,81,431,143.87,431,221.15a10,10,0,0,0,20,0C451,132.86,379.13,61,290.85,61Z" transform="translate(0 -1)"/>
@@ -115,7 +115,19 @@
 
 				<nav class="main-nav">
 					<ul>
-						<li><a href="#">Ассоциация «Мастер-проект»</a></li>
+						<li>
+							<a href="#">Ассоциация «Мастер-проект»</a>
+							<div class="main-nav__submenu">
+								<h6>Ассоциация «Мастер-проект»</h6>
+								<a href="#">Структура Ассоциации</a>
+								<a href="#">Общее собрание</a>
+								<a href="#">Совет Ассоциации</a>
+								<a href="#">Директор</a>
+								<a href="#">Орган надзора</a>
+								<a href="#">Компенсационные фонды</a>
+								<a href="#">Специализированные органы</a>
+							</div>
+						</li>
 						<li><a href="#">Членство в ассоциации</a></li>
 						<li><a href="#">Раскрытие информации</a></li>
 						<li><a href="#" class="active">Вступить в СРО</a></li>
@@ -416,7 +428,19 @@
 	<footer class="footer">
 		<nav class="main-nav red">
 			<ul>
-				<li><a href="#">Ассоциация «Мастер-проект»</a></li>
+				<li>
+					<a href="#">Ассоциация «Мастер-проект»</a>
+					<div class="main-nav__submenu">
+						<h6>Ассоциация «Мастер-проект»</h6>
+						<a href="#">Структура Ассоциации</a>
+						<a href="#">Общее собрание</a>
+						<a href="#">Совет Ассоциации</a>
+						<a href="#">Директор</a>
+						<a href="#">Орган надзора</a>
+						<a href="#">Компенсационные фонды</a>
+						<a href="#">Специализированные органы</a>
+					</div>
+				</li>
 				<li><a href="#">Членство в ассоциации</a></li>
 				<li><a href="#">Раскрытие информации</a></li>
 				<li><a href="#" class="active">Вступить в СРО</a></li>
@@ -505,6 +529,20 @@
 			<a href="#"><span>Контакты</span></a>
 		</div>
 	</nav>
+
+	<div class="hidden">
+		<form id="back-call" class="back-call-form">
+			<h3>Обратный звонок</h3>
+			<div><input type="text" placeholder="Контактное лицо"></div>
+			<div><input type="tel" placeholder="Телефон"></div>
+			<button type="submit" class="btn">Отправить запрос</button>
+			<p>
+				Нажимая кнопку отправить запрос, вы соглашаетесь <br>
+				с <a href="#">политикой конфиденциальности</a>
+			</p>
+		</form>
+	</div>
+	<!-- /.hidden -->
 
 	<script src="js/scripts.min.js"></script>
 
