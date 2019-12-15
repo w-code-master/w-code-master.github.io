@@ -37,11 +37,6 @@ document.addEventListener("DOMContentLoaded", function() {
     $(this).toggleClass('active');
   });
 
-  /////////////////////
-  $('.beefup').beefup({
-    openSingle: true
-  });
-
 
   //////////////////////////////
   $('.category-posts').masonry({
@@ -59,8 +54,39 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 
+  ////////////////////////////////////
+  $('.owl-gallery').owlCarousel({
+    autoWidth: true,
+    margin: 12,
+    nav: true,
+    dots: false,
+    navText: ['<i class="i-left"></i>', '<i class="i-right"></i>']
+  });
+
   ////////////////////////////////////////////
   $('.js-textarea-counter').textareaCounter();
+
+
+  //////////////////////////////////
+  var slider = document.getElementById('price-slider');
+
+  noUiSlider.create(slider, {
+      start: [6000, 11400],
+      connect: true,
+      step: 1,
+      range: {
+          'min': 0,
+          'max': 11400
+      }
+  });
+  var skipValues = [
+      document.getElementById('skip-value-lower'),
+      document.getElementById('skip-value-upper')
+  ];
+
+  slider.noUiSlider.on('update', function (values, handle) {
+      skipValues[handle].innerHTML = values[handle];
+  });
 
 
 }); // end DOMContentLoaded

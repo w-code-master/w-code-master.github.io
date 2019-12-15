@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Главная | Molbert</title>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Категории | Molbert</title>
+    
     <link href="css/main.min.css" rel="stylesheet">
 
   </head>
@@ -40,7 +39,43 @@
                     <ul class="header-user__menu">
                         <li><a href="#">Отзывы</a></li>
                         <li><a href="#">укр</a></li>
-                        <li><a href="#" class="red"><i class="i-user"></i>Личный кабинет</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="#" class="red dropdown-toggle dropdown-toggle-arrow-none" role="button" id="dropdownUserCabinet" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="i-user"></i>Личный кабинет</a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownUserCabinet">
+                                    <form action="#" class="form-user-cabinet">
+                                        <h5>Вход в кабинет</h5>
+                                        <div class="form-group">
+                                            <label for="InputUserEmail">E-mail</label>
+                                            <input type="email" class="form-control" id="InputUserEmail">
+                                        </div>
+                                        <!-- /.form-group -->
+                                        <div class="form-group margin-bottom--5">
+                                            <label for="InputUserPass">Пароль</label>
+                                            <input type="password" class="form-control" id="InputUserPass">
+                                        </div>
+                                        <!-- /.form-group -->
+                                        <small class="form-text text-muted margin-bottom--10"><a href="#">Не помню пароль</a></small>
+                                        <div class="form-row align-items-center">
+                                            <div class="col-auto margin-right--25">
+                                                <button class="btn btn-danger">Войти</button>
+                                            </div>
+                                            <div class="col-auto">
+                                                <label class="check">
+                                                    <input class="check__input" type="checkbox">
+                                                    <span class="check__box"></span>
+                                                    <span class="check__title">Запомнить меня</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!-- /.form-row -->
+                                    </form>
+                                    <!-- /.form-user-cabinet -->
+                                </div>
+                                <!-- /.dropdown-menu -->
+                            </div>
+                            <!-- /.dropdown -->
+                        </li>
                     </ul>
                 </div>
                 <!-- /.container -->
@@ -49,10 +84,17 @@
 
             <div class="header-main-top">
                 <div class="container">
+
                     <a href="#" class="logo"></a>
+
                     <ul class="nav nav-pills nav-pills--border">
-                        <li><a href="#">Галерея</a></li>
+                        <li><a href="#" class="btn btn-default" data-toggle="modal" data-target="#galleryContentModal">Галерея</a></li>
                     </ul>
+
+                    <!-- <button type="button" class="btn btn-primary" >
+                      Запустить модальное окно
+                    </button> -->
+
                     <ul class="nav nav-pills nav-pills--menu">
                         <li><a href="#">Продать картину</a></li>
                         <li class="dropdown">
@@ -61,9 +103,9 @@
                                 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Под-пункт 1</a></li>
-                                <li><a href="#">Под-пункт 2</a></li>
-                                <li><a href="#">Под-пункт 3</a></li>
+                                <li><a href="#">Как происходит покупка</a></li>
+                                <li><a href="#">Доставка и оплата</a></li>
+                                <li><a href="#">Гарантии</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -79,22 +121,97 @@
                             </ul>
                         </li>
                     </ul>
+
                     <div class="header-work-information">
-                        <span>добавлено 248</span>
-                        <span>продано 15</span>
+                        <span><a href="#">добавлено 248</a></span>
+                        <span><a href="#">продано 15</a></span>
                     </div>
+
                     <div class="header-bar">
                         <a href="#" class="header-bar__item">
                             <i class="i-search"></i>
                         </a>
                         <a href="#" class="header-bar__item">
+                            <span>4</span>
                             <i class="i-favorite"></i>
                         </a>
-                        <a href="#" class="header-bar__item">
-                            <i class="i-cart"></i>
-                        </a>
+                        <div class="dropdown">
+                            <a href="#" class="header-bar__item dropdown-toggle dropdown-toggle-arrow-none" role="button" id="dropdownMenuCart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>20</span>
+                                <i class="i-cart"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuCart">
+                                <div class="dropdown-menu-cart">
+                                    <div class="dropdown-menu-cart__info">
+                                        <strong>В корзине</strong>
+                                        <p>3 предмета на 14 400 грн</p>
+                                        <button class="btn btn-danger">Оформить заказ</button>
+                                    </div>
+                                    <!-- /.dropdown-menu-cart__info -->
+                                    <div class="add-cart-product scroll-style">
+                                        <a href="#" class="add-cart-product__item">
+                                            <picture><img src="img/add-cart-product/1.jpg" alt="#"></picture>
+                                            <aside>
+                                                <h6>Растения, цветы и камни</h6>
+                                                <p>Выбранская Алла</p>
+                                                <div class="price">1 300 грн</div>
+                                            </aside>
+                                        </a>
+                                        <!-- /.add-cart-product__item -->
+                                        <a href="#" class="add-cart-product__item">
+                                            <picture><img src="img/add-cart-product/2.jpg" alt="#"></picture>
+                                            <aside>
+                                                <h6>Кот с птичкой</h6>
+                                                <div class="price">100 грн</div>
+                                            </aside>
+                                        </a>
+                                        <!-- /.add-cart-product__item -->
+                                        <a href="#" class="add-cart-product__item">
+                                            <picture><img src="img/add-cart-product/3.jpg" alt="#"></picture>
+                                            <aside>
+                                                <h6>Анфиса</h6>
+                                                <p>Кирьян Игорь</p>
+                                                <div class="price">7 500 грн</div>
+                                            </aside>
+                                        </a>
+                                        <!-- /.add-cart-product__item -->
+                                        <a href="#" class="add-cart-product__item">
+                                            <picture><img src="img/add-cart-product/1.jpg" alt="#"></picture>
+                                            <aside>
+                                                <h6>Растения, цветы и камни</h6>
+                                                <p>Выбранская Алла</p>
+                                                <div class="price">1 300 грн</div>
+                                            </aside>
+                                        </a>
+                                        <!-- /.add-cart-product__item -->
+                                        <a href="#" class="add-cart-product__item">
+                                            <picture><img src="img/add-cart-product/2.jpg" alt="#"></picture>
+                                            <aside>
+                                                <h6>Кот с птичкой</h6>
+                                                <div class="price">100 грн</div>
+                                            </aside>
+                                        </a>
+                                        <!-- /.add-cart-product__item -->
+                                        <a href="#" class="add-cart-product__item">
+                                            <picture><img src="img/add-cart-product/3.jpg" alt="#"></picture>
+                                            <aside>
+                                                <h6>Анфиса</h6>
+                                                <p>Кирьян Игорь</p>
+                                                <div class="price">7 500 грн</div>
+                                            </aside>
+                                        </a>
+                                        <!-- /.add-cart-product__item -->
+                                    </div>
+                                    <!-- /.add-cart-product -->
+                                </div>
+                                <!-- /.dropdown-menu-cart -->
+                            </div>
+                            <!-- /.dropdown-menu -->
+                        </div>
+                        <!-- /.dropdown -->
                     </div>
                     <!-- /.header-bar -->
+
                     <div class="sandwich-box">
                         <div class="sandwich-icon">
                             <div class="sw-top"></div>
@@ -102,10 +219,13 @@
                             <div class="sw-bottom"></div>
                         </div>
                     </div>
+                    <!-- /.sandwich-box -->
+
                 </div>
                 <!-- /.container -->
             </div>
             <!-- /.header-main-top -->
+
             <nav class="header-main-menu">
                 <div class="container">
                     <ul>
@@ -122,17 +242,22 @@
                 <!-- /.container -->
             </nav>
         </header>
-        <!-- /.header-main -->
+        <!-- /.header-static -->  
 
         <div class="category-panel">
             <div class="container">
+
                 <ul class="nav nav-pills nav-pills--menu light">
-                    <li><a href="#">Галерея</a></li>
+                    <li>
+                        <a href="#">Галерея</a>
+                        <span>-</span>
+                    </li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                             Картины
                             <span class="caret"></span>
                         </a>
+                        <span>-</span>
                         <ul class="dropdown-menu">
                             <li><a href="#">Под-пункт 1</a></li>
                             <li><a href="#">Под-пункт 2</a></li>
@@ -152,54 +277,653 @@
                         </ul>
                     </li>
                 </ul>
+
                 <h1 class="h1">Цветы</h1>
-                <ul class="nav nav-pills nav-pills--border light">
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            Помещение
-                            <span class="caret"></span>
-                        </a>
-                        <div class="dropdown-menu">
-                            123
+
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="filters-forms">
+                            <div class="dropdown">
+                                <a href="#" class="btn btn-default dropdown-toggle filter-filled-out" data-toggle="dropdown">
+                                    Помещение
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-left">
+                                    <form class="filter-room">
+                                        <div class="form-group">
+                                            <label class="check normal">
+                                                <input class="check__input" type="checkbox">
+                                                <span class="check__box"></span>
+                                                <span class="check__title">Для гостиной и зала <small>2455</small></span>
+                                            </label>
+                                        </div>
+                                        <!-- /.form-group -->
+                                        <div class="form-group">
+                                            <label class="check normal">
+                                                <input class="check__input" type="checkbox">
+                                                <span class="check__box"></span>
+                                                <span class="check__title">Для спальни <small>2005</small></span>
+                                            </label>
+                                        </div>
+                                        <!-- /.form-group -->
+                                        <div class="form-group">
+                                            <label class="check normal">
+                                                <input class="check__input" type="checkbox">
+                                                <span class="check__box"></span>
+                                                <span class="check__title">Для детской комнаты <small>763</small></span>
+                                            </label>
+                                        </div>
+                                        <!-- /.form-group -->
+                                        <div class="form-group">
+                                            <label class="check normal">
+                                                <input class="check__input" type="checkbox">
+                                                <span class="check__box"></span>
+                                                <span class="check__title">Для кухн <small>789</small></span>
+                                            </label>
+                                        </div>
+                                        <!-- /.form-group -->
+                                        <div class="form-group">
+                                            <label class="check normal">
+                                                <input class="check__input" type="checkbox">
+                                                <span class="check__box"></span>
+                                                <span class="check__title">Для офиса <small>1912</small></span>
+                                            </label>
+                                        </div>
+                                        <!-- /.form-group -->
+                                        <div class="form-group">
+                                            <label class="check normal">
+                                                <input class="check__input" type="checkbox">
+                                                <span class="check__box"></span>
+                                                <span class="check__title">Для ванной комнаты  <small>169</small></span>
+                                            </label>
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </form>
+                                    <!-- /.filter-room -->
+                                </div>
+                                <!-- /.dropdown-menu -->
+                            </div>
+                            <!-- /.dropdown -->
+
+                            <div class="dropdown">
+                                <a href="#" class="btn btn-default dropdown-toggle filter-filled-out" data-toggle="dropdown">
+                                    Форма
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-left">
+                                    <form class="filter-forma">
+                                        <div class="filter-forma__item">
+                                            <label class="check normal">
+                                                <input class="check__input" type="checkbox">
+                                                <span class="check__box"></span>
+                                            </label>
+                                            <div class="filter-forma__element">
+                                                <div class="forma__element-1"></div>
+                                            </div>
+                                            <p class="filter-forma__name">Вертикальная</p>
+                                        </div>
+                                        <!-- /.filter-forma__item -->
+                                        <div class="filter-forma__item">
+                                            <label class="check normal">
+                                                <input class="check__input" type="checkbox">
+                                                <span class="check__box"></span>
+                                            </label>
+                                            <div class="filter-forma__element">
+                                                <div class="forma__element-2"></div>
+                                            </div>
+                                            <p class="filter-forma__name">Горизонтальная</p>
+                                        </div>
+                                        <!-- /.filter-forma__item -->
+                                        <div class="filter-forma__item">
+                                            <label class="check normal">
+                                                <input class="check__input" type="checkbox">
+                                                <span class="check__box"></span>
+                                            </label>
+                                            <div class="filter-forma__element">
+                                                <div class="forma__element-3"></div>
+                                            </div>
+                                            <p class="filter-forma__name">Квадратная</p>
+                                        </div>
+                                        <!-- /.filter-forma__item -->
+                                        <div class="filter-forma__item">
+                                            <label class="check normal">
+                                                <input class="check__input" type="checkbox">
+                                                <span class="check__box"></span>
+                                            </label>
+                                            <div class="filter-forma__element">
+                                                <div class="forma__element-4">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <p class="filter-forma__name">Модульная</p>
+                                        </div>
+                                        <!-- /.filter-forma__item -->
+                                    </form>
+                                    <!-- /.filter-forma -->
+                                </div>
+                                <!-- /.dropdown-menu -->
+                            </div>
+                            <!-- /.dropdown -->
+
+                            <div class="dropdown">
+                                <a href="#" class="btn btn-default dropdown-toggle filter-filled-out" data-toggle="dropdown">
+                                    Форма
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-left">
+                                    <form class="filter-size">
+                                        <div class="filter-forma__item">
+                                            <label class="check normal">
+                                                <input class="check__input" type="checkbox">
+                                                <span class="check__box"></span>
+                                            </label>
+                                            <div class="filter-size__element">
+                                                <div class="forma__size-s"><i class="i-size"></i></div>
+                                            </div>
+                                            <p class="filter-forma__name">S и меньше</p>
+                                        </div>
+                                        <!-- /.filter-forma__item -->
+                                        <div class="filter-forma__item">
+                                            <label class="check normal">
+                                                <input class="check__input" type="checkbox">
+                                                <span class="check__box"></span>
+                                            </label>
+                                            <div class="filter-size__element">
+                                                <div class="forma__size-m"><i class="i-size"></i></div>
+                                            </div>
+                                            <p class="filter-forma__name">M</p>
+                                        </div>
+                                        <!-- /.filter-forma__item -->
+                                        <div class="filter-forma__item">
+                                            <label class="check normal">
+                                                <input class="check__input" type="checkbox">
+                                                <span class="check__box"></span>
+                                            </label>
+                                            <div class="filter-size__element">
+                                                <div class="forma__size-l"><i class="i-size"></i></div>
+                                            </div>
+                                            <p class="filter-forma__name">L</p>
+                                        </div>
+                                        <!-- /.filter-forma__item -->
+                                        <div class="filter-forma__item">
+                                            <label class="check normal">
+                                                <input class="check__input" type="checkbox">
+                                                <span class="check__box"></span>
+                                            </label>
+                                            <div class="filter-size__element">
+                                                <div class="forma__size-xl"><i class="i-size"></i></div>
+                                            </div>
+                                            <p class="filter-forma__name">XL и больше</p>
+                                        </div>
+                                        <!-- /.filter-forma__item -->
+                                    </form>
+                                    <!-- /.filter-size -->
+                                </div>
+                                <!-- /.dropdown-menu -->
+                            </div>
+                            <!-- /.dropdown -->
+
+                            <div class="dropdown">
+                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    Цена
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-left">
+                                    <form class="filter-room">
+                                        <div class="form-group">
+                                            <label class="check normal">
+                                                <input class="check__input" type="checkbox">
+                                                <span class="check__box"></span>
+                                                <span class="check__title">До 1 000 <small>145</small></span>
+                                            </label>
+                                        </div>
+                                        <!-- /.form-group -->
+                                        <div class="form-group">
+                                            <label class="check normal">
+                                                <input class="check__input" type="checkbox">
+                                                <span class="check__box"></span>
+                                                <span class="check__title">1 000 – 3 000  <small>2455</small></span>
+                                            </label>
+                                        </div>
+                                        <!-- /.form-group -->
+                                        <div class="form-group">
+                                            <label class="check normal">
+                                                <input class="check__input" type="checkbox">
+                                                <span class="check__box"></span>
+                                                <span class="check__title">3 000 – 6 000 <small>1118</small></span>
+                                            </label>
+                                        </div>
+                                        <!-- /.form-group -->
+                                        <div class="form-group">
+                                            <label class="check normal">
+                                                <input class="check__input" type="checkbox">
+                                                <span class="check__box"></span>
+                                                <span class="check__title">6 000 – 10 000 <small>278</small></span>
+                                            </label>
+                                        </div>
+                                        <!-- /.form-group -->
+                                        <div class="form-group">
+                                            <label class="check normal">
+                                                <input class="check__input" type="checkbox">
+                                                <span class="check__box"></span>
+                                                <span class="check__title">Больше 10 000 <small>53</small></span>
+                                            </label>
+                                        </div>
+                                        <!-- /.form-group -->
+                                        <hr class="hr margin-bottom--25">
+                                        <div id="price-slider"></div>
+                                        <div class="price-slider-value">
+                                            <span id="skip-value-lower"></span>
+                                            –
+                                            <span id="skip-value-upper"></span>
+                                            грн
+                                        </div>
+                                    </form>
+                                    <!-- /.filter-room -->
+                                </div>
+                                <!-- /.dropdown-menu -->
+                            </div>
+                            <!-- /.dropdown -->
+
+                            <div class="dropdown">
+                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    Все фильтры
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-left">
+                                    <form class="filter-all-filter">
+                                        <div class="accordion-collapse" id="all-filter">
+                                            <div class="accordion-collapse__item">
+                                                <a href="#" class="accordion-collapse__link" data-toggle="collapse" data-target="#id34342334">
+                                                    <span>Направление</span>
+                                                    <i class="i-down"></i>
+                                                </a>
+                                                <div class="collapse show" id="id34342334" data-parent="#all-filter">
+                                                    <div class="accordion-collapse__content">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Абстракционизм <small>324</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Романтизм <small>133</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Импрессионизм <small>409</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Абстракция <small>2</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Детское творчество <small>14</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Концептуальное искусство <small>30</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                            </div>
+                                                            <!-- /.col -->
+
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Модернизм <small>72</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Реализм <small>691</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Сюрреализм <small>149</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Современная живопись <small>309</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Экспрессионизм <small>154</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Символизм <small>30</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                            </div>
+                                                            <!-- /.col -->
+                                                        </div>
+                                                        <!-- /.row -->
+                                                    </div>
+                                                    <!-- /.accordion-collapse__content -->
+                                                </div>
+                                                <!-- /.collapse -->
+                                            </div>
+                                            <!-- /.accordion-collapse__item -->
+
+                                            <div class="accordion-collapse__item">
+                                                <a href="#" class="accordion-collapse__link collapsed" data-toggle="collapse" data-target="#id3de4342334">
+                                                    <span>Техника</span>
+                                                    <i class="i-down"></i>
+                                                </a>
+                                                <div class="collapse" id="id3de4342334" data-parent="#all-filter">
+                                                    <div class="accordion-collapse__content">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Абстракционизм <small>324</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Романтизм <small>133</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Импрессионизм <small>409</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Абстракция <small>2</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Детское творчество <small>14</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Концептуальное искусство <small>30</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                            </div>
+                                                            <!-- /.col -->
+
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Модернизм <small>72</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Реализм <small>691</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Сюрреализм <small>149</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Современная живопись <small>309</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Экспрессионизм <small>154</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Символизм <small>30</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                            </div>
+                                                            <!-- /.col -->
+                                                        </div>
+                                                        <!-- /.row -->
+                                                    </div>
+                                                    <!-- /.accordion-collapse__content -->
+                                                </div>
+                                                <!-- /.collapse -->
+                                            </div>
+                                            <!-- /.accordion-collapse__item -->
+
+                                            <div class="accordion-collapse__item">
+                                                <a href="#" class="accordion-collapse__link collapsed" data-toggle="collapse" data-target="#id3de43sw42334">
+                                                    <span>Основа</span>
+                                                    <i class="i-down"></i>
+                                                </a>
+                                                <div class="collapse" id="id3de43sw42334" data-parent="#all-filter">
+                                                    <div class="accordion-collapse__content">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Абстракционизм <small>324</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Романтизм <small>133</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Импрессионизм <small>409</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Абстракция <small>2</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Детское творчество <small>14</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Концептуальное искусство <small>30</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                            </div>
+                                                            <!-- /.col -->
+
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Модернизм <small>72</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Реализм <small>691</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Сюрреализм <small>149</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Современная живопись <small>309</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Экспрессионизм <small>154</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                                <div class="form-group">
+                                                                    <label class="check normal">
+                                                                        <input class="check__input" type="checkbox">
+                                                                        <span class="check__box"></span>
+                                                                        <span class="check__title">Символизм <small>30</small></span>
+                                                                    </label>
+                                                                </div>
+                                                                <!-- /.form-group -->
+                                                            </div>
+                                                            <!-- /.col -->
+                                                        </div>
+                                                        <!-- /.row -->
+                                                    </div>
+                                                    <!-- /.accordion-collapse__content -->
+                                                </div>
+                                                <!-- /.collapse -->
+                                            </div>
+                                            <!-- /.accordion-collapse__item -->
+                                        </div>
+                                        <!-- /.accordion-collapse -->
+                                    </form>
+                                    <!-- /.filter-all-filter -->
+                                </div>
+                                <!-- /.dropdown-menu -->
+                            </div>
+                            <!-- /.dropdown -->
                         </div>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            Форма
-                            <span class="caret"></span>
-                        </a>
-                        <div class="dropdown-menu">
-                            123
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            Размер
-                            <span class="caret"></span>
-                        </a>
-                        <div class="dropdown-menu">
-                            123
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            Цена
-                            <span class="caret"></span>
-                        </a>
-                        <div class="dropdown-menu">
-                            123
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            Все фильтры
-                            <span class="caret"></span>
-                        </a>
-                        <div class="dropdown-menu">
-                            123
-                        </div>
-                    </li>
-                </ul>
+                        <!-- /.filters-forms -->
+                    </div>
+                    <!-- /.col-auto -->
+
+                    <div class="col-auto ml-auto">
+                        <a href="#" class="link-activate margin-top--10"><i class="i-close"></i>удалить фильтры</a>
+                        <a href="#" class="link-activate margin-top--10 margin-left--25"><i class="i-bell"></i>получать уведомления</a>
+                    </div>
+                    <!-- /.col-auto -->
+                </div>
+                <!-- /.row -->
+
+                <div class="filtered-sorting">
+                    <span>Отфильтровано 428:</span>
+                    <a href="#">Для спальни <i class="i-close"></i></a>
+                    <a href="#">Для кухни <i class="i-close"></i></a>
+                    <a href="#">Вертикальная <i class="i-close"></i></a>
+                    <a href="#">S и меньше <i class="i-close"></i></a>
+                    <a href="#">Исторический сюжет <i class="i-close"></i></a>
+                    <a href="#">Городской пейзаж <i class="i-close"></i></a>
+                    <a href="#">Пейзаж <i class="i-close"></i></a>
+                    <a href="#">Морской пейзаж <i class="i-close"></i></a>
+                    <a href="#">Концептуальное искусство <i class="i-close"></i></a>
+                </div>
+                <!-- /.filtered-sorting -->
+
             </div>
             <!-- /.container -->
         </div>
@@ -751,42 +1475,42 @@
 
             <div class="you-watched">
                 <h2 class="h2">Вы смотрели</h2>
-                <div class="owl-carousel owl-you-watched">
-                    <div class="you-watched__item">
+                <div class="owl-carousel owl-carousel--nav owl-you-watched">
+                    <a href="#" class="you-watched__item">
                         <picture>
                             <img src="img/you-watched/1.jpg" alt="#">
                         </picture>
                         <div class="h6">Вишневый аромат весенних цветов</div>
                         <div class="price">1 300 грн</div>
                         <p>44х57 см, Холст/Масло</p>
-                    </div>
+                    </a>
                     <!-- /.you-watched__item -->
-                    <div class="you-watched__item">
+                    <a href="#" class="you-watched__item">
                         <picture>
                             <img src="img/you-watched/2.jpg" alt="#">
                         </picture>
                         <div class="h6">Волки. Верность</div>
                         <div class="price">12 400 грн</div>
                         <p>44х57 см, Холст/Масло</p>
-                    </div>
+                    </a>
                     <!-- /.you-watched__item -->
-                    <div class="you-watched__item">
+                    <a href="#" class="you-watched__item">
                         <picture>
                             <img src="img/you-watched/3.jpg" alt="#">
                         </picture>
                         <div class="h6">Лунный кот</div>
                         <div class="price">1000 грн</div>
                         <p>44х57 см, Холст/Масло</p>
-                    </div>
+                    </a>
                     <!-- /.you-watched__item -->
-                    <div class="you-watched__item">
+                    <a href="#" class="you-watched__item">
                         <picture>
                             <img src="img/you-watched/2.jpg" alt="#">
                         </picture>
                         <div class="h6">Волки. Верность</div>
                         <div class="price">12 400 грн</div>
                         <p>44х57 см, Холст/Масло</p>
-                    </div>
+                    </a>
                     <!-- /.you-watched__item -->
                 </div>
                 <!-- /.owl-carousel -->
@@ -972,6 +1696,660 @@
         <!-- /.container -->
     </footer>
     <!-- /.footer -->
+
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-xl modal-gallery-content" id="galleryContentModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="gallery-content">
+                    <div class="modal-header">
+                        <ul class="nav nav-main">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Картины</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Скульптуры</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Фотографии</a>
+                            </li>
+                        </ul>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="i-close"></i>
+                        </button>
+                    </div>
+                    <!-- /.modal-header -->
+                    <div class="gallery-content__inner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-2">
+                                    <div class="gallery-menu" id="gallery-menu">
+
+                                        <div class="gallery-menu__item">
+                                            <a href="#" class="gallery-menu__link"><strong>Топ подборки</strong></a>
+                                        </div>
+                                        <!-- /.gallery-menu__item -->
+                                        <div class="gallery-menu__item">
+                                            <a href="#" class="gallery-menu__link"><strong>На заказ</strong></a>
+                                        </div>
+                                        <!-- /.gallery-menu__item -->
+
+                                        <hr class="hr">
+                                        
+                                        <div class="gallery-menu__item">
+                                            <a href="#" class="gallery-menu__link" data-toggle="collapse" data-target="#gallery-menu-collapse-1">Помещение <i class="i-down"></i></a>
+                                            <div class="collapse" id="gallery-menu-collapse-1" data-parent="#gallery-menu">
+                                                <ul class="gallery-menu__submenu">
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Абстракция</span>
+                                                            <span class="count">390</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Бытовой сюжет</span>
+                                                            <span class="count">98</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Военный сюжет</span>
+                                                            <span class="count">3</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Городской пейзаж</span>
+                                                            <span class="count">150</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Животные</span>
+                                                            <span class="count">259</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Интерьер</span>
+                                                            <span class="count">49</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Исторический сюжет</span>
+                                                            <span class="count">24</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Люди</span>
+                                                            <span class="count">137</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Миниатюра</span>
+                                                            <span class="count">42</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Мифология</span>
+                                                            <span class="count">58</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Морской пейзаж</span>
+                                                            <span class="count">162</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Натюрморт</span>
+                                                            <span class="count">224</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Ню</span>
+                                                            <span class="count">55</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Пейзаж</span>
+                                                            <span class="count">259</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Портрет</span>
+                                                            <span class="count">138</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Религия</span>
+                                                            <span class="count">37</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Религия</span>
+                                                            <span class="count">37</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Цветы</span>
+                                                            <span class="count">293</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- /.collapse -->
+                                        </div>
+                                        <!-- /.gallery-menu__item -->
+
+                                        <div class="gallery-menu__item">
+                                            <a href="#" class="gallery-menu__link collapsed" data-toggle="collapse" data-target="#gallery-menu-collapse-2">Тематика <i class="i-down"></i></a>
+                                            <div class="collapse" id="gallery-menu-collapse-2" data-parent="#gallery-menu">
+                                                <ul class="gallery-menu__submenu">
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Интерьер</span>
+                                                            <span class="count">49</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Исторический сюжет</span>
+                                                            <span class="count">24</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Люди</span>
+                                                            <span class="count">137</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Миниатюра</span>
+                                                            <span class="count">42</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Мифология</span>
+                                                            <span class="count">58</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Морской пейзаж</span>
+                                                            <span class="count">162</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Натюрморт</span>
+                                                            <span class="count">224</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Ню</span>
+                                                            <span class="count">55</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Пейзаж</span>
+                                                            <span class="count">259</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Портрет</span>
+                                                            <span class="count">138</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Религия</span>
+                                                            <span class="count">37</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Религия</span>
+                                                            <span class="count">37</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Цветы</span>
+                                                            <span class="count">293</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- /.collapse -->
+                                        </div>
+                                        <!-- /.gallery-menu__item -->
+
+                                        <div class="gallery-menu__item">
+                                            <a href="#" class="gallery-menu__link collapsed" data-toggle="collapse" data-target="#gallery-menu-collapse-3">Направление <i class="i-down"></i></a>
+                                            <div class="collapse" id="gallery-menu-collapse-3" data-parent="#gallery-menu">
+                                                <ul class="gallery-menu__submenu">
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Люди</span>
+                                                            <span class="count">137</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Миниатюра</span>
+                                                            <span class="count">42</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Мифология</span>
+                                                            <span class="count">58</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Морской пейзаж</span>
+                                                            <span class="count">162</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Натюрморт</span>
+                                                            <span class="count">224</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Ню</span>
+                                                            <span class="count">55</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Пейзаж</span>
+                                                            <span class="count">259</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Портрет</span>
+                                                            <span class="count">138</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Религия</span>
+                                                            <span class="count">37</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Религия</span>
+                                                            <span class="count">37</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Цветы</span>
+                                                            <span class="count">293</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- /.collapse -->
+                                        </div>
+                                        <!-- /.gallery-menu__item -->
+
+                                        <div class="gallery-menu__item">
+                                            <a href="#" class="gallery-menu__link collapsed" data-toggle="collapse" data-target="#gallery-menu-collapse-4">Техника <i class="i-down"></i></a>
+                                            <div class="collapse" id="gallery-menu-collapse-4" data-parent="#gallery-menu">
+                                                <ul class="gallery-menu__submenu">
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Люди</span>
+                                                            <span class="count">137</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Миниатюра</span>
+                                                            <span class="count">42</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Мифология</span>
+                                                            <span class="count">58</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Морской пейзаж</span>
+                                                            <span class="count">162</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Натюрморт</span>
+                                                            <span class="count">224</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Ню</span>
+                                                            <span class="count">55</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Пейзаж</span>
+                                                            <span class="count">259</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Портрет</span>
+                                                            <span class="count">138</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Религия</span>
+                                                            <span class="count">37</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- /.collapse -->
+                                        </div>
+                                        <!-- /.gallery-menu__item -->
+
+                                        <div class="gallery-menu__item">
+                                            <a href="#" class="gallery-menu__link collapsed" data-toggle="collapse" data-target="#gallery-menu-collapse-5">Основа <i class="i-down"></i></a>
+                                            <div class="collapse" id="gallery-menu-collapse-5" data-parent="#gallery-menu">
+                                                <ul class="gallery-menu__submenu">
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Люди</span>
+                                                            <span class="count">137</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Миниатюра</span>
+                                                            <span class="count">42</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Мифология</span>
+                                                            <span class="count">58</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Морской пейзаж</span>
+                                                            <span class="count">162</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Натюрморт</span>
+                                                            <span class="count">224</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Ню</span>
+                                                            <span class="count">55</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Пейзаж</span>
+                                                            <span class="count">259</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Портрет</span>
+                                                            <span class="count">138</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Религия</span>
+                                                            <span class="count">37</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- /.collapse -->
+                                        </div>
+                                        <!-- /.gallery-menu__item -->
+
+                                        <div class="gallery-menu__item">
+                                            <a href="#" class="gallery-menu__link collapsed" data-toggle="collapse" data-target="#gallery-menu-collapse-6">Размер <i class="i-down"></i></a>
+                                            <div class="collapse" id="gallery-menu-collapse-6" data-parent="#gallery-menu">
+                                                <ul class="gallery-menu__submenu">
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Люди</span>
+                                                            <span class="count">137</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Миниатюра</span>
+                                                            <span class="count">42</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Мифология</span>
+                                                            <span class="count">58</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Морской пейзаж</span>
+                                                            <span class="count">162</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Натюрморт</span>
+                                                            <span class="count">224</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Ню</span>
+                                                            <span class="count">55</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Пейзаж</span>
+                                                            <span class="count">259</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Портрет</span>
+                                                            <span class="count">138</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Религия</span>
+                                                            <span class="count">37</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- /.collapse -->
+                                        </div>
+                                        <!-- /.gallery-menu__item -->
+
+                                        <div class="gallery-menu__item">
+                                            <a href="#" class="gallery-menu__link collapsed" data-toggle="collapse" data-target="#gallery-menu-collapse-7">Цена <i class="i-down"></i></a>
+                                            <div class="collapse" id="gallery-menu-collapse-7" data-parent="#gallery-menu">
+                                                <ul class="gallery-menu__submenu">
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Мифология</span>
+                                                            <span class="count">58</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Морской пейзаж</span>
+                                                            <span class="count">162</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Натюрморт</span>
+                                                            <span class="count">224</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Ню</span>
+                                                            <span class="count">55</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Пейзаж</span>
+                                                            <span class="count">259</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Портрет</span>
+                                                            <span class="count">138</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="name">Религия</span>
+                                                            <span class="count">37</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- /.collapse -->
+                                        </div>
+                                        <!-- /.gallery-menu__item -->
+
+                                        <hr class="hr">
+
+                                        <a href="#" class="gallery-menu__link">Художники</a>
+
+                                    </div>
+                                    <!-- /.gallery-menu -->
+                                </div>
+                                <!-- /.col-xl-2 -->
+
+                                <div class="col-xl-10">
+                                    <div class="owl-carousel owl-carousel--nav owl-gallery">
+                                        <div class="owl-gallery__item">
+                                            <picture class="picture-block"><img src="img/art-to-order.jpg" alt="#"></picture>
+                                            <div class="link-to-page">
+                                                <h3 class="h3"><a href="#"><span>Портреты на заказ</span><i class="i-right"></i></a></h3>
+                                                <p>30 художников</p>
+                                            </div>
+                                        </div>
+                                        <!-- /.owl-gallery__item -->
+                                        <div class="owl-gallery__item">
+                                            <picture class="picture-block"><img src="img/art-to-order-2.jpg" alt="#"></picture>
+                                            <div class="d-flex justify-content-between align-items-center margin-bottom--10">
+                                                <span class="top-view">топ просмотров</span>
+                                                <a href="#" class="link-small--12">Натюрморт</a>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="w-50">
+                                                    <a href="#" class="link-small--17">Розы и ракушка</a>
+                                                    <p class="text--13 margin-top--5"><strong>Кузьмин Сергей</strong></p>
+                                                </div>
+                                                <div class="w-50 text-right">
+                                                    <strong class="text--17">15 000 грн</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.owl-gallery__item -->
+                                        <div class="owl-gallery__item">
+                                            <picture class="picture-block"><img src="img/art-to-order.jpg" alt="#"></picture>
+                                            <div class="d-flex justify-content-between align-items-center margin-bottom--10">
+                                                <span class="top-view">топ просмотров</span>
+                                                <a href="#" class="link-small--12">Натюрморт</a>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="w-50">
+                                                    <a href="#" class="link-small--17">Розы и ракушка</a>
+                                                    <p class="text--13 margin-top--5"><strong>Кузьмин Сергей</strong></p>
+                                                </div>
+                                                <div class="w-50 text-right">
+                                                    <strong class="text--17">15 000 грн</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.owl-gallery__item -->
+                                        <div class="owl-gallery__item">
+                                            <picture class="picture-block"><img src="img/art-to-order-2.jpg" alt="#"></picture>
+                                            <div class="d-flex justify-content-between align-items-center margin-bottom--10">
+                                                <span class="top-view">топ просмотров</span>
+                                                <a href="#" class="link-small--12">Натюрморт</a>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="w-50">
+                                                    <a href="#" class="link-small--17">Розы и ракушка</a>
+                                                    <p class="text--13 margin-top--5"><strong>Кузьмин Сергей</strong></p>
+                                                </div>
+                                                <div class="w-50 text-right">
+                                                    <strong class="text--17">15 000 грн</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.owl-gallery__item -->
+                                    </div>
+                                    <!-- /.owl-carousel -->
+                                </div>
+                                <!-- /.col-xl-10 -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.container -->
+                    </div>
+                    <!-- /.gallery-content__inner -->
+                </div>
+                <!-- /.gallery-content -->
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
 
     <script src="js/scripts.min.js"></script>
   </body>
