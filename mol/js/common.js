@@ -53,9 +53,33 @@ document.addEventListener("DOMContentLoaded", function() {
     navText: ['<i class="i-left"></i>', '<i class="i-right"></i>']
   });
 
+  $('.owl-other-work').owlCarousel({
+    loop: true,
+    autoWidth: true,
+    margin: 12,
+    nav: true,
+    dots: false,
+    navText: ['<i class="i-left"></i>', '<i class="i-right"></i>']
+  });
 
-  ////////////////////////////////////
   $('.owl-gallery').owlCarousel({
+    autoWidth: true,
+    margin: 12,
+    nav: true,
+    dots: false,
+    navText: ['<i class="i-left"></i>', '<i class="i-right"></i>']
+  });
+
+  $('.owl-product-slider').owlCarousel({
+    autoWidth: true,
+    margin: 0,
+    nav: true,
+    dots: false,
+    navText: ['<i class="i-left"></i>', '<i class="i-right"></i>']
+  });
+
+  $('.owl-add-my-style').owlCarousel({
+    loop: true,
     autoWidth: true,
     margin: 12,
     nav: true,

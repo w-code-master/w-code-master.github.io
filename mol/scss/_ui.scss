@@ -340,7 +340,7 @@
 			position: relative;
 		}
 		&:hover {
-			color: $blue;
+			color: $red;
 			text-decoration: none;
 		}
 	}
@@ -673,6 +673,18 @@ label.check {
 		font-weight: 600;
 		color: #fff !important;
 	}
+	&-dark {
+		height: 44px;
+		line-height: 44px;
+		background: #222;
+		border: 1px solid #222;
+		box-sizing: border-box;
+		border-radius: 3px;
+		padding: 0 14px;
+		font-size: 15px;
+		font-weight: 600;
+		color: #fff !important;
+	}
 	&.btn-lg {
 		height: 52px;
 		font-size: 19px;
@@ -697,6 +709,26 @@ label.check {
 		top: 2px;
 		font-size: 12px;
 		margin-left: 4px;
+	}
+	.i-photo-plus {
+		font-size: 21px;
+		margin-right: 10px;
+		position: relative;
+		top: 2px;
+	}
+	&[data-toggle="collapse"] {
+		.i-down {
+			display: inline-block;
+			position: relative;
+			font-size: 16px;
+			transform: rotate(180deg);
+			transition: .3s;
+		}
+	}
+	&.collapsed[data-toggle="collapse"] {
+		.i-down {
+			transform: rotate(0);
+		}
 	}
 }
 
@@ -1015,6 +1047,24 @@ label.check {
 			}
 		}
 	}
+	&.normal {
+		.avatar-48x48__info {
+			a {
+				color: #000;
+				border-bottom: 1px solid rgba(#000, .2);
+				&:hover {
+					color: $red;
+					border-bottom-color: rgba($red, .2);
+				}
+			}
+			.trusted {
+				color: $green;
+			}
+			.i-info {
+				color: #888;
+			}
+		}
+	}
 }
 
 
@@ -1091,7 +1141,8 @@ label.check {
 	}
 }
 
-.top-view {
+.top-view,
+.new-mark-green {
 	display: inline-block;
 	height: 20px;
 	background-color: #FDD609;
@@ -1101,6 +1152,10 @@ label.check {
 	font-size: 12px;
 	font-weight: 600;
 	padding: 0 10px;
+}
+.new-mark-green {
+	background-color: $green;
+	color: #fff;
 }
 
 .liker {
@@ -1476,4 +1531,302 @@ label.check {
 			font-size: 9px;
 		}
 	}
+}
+
+
+.vendor-code {
+	display: inline-block;
+	height: 25px;
+	border-radius: 2px;
+	background-color: #F4F4F4;
+	font-size: 13px;
+	line-height: 25px;
+	padding: 0 7px;
+	letter-spacing: -.035em;
+	strong {
+		font-weight: 600;
+	}
+}
+
+
+.descrp-author {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	border-bottom: 1px solid $silver;
+	padding-bottom: 15px;
+	&__title {
+		width: 75%;
+		h2 {
+			font-weight: bold;
+			font-size: 36px;
+			line-height: 44px;
+			margin: 0 0 10px;
+			.new-mark-green {
+				margin: 0 0 0 5px;
+				vertical-align: top;
+			}
+		}
+	}
+	&__price {
+		width: 25%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		.row {
+			align-items: center;
+			margin: 0 0 10px;
+		}
+		.price {
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 29px;
+			padding-right: 25px;
+		}
+	}
+	.link-social-share {
+		margin: 2px 25px 0 0;
+	}
+
+	&-info {
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 15px;
+		padding: 12px 0;
+		border-bottom: 1px solid $silver;
+		margin-bottom: 15px;
+		.liker {
+			margin-right: 15px;
+		}
+		& > span {
+			margin-left: 25px;
+			color: rgba(#000, .6);
+		}
+	}
+
+	&-text {
+		font-size: 16px;
+		line-height: 26px;
+		border-bottom: 1px solid $silver;
+		margin-bottom: 30px;
+		p {
+			max-width: 730px;
+		}
+	}
+}
+
+.link-social-share {
+	display: inline-block;
+	color: #444;
+	font-size: 18px;
+	transition: .5s;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.block-links {
+	margin-bottom: 15px;
+	a {
+		font-size: 15px;
+		line-height: 19px;
+		color: #000000;
+		margin: 0 25px 5px 0;
+		transition: .5s;
+		border-bottom: 1px solid rgba(#000, .2);
+		&:hover {
+			text-decoration: none;
+			color: $red;
+			border-bottom-color: rgba($red, .2);
+		}
+	}
+}
+
+.link-item {
+	color: #000;
+	border-bottom: 1px solid rgba(#000, .2);
+	transition: .5s;
+	&:hover {
+		text-decoration: none;
+		color: $red;
+		border-bottom-color: rgba($red, .2);
+	}
+}
+
+
+.video-block {
+	width: 420px;
+	height: 315px;
+	position: relative;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.btn-video-play {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+.btn-video-play {
+	display: inline-block;
+	border: 0;
+	width: 68px;
+	height: 48px;
+	background: rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+	border-radius: 15px/10px;
+	position: relative;
+	color: #fff;
+	transition: .5s;
+	.i-play {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		font-size: 20px;
+		transform: translate(-50%, -50%);
+	}
+	&:hover {
+		background: rgba(255, 255, 255, 0.9);
+		color: $red;
+	}
+}
+
+.btn-video-play-circle {
+	display: inline-block;
+	border: 0;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.7);
+	cursor: pointer;
+	position: relative;
+	color: #444;
+	transition: .5s;
+	.i-play {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		font-size: 12px;
+		transform: translate(-50%, -50%);
+	}
+	&:hover {
+		background: rgba(255, 255, 255, 0.9);
+		color: $red;
+	}
+}
+
+.small-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+	&__item {
+		height: 86px;
+		overflow: hidden;
+		position: relative;
+		margin: 0 12px 12px 0;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.btn-video-play-circle {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+
+
+.my-rating {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	&__title {
+		font-size: 15px;
+		line-height: 24px;
+		padding: 8px 10px 0 0;
+	}
+}
+.my-rating-box {
+  text-align: center;
+  margin-right: 20px;
+  position: relative; }
+  .my-rating-box.checked::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2; }
+  .my-rating-box input {
+    display: none; }
+  .my-rating-box label {
+    color: #bab9b6;
+    float: right;
+    margin-bottom: -10px;
+    position: relative;
+    z-index: 1; }
+    .my-rating-box label:before {
+      font-size: 25px;
+      display: inline-block;
+      content: "\2605";
+      cursor: pointer;
+      transition: .5s; }
+
+.my-rating-box > input:checked ~ label,
+.my-rating-box:not(:checked) > label:hover,
+.my-rating-box:not(:checked) > label:hover ~ label {
+  color: #FFD700; }
+
+
+.btn-add {
+  	width: 80px;
+  	height: 68px;
+  	background: #F9F9F9;
+  	border: 1px solid #888888;
+  	border-radius: 3px;
+  	cursor: pointer;
+  	position: relative;
+  	font-size: 11px;
+  	font-weight: 500;
+  	color: #444;
+  	padding-top: 2px;
+  	transition: .5s;
+  	&:hover {
+  		border-color: $red;
+  		color: $red;
+  	}
+  	[class*="i-"] {
+  		font-size: 18px;
+  	}
+  	&__title {
+  		display: block;
+  		margin-top: 4px;
+  		line-height: 1;
+  	}
+  	input {
+  		width: 100%;
+  		height: 100%;
+  		position: absolute;
+  		left: 0;
+  		top: 0;
+  		cursor: pointer;
+  		opacity: 0;
+  		&:before {
+  			content: '';
+  			width: 100%;
+  			height: 100%;
+  			position: absolute;
+  			left: 0;
+  			top: 0;
+  			z-index: 1;
+  			cursor: pointer;
+  		}
+  	}
 }
