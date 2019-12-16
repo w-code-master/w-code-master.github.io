@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Главная | Molbert</title>
-
+    
     <link href="css/main.min.css" rel="stylesheet">
 
   </head>
@@ -26,7 +26,7 @@
     </div>
     
     <div class="wrap">
-        <header class="header-main">
+        <header class="header-static">
             <div class="header-user">
                 <div class="container">
                     <nav class="header-user__nav">
@@ -241,395 +241,379 @@
                 </div>
                 <!-- /.container -->
             </nav>
-
-            <div class="header-main-info">
-                <div class="container">
-                    <article>
-                        <h1>Площадка для монетизации твоего таланта</h1>
-                        <p>Ваше творчество достойно давать людям позитивное настроение и эмоции. Мы объединяем художников и покупателей самым простым способом.</p>
-                        <a href="#" class="btn btn-lg btn-danger">Подать заявку</a>
-                    </article>
-                </div>
-                <!-- /.container -->
-            </div>
-            <!-- /.header-main-info -->
         </header>
-        <!-- /.header-main -->
+        <!-- /.header-static -->  
 
-        <section class="how-works">
+        <div class="blog-section">
             <div class="container">
-                <h2>Как это работает</h2>
-                <div class="how-works--container">
-                    <ul class="how-works__list">
-                        <li>Расскажите кратко о себе</li>
-                        <li>Мы рассматриваем каждую заявку персонально и связываемся для первоначального знакомства. Это необходимо, чтобы подтвердить оригинальность автора и его работ</li>
-                        <li>В случае одобрения, ваши работы будут опубликованы на Molbert</li>
-                        <li>Ваши работы станут доступны для покупателей, и вы сможете получать их контакты напрямую</li>
+
+                <h2 class="h1">Блог о талантах, <br> исскусстве и художниках</h2>
+
+                <nav class="nav-scroller">
+                    <ul>
+                        <li class="active"><a href="#"><span>Все</span></a></li>
+                        <li><a href="#"><span>Интервью</span></a></li>
+                        <li><a href="#"><span>Molbert</span></a></li>
+                        <li><a href="#"><span>Видео</span></a></li>
+                        <li><a href="#"><span>еще</span></a></li>
                     </ul>
-                    <div class="how-works__features">
-                        <span><i class="i-art"></i></span>
-                        <span><i class="i-phone"></i></span>
-                        <span><i class="i-hand"></i></span>
-                        <span><i class="i-picture"></i></span>
-                        <span><i class="i-credit"></i></span>
-                        <span><i class="i-molbert"></i></span>
+                </nav>
+
+                <div class="card-columns blog-card">
+                    <div class="card">
+                        <a href="#" class="blog-card__item">
+                            <picture class="img"><img src="img/blog/2.jpg" alt="#"></picture>
+                            <h4 class="title">Картины Пикассо оживили и выпустили на подиум</h4>
+                            <p class="text">Показ Moschino традиционно удивил зрителей креативными новинками. С легкой руки известного дизайнера Джереми Скотта творчество художника Пабло Пикассо обрело совершенно новое прочтение. Фаворитом зрительских симпатий стало оригинальное платье-сюртук с мотивами полотна...</p>
+                            <div class="info">
+                                <time>24.12.2019</time>
+                            </div>
+                        </a>
+                        <!-- /.blog-card__item -->
                     </div>
+                    <!-- /.card -->
+                    <div class="card">
+                        <a href="#" class="blog-card__item">
+                            <picture class="img"><img src="img/blog/5.jpg" alt="#"></picture>
+                            <h4 class="title">Forbes признал украинскую бабочку одним из главных событий Burning Man</h4>
+                            <p class="text">Национальная Биеннале молодого искусства пройдет с 17 сентября по 30 октября 2019 года и охватит около полусотни различных арт-мероприятий. Локации расположены в 16 местах Харькова, в выставках участвуют проекты со всей Украины.</p>
+                            <div class="info">
+                                <time>24.12.2019</time>
+                            </div>
+                        </a>
+                        <!-- /.blog-card__item -->
+                    </div>
+                    <!-- /.card -->
+                    
+                    <div class="card">
+                        <a href="#" class="blog-card__item">
+                            <picture class="img"><img src="img/blog/1.jpg" alt="#"></picture>
+                            <h4 class="title">Стефан Каспер из Нидерландов спал с «Ночным дозором»</h4>
+                            <p class="text">Голландский художественный музей в Амстердаме предоставил уникальную возможность одному из его посетителей провести ночь перед картиной Рембрандта «Ночной дозор». Такой джек-пот сорвал Стефан Каспер за то, что оказался 10-миллионным посетителем музея.</p>
+                            <div class="info">
+                                <time>24.12.2019</time>
+                                <strong><i class="i-comment"></i>7 комментариев</strong>
+                            </div>
+                        </a>
+                        <!-- /.blog-card__item -->
+                    </div>
+                    <!-- /.card -->
+                    <div class="card">
+                        <div class="social-network">
+                            <div class="social-network__content">
+                                <h3 class="title">Следите за нами</h3>
+                                <ul class="list">
+                                    <li><i class="i-check"></i>Вручную отбираем художников с оригинальных картин</li>
+                                    <li><i class="i-check"></i>Делимся вдохновляющими публикациями</li>
+                                    <li><i class="i-check"></i>Помогаем авторам стать еще лучше и успешнее</li>
+                                </ul>
+                                <div class="social-network__items">
+                                    <div class="row">
+                                        <div class="col">
+                                            <a href="#" class="social-link">
+                                                <i class="i-logo-facebook"></i>
+                                                <span>Следить</span>
+                                            </a>
+                                        </div>
+                                        <!-- /.col -->
+                                        <div class="col">
+                                            <a href="#" class="social-link">
+                                                <i class="i-logo-instagram"></i>
+                                                <span>Следить</span>
+                                            </a>
+                                        </div>
+                                        <!-- /.col -->
+                                    </div>
+                                    <!-- /.row -->
+                                    <div class="row">
+                                        <div class="col">
+                                            <a href="#" class="social-link">
+                                                <i class="i-logo-pinterest"></i>
+                                                <span>Следить</span>
+                                            </a>
+                                        </div>
+                                        <!-- /.col -->
+                                        <div class="col">
+                                            <a href="#" class="social-link">
+                                                <i class="i-logo-youtube"></i>
+                                                <span>Cмотреть</span>
+                                            </a>
+                                        </div>
+                                        <!-- /.col -->
+                                    </div>
+                                    <!-- /.row -->
+                                </div>
+                                <!-- /.social-network__items -->
+                            </div>
+                            <!-- /.social-network__content -->
+                            <a href="#" class="btn btn-dark"><i class="i-plus-add"></i>Предложить публикацию</a>
+                        </div>
+                        <!-- /.social-network -->
+                    </div>
+                    <!-- /.card -->
+                    <div class="card">
+                        <a href="#" class="blog-card__item">
+                            <picture class="img"><img src="img/blog/4.jpg" alt="#"></picture>
+                            <h4 class="title">Forbes признал украинскую бабочку одним из главных событий Burning Man</h4>
+                            <p class="text">Национальная Биеннале молодого искусства пройдет с 17 сентября по 30 октября 2019 года и охватит около полусотни различных арт-мероприятий. Локации расположены в 16 местах Харькова, в выставках участвуют проекты со всей Украины.</p>
+                            <div class="info">
+                                <time>24.12.2019</time>
+                            </div>
+                        </a>
+                        <!-- /.blog-card__item -->
+                    </div>
+                    <!-- /.card -->
+                    
+                    <div class="card">
+                        <a href="#" class="blog-card__item">
+                            <picture class="img"><img src="img/blog/5.jpg" alt="#"></picture>
+                            <h4 class="title">Forbes признал украинскую бабочку одним из главных событий Burning Man</h4>
+                            <p class="text">Национальная Биеннале молодого искусства пройдет с 17 сентября по 30 октября 2019 года и охватит около полусотни различных арт-мероприятий. Локации расположены в 16 местах Харькова, в выставках участвуют проекты со всей Украины.</p>
+                            <div class="info">
+                                <time>24.12.2019</time>
+                            </div>
+                        </a>
+                        <!-- /.blog-card__item -->
+                    </div>
+                    <!-- /.card -->
+                    <div class="card">
+                        <a href="#" class="blog-card__item">
+                            <picture class="img"><img src="img/blog/5.jpg" alt="#"></picture>
+                            <h4 class="title">Forbes признал украинскую бабочку одним из главных событий Burning Man</h4>
+                            <p class="text">Национальная Биеннале молодого искусства пройдет с 17 сентября по 30 октября 2019 года и охватит около полусотни различных арт-мероприятий. Локации расположены в 16 местах Харькова, в выставках участвуют проекты со всей Украины.</p>
+                            <div class="info">
+                                <time>24.12.2019</time>
+                            </div>
+                        </a>
+                        <!-- /.blog-card__item -->
+                    </div>
+                    <!-- /.card -->
+                    <div class="card">
+                        <a href="#" class="blog-card__item">
+                            <picture class="img"><img src="img/blog/5.jpg" alt="#"></picture>
+                            <h4 class="title">Forbes признал украинскую бабочку одним из главных событий Burning Man</h4>
+                            <p class="text">Национальная Биеннале молодого искусства пройдет с 17 сентября по 30 октября 2019 года и охватит около полусотни различных арт-мероприятий. Локации расположены в 16 местах Харькова, в выставках участвуют проекты со всей Украины.</p>
+                            <div class="info">
+                                <time>24.12.2019</time>
+                            </div>
+                        </a>
+                        <!-- /.blog-card__item -->
+                    </div>
+                    <!-- /.card -->
+                    <div class="card">
+                        <a href="#" class="blog-card__item">
+                            <picture class="img"><img src="img/blog/1.jpg" alt="#"></picture>
+                            <h4 class="title">Forbes признал украинскую бабочку одним из главных событий Burning Man</h4>
+                            <p class="text">Национальная Биеннале молодого искусства пройдет с 17 сентября по 30 октября 2019 года и охватит около полусотни различных арт-мероприятий. Локации расположены в 16 местах Харькова, в выставках участвуют проекты со всей Украины.</p>
+                            <div class="info">
+                                <time>24.12.2019</time>
+                            </div>
+                        </a>
+                        <!-- /.blog-card__item -->
+                    </div>
+                    <!-- /.card -->
+                    <div class="card">
+                        <a href="#" class="blog-card__item">
+                            <picture class="img"><img src="img/blog/4.jpg" alt="#"></picture>
+                            <h4 class="title">Forbes признал украинскую бабочку одним из главных событий Burning Man</h4>
+                            <p class="text">Национальная Биеннале молодого искусства пройдет с 17 сентября по 30 октября 2019 года и охватит около полусотни различных арт-мероприятий. Локации расположены в 16 местах Харькова, в выставках участвуют проекты со всей Украины.</p>
+                            <div class="info">
+                                <time>24.12.2019</time>
+                            </div>
+                        </a>
+                        <!-- /.blog-card__item -->
+                    </div>
+                    <!-- /.card -->
                 </div>
-                <!-- /.how-works--container -->
+                <!-- /.card-columns -->
+
             </div>
             <!-- /.container -->
-        </section>
-        <!-- /.how-works -->
+        </div>
+        <!-- /.blog-section -->
 
-        <div class="container apply-request-container">
-            <section class="apply-request">
-                <div class="line-decor-top"></div>
-                <div class="apply-request__content">
-                    <div class="h1 text-center">Подать заявку</div>
-                    <form class="apply-request__inner">
-                        <div class="row">
-                            <div class="col-sm-6 col-sm-offset-6">
-                                <div class="form-control--info">Все поля обязательны к заполнению</div>
-                            </div>
-                        </div>
-                        <div class="row apply-request__row">
-                            <div class="col-sm-6 col-upload-avatar">
-                                <div class="form-control--name">Загрузить ваше реальное фото</div>
-                                <div class="upload-avatar">
-                                    <div class="uploadOuter">
-                                        <div id="uploadFilePreview"></div>
-                                        <span class="dragBox">
-                                            <i class="i-art"></i>
-                                            <span class="dragBox__title">Перетащите <br> файл сюда</span>
-                                            <input type="file" onChange="dragNdrop(event)"  ondragover="drag()" ondrop="drop()" id="uploadFile"  />
-                                        </span>
-                                        <label for="uploadFile" class="btn btn-default">Загрузить фото...</label>
-                                    </div>
-                                </div>
-                                <!-- /.upload-avatar -->
-                            </div>
-                            <!-- /.col-sm-6 -->
-                            <div class="col-sm-6">
-                                <div class="container form-container">
-                                    <div class="row">
-                                        <div class="col-sm-6 no-gutter" style="padding-right: 5px;">
-                                            <div class="form-control--name">Имя</div>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <!-- /.col-sm-6 -->
-                                        <div class="col-sm-6 no-gutter">
-                                            <div class="form-control--name">Фамилия</div>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <!-- /.col-sm-6 -->
-                                    </div>
-                                    <!-- /.row -->
-                                    <div class="row">
-                                        <div class="form-control--name">E-mail</div>
-                                        <input type="email" class="form-control">
-                                    </div>
-                                    <!-- /.row -->
-                                    <div class="row">
-                                        <div class="form-control--name">Телефон</div>
-                                        <input type="tel" class="form-control" value="+38">
-                                    </div>
-                                    <!-- /.row -->
-                                    <div class="row">
-                                        <div class="form-control--name">Город</div>
-                                        <select class="form-control">
-                                            <option>Выберите город</option>
-                                            <option>Киев</option>
-                                            <option>Кропивницкий - Кировоградская обл.</option>
-                                            <option>Килия - Одесская обл.</option>
-                                            <option>Киверцы - Волынская обл.</option>
-                                            <option>Кицмань - Черновицкая обл.</option>
-                                            <option>Кириловка - Запорожская обл.</option>
-                                            <option>Кириковка - Сумская обл.</option>
-                                            <option>Кидры - Ровенская обл.</option>
-                                            <option>Кирнасовка - Винницкая обл.</option>
-                                            <option>Кислица - Одесская обл.</option>
-                                            <option>Киевец - Львовская обл.</option>
-                                        </select>
-                                    </div>
-                                    <!-- /.row -->
-                                </div>
-                                <!-- /.container -->
-                            </div>
-                            <!-- /.col-sm-6 -->
-                        </div>
-                        <!-- /.row -->
-                        <div class="textarea-counter">
-                            <div class="textarea-counter-header">
-                                <strong>Пару слов о себе для профиля</strong>
-                                <aside>
-                                    <span class="textarea-counter-1">0</span>/
-                                    <span class="textarea-counter-total-1">0</span>
-                                </aside>
-                            </div>
-                            <textarea class="js-textarea-counter form-control" maxlength="1000" data-count=".textarea-counter-1" data-count-total=".textarea-counter-total-1"></textarea>
-                        </div>
-                        <!-- .textarea-counter -->
-                        <footer class="apply-request__footer">
-                            <label class="check check-label">
-                                <input class="check__input" type="checkbox">
-                                <span class="check__box"></span>
-                                <span class="check__text">Принимаю <a href="#">правила публикации</a></span>
-                            </label>
-                            <button type="submit" class="btn btn-danger">Продолжить</button>
-                        </footer>
-                    </form>
-                    <!-- /.apply-request__inner -->
+        <div class="container">
+            <div class="pagination-wrap">
+                <button class="btn btn-default">Еще публикации <i class="i-down"></i></button>
+                <ul class="pagination">
+                    <!-- <li>
+                        <a href="#" aria-label="Next">
+                            <i class="i-left"></i>
+                        </a>
+                    </li> -->
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <i class="i-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.category-posts__navigation -->
+
+            <hr class="hr">
+
+            <div class="you-watched">
+                <h2 class="h2">Вы смотрели</h2>
+                <div class="owl-carousel owl-carousel--nav owl-you-watched">
+                    <a href="#" class="you-watched__item">
+                        <picture>
+                            <img src="img/you-watched/1.jpg" alt="#">
+                        </picture>
+                        <div class="h6">Вишневый аромат весенних цветов</div>
+                        <div class="price">1 300 грн</div>
+                        <p>44х57 см, Холст/Масло</p>
+                    </a>
+                    <!-- /.you-watched__item -->
+                    <a href="#" class="you-watched__item">
+                        <picture>
+                            <img src="img/you-watched/2.jpg" alt="#">
+                        </picture>
+                        <div class="h6">Волки. Верность</div>
+                        <div class="price">12 400 грн</div>
+                        <p>44х57 см, Холст/Масло</p>
+                    </a>
+                    <!-- /.you-watched__item -->
+                    <a href="#" class="you-watched__item">
+                        <picture>
+                            <img src="img/you-watched/3.jpg" alt="#">
+                        </picture>
+                        <div class="h6">Лунный кот</div>
+                        <div class="price">1000 грн</div>
+                        <p>44х57 см, Холст/Масло</p>
+                    </a>
+                    <!-- /.you-watched__item -->
+                    <a href="#" class="you-watched__item">
+                        <picture>
+                            <img src="img/you-watched/2.jpg" alt="#">
+                        </picture>
+                        <div class="h6">Волки. Верность</div>
+                        <div class="price">12 400 грн</div>
+                        <p>44х57 см, Холст/Масло</p>
+                    </a>
+                    <!-- /.you-watched__item -->
                 </div>
-                <!-- /.apply-request__content -->
-                <div class="line-decor-bottom"></div>
-            </section>
-            <!-- /.apply-request -->
+                <!-- /.owl-carousel -->
+            </div>
+            <!-- /.you-watched -->
         </div>
         <!-- /.container -->
 
-        <div class="questions-answers">
-            <div class="container">
-                <h2>Вопросы и ответы</h2>
-            </div>
-            <!-- /.container -->
-            <div class="accordion-collapse" id="questions-answers">
-                <div class="accordion-collapse__item">
-                    <div class="container">
-                        <a href="#" class="accordion-collapse__link collapsed" data-toggle="collapse" data-target="#id34342547334">
-                            <span>Нужно ли что-то платить за регистрацию?</span>
-                            <i class="i-down"></i>
-                        </a>
-                    </div>
-                    <!-- /.container -->
-                    <div class="collapse" id="id34342547334" data-parent="#questions-answers">
-                        <div class="accordion-collapse__content">
-                            <div class="container">
-                                <p>
-                                   Molbert имеет 30-дневную политику возврата. Это означает, что покупатели могут вернуть нам свои заказы для полного возмещения в любое время в течение 30 дней после даты покупки. В результате мы не можем платить нашим членам за их продажи, пока не истечет 30-дневное окно, и мы уверены, что заказы не будут возвращены. 
-                                </p>
-                                
-                                <p>
-                                    Платежи отправляются 15-го числа каждого месяца за все продажи, которые произошли до 15-го числа предыдущего месяца. Например, 15 ноября мы отправляем платежи за все заказы, которые были размещены 15 октября или ранее.
-                                </p>
-
-                                <p>
-                                    Вот общая точка путаницы. Допустим, вы совершаете продажу 17 октября. Многие из наших членов ожидают, что за эту продажу заплатят 15 ноября. Это не правильно.
-                                </p>
-
-                                <p>
-                                    В этом случае, так как заказ был размещен 17 октября, покупатель должен до 17 ноября вернуть его нам. Поэтому мы не можем оформить платеж 15 ноября.
-                                </p>
-
-                                <p>
-                                    Эта продажа будет выплачена 15 декабря. Опять же - платежи отправляются 15-го числа каждого месяца за все продажи, которые произошли до 15-го числа предыдущего месяца.
-                                </p>
-
-                                <p>
-                                    Если вы выбрали оплату чеком, пожалуйста, подождите 5-10 рабочих дней, чтобы ваш чек прибыл. Если вы выбрали PayPal для оплаты, ваш платеж PayPal будет доставлен до конца 15-го числа.
-                                </p>
-                            </div>
-                            <!-- /.container -->
-                        </div>
-                        <!-- /.accordion-collapse__content -->
-                    </div>
-                    <!-- /.collapse -->
-                </div>
-                <!-- /.accordion-collapse__item -->
-
-                <div class="accordion-collapse__item">
-                    <div class="container">
-                        <a href="#" class="accordion-collapse__link collapsed" data-toggle="collapse" data-target="#id3437334">
-                            <span>Как со мной будут связываться покупатели?</span>
-                            <i class="i-down"></i>
-                        </a>
-                    </div>
-                    <!-- /.container -->
-                    <div class="collapse" id="id3437334" data-parent="#questions-answers">
-                        <div class="accordion-collapse__content">
-                            <div class="container">
-                                <p>
-                                    Вот общая точка путаницы. Допустим, вы совершаете продажу 17 октября. Многие из наших членов ожидают, что за эту продажу заплатят 15 ноября. Это не правильно.
-                                </p>
-
-                                <p>
-                                    В этом случае, так как заказ был размещен 17 октября, покупатель должен до 17 ноября вернуть его нам. Поэтому мы не можем оформить платеж 15 ноября.
-                                </p>
-
-                                <p>
-                                    Эта продажа будет выплачена 15 декабря. Опять же - платежи отправляются 15-го числа каждого месяца за все продажи, которые произошли до 15-го числа предыдущего месяца.
-                                </p>
-
-                                <p>
-                                    Если вы выбрали оплату чеком, пожалуйста, подождите 5-10 рабочих дней, чтобы ваш чек прибыл. Если вы выбрали PayPal для оплаты, ваш платеж PayPal будет доставлен до конца 15-го числа.
-                                </p>
-                            </div>
-                            <!-- /.container -->
-                        </div>
-                        <!-- /.accordion-collapse__content -->
-                    </div>
-                    <!-- /.collapse -->
-                </div>
-                <!-- /.accordion-collapse__item -->
-
-                <div class="accordion-collapse__item">
-                    <div class="container">
-                        <a href="#" class="accordion-collapse__link collapsed" data-toggle="collapse" data-target="#id3437885e95334">
-                            <span>Я сделал продажу. Когда мне будут платить?</span>
-                            <i class="i-down"></i>
-                        </a>
-                    </div>
-                    <!-- /.container -->
-                    <div class="collapse" id="id3437885e95334" data-parent="#questions-answers">
-                        <div class="accordion-collapse__content">
-                            <div class="container">
-                                <p>
-                                    Вот общая точка путаницы. Допустим, вы совершаете продажу 17 октября. Многие из наших членов ожидают, что за эту продажу заплатят 15 ноября. Это не правильно.
-                                </p>
-
-                                <p>
-                                    В этом случае, так как заказ был размещен 17 октября, покупатель должен до 17 ноября вернуть его нам. Поэтому мы не можем оформить платеж 15 ноября.
-                                </p>
-
-                                <p>
-                                    Эта продажа будет выплачена 15 декабря. Опять же - платежи отправляются 15-го числа каждого месяца за все продажи, которые произошли до 15-го числа предыдущего месяца.
-                                </p>
-                            </div>
-                            <!-- /.container -->
-                        </div>
-                        <!-- /.accordion-collapse__content -->
-                    </div>
-                    <!-- /.collapse -->
-                </div>
-                <!-- /.accordion-collapse__item -->
-
-                <div class="accordion-collapse__item">
-                    <div class="container">
-                        <a href="#" class="accordion-collapse__link collapsed" data-toggle="collapse" data-target="#id34378895334">
-                            <span>Molbert отправляет по всему миру?</span>
-                            <i class="i-down"></i>
-                        </a>
-                    </div>
-                    <!-- /.container -->
-                    <div class="collapse" id="id34378895334" data-parent="#questions-answers">
-                        <div class="accordion-collapse__content">
-                            <div class="container">
-                                <p>
-                                    В этом случае, так как заказ был размещен 17 октября, покупатель должен до 17 ноября вернуть его нам. Поэтому мы не можем оформить платеж 15 ноября.
-                                </p>
-
-                                <p>
-                                    Эта продажа будет выплачена 15 декабря. Опять же - платежи отправляются 15-го числа каждого месяца за все продажи, которые произошли до 15-го числа предыдущего месяца.
-                                </p>
-                            </div>
-                            <!-- /.container -->
-                        </div>
-                        <!-- /.accordion-collapse__content -->
-                    </div>
-                    <!-- /.collapse -->
-                </div>
-                <!-- /.accordion-collapse__item -->
-
-                <div class="accordion-collapse__item">
-                    <div class="container">
-                        <a href="#" class="accordion-collapse__link collapsed" data-toggle="collapse" data-target="#id54634495334">
-                            <span>Какова ваша политика отмены/возврата?</span>
-                            <i class="i-down"></i>
-                        </a>
-                    </div>
-                    <!-- /.container -->
-                    <div class="collapse" id="id54634495334" data-parent="#questions-answers">
-                        <div class="accordion-collapse__content">
-                            <div class="container">
-                                <p>
-                                    Если по какой-либо причине вы недовольны покупкой, совершенной вами на Molbert, вы можете вернуть ее нам в течение 30 дней с даты заказа. Как только он прибудет, мы выполним полный возврат стоимости всей покупной цены. Обратите внимание - Molbert не возмещает расходы на исходящую или обратную доставку, если только возврат не связан с дефектом качества.
-                                </p>
-                            </div>
-                            <!-- /.container -->
-                        </div>
-                        <!-- /.accordion-collapse__content -->
-                    </div>
-                    <!-- /.collapse -->
-                </div>
-                <!-- /.accordion-collapse__item -->
-
-                <div class="accordion-collapse__item">
-                    <div class="container">
-                        <a href="#" class="accordion-collapse__link collapsed" data-toggle="collapse" data-target="#id5463449wd5334">
-                            <span>Что происходит, если покупатель отказывается от заказанного им произведения?</span>
-                            <i class="i-down"></i>
-                        </a>
-                    </div>
-                    <!-- /.container -->
-                    <div class="collapse" id="id5463449wd5334" data-parent="#questions-answers">
-                        <div class="accordion-collapse__content">
-                            <div class="container">
-                                <p>
-                                    Если по какой-либо причине вы недовольны покупкой, совершенной вами на Molbert, вы можете вернуть ее нам в течение 30 дней с даты заказа. Как только он прибудет, мы выполним полный возврат стоимости всей покупной цены.
-                                </p>
-                            </div>
-                            <!-- /.container -->
-                        </div>
-                        <!-- /.accordion-collapse__content -->
-                    </div>
-                    <!-- /.collapse -->
-                </div>
-                <!-- /.accordion-collapse__item -->
-            </div>
-            <!-- /.accordion-collapse -->
+        <div class="container margin-bottom--50">
+            <hr class="hr">
         </div>
-        <!-- /.questions-answers -->
 
-        <div class="file-block">
+        <section class="our-social">
             <div class="container">
-                <a href="#" class="file-block__link"><span>Правила публикации</span><i class="i-pdf"></i></a>
-            </div>
-        </div>
-        <!-- /.file-block -->
-
-        <section class="work-art">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="h1">
-                            <span>Новые</span> <br>
-                            работы <br>
-                            <span>наших</span> <br>
-                            художников
+                <div class="our-social__header">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3 class="h3">
+                                <strong>6 200</strong> авторов <br>
+                                <strong>25 000</strong> работ
+                            </h3>
                         </div>
-                    </div>
-                    <!-- /.col-sm-4 -->
-                    <div class="col-sm-4">
-                        <div class="work-art__list">
-                            <h3 class="h3"><a href="#">Картины пейзажа</a></h3>
-                            <ul>
-                                <li><img data-action="zoom" src="img/work-art/1.jpg" alt="#"></li>
-                                <li><img data-action="zoom" src="img/work-art/2.jpg" alt="#"></li>
-                                <li><img data-action="zoom" src="img/work-art/3.jpg" alt="#"></li>
-                                <li><img data-action="zoom" src="img/work-art/4.jpg" alt="#"></li>
-                            </ul>
+                        <!-- /.col-md-4 -->
+                        <div class="col-md-8">
+                            <h2 class="h2">
+                                <a href="#">
+                                    <span>Портреты</span> <br>
+                                    <span>и картины на заказ</span>
+                                </a>
+                            </h2>
                         </div>
-                        <!-- /.work-art__list -->
+                        <!-- /.col-md-8 -->
                     </div>
-                    <!-- /.col-sm-4 -->
-                    <div class="col-sm-4">
-                        <div class="work-art__list">
-                            <h3 class="h3"><a href="#">Картины с цветами</a></h3>
-                            <ul>
-                                <li><img data-action="zoom" src="img/work-art/5.jpg" alt="#"></li>
-                                <li><img data-action="zoom" src="img/work-art/6.jpg" alt="#"></li>
-                                <li><img data-action="zoom" src="img/work-art/7.jpg" alt="#"></li>
-                                <li><img data-action="zoom" src="img/work-art/8.jpg" alt="#"></li>
-                            </ul>
-                        </div>
-                        <!-- /.work-art__list -->
-                    </div>
-                    <!-- /.col-sm-4 -->
+                    <!-- /.row -->
                 </div>
-                <!-- /.row -->
+                <!-- /.our-social__header -->
+                <div class="our-social__content">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="our-social__item facebook">
+                                <i class="i-logo-facebook"></i>
+                                <p>Новинки художников<br> Обсуждение новостей искусства Обзоры и обсуждение</p>
+                                <footer>
+                                    <span>4 220 <br> подписчиков</span>
+                                    <a href="#" class="btn btn-default btn-sm">Следить</a>
+                                </footer>
+                            </div>
+                            <!-- /.our-social__item -->
+                        </div>
+                        <!-- /.col-md-4 -->
+                        <div class="col-md-4">
+                            <div class="our-social__item pinterest">
+                                <i class="i-logo-pinterest"></i>
+                                <p>Еженедельные новинки Специальные предложения</p>
+                                <footer>
+                                    <span>810 <br> шедевров</span>
+                                    <a href="#" class="btn btn-default btn-sm">Посмотреть</a>
+                                </footer>
+                            </div>
+                            <!-- /.our-social__item -->
+                        </div>
+                        <!-- /.col-md-4 -->
+                        <div class="col-md-4">
+                            <div class="our-social__item youtube">
+                                <i class="i-logo-youtube"></i>
+                                <p>Свежие обзоры искусства Интервью с художниками Мастер-классы по рисованию</p>
+                                <footer>
+                                    <span>120 <br> видео</span>
+                                    <a href="#" class="btn btn-default btn-sm">Cмотреть</a>
+                                </footer>
+                            </div>
+                            <!-- /.our-social__item -->
+                        </div>
+                        <!-- /.col-md-4 -->
+                        <div class="col-md-4">
+                            <div class="our-social__item instagram">
+                                <i class="i-logo-instagram"></i>
+                                <p>Сообщество ценителей <br>искусства <br> Новинки от художников</p>
+                                <footer>
+                                    <span>446 <br> публикаций</span>
+                                    <a href="#" class="btn btn-default btn-sm">Поcмотреть</a>
+                                </footer>
+                            </div>
+                            <!-- /.our-social__item -->
+                        </div>
+                        <!-- /.col-md-4 -->
+                        <div class="col-md-4">
+                            <div class="our-social__item telegram">
+                                <i class="i-logo-telegram"></i>
+                                <p>Еженедельные новинки Специальные предложения</p>
+                                <footer>
+                                    <span>515 <br> подписчиков</span>
+                                    <a href="#" class="btn btn-default btn-sm">Читать</a>
+                                </footer>
+                            </div>
+                            <!-- /.our-social__item -->
+                        </div>
+                        <!-- /.col-md-4 -->
+                        <div class="col-md-4">
+                            <div class="our-social__item gmail">
+                                <i class="i-logo-gmail"></i>
+                                <p>Свежие обзоры искусства Интервью с художниками <br> Мастер-классы по рисованию</p>
+                                <form class="gmail-form">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="E-mail">
+                                    </div>
+                                    <button type="submit" class="btn btn-danger">Следить</button>
+                                </form>
+                             </div>
+                            <!-- /.our-social__item -->
+                        </div>
+                        <!-- /.col-md-4 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.our-social__content -->
             </div>
             <!-- /.container -->
         </section>
-        <!-- /.work-art -->
+        <!-- /.our-social -->
+
     </div>
     <!-- /.wrap -->
 
