@@ -1,3 +1,8 @@
+$(".dropzone-init").dropzone({ 
+  url: "/file/post",
+  dictDefaultMessage: ""
+});
+
 ///////////////////////////
 function dragNdrop(event) {
     var fileName = URL.createObjectURL(event.target.files[0]);
@@ -14,7 +19,7 @@ function drop() {
     document.getElementById('uploadFile').parentNode.className = 'dragBox';
 }
 
-$( document ).ready(function() {
+$( document ).ready(function() {  
 
   ////////////////////////////////
   $('[data-toggle="tooltip"]').tooltip()
@@ -23,6 +28,7 @@ $( document ).ready(function() {
   $('.liker__button').on('click', function(){
     $(this).toggleClass('active');
   });
+
 
   ////////////////////////////////////
   $('.owl-you-watched').owlCarousel({
@@ -67,9 +73,25 @@ $( document ).ready(function() {
     dots: false,
     navText: ['<i class="i-left"></i>', '<i class="i-right"></i>']
   });
+  
+  $('.owl-author').owlCarousel({
+    autoWidth: true,
+    margin: 8,
+    nav: true,
+    dots: false,
+    navText: ['<i class="i-left"></i>', '<i class="i-right"></i>']
+  });
+
+  $('.owl-review-author').owlCarousel({
+    items: 1,
+    nav: true,
+    dots: false,
+    navText: ['<i class="i-left"></i>', '<i class="i-right"></i>']
+  });
 
   ////////////////////////////////////////////
   $('.js-textarea-counter').textareaCounter();
+
 
 
   //////////////////////////////////
