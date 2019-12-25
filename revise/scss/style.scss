@@ -372,7 +372,6 @@
 		    margin-left: 4px;
 		}
 		&--info {
-			width: 333px;
 			&.animated {
 				animation-delay: .5s;
 				animation-duration: 2s;
@@ -455,6 +454,7 @@
 
 .messenger-box {
 	display: flex;
+	justify-content: center;
 	margin: 10px 0;
 	a {
 		margin-right: 8px;
@@ -477,6 +477,16 @@
 		height: 100%;
 		object-fit: cover;
 	}
+}
+
+
+.google-table {
+	width: 100%;
+	min-height: 200px;
+}
+
+.waffle, .grid-fixed-table {
+	width: 100% !important;
 }
 
 
