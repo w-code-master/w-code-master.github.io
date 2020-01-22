@@ -114,19 +114,85 @@
                     </div>
 
                     <div class="header-bar">
-                        <div class="header-bar__item">
+                        <a href="#" class="header-bar__item d-sm-none" data-toggle="modal" data-target="#modalPhoneSearch">
+                            <i class="i-search"></i>
+                        </a>
+                        <!-- /.header-bar__item -->
+
+                        <div class="header-bar__item d-none d-sm-block">
                             <form class="search__form">
-                                <input type="search" name="search" id="search" class="search__input" placeholder="например: цветы, автор, акварель">
-                                <label for="search" class="search__label"><i class="i-search"></i></label>
+                                <input type="search" class="search__input" placeholder="например: цветы, акварель">
+                                <div class="search__label"><i class="i-search"></i></div>
+
+                                <div class="search__autocomplete">
+                                    <div class="search__autocomplete--content">
+                                        <ul class="search__autocomplete--list">
+                                            <li><a href="#">цветы</a></li>
+                                            <li><a href="#">цветы лилии</a></li>
+                                            <li><a href="#">цветы пионы</a></li>
+                                            <li><a href="#">цветы розы</a></li>
+                                        </ul>
+                                        <div class="search__autocomplete--items">
+                                            <a href="#" class="item">
+                                                <picture class="picture"><img src="img/main-posts/1.jpg" alt="#"></picture>
+                                                <h4 class="title">Растения, цветы и камни</h4>
+                                                <span class="subtitle">Выбранская Алла</span>
+                                                <div class="price">1 300 грн</div>
+                                            </a>
+                                            <!-- /.item -->
+                                            <a href="#" class="item">
+                                                <picture class="picture"><img src="img/main-posts/1.jpg" alt="#"></picture>
+                                                <h4 class="title">Растения, цветы и камни</h4>
+                                                <span class="subtitle">Выбранская Алла</span>
+                                                <div class="price">1 300 грн</div>
+                                            </a>
+                                            <!-- /.item -->
+                                            <a href="#" class="item">
+                                                <picture class="picture"><img src="img/main-posts/1.jpg" alt="#"></picture>
+                                                <h4 class="title">Растения, цветы и камни</h4>
+                                                <span class="subtitle">Выбранская Алла</span>
+                                                <div class="price">1 300 грн</div>
+                                            </a>
+                                            <!-- /.item -->
+                                            <a href="#" class="item">
+                                                <picture class="picture"><img src="img/main-posts/1.jpg" alt="#"></picture>
+                                                <h4 class="title">Растения, цветы и камни</h4>
+                                                <span class="subtitle">Выбранская Алла</span>
+                                                <div class="price">1 300 грн</div>
+                                            </a>
+                                            <!-- /.item -->
+                                            <a href="#" class="item">
+                                                <picture class="picture"><img src="img/main-posts/1.jpg" alt="#"></picture>
+                                                <h4 class="title">Растения, цветы и камни</h4>
+                                                <span class="subtitle">Выбранская Алла</span>
+                                                <div class="price">1 300 грн</div>
+                                            </a>
+                                            <!-- /.item -->
+                                        </div>
+                                        <!-- /.search__autocomplete--items -->
+                                    </div>
+                                    <!-- /.search__autocomplete--content -->
+
+                                    <a href="#" class="search__autocomplete--result">
+                                        <strong>Все результаты</strong>
+                                        <span>390</span>
+                                    </a>
+                                    <!-- /.search__autocomplete--result -->
+                                </div>
+                                <!-- /.search__autocomplete -->
                             </form>
                         </div>
+                        <!-- /.header-bar__item -->
+
                         <a href="#" class="header-bar__item">
-                            <span>4</span>
+                            <span class="header-bar--info">4</span>
                             <i class="i-favorite"></i>
                         </a>
+                        <!-- /.header-bar__item -->
+
                         <div class="dropdown">
                             <a href="#" class="header-bar__item dropdown-toggle dropdown-toggle-arrow-none" role="button" id="dropdownMenuCart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span>20</span>
+                                <span class="header-bar--info">20</span>
                                 <i class="i-cart"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuCart">
@@ -198,6 +264,7 @@
                             <!-- /.dropdown-menu -->
                         </div>
                         <!-- /.dropdown -->
+                        
                         <div class="d-lg-none">
                             <a href="#" class="header-bar__item" data-toggle="modal" data-target="#modalPhoneMenu">
                                 <i class="i-gumburger"></i>
@@ -1455,6 +1522,77 @@
             <!-- /.modal-content -->
         </div>
         <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <!-- Modal #modalPhoneSearch -->
+    <div class="modal modal-phone-search fade" id="modalPhoneSearch" tabindex="-1" role="dialog" aria-hidden="true">
+      <button type="button" class="btn btn-close-modal" data-dismiss="modal" aria-label="Close">
+        <i class="i-close"></i>
+      </button>
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <form>
+                <div class="search-ui">
+                    <input type="search" class="search-ui__input form-control" placeholder="например: цветы, акварель" autofocus="autofocus">
+                    <button class="search-ui__btn"><i class="i-search"></i></button>
+                </div>
+                <ul class="search__autocomplete--list">
+                    <li><a href="#">цветы</a></li>
+                    <li><a href="#">цветы лилии</a></li>
+                    <li><a href="#">цветы пионы</a></li>
+                    <li><a href="#">цветы розы</a></li>
+                </ul>
+                <div class="search__autocomplete--items">
+                    <a href="#" class="item">
+                        <picture class="picture"><img src="img/main-posts/1.jpg" alt="#"></picture>
+                        <h4 class="title">Растения, цветы и камни</h4>
+                        <span class="subtitle">Выбранская Алла</span>
+                        <div class="price">1 300 грн</div>
+                    </a>
+                    <!-- /.item -->
+                    <a href="#" class="item">
+                        <picture class="picture"><img src="img/main-posts/1.jpg" alt="#"></picture>
+                        <h4 class="title">Растения, цветы и камни</h4>
+                        <span class="subtitle">Выбранская Алла</span>
+                        <div class="price">1 300 грн</div>
+                    </a>
+                    <!-- /.item -->
+                    <a href="#" class="item">
+                        <picture class="picture"><img src="img/main-posts/1.jpg" alt="#"></picture>
+                        <h4 class="title">Растения, цветы и камни</h4>
+                        <span class="subtitle">Выбранская Алла</span>
+                        <div class="price">1 300 грн</div>
+                    </a>
+                    <!-- /.item -->
+                    <a href="#" class="item">
+                        <picture class="picture"><img src="img/main-posts/1.jpg" alt="#"></picture>
+                        <h4 class="title">Растения, цветы и камни</h4>
+                        <span class="subtitle">Выбранская Алла</span>
+                        <div class="price">1 300 грн</div>
+                    </a>
+                    <!-- /.item -->
+                    <a href="#" class="item">
+                        <picture class="picture"><img src="img/main-posts/1.jpg" alt="#"></picture>
+                        <h4 class="title">Растения, цветы и камни</h4>
+                        <span class="subtitle">Выбранская Алла</span>
+                        <div class="price">1 300 грн</div>
+                    </a>
+                    <!-- /.item -->
+                </div>
+                <!-- /.search__autocomplete--items -->
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a href="#" class="search__autocomplete--result">
+                <strong>Все результаты</strong>
+                <span>390</span>
+            </a>
+            <!-- /.search__autocomplete--result -->
+          </div>
+        </div>
+      </div>
     </div>
     <!-- /.modal -->
 
