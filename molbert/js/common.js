@@ -213,3 +213,19 @@ $(document).mouseup(function (e) {
     search__autocomplete.removeClass('show');
   }
 });
+
+
+
+//////////////////////////////////////////////
+$('.toggle-content').hide();
+$('.toggle-content__btn').on('click', function(e) {
+  e.preventDefault();
+
+  $(this).addClass('disabled');
+
+  $('.toggle-content').toggle();
+});
+$('.toggle-content__close').on('click', function(e) {
+  $('.toggle-content__btn').removeClass('disabled');
+  $('.toggle-content').toggle();
+});

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Author-order | Molbert</title>
+    <title>Author-one | Molbert</title>
 
     <link rel="icon" href="img/favicon.png">
     <meta property="og:image" content="img/i-logo.png">
@@ -16,6 +16,27 @@
   <body>
     
     <div class="wrap">
+
+        <section class="section-description order-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h1 class="h1">Коллекции для вашего настроения</h1>
+                    </div>
+                    <!-- /.col-md-4 -->
+                    <div class="col-md-8">
+                        <article class="section-description__article">
+                            <p>У нас уже более 2620 авторских работ современной живописи.</p>
+                            <p>Сегодня для того, чтобы приобрести картину – нет необходимости посещать выставки в галереях или искать художников в интернете. Огромный пласт искусства сосредоточен в ваших руках, достаточно зайти на нужный веб-сайт и выбрать наиболее подходящий для вашего интерьера вариант. Не каждому дано быть коллекционером или тонким ценителем искусств, но это не повод упустить возможность наслаждаться предметами искусства, почувствовать их душой, подарить приятные эмоции себе и окружающим, упорядочить свои мысли, создать чувство комфорта, уюта и радости бытия. Не важно, какие вы хотите купить картины в интернет-магазине. Важно то, что это доступно для каждого и в огромном разнообразии стилей и техник. Наш интернет-магазин представляет множество коллекций разной тематики, которые помогут подчеркнуть утонченный вкус владельцев жилья.</p>
+                            <p>У нас уже более 2620 авторских работ современной живописи. Сегодня для того, чтобы приобрести картину – нет необходимости посещать выставки в галереях или искать художников в интернете. Огромный пласт искусства сосредоточен в ваших руках, достаточно зайти на нужный веб-сайт и выбрать наиболее подходящий для вашего интерьера вариант. Не каждому дано быть коллекционером или тонким ценителем искусств, но это не повод упустить возможность наслаждаться предметами искусства, почувствовать их душой, подарить приятные эмоции себе и окружающим, упорядочить свои мысли, создать чувство комфорта, уюта и радости бытия. Не важно, какие вы хотите купить картины в интернет-магазине. Важно то, что это доступно для каждого и в огромном разнообразии стилей и техник. Наш интернет-магазин представляет множество коллекций разной тематики, которые помогут подчеркнуть утонченный вкус владельцев жилья.</p>
+                        </article>
+                    </div>
+                    <!-- /.col-md-8 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
 
         <header class="header-static">
             <div class="header-user">
@@ -327,7 +348,7 @@
                         Пишу картины маслом, цветы, пейзажи в стиле реализм. Если понравившаяся моя картина продана, могу сделать авторский повтор.
                     </p>
                     <div class="d-flex align-items-center">
-                        <a href="#" class="btn btn-danger disabled mr-4">Заказать картину</a>
+                        <a href="#" class="btn btn-danger mr-4 toggle-content__btn">Заказать картину</a>
                         <div class="liker">
                             <button class="liker__button">
                                 <i class="i-favorite"></i>
@@ -342,94 +363,129 @@
             <!-- /.row -->
 
             <hr class="hr">
-
-            <form class="form-section mb-4">
-                <button type="button" class="close">
+            
+            <form class="form-section toggle-content">
+                <button type="button" class="close toggle-content__close">
                     <i class="i-close"></i>
                 </button>
                 <div class="form-section__content">
                     <div class="row">
                         <div class="col">
                             <h3 class="h3 fw-600">Заказать картину</h3>
-                            <nav class="nav-scroller">
-                                <ul>
-                                    <li class="active"><a href="#"><span>Заказываю впервые</span></a></li>
-                                    <li><a href="#"><span>Я зарегистрирован</span></a></li>
-                                </ul>
+                            <nav class="navigation-tabs">
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="idf4rmfi4t9sdf" data-toggle="tab" href="#ifjru945860" role="tab" aria-controls="ifjru945860" aria-selected="true">Заказываю впервые</a>
+                                    <a class="nav-item nav-link" id="idkfkiri49fji3" data-toggle="tab" href="#jcdijrufr95t4" role="tab" aria-controls="jcdijrufr95t4" aria-selected="false">Я зарегистрирован</a>
+                                </div>
+                                <!-- /.nav -->
                             </nav>
                         </div>
-                    </div>
-                    <!-- /.row -->
-                    <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="form-group">
-                                <label>Телефон</label>
-                                <input type="tel" class="form-control">
-                            </div>
-
-                            <div class="form-group form-group-bg">
-                                <label>E-mail</label>
-                                <input type="email" class="form-control">
-                                <p>Заказать могут только зарегистрированные пользователи. Пароль к кабинету будет отправлен на этот e-mail</p>
-                            </div>
-
-                            <div class="form-row no-gutters">
-                                <div class="form-group col">
-                                    <label>Имя</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group col">
-                                    <label>Фамилия</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <!-- /.form-row -->
-                        </div>
-                        <!-- /.col -->
-
-                        <div class="col-12 col-md-6 col-lg-8">
-                            <div class="textarea-counter">
-                                <div class="textarea-counter-header">
-                                    <span>Комментарий</span>
-                                    <aside>
-                                        <span class="textarea-counter-1">0</span>/
-                                        <span class="textarea-counter-total-1">1000</span>
-                                    </aside>
-                                </div>
-                                <textarea class="js-textarea-counter form-control" maxlength="1000" data-count=".textarea-counter-1" data-count-total=".textarea-counter-total-1"></textarea>
-                                <p class="text-black-50">Укажите желаемый размер, технику исполнения, форму и свои пожелания</p>
-                            </div>
-
-                            <div class="add-photo-block">
-                                <button class="btn-add">
-                                    <i class="i-images"></i>
-                                    <span class="btn-add__title">добавить фото</span>
-                                    <input type="file">
-                                </button>
-                            </div>
-                        </div>
                         <!-- /.col -->
                     </div>
                     <!-- /.row -->
+
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="ifjru945860" role="tabpanel" aria-labelledby="idf4rmfi4t9sdf">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <label>Телефон</label>
+                                        <input type="tel" class="form-control">
+                                    </div>
+
+                                    <div class="form-group form-group-bg">
+                                        <label>E-mail</label>
+                                        <input type="email" class="form-control">
+                                        <p>Заказать могут только зарегистрированные пользователи. Пароль к кабинету будет отправлен на этот e-mail</p>
+                                    </div>
+
+                                    <div class="form-row no-gutters">
+                                        <div class="form-group col">
+                                            <label>Имя</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group col">
+                                            <label>Фамилия</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <!-- /.form-row -->
+                                </div>
+                                <!-- /.col -->
+
+                                <div class="col-12 col-md-6 col-lg-8">
+                                    <div class="textarea-counter">
+                                        <div class="textarea-counter-header">
+                                            <span>Комментарий</span>
+                                            <aside>
+                                                <span class="textarea-counter-1">0</span>/
+                                                <span class="textarea-counter-total-1">1000</span>
+                                            </aside>
+                                        </div>
+                                        <textarea class="js-textarea-counter form-control" maxlength="1000" data-count=".textarea-counter-1" data-count-total=".textarea-counter-total-1"></textarea>
+                                        <p class="text-black-50">Укажите желаемый размер, технику исполнения, форму и свои пожелания</p>
+                                    </div>
+
+                                    <div class="add-photo-block">
+                                        <button class="btn-add">
+                                            <i class="i-images"></i>
+                                            <span class="btn-add__title">добавить фото</span>
+                                            <input type="file">
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- /.col -->
+                            </div>
+                            <!-- /.row -->
+                            <footer class="form-section__footer">
+                                <div class="row justify-content-end">
+                                    <div class="col-auto">
+                                        <button class="btn btn-danger">Отправить заказ автору</button>
+                                        <button class="btn">Отменить</button>
+                                    </div>
+                                    <!-- /.col-auto -->
+                                </div>
+                                <!-- /.row -->
+                            </footer>
+                        </div>
+                        <!-- /.tab-pane -->
+
+                        <div class="tab-pane fade" id="jcdijrufr95t4" role="tabpanel" aria-labelledby="idkfkiri49fji3">
+                            <div class="row pb-4">
+                                <div class="col-12 col-sm-8 col-md-6 col-xl-4">
+                                    <div class="form-group">
+                                        <label>E-mail</label>
+                                        <input type="email" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Пароль</label>
+                                        <input type="password" class="form-control">
+                                    </div>
+                                </div>
+                                <!-- /.col -->
+                            </div>
+                            <!-- /.row -->
+                            <footer class="form-section__footer">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <button class="btn btn-dark">Войти</button>
+                                        <button class="btn">Отменить</button>
+                                    </div>
+                                    <!-- /.col-auto -->
+                                </div>
+                                <!-- /.row -->
+                            </footer>
+                        </div>
+                        <!-- /.tab-pane -->
+                    </div>
+                    <!-- /.tab-content -->
+
                 </div>
                 <!-- /.form-section__content -->
-
-                <footer class="form-section__footer">
-                    <div class="row justify-content-end">
-                        <div class="col-auto">
-                            <button class="btn btn-danger">Отправить заказ автору</button>
-                            <button class="btn">Отменить</button>
-                        </div>
-                        <!-- /.col-auto -->
-                    </div>
-                    <!-- /.row -->
-                </footer>
             </form>
             <!-- /.form-section -->
 
-            <hr class="hr mb-4">
-
-            <div class="row">
+            <div class="row mt-4">
                 <div class="col-12 col-md-6 col-lg-7 mb-2">
                     <img class="img-fluid-100" src="img/author-one-photo.jpg" alt="#">
                 </div>
@@ -508,8 +564,1290 @@
 
             <hr class="hr mt-4 mb-5">
 
+            <h2 class="h2">Другие работы автора</h2>
+
+            <div class="category-posts column-count-2">
+
+                <div class="category-posts__item">
+                    <div>
+                        <a href="#" class="category-posts__img"><img src="img/other-work/3.jpg" alt="#"></a>
+                        <div class="category-posts__content two-variant">
+                            <div class="category-posts__meta">
+                                <a href="#" class="category-posts--link view">пейзаж</a>
+                                <span class="category-posts--price">2 500 грн</span>
+                            </div>
+                            <!-- /.category-posts__meta -->
+                            <div class="category-posts__author">
+                                <div class="category-posts__author--info">
+                                    <div><a href="#" class="category-posts--link">пейзаж</a></div>
+                                    <span class="top-view">топ просмотров</span>
+                                    <div class="title"><a href="#">Уютная деревня под горой</a></div>
+                                    <strong class="price">1 500 грн</strong>
+                                    <div class="liker">
+                                        <button class="liker__button">
+                                            <i class="i-favorite"></i>
+                                            <i class="i-favorite-solid"></i>
+                                        </button>
+                                        <span class="liker__counter">12</span>
+                                    </div>
+                                </div>
+                                <!-- /.category-posts__author--info -->
+                                <div class="avatar-48x48">
+                                    <div class="avatar-48x48__img"><img src="img/avatar-48x48.jpg" alt="#"></div>
+                                    <div class="avatar-48x48__info">
+                                        <a href="#">Моторный Роман</a>
+                                        <div class="avatar-48x48__info--descrp">
+                                            <span>Художник</span>
+                                            <span class="trusted">
+                                                <i class="i-check-mark"></i>
+                                                <span>trusted</span>
+                                                <i class="i-info" data-toggle="tooltip" data-placement="right" title="" data-original-title="Проверенный художник"></i>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            масло/холст <br> 57х44 см
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-speed-view" data-toggle="modal" data-target="#modalSpeedView">Быстрый просмотр <i class="i-vision"></i></a>
+                            </div>
+                            <!-- /.category-posts__author -->
+                        </div>
+                        <!-- /.category-posts__content -->
+                    </div>
+                </div>
+                <!-- /.category-posts__item -->
+
+                <div class="category-posts__item">
+                    <div>
+                        <a href="#" class="category-posts__img"><img src="img/other-work/6.jpg" alt="#"></a>
+                        <div class="category-posts__content two-variant">
+                            <div class="category-posts__meta">
+                                <a href="#" class="category-posts--link view">пейзаж</a>
+                                <span class="category-posts--price">2 500 грн</span>
+                            </div>
+                            <!-- /.category-posts__meta -->
+                            <div class="category-posts__author">
+                                <div class="category-posts__author--info">
+                                    <div><a href="#" class="category-posts--link">пейзаж</a></div>
+                                    <span class="top-view">топ просмотров</span>
+                                    <div class="title"><a href="#">Уютная деревня под горой</a></div>
+                                    <strong class="price">1 500 грн</strong>
+                                    <div class="liker">
+                                        <button class="liker__button">
+                                            <i class="i-favorite"></i>
+                                            <i class="i-favorite-solid"></i>
+                                        </button>
+                                        <span class="liker__counter">12</span>
+                                    </div>
+                                </div>
+                                <!-- /.category-posts__author--info -->
+                                <div class="avatar-48x48">
+                                    <div class="avatar-48x48__img"><img src="img/avatar-48x48.jpg" alt="#"></div>
+                                    <div class="avatar-48x48__info">
+                                        <a href="#">Моторный Роман</a>
+                                        <div class="avatar-48x48__info--descrp">
+                                            <span>Художник</span>
+                                            <span class="trusted">
+                                                <i class="i-check-mark"></i>
+                                                <span>trusted</span>
+                                                <i class="i-info" data-toggle="tooltip" data-placement="right" title="" data-original-title="Проверенный художник"></i>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            масло/холст <br> 57х44 см
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-speed-view" data-toggle="modal" data-target="#modalSpeedView">Быстрый просмотр <i class="i-vision"></i></a>
+                            </div>
+                            <!-- /.category-posts__author -->
+                        </div>
+                        <!-- /.category-posts__content -->
+                    </div>
+                </div>
+                <!-- /.category-posts__item -->
+
+                <div class="category-posts__item">
+                    <div>
+                        <a href="#" class="category-posts__img"><img src="img/other-work/5.jpg" alt="#"></a>
+                        <div class="category-posts__content two-variant">
+                            <div class="category-posts__meta">
+                                <a href="#" class="category-posts--link view">пейзаж</a>
+                                <span class="category-posts--price">2 500 грн</span>
+                            </div>
+                            <!-- /.category-posts__meta -->
+                            <div class="category-posts__author">
+                                <div class="category-posts__author--info">
+                                    <div><a href="#" class="category-posts--link">пейзаж</a></div>
+                                    <span class="top-view">топ просмотров</span>
+                                    <div class="title"><a href="#">Уютная деревня под горой</a></div>
+                                    <strong class="price">1 500 грн</strong>
+                                    <div class="liker">
+                                        <button class="liker__button">
+                                            <i class="i-favorite"></i>
+                                            <i class="i-favorite-solid"></i>
+                                        </button>
+                                        <span class="liker__counter">12</span>
+                                    </div>
+                                </div>
+                                <!-- /.category-posts__author--info -->
+                                <div class="avatar-48x48">
+                                    <div class="avatar-48x48__img"><img src="img/avatar-48x48.jpg" alt="#"></div>
+                                    <div class="avatar-48x48__info">
+                                        <a href="#">Моторный Роман</a>
+                                        <div class="avatar-48x48__info--descrp">
+                                            <span>Художник</span>
+                                            <span class="trusted">
+                                                <i class="i-check-mark"></i>
+                                                <span>trusted</span>
+                                                <i class="i-info" data-toggle="tooltip" data-placement="right" title="" data-original-title="Проверенный художник"></i>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            масло/холст <br> 57х44 см
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-speed-view" data-toggle="modal" data-target="#modalSpeedView">Быстрый просмотр <i class="i-vision"></i></a>
+                            </div>
+                            <!-- /.category-posts__author -->
+                        </div>
+                        <!-- /.category-posts__content -->
+                    </div>
+                </div>
+                <!-- /.category-posts__item -->
+
+                <div class="category-posts__item">
+                    <div>
+                        <a href="#" class="category-posts__img"><img src="img/other-work/4.jpg" alt="#"></a>
+                        <div class="category-posts__content two-variant">
+                            <div class="category-posts__meta">
+                                <a href="#" class="category-posts--link view">пейзаж</a>
+                                <span class="category-posts--price">2 500 грн</span>
+                            </div>
+                            <!-- /.category-posts__meta -->
+                            <div class="category-posts__author">
+                                <div class="category-posts__author--info">
+                                    <div><a href="#" class="category-posts--link">пейзаж</a></div>
+                                    <span class="top-view">топ просмотров</span>
+                                    <div class="title"><a href="#">Уютная деревня под горой</a></div>
+                                    <strong class="price">1 500 грн</strong>
+                                    <div class="liker">
+                                        <button class="liker__button">
+                                            <i class="i-favorite"></i>
+                                            <i class="i-favorite-solid"></i>
+                                        </button>
+                                        <span class="liker__counter">12</span>
+                                    </div>
+                                </div>
+                                <!-- /.category-posts__author--info -->
+                                <div class="avatar-48x48">
+                                    <div class="avatar-48x48__img"><img src="img/avatar-48x48.jpg" alt="#"></div>
+                                    <div class="avatar-48x48__info">
+                                        <a href="#">Моторный Роман</a>
+                                        <div class="avatar-48x48__info--descrp">
+                                            <span>Художник</span>
+                                            <span class="trusted">
+                                                <i class="i-check-mark"></i>
+                                                <span>trusted</span>
+                                                <i class="i-info" data-toggle="tooltip" data-placement="right" title="" data-original-title="Проверенный художник"></i>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            масло/холст <br> 57х44 см
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-speed-view" data-toggle="modal" data-target="#modalSpeedView">Быстрый просмотр <i class="i-vision"></i></a>
+                            </div>
+                            <!-- /.category-posts__author -->
+                        </div>
+                        <!-- /.category-posts__content -->
+                    </div>
+                </div>
+                <!-- /.category-posts__item -->
+
+                <div class="category-posts__item">
+                    <div>
+                        <a href="#" class="category-posts__img"><img src="img/other-work/8.jpg" alt="#"></a>
+                        <div class="category-posts__content two-variant">
+                            <div class="category-posts__meta">
+                                <a href="#" class="category-posts--link view">пейзаж</a>
+                                <span class="category-posts--price">2 500 грн</span>
+                            </div>
+                            <!-- /.category-posts__meta -->
+                            <div class="category-posts__author">
+                                <div class="category-posts__author--info">
+                                    <div><a href="#" class="category-posts--link">пейзаж</a></div>
+                                    <span class="top-view">топ просмотров</span>
+                                    <div class="title"><a href="#">Уютная деревня под горой</a></div>
+                                    <strong class="price">1 500 грн</strong>
+                                    <div class="liker">
+                                        <button class="liker__button">
+                                            <i class="i-favorite"></i>
+                                            <i class="i-favorite-solid"></i>
+                                        </button>
+                                        <span class="liker__counter">12</span>
+                                    </div>
+                                </div>
+                                <!-- /.category-posts__author--info -->
+                                <div class="avatar-48x48">
+                                    <div class="avatar-48x48__img"><img src="img/avatar-48x48.jpg" alt="#"></div>
+                                    <div class="avatar-48x48__info">
+                                        <a href="#">Моторный Роман</a>
+                                        <div class="avatar-48x48__info--descrp">
+                                            <span>Художник</span>
+                                            <span class="trusted">
+                                                <i class="i-check-mark"></i>
+                                                <span>trusted</span>
+                                                <i class="i-info" data-toggle="tooltip" data-placement="right" title="" data-original-title="Проверенный художник"></i>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            масло/холст <br> 57х44 см
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-speed-view" data-toggle="modal" data-target="#modalSpeedView">Быстрый просмотр <i class="i-vision"></i></a>
+                            </div>
+                            <!-- /.category-posts__author -->
+                        </div>
+                        <!-- /.category-posts__content -->
+                    </div>
+                </div>
+                <!-- /.category-posts__item -->
+
+                <div class="category-posts__item">
+                    <div>
+                        <a href="#" class="category-posts__img"><img src="img/other-work/9.jpg" alt="#"></a>
+                        <div class="category-posts__content two-variant">
+                            <div class="category-posts__meta">
+                                <a href="#" class="category-posts--link view">пейзаж</a>
+                                <span class="category-posts--price">2 500 грн</span>
+                            </div>
+                            <!-- /.category-posts__meta -->
+                            <div class="category-posts__author">
+                                <div class="category-posts__author--info">
+                                    <div><a href="#" class="category-posts--link">пейзаж</a></div>
+                                    <span class="top-view">топ просмотров</span>
+                                    <div class="title"><a href="#">Уютная деревня под горой</a></div>
+                                    <strong class="price">1 500 грн</strong>
+                                    <div class="liker">
+                                        <button class="liker__button">
+                                            <i class="i-favorite"></i>
+                                            <i class="i-favorite-solid"></i>
+                                        </button>
+                                        <span class="liker__counter">12</span>
+                                    </div>
+                                </div>
+                                <!-- /.category-posts__author--info -->
+                                <div class="avatar-48x48">
+                                    <div class="avatar-48x48__img"><img src="img/avatar-48x48.jpg" alt="#"></div>
+                                    <div class="avatar-48x48__info">
+                                        <a href="#">Моторный Роман</a>
+                                        <div class="avatar-48x48__info--descrp">
+                                            <span>Художник</span>
+                                            <span class="trusted">
+                                                <i class="i-check-mark"></i>
+                                                <span>trusted</span>
+                                                <i class="i-info" data-toggle="tooltip" data-placement="right" title="" data-original-title="Проверенный художник"></i>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            масло/холст <br> 57х44 см
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-speed-view" data-toggle="modal" data-target="#modalSpeedView">Быстрый просмотр <i class="i-vision"></i></a>
+                            </div>
+                            <!-- /.category-posts__author -->
+                        </div>
+                        <!-- /.category-posts__content -->
+                    </div>
+                </div>
+                <!-- /.category-posts__item -->
+
+                <div class="category-posts__item">
+                    <div>
+                        <a href="#" class="category-posts__img"><img src="img/other-work/10.jpg" alt="#"></a>
+                        <div class="category-posts__content two-variant">
+                            <div class="category-posts__meta">
+                                <a href="#" class="category-posts--link view">пейзаж</a>
+                                <span class="category-posts--price">2 500 грн</span>
+                            </div>
+                            <!-- /.category-posts__meta -->
+                            <div class="category-posts__author">
+                                <div class="category-posts__author--info">
+                                    <div><a href="#" class="category-posts--link">пейзаж</a></div>
+                                    <span class="top-view">топ просмотров</span>
+                                    <div class="title"><a href="#">Уютная деревня под горой</a></div>
+                                    <strong class="price">1 500 грн</strong>
+                                    <div class="liker">
+                                        <button class="liker__button">
+                                            <i class="i-favorite"></i>
+                                            <i class="i-favorite-solid"></i>
+                                        </button>
+                                        <span class="liker__counter">12</span>
+                                    </div>
+                                </div>
+                                <!-- /.category-posts__author--info -->
+                                <div class="avatar-48x48">
+                                    <div class="avatar-48x48__img"><img src="img/avatar-48x48.jpg" alt="#"></div>
+                                    <div class="avatar-48x48__info">
+                                        <a href="#">Моторный Роман</a>
+                                        <div class="avatar-48x48__info--descrp">
+                                            <span>Художник</span>
+                                            <span class="trusted">
+                                                <i class="i-check-mark"></i>
+                                                <span>trusted</span>
+                                                <i class="i-info" data-toggle="tooltip" data-placement="right" title="" data-original-title="Проверенный художник"></i>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            масло/холст <br> 57х44 см
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-speed-view" data-toggle="modal" data-target="#modalSpeedView">Быстрый просмотр <i class="i-vision"></i></a>
+                            </div>
+                            <!-- /.category-posts__author -->
+                        </div>
+                        <!-- /.category-posts__content -->
+                    </div>
+                </div>
+                <!-- /.category-posts__item -->
+
+                <div class="category-posts__item">
+                    <div>
+                        <a href="#" class="category-posts__img"><img src="img/other-work/5.jpg" alt="#"></a>
+                        <div class="category-posts__content two-variant">
+                            <div class="category-posts__meta">
+                                <a href="#" class="category-posts--link view">пейзаж</a>
+                                <span class="category-posts--price">2 500 грн</span>
+                            </div>
+                            <!-- /.category-posts__meta -->
+                            <div class="category-posts__author">
+                                <div class="category-posts__author--info">
+                                    <div><a href="#" class="category-posts--link">пейзаж</a></div>
+                                    <span class="top-view">топ просмотров</span>
+                                    <div class="title"><a href="#">Уютная деревня под горой</a></div>
+                                    <strong class="price">1 500 грн</strong>
+                                    <div class="liker">
+                                        <button class="liker__button">
+                                            <i class="i-favorite"></i>
+                                            <i class="i-favorite-solid"></i>
+                                        </button>
+                                        <span class="liker__counter">12</span>
+                                    </div>
+                                </div>
+                                <!-- /.category-posts__author--info -->
+                                <div class="avatar-48x48">
+                                    <div class="avatar-48x48__img"><img src="img/avatar-48x48.jpg" alt="#"></div>
+                                    <div class="avatar-48x48__info">
+                                        <a href="#">Моторный Роман</a>
+                                        <div class="avatar-48x48__info--descrp">
+                                            <span>Художник</span>
+                                            <span class="trusted">
+                                                <i class="i-check-mark"></i>
+                                                <span>trusted</span>
+                                                <i class="i-info" data-toggle="tooltip" data-placement="right" title="" data-original-title="Проверенный художник"></i>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            масло/холст <br> 57х44 см
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-speed-view" data-toggle="modal" data-target="#modalSpeedView">Быстрый просмотр <i class="i-vision"></i></a>
+                            </div>
+                            <!-- /.category-posts__author -->
+                        </div>
+                        <!-- /.category-posts__content -->
+                    </div>
+                </div>
+                <!-- /.category-posts__item -->
+            </div>
+            <!-- /.category-posts -->
+
+            <div class="pagination-wrap">
+                <button class="btn btn-default">Еще работы <i class="i-down"></i></button>
+                <ul class="pagination">
+                    <!-- <li>
+                        <a href="#" aria-label="Next">
+                            <i class="i-left"></i>
+                        </a>
+                    </li> -->
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <i class="i-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="d-none d-md-block">
+                <hr class="hr mb-5">
+
+                <h2 class="h2 mb-3">Мнения об авторе</h2>
+
+                <ul class="review-list">
+                    <li class="review-list__item pb-4">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="category-posts__item">
+                                    <div>
+                                        <a href="#" class="category-posts__img"><img src="img/work/2.jpg" alt="#"></a>
+                                        <div class="category-posts__content two-variant">
+                                            <div class="category-posts__sales">
+                                                <strong>Продано</strong>
+                                                <a href="#" class="btn btn-danger btn-xs">Доступно под заказ</a>
+                                            </div>
+                                            <!-- /.category-posts__sales -->
+                                        </div>
+                                        <!-- /.category-posts__content -->
+                                    </div>
+                                </div>
+                                <!-- /.category-posts__item -->
+                            </div>
+                            <!-- /.col-5 -->
+                            <div class="col-7">
+                                <div class="review-list__title"><strong>Дмитрий Бородинов</strong> <time>27 ноября 2019</time></div>
+                                <div class="rating-small">
+                                    <i class="i-star-solid"></i>
+                                    <i class="i-star-solid"></i>
+                                    <i class="i-star-solid"></i>
+                                    <i class="i-star-solid"></i>
+                                    <i class="i-star-solid"></i>
+                                </div>
+                                <p>Заказали в свое кафе уже 5 картин у Анны. Очень довольны ее отношением, выполнением сроков и, конечно же, качеством. От картин веет теплом и уютом. То, что нужно для нашего интерьера и атмосферы.</p>
+                            </div>
+                            <!-- /.col-7 -->
+                        </div>
+                        <!-- /.row -->
+                    </li>
+                    <li class="review-list__item pb-4">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="owl-carousel owl-nav-outline owl-review-author">
+                                    <div class="img"><img src="img/review-photo-girl.jpg" alt="#"></div>
+                                    <div class="img"><img src="img/review-photo-girl.jpg" alt="#"></div>
+                                    <div class="img"><img src="img/review-photo-girl.jpg" alt="#"></div>
+                                </div>
+                                <!-- /.owl-carousel owl-review-author -->
+                            </div>
+                            <!-- /.col-5 -->
+                            <div class="col-7">
+                                <div class="review-list__title"><strong>Дмитрий Бородинов</strong> <time>27 ноября 2019</time></div>
+                                <div class="rating-small">
+                                    <i class="i-star-solid"></i>
+                                    <i class="i-star-solid"></i>
+                                    <i class="i-star-solid"></i>
+                                    <i class="i-star-solid"></i>
+                                    <i class="i-star-solid"></i>
+                                </div>
+                                <p>Заказали в свое кафе уже 5 картин у Анны. Очень довольны ее отношением, выполнением сроков и, конечно же, качеством. От картин веет теплом и уютом. То, что нужно для нашего интерьера и атмосферы.</p>
+                            </div>
+                            <!-- /.col-7 -->
+                        </div>
+                        <!-- /.row -->
+                    </li>
+                </ul>
+                <!-- /.review-list -->
+
+                <form class="form-section mb-5">
+                    <div class="form-section__content">
+                        <div class="row">
+                            <div class="col">
+                                <h3 class="h3">Оставить отзыв об авторе</h3>
+                                <div class="my-rating mb-2">
+                                    <span class="my-rating__title">Моя оценка</span>
+                                    <div class="my-rating-box">
+                                        <input id="star2_1" name="rating_2" type="radio">
+                                        <label for="star2_1"></label>
+
+                                        <input id="star2_2" name="rating_2" type="radio">
+                                        <label for="star2_2"></label>
+
+                                        <input id="star2_3" name="rating_2" type="radio">
+                                        <label for="star2_3"></label>
+
+                                        <input id="star2_4" name="rating_2" type="radio">
+                                        <label for="star2_4"></label>
+
+                                        <input id="star2_5" name="rating_2" type="radio">
+                                        <label for="star2_5"></label>
+                                    </div> <!-- /.rating -->
+                                </div>
+                                <!-- /.my-rating -->
+                            </div>
+                        </div>
+                        <!-- /.row -->
+                        <div class="row">
+                            <div class="col">
+                                <div class="textarea-counter">
+                                    <div class="textarea-counter-header">
+                                        <span>Комментарий</span>
+                                        <aside>
+                                            <span class="textarea-counter-1">0</span>/
+                                            <span class="textarea-counter-total-1">1000</span>
+                                        </aside>
+                                    </div>
+                                    <textarea class="js-textarea-counter form-control" maxlength="1000" data-count=".textarea-counter-1" data-count-total=".textarea-counter-total-1"></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Имя</label>
+                                    <input type="name" class="form-control w-75">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>E-mail (не публикуется)</label>
+                                    <input type="E-mail" class="form-control w-75">
+                                </div>
+                            </div>
+                            <!-- /.col -->
+
+                            <div class="col">
+                                <div class="form-group">
+                                    <label>Добавить фото заказанной картины</label>
+                                    <input type="name" class="form-control w-100" placeholder="Ссылка с сайта на картину">
+                                </div>
+                                
+                                <div class="dropzone dropzone-init">
+                                    <div class="fallback">
+                                        <input name="file" type="file" multiple />
+                                    </div>
+                                    <div class="dropzone__info">
+                                        <strong>Перетащите файл сюда</strong>
+                                        <div class="or"><span>или</span></div>
+                                    </div>
+                                    <button class="btn btn-outline-dark">Загрузите...</button>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Добавить видео</label>
+                                    <input type="name" class="form-control w-100" placeholder="Ссылка с youtube.com"> 
+                                </div>
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.form-section__content -->
+
+                    <footer class="form-section__footer">
+                        <div class="row justify-content-end">
+                            <div class="col-auto">
+                                <button class="btn btn-dark fz-13">Отправить отзыв</button>
+                                <button class="btn fz-13">Отменить</button>
+                            </div>
+                            <!-- /.col-auto -->
+                        </div>
+                        <!-- /.row -->
+                    </footer>
+                </form>
+                <!-- /.form-section -->
+            </div>
+            <!-- /.d-md-none -->
+
+            <hr class="hr mb-5">
+
+            <h2 class="h2 fw-600">Художники, работающие в подобных жанрах</h2>
+
+            <div class="author-item">
+                <div class="author-item__photo">
+                    <picture><img src="img/author/photo/2.jpg" alt="#"></picture>
+                    <div class="mb-2"><strong><a href="#" class="link-item">Довгань Тереза</a></strong></div>
+                    <span>Киев</span>
+                </div>
+                <!-- /.author-item__photo -->
+                <div class="author-item__content">
+                    <div class="owl-carousel owl-author owl-carousel--nav">
+                        <div class="author-item-box"> 
+                            <div class="category-posts__item">
+                                <div>
+                                    <a href="#" class="category-posts__img"><img src="img/author/content/2.jpg" alt="#"></a>
+                                    <div class="category-posts__content two-variant">
+                                        <div class="category-posts__author">
+                                            <div class="category-posts__author--info">
+                                                <span class="top-view">топ</span>
+                                                <div class="title"><a href="#">Уютная деревня под горой</a></div>
+                                                <strong class="price">1 500 грн</strong>
+                                                <div class="liker">
+                                                    <button class="liker__button">
+                                                        <i class="i-favorite"></i>
+                                                        <i class="i-favorite-solid"></i>
+                                                    </button>
+                                                    <span class="liker__counter">12</span>
+                                                </div>
+                                            </div>
+                                            <!-- /.category-posts__author--info -->
+                                            <div>
+                                                масло/холст <br> 57х44 см
+                                            </div>
+                                            <a href="#" class="btn-speed-view none-text" data-toggle="modal" data-target="#modalSpeedView">Быстрый просмотр <i class="i-vision"></i></a>
+                                        </div>
+                                        <!-- /.category-posts__author -->
+                                    </div>
+                                    <!-- /.category-posts__content -->
+                                </div>
+                            </div>
+                            <!-- /.category-posts__item -->
+                        </div>
+                        <!-- /.author-item-box -->
+
+                        <div class="author-item-box"> 
+                            <div class="category-posts__item">
+                                <div>
+                                    <a href="#" class="category-posts__img"><img src="img/author/content/3.jpg" alt="#"></a>
+                                    <div class="category-posts__content two-variant">
+                                        <div class="category-posts__author">
+                                            <div class="category-posts__author--info">
+                                                <span class="top-view">топ</span>
+                                                <div class="title"><a href="#">Уютная деревня под горой</a></div>
+                                                <strong class="price">1 500 грн</strong>
+                                                <div class="liker">
+                                                    <button class="liker__button">
+                                                        <i class="i-favorite"></i>
+                                                        <i class="i-favorite-solid"></i>
+                                                    </button>
+                                                    <span class="liker__counter">12</span>
+                                                </div>
+                                            </div>
+                                            <!-- /.category-posts__author--info -->
+                                            <div>
+                                                масло/холст <br> 57х44 см
+                                            </div>
+                                            <a href="#" class="btn-speed-view none-text" data-toggle="modal" data-target="#modalSpeedView">Быстрый просмотр <i class="i-vision"></i></a>
+                                        </div>
+                                        <!-- /.category-posts__author -->
+                                    </div>
+                                    <!-- /.category-posts__content -->
+                                </div>
+                            </div>
+                            <!-- /.category-posts__item -->
+                        </div>
+                        <!-- /.author-item-box -->
+
+                        <div class="author-item-box"> 
+                            <div class="category-posts__item">
+                                <div>
+                                    <a href="#" class="category-posts__img"><img src="img/author/content/4.jpg" alt="#"></a>
+                                    <div class="category-posts__content two-variant">
+                                        <div class="category-posts__author">
+                                            <div class="category-posts__author--info">
+                                                <span class="top-view">топ</span>
+                                                <div class="title"><a href="#">Уютная деревня под горой</a></div>
+                                                <strong class="price">1 500 грн</strong>
+                                                <div class="liker">
+                                                    <button class="liker__button">
+                                                        <i class="i-favorite"></i>
+                                                        <i class="i-favorite-solid"></i>
+                                                    </button>
+                                                    <span class="liker__counter">12</span>
+                                                </div>
+                                            </div>
+                                            <!-- /.category-posts__author--info -->
+                                            <div>
+                                                масло/холст <br> 57х44 см
+                                            </div>
+                                            <a href="#" class="btn-speed-view none-text" data-toggle="modal" data-target="#modalSpeedView">Быстрый просмотр <i class="i-vision"></i></a>
+                                        </div>
+                                        <!-- /.category-posts__author -->
+                                    </div>
+                                    <!-- /.category-posts__content -->
+                                </div>
+                            </div>
+                            <!-- /.category-posts__item -->
+                        </div>
+                        <!-- /.author-item-box -->
+
+                        <div class="author-item-box"> 
+                            <div class="category-posts__item">
+                                <div>
+                                    <a href="#" class="category-posts__img"><img src="img/author/content/2.jpg" alt="#"></a>
+                                    <div class="category-posts__content two-variant">
+                                        <div class="category-posts__author">
+                                            <div class="category-posts__author--info">
+                                                <span class="top-view">топ</span>
+                                                <div class="title"><a href="#">Уютная деревня под горой</a></div>
+                                                <strong class="price">1 500 грн</strong>
+                                                <div class="liker">
+                                                    <button class="liker__button">
+                                                        <i class="i-favorite"></i>
+                                                        <i class="i-favorite-solid"></i>
+                                                    </button>
+                                                    <span class="liker__counter">12</span>
+                                                </div>
+                                            </div>
+                                            <!-- /.category-posts__author--info -->
+                                            <div>
+                                                масло/холст <br> 57х44 см
+                                            </div>
+                                            <a href="#" class="btn-speed-view none-text" data-toggle="modal" data-target="#modalSpeedView">Быстрый просмотр <i class="i-vision"></i></a>
+                                        </div>
+                                        <!-- /.category-posts__author -->
+                                    </div>
+                                    <!-- /.category-posts__content -->
+                                </div>
+                            </div>
+                            <!-- /.category-posts__item -->
+                        </div>
+                        <!-- /.author-item-box -->
+
+                        <div class="author-item-box"> 
+                            <div class="category-posts__item">
+                                <div>
+                                    <a href="#" class="category-posts__img"><img src="img/author/content/3.jpg" alt="#"></a>
+                                    <div class="category-posts__content two-variant">
+                                        <div class="category-posts__author">
+                                            <div class="category-posts__author--info">
+                                                <span class="top-view">топ</span>
+                                                <div class="title"><a href="#">Уютная деревня под горой</a></div>
+                                                <strong class="price">1 500 грн</strong>
+                                                <div class="liker">
+                                                    <button class="liker__button">
+                                                        <i class="i-favorite"></i>
+                                                        <i class="i-favorite-solid"></i>
+                                                    </button>
+                                                    <span class="liker__counter">12</span>
+                                                </div>
+                                            </div>
+                                            <!-- /.category-posts__author--info -->
+                                            <div>
+                                                масло/холст <br> 57х44 см
+                                            </div>
+                                            <a href="#" class="btn-speed-view none-text" data-toggle="modal" data-target="#modalSpeedView">Быстрый просмотр <i class="i-vision"></i></a>
+                                        </div>
+                                        <!-- /.category-posts__author -->
+                                    </div>
+                                    <!-- /.category-posts__content -->
+                                </div>
+                            </div>
+                            <!-- /.category-posts__item -->
+                        </div>
+                        <!-- /.author-item-box -->
+
+                        <div class="author-item-box"> 
+                            <div class="category-posts__item">
+                                <div>
+                                    <a href="#" class="category-posts__img"><img src="img/author/content/4.jpg" alt="#"></a>
+                                    <div class="category-posts__content two-variant">
+                                        <div class="category-posts__author">
+                                            <div class="category-posts__author--info">
+                                                <span class="top-view">топ</span>
+                                                <div class="title"><a href="#">Уютная деревня под горой</a></div>
+                                                <strong class="price">1 500 грн</strong>
+                                                <div class="liker">
+                                                    <button class="liker__button">
+                                                        <i class="i-favorite"></i>
+                                                        <i class="i-favorite-solid"></i>
+                                                    </button>
+                                                    <span class="liker__counter">12</span>
+                                                </div>
+                                            </div>
+                                            <!-- /.category-posts__author--info -->
+                                            <div>
+                                                масло/холст <br> 57х44 см
+                                            </div>
+                                            <a href="#" class="btn-speed-view none-text" data-toggle="modal" data-target="#modalSpeedView">Быстрый просмотр <i class="i-vision"></i></a>
+                                        </div>
+                                        <!-- /.category-posts__author -->
+                                    </div>
+                                    <!-- /.category-posts__content -->
+                                </div>
+                            </div>
+                            <!-- /.category-posts__item -->
+                        </div>
+                        <!-- /.author-item-box -->
+                    </div>
+                    <!-- /.owl-carousel -->
+                </div>
+                <!-- /.author-item__content -->
+            </div>
+            <!-- /.author-item -->
+
+            <div class="author-item">
+                <div class="author-item__photo">
+                    <picture><img src="img/author/photo/3.jpg" alt="#"></picture>
+                    <div class="mb-2"><strong><a href="#" class="link-item">Довгань Тереза</a></strong></div>
+                    <span>Киев</span>
+                </div>
+                <!-- /.author-item__photo -->
+                <div class="author-item__content">
+                    <div class="owl-carousel owl-author owl-carousel--nav">
+                        <div class="author-item-box"> 
+                            <div class="category-posts__item">
+                                <div>
+                                    <a href="#" class="category-posts__img"><img src="img/author/content/5.jpg" alt="#"></a>
+                                    <div class="category-posts__content two-variant">
+                                        <div class="category-posts__author">
+                                            <div class="category-posts__author--info">
+                                                <span class="top-view">топ</span>
+                                                <div class="title"><a href="#">Уютная деревня под горой</a></div>
+                                                <strong class="price">1 500 грн</strong>
+                                                <div class="liker">
+                                                    <button class="liker__button">
+                                                        <i class="i-favorite"></i>
+                                                        <i class="i-favorite-solid"></i>
+                                                    </button>
+                                                    <span class="liker__counter">12</span>
+                                                </div>
+                                            </div>
+                                            <!-- /.category-posts__author--info -->
+                                            <div>
+                                                масло/холст <br> 57х44 см
+                                            </div>
+                                            <a href="#" class="btn-speed-view none-text" data-toggle="modal" data-target="#modalSpeedView">Быстрый просмотр <i class="i-vision"></i></a>
+                                        </div>
+                                        <!-- /.category-posts__author -->
+                                    </div>
+                                    <!-- /.category-posts__content -->
+                                </div>
+                            </div>
+                            <!-- /.category-posts__item -->
+                        </div>
+                        <!-- /.author-item-box -->
+
+                        <div class="author-item-box"> 
+                            <div class="category-posts__item">
+                                <div>
+                                    <a href="#" class="category-posts__img"><img src="img/author/content/6.jpg" alt="#"></a>
+                                    <div class="category-posts__content two-variant">
+                                        <div class="category-posts__author">
+                                            <div class="category-posts__author--info">
+                                                <span class="top-view">топ</span>
+                                                <div class="title"><a href="#">Уютная деревня под горой</a></div>
+                                                <strong class="price">1 500 грн</strong>
+                                                <div class="liker">
+                                                    <button class="liker__button">
+                                                        <i class="i-favorite"></i>
+                                                        <i class="i-favorite-solid"></i>
+                                                    </button>
+                                                    <span class="liker__counter">12</span>
+                                                </div>
+                                            </div>
+                                            <!-- /.category-posts__author--info -->
+                                            <div>
+                                                масло/холст <br> 57х44 см
+                                            </div>
+                                            <a href="#" class="btn-speed-view none-text" data-toggle="modal" data-target="#modalSpeedView">Быстрый просмотр <i class="i-vision"></i></a>
+                                        </div>
+                                        <!-- /.category-posts__author -->
+                                    </div>
+                                    <!-- /.category-posts__content -->
+                                </div>
+                            </div>
+                            <!-- /.category-posts__item -->
+                        </div>
+                        <!-- /.author-item-box -->
+
+                        <div class="author-item-box"> 
+                            <div class="category-posts__item">
+                                <div>
+                                    <a href="#" class="category-posts__img"><img src="img/author/content/7.jpg" alt="#"></a>
+                                    <div class="category-posts__content two-variant">
+                                        <div class="category-posts__author">
+                                            <div class="category-posts__author--info">
+                                                <span class="top-view">топ</span>
+                                                <div class="title"><a href="#">Уютная деревня под горой</a></div>
+                                                <strong class="price">1 500 грн</strong>
+                                                <div class="liker">
+                                                    <button class="liker__button">
+                                                        <i class="i-favorite"></i>
+                                                        <i class="i-favorite-solid"></i>
+                                                    </button>
+                                                    <span class="liker__counter">12</span>
+                                                </div>
+                                            </div>
+                                            <!-- /.category-posts__author--info -->
+                                            <div>
+                                                масло/холст <br> 57х44 см
+                                            </div>
+                                            <a href="#" class="btn-speed-view none-text" data-toggle="modal" data-target="#modalSpeedView">Быстрый просмотр <i class="i-vision"></i></a>
+                                        </div>
+                                        <!-- /.category-posts__author -->
+                                    </div>
+                                    <!-- /.category-posts__content -->
+                                </div>
+                            </div>
+                            <!-- /.category-posts__item -->
+                        </div>
+                        <!-- /.author-item-box -->
+
+                        <div class="author-item-box"> 
+                            <div class="category-posts__item">
+                                <div>
+                                    <a href="#" class="category-posts__img"><img src="img/author/content/2.jpg" alt="#"></a>
+                                    <div class="category-posts__content two-variant">
+                                        <div class="category-posts__author">
+                                            <div class="category-posts__author--info">
+                                                <span class="top-view">топ</span>
+                                                <div class="title"><a href="#">Уютная деревня под горой</a></div>
+                                                <strong class="price">1 500 грн</strong>
+                                                <div class="liker">
+                                                    <button class="liker__button">
+                                                        <i class="i-favorite"></i>
+                                                        <i class="i-favorite-solid"></i>
+                                                    </button>
+                                                    <span class="liker__counter">12</span>
+                                                </div>
+                                            </div>
+                                            <!-- /.category-posts__author--info -->
+                                            <div>
+                                                масло/холст <br> 57х44 см
+                                            </div>
+                                            <a href="#" class="btn-speed-view none-text" data-toggle="modal" data-target="#modalSpeedView">Быстрый просмотр <i class="i-vision"></i></a>
+                                        </div>
+                                        <!-- /.category-posts__author -->
+                                    </div>
+                                    <!-- /.category-posts__content -->
+                                </div>
+                            </div>
+                            <!-- /.category-posts__item -->
+                        </div>
+                        <!-- /.author-item-box -->
+
+                        <div class="author-item-box"> 
+                            <div class="category-posts__item">
+                                <div>
+                                    <a href="#" class="category-posts__img"><img src="img/author/content/3.jpg" alt="#"></a>
+                                    <div class="category-posts__content two-variant">
+                                        <div class="category-posts__author">
+                                            <div class="category-posts__author--info">
+                                                <span class="top-view">топ</span>
+                                                <div class="title"><a href="#">Уютная деревня под горой</a></div>
+                                                <strong class="price">1 500 грн</strong>
+                                                <div class="liker">
+                                                    <button class="liker__button">
+                                                        <i class="i-favorite"></i>
+                                                        <i class="i-favorite-solid"></i>
+                                                    </button>
+                                                    <span class="liker__counter">12</span>
+                                                </div>
+                                            </div>
+                                            <!-- /.category-posts__author--info -->
+                                            <div>
+                                                масло/холст <br> 57х44 см
+                                            </div>
+                                            <a href="#" class="btn-speed-view none-text" data-toggle="modal" data-target="#modalSpeedView">Быстрый просмотр <i class="i-vision"></i></a>
+                                        </div>
+                                        <!-- /.category-posts__author -->
+                                    </div>
+                                    <!-- /.category-posts__content -->
+                                </div>
+                            </div>
+                            <!-- /.category-posts__item -->
+                        </div>
+                        <!-- /.author-item-box -->
+
+                        <div class="author-item-box"> 
+                            <div class="category-posts__item">
+                                <div>
+                                    <a href="#" class="category-posts__img"><img src="img/author/content/4.jpg" alt="#"></a>
+                                    <div class="category-posts__content two-variant">
+                                        <div class="category-posts__author">
+                                            <div class="category-posts__author--info">
+                                                <span class="top-view">топ</span>
+                                                <div class="title"><a href="#">Уютная деревня под горой</a></div>
+                                                <strong class="price">1 500 грн</strong>
+                                                <div class="liker">
+                                                    <button class="liker__button">
+                                                        <i class="i-favorite"></i>
+                                                        <i class="i-favorite-solid"></i>
+                                                    </button>
+                                                    <span class="liker__counter">12</span>
+                                                </div>
+                                            </div>
+                                            <!-- /.category-posts__author--info -->
+                                            <div>
+                                                масло/холст <br> 57х44 см
+                                            </div>
+                                            <a href="#" class="btn-speed-view none-text" data-toggle="modal" data-target="#modalSpeedView">Быстрый просмотр <i class="i-vision"></i></a>
+                                        </div>
+                                        <!-- /.category-posts__author -->
+                                    </div>
+                                    <!-- /.category-posts__content -->
+                                </div>
+                            </div>
+                            <!-- /.category-posts__item -->
+                        </div>
+                        <!-- /.author-item-box -->
+                    </div>
+                    <!-- /.owl-carousel -->
+                </div>
+                <!-- /.author-item__content -->
+            </div>
+            <!-- /.author-item -->
+
+            <div class="author-item">
+                <div class="author-item__photo">
+                    <picture><img src="img/author/photo/4.jpg" alt="#"></picture>
+                    <div class="mb-2"><strong><a href="#" class="link-item">Исаенко Маргарита</a></strong></div>
+                    <span>Киев</span>
+                </div>
+                <!-- /.author-item__photo -->
+                <div class="author-item__content">
+                    <div class="owl-carousel owl-author owl-carousel--nav">
+                        <div class="author-item-box"> 
+                            <div class="category-posts__item">
+                                <div>
+                                    <a href="#" class="category-posts__img"><img src="img/author/content/8.jpg" alt="#"></a>
+                                    <div class="category-posts__content two-variant">
+                                        <div class="category-posts__author">
+                                            <div class="category-posts__author--info">
+                                                <span class="top-view">топ</span>
+                                                <div class="title"><a href="#">Уютная деревня под горой</a></div>
+                                                <strong class="price">1 500 грн</strong>
+                                                <div class="liker">
+                                                    <button class="liker__button">
+                                                        <i class="i-favorite"></i>
+                                                        <i class="i-favorite-solid"></i>
+                                                    </button>
+                                                    <span class="liker__counter">12</span>
+                                                </div>
+                                            </div>
+                                            <!-- /.category-posts__author--info -->
+                                            <div>
+                                                масло/холст <br> 57х44 см
+                                            </div>
+                                            <a href="#" class="btn-speed-view none-text" data-toggle="modal" data-target="#modalSpeedView">Быстрый просмотр <i class="i-vision"></i></a>
+                                        </div>
+                                        <!-- /.category-posts__author -->
+                                    </div>
+                                    <!-- /.category-posts__content -->
+                                </div>
+                            </div>
+                            <!-- /.category-posts__item -->
+                        </div>
+                        <!-- /.author-item-box -->
+
+                        <div class="author-item-box"> 
+                            <div class="category-posts__item">
+                                <div>
+                                    <a href="#" class="category-posts__img"><img src="img/author/content/9.jpg" alt="#"></a>
+                                    <div class="category-posts__content two-variant">
+                                        <div class="category-posts__author">
+                                            <div class="category-posts__author--info">
+                                                <span class="top-view">топ</span>
+                                                <div class="title"><a href="#">Уютная деревня под горой</a></div>
+                                                <strong class="price">1 500 грн</strong>
+                                                <div class="liker">
+                                                    <button class="liker__button">
+                                                        <i class="i-favorite"></i>
+                                                        <i class="i-favorite-solid"></i>
+                                                    </button>
+                                                    <span class="liker__counter">12</span>
+                                                </div>
+                                            </div>
+                                            <!-- /.category-posts__author--info -->
+                                            <div>
+                                                масло/холст <br> 57х44 см
+                                            </div>
+                                            <a href="#" class="btn-speed-view none-text" data-toggle="modal" data-target="#modalSpeedView">Быстрый просмотр <i class="i-vision"></i></a>
+                                        </div>
+                                        <!-- /.category-posts__author -->
+                                    </div>
+                                    <!-- /.category-posts__content -->
+                                </div>
+                            </div>
+                            <!-- /.category-posts__item -->
+                        </div>
+                        <!-- /.author-item-box -->
+
+                        <div class="author-item-box"> 
+                            <div class="category-posts__item">
+                                <div>
+                                    <a href="#" class="category-posts__img"><img src="img/author/content/10.jpg" alt="#"></a>
+                                    <div class="category-posts__content two-variant">
+                                        <div class="category-posts__author">
+                                            <div class="category-posts__author--info">
+                                                <span class="top-view">топ</span>
+                                                <div class="title"><a href="#">Уютная деревня под горой</a></div>
+                                                <strong class="price">1 500 грн</strong>
+                                                <div class="liker">
+                                                    <button class="liker__button">
+                                                        <i class="i-favorite"></i>
+                                                        <i class="i-favorite-solid"></i>
+                                                    </button>
+                                                    <span class="liker__counter">12</span>
+                                                </div>
+                                            </div>
+                                            <!-- /.category-posts__author--info -->
+                                            <div>
+                                                масло/холст <br> 57х44 см
+                                            </div>
+                                            <a href="#" class="btn-speed-view none-text" data-toggle="modal" data-target="#modalSpeedView">Быстрый просмотр <i class="i-vision"></i></a>
+                                        </div>
+                                        <!-- /.category-posts__author -->
+                                    </div>
+                                    <!-- /.category-posts__content -->
+                                </div>
+                            </div>
+                            <!-- /.category-posts__item -->
+                        </div>
+                        <!-- /.author-item-box -->
+                    </div>
+                    <!-- /.owl-carousel -->
+                </div>
+                <!-- /.author-item__content -->
+            </div>
+            <!-- /.author-item -->
+
+            <div class="you-watched">
+                <h2 class="h2">Вы смотрели</h2>
+                <div class="owl-carousel owl-carousel--nav owl-you-watched">
+                    <div class="you-watched__item">
+                        <a href="#" class="picture-block h-360"><img src="img/you-watched/1.jpg" alt="#"></a>
+                        <div class="h6"><a href="#" class="link-item">Вишневый аромат весенних цветов</a></div>
+                        <div class="price">1 300 грн</div>
+                        <p>44х57 см, Холст/Масло</p>
+                    </div>
+                    <!-- /.you-watched__item -->
+
+                    <div href="#" class="you-watched__item">
+                        <a href="#" class="picture-block h-360"><img src="img/you-watched/2.jpg" alt="#"></a>
+                        <div class="h6"><a href="#" class="link-item">Волки. Верность</a></div>
+                        <div class="price">12 400 грн</div>
+                        <p>44х57 см, Холст/Масло</p>
+                    </div>
+                    <!-- /.you-watched__item -->
+
+                    <div href="#" class="you-watched__item">
+                        <a href="#" class="picture-block h-360"><img src="img/you-watched/3.jpg" alt="#"></a>
+                        <div class="h6"><a href="#" class="link-item">Лунный кот</a></div>
+                        <div class="price">1000 грн</div>
+                        <p>44х57 см, Холст/Масло</p>
+                    </div>
+                    <!-- /.you-watched__item -->
+
+                    <div href="#" class="you-watched__item">
+                        <a href="#" class="picture-block h-360"><img src="img/you-watched/2.jpg" alt="#"></a>
+                        <div class="h6"><a href="#" class="link-item">Волки. Верность</a></div>
+                        <div class="price">12 400 грн</div>
+                        <p>44х57 см, Холст/Масло </p>
+                    </div>
+                    <!-- /.you-watched__item -->
+                </div>
+                <!-- /.owl-carousel -->
+            </div>
+            <!-- /.you-watched -->
+
         </div>
         <!-- /.container -->
+
+        <section class="our-social order-1">
+            <div class="container">
+                <div class="our-social__header">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3 class="h3">
+                                <strong>6 200</strong> авторов <br>
+                                <strong>25 000</strong> работ
+                            </h3>
+                        </div>
+                        <!-- /.col-md-4 -->
+                        <div class="col-md-8">
+                            <h2 class="h2">
+                                <a href="#">
+                                    <span>Портреты</span> <br>
+                                    <span>и картины на заказ</span>
+                                </a>
+                            </h2>
+                        </div>
+                        <!-- /.col-md-8 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.our-social__header -->
+                <div class="our-social__content">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="our-social__item facebook">
+                                <i class="i-logo-facebook"></i>
+                                <p>Новинки художников<br> Обсуждение новостей искусства Обзоры и обсуждение</p>
+                                <footer>
+                                    <span>4 220 <br> подписчиков</span>
+                                    <a href="#" class="btn btn-default btn-sm">Следить</a>
+                                </footer>
+                            </div>
+                            <!-- /.our-social__item -->
+                        </div>
+                        <!-- /.col-md-4 -->
+                        <div class="col-md-4">
+                            <div class="our-social__item pinterest">
+                                <i class="i-logo-pinterest"></i>
+                                <p>Еженедельные новинки Специальные предложения</p>
+                                <footer>
+                                    <span>810 <br> шедевров</span>
+                                    <a href="#" class="btn btn-default btn-sm">Посмотреть</a>
+                                </footer>
+                            </div>
+                            <!-- /.our-social__item -->
+                        </div>
+                        <!-- /.col-md-4 -->
+                        <div class="col-md-4">
+                            <div class="our-social__item youtube">
+                                <i class="i-logo-youtube"></i>
+                                <p>Свежие обзоры искусства Интервью с художниками Мастер-классы по рисованию</p>
+                                <footer>
+                                    <span>120 <br> видео</span>
+                                    <a href="#" class="btn btn-default btn-sm">Cмотреть</a>
+                                </footer>
+                            </div>
+                            <!-- /.our-social__item -->
+                        </div>
+                        <!-- /.col-md-4 -->
+                        <div class="col-md-4">
+                            <div class="our-social__item instagram">
+                                <i class="i-logo-instagram"></i>
+                                <p>Сообщество ценителей <br>искусства <br> Новинки от художников</p>
+                                <footer>
+                                    <span>446 <br> публикаций</span>
+                                    <a href="#" class="btn btn-default btn-sm">Поcмотреть</a>
+                                </footer>
+                            </div>
+                            <!-- /.our-social__item -->
+                        </div>
+                        <!-- /.col-md-4 -->
+                        <div class="col-md-4">
+                            <div class="our-social__item telegram">
+                                <i class="i-logo-telegram"></i>
+                                <p>Еженедельные новинки Специальные предложения</p>
+                                <footer>
+                                    <span>515 <br> подписчиков</span>
+                                    <a href="#" class="btn btn-default btn-sm">Читать</a>
+                                </footer>
+                            </div>
+                            <!-- /.our-social__item -->
+                        </div>
+                        <!-- /.col-md-4 -->
+                        <div class="col-md-4">
+                            <div class="our-social__item gmail">
+                                <i class="i-logo-gmail"></i>
+                                <p>Свежие обзоры искусства Интервью с художниками <br> Мастер-классы по рисованию</p>
+                                <form class="gmail-form">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="E-mail">
+                                    </div>
+                                    <button type="submit" class="btn btn-danger">Следить</button>
+                                </form>
+                             </div>
+                            <!-- /.our-social__item -->
+                        </div>
+                        <!-- /.col-md-4 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.our-social__content -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.our-social -->
 
     </div>
     <!-- /.wrap -->
@@ -558,6 +1896,7 @@
     </footer>
     <!-- /.footer -->
 
+    
     <!-- modal #modalPhoneMenu -->
     <div class="modal fade bd-example-modal-xl"
          id="modalPhoneMenu"
@@ -691,6 +2030,167 @@
                     <!-- /.menu-phone__list -->
                 </div>
                 <!-- /.menu-phone -->
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    
+    <!-- modal - .modal-speed-view -->
+    <div class="modal fade bd-example-modal-xl modal-speed-view"
+         id="modalSpeedView"
+         tabindex="-1"
+         role="dialog"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="descrp-author__title">
+                        <h3><span>Аромат шалфея<span class="new-mark-green">новое</span></span></h3>
+                    </div>
+                    <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+                        <i class="i-close"></i>
+                    </button>
+                </div>
+                <!-- /.modal-header -->
+                <div class="speed-view-content">
+                    <div class="product-slider normal">
+                        <div class="owl-carousel owl-nav-circle owl-product-slider">
+                            <div class="owl-product-slider__item">
+                                <picture><img src="img/main-posts/6.jpg" alt="#"></picture>
+                            </div>
+                            <div class="owl-product-slider__item">
+                                <picture><img src="img/product-slide-1.jpg" alt="#"></picture>
+                            </div>
+                            <div class="owl-product-slider__item">
+                                <picture><img src="img/main-posts/10.jpg" alt="#"></picture>
+                            </div>
+                            <div class="owl-product-slider__item">
+                                <picture><img src="img/main-posts/9.jpg" alt="#"></picture>
+                            </div>
+                        </div>
+                        <!-- /.owl-carousel -->
+                        <a href="#" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#inYourInteriorModal"><i class="i-photo-plus"></i>В cвоем интерьере</a>
+                    </div>
+                    <!-- /.product-slider -->
+                    <div class="descrp-author">
+                        <div class="descrp-author__title">
+                            <div class="block-links">
+                                <a href="#">45x70 см</a>
+                                <a href="#">Архитектура</a>
+                                <a href="#">Масло/Холст</a>
+                                <a href="#">Реализм</a>
+                                <a href="#">Без рамы</a>
+                                <a href="#">2019</a>
+                            </div>
+                            <!-- /.block-links -->
+                            <div class="avatar-48x48 normal">
+                                <div class="avatar-48x48__img"><img src="img/avatar-48x48.jpg" alt="#"></div>
+                                <div class="avatar-48x48__info">
+                                    <a href="#">Моторный Роман</a>
+                                    <div class="avatar-48x48__info--descrp">
+                                        <span>Художник</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.avatar-48x48 -->
+                        </div>
+                        <!-- /.descrp-author__title -->
+                        <div class="descrp-author__price">
+                            <div class="row">
+                                <div class="price">1 400 грн</div>
+                                <a href="#" class="btn btn-danger btn-lg">Купить</a>
+                            </div>
+                            <div class="row">
+                                <div class="liker">
+                                    <button class="liker__button">
+                                        <i class="i-favorite"></i>
+                                        <i class="i-favorite-solid"></i>
+                                    </button>
+                                    <span class="liker__counter">12</span>
+                                </div>
+                                <a href="#" class="link-item"><strong>7 отзывов</strong></a>
+                                <div class="dropup">
+                                    <a href="#" class="link-social-share" data-toggle="dropdown"><i class="i-share"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <ul class="share-social-list">
+                                            <li><a href="#"><i class="i-share-facebook"></i><span>Facebook Massenger</span></a></li>
+                                            <li><a href="#"><i class="i-share-telegram"></i><span>Telegram</a></span></li>
+                                            <li><a href="#"><i class="i-share-whatsapp"></i><span>WhatsApp</a></span></li>
+                                            <li><a href="#"><i class="i-share-instagram"></i><span>Instagram</a></span></li>
+                                            <li><a href="#"><i class="i-share-pinterest"></i><span>Pinterest</a></span></li>
+                                            <li><a href="#"><i class="i-share-skype"></i><span>Skype</a></span></li>
+                                        </ul>
+                                        <!-- /.share-social-list -->
+                                    </div>
+                                    <!-- /.dropdown-menu -->
+                                </div>
+                                <!-- /.dropup -->
+                                <span class="vendor-code">артикул <strong>003103</strong></span>
+                            </div>
+                        </div>
+                        <!-- /.descrp-author__price -->
+                    </div>
+                </div>
+                <!-- /.speed-view-content -->
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <!-- modal - .modal-gallery-content -->
+    <div class="modal fade bd-example-modal-xl modal-interior"
+         id="inYourInteriorModal"
+         tabindex="-1"
+         role="dialog"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-top modal-xl" role="document">
+            <div class="modal-content">
+                <button type="button" class="close close-white position-absolute" data-dismiss="modal" aria-label="Close">
+                    <i class="i-close"></i>
+                </button>
+                <div class="in-your-interior">
+                    <div class="in-your-interior__content">
+                        <div class="in-your-interior__img">
+                            <picture class="picture-block no-hover h-540"><img src="img/in-your-interior.jpg" alt="#"></picture>
+                            <div class="text-center mb-3"><a href="#" class="btn btn-default"><i class="i-photo-plus"></i>Загрузить фото своего интерьера</a></div>
+                        </div>
+                        <!-- /.in-your-interior__img -->
+
+                        <hr class="hr black mb-3">
+
+                        <div class="row">
+                            <div class="col-12 col-lg-6 mb-3">
+                                <p class="mb-3">Размер картинки</p>
+                                <div class="ui-slider-wrap">
+                                    <div class="ui-slider red" id="img-ui-slider"></div>
+                                </div>
+                                <!-- /.ui-slider-wrap -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-12 col-lg-6 mb-3">
+                                <div class="row justify-content-between align-items-center">
+                                    <div class="col">
+                                        <p>Ширина комнаты <br> <span class="text--17">3,5 м</span></p>
+                                    </div>
+                                    <!-- /.col -->
+                                    <div class="col-auto">
+                                        <button type="button" class="btn btn-outline-light btn-lg">Сохранить</button>
+                                    </div>
+                                    <!-- /.col -->
+                                </div>
+                                <!-- /.row -->
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.in-your-interior__content -->
+                </div>
+                <!-- /.in-your-interior -->
             </div>
             <!-- /.modal-content -->
         </div>
