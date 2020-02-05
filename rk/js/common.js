@@ -1,5 +1,21 @@
 $(function() {
 
+	// menu
+	$(".sandwich-box").click(function() {
+	  $(".sandwich-box").toggleClass("active");
+	});
+	$(".nav li a").click(function() {
+		$(".wrapper-nav").fadeOut(600);
+		$(".sandwich-box").toggleClass("active");
+	});
+	$(".sandwich-box").click(function() {
+		if($(".wrapper-nav").is(":visible")) {
+			$(".wrapper-nav").fadeOut(600);
+		} else {
+			$(".wrapper-nav").fadeIn(600);
+		};
+	});
+
 	///////////////////////////////////////////////////////////
 	var headerScene = document.querySelector('.header__scene');
 	var headerSceneInstance = new Parallax(headerScene);
@@ -54,6 +70,7 @@ $(function() {
 	$('.our-team__slider').slick({
 		variableWidth: true,
 		slidesToShow: 6,
+		centerMode: true,
 		autoplay: true
 	});
 
@@ -63,5 +80,13 @@ $(function() {
 
 
 	$('.about__tabs').tabulous();
+
+
+	$('select').niceSelect();
+
+
+	$('.popup-btn').magnificPopup({
+		mainClass: 'my-mfp-zoom-in'
+	});
 
 });
