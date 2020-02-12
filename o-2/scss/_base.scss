@@ -1,0 +1,165 @@
+html, body {
+	overflow-x: hidden;
+}
+body {
+	color: $black;
+	background: #fff url('../img/bg-pattern.svg') repeat-y center top;
+	font: normal 16px/1.3 'Montserrat';
+}
+
+strong, b,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-weight: 600;
+	line-height: 1.33;
+	margin: 0;
+}
+
+h1, .h1,
+h2, .h2 {
+	font-size: 30px;
+	margin-bottom: 20px;
+	strong {
+		font-weight: 800;
+		color: $blue;
+	}
+}
+h2, .h2 {
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+h3, .h3 {
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+h4, .h4 {
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+h5, .h5 {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+h6, .h6 {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+a {
+	color: inherit;
+	text-decoration: underline;
+	&:hover {
+		color: $blue;
+	}
+}
+
+p {
+	margin: 0;
+}
+
+ol, ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+textarea {
+	min-width: 330px;
+	height: 50px;
+	background-color: #fff;
+	border: none;
+	border-radius: 25px;
+	padding: 0 28px;
+	border: 2px solid rgba(36, 110, 222, 0.3);
+	transition: border-color .5s, box-shadow .5s;
+	font: 600 18px 'Montserrat';
+	color: $black;
+	margin-bottom: 10px;
+	&:focus {
+		outline: none;
+		border-color: #80bdff;
+	    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+	}
+	&::selection {
+		background-color: rgba(0,123,255,.5);
+		color: #fff;
+	}
+}
+textarea {
+	max-width: 870px;
+	width: 100%;
+	height: auto;
+	min-height: 140px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+::placeholder {
+	color: $dark;
+	transition: 1s;
+}
+:focus::placeholder {
+	color: transparent;
+}
+
+::selection {
+	background-color: rgba($blue, .6);
+	color: #fff;
+}
+
+//////////////////////////////////
+
+.link {
+	text-decoration: none;
+	position: relative;
+	transition: .5s;
+	&:before,
+	&:after {
+		content: '';
+		width: 100%;
+		height: 1px;
+		background-color: #151515;
+		position: absolute;
+		left: 0;
+		bottom: -2px;
+	}
+	&:after {
+		background-color: $blue;
+		transform: scaleX(0);
+		transition: 1s;
+	}
+	&:hover {
+		text-decoration: none;
+		&:before {
+			display: none;
+		}
+		&:after {
+			transform: scaleX(1);
+		}
+	}
+}
+
+.bold {
+	font-weight: 800;
+}
+
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
+
+.text-style {
+	font-size: 14px;
+	color: $dark;
+}
+
+.color-blue {
+	color: $blue;
+}

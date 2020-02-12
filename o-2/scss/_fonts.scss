@@ -1,0 +1,152 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: url('fonts/Montserrat/Regular/Montserrat-Regular.eot');
+	src: local('Montserrat Regular'), local('Montserrat-Regular'),
+		url('fonts/Montserrat/Regular/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Montserrat/Regular/Montserrat-Regular.woff') format('woff'),
+		url('fonts/Montserrat/Regular/Montserrat-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('fonts/Montserrat/Medium/Montserrat-Medium.eot');
+	src: local('Montserrat Medium'), local('Montserrat-Medium'),
+		url('fonts/Montserrat/Medium/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Montserrat/Medium/Montserrat-Medium.woff') format('woff'),
+		url('fonts/Montserrat/Medium/Montserrat-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('fonts/Montserrat/SemiBold/Montserrat-SemiBold.eot');
+	src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+		url('fonts/Montserrat/SemiBold/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Montserrat/SemiBold/Montserrat-SemiBold.woff') format('woff'),
+		url('fonts/Montserrat/SemiBold/Montserrat-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('fonts/Montserrat/ExtraBold/Montserrat-ExtraBold.eot');
+	src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+		url('fonts/Montserrat/ExtraBold/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Montserrat/ExtraBold/Montserrat-ExtraBold.woff') format('woff'),
+		url('fonts/Montserrat/ExtraBold/Montserrat-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:
+    url('icomoon/fonts/icomoon.ttf?aemmhp') format('truetype'),
+    url('icomoon/fonts/icomoon.woff?aemmhp') format('woff'),
+    url('icomoon/fonts/icomoon.svg?aemmhp#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="i-"], [class*=" i-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-ads-specialist:before {
+  content: "\e900";
+}
+.i-analysis:before {
+  content: "\e901";
+}
+.i-analytic:before {
+  content: "\e902";
+}
+.i-backend:before {
+  content: "\e903";
+}
+.i-bill:before {
+  content: "\e904";
+}
+.i-chat:before {
+  content: "\e905";
+}
+.i-content:before {
+  content: "\e906";
+}
+.i-conversion:before {
+  content: "\e907";
+}
+.i-design:before {
+  content: "\e908";
+}
+.i-frontend:before {
+  content: "\e90a";
+}
+.i-loyalty:before {
+  content: "\e90c";
+}
+.i-order:before {
+  content: "\e90d";
+}
+.i-project-manager:before {
+  content: "\e90e";
+}
+.i-prototype:before {
+  content: "\e90f";
+}
+.i-scaling:before {
+  content: "\e911";
+}
+.i-strateg:before {
+  content: "\e914";
+}
+.i-time-management:before {
+  content: "\e915";
+}
+.i-value:before {
+  content: "\e917";
+}
+.i-search:before {
+  content: "\e912";
+}
+.i-user:before {
+  content: "\e916";
+}
+.i-shield:before {
+  content: "\e913";
+}
+.i-x:before {
+  content: "\e919";
+}
+.i-question:before {
+  content: "\e910";
+}
+.i-vk:before {
+  content: "\e918";
+}
+.i-youtube:before {
+  content: "\e91a";
+}
+.i-facebook:before {
+  content: "\e909";
+}
+.i-instagram:before {
+  content: "\e90b";
+}
