@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lang.ing | Home</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.fatNav.css">
+</head>
+<body>
+	<div id="fullpage">
+
+		<section class="section one">
+			<div class="one-wrapper">
+				<header class="header-bar">
+					<a href="#" class="logo-name white"><span>W<mark>.</mark></span>Code<em>Master</em></a>
+				</header>
+				<main class="home-content">
+					<h1 class="home-title">
+						<strong><span class="mdash">&mdash;</span> <mark>Профессиональная</mark> вёрстка сайтов</strong>
+						<strong><span class="mdash">&mdash;</span> Front-end разработка</strong>
+					</h1>
+					<div class="technology-skills">
+						<div class="technology-skills--main">
+							<i class="i-html"></i>
+							<i class="i-css"></i>
+							<i class="i-js"></i>
+						</div>
+						<div class="technology-skills--all">
+							<i class="i-jquery"></i>
+							<i class="i-boostrap"></i>
+							<i class="i-sass"></i>
+							<i class="i-gulp"></i>
+						</div>
+					</div>
+				</main>
+				<section class="layout-portfolio">
+					<div class="notebook"></div>
+					<div class="layout-portfolio_container">
+						<div class="portfolio-item transparent"></div>
+						<div class="portfolio-item">
+							<div class="portfolio-item--wrap">
+								<i class="i-search"></i>
+							</div>
+							<img src="img/portfolio/1.jpg" alt="#">
+						</div>
+						<div class="portfolio-item">
+							<div class="portfolio-item--wrap">
+								<i class="i-search"></i>
+							</div>
+							<img src="img/portfolio/3.jpg" alt="#">
+						</div>
+						<div class="portfolio-item">
+							<div class="portfolio-item--wrap">
+								<i class="i-search"></i>
+							</div>
+						</div>
+						<div class="portfolio-item">
+							<div class="portfolio-item--wrap">
+								<i class="i-search"></i>
+							</div>
+						</div>
+					</div>
+				</section>
+				<button class="bt-header-down">
+					<span></span>
+				</button>
+			</div> <!-- /.one-wrapper -->
+		</section> <!-- /.section.one -->
+
+		<section class="section two">
+
+		</section> <!-- /.section.one -->
+
+	</div> <!-- .fullpage -->
+
+	<div class="fat-nav">
+	  <div class="fat-nav__wrapper">
+	    <ul>
+	      <li><a href="#">Home</a></li>
+	      <li><a href="#">Category</a></li>
+	      <li><a href="#">Portfolio</a></li>
+	      <li><a href="#">Contact</a></li>
+	      <li><a href="#">About</a></li>
+	    </ul>
+	  </div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/fullpage.min.js"></script>
+	<script src="js/jquery.fatNav.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#fullpage').fullpage();
+		});
+	</script>
+	<script>
+		$.fatNav();
+	</script>
+</body>
+</html>
