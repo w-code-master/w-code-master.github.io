@@ -1,0 +1,56 @@
+// default
+body {
+	background-color: #f4f4f4;
+	font: normal 14px/1.3 'GothamPro';
+}
+
+ul, ol {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+a {
+	color: $blue;
+	&:hover {
+		text-decoration: none;
+		color: $accent;
+	}
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h3, .h3,
+h5, .h5,
+h6, .h6 {
+	font-weight: bold;
+}
+
+// placeholder
+::placeholder {
+	transition: 1s;
+}
+:focus::placeholder {
+	color: rgba(#000, .3);
+}
+
+
+// scrollbar
+::-webkit-scrollbar {
+	height: 6px;
+	width: 6px;
+	background-color: #F9F9F9;
+	transition: .5s;
+	border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+	background-color: #F5F5F5;
+	border-radius: 3px;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 3px;
+	box-shadow: inset 0 0 6px rgba(0,0,0,.2);
+	background-color: rgba(#000, .35);
+}

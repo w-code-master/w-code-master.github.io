@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Баллы</title>
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script src="js/jquery.custom-radio-checkbox.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+//Стилезация Checkbox, Radio
+	$(".checkbox_point input[type='checkbox']").Custom({
+		customStyleClass:'checkbox',
+		customHeight:'18'
+	});
+	
+});
+</script>
+</head>
+
+<body>
+<div id="wrapper_height"><!--wrapper_height-->
+	<div id="container_height"><!--container_height-->
+
+        <div class="wrapper_header"><!--wrapper_header-->
+            <div class="wrapper_1000px"><!--wrapper_1000px-->
+            
+                <ul class="statistics_actual"><!--statistics_actual-->
+                	<li><p class="amour_ball"><span>48</span>баллов</p></li>
+                    <li><p class="msg_actual">0</p></li>
+                	<li><a href="#" class="delete_actual"></a></li>
+                </ul><!--statistics_actual-->
+                
+                <div class="personality_info">
+                	<div class="photo_personality_mini"><img src="images/photo_personality_mini.png" width="30" height="29" alt="#"></div>
+                	<a href="#">Vitaliy<br>Vasyanovych</a>
+                </div>
+                
+                <form action="#" method="post" class="search_form">
+                	<input type="text" name="#" placeholder="Найти...">
+                    <div class="search_icon_submit"><input type="submit" name="#" value=""></div>
+                </form>
+                <div class="clear"></div>
+            </div><!--/wrapper_1000px-->
+        </div><!--/wrapper_header-->
+        <div class="green_line_4px"></div>
+        
+        <div class="wrapper_1000px"><!--wrapper_1000px-->
+        	<div class="left_collons"><!--left_collons-->
+            	<ul class="left_actual_menu">
+                	<li>
+                    	<a href="#">Профиль</a>
+                        <!--<div class="amour_msg">2</div>-->
+                    	<span></span>
+                    </li>
+                    <li>
+                    	<a href="#">Мое обьявление</a>
+                    	<span></span>
+                    </li>
+                    <li class="active_actual_menu">
+                    	<a href="#">Баллы</a>
+                    	<span></span>
+                    </li>
+                    <li>
+                    	<a href="#">Цены</a>
+                    	<span></span>
+                    </li>
+                </ul>
+            </div><!--/left_collons-->
+            
+            <div class="content_770px"><!--content_770px-->
+            	
+                <form action="#" method="post">
+                	<div class="beside_you_on_count"><!--У Вас на счету-->
+                    	<h4>У Вас на счету</h4>
+                        <div class="amour_on_count">48</div>
+                        <p>баллов</p>
+                    </div><!--/У Вас на счету-->
+                    
+                    <ul class="buys_ballet"><!--buys_ballet-->
+                    	<li>
+                        	<h1>Купить дополнительно баллы</h1>
+                            <span class="number_stage_element">1</span>
+                            <h3>Выберите количество баллов</h3>
+                            <input type="text" name="#" value="11">
+                        </li>
+                    	<li style="border-bottom:0; box-shadow:none; padding-bottom:0;">
+                            <span class="number_stage_element">2</span>
+                            <h3>Выберите способ оплаты</h3>
+                            <ul class="than_pay_list">
+                                <li>
+                                    <div style="padding-left:12px;"><div class="icon_payment"><p><img src="images/payment_mastercard.png" width="114" height="33" alt="MasterCard"></p></div></div>
+                                    <div class="payment_check_box">
+                                        <p class="checkbox_point"><input type="checkbox" name="#" id="payment_label1"></p>
+                                        <label for="payment_label1">Банковская карта</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div style="padding-left:12px;"><div class="icon_payment"><p><img src="images/payment_qiwi.png" width="125" height="51" alt="Qiwi (Киви)"></p></div></div>
+                                    <div class="payment_check_box">
+                                        <p class="checkbox_point"><input type="checkbox" name="#" id="payment_label2"></p>
+                                        <label for="payment_label2">Qiwi (Киви)</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div style="padding-left:12px;"><div class="icon_payment"><p><img src="images/payment_yandex.png" width="122" height="52" alt="ЯндексДеньги"></p></div></div>
+                                    <div class="payment_check_box">
+                                        <p class="checkbox_point"><input type="checkbox" name="#" id="payment_label3"></p>
+                                        <label for="payment_label3">ЯндексДеньги</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul><!--/buys_ballet-->
+                    <div class="than_pay_block">
+                        <div class="info_to_payment">
+                            <div class="whole_to_spayment">
+                                <p>21 грн</p>
+                                <span>Всего к оплате:</span>
+                            </div>
+                            <div class="clear"></div>
+                            <input type="submit" name="#" value="Отменить">
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </form>
+            </div><!--/content_770px-->
+            <div class="clear"></div>
+        </div><!--/wrapper_1000px-->
+
+	</div><!--/container_height-->
+</div><!--/wrapper_height-->
+
+    
+    <div id="wrapper_footer"><!--wrapper_footer-->
+    	<div id="footer">
+        	<div id="copiryght">
+            	<p>Сайт © 2013<br><a href="#">info@сайт.ru</a></p>
+                <p><a href="#">Наш блог</a></p>
+            </div>
+            <ul class="footer_menu">
+            	<li><a href="#">Пользовательское соглашение</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Нашим партнерам</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Карта сайта</a></li>
+            </ul>
+        </div>
+    </div><!--/wrapper_footer-->
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Главная</title>
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/equalHeight.js"></script>
+<script type="text/jscript" src="js/cusel-min-2.5.js"></script>
+<script type="text/javascript" src="js/jquery.reveal.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	//Скрипт для табов
+	var tabContainers = $('div.tabs > div'); // получаем массив контейнеров
+		tabContainers.hide().filter(':first').show(); // прячем все, кроме первого
+		
+		// далее обрабатывается клик по вкладке
+		$('div.tabs .tabNavigation a').click(function () {
+			tabContainers.hide(); // прячем все табы
+			tabContainers.filter(this.hash).show(); // показываем содержимое текущего
+			$('div.tabs .tabNavigation a').removeClass('selected_tabs'); // у всех убираем класс 'selected'
+			$(this).addClass('selected_tabs'); // текушей вкладке добавляем класс 'selected'
+			return false;
+		}).filter(':first').click();
+	
+	//Вызов селекта
+	var params = {
+		changedEl: ".classSelect_region, .classSelect_cat",
+		visRows: 5,
+		scrollArrows: true
+	}
+	cuSel(params);
+
+});//Конец Ready
+</script>
+</head>
+
+<body>
+<div id="wrapper_height"><!--wrapper_height-->
+	<div id="container_height"><!--container_height-->
+
+        <div class="wrapper_header"><!--wrapper_header-->
+            <div class="wrapper_1000px"><!--wrapper_1000px-->
+                <div class="entry_form_count">
+                    <form action="#" method="post">
+                        <input type="text" name="#" placeholder="Ваш логин">
+                        <input type="password" name="#" placeholder="Ваш пароль">
+                        <input type="submit" name="#" value="Войти на сайт">
+                    </form>
+                </div>
+                <div class="entry_count_network">
+                    <p>Войти через:</p>
+                    <a href="#" class="icon_faceboock"></a>
+                    <a href="#" class="icon_vk"></a>
+                    <a href="#" class="icon_od"></a>
+                    <a href="#" class="icon_twitter"></a>
+                </div>
+                <div class="clear"></div>
+            </div><!--/wrapper_1000px-->
+        </div><!--/wrapper_header-->
+        <div class="green_line_4px"></div>
+        
+        <div class="wrapper_1000px"><!--wrapper_1000px-->
+            <div id="header"><!--header-->
+                <div class="header_baner"></div>
+                <div class="reg_info">
+                    <p>Присоединяйся к порталу<span>и открывай новый мир</span></p>
+                    <a href="#" data-reveal-id="myModal_book_bell">РЕГИСТРАЦИЯ</a>
+                </div>
+                <div class="clear"></div>
+            </div><!--/header-->
+            
+            <div class="main_baner_list">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            
+            <div class="main_text_index">
+                       <p>Портал предназначен для жителей г.Красноярска, на котором пользователи получают информацию о городе. Информация предоставляется в виде каталога предприятий,<br>
+    просматривая которые  пользователи получают баллы. За баллы  пользователь может получать подарки, которые он будет выбирать самостоятельно из каталога подарков.<br>
+    Так же предусмотрены еще способы получение баллов, например реферальная система (приведи друга и получи баллы), поставь мне нравится виджетом во вконтакте и<br>
+    аналогичных сервисах а так же мне нравится и за это получи баллы.</p>
+           <p>Развлекательная часть портала состоит в блоге и развлекательных постах. Блог будет ввестись админом. Развлекательные посты добавлять будут сами пользователи<br>
+    (обязательное условие постов будем его модерация т.е. пока пост созданный пользователем не проверится админом, он не будет размещен на портале), размещение<br>
+    постов на портале так же будет вознаграждаться баллами. Добавить дополнительную систему получения баллов, к примеру если пост понравился 10 пользователям он <br>
+    получает еще 1 балл.  (Возможность администратору регулировать систему вознаграждений, назначать сколько баллов за что получает пользователь, а так же начислять<br>
+    бонусы). Забегая вперед при регистрации так же должны начисляться бонусные баллы. </p>
+            </div>
+            
+            <div class="main_index_news"><!--main_index_news-->
+                <div class="we_in_social_set">
+                    <h3>Мы в социальных сетях:</h3>
+                    <ul>
+                        <li><img src="images/block_vk.png"></li>
+                        <li><img src="images/block_faceboock.png"></li>
+                        <li><img src="images/block_od.png"></li>
+                    </ul>
+                </div>
+                
+                <div class="news_portal">
+                    <h3>Новости портала</h3>
+                    <ul>
+                        <li>
+                            <div class="mini_img_news"></div>
+                            <div class="descrp_news_title">
+                                <a href="#">Новые изменения в едином соцвзносе</a>
+                            </div>
+                            <div class="date_news">20.08.2013</div>
+                        </li>
+                        <li>
+                            <div class="mini_img_news"></div>
+                            <div class="descrp_news_title">
+                                <a href="#">Новые изменения в едином соцвзносе</a>
+                            </div>
+                            <div class="date_news">20.08.2013</div>
+                        </li>
+                        <li>
+                            <div class="mini_img_news"></div>
+                            <div class="descrp_news_title">
+                                <a href="#">Новые изменения в едином соцвзносе</a>
+                            </div>
+                            <div class="date_news">20.08.2013</div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="weather_block">
+                    <h3>Погода в Красноярске</h3>
+                    <div class="weather_info"><img src="images/weather.jpg"></div>
+                </div>
+                <div class="clear"></div>
+            </div><!--/main_index_news-->
+        </div><!--/wrapper_1000px-->
+
+	</div><!--/container_height-->
+</div><!--/wrapper_height-->
+
+    
+    <div id="wrapper_footer"><!--wrapper_footer-->
+    	<div id="footer">
+        	<div id="copiryght">
+            	<p>Сайт © 2013<br><a href="#">info@сайт.ru</a></p>
+                <p><a href="#">Наш блог</a></p>
+            </div>
+            <ul class="footer_menu">
+            	<li><a href="#">Пользовательское соглашение</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Нашим партнерам</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Карта сайта</a></li>
+            </ul>
+        </div>
+    </div><!--/wrapper_footer-->
+    
+    <div id="myModal_book_bell" class="reveal-modal">
+        <div class="wrapper_reg_block"><!--wrapper_reg_block-->
+            <div class="title_reg_block">
+                <h2>Регистрация</h2>
+            </div>
+            <div class="come_in_network"><!--come_in_network-->
+                <ul>
+                    <li><a href="#" class="entry_vk"><span>Войти через ВКонтакте</span></a></li>
+                    <li><a href="#" class="entry_faceboock"><span>Войти через Facebook</span></a></li>
+                    <li><a href="#" class="entry_mailru"><span>Войти через Mail.ru</span></a></li>
+                    <li><a href="#" class="entry_od"><span style="padding-top:9px;">Войти через<br>Одноклассники</span></a></li>
+                </ul>
+                <div class="or_element">или</div>
+            </div><!--/come_in_network-->
+            
+            
+            <div class="tabs"><!--tabs-->
+            
+                <!-- Cами вкладки -->
+                <ul class="tabNavigation">
+                    <li><a class="" href="#reg1">Пользователь</a></li>
+                    <li><a class="" href="#reg2">Подробные</a></li>
+                </ul>
+                
+                <!-- Контейнеры содержимого -->
+                <div id="reg1" class="tabs_block_content"><!--tabs_block_content-->
+                    <form action="#" method="post">
+                    <div class="block_content_290px"><!--block_content_290px-->
+                        <div class="my_announcement_content2"><!--my_announcement_content-->
+                            <div class="email_login_entry">
+                                <h5>E-mail (login)</h5>
+                                <input type="text" name="#">
+                                <span class="yes_login_arrow"></span>
+                            </div>
+                            
+                            <div class="entry_password">
+                                <h5>Пароль</h5>
+                                <input type="password" name="#">
+                                <h5>Еще раз</h5>
+                                <input type="password" name="#">
+                            </div>
+                            
+                            <div class="email_login_entry">
+                                <h5>Код пригласившего польователя</h5>
+                                <input type="text" name="#">
+                            </div>
+                            
+                            
+                        </div><!--/my_announcement_content-->
+                    </div><!--/block_content_290px-->
+                    
+                    <div class="block_content_290px"><!--block_content_290px-->
+                        <div class="my_announcement_content2"><!--my_announcement_content2-->
+                            <ul class="address_form_persson" style="padding-bottom:10px;">
+                                <li>
+                                    <h5>Фамилия</h5>
+                                    <input type="text" name="#">
+                                </li>
+                                <li>
+                                    <h5>Имя</h5>
+                                    <input type="text" name="#">
+                                </li>
+                            </ul>
+                            
+                            <h5>Дата рождения</h5>
+                            <div style="float:left;">
+                            <select class="classSelect_cat" name="#" style="width:48px;">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">17</option>
+                                <option value="2">18</option>
+                                <option value="3">20</option>
+                            </select>
+                            </div>
+                            <span class="line_for_select">-</span>
+                            <div style="float:left;">
+                            <select class="classSelect_cat" name="#" style="width:76px;">
+                                <option value="1" selected>января</option>
+                                <option value="2">16</option>
+                                <option value="3">17</option>
+                                <option value="2">18</option>
+                                <option value="3">20</option>
+                            </select>
+                            </div>
+                            <span class="line_for_select">-</span>
+                            <select class="classSelect_cat" name="#" style="width:60px;">
+                                <option value="1" selected>2000</option>
+                                <option value="2">2001</option>
+                                <option value="3">17</option>
+                                <option value="2">18</option>
+                                <option value="3">20</option>
+                            </select>
+                            
+                            <div class="floor_persson">
+                                <h5>Пол</h5>
+                                <p>
+                                    <input type="radio" name="#" id="check_label_1">
+                                    <label for="check_label_1">мужской</label>
+                                </p>
+                                <p>
+                                    <input type="radio" name="#" id="check_label_2">
+                                    <label for="check_label_2">женский</label>
+                                </p>
+                            </div>
+                            
+                            <div class="code_with_pictures"><!--code_with_pictures-->
+                                <h5>Введите код с картинки</h5>
+                                <div class="code"><img src="images/code.png"></div>
+                                <div class="input_for_code">
+                                    <p>Код</p>
+                                    <input type="text" name="#">
+                                </div>
+                            </div><!--/code_with_pictures-->
+                            <div class="clear"></div>
+                            
+                        </div><!--/my_announcement_content2-->
+                    </div><!--/block_content_290px-->
+                    <div class="clear"></div>
+                    <div style="height:50px; position:relative;">
+                        <div class="user_agreement">
+                            <input type="checkbox" name="#" checked>
+                            <p>Я согласен с <a href="#">Пользовательским соглашением</a></p>
+                            <div class="clear"></div>
+                        </div>
+                        <input type="submit" name="#" value="Зарегистрироваться" class="registration_submit">
+                    </div>
+                    </form>
+                </div><!--/tabs_block_content-->
+                
+                <div id="reg2" class="tabs_block_content"><!--tabs_block_content-->
+                    <form action="#" method="post">
+                    <div class="block_content_290px"><!--block_content_290px-->
+                        <div class="my_announcement_content2"><!--my_announcement_content2-->
+                            <div class="email_login_entry">
+                                <h5>E-mail (login)</h5>
+                                <input type="text" name="#">
+                                <span class="yes_login_arrow"></span>
+                            </div>
+                            
+                            <div class="entry_password">
+                                <h5>Пароль</h5>
+                                <input type="password" name="#">
+                                <h5>Еще раз</h5>
+                                <input type="password" name="#">
+                            </div>
+                        </div><!--/my_announcement_content2-->
+                    </div><!--/block_content_290px-->
+                    
+                    <div class="block_content_290px"><!--block_content_290px-->
+                        <div class="my_announcement_content2"><!--my_announcement_content2-->
+                            
+                            
+                            <div class="code_with_pictures"><!--code_with_pictures-->
+                                <h5>Введите код с картинки</h5>
+                                <div class="code"><img src="images/code.png"></div>
+                                <div class="input_for_code">
+                                    <p>Код</p>
+                                    <input type="text" name="#">
+                                </div>
+                            </div><!--/code_with_pictures-->
+                            <div class="clear"></div>
+                        </div><!--/my_announcement_content2-->
+                    </div><!--/block_content_290px-->
+                    <div class="clear"></div>
+                    <div style="height:50px; position:relative;">
+                        <div class="user_agreement">
+                            <input type="checkbox" name="#" checked>
+                            <p>Я согласен с <a href="#">Пользовательским соглашением</a></p>
+                            <div class="clear"></div>
+                        </div>
+                        <input type="submit" name="#" value="Зарегистрироваться" class="registration_submit">
+                    </div>
+                    </form>
+                </div><!--/tabs_block_content-->
+                
+                <div class="clear"></div> 
+                   
+            </div><!--/tabs-->
+            
+            <div class="clear"></div>
+        </div><!--/wrapper_reg_block-->   
+    	<a class="close-reveal-modal"></a>
+    </div>
+</body>
+</html>
