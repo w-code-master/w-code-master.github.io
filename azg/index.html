@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>StartHTML</title>
+	<title>Azbuka.digital</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -52,7 +52,7 @@
 						<i class="i-call"></i>
 						<strong>Поддержка клиентов</strong>
 					</div>
-					<a href="#" class="btn">
+					<a href="#offer-form" class="btn btn-call-popup">
 						<span class="btn__bg"></span>
 						<span class="text">Заказать услугу</span>
 					</a>
@@ -68,7 +68,7 @@
 				<div class="header__offer">
 					<h1 class="h1">Сделаем сайт, который увеличит количество заказов на 50-270% за 14 дней экспертами <br> с 8-ти летним опытом</h1>
 					<p>Узнайте секреты как увеличить количество продаж через интернет и увеличить прибыль минимум на 25% уже в первые две недели оставив заявку по кнопке ниже</p>
-					<a class="btn-primary" href="#"><span class="text">Оставить заявку</span> <span class="btn-primary__arrow">→</span></a>
+					<a class="btn-primary btn-call-popup" href="#offer-form"><span class="text">Оставить заявку</span> <span class="btn-primary__arrow">→</span></a>
 					<p class="consent"><i class="i-consent"></i>Нажимая кнопку “оставить заявку”, вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</p>
 				</div>
 				<!-- /.header__offer -->
@@ -91,6 +91,26 @@
 		<!-- /.footer -->
 	</header>
 	<!-- /.header -->
+
+	<!-- .form-popup #offer-form -->
+	<div class="form-popup mfp-hide" id="offer-form">
+		<div class="offer-modal">
+			<div class="offer-modal__inner">
+				<form>
+					<div class="h2">Оставьте заявку</div>
+					<p class="offer-modal__subtitle">и наш менеджер свяжется <br>с вами через 3 минуты</p>
+					<div class="input"><input type="text" placeholder="Введите ваше имя:" required></div>
+					<div class="input"><input class="masked-input" type="tel" placeholder="Введите ваш телефон:" required></div>
+					<button type="submit" class="btn-primary" href="#"><span class="text">Оставить заявку</span></button>
+					<footer>Нажимая на кнопку «Оставить заявку», <br> вы принимаете <a href="#">условия передачи данных</a></footer>
+				</form>
+			</div>
+			<!-- /.offer-modal__inner -->
+			<button type="button" class="mfp-close">×</button>
+		</div>
+		<!-- /.offer-modal -->
+	</div>
+	<!-- /.form-popup -->
 
 	<script src="js/scripts.min.js"></script>
 
