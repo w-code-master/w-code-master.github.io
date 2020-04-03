@@ -1,0 +1,135 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+@import "ui";
+
+html, body {
+	overflow-y: hidden;
+}
+
+body {
+	font: 14px 'Roboto', sans-serif;
+	color: #222632;
+}
+
+h1, .h1 {
+	font: 60px/.9 'Bebas Neue';
+	letter-spacing: -.01em;
+}
+
+p {
+	margin: 0;
+}
+
+.text-right {
+	text-align: right;
+}
+.font-weight-medium {
+	font-weight: 500;
+}
+
+.header {
+	height: 100vh;
+	background: #322c48 url('../img/bg.png') no-repeat center bottom / cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	&__panel {
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	&__info {
+		color: #fff;
+		padding: 8px 0;
+		background-color: #222632;
+	}
+	&__top {
+		background-color: #fff;
+		position: relative;
+		padding: 10px 0;
+		&:after {
+			content: '';
+			width: 1920px;
+			height: 37px;
+			background: url('../img/shadow.png') no-repeat center top;
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			margin-left: -960px;
+		}
+		.container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+	&__content {
+		width: 100%;
+		color: #fff;
+		.container {
+			position: relative;
+			min-height: 470px;
+		}
+	}
+	&__offer {
+		max-width: 670px;
+		.h1 {
+			margin-bottom: 15px;
+		}
+		p {
+			font-size: 18px;
+			padding-right: 80px;
+			margin-bottom: 20px;
+		}
+		.consent {
+			font-size: 13px;
+			margin-right: 100px;
+		}
+		.btn-primary {
+			margin-bottom: 25px;
+		}
+	}
+	&__img {
+		width: 638px;
+		height: 469px;
+		background: url('../img/offer-img.png') no-repeat center / cover;
+		position: absolute;
+		right: -100px;
+		top: 50%;
+		margin-top: -235px;
+	}
+
+	.footer {
+		width: 100%;
+		position: absolute;
+		left: 0;
+		bottom: 15px;
+		text-align: right;
+		font-weight: 100;
+		color: #fff;
+		a {
+			display: inline-block;
+			color: inherit;
+			opacity: 45%;
+			margin-bottom: 10px;
+		}
+		p {
+			opacity: 25%;
+			line-height: 1.4;
+		}
+	}
+}
+.consent {
+	display: flex;
+	color: #c7c7c7;
+	font-size: 13px;
+	.i-consent {
+		flex-shrink: 0;
+		margin-right: 10px;
+	}
+}
+
+@import "media";
