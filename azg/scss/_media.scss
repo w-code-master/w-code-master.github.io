@@ -1,0 +1,158 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+.container {
+	max-width: 100%;
+}
+.header {
+	background-image: url('../img/md/bg.png');
+	&__info {
+		display: none;
+	}
+	&__content {
+		padding-top: 20px;
+	}
+	&__top {
+		.covid,
+		.customer-support,
+		.btn {
+			display: none;
+		}
+		.phone-call {
+			margin-left: auto;
+		}
+	}
+	&__img {
+		width: 400px;
+		height: 294px;
+		background-image: url('../img/md/offer-img.png');
+		right: 0;
+		margin-top: -150px;
+	}
+}
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+.header {
+	&__content {
+		.container {
+			min-height: auto;
+		}
+	}
+	&__offer {
+		max-width: 100%;
+		text-align: center;
+		.h1 {
+			font-size: 52px;
+			br {
+				display: none;
+			}
+		}
+		p {
+			max-width: 600px;
+			margin: 0 auto 30px;
+			padding-right: 0;
+			&.consent {
+				max-width: 500px;
+				padding: 0 50px;
+				position: relative;
+				margin-right: 0;
+				.i-consent {
+					position: absolute;
+					left: 0;
+					top: 0;
+				}
+			}
+		}
+		.btn-primary {
+			margin-left: 0;
+		}
+	}
+	&__img {
+		display: none;
+	}
+	.footer {
+		text-align: center;
+	}
+}
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+
+.logo {
+	line-height: 30px;
+	padding-left: 65px;
+	font-size: 18px;
+	&:before {
+		width: 61px;
+		height: 30px;
+		background-size: cover;
+	}
+}
+
+.header {
+	&__top {
+		padding: 10px 0 7px;
+		.logo {
+			margin-right: 0;
+		}
+		.container {
+			justify-content: center;
+		}
+		.phone-call {
+			display: none;
+		}
+	}
+	&__content {
+		padding-top: 0;
+	}
+	&__offer  {
+		.h1 {
+			font-size: 30px;
+			line-height: 1;
+		}
+		p {
+			font-size: 14px;
+			margin-bottom: 20px;
+		}
+	}
+	.footer {
+		font-size: 12px;
+	}
+}
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+	
+}
