@@ -1,0 +1,92 @@
+body {
+	font: 16px/1.52 'Fira Sans', sans-serif;
+}
+
+a {
+	color: $blue;
+	transition: .5s;
+	&:hover {
+		text-decoration: none;
+		color: $red;
+	}
+}
+
+ul, ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-weight: 500;
+	line-height: 1.27;
+}
+h1, .h1 {
+	font-size: 48px;
+}
+h2, .h2 {
+	font-size: 36px;
+}
+h3, .h3 {
+	font-size: 30px;
+}
+h4, .h4 {
+	font-size: 24px;
+	font-weight: 400;
+}
+h5, .h5 {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
+	height: 48px;
+	border: 1px solid rgba(#999, .4);
+	padding: 0 23px;
+	font: 18px 'Fira Sans', sans-serif;
+	background-color: #fff;
+	border-radius: 4px;
+	transition: border .5s, box-shadow 1s;
+	margin-bottom: 20px;
+	&:focus {
+		box-shadow: 0 5px 20px rgba($blue-light, .3);
+		border-color: rgba($blue-light, .5);
+		outline: none;
+	}
+}
+
+// placeholder
+::-webkit-input-placeholder {
+	color: #999;
+	transition: 1s;
+}
+::-moz-placeholder {
+	color: #999;
+	transition: 1s;
+}
+:-moz-placeholder {
+	color: #999;
+	transition: 1s;
+}
+:-ms-input-placeholder {
+	color: #999;
+	transition: 1s;
+}
+
+// placeholder focus
+:focus::-webkit-input-placeholder {
+	opacity: .3;
+}
+:focus::-moz-placeholder {
+	opacity: .3;
+}
+:focus:-moz-placeholder {
+	opacity: .3;
+}
+:focus:-ms-input-placeholder {
+	opacity: .3;
+}

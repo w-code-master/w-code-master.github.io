@@ -1,0 +1,83 @@
+// прижатие футера
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+.main-wrap {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+// end прижатие футера
+
+//////////////////////////////
+
+// colors
+.color-blue {
+	color: $blue-normal;
+}
+
+.color-red {
+	color: $red;
+}
+
+//////////////////////////////
+
+// padding
+.padding-right--30 {
+	padding-right: 30px;
+}
+.padding-left--30 {
+	padding-left: 30px;
+}
+.padding-left--40 {
+	padding-left: 40px;
+}
+
+//////////////////////////////
+
+// margin
+.margin-bottom--40 {
+	margin-bottom: 40px;
+}
+
+//////////////////////////////
+
+// text
+.text-center {
+	text-align: center;
+}
+
+//////////////////////////////
+
+// forms
+.input-block {
+	display: block;
+	width: 100%;
+}
+
+//////////////////////////////
+
+// graphics , images
+.picture-box {
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 4px;
+	img {
+		max-width: 100%;
+	}
+}
+
+
+
+.hidden {
+	display: none !important;
+}
