@@ -38,4 +38,43 @@ $(function() {
 	});
 
 
+	$(".intro .h2, .program .h2, .learning .h2, .packages .h2, .questions .h2").animated("fadeInDown");
+
+	$(".header__action .btn, .program .btn").animated("bounceIn");
+
+	$(".header .logo").animated("bounceIn");
+
+	$(".header .follow-me strong").animated("fadeInLeft");
+	$(".header .follow-me .btn-social").animated("zoomIn");
+
+	$(".header__h1-text").animated("zoomIn");
+
+	$(".header__action p").animated("fadeInDown");
+	$(".header .click-on-the-button").animated("flipInX");
+
+	$(".header__icon-play").animated("zoomInLeft");
+
+	$(".service-info__item").animated("fadeInUp");
+
+	$(".intro__info-number").animated("zoomInDown");
+	$(".intro__info p").animated("fadeInDown");
+	$(".intro__info [class*='i-']").animated("zoomIn");
+
+	$(".hgroup__title, .hgroup__text").animated("fadeInDown");
+
+	$(".features-list__item, .program__item").animated("fadeInUp");
+
+	$(".teacher__item").animated("bounceIn");
+
+	$(".teacher__author").animated("fadeInUp");
+
+	$(".learning .slick-slide").animated("fadeInLeft");
+
+	$(".learning__slider .prev, .learning__slider .next, .learning .slider-paging-info").animated("bounceIn");
+
+	$(".packages__item").animated("fadeInLeft");
+
+	$(".questions .beefup").animated("fadeInUp");
+
+
 });
