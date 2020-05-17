@@ -1,0 +1,135 @@
+// default
+html, body {
+	overflow-x: hidden;
+}
+body {
+	font: 16px/1.3 'BerlingskeSans-Lt';
+	color: $black;
+}
+
+ul, ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+// typography
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'BerlingskeSans-Md';
+	line-height: 1.1;
+	font-weight: normal;
+    letter-spacing: 0.02em;
+}
+
+strong, b {
+	font-family: 'BerlingskeSans-Md';
+	font-weight: normal;
+}
+
+h1, .h1 {
+	font-size: 65px;
+	margin-bottom: 40px;
+}
+
+h2, .h2 {
+	font-size: 55px;
+	margin-bottom: 30px;
+}
+
+h3, .h3 {
+	font-size: 46px;
+	margin-bottom: 20px;
+}
+
+// forms
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+textarea {
+	height: 84px;
+	background-color: #fff;
+	border: none;
+	border-radius: 7px;
+	padding: 0 33px;
+	border: 1px solid transparent;
+	transition: border-color .5s, box-shadow .5s;
+	font: 17px 'BerlingskeSans-Md';
+	margin-bottom: 18px;
+	color: #000;
+	letter-spacing: .05em;
+	&:focus {
+		outline: none;
+		border-color: #80bdff;
+	    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+	}
+	&::selection {
+		background-color: rgba(0,123,255,.5);
+		color: #fff;
+	}
+}
+textarea {
+	max-width: 870px;
+	width: 100%;
+	height: auto;
+	min-height: 150px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+::placeholder {
+	color: #717171;
+	transition: 1s;
+}
+:focus::placeholder {
+	color: transparent;
+}
+
+
+// layout
+.container {
+	width: 100%;
+	max-width: 1195px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+// text
+.text-center {
+	text-align: center;
+}
+.title-light {
+	font-family: 'BerlingskeSans-Lt';
+}
+
+.hgroup {
+	text-align: center;
+	&__title {
+		margin-bottom: 25px;
+	}
+	&__text {
+		font-size: 24px;
+	}
+}
+
+// text-size
+.fz-22 {
+	font: 22px 'BerlingskeSans-Md';
+}
+.fz-21 {
+	font-size: 21px;
+}
+.fz-18 {
+	font-size: 18px;
+}
+
+// utility
+.z-index {
+	z-index: 1;
+	position: relative;
+}
