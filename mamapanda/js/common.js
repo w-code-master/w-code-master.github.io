@@ -14,7 +14,6 @@ $(function() {
 	$('.popular-slider').flickity({
 		cellAlign: 'left',
 		groupCells: true,
-		adaptiveHeight: true,
 		pageDots: false,
 		wrapAround: true,
 		groupCells: 1,
@@ -24,6 +23,17 @@ $(function() {
 		  x2: 60, y2: 20,
 		  x3: 40
 		}
+	});
+
+	$('.insta-slider').flickity({
+		cellAlign: 'left',
+		adaptiveHeight: true,
+		prevNextButtons: false,
+		pageDots: false,
+		wrapAround: true,
+		autoPlay: 2000,
+		pauseAutoPlayOnHover: false,
+		draggable: false
 	});
 
 });
