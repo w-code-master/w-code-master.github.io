@@ -1,0 +1,53 @@
+// default
+html, body {
+	height: 100%;
+	overflow-x: hidden;
+}
+body {
+	font: 16px 'BerlingskeSans', sans-serif;
+	color: #323232;
+}
+p, address {
+	margin-bottom: 0;
+}
+a {
+	color: #0b6eb5;
+	text-decoration: underline;
+	&:hover {
+		text-decoration: none;
+		color: lighten(#0b6eb5, 15%);
+	}
+}
+
+ul, ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	font-size: 50px;
+	margin-bottom: 15px;
+}
+.weight-normal {
+	font-weight: normal;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+// - footer to bottom
+body {
+	display: flex;
+	flex-direction: column;
+}
+.header {
+	flex: 1 0 auto;
+}
+.footer {
+	flex-shrink: 0;
+}

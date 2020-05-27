@@ -1,0 +1,65 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+@import "base";
+@import "icons";
+@import "ui";
+
+.header {
+	background: url('../img/bg-header.jpg') no-repeat center / cover;
+	&__top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px 0 60px;
+	}
+	&__content {
+		display: flex;
+		align-items: center;
+		&-info {
+			width: 100%;
+			max-width: 590px;
+			padding-right: 20px;
+		}
+		&-product {
+			position: relative;
+			padding-bottom: 90px;
+			margin-left: 15px;
+			.btn-position {
+				position: absolute;
+				right: 50px;
+				text-align: center;
+				bottom: 76px;
+			}
+		}
+	}
+	.logo {
+		margin-top: 10px;
+	}
+	.map-info {
+		margin-right: 100px;
+		margin-top: 10px;
+	}
+
+	.special-price {
+		display: flex;
+		align-items: center;
+		margin-bottom: 31px;
+	}
+
+	.gost {
+		margin-left: 17px;
+		margin-bottom: 20px;
+	}
+
+	.list-text {
+		margin-left: 56px;
+		margin-bottom: 50px;
+	}
+
+	.btn {
+		margin-left: 50px;
+	}
+}
+
+@import "media";
