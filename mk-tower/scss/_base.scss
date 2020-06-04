@@ -1,0 +1,45 @@
+// default
+html, body {
+	height: 100%;
+	overflow-x: hidden;
+}
+body {
+	font-family: 'ProximaNova';
+}
+p, address {
+	margin-bottom: 0;
+}
+
+// container
+.container {
+	width: 100%;
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+// typography
+.h1 {
+	font: normal 40px 'TrajanPro3';
+	.c-accent {
+		color: $accent;
+	}
+	.sz-52 {
+		font-size: 52px;
+	}
+	.sz-35 {
+		font-size: 35px;
+	}
+}
+
+// - footer to bottom
+body {
+	display: flex;
+	flex-direction: column;
+}
+.header {
+	flex: 1 0 auto;
+}
+.footer {
+	flex-shrink: 0;
+}
