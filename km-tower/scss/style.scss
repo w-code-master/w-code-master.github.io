@@ -1,0 +1,281 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+@import "base";
+@import "icons";
+@import "ui";
+
+.header {
+	height: 100vh;
+	min-height: 830px;
+	display: flex;
+	flex-direction: column;
+	background: #1f263b url('../img/bg-header.jpg') no-repeat center top / cover;
+	color: #fff;
+	padding-top: 55px;
+	overflow: hidden;
+
+	&__top {
+		.container {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+		}service-modal
+		.map-info {
+			margin-left: auto;
+			margin-right: 70px;
+		}
+		.get-call {
+			margin-right: 32px;
+		}
+	}
+
+	&__content {
+		margin: auto 0;
+		.container {
+			display: flex;
+			align-items: center;
+		}
+	}
+	&__offer {
+		width: 100%;
+		max-width: 674px;
+		margin-left: auto;
+		margin-bottom: 100px;
+
+		.h1 {
+			margin-bottom: 23px;
+			&.animated {
+				animation-delay: .75s;
+				animation-duration: 2s;
+			}
+			.c-accent.animated {
+				animation-delay: 1s;
+				animation-duration: 2s;
+			}
+			.sz-52.animated {
+				animation-delay: 1.25s;
+				animation-duration: 2s;
+			}
+			.sz-35.animated {
+				animation-delay: 1.5s;
+				animation-duration: 2s;
+			}
+		}
+
+		.btn {
+			margin-left: 53px;
+			&.animated {
+				animation-delay: 2.3s;
+			}
+		}
+	}
+
+	&__info {
+		width: 100%;
+		max-width: 475px;
+		order: -1;
+		position: relative;
+
+		.btn-view {
+			position: absolute;
+		    top: 105px;
+		    left: 88px;
+		    z-index: 1;
+		    &.animated {
+		    	animation-delay: 3.1s;
+		    }
+		}
+	}
+
+	.helpers {
+		height: 400px;
+		position: relative;
+		.helpers__item {
+			position: absolute;
+			&:nth-child(1) {
+				right: 15.5%;
+			    top: 80px;
+			    margin-left: 10px;
+			    &.animated {
+			    	animation-delay: 2.7s;
+			    }
+			}
+			&:nth-child(2) {
+				left: 62%;
+			    top: 226px;
+			    &.animated {
+			    	animation-delay: 2.8s;
+			    }
+			}
+			&:nth-child(3) {
+				right: 36.5%;
+			    bottom: -257px;
+			    &.animated {
+			    	animation-delay: 2.9s;
+			    }
+			}
+			&:nth-child(4) {
+				left: 455px;
+				bottom: -185px;
+				&.animated {
+					animation-delay: 3s;
+				}
+			}
+		}
+	}
+
+	.price-box.animated {
+		animation-delay: 1.75s;
+	}
+
+}
+
+.footer {
+	background-color: rgba(#201e23, .95);
+	padding: 15px 0;
+	letter-spacing: .01em;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__copy {
+		margin-left: 55px;
+	}
+}
+
+.service-modal,
+.consultant-form {
+	&:before {
+		content: '';
+		width: 800px;
+		height: 800px;
+		background: radial-gradient(ellipse at center, rgba(#5d5885,1) 0%, rgba(#fff,0) 70%);
+		position: absolute;
+		left: -200px;
+		bottom: -200px;
+		opacity: .6;
+	}
+}
+
+.consultant-form--wrap {
+	width: 100%;
+	max-width: 540px;
+	position: relative;
+	margin: 0 auto;
+}
+.consultant-form {
+	width: 100%;
+	max-width: 540px;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 50px 70px 55px;
+	background-color: #121022;
+	color: #fffefe;
+	border-radius: 5px;
+	text-align: center;
+
+	&:before {
+		width: 400px;
+		height: 400px;
+		left: -150px;
+		bottom: -50px;
+		opacity: .7;
+	}
+
+	.h3 {
+		font-size: 20px;
+	}
+
+	.btn {
+		box-shadow: 0 0 32px rgba(255,255,255,.4);
+	}
+}
+
+.service-modal--wrap {
+	width: 100%;
+	max-width: 1040px;
+	margin: 0 auto;
+	position: relative;
+}
+.service-modal {
+	display: flex;
+	width: 100%;
+	max-width: 1040px;
+	min-height: 600px;
+	margin: 0 auto;
+	background-color: #121022;
+	color: #fffefe;
+	border-radius: 7px;
+	padding: 65px 20px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	
+	.h3 {
+		color: #656565;
+	}
+	&__title {
+		position: absolute;
+		bottom: 20px;
+		transform: rotate(-90deg);
+	    transform-origin: left top;
+	    color: rgba(#fff, .06);
+	    font: 66px/1 'TrajanPro3';
+	    margin-left: -20px;
+    }
+}
+
+.layout-selection {
+	flex: 1;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+
+.send-request {
+	flex: 1;
+	position: relative;
+	z-index: 1;
+	&__info {
+		font-size: 14px;
+		line-height: 1.2;
+		text-align: center;
+		color: #78787c;
+		a {
+			color: inherit;
+			text-decoration: underline;
+			transition: .5s;
+			&:hover {
+				color: $accent;
+			}
+		}
+	}
+	.btn {
+		margin-bottom: 30px;
+	}
+	.input input {
+		min-width: 344px;
+	}
+	.h2 {
+		margin-top: 25px;
+	}
+}
+
+
+#modal-map {
+	width: 100%;
+	max-width: 960px;
+	background-color: #fff;
+	position: relative;
+	margin: 0 auto;
+}
+.modal-map {
+	border: 0;
+	width: 100%;
+	height: 700px;
+}
+
+@import "media";
