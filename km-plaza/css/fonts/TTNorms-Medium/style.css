@@ -1,9 +1,0 @@
-/* font converted using font-converter.net. thank you! */
-@font-face {
-  font-family: "TTNorms-Medium";
-
-  src: url("./fonts/TTNorms-Medium.woff") format("woff"), /* Modern Browsers */
-    url("./fonts/TTNorms-Medium.woff2") format("woff2"); /* Modern Browsers */
-  font-weight: normal;
-  font-style: normal;
-}
