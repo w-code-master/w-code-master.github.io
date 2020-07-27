@@ -1,0 +1,79 @@
+// Gilroy
+@font-face {
+	font-family: 'Gilroy';
+	src: url('fonts/gilroy/regular/gilroy-regular.woff2') format('woff2'),
+		 url('fonts/gilroy/regular/gilroy-regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: url('fonts/gilroy/semibold/gilroy-semibold.woff2') format('woff2'),
+		 url('fonts/gilroy/semibold/gilroy-semibold.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: url('fonts/gilroy/bold/gilroy-bold.woff2') format('woff2'),
+		 url('fonts/gilroy/bold/gilroy-bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: url('fonts/gilroy/black/gilroy-black.woff2') format('woff2'),
+		 url('fonts/gilroy/black/gilroy-black.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+}
+
+// Roboto
+@font-face {
+	font-family: 'Roboto';
+	src: url('fonts/roboto/regular/roboto-regular.woff2') format('woff2'),
+		 url('fonts/roboto/regular/roboto-regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+// Icomoon
+@font-face {
+	font-family: 'icomoon';
+	src: url('icomoon/icomoon.woff2') format('woff2'),
+		 url('icomoon/icomoon.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^="i-"], [class*=" i-"] {
+
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;  /* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.i-prev:before {
+	content: "\e900";
+}
+
+.i-next:before {
+	content: "\e901";
+}
+
+.i-identification:before {
+	content: "\e902";
+}
+
+.i-proteger:before {
+	content: "\e903";
+}
