@@ -1,0 +1,226 @@
+// default
+html {
+	overflow-x: hidden;
+}
+body {
+	font: normal 16px/1.19 'Gilroy', sans-serif;
+	color: $dark-light;
+	overflow-x: hidden;
+}
+
+a {
+	color: $accent;
+	&:hover {
+		color: lighten($accent-light, 10%);
+	}
+}
+
+p, label {
+	margin-bottom: 0;
+}
+
+ul, ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+// typography
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-weight: bold;
+}
+
+h1, .h1 {
+	font-size: 42px;
+	line-height: 1.08;
+	margin-bottom: 18px;
+}
+
+h2, .h2 {
+	font-size: 38px;
+	line-height: 1.2;
+	margin-bottom: 30px;
+}
+
+h3, .h3 {
+	font-size: 24px;
+	line-height: 1.08;
+	margin-bottom: 25px;
+}
+
+h4, .h4 {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+// text
+.t-center {
+	text-align: center;
+}
+.t-right {
+	text-align: right;
+}
+.t-upcase {
+	text-transform: uppercase;
+}
+
+// text size
+.t-sm {
+	font-size: 14px;
+}
+.t-md {
+	font-size: 18px;
+}
+.t-lg {
+	font-size: 24px;
+}
+.t-xl {
+	font-size: 28px;
+}
+.t-xxl {
+	font-size: 30px;
+}
+
+// text weight
+
+.t-light {
+	font-weight: 300;
+}
+.t-normal {
+	font-weight: normal;
+}
+.t-medium {
+	font-weight: 500;
+}
+.t-semibold {
+	font-weight: 700;
+}
+.t-bold {
+	font-weight: bold;
+}
+.t-black {
+	font-weight: 800;
+	letter-spacing: .04em;
+}
+
+
+// text gradient
+.t-gradient {
+	background: -webkit-linear-gradient(45deg, $dark-light, #b0b1b2);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+// text color accent
+.txt-bg-yellow {
+	color: #fff;
+	background-color: $yellow;
+	position: relative;
+	margin: 15px 0;
+	&:before {
+		content: '';
+		width: 9999px;
+		height: 100%;
+		background-color: $yellow;
+		position: absolute;
+		right: 100%;
+		top: 0;
+	}
+}
+
+
+// text util
+.line-height--1 {
+	line-height: 1;
+}
+.h-small {
+	display: inline-block;
+	font-size: 80%;
+}
+
+// colors
+
+.c-accent {
+	color: $accent;
+}
+
+.c-accent--light {
+	color: $accent-light;
+}
+
+
+// images
+
+.object-cover {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+// margins
+// -bottom
+.mb-10 {
+	margin-bottom: 10px;
+}
+.mb-20 {
+	margin-bottom: 20px;
+}
+.mb-25 {
+	margin-bottom: 25px;
+}
+.mb-30 {
+	margin-bottom: 30px;
+}
+.mb-40 {
+	margin-bottom: 40px;
+}
+.mb-80 {
+	margin-bottom: 80px;
+}
+// -top
+.mt-5 {
+	margin-top: 5px;
+}
+// -right
+.mr-15 {
+	margin-right: 15px;
+}
+
+
+// padding
+// -left
+.pl-45 {
+	padding-left: 45px;
+}
+// -right
+.pr-55 {
+	padding-right: 55px;
+}
+
+
+// hovers effect
+.h-effect-1 {
+	transition: .5s;
+	&:hover {
+		opacity: .8;
+		transform: scale(1.1);
+	}
+	&:active {
+		transition: none;
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+
+// opacity
+.opacity-075 {
+	opacity: .75;
+}
+.opacity-045 {
+	opacity: .45;
+}

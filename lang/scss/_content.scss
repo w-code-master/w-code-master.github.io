@@ -1,0 +1,73 @@
+.lst-counter {
+	counter-reset: counter1;
+	li {
+		position: relative;	
+		padding-left: 20px;	
+		margin-bottom: 10px;
+		&:before {
+			counter-increment: counter1;
+			content: counter(counter1) ".";
+			position: absolute;
+			left: 0;	
+			top: 0;	
+		}
+	}
+}
+
+.accent-inf {
+	color: #fff;
+	background: $accent url('../img/texture-dott.png') center;
+	font-size: 24px;
+	padding: 35px 0;
+}
+
+.doc-inf {
+	font-size: 24px;
+	.bg-el1 {
+		margin: -200px 0 -700px -100px;
+		position: relative;
+		z-index: -1;
+	}
+}
+
+
+.content-img-1 {
+	margin-top: -160px;
+}
+.content-img-2 {
+	margin: -160px 0 -200px -80px;
+	box-shadow: 0 0 35px rgba(#8594ae, .75);
+}
+.content-img-3 {
+	margin: 0 0 -300px 250px;
+}
+
+
+
+.bg-el1 {
+	width: 499px;
+	height: 663px;
+	background-image: url('../img/bg-el1.jpg');
+}
+
+
+.device-content {
+	height: 500px;
+	position: relative;
+	.device__mac {
+		position: absolute;
+	    left: 0;
+	    margin-left: -400px;
+	}
+	.device__ipad {
+		position: absolute;
+	    left: 0;
+	    top: 142px;
+	    margin-left: -479px;
+	}
+	.device__iphone {
+		position: absolute;
+	    left: 0;
+	    top: 241px;
+	}
+}
