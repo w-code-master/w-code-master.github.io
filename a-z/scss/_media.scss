@@ -1,0 +1,387 @@
+@import "vars";
+
+
+@media only screen and (max-width : 1600px) {
+
+.s-total:after,
+.doc-inf__verstka:before {
+	display: none;
+}
+
+.header {
+
+	.logo , .alert-txt {
+		margin-left: 0;
+	}
+	.togg-lang {
+		margin-right: 0;
+	}
+
+	&__top {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	&__offer {
+		padding-bottom: 600px;
+		.device {
+			top: inherit;
+			margin-top: 0;
+			bottom: 50px;
+		}
+		.device__mac {
+			margin-left: -640px;
+		}
+		.device__ipad {
+	        top: 160px;
+		    margin-left: -197px;
+		}
+		.device__iphone {
+			top: 250px;
+		    margin-left: -550px;
+		}
+	}
+}
+
+.device-content {
+	.device__ipad {
+		margin-left: -158px;
+	}
+	.device__iphone {
+		left: -50px;
+	    top: 240px;
+	}
+}
+
+.s-total {
+	.device__mac {
+		margin-left: -115px;
+	}
+}
+
+}
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+
+.container {
+	max-width: 100%;
+}
+
+.header {
+	&__offer {
+		min-height: auto;
+		padding-bottom: 700px;
+		text-align: center;
+		&-content {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.device {
+			top: inherit;
+			margin-top: 0;
+			bottom: 80px;
+		}
+		.device__mac {
+			left: 50%;
+			margin-left: -495px;
+			top: 30px;
+		}
+		.device__ipad {
+		    margin-left: -222px;
+		}
+		.device__iphone {
+		    margin-left: -400px;
+		    top: 250px;
+		}
+	}
+	&__bg {
+		.bg__el-1 {
+			margin-left: 324px;
+		}
+	}
+}
+
+.s-total {
+	&:after {
+		top: -90px;
+	}
+	.device__mac {
+		margin-left: -190px;
+	}
+}
+
+.doc-inf {
+	&_intro {
+		margin-bottom: 50px;
+	}
+	&__device1 {
+		margin: 25px auto 0;
+		position: relative;
+		left: -125px;
+	}
+	&_title1 {
+		text-align: center;
+		margin-bottom: 35px;
+	}
+	.bg-el1 {
+		margin-left: -90px;
+	}
+}
+
+.content-img-2 {
+	margin: 0 0 35px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.content-img-3 {
+    margin: 0 0 -150px 320px;
+}
+
+.content-img-4 {
+    margin-left: 100px;
+}
+
+.device-content {
+	.device__mac {
+	    margin-left: -470px;
+	}
+	.device__ipad {
+		top: 180px;
+	    margin-left: -320px;
+	}
+	.device__iphone {
+		left: -33.3px;
+	    top: 333px;
+	}
+}
+
+.doc-inf {
+	.lst-itms {
+		margin-bottom: 60px;
+	}
+}
+
+.total-ul {
+	padding-left: 25px;
+}
+
+
+.start-ad {
+	&_txt {
+		position: relative;
+		&:before {
+			content: '';
+			width: 499px;
+			height: 663px;
+			background: url('../img/bg-el1.jpg');
+			position: absolute;
+			right: -50px;
+			top: -300px;
+			z-index: -1;
+		}
+		&-inner {
+			width: 100%;
+			max-width: 700px;
+			margin: 0 auto;
+		}
+	}
+	&_reklama {
+		width: 100%;
+		max-width: 700px;
+		margin: 0 auto 50px;
+	}
+	.bg-el1 {
+		display: none;
+	}
+}
+
+.footer {
+	text-align: center;
+	line-height: 1.5;
+}
+
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+
+.header {
+	&__top {
+		padding-right: 80px;
+		.call-info {
+			order: 1;
+			width: 100%;
+			margin: 15px 0;
+		}
+	}
+	&__offer {
+		padding-top: 50px;
+	}
+	&__bg {
+		.bg__el-1 {
+			margin-left: 274px;
+		}
+		.bg__el-2 {
+			margin-left: -333px;
+			top: 133.3px;
+		}
+	}
+}
+
+.doc-inf {
+	&__verstka {
+		padding-bottom: 0;
+		.device {
+			margin: 20px 0;
+		}
+	}
+}
+
+.content-img-3,
+.content-img-4 {
+	margin: 0;
+}
+
+.start-ad {
+	margin-bottom: 60px;
+	&_banner {
+		text-align: center;
+		img {
+			max-width: 100%;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.txt-bg-yellow {
+	margin-right: 0;
+}
+
+.device-content {
+	.device__mac {
+	    left: 50%;
+		margin-left: -495px;
+	}
+	.device__ipad {
+		top: 120px;
+	    left: 50%;
+	    margin-left: -270px;
+	}
+	.device__iphone {
+		left: 50%;
+	    margin-left: -155px;
+	    top: 232px;
+	}
+}
+
+.go-offer {
+	.btn,
+	.txt-and-ico {
+		width: 100%;
+		max-width: 500px;
+	}
+}
+
+.convers-inf {
+	.total-ul {
+		padding-left: 0;
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 20px;
+		li {
+			width: 50%;
+			padding-right: 20px;
+		}
+	}
+	&-graphic {
+		order: -1;
+		margin-bottom: 30px;
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+.header {
+	&__offer {
+		padding-bottom: 530px;
+		.device {
+			bottom: 20px;
+		}
+		.device__mac {
+		    margin-left: -490px;
+	        transform: scale(.75);
+		}
+		.device__ipad {
+			margin-left: -282px;
+			transform: scale(.75);
+		}
+		.device__iphone {
+			margin-left: -315px;
+			top: 220px;
+			transform: scale(.8);
+		}
+	}
+}
+
+.doc-inf {
+	&__device1 {
+	    margin: -50px 0 -50px -480px;
+		transform: scale(.7);
+	    left: 50%;
+	}
+}
+
+.s-intro {
+	font-size: 20px;
+	padding-bottom: 80px;
+}
+
+.accent-inf {
+	.h2 {
+		margin-bottom: 20px;
+	}
+}
+
+.btn {
+	&__ico {
+		margin: 0 8px;
+	}
+}
+
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+	
+}

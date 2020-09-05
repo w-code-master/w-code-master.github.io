@@ -1,0 +1,135 @@
+.lst-counter {
+	counter-reset: counter1;
+	margin-bottom: 70px;
+	li {
+		position: relative;
+		padding: 0 10px 6px 22px;
+		&:before {
+			counter-increment: counter1;
+			content: counter(counter1) ".";
+			position: absolute;
+			left: 0;	
+			top: 0;	
+		}
+	}
+}
+
+.lst-itms {
+	counter-reset: counter2;
+	margin-bottom: 112px;
+	li {
+		position: relative;
+		padding: 0 30px 1px 20px;
+		&:before {
+			counter-increment: counter2;
+			content: counter(counter2) ".";
+			position: absolute;
+			left: 0;	
+			top: 0;	
+		}
+	}
+}
+
+.accent-inf {
+	color: #fff;
+	background: $accent url('../img/texture-dott.png') center;
+	font-size: 24px;
+	padding: 38px 0;
+	position: relative;
+	margin-bottom: 82px;
+	&.padding-xl {
+		padding: 50px 0;
+		margin-bottom: 30px;
+	}
+	.h2 {
+		margin-bottom: 0;
+		padding-right: 50px;
+	}
+}
+
+.doc-inf {
+	font-size: 24px;
+	&_intro {
+		margin-bottom: 92px;
+	}
+	&__device1 {
+		margin: -8px 0 0 -106px;
+	}
+	&__verstka {
+		position: relative;
+		padding-bottom: 115px;
+		margin-bottom: 95px;
+		z-index: 2;
+		&:before {
+			content: '';
+			width: 369px;
+			height: 511px;
+			background-image: url('../img/bg-el2.jpg');
+			position: absolute;
+			left: 0;
+			top: 50%;
+			margin-top: -460px;
+		}
+		.device {
+			margin-bottom: -150px;
+		}
+		.lst-itms {
+			margin-bottom: 0;
+		}
+	}
+	.h2 {
+		line-height: 1.3;
+		letter-spacing: .03em;
+	}
+	.bg-el1 {
+		margin: -78px 0 -674px -163px;
+		position: relative;
+		z-index: -1;
+	}
+}
+
+
+// content images
+.content-img-1 {
+	margin: -170px 0 0 -27px;
+}
+.content-img-2 {
+	margin: -147px 0 0 -125px;
+}
+.content-img-3 {
+	margin: 0 0 -398px 304px;
+}
+.content-img-4 {
+	margin-left: -20px;
+}
+
+
+// background element
+.bg-el1 {
+	width: 499px;
+	height: 663px;
+	background-image: url('../img/bg-el1.jpg');
+}
+
+
+.device-content {
+	height: 500px;
+	position: relative;
+	margin-top: -50px;
+	.device__mac {
+		position: absolute;
+	    left: 0;
+	    margin-left: -431px;
+	}
+	.device__ipad {
+		position: absolute;
+	    left: 0;
+	    top: 133px;
+        margin-left: -678px;
+	}
+	.device__iphone {
+		position: absolute;
+	    left: 300px;
+	    top: 234px;
+	}
+}
