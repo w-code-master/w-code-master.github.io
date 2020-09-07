@@ -1,0 +1,254 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+@import "base";
+@import "content";
+@import "ui";
+
+.wrapper {
+	position: relative;
+	background-color: white;
+	min-height: 100vh;
+	&__content {
+		position: relative;
+		z-index: 1;
+	}
+	&__bg {
+		width: 100%;
+		height: 900px;
+		background: url('../img/bg-wrapper.jpg') no-repeat center bottom / cover;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+}
+
+.header {
+
+	.alert-txt {
+		margin: 0 0 82px -10px;
+		&.animated {
+			animation-duration: .3s;
+			animation-delay: 1.5s;
+		}
+	}
+
+	.logo {
+		margin-left: 25px;
+		&__ico.animated {
+			animation-delay: 2.5s;
+			animation-duration: .3s;
+		}
+		&__img.animated {
+			animation-delay: 2.7s;
+			animation-duration: .3s;
+		}
+		&__txt.animated {
+			animation-delay: 3s;
+			animation-duration: .5s;
+		}
+	}
+
+	.soc-bar {
+		margin-left: auto;
+		.i-whatsapp.animated {
+			animation-delay: 3s;
+			animation-duration: .5s;
+		}
+		.i-viber.animated {
+			animation-delay: 3.3s;
+			animation-duration: .5s;
+		}
+		.i-telegram.animated {
+			animation-delay: 3.6s;
+			animation-duration: .5s;
+		}
+	}
+
+	.call-info {
+		margin-left: 20px;
+		&__tel.animated {
+			animation-delay: 4.2s;
+			animation-duration: .3s;
+		}
+		&__txt.animated {
+			animation-delay: 4.4s;
+			animation-duration: .3s;
+		}
+	}
+
+	.togg-lang {
+	    margin: 5px 20px 5px 17px;
+	    &.animated {
+	    	animation-delay: 4.7s;
+	    	animation-duration: .6s;
+	    }
+	}
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		width: 100%;
+		max-width: 1920px;
+		margin: 0 auto;
+		padding: 27px 5% 27px;
+		position: relative;
+		z-index: 1;
+	}
+	&__bg {
+		width: 100%;
+		height: 400px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		.bg__el {
+			&-1 {
+				position: absolute;
+				left: 50%;
+				top: 245px;
+			    margin-left: 160px;
+			    &.animated {
+			    	animation-delay: 1.5s;
+			    }
+			}
+			&-2 {
+				position: absolute;
+			    left: 50%;
+		        top: 167px;
+		        margin-left: -654px;
+		        &.animated {
+		        	animation-delay: 3s;
+		        }
+			}
+		}
+	}
+	&__offer {
+		min-height: 700px;
+		padding: 100px 0 50px;
+		margin-bottom: 8px;
+		position: relative;
+		z-index: 1;
+
+		&-content {
+			max-width: 630px;
+			.h2.animated {
+				animation-delay: 2s;
+			}
+			.txt.animated {
+				animation-delay: 2.3s;
+			}
+		}
+		.txt {
+			opacity: .75;
+			padding-right: 60px;
+		}
+
+		.device {
+			width: 100%;
+			height: 500px;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			margin-top: -167px;
+			z-index: -1;
+			&__itm {
+				&.animated:nth-child(1) {
+					animation-duration: 1.5s;
+				}
+				&.animated:nth-child(2) {
+					animation-duration: 1.5s;
+					animation-delay: .7s;
+				}
+				&.animated:nth-child(3) {
+					animation-duration: 1.5s;
+	            	animation-delay: .4s;
+				}
+			}
+			&__mac {
+				position: absolute;
+			    left: 50%;
+		        top: 8px;
+		        margin-left: 8px;
+			}
+			&__ipad {
+				position: absolute;
+			    left: 50%;
+			    top: 142px;
+		        margin-left: 410px;
+			}
+			&__iphone {
+				position: absolute;
+			    left: 50%;
+			    top: 241px;
+	            margin-left: 78px;
+			}
+		}
+	}
+	&__bg {
+		width: 100%;
+		height: 400px;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+}
+
+
+.s-intro {
+	font-size: 24px;
+	padding-bottom: 146px;
+}
+
+
+.start-ad {
+	margin-bottom: 125px;
+	&_reklama {
+		margin-bottom: 15px;
+		text-align: center;
+	}
+	.bg-el1.animated {
+		animation-duration: 1.5s;
+		animation-delay: 1s;
+	}
+}
+
+
+.s-total {
+	font-size: 24px;
+	min-height: 400px;
+	position: relative;
+	&__bg1 {
+		width: 499px;
+		height: 663px;
+		background-image: url('../img/bg-el0.jpg');
+		position: absolute;
+		right: 0;
+		top: -50px;
+		z-index: -1;
+	}
+	.h2 {
+		margin-bottom: 35px;
+	}
+	.device__mac {
+		margin: -8px 0 -22px -36px;
+	}
+}
+
+
+.go-offer {
+	text-align: center;
+	padding: 100px 15px;
+}
+
+
+.footer {
+	padding: 20px 0;
+	background-color: #07090e;
+	color: #fff;
+
+}
+
+@import "media";
