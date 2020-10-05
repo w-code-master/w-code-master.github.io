@@ -1,0 +1,26 @@
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+
+$gutter: $grid-gutter-width;
+
+
+$black: #000;
+$black-light: #2a2a30;
+
+$dark: #474644;
+$dark-accent: #444b54;
+$dark-light: #626466;
+
+$silver-light: #a3a3a3;
+$silver-ultralight: #f1f1f3;
+
+$accent: #2475f6;
+$accent-dark: #264ca8;
+$accent-light: #00a2ff;
+
+$danger: #f47a2e;
+
+$yellow: #ffc522;

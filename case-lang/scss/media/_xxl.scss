@@ -1,0 +1,70 @@
+@media only screen and (max-width : 1600px) {
+
+
+	.header {
+
+		.logo {
+			&__ico.animated {
+				animation-delay: 0s;
+			}
+
+			&__img.animated {
+				animation-delay: .3s;
+			}
+
+			&__txt.animated {
+				animation-delay: .5s;
+			}
+		}
+
+		.logo,
+		.alert-txt {
+			margin-left: 0;
+		}
+
+		.togg-lang {
+			margin-right: 0;
+		}
+
+		&__top {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		&__offer {
+			padding-bottom: 600px;
+
+			.device {
+				top: inherit;
+				margin-top: 0;
+				bottom: 50px;
+			}
+
+			.device__mac {
+				margin-left: -640px;
+			}
+
+			.device__ipad {
+				top: 160px;
+				margin-left: -197px;
+			}
+
+			.device__iphone {
+				top: 250px;
+				margin-left: -550px;
+			}
+		}
+	}
+
+	.device-content {
+		.device__ipad {
+			margin-left: -158px;
+		}
+
+		.device__iphone {
+			left: -50px;
+			top: 240px;
+		}
+	}
+
+}
