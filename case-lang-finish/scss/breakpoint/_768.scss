@@ -1,0 +1,166 @@
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+	// MD text size
+	.t-md-16 {
+		font-size: 16px;
+	}
+
+	.t-md-18 {
+		font-size: 18px;
+	}
+
+	.t-md-20 {
+		font-size: 20px;
+	}
+
+	.t-md-22 {
+		font-size: 22px;
+	}
+
+	.t-md-24 {
+		font-size: 24px;
+	}
+
+	.t-md-28 {
+		font-size: 28px;
+	}
+
+	.t-md-30 {
+		font-size: 30px;
+	}
+
+	// text
+	.t-md-left {
+		text-align: left;
+	}
+
+	.t-md-center {
+		text-align: center;
+	}
+
+	.t-md-right {
+		text-align: right;
+	}
+
+	.device__mac,
+	.device__ipad,
+	.device__iphone {
+		transform: scale(.75);
+	}
+
+	.header {
+		&__offer {
+			padding-bottom: 530px;
+
+			.device {
+				bottom: 20px;
+			}
+
+			.device__mac {
+				margin-left: -488px;
+			}
+
+			.device__ipad {
+				margin-left: -282px;
+			}
+
+			.device__iphone {
+				margin-left: -315px;
+				top: 220px;
+			}
+		}
+	}
+
+	.s-intro {
+		text-align: center;
+		padding: 85px 40px 50px;
+	}
+
+	.s-total {
+		margin-bottom: 0;
+
+		&__device {
+			height: 360px;
+			position: relative;
+
+			.device__mac {
+				margin: 0;
+				position: absolute;
+				left: 50%;
+				margin-left: -478px;
+				bottom: -77px;
+			}
+		}
+
+		.bg__el-violet {
+			top: 0;
+		}
+	}
+
+	.s-introduction {
+		padding-bottom: 0;
+	}
+
+	.s-prototype {
+		&__device {
+			height: 360px;
+		}
+	}
+
+	.content-box {
+		&__prototype {
+			margin-right: 0;
+			padding-top: 0;
+
+			.picture-box {
+				position: static;
+				width: auto;
+				margin-left: 0;
+				margin-right: 0;
+
+				&.line-left:before {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.s-work {
+		padding-top: 1px;
+
+		&__graphic {
+			height: 550px;
+
+			.bg__el {
+				&-diagram {
+					margin-left: 0;
+					top: 20px;
+					left: inherit;
+					right: 10%;
+				}
+
+				&-triangle-blue {
+					left: 10%;
+					margin-left: 0;
+					top: 39px;
+				}
+			}
+		}
+	}
+
+	.bg__el {
+		&-diagram {
+			width: 186px;
+			height: 228px;
+			background-image: url('../img/md/bg-el-diagram.png');
+		}
+
+		&-ipad {
+			width: 743px;
+			height: 378px;
+			background-image: url('../img/md/bg-el-ipad.png');
+		}
+	}
+
+}

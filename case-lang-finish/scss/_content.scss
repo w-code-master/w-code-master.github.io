@@ -1,0 +1,80 @@
+.lst-counter {
+	counter-reset: counter1;
+	margin-bottom: 70px;
+
+	li {
+		position: relative;
+		padding: 0 10px 6px 22px;
+
+		&:before {
+			counter-increment: counter1;
+			content: counter(counter1) ".";
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+}
+
+.lst-dott {
+	li {
+		padding-left: 25px;
+		position: relative;
+		margin-bottom: 16px;
+
+		&:before {
+			content: '';
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			background-color: $accent;
+			position: absolute;
+			left: 0;
+			top: 9px;
+		}
+	}
+}
+
+.lst-itms {
+	counter-reset: counter2;
+	margin-bottom: 112px;
+
+	li {
+		position: relative;
+		padding: 0 30px 1px 20px;
+
+		&:before {
+			counter-increment: counter2;
+			content: counter(counter2) ".";
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+}
+
+
+.device-content {
+	height: 500px;
+	position: relative;
+	margin-top: -50px;
+
+	.device__mac {
+		position: absolute;
+		left: 0;
+		margin-left: -431px;
+	}
+
+	.device__ipad {
+		position: absolute;
+		left: 0;
+		top: 133px;
+		margin-left: -678px;
+	}
+
+	.device__iphone {
+		position: absolute;
+		left: 300px;
+		top: 234px;
+	}
+}
