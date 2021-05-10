@@ -15,6 +15,12 @@
     padding: 0 !important;
 }
 
+/* z-index */
+.z-index {
+    position: relative;
+    z-index: 1;
+}
+
 /* Display visible */
 .d-none {
     display: none !important;

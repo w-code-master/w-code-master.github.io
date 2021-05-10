@@ -6,6 +6,7 @@
 	top: 0;
 	left: 50%;
 	margin-left: -674px;
+	pointer-events: none;
 }
 .gridlines span {
 	width: 1px;
@@ -124,7 +125,7 @@
 	justify-content: center;
 	align-items: center;
 	height: 90px;
-	padding: 10px 40px;
+	padding: 10px 40px 5px;
 	position: relative;
 	text-decoration: none;
 	z-index: 1;
@@ -151,7 +152,8 @@
 .btn__text {
 	color: #564a39;
 	font-size: 15px;
-	line-height: 1.5;
+	line-height: 1.45;
+	letter-spacing: .085em;
 	font-weight: 300;
 	text-align: center;
 	text-transform: uppercase;
@@ -205,35 +207,49 @@
 	background-color: #f8f8fa;
 	border: 1px dashed #e1e1e2;
 	box-shadow: 0 0 0 5px #f8f8fa;
-	font: 300 15.5px/1.2 'Rubik';
+	font: 300 16px/1.2 'Rubik';
 	position: relative;
 	text-align: center;
 	color: #000;
+	overflow: hidden;
+	padding: 0 10px 9px;
+	letter-spacing: .05em;
+}
+.circlebox.--big {
+	width: 196px;
+	height: 196px;
+	box-shadow: 0 0 0 6px #f8f8fa;
+	font-size: 18px;
 }
 .circlebox [class*="i-"] {
 	display: inline-block;
-	margin-bottom: 7px;
+	margin-bottom: 5px;
 	position: relative;
 }
 .circlebox [class*="i-"]::before {
 	content: " ";
 	display: block;
-	width: 70px;
-	height: 40px;
-	background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+	width: 90px;
+	height: 70px;
+	background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 80%);
 	position: absolute;
-	top: -10px;
-	left: -30px;
+	top: -20px;
+	left: -35px;
 }
 
 /* icons */
-.i-home {
+.i-element {
 	display: inline-block;
 }
 .i-home svg {
 	width: 42px;
 	height: 42px;
 	fill: #707070;
+}
+.i-checkmark svg {
+	width: 28px;
+	height: 28px;
+	fill: #89d47f;
 }
 
 /* images */
@@ -254,19 +270,87 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: 26px;
 }
 .descrpmark-group .descrpmark {
-	margin-bottom: -2px;
+	margin-bottom: -3px;
 }
 .descrpmark {
 	display: inline-block;
 	text-align: center;
 	background-color: #8AE37C;
+	border-radius: 6px;
+	padding: 8px 22px 7px;
 }
 .descrpmark.--white {
+	min-width: 186px;
 	background-color: white;
 	position: relative;
 }
 .descrpmark.--small {
 	font-size: 15px;
+}
+
+
+/* Images elements */
+
+.img-brus {
+	display: inline-block;
+	width: 239px;
+	height: 243px;
+	background-image: url("../img/brus.png");
+}
+
+.img-brus-right {
+	display: inline-block;
+	width: 225px;
+	height: 204px;
+	background-image: url("../img/brus-right.png");
+}
+
+.img-journal {
+	position: relative;
+	display: inline-block;
+	width: 1082px;
+	height: 729px;
+}
+.img-journal::after {
+	content: "";
+	width: 1351px;
+	height: 1007px;
+	background-image: url("../img/journal.png");
+	position: absolute;
+	left: -183px;
+	top: 0;
+}
+
+
+/* Information list */
+
+.infolist__item {
+	display: flex;
+	max-width: 555px;
+	margin-bottom: 37px;
+}
+.infolist__icon {
+	margin-right: 15px;
+}
+.infolist__title {
+	margin-bottom: 10px;
+}
+.infolist__text {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+
+/* section Heading */
+.heading {
+	padding-bottom: 35px;
+}
+.heading__title {
+	margin-bottom: 30px;
+}
+.heading__text {
+	font-size: 20px;
 }

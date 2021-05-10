@@ -5,6 +5,9 @@
 @import "util.css";
 @import "ui.css";
 
+/* Libs */
+@import "slick.css";
+
 
 /* Base */
 *,
@@ -41,17 +44,22 @@ ul, ol {
     letter-spacing: -.025em;
 }
 .h2 , h2 {
-    font: 46px/1.1 'PlayfairDisplay';
+    font: 51px/1.25 'PlayfairDisplay';
 }
 .h3 , h3 {
     font: 40px/1.1 'PlayfairDisplay';
 }
 .h4 , h4 {
-    font: 27px/1.1 'PlayfairDisplay';
+    font: 27px/1.5 'PlayfairDisplay';
+	letter-spacing: .013em;
 }
 .h5 , h5 {
     font: 25px/1.1 'PlayfairDisplay';
 }
+.h6 , h6 {
+    font: 500 20px 'Rubik';
+}
+
 /* titles util */
 .h--small {
 	font-size: 90%;
@@ -63,6 +71,12 @@ ul, ol {
 }
 .t-center {
 	text-align: center;
+}
+.f-weight--300 {
+	font-weight: 300;
+}
+.f-weight--500 {
+	font-weight: 500;
 }
 
 /* Colors */
@@ -152,15 +166,15 @@ ul, ol {
 }
 
 .offerbox {
-	margin-top: -150px;
-	margin-bottom: 50px;
+	margin-top: -154px;
+	margin-bottom: 52px;
 	position: relative;
 	z-index: 1;
 }
 .offerbox__action {
 	text-align: center;
 	position: relative;
-	padding: 50px 0;
+	padding: 47px 34px 47px 0;
 }
 .offerbox__action::after {
 	content: "";
@@ -168,18 +182,22 @@ ul, ol {
 	height: 123px;
 	background-image: url("../img/money.png");
 	position: absolute;
-	right: 0;
-	bottom: -50px;
+	right: 10px;
+	bottom: -100px;
 }
 .offerbox__action .h4 {
 	margin-bottom: 40px;
 }
 
+.offerbox .listpoint {
+	margin: 7px 0 14px 34px;
+}
+
 /* white content block */
 .whitebox {
 	background-color: white;
-	border-radius: 8px;
-	padding: 33px 48px;
+	border-radius: 10px;
+	padding: 40px;
 	box-shadow: 0 0 43px 33px rgba(220, 222, 237, .2);
 	position: relative;
 	z-index: 1;
@@ -189,7 +207,7 @@ ul, ol {
 	width: calc(100% - 16px);
 	height: calc(100% - 16px);
 	border: 1px solid rgba(0,0,0,.05);
-	border-radius: 10px;
+	border-radius: 8px;
 	position: absolute;
 	left: 8px;
 	top: 8px;
@@ -202,7 +220,12 @@ ul, ol {
 .listpoint {}
 .listpoint__item {
 	display: flex;
-	margin-bottom: 25px;
+	align-items: center;
+	margin-bottom: 18px;
+}
+.listpoint__text {
+	line-height: 1.5;
+	letter-spacing: .035em;
 }
 .listpoint__item:last-child {
 	margin-bottom: 0;
@@ -212,35 +235,43 @@ ul, ol {
 	margin-right: 20px;
 }
 
-/* section */
+/* section Cost */
 .s-cost {
+	padding: 52px 0 26px;
 	position: relative;
 	z-index: 1;
 }
 
 .featuresbox {
-	display: flex;
+	padding: 28px 0;
 }
-.featuresbox__group {
-	width: 50%;
-}
-.featuresbox__group-inner {
-	display: flex;
-}
-.featuresbox__group-title {
+.featuresbox__title {
+	margin: 0 auto;
+	max-width: 777px;
+	padding: 0 33.3px 30px;
+	font: 300 21px 'Rubik';
+	letter-spacing: -.025em;
 	text-align: center;
-	font: 300 20px 'Rubik';
+}
+.featuresbox__content {
+	display: flex;
+	align-items: flex-start;
 }
 .featuresbox__item {
-	width: 100%;
-	max-width: 292.5px;
+	flex: 1;
 	text-align: center;
 }
+.featuresbox__item:first-child,
+.featuresbox__item:last-child {
+	margin-top: -50px;
+}
 .featuresbox__icon {
-	height: 150px;
-	margin-bottom: 20px;
+	height: 160px;
+	margin-bottom: 16px;
 	position: relative;
-	outline: 1px solid red;
+}
+.featuresbox__icon-6 {
+	margin-left: 40px;
 }
 .featuresbox__icon img {
 	max-height: 180px;
@@ -249,6 +280,10 @@ ul, ol {
 	bottom: 0;
 	transform: translateX(-50%);
 }
+.featuresbox__text {
+	font-size: 17px;
+	line-height: 1.45;
+}
 
 
 .quizcalc {
@@ -256,7 +291,7 @@ ul, ol {
 }
 .quizcalc__content {
 	width: 100%;
-	padding: 48px 77px 30px 92px;
+	padding: 48px 77px 82px;
 }
 .quizcalc__aside {
 	flex-shrink: 0;
@@ -278,7 +313,7 @@ ul, ol {
 	top: 8px;
 }
 .quizcalc__aside-content {
-	padding: 48px 22px 30px 10px;
+	padding: 48px 23px;
 	position: relative;
 	z-index: 1;
 }
@@ -337,10 +372,18 @@ ul, ol {
 	text-align: center;
 }
 .yourdiscount__title {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 .yourdiscount__sum {
-	background-color: #fff;
+	padding: 12px 15px 10px;
+	margin-bottom: 20px;
+	border-radius: 12px;
+	background-color: white;
+	text-transform: uppercase;
+	text-align: center;
+}
+.yourdiscount__sum-num {
+	font-size: 28px;
 }
 
 
@@ -349,4 +392,191 @@ ul, ol {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
+	padding: 20px 15px;
+}
+.devmaster__photo {
+	margin-bottom: -12px;
+}
+
+/* section 	Calc */
+.s-calc {
+	padding: 26px 0 58px;
+}
+
+/* section Why */
+.s-we {
+	padding: 58px 0 12px;
+}
+/* we content */
+.we__header {
+	margin-bottom: 77px;
+}
+.we__btn {
+	margin: 32px 0 0 18px;
+	padding: 10px 50px 5px;
+}
+.we__graphic {
+	height: 730px;
+	position: relative;
+	pointer-events: none;
+}
+.we__graphic .img-brus {
+	position: absolute;
+	right: 50px;
+	top: 18px;
+}
+.we__graphic .img-journal {
+	position: absolute;
+	right: 15px;
+	top: -42px;
+}
+
+
+/* section Portfolio */
+.s-portfolio {
+	margin-bottom: 28px;
+}
+/* portfolio content */
+.portfolio {
+	padding: 30px 0;
+	position: relative;
+	z-index: 1;
+}
+.portfolio__col {
+	padding-bottom: 40px;
+}
+.portfolio__item {
+	max-width: 555px;
+	min-height: 100%;
+	background-color: white;
+	box-shadow: 0 0 43px 33px rgba(220, 222, 237, .2);
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 40px;
+}
+.portfolio__item::before {
+	content: "";
+	pointer-events: none;
+	width: calc(100% - 16px);
+	height: calc(100% - 16px);
+	border: 1px solid #f4f4f4;
+	border-radius: 8px;
+	position: absolute;
+	left: 8px;
+	top: 8px;
+}
+.portfolio__img {
+	display: block;
+	height: 340px;
+	overflow: hidden;
+	border-radius: 10px;
+	margin-bottom: 25px;
+}
+.portfolio__descrp {
+	font-size: 20px;
+	font-weight: 300;
+	text-align: center;
+	padding: 15px 30px 20px;
+}
+
+
+/* section Advantage */
+.s-advantage {
+	margin-bottom: 66px;
+}
+/* advantage content */
+.advantage {
+	padding: 30px 0;
+	position: relative;
+	z-index: 1;
+}
+.advantage__item {
+	overflow: hidden;
+	min-height: 240px;
+	background-color: #f9f9f9;
+	box-shadow: 0 0 43px 33px rgba(220, 222, 237, .3);
+	border-radius: 10px;
+	position: relative;
+	padding: 35px 55px;
+	margin-bottom: 35px;
+}
+.advantage__item::after {
+	content: "";
+	pointer-events: none;
+	width: calc(100% - 16px);
+	height: calc(100% - 16px);
+	border: 1px solid #f5f5f5;
+	border-radius: 8px;
+	position: absolute;
+	left: 8px;
+	top: 8px;
+}
+.advantage__img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.advantage__text {
+	min-height: 170px;
+	position: relative;
+	max-width: 450px;
+	padding: 20px;
+	font-size: 18px;
+	font-weight: 300;
+}
+.advantage__title {
+	margin-bottom: 10px;
+}
+
+
+/* section Why */
+.s-why {
+
+}
+/* Why content */
+.why__title {
+	margin-bottom: 50px;
+}
+.why {
+	height: 980px;
+	background: #f8dfa7 url("../img/why.jpg") no-repeat center / cover;
+	position: relative;
+	margin-top: -250px;
+}
+.why__circlebox {
+	z-index: 1;
+	position: absolute;
+	left: 50%;
+	bottom: 150px;
+	margin-left: 150px;
+}
+
+
+/* section Reviews */
+.s-reviews {
+	min-height: 555px;
+	position: relative;
+	z-index: 1;
+}
+/* Reviews content */
+.reviews {
+
+}
+
+/* reviews slider */
+.reviews-slider {
+
+}
+.reviews-slider__item:focus {
+	outline: none;
+}
+.reviews-slider__item img {
+	transition: .3s;
+	transform: scale(.7);
+}
+.reviews-slider__item.slick-center img {
+	transform: scale(1);
 }
