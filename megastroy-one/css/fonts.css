@@ -1,0 +1,37 @@
+/* Rubik - Regular */
+@font-face {
+	font-family: 'Rubik';
+	src: url('fonts/rubik/rubik-regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+/* Rubik - Light */
+@font-face {
+	font-family: 'Rubik';
+	src: url('fonts/rubik/rubik-light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+/* Rubik - Medium */
+@font-face {
+	font-family: 'Rubik';
+	src: url('fonts/rubik/rubik-medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+
+/* PlayfairDisplay - Regular */
+@font-face {
+	font-family: 'PlayfairDisplay';
+	src: url('fonts/playfair-display/playfair-display-regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+/* PlayfairDisplay - Bold */
+@font-face {
+	font-family: 'PlayfairDisplay';
+	src: url('fonts/playfair-display/playfair-display-bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
