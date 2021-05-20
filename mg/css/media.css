@@ -1,0 +1,93 @@
+@media only screen and (max-width : 1200px) {
+
+.container {
+	max-width: 100%;
+}
+
+.site-descrp {
+	max-width: 250px;
+}
+
+.header__top {
+	align-items: flex-start;
+	padding-top: 15px;
+}
+.header__top-aside {
+	max-width: 380px;
+	flex-direction: column;
+}
+
+.callinfo {
+	padding: 0 0 10px;
+	text-align: right;
+}
+.callinfo__text {
+	margin: 0;
+}
+
+.whitebox {
+	padding: 25px;
+}
+
+.offerbox .listpoint {
+	margin-left: 0;
+}
+
+.featuresbox__item {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.featuresbox__text {
+	font-size: 16px;
+}
+
+.quizcalc__content {
+	padding-left: 33px;
+	padding-right: 33px;
+}
+.quizcalc__title {
+	padding-top: 0;
+}
+
+.we__graphic .img-journal {
+	right: -40px;
+}
+.we__graphic .img-brus {
+	right: -20px;
+}
+
+.questions__block {
+	padding: 42px 34px;
+}
+.questions__form {
+	max-width: 580px;
+}
+
+} /* end media 1200 */
+
+
+@media only screen and (max-width : 992px) {
+
+
+} /* end media 992 */
+
+
+@media only screen and (max-width : 768px) {
+
+
+
+} /* end media 768 */
+
+
+@media only screen and (max-width : 576px) {
+
+
+
+} /* end media 576 */
+
+
+@media only screen and (max-width : 480px) {
+
+
+
+} /* end media 480 */

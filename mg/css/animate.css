@@ -1,3 +1,7 @@
+.anim-delay--05.animated {
+	animation-delay: .5s;
+}
+
 .site-descrp.animated {
 	animation-delay: .5s;
 	animation-duration: 3s;
@@ -32,6 +36,10 @@
 .header__circlebox.animated {
 	animation-delay: 2.5s;
 	animation-duration: 2s;
+}
+
+.featuresbox__text.animated {
+	animation-delay: .3s;
 }
 
 .offerbox__action-title.animated {
@@ -87,4 +95,49 @@
 }
 .infolist__text.animated {
 	animation-delay: .6s;
+}
+
+.portfolio__descrp.animated {
+	animation-delay: .3s;
+}
+
+.advantage__title.animated {
+	animation-delay: .3s;
+}
+.advantage__text-p.animated {
+	animation-delay: .6s;
+}
+
+.why__content.animated {
+	animation-delay: .5s;
+}
+.why__circlebox.animated {
+	animation-delay: .5s;
+}
+
+.reviews .img-brus.animated {
+	animation-delay: 1s;
+}
+.reviews .img-brus-right.animated {
+	animation-delay: 1.2s;
+}
+
+.reviews-slider .slick-arrow--left.animated {
+	animation-delay: 1s;
+}
+.reviews-slider .slick-arrow--right.animated {
+	animation-delay: 1.3s;
+}
+
+.working__descrp-num.animated {
+	animation-delay: .5s;
+}
+.anim-delay--05 .working__descrp-num.animated {
+	animation-delay: 1s;
+}
+.working__descrp-title.animated {
+	animation-delay: .75s;
+}
+.anim-delay--05 .working__descrp-title.animated {
+	animation-delay: 1.25s;
 }

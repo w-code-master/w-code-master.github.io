@@ -216,6 +216,7 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	flex-shrink: 0;
 	width: 154px;
 	height: 154px;
 	border-radius: 50%;

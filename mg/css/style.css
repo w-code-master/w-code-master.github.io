@@ -152,6 +152,7 @@ ul, ol {
 .header__offer {
 	display: flex;
 	justify-content: center;
+	position: relative;
 }
 .header__hgroup {
 	width: 100%;
@@ -363,6 +364,7 @@ ul, ol {
 
 .quizcalc-action {
 	display: flex;
+	flex-wrap: wrap;
 	padding: 12px 0 15px;
 }
 .quizcalc-action__item {
@@ -552,15 +554,15 @@ ul, ol {
 .why__content {
 	height: 980px;
 	background: #f8dfa7 url("../img/why.jpg") no-repeat center / cover;
-	position: relative;
 	margin-top: -270px;
+	position: relative;
 }
 .why__circlebox {
-	z-index: 1;
 	position: absolute;
 	left: 50%;
 	bottom: 160px;
 	margin-left: 190px;
+	z-index: 1;
 }
 
 
@@ -676,7 +678,7 @@ ul, ol {
 	left: -3px;
 	top: 0;
 	font: 500 61px/1 'Rubik';
-	opacity: .08;
+	color: rgba(0,0,0,.08);
 }
 .working__descrp-title {
 	font: 500 22px 'Rubik';
