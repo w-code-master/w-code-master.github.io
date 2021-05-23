@@ -266,6 +266,7 @@ ul, ol {
 .featuresbox__content {
 	display: flex;
 	align-items: flex-start;
+	flex-wrap: wrap;
 }
 .featuresbox__item {
 	flex: 1;
@@ -311,7 +312,7 @@ ul, ol {
 	max-width: 333px;
 	background-color: #f7f7f7;
 	box-shadow: 20px 0 30px rgba(0,0,0,.02);
-	border-radius: 0 8px 8px 0;
+	border-radius: 0 12px 12px 0;
 	position: relative;
 }
 .quizcalc__aside::before {
@@ -419,19 +420,28 @@ ul, ol {
 
 /* section Why */
 .we {
-	padding: 58px 0 12px;
+	padding: 58px 0 62px;
 }
 /* we content */
+.we__content {
+	min-height: 680px;
+}
 .we__header {
 	margin-bottom: 77px;
 }
 .we__btn {
 	margin: 32px 0 0 18px;
-	padding: 10px 50px 5px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.we__graphic-wrap {
+	position: relative;
 }
 .we__graphic {
-	height: 730px;
-	position: relative;
+	height: 680px;
+	position: absolute;
+	right: 0;
+	top: 0;
 	pointer-events: none;
 }
 .we__graphic .img-brus {
@@ -557,6 +567,15 @@ ul, ol {
 	margin-top: -270px;
 	position: relative;
 }
+.why__content::before {
+	content: "";
+	width: 100%;
+	height: 100px;
+	background-image: linear-gradient(transparent, white);
+	position: absolute;
+	left: 0;
+	bottom: 100%;
+}
 .why__circlebox {
 	position: absolute;
 	left: 50%;
@@ -605,13 +624,14 @@ ul, ol {
 .reviews-slider__item:focus {
 	outline: none;
 }
-.reviews-slider__item img:hover {
-	cursor: grab;
-}
 .reviews-slider__item img {
+	max-width: 100%;
 	display: inline-block;
 	transition: .3s;
 	transform: scale(.75);
+}
+.reviews-slider__item img:hover {
+	cursor: grab;
 }
 .reviews-slider__item.slick-center img {
 	transform: scale(1);
@@ -729,19 +749,20 @@ ul, ol {
 	left: 8px;
 	top: 8px;
 }
-.questions__block-title {
+.questions__form-title {
 	font-weight: 300;
     margin: 0 0 7px 5px;
     letter-spacing: -.045em;
 }
-.questions__block-descrp {
+.questions__form-descrp {
 	margin-left: 5px;
     letter-spacing: -.05em;
 }
 .questions__content {
 	display: flex;
+	align-items: center;
 }
-.questions__form {
+.questions__form-inner {
 	display: flex;
 	padding: 21px 0;
 }

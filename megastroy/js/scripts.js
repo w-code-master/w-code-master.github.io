@@ -25,7 +25,13 @@ $(document).ready(function(){
 		centerMode: true,
 		centerPadding: 30,
 		prevArrow: '<span class="slick-arrow--left anim-zoomIn"><svg><use href="img/sprite.svg#i-left"></use></svg></span>',
-		nextArrow: '<span class="slick-arrow--right anim-zoomIn"><svg><use href="img/sprite.svg#i-right"></use></svg></span>'
+		nextArrow: '<span class="slick-arrow--right anim-zoomIn"><svg><use href="img/sprite.svg#i-right"></use></svg></span>',
+		responsive: [{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1
+			}
+		}]
 	});
 
 	$('.anim-zoomIn').animated('zoomIn');

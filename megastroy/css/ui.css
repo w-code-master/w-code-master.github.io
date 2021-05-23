@@ -138,8 +138,8 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 90px;
-	padding: 10px 40px 5px;
+	min-height: 90px;
+	padding: 15px 40px 10px;
 	position: relative;
 	text-decoration: none;
 	background-color: transparent;
@@ -370,4 +370,142 @@
 }
 .heading__text {
 	font-size: 20px;
+}
+
+
+.animation-icon-phone {
+	display: none;
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	box-shadow: 0 5px 18px rgba(0, 0, 0, .2);
+	border-radius: 50%;
+	text-align: center;
+}
+.animation-icon-phone .svg-call {
+	width: 24px;
+	position: relative;
+	top: 6px;
+	left: 1px;
+}
+
+.svg-call {
+	overflow: visible;
+	width: 32px;
+}
+
+.svg-call .svg-phone {
+	animation: call 1s infinite;
+	transform-origin: center;
+}
+
+@keyframes call {
+	0% {
+		transform: rotate(-5deg);
+	}
+
+	50% {
+		transform: rotate(5deg);
+	}
+
+	100% {
+		transform: rotate(-5deg);
+	}
+}
+
+.phone-line-1,
+.phone-line-2,
+.phone-line-3,
+.phone-line-4 {
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	opacity: 0;
+}
+
+.phone-line-1 {
+	animation-name: fade1;
+}
+
+.phone-line-2 {
+	animation-name: fade2;
+}
+
+.phone-line-3 {
+	animation-name: fade3;
+}
+
+.phone-line-4 {
+	animation-name: fade4;
+}
+
+@keyframes fade1 {
+	0% {
+		opacity: 0;
+	}
+
+	20% {
+		opacity: 1;
+	}
+
+	25% {
+		opacity: 1;
+	}
+
+	45% {
+		opacity: 0;
+	}
+}
+
+@keyframes fade2 {
+	20% {
+		opacity: 0;
+	}
+
+	40% {
+		opacity: 1;
+	}
+
+	45% {
+		opacity: 1;
+	}
+
+	65% {
+		opacity: 0;
+	}
+}
+
+@keyframes fade3 {
+	40% {
+		opacity: 0;
+	}
+
+	60% {
+		opacity: 1;
+	}
+
+	65% {
+		opacity: 1;
+	}
+
+	85% {
+		opacity: 0;
+	}
+}
+
+@keyframes fade4 {
+	60% {
+		opacity: 0;
+	}
+
+	80% {
+		opacity: 1;
+	}
+
+	85% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
 }
