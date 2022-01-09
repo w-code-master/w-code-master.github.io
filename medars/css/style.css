@@ -1,0 +1,160 @@
+@import "normalize.css";
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	font: 15px/1.3 Arial, "Helvetica Neue", Helvetica, sans-serif;
+	background-color: #fff;
+	color: #313131;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+/* links */
+a {
+	color: cornflowerblue;
+}
+a:visited {
+	color: darkorchid;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	color: yellowgreen;
+}
+
+/*Page*/
+.wrap {
+	min-height: 100%;
+	background-color: #def3fe;
+	display: flex;
+	flex-direction: column;
+}
+.wrap__main {
+	flex: 1 1 auto;
+}
+
+/*Container*/
+.container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+/*Bread crumbs*/
+.breadcrumbs {
+	display: flex;
+	margin-bottom: 30px;
+}
+.breadcrumbs__item {
+	margin-right: 10px;
+}
+.breadcrumbs__item::after {
+	content: "/";
+	margin-left: 5px;
+}
+.breadcrumbs__link {
+	color: #999;
+	transition: .25s;
+}
+.breadcrumbs__link:hover {
+	color: cornflowerblue;
+}
+.breadcrumbs__active {
+	text-decoration: underline;
+}
+
+/*Header*/
+.header {
+	min-height: 90px;
+	background-color: #fff;
+	padding: 10px 15px;
+	box-shadow: 0 4px 18px rgba(0, 0, 0, .05);
+}
+
+/*Main*/
+.maincont {
+	padding: 20px 0;
+}
+
+/*Footer*/
+.footer {
+	flex: 0 1 auto;
+	background-color: #313131;
+	color: #fff;
+	min-height: 120px;
+	padding: 15px;
+}
+
+
+.regcat {
+	max-width: 570px;
+	margin: 0 auto;
+}
+.regcat__title {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.regcat__item {
+	display: flex;
+	align-items: center;
+	padding: 15px 30px;
+}
+.regcat__avatar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70px;
+	height: 70px;
+	background-color: #ffd9d7;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+.regcat__descrp {
+	font-weight: bold;
+}
+.regcat__btn {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #76aede;
+	margin-left: auto;
+}
+
+
+
+/*Style jQuery-plugins*/
+.beefup {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.beefup__head {
+    cursor: pointer;
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+}
+.beefup__body {
+}
+.beefup.is-open .beefup__head {
+}
+.beefup.is-open .beefup__head:before {
+    visibility: visible;
+    opacity: 1;
+}
