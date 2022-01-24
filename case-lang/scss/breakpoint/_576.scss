@@ -1,0 +1,303 @@
+// ≥576px
+@include media-breakpoint-down(xs) {
+
+	body {
+		font-size: 17px;
+	}
+
+	h1,
+	.h1 {
+		font-size: 38px;
+	}
+
+	h2,
+	.h2 {
+		font-size: 32px;
+	}
+
+	h3,
+	.h3 {
+		font-size: 28px;
+	}
+
+	h4,
+	.h4 {
+		font-size: 26px;
+	}
+
+	h5,
+	.h5 {
+		font-size: 22px;
+	}
+
+	h6,
+	.h6 {
+		font-size: 18px;
+	}
+
+	// SM text size
+	.t-sm-16 {
+		font-size: 16px;
+	}
+
+	.t-sm-18 {
+		font-size: 18px;
+	}
+
+	.t-sm-20 {
+		font-size: 20px;
+	}
+
+	.t-sm-22 {
+		font-size: 22px;
+	}
+
+	.t-sm-24 {
+		font-size: 24px;
+	}
+
+	.t-sm-28 {
+		font-size: 28px;
+	}
+
+	.t-sm-30 {
+		font-size: 30px;
+	}
+
+	// text
+	.t-sm-left {
+		text-align: left;
+	}
+
+	.t-sm-center {
+		text-align: center;
+	}
+
+	.t-sm-right {
+		text-align: right;
+	}
+
+	.logo {
+		&__ico {
+			width: 73px;
+			height: 37px;
+			background-size: cover;
+		}
+
+		&__img {
+			width: 97px;
+			height: 37px;
+			background-size: cover;
+			margin-right: 20px;
+		}
+
+		&__txt {
+			font-size: 13px;
+		}
+	}
+
+	.header {
+
+		&__top {
+			padding: 20px 60px 20px 15px;
+		}
+
+		&__offer {
+			padding-top: 10px;
+			padding-bottom: 400px;
+
+			.h1 {
+				font-size: 34px;
+			}
+
+			.device {
+				height: 400px;
+				bottom: 0;
+
+				&__mac {
+					margin-left: -477px;
+					top: -70px;
+				}
+
+				&__ipad {
+					margin-left: 0;
+					left: auto;
+					right: 0;
+					top: 30px;
+					margin-right: -175px;
+				}
+
+				&__iphone {
+					margin-left: -50px;
+					top: 100px;
+					left: 2px;
+				}
+			}
+		}
+
+		&__bg {
+
+			&-el-2 {
+				top: auto;
+				bottom: 350px;
+			}
+		}
+
+		.alert-txt {
+			margin-bottom: 40px;
+			max-width: 250px;
+		}
+	}
+
+	.s-intro {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.s-total {
+		&__device {
+			height: 280px;
+
+			.device__mac {
+				bottom: -123px;
+			}
+		}
+	}
+
+	.s-prototype {
+		&__device {
+			height: 230px;
+
+			.device__mac {
+				margin-left: -478px;
+				bottom: -100px;
+			}
+		}
+	}
+
+	.s-article {
+		.bg__el-flag {
+			top: -3px;
+			margin-left: -223px;
+			opacity: .25;
+		}
+	}
+
+	.s-work {
+
+		&__graphic {
+
+			.bg__el-violet {
+				display: none;
+			}
+		}
+	}
+
+	.content-box {
+		&__inner {
+			padding: 30px 20px;
+		}
+
+		&__verstka {
+			padding-bottom: 300px;
+
+			.device {
+				width: 100%;
+				right: inherit;
+				left: 0;
+				bottom: 0;
+				margin-left: 0;
+
+				&__mac {
+					left: 50%;
+					margin-left: -319px;
+					top: 0;
+				}
+
+				&__ipad {
+					right: -60px;
+					z-index: 1;
+				}
+
+				&__iphone {
+					top: 134px;
+					left: -35px;
+				}
+			}
+		}
+
+		.t-sm-big {
+			font-size: 18px;
+		}
+	}
+
+
+	.device {
+
+		&__mac,
+		&__ipad,
+		&__iphone {
+			transform: scale(.5);
+
+			&.mini {
+				transform: scale(.8);
+			}
+		}
+	}
+
+	.btn {
+		border-radius: 60px;
+	}
+
+	.txt-and-ico {
+		font-size: 13px;
+
+		&__ico {
+			font-size: 24px;
+			margin-right: 8px;
+		}
+	}
+
+	.num-box {
+		width: 44px;
+		height: 44px;
+	}
+
+	.alert-yellow {
+		padding: 12px 35px;
+		border-radius: 8px;
+		margin-bottom: -3px;
+		box-shadow: 0 7px 40px rgba(#333, .25);
+	}
+
+	.btn {
+		padding-left: 50px;
+		padding-right: 50px;
+
+		&__ico {
+			opacity: .3;
+			position: absolute;
+			right: 5px;
+			margin-top: -20px;
+			top: 50%;
+			font-size: 45px;
+			text-shadow: none;
+		}
+	}
+
+	.phone-address-content {
+		.soc-bar {
+			margin-left: inherit;
+			margin-right: auto;
+			order: -1;
+		}
+
+		.call-info {
+			width: 100%;
+			margin-top: 20px;
+			text-align: left;
+		}
+	}
+
+
+}

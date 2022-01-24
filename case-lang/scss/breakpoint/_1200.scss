@@ -1,0 +1,195 @@
+// ≥1200px
+@include media-breakpoint-down(lg) {
+
+	body {
+		font-size: 18px;
+	}
+
+	h1,
+	.h1 {
+		font-size: 42px;
+	}
+
+	h2,
+	.h2 {
+		font-size: 38px;
+	}
+
+	h3,
+	.h3 {
+		font-size: 34px;
+	}
+
+	h4,
+	.h4 {
+		font-size: 28px;
+	}
+
+	h5,
+	.h5 {
+		font-size: 22px;
+	}
+
+	h6,
+	.h6 {
+		font-size: 18px;
+	}
+
+
+	// text
+	.t-xl-left {
+		text-align: left;
+	}
+
+	.t-xl-center {
+		text-align: center;
+	}
+
+	.t-xl-right {
+		text-align: right;
+	}
+
+	// XL text size
+	.t-xl-16 {
+		font-size: 16px;
+	}
+
+	.t-xl-18 {
+		font-size: 18px;
+	}
+
+	.t-xl-20 {
+		font-size: 20px;
+	}
+
+	.t-xl-22 {
+		font-size: 22px;
+	}
+
+	.t-xl-24 {
+		font-size: 24px;
+	}
+
+	.t-xl-28 {
+		font-size: 28px;
+	}
+
+	.t-xl-30 {
+		font-size: 30px;
+	}
+
+
+	.container {
+		max-width: 100%;
+	}
+
+	.header {
+		margin-bottom: 0;
+
+		&__offer {
+			min-height: auto;
+			padding-bottom: 600px;
+			text-align: center;
+
+			&-content {
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.device {
+				top: inherit;
+				margin-top: 0;
+				bottom: 80px;
+			}
+
+			.device__mac {
+				left: 50%;
+				margin-left: -495px;
+				top: 30px;
+			}
+
+			.device__ipad {
+				margin-left: -222px;
+			}
+
+			.device__iphone {
+				margin-left: -400px;
+				top: 250px;
+			}
+		}
+
+		&__bg {
+			&-el-1 {
+				left: auto;
+				right: 5%;
+				margin-left: 0;
+			}
+
+			&-el-2 {
+				margin-left: 0;
+				left: 8%;
+			}
+		}
+	}
+
+	.device-content {
+		.device__mac {
+			margin-left: -470px;
+		}
+
+		.device__ipad {
+			top: 180px;
+			margin-left: -320px;
+		}
+
+		.device__iphone {
+			left: -33.3px;
+			top: 333px;
+		}
+	}
+
+	.content-box {
+		&__inner {
+			padding: 45px 35px;
+		}
+
+		&__verstka {
+			.device {
+				right: -80px;
+
+				&__ipad {
+					right: 40px;
+				}
+
+				&__iphone {
+					top: 143px;
+					left: 0;
+				}
+			}
+		}
+	}
+
+	.s-work {
+		&__alerts {
+			[class*="col"] {
+				padding: 0 30px;
+			}
+		}
+	}
+
+	.s-article {
+		.bg__el-triangle-pink.pos-1 {
+			top: 0;
+			left: 40px;
+			margin-left: 0;
+		}
+
+		.bg__el-triangle-pink.pos-2 {
+			bottom: -92px;
+			margin-left: 0;
+			left: auto;
+			right: 30px;
+		}
+	}
+
+}
