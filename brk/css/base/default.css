@@ -32,3 +32,38 @@ a:hover {
 a:active {
 	color: yellowgreen;
 }
+
+
+/*Colors*/
+.c-accent {
+	color: #d85e2c;
+}
+
+
+
+/*Typography*/
+.heading-h4 {
+	font: 32px/1 'BebasNeue';
+	margin-bottom: 15px;
+}
+
+
+/*Text*/
+.txt-upper {
+	text-transform: uppercase;
+}
+
+
+/*Text weight*/
+.weight-300 {
+	font-weight: 300;
+}
+.weight-400 {
+	font-weight: 400;
+}
+.weight-500 {
+	font-weight: 500;
+}
+.weight-600 {
+	font-weight: 600;
+}
