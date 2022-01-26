@@ -1,0 +1,107 @@
+/*Fonts*/
+@import "fonts.css";
+
+/*Base*/
+@import "base/normalize.css";
+@import "base/default.css";
+
+/*Style*/
+@import "sections.css";
+@import "elements.css";
+
+/*Libs*/
+/*-bootstrap (grid & util)*/
+@import "libs/bootstrap/grid.css";
+@import "libs/bootstrap/util.css";
+/*-ninja-slider*/
+@import "libs/ninja-slider.css";
+
+
+.advantagelist {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	text-transform: uppercase;
+	font: 26px 'BebasNeue';
+	margin-bottom: 33px;
+}
+.advantagelist__item {
+	display: flex;
+	align-items: center;
+	margin: 0 10px 10px 0;
+	color: #d85f34;
+}
+.advantagelist__ico {
+	width: 24px;
+	height: 24px;
+	fill: #f2d95b;
+	margin: 0 13px 4px 0;
+}
+.btn {
+	text-decoration: none;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 11px 63px 10px;
+	min-height: 89px;
+	border-radius: 12px;
+	background-color: #272e3b;
+	box-shadow: inset 0 -1px 0 0 rgba(255, 245, 197, 0.004), inset 0 0 27px 0 rgba(249, 236, 151, 0.71), inset 0 -1px 0 #fff5c5, 0 3px 0 #bd962d;
+	background: radial-gradient(ellipse at top, rgba(255, 255, 255, 0.85), #f6c622), radial-gradient(ellipse at bottom, #f9ec97, #f6c622);
+	position: relative;
+	transition: .5;
+	letter-spacing: 0.045em;
+	text-align: center;
+}
+.btn__txt {
+	color: initial;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	color: #2c3031;
+	padding: 1px 0;
+}
+.btn__subtxt {
+	font-size: 13px;
+	color: #a58731;
+}
+.btn--calculate {
+	padding-left: 102px;
+}
+.btn--calculate::before {
+	content: "";
+	width: 102px;
+	height: 92px;
+	background-image: url(../img/btn-calculate.png);
+	position: absolute;
+	left: -6px;
+	bottom: 0;
+}
+.userights {
+	max-width: 444px;
+	padding: 28px 14px;
+}
+.userights__item {
+	min-height: 20px;
+	display: flex;
+	margin-bottom: 8px;
+	font-size: 14px;
+	line-height: 1.4em;
+	padding-left: 28px;
+	position: relative;
+}
+.userights__ico {
+	width: 16px;
+	height: 16px;
+	fill: #fff;
+	position: absolute;
+	left: 0;
+	top: 1px;
+}
+.userights__link {
+	color: #fee37a;
+}
+.userights__text-accent {
+	color: #fee37a;
+}

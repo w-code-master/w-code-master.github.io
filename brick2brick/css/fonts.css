@@ -1,0 +1,55 @@
+/*Gilroy*/
+/*-Regular*/
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/gilroy/regular/gilroy-regular.woff2') format('woff2'),
+		 url('../fonts/gilroy/regular/gilroy-regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+/*-Light*/
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/gilroy/light/gilroy-light.woff2') format('woff2'),
+		 url('../fonts/gilroy/light/gilroy-light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+
+/*BebasNeue*/
+/*-Regular*/
+@font-face {
+	font-family: 'BebasNeue';
+	src: url('../fonts/bebas-neue/regular/bebasneue-regular.woff2') format('woff2'),
+		 url('../fonts/bebas-neue/regular/bebasneue-regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+/*-Bold*/
+@font-face {
+	font-family: 'BebasNeue';
+	src: url('../fonts/bebas-neue/bold/bebasneue-bold.woff2') format('woff2'),
+		 url('../fonts/bebas-neue/bold/bebasneue-bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+/*-Book*/
+@font-face {
+	font-family: 'BebasNeue';
+	src: url('../fonts/bebas-neue/book/bebasneue-book.woff2') format('woff2'),
+		 url('../fonts/bebas-neue/book/bebasneue-book.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+
+/*Acrom*/
+/*-Medium*/
+@font-face {
+	font-family: 'Acrom';
+	src: url('../fonts/acrom/medium/acrom-medium.woff2') format('woff2'),
+		 url('../fonts/acrom/medium/acrom-medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
