@@ -37,6 +37,11 @@ a:active {
 /*Colors*/
 .c-accent {
 	color: #d85e2c;
+	/*color: rgb(216 94 44 / 1);*/
+}
+.c-light {
+	color: #ffc90f;
+	/*color: rgb(255 201 15 / 1);*/
 }
 
 
@@ -45,6 +50,10 @@ a:active {
 .heading-h4 {
 	font: 32px/1 'BebasNeue';
 	margin-bottom: 15px;
+}
+.heading-h5 {
+	font: bold 28px/1 'BebasNeue';
+	padding: 10px 0;
 }
 
 
