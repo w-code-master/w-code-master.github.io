@@ -24,3 +24,17 @@
 .cont-bottom {
 	margin-top: auto;
 }
+
+
+/*Header*/
+.header {
+	text-align: center;
+	padding: 1.5rem 1rem 2.5rem;
+	color: #012169;
+}
+.header__logo {
+	min-height: 12rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}

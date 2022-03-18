@@ -1,6 +1,9 @@
 /*Logo*/
 .logo {
 	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .logo__box {
 	display: inline-flex;
@@ -13,23 +16,30 @@
 	height: 40px;
 
 	background: url(../../img/css/el/logo.png) no-repeat center / contain;
+
+	flex-shrink: 0;
 }
 .logo__txt {
-	display: inline-block;
-	padding: 3px 5px;
+	display: flex;
 
 	color: #333;
-	font-size: 33px;
+	font-size: 3.8rem;
 	font-family: "TimesNewRomanPS", Georgia, Times, "Times New Roman", serif;
 	text-transform: uppercase;
 }
-.logo__txt ._el {
-	display: inline-block;
-	padding: 0 3px;
+.logo__let {
+	padding: 0 .8rem;
 }
-/*home logo*/
-._logo-center {
-	margin: auto;
+/*Logo size-one*/
+._size-one .logo__ico {
+	width: 45px;
+	height: 34px;
+}
+._size-one .logo__txt {
+	font-size: 3rem;
+}
+._size-one .logo__let {
+	padding: 0 .5rem;
 }
 
 
@@ -98,4 +108,84 @@
 .regchoice__img-gos {
 	position: relative;
 	top: 2px;
+}
+
+
+
+/*Item fieldset-box*/
+.fieldsetbox__row {
+	padding: 0;
+}
+.fieldsetbox__label {
+	padding: 7px 10px;
+	display: inline-block;
+	font-size: 1.4rem;
+	color: #012169;
+}
+.fieldsetbox__label:active {
+	color: #5E8FFF;
+	transform: scale(1.07);
+}
+
+
+
+/*Helper text*/
+.helper-txt {
+	display: inline-block;
+	padding: 8px 10px;
+	cursor: pointer;
+}
+
+
+/*Button*/
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	min-height: 61px;
+	padding: 10px 15px;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #DF5852;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	transition: 0.5s;
+	/*filter: blur(30px);*/
+	box-shadow: 0 8px 30px rgba(223, 88, 82, 0.5);
+}
+.btn:hover {
+	text-decoration: none;
+	background-color: #438bf8;
+	color: #fff;
+}
+.btn:focus {
+	outline: 0;
+	box-shadow: 0 0 0 4px rgba(36, 110, 222, 0.5);
+}
+.btn:focus:active {
+	transition: none;
+	background-color: #1c5bb9;
+}
+
+
+
+/*SMS-code*/
+.smscode {
+	display: flex;
+	justify-content: center;
+}
+.smscode__item {
+	padding: 6px;
+	width: 44px;
+}
+.smscode__input {
+	width: 100%;
+	text-align: center;
+}
+input.smscode__input {
+	height: 37px;
+	border-radius: 10px;
 }
