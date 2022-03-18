@@ -1,0 +1,86 @@
+/*Default*/
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+body {
+	font-size: 1.6rem;
+}
+html, body {
+	height: 100%;
+	font-family: "SF-UI-Display", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	background-color: #F2F8FF;
+	color: #232F47;
+}
+
+b, strong {
+	font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+a {
+	color: cornflowerblue;
+}
+a:hover {
+	color: #01b9b9;
+}
+a:active {
+	color: yellowgreen;
+}
+
+
+/*Align*/
+.t-center {
+	text-align: center;
+}
+.t-right {
+	text-align: center;
+}
+
+/*Colors*/
+
+
+/*Typography*/
+
+
+/*Text-weight*/
+.t-300 {
+	font-weight: 300;
+}
+.t-400 {
+	font-weight: 400;
+}
+.t-500 {
+	font-weight: 500;
+}
+.t-600 {
+	font-weight: 600;
+}
+.t-700 {
+	font-weight: 700;
+}
+
+
+
+/* === Style-Guide === */
+
+/*links*/
+.link-default {
+	text-decoration: none;
+	color: inherit;
+}

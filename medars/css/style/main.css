@@ -1,0 +1,26 @@
+/*Main*/
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	width: 100%;
+	max-width: 576px;
+	min-height: 100vh;
+	padding: 14px;
+	margin: auto;
+}
+
+/*Content layout*/
+.cont-top {
+	margin-bottom: auto;
+}
+.cont-center {
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.cont-bottom {
+	margin-top: auto;
+}

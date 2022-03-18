@@ -1,0 +1,101 @@
+/*Logo*/
+.logo {
+	padding: 5px;
+}
+.logo__box {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+.logo__ico {
+	display: inline-block;
+	width: 55px;
+	height: 40px;
+
+	background: url(../../img/css/el/logo.png) no-repeat center / contain;
+}
+.logo__txt {
+	display: inline-block;
+	padding: 3px 5px;
+
+	color: #333;
+	font-size: 33px;
+	font-family: "TimesNewRomanPS", Georgia, Times, "Times New Roman", serif;
+	text-transform: uppercase;
+}
+.logo__txt ._el {
+	display: inline-block;
+	padding: 0 3px;
+}
+/*home logo*/
+._logo-center {
+	margin: auto;
+}
+
+
+/*Messages viewer*/
+.msgview {
+	padding: 6px 10px;
+}
+.msgview__item {
+	max-width: 273px;
+	min-height: 50px;
+	padding: 10px 15px;
+	margin-bottom: 8px;
+
+	background-color: #fff;
+	border: 1px solid rgb(209 209 209 / 25%);
+	box-shadow: 0 4px 4px rgb(5 4 82 / 3%),
+				0 12px 20px rgb(5 4 82 / 3%),
+				0 30px 55px rgb(5 4 82 / 3%),
+				0 100px 115px rgb(5 4 82 / 3%);
+	border-radius: 10px 10px 10px 0;
+	position: relative;
+}
+.msgview__item::after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-bottom: 5px solid #fff; 
+	border-left: 6px solid transparent;
+	position: absolute;
+	right: 100%;
+	bottom: 0;
+}
+
+
+
+/*Registration choice*/
+.regchoice {
+	
+}
+.regchoice__item {
+	padding: 3.5px 0;
+}
+.regchoice__btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 41px;
+	padding: 12px 14px 11px;
+
+	color: inherit;
+	background-color: #EEF2FD;
+	border: 1px solid #EC7EAB;
+	border-radius: 14px 14px 14px 0;
+	line-height: 1;
+	text-align: center;
+	text-decoration: none;
+}
+/*mode: content to right*/
+.-ltr .regchoice__item {
+	text-align: right;
+}
+.-ltr .regchoice__btn {
+	border-radius: 14px 14px 0 14px;
+}
+/*content inner*/
+.regchoice__img-gos {
+	position: relative;
+	top: 2px;
+}
