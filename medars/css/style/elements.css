@@ -1,4 +1,52 @@
+/*Graphic-cloud*/
+.graphic-cloud {
+	width: 218px;
+	height: 106px;
+	background: url(../../img/css/el/cloud.png) no-repeat center center / contain;
+	pointer-events: none;
+}
+/*size*/
+.graphic-cloud.-size-sm {
+	width: 84px;
+	height: 41px;
+}
+/*position*/
+.graphic-cloud.-pos-1 {
+	position: absolute;
+	left: 9px;
+	top: 42px;
+}
+.graphic-cloud.-pos-2 {
+	position: absolute;
+	left: 228px;
+	bottom: 71px;
+}
+
 /*Logo*/
+.logo-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 318px;
+	height: 318px;
+	background-color: #fff;
+	border-radius: 50%;
+	box-shadow: 0px 17px 67px rgba(227, 237, 242, 0.71);
+	margin: auto;
+	position: relative;
+	z-index: 1;
+	padding-top: 12px;
+}
+.logo-wrap::after {
+	content: "";
+	width: 19px;
+	height: 19px;
+	border-radius: 50%;
+	background-color: #C5C5FF;
+	position: absolute;
+	right: 43px;
+	bottom: 38px;
+}
 .logo {
 	padding: 5px;
 	display: flex;
@@ -12,8 +60,8 @@
 }
 .logo__ico {
 	display: inline-block;
-	width: 55px;
-	height: 40px;
+	width: 48px;
+	height: 36px;
 
 	background: url(../../img/css/el/logo.png) no-repeat center / contain;
 
@@ -23,12 +71,15 @@
 	display: flex;
 
 	color: #333;
-	font-size: 3.8rem;
+	font-size: 3.5rem;
 	font-family: "TimesNewRomanPS", Georgia, Times, "Times New Roman", serif;
 	text-transform: uppercase;
 }
 .logo__let {
-	padding: 0 .8rem;
+	padding: 0 6px 0 7px;
+}
+.logo__let:last-child {
+	padding-right: 0;
 }
 /*Logo size-one*/
 ._size-one .logo__ico {

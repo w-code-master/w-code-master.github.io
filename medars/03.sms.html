@@ -4,7 +4,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Login — M E D A R S!</title>
+	<title>SMS-Code — M E D A R S!</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -36,17 +36,18 @@
 						</div>
 					</div>
 				</div>
-				<p>Здравствуйте, чтобы продолжить пожалуйста авторизуйтесь</p>
+				<p>Введите код полученный из смс <br> &nbsp; </p>
 			</header>
 			<form>
-				<fieldset class="fieldsetbox__row">
-					<div class="fieldsetbox__txt">
-						<label class="fieldsetbox__label" for="login-phone">Введите номер телефона</label>
-					</div>
-					<input class="fieldsetbox__input masked-phone d-block" id="login-phone" type="tel" placeholder="+7 (999) 444-66-77">
-				</fieldset>
-				<div class="t-right">
-					<span class="helper-txt c-accent t-500">Зачем мой номер?</span>
+				<div class="smscode">
+					<div class="smscode__item"><input class="smscode__input" type="tel"></div>
+					<div class="smscode__item"><input class="smscode__input" type="tel"></div>
+					<div class="smscode__item"><input class="smscode__input" type="tel"></div>
+					<div class="smscode__item"><input class="smscode__input" type="tel"></div>
+					<div class="smscode__item"><input class="smscode__input" type="tel"></div>
+				</div>
+				<div class="t-center">
+					<span class="helper-txt c-accent t-500">Не получили смс?</span>
 				</div>
 			</form>
 		</div>

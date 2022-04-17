@@ -8,7 +8,7 @@
 	box-sizing: border-box;
 }
 
-/*root html, body*/
+/*base*/
 html {
 	font-size: 10px;
 	overflow-x: hidden;
@@ -96,23 +96,6 @@ textarea:focus {
 }
 
 
-input[type="email"]::-moz-selection,
-input[type="password"]::-moz-selection,
-input[type="tel"]::-moz-selection,
-input[type="text"]::-moz-selection,
-textarea::-moz-selection {
-	background-color: rgba(0, 123, 255, 0.5);
-	color: #fff;
-}
-input[type="email"]::selection,
-input[type="password"]::selection,
-input[type="tel"]::selection,
-input[type="text"]::selection,
-textarea::selection {
-	background-color: rgba(0, 123, 255, 0.5);
-	color: #fff;
-}
-
 
 /*Placeholder*/
 ::-webkit-input-placeholder {
@@ -170,6 +153,42 @@ textarea::selection {
 }
 
 
+/*input[type="email"]::-moz-selection,
+input[type="password"]::-moz-selection,
+input[type="tel"]::-moz-selection,
+input[type="text"]::-moz-selection,
+textarea::-moz-selection {
+	background-color: rgba(0, 123, 255, 0.5);
+	color: #fff;
+}
+input[type="email"]::selection,
+input[type="password"]::selection,
+input[type="tel"]::selection,
+input[type="text"]::selection,
+textarea::selection {
+	background-color: rgba(0, 123, 255, 0.5);
+	color: #fff;
+}*/
+
+
+
+
+/* === Style-Guide === */
+
+/*Links*/
+.link-default {
+	text-decoration: none;
+	color: inherit;
+}
+
+/*Colors*/
+.c-dark {
+	color: #012169;
+}
+.c-accent {
+	color: #DF5852;
+}
+
 /*Text-size*/
 .t-14 {
 	font-size: 1.4rem;
@@ -180,7 +199,6 @@ textarea::selection {
 .t-18 {
 	font-size: 1.8rem;
 }
-
 
 /*Text-align*/
 .t-center {
@@ -207,7 +225,6 @@ textarea::selection {
 	font-weight: 700;
 }
 
-
 /*Util*/
 .d-block {
 	width: 100%;
@@ -217,23 +234,3 @@ textarea::selection {
 	width: 100%;
 	display: flex;
 }
-
-
-
-/* === Style-Guide === */
-
-/*Links*/
-.link-default {
-	text-decoration: none;
-	color: inherit;
-}
-
-/*Colors*/
-.c-dark {
-	color: #012169;
-}
-.c-accent {
-	color: #DF5852;
-}
-
-/*Text*/

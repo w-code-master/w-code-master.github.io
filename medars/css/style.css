@@ -5,12 +5,34 @@
 @import "base/normalize.css";
 @import "base/default.css";
 
-/*Libs*/
-/* -bootstrap (grid & util) */
-@import "libs/bootstrap/grid.css";
-@import "libs/bootstrap/util.css";
-
 /*Style*/
 @import "style/main.css";
 @import "style/sections.css";
 @import "style/elements.css";
+
+/*Libs*/
+@import "libs/swiper.css";
+
+.-anima--graphic-cloud-1 {
+	animation: 20s linear infinite alternate graphicCloud-1;
+}
+.-anima--graphic-cloud-2 {
+	animation: 5s linear infinite alternate graphicCloud-2;
+}
+
+@keyframes graphicCloud-1 {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(200px);
+	}
+}
+@keyframes graphicCloud-2 {
+	from {
+		transform: translateX(-150px);
+	}
+	to {
+		transform: translateX(50px);
+	}
+}

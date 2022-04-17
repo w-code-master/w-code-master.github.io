@@ -23,13 +23,21 @@
 			<img src="img/cont/hello.png" alt="hello">
 
 			<!-- messages-viewer -->
-			<div class="msgview">
+			<!-- <div class="msgview">
 				<p class="msgview__item">
 					Здравствуйте! Рады видеть вас в приложении.</br> Здесь вы можете записаться на приём к врачу или получить онлайн-консультацию, но сначала нужно войти в свой аккаунт
 				</p>
 				<p class="msgview__item">
 					Вы можете войти по номеру телефона или через Госуслуги. Как вам удобнее?
 				</p>
+			</div> -->
+		</div>
+
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">Slide 1</div>
+				<div class="swiper-slide">Slide 2</div>
+				<div class="swiper-slide">Slide 3</div>
 			</div>
 		</div>
 
@@ -54,10 +62,12 @@
 
 	</main>
 
-	<!-- JS -->
-	<script src="js/jquery.min.js"></script>
-	
-	<script src="js/main.js"></script>
+	<!-- Plugins -->
+	<script src="js/plugins/swiper.js"></script>
+
+	<script>
+		new Swiper('.swiper-container');
+	</script>
 	
 </body>
 </html>
