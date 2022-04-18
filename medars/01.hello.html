@@ -20,7 +20,103 @@
 	<main class="main">
 
 		<div class="cont-top">
-			<img src="img/cont/hello.png" alt="hello">
+
+			<header class="header-logos">
+				<div class="logo _size-one">
+					<div class="logo__box">
+						<i class="logo__ico"></i>
+						<strong class="logo__txt">
+							<span class="logo__let">M</span>
+							<span class="logo__let">e</span>
+							<span class="logo__let">d</span>
+							<span class="logo__let">a</span>
+							<span class="logo__let">r</span>
+							<span class="logo__let">s</span>
+						</strong>
+					</div>
+				</div>
+			</header>
+
+		</div>
+
+		<div class="cont-center">
+
+			<div class="swiper swiper-hello">
+				<div class="swiper-wrapper">
+					<!-- slide -->
+					<div class="swiper-slide t-center">
+						<div class="art-scene">
+							<div class="art-scene">
+								<picture class="art-scene__pic anim-fadeIn">
+									<img src="img/con/art/hello.png" alt="hello">
+								</picture>
+								<div class="circle-white anim-bounceIn"></div>
+								<div class="decor-leaves anim-bounceIn"></div>
+								<div class="decor-plus -anima--decor-plus"></div>
+								<div class="circle-color-wrap -anima--rotate">
+									<div class="circle-color anim-bounceIn"></div>
+								</div>
+								<div class="graphic-cloud -size-sm -pos-3 -anima--graphic-cloud3"></div>
+							</div>
+						</div>
+
+						<div class="slide-descrp">
+							<h2 class="slide-descrp__title h2 anim-fadeInUp"><span class="c-blue">Добро пожаловать</span> <br> в Medars!</h2>
+							<p class="slide-descrp__txt anim-fadeInUp">Получите мнение врачей онлайн. В любое время и в любом удобном месте по видеосвязи, телефону или чате</p>
+						</div>
+						<div class="swiper-navigation">
+							<div class="navigation">
+								<div class="swiper-pagination anim-bounceIn"></div>
+								<div class="navigation__next anim-fadeIn swiper-next-page">Пропустить</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- slide -->
+					<div class="swiper-slide t-center">
+						<div class="art-scene">
+							<div class="art-scene">
+								<picture class="art-scene__pic anim-fadeIn">
+									<img src="img/con/art/hello.png" alt="hello">
+								</picture>
+								<div class="circle-white anim-bounceIn"></div>
+								<div class="decor-leaves anim-bounceIn"></div>
+								<div class="decor-plus -anima--decor-plus"></div>
+								<div class="circle-color-wrap -anima--rotate">
+									<div class="circle-color anim-bounceIn"></div>
+								</div>
+								<div class="graphic-cloud -size-sm -pos-3 -anima--graphic-cloud3"></div>
+							</div>
+						</div>
+
+						<div class="slide-descrp">
+							<h2 class="slide-descrp__title h2 anim-fadeInUp"><span class="c-blue">Второе мнение</h2>
+							<p class="slide-descrp__txt anim-fadeInUp">Быстро узнать мнение разных врачей можно по онлайн связи. Больше точек зрение - яснее картина Вашего здоровья</p>
+						</div>
+						<div class="swiper-navigation">
+							<div class="navigation">
+								<div class="swiper-pagination anim-bounceIn"></div>
+								<div class="navigation__next anim-fadeIn swiper-next-page">Пропустить</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- slide -->
+					<!-- <div class="swiper-slide">
+						<section class="title-img">
+							<img src="img/img3.png" alt="">
+						</section>
+						<section class="title">
+							<h1 class="title__text">Расшифровка анализов</h1>
+							<div class="title__sub">Наши врачи расшифруют анализы по видезвонку и порекомендуют, что делать дальше, без очного приёма в клинике</div>
+						</section>
+						<section class="navigation">
+							<div class="swiper-pagination"></div>
+							<a href="#" class="button">Продолжить</a>
+						</section>
+					</div> -->
+				</div>
+			</div>
 
 			<!-- messages-viewer -->
 			<!-- <div class="msgview">
@@ -31,19 +127,9 @@
 					Вы можете войти по номеру телефона или через Госуслуги. Как вам удобнее?
 				</p>
 			</div> -->
-		</div>
-
-		<div class="swiper-container">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">Slide 1</div>
-				<div class="swiper-slide">Slide 2</div>
-				<div class="swiper-slide">Slide 3</div>
-			</div>
-		</div>
-
-		<div class="cont-center">
+			
 			<!-- registration-choice -->
-			<div class="regchoice -ltr">
+			<!-- <div class="regchoice -ltr">
 				<div class="regchoice__item">
 					<a class="regchoice__btn" href="#">По номеру телефона</a>
 				</div>
@@ -52,22 +138,25 @@
 						<img class="regchoice__img-gos" src="img/cont/gos.png" alt="gos">
 					</a>
 				</div>
-			</div>
+			</div> -->
+
 		</div>
 
-		<div class="cont-bottom t-center">
+		<!-- <div class="cont-bottom t-center">
 			<span class="t-300">У Вас нет аккаунта?</span> &nbsp;
 			<a class="link-default t-600" href="#">Регистрация</a>
-		</div>
+		</div> -->
 
 	</main>
 
 	<!-- Plugins -->
-	<script src="js/plugins/swiper.js"></script>
+	<script src="js/jquery.js"></script>
 
-	<script>
-		new Swiper('.swiper-container');
-	</script>
+	<script src="js/plugins/swiper.js"></script>
+	<script src="js/plugins/animate.js"></script>
+	<script src="js/plugins/waypoints.js"></script>
+
+	<script src="js/main.js"></script>
 	
 </body>
 </html>

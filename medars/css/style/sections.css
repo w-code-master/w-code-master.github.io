@@ -1,0 +1,37 @@
+.header-logos {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 15px;
+}
+
+
+.slide-descrp {
+
+}
+.slide-descrp__title {
+	margin-bottom: 10px;
+}
+.slide-descrp__txt {
+	line-height: 147%;
+	color: #626F82;
+}
+
+
+.swiper-navigation {
+	margin-top: 20px;
+	padding: 40px 0 20px;
+	position: relative;
+}
+.swiper-navigation .swiper-pagination {
+	left: 0;
+	top: 0;
+}
+.swiper-navigation .navigation__next {
+	position: relative;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 145%;
+	color: #8B818E;
+	z-index: 10;
+}

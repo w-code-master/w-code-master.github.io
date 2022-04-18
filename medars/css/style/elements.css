@@ -21,6 +21,54 @@
 	left: 228px;
 	bottom: 71px;
 }
+.graphic-cloud.-pos-3 {
+	position: absolute;
+	left: 0;
+	bottom: 34px;
+	z-index: 1;
+}
+
+
+/* D E C O R - 
+   elements */
+
+/* -leaves */
+.decor-leaves {
+	width: 101px;
+	height: 141px;
+	background-image: url(../../img/css/el/leaves.png);
+}
+/* -plus */
+.decor-plus {
+	width: 16px;
+	height: 16px;
+	position: relative;
+}
+.decor-plus::before,
+.decor-plus::after {
+	content: "";
+	position: absolute;
+	box-shadow: 0 0 2px rgb(255 255 255 / 80%);
+}
+.decor-plus::before {
+	width: 100%;
+	height: 2px;
+	border-radius: 1px;
+	background-color: #fff;
+	left: 0;
+	top: 50%;
+	margin-top: -1px;
+}
+.decor-plus::after {
+	width: 2px;
+	height: 100%;
+	border-radius: 1px;
+	background-color: #fff;
+	left: 50%;
+	top: 0;
+	margin-left: -1px;
+}
+
 
 /*Logo*/
 .logo-wrap {
@@ -239,4 +287,62 @@
 input.smscode__input {
 	height: 37px;
 	border-radius: 10px;
+}
+
+
+.circle-white {
+	width: 318px;
+	height: 318px;
+	border: 35px solid #fff;
+	box-shadow: 0px 17px 67px rgba(227, 237, 242, 0.8);
+	border-radius: 50%;
+}
+.circle-color {
+	width: 258px;
+	height: 258px;
+	background: #8BD7F4 linear-gradient(279deg, #8BD7F4 26%, #B8ECFC 59%);
+	border-radius: 50%;
+}
+
+
+.art-scene {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 350px;
+	position: relative;
+}
+.art-scene__pic {
+	position: relative;
+	z-index: 2;
+}
+/*content*/
+.art-scene .circle-white {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -159px 0 0 -159px;
+}
+.art-scene .circle-color-wrap {
+	width: 258px;
+	height: 258px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -129px 0 0 -129px;
+}
+.art-scene .decor-leaves {
+	position: absolute;
+	left: 50%;
+	top: 10px;
+	margin-left: 60px;
+}
+.art-scene .decor-plus {
+	position: absolute;
+	right: 40px;
+	top: 50%;
+	z-index: 1;
+}
+.art-scene .graphic-cloud {
+	z-index: 2;
 }

@@ -11,7 +11,7 @@
 /*base*/
 html {
 	font-size: 10px;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 body {
 	font-size: 1.6rem;
@@ -188,6 +188,9 @@ textarea::selection {
 .c-accent {
 	color: #DF5852;
 }
+.c-blue {
+	color: #0183D1;
+}
 
 /*Text-size*/
 .t-14 {
@@ -224,6 +227,15 @@ textarea::selection {
 .t-700 {
 	font-weight: 700;
 }
+
+
+/* Heading */
+.h2 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 134%;
+}
+
 
 /*Util*/
 .d-block {
