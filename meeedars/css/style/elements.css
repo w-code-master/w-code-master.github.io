@@ -70,6 +70,24 @@
 }
 
 
+
+/* I C O N S - 
+   elements */
+
+/* -chat-violet */
+.ico-chat-violer {
+	width: 35px;
+	height: 32px;
+	background-image: url(../../img/css/ico/chat-violet.png);
+}
+/* -chat-purple */
+.ico-chat-purple {
+	width: 71px;
+	height: 63px;
+	background-image: url(../../img/css/ico/chat-purple.png);
+}
+
+
 /*Logo*/
 .logo-wrap {
 	display: flex;
@@ -254,6 +272,7 @@
 	transition: 0.5s;
 	/*filter: blur(30px);*/
 	box-shadow: 0 8px 30px rgba(223, 88, 82, 0.5);
+	cursor: pointer;
 }
 .btn:hover {
 	text-decoration: none;
@@ -359,5 +378,17 @@ input.smscode__input {
 	z-index: 1;
 }
 .art-scene .graphic-cloud {
+	z-index: 2;
+}
+.art-scene .ico-chat-violer {
+	position: absolute;
+	left: -120px;
+	top: 80px;
+	z-index: 2;
+}
+.art-scene .ico-chat-purple {
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
 	z-index: 2;
 }
