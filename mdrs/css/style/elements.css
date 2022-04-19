@@ -316,6 +316,21 @@ input.smscode__input {
 	position: relative;
 	z-index: 2;
 }
+.art-scene__pic-inner {
+	width: 258px;
+	height: 258px;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -129px 0 0 -129px;
+	overflow: hidden;
+}
+.art-scene__pic-med {
+	position: relative;
+	left: 4px;
+	top: 16px;
+}
 /*content*/
 .art-scene .circle-white {
 	position: absolute;

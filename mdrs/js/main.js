@@ -1,16 +1,47 @@
 $(document).ready(function(){
 
 
-	$('.anim-zoomIn').animated('zoomIn');
+	$('.anim-bounce').animated('bounce');
+	$('.anim-flash').animated('flash');
+	$('.anim-pulse').animated('pulse');
+	$('.anim-rubberBand').animated('rubberBand');
+	$('.anim-shake').animated('shake');
+	$('.anim-swing').animated('swing');
+	$('.anim-tada').animated('tada');
+	$('.anim-wobble').animated('wobble');
+
 	$('.anim-bounceIn').animated('bounceIn');
+	$('.anim-bounceInDown').animated('bounceInDown');
+	$('.anim-bounceInLeft').animated('bounceInLeft');
+	$('.anim-bounceInRight').animated('bounceInRight');
+	$('.anim-bounceInUp').animated('bounceInUp');
+	$('.anim-bounceOut').animated('bounceOut');
+	$('.anim-bounceOutDown').animated('bounceOutDown');
+	$('.anim-bounceOutLeft').animated('bounceOutLeft');
+	$('.anim-bounceOutRight').animated('bounceOutRight');
+	$('.anim-bounceOutUp').animated('bounceOutUp');
+
 	$('.anim-fadeIn').animated('fadeIn');
 	$('.anim-fadeInDown').animated('fadeInDown');
+	$('.anim-fadeInDownBig').animated('fadeInDownBig');
+	$('.anim-fadeInLeft').animated('fadeInLeft');
+	$('.anim-fadeInLeftBig').animated('fadeInLeftBig');
+	$('.anim-fadeInRight').animated('fadeInRight');
+	$('.anim-fadeInRightBig').animated('fadeInRightBig');
 	$('.anim-fadeInUp').animated('fadeInUp');
 	$('.anim-fadeInUpBig').animated('fadeInUpBig');
-	$('.anim-fadeInRightBig').animated('fadeInRightBig');
-	$('.anim-fadeInLeftBig').animated('fadeInLeftBig');
-	$('.anim-fadeInDownBig').animated('fadeInDownBig');
+	$('.anim-fadeOut').animated('fadeOut');
+	$('.anim-fadeOutDown').animated('fadeOutDown');
+	$('.anim-fadeOutDownBig').animated('fadeOutDownBig');
+	$('.anim-fadeOutLeft').animated('fadeOutLeft');
+	$('.anim-fadeOutLeftBig').animated('fadeOutLeftBig');
+	$('.anim-fadeOutRight').animated('fadeOutRight');
+	$('.anim-fadeOutRightBig').animated('fadeOutRightBig');
+
+	$('.anim-zoomIn').animated('zoomIn');
 	$('.anim-fadeInUpBig').animated('fadeInUpBig');
+	
+	$('.anim-fadeOutUp').animated('fadeOutUp');
 
 
 	new Swiper('.swiper-hello', {
