@@ -1,0 +1,30 @@
+.header {
+    min-height: 100vh;
+    background: #121212 url(../../img/header-light.png) no-repeat right top;
+    color: #d4d4d4;
+    position: relative;
+}
+.header__scene {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 2px solid red;
+}
+.header__scene .position-1 {
+    position: absolute;
+    top: -80px !important;
+    left: 50% !important;
+    margin-left: 200px;
+    z-index: 1;
+}
+.header__scene .position-2 {
+    position: absolute;
+    top: -80px !important;
+    left: 50% !important;
+    margin-left: -200px;
+    z-index: 1;
+}
+
+/* offer */

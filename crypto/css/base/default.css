@@ -1,0 +1,254 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* base */
+html, body {
+	min-height: 100vh;
+}
+html {
+	overflow-x: hidden;
+}
+body {
+	font: normal 16px/1.4 'Montserrat', Arial, sans-serif;
+	color: #000;
+	overflow-x: hidden;
+	margin: 0 auto;
+}
+
+/* links */
+a {
+	color: blue;
+}
+a:hover {
+    color: #00CB14;
+}
+
+/* text */
+p,
+label,
+address {
+	margin-bottom: 0;
+}
+
+p {
+	margin: 0;
+}
+
+/* lists */
+ul,
+ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* typography */
+strong,
+b {
+	font-weight: 500;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+
+/* heading */
+.heading-1 {
+    font-size: 44px;
+}
+.heading-2 {
+    font-size: 39px;
+}
+.heading-3 {
+    font-size: 31px;
+}
+.heading-4 {
+    font-size: 25px;
+}
+.heading-5 {
+    font-size: 21px;
+}
+.heading-6 {
+    font-size: 17px;
+}
+
+.o-hidden {
+	overflow: hidden;
+}
+
+/*text*/
+.t-center {
+	text-align: center;
+}
+
+.t-right {
+	text-align: right;
+}
+
+.t-upcase {
+	text-transform: uppercase;
+}
+
+
+/*text size*/
+.t-13 {
+	font-size: 13px;
+}
+.t-xsm {
+	font-size: 14px;
+}
+
+.t-ssm {
+	font-size: 15px;
+}
+
+.t-sm {
+	font-size: 16px;
+}
+
+.t-sm-normal {
+	font-size: 17px;
+}
+
+.t-18 {
+	font-size: 18px;
+}
+
+.t-md-small {
+	font-size: 21px;
+}
+
+.t-md {
+	font-size: 22px;
+}
+
+.t-lg {
+	font-size: 24px;
+}
+
+.t-xl {
+	font-size: 28px;
+}
+
+.t-xxl {
+	font-size: 30px;
+}
+
+/*text weight*/
+
+.t-normal {
+	font-weight: normal;
+}
+
+.t-medium {
+	font-weight: 500;
+}
+
+.t-bold {
+	font-weight: 700;
+}
+
+
+/*text util*/
+.l-height--1 {
+	line-height: 1;
+}
+
+.l-height--1-1 {
+	line-height: 1.1;
+}
+
+.l-height--1-2 {
+	line-height: 1.2;
+}
+
+.l-height--1-3 {
+	line-height: 1.3;
+}
+
+.l-height--1-4 {
+	line-height: 1.4;
+}
+
+.l-height--1-45 {
+	line-height: 1.45;
+}
+
+.l-height--1-5 {
+	line-height: 1.5;
+}
+
+/*letter-spacing*/
+.letter-025em {
+	letter-spacing: .025em;
+}
+
+
+.h-small {
+	display: inline-block;
+	font-size: 80%;
+}
+
+/*colors*/
+.c-accent {
+	/* color: $accent; */
+	color: rgb(255, 223, 147);
+}
+.c-lightener {
+	color: ##d4d4d4;
+}
+
+
+
+/* images */
+.object-cover {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+/* Widths */
+.maxw-100 {
+	max-width: 100%;
+}
+
+
+/* shadow effect */
+.box-shadow {
+	box-shadow: 0 9px 40px rgba(#dcdeed, .8);
+}
+
+
+/* opacity */
+.opacity-075 {
+	opacity: .75;
+}
+
+.opacity-50 {
+	opacity: .5;
+}
+
+.z-index {
+	position: relative;
+	z-index: 1;
+}
+
+.z-index-2 {
+	position: relative;
+	z-index: 2;
+}
+
+
+.container {
+	width: 100%;
+	max-width: 1280px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+/* paddings */
+.pl-10 {
+	padding-left: 10px;
+}

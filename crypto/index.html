@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <!-- logo -->
+            <div class="logo"></div>
+            <!-- offer -->
+            <div class="offer t-upcase c-lightener">
+                <h6 class="heading-6 t-normal">крипто-тренинг</h6>
+                <h2 class="heading-2 t-bold">
+                    Как РАЗОБРАТЬСЯ в <br> <span class="c-accent">КРИПТОВАЛЮТЕ</span> за <span class="heading__outline">1 ВЕЧЕР</span>
+                </h2>
+                <h3 class="heading-4 t-bold">И начать <span class="heading__line c-accent">ЗАРАБАТЫВАТЬ</span> с нуля <br> без больших вложений</h3>
+                <p class="t-md t-normal c-accent">Расскажу о ТОП-5 способах заработка</p>
+            </div>
+            <div class="c-lightener">
+                <p>Продолжительность: <strong class="t-bold c-accent">90 минут</strong></p>
+                <p>Стоимость: <strong class="t-bold c-accent">990р БЕСПЛАТНО</strong></p>
+                <p>Дата: <strong class="t-bold c-accent">17 сентября в 19:00</strong></p>
+            </div>
+            <div>
+                <a class="btn t-upcase wdqwdqwdqw" href="#">ПРИНЯТЬ УЧАСТИЕ</a>
+            </div>
+            <div class="pl-10">
+                <p class="t-13">Бонус: чек-лист «15 способов заработка <br> на криптовалюте в 2023 году»</p>
+            </div>
+        </div>
+        <div id="header_scene" class="header__scene">
+            <div data-depth="0.6" class="position-1">
+                <div class="fishka-bitcoin"></div>
+            </div>
+            <div data-depth="0.25" class="position-2">
+                <div class="fishka-efir"></div>
+            </div>
+        </div>
+    </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        var headerScene = document.getElementById('header_scene');
+        var parallaxInstance = new Parallax(headerScene);
+    </script>
+</body>
+</html>
