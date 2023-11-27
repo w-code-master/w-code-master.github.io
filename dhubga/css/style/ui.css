@@ -1,0 +1,153 @@
+.logo {
+    display: inline-block;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.menu__link {
+    padding: 10px 15px;
+    text-decoration: none;
+}
+.menu__link:hover {
+    color: #366CAB;
+}
+
+/* button */
+.button {
+	display: inline-flex;
+	align-items: center;
+    text-align: center;
+	min-height: 50px;
+	padding: 10px 26px;
+	background: transparent;
+	border: 1px solid #183152;
+    color: inherit;
+	text-decoration: none;
+	transition: .3s;
+	cursor: pointer;
+    border-radius: 50px;
+}
+.button:hover {
+    border-color: #366CAB;
+    background-color: #366CAB;
+    transform: scale(1.1);
+    color: #fff;
+}
+.button:active {
+    transition: none;
+    transform: scale(1);
+    border-color: #366CAB;
+    background-color: #366CAB;
+    outline: none;
+}
+.button__icon {
+    margin-right: 10px;
+}
+.button__icon.-to-right {
+    order: 3;
+    margin-right: 0;
+    margin-left: 10px;
+}
+.button__svg {
+    width: 24px;
+    height: 24px;
+    transition: .5s;
+    stroke: #183152;
+}
+.button:hover .button__svg {
+    stroke: #fff;
+}
+
+/* post box */
+.postbox {
+    width: 100%;
+    max-width: 444px;
+}
+.postbox__img {
+    height: 240px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 1s;
+}
+.postbox__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.postbox__title {
+    margin: 5px 0;
+}
+.postbox__loc {
+    display: flex;
+}
+.postbox__loc-ico {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+}
+.postbox__loc-txt {
+    margin: 0;
+    padding-top: 2px;
+}
+
+
+.price-mark {
+    display: inline-block;
+    font-size: 14px;
+    background-color: #fff;
+    padding: 6px 8px;
+    border-radius: 30px;
+}
+
+.more {
+    display: inline-flex;
+    text-decoration: none;
+    transition: .3s;
+}
+.more:hover {
+    transform: scale(1.05);
+}
+.news__title {
+    margin: 10px 0;
+}
+.more__text {
+    color: #366CAB;
+    margin-right: 3px;
+}
+.more__icon {
+    width: 26px;
+    height: 26px;
+}
+
+
+.dateinfo {
+    display: flex;
+    align-items: center;
+}
+.dateinfo__icon {
+    width: 18px;
+    height: 20px;
+    margin-right: 7px;
+}
+.dateinfo__text {
+    font-size: 14px;
+}
+
+
+.taglink {
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 3px 10px;
+    background-color: #D0DFF0;
+    border-radius: 20px;
+    transition: .5s;
+}
+.taglink:hover {
+    background-color: #366CAB;
+    color: #fff;
+}

@@ -1,0 +1,37 @@
+/*Vela Sans*/
+/* ------ */
+/*-Light*/
+@font-face {
+	font-family: 'VelaSans';
+	src: url('../fonts/velasans/VelaSans-Light.woff2') format('woff2'),
+		 url('../fonts/velasans/VelaSans-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+/*-Regular*/
+@font-face {
+	font-family: 'VelaSans';
+	src: url('../fonts/velasans/VelaSans-Regular.woff2') format('woff2'),
+		 url('../fonts/velasans/VelaSans-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+/*-Medium*/
+@font-face {
+	font-family: 'VelaSans';
+	src: url('../fonts/velasans/VelaSans-Medium.woff2') format('woff2'),
+		 url('../fonts/velasans/VelaSans-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+/*-SemiBold*/
+@font-face {
+	font-family: 'VelaSans';
+	src: url('../fonts/velasans/VelaSans-SemiBold.woff2') format('woff2'),
+		 url('../fonts/velasans/VelaSans-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
