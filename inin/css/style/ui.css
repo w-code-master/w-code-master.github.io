@@ -1,0 +1,21 @@
+.btn {
+   display: inline-flex;
+   padding: 15px 25px;
+   background-color: var(--color-accent);
+   border-radius: 6px;
+   color: #fff;
+   font-size: 14px;
+   font-weight: 800;
+   text-decoration: none;
+}
+.btn--big {
+   font-size: 20px;
+   padding: 25px 40px;
+}
+.btn--big.btn--white {
+   color: var(--color-accent);
+}
+.btn--white {
+   background-color: #fff;
+   color: var(--color-darklight);
+}

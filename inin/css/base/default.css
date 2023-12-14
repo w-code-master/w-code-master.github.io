@@ -1,0 +1,97 @@
+/* vars */
+:root {
+    --color-white: #fff;
+    --color-light: #F8F9FA;
+    --color-black: #33393B;
+    --color-dark: #525D62;
+    --color-darklight: #66747A;
+    --color-silver: #9CA5A9;
+    --color-accent: #2DB4C9;
+    --color-accent-text: #0090A7;
+    --color-lime: #97C92D;
+    --color-limelight: #F5FAEA;
+    --color-blue: #2D6BC9;
+    --color-bluelight: #E5ECF6;
+    --color-orange: #F9C82B;
+}
+
+/* boxing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* colors */
+.color-darklight {
+    color: var(--color-darklight);
+}
+.color-silver {
+    color: var(--color-silver);
+}
+.color-black {
+    color: var(--color-black);
+}
+  
+/* base */
+html {
+    overflow-x: hidden;
+}
+html, body {
+    height: 100vh;
+}
+body {
+    color: var(--color-black);
+    overflow-x: hidden;
+    margin: 0 auto;
+    font: 16px sans-serif;
+}
+
+/* link */
+a {
+    color: #183152;
+}
+a:hover {
+    color: #366CAB;
+    text-decoration: none;
+}
+
+/* heading */
+h1, h2, h3, h4, h5, h6, b, strong {
+    font-weight: 800;
+}
+h1, .h1 {
+    font-size: 55px;
+    line-height: 110%;
+}
+h2, .h2 {
+    font-size: 28px;
+    line-height: 108%;
+}
+h3, .h3 {
+    font-size: 21px;
+    line-height: 111%;
+}
+h4, .h4 {
+    font-size: 18px;
+    line-height: 128%;
+}
+h5, .h5 {
+    font-size: 15px;
+    line-height: 134%;
+}
+h6, .h6 {
+    font-size: 13px;
+    line-height: 147%;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+
+/* weight */
+.weight-400 {
+    font-weight: 400;
+}
+.weight-800 {
+    font-weight: 800;
+}
