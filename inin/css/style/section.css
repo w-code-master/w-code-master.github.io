@@ -533,3 +533,121 @@
     background-color: #fff;
     color: var(--color-accent);
 }
+
+
+/* Review */
+.review-swiper {
+    border-radius: 25px;
+}
+.review-swiper-nav {
+    width: 122px;
+    height: 55px;
+    background: url(../../img/svg/swiper-nav.svg) no-repeat center;
+    position: relative;
+}
+.review-swiper-prev,
+.review-swiper-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    background-color: #EDEDEE;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .5s;
+    position: absolute;
+}
+.review-swiper-prev {
+    left: 0;
+    top: 0;
+}
+.review-swiper-next {
+    right: 0;
+    top: 0;
+}
+.review-swiper-prev svg,
+.review-swiper-next svg {
+    display: block;
+    width: 16px;
+    height: 16px;
+    fill: #66747A;
+    transition: .3s;
+}
+.review-swiper-prev:hover,
+.review-swiper-next:hover {
+    transform: scale(1.2);
+    background-color: var(--color-accent);
+}
+.review-swiper-prev:hover svg,
+.review-swiper-next:hover svg {
+    fill: #fff;
+}
+
+
+/* Footer */
+.footer {
+    padding: 30px 0;
+    background-color: #525D62;
+    color: #fff;
+}
+.footer hr {
+    border: none;
+    margin: 0;
+    height: 1px;
+    background-color: rgba(255, 255, 255, .1);
+}
+.footer-copy {
+    font-size: 12px;
+    line-height: 1.8;
+    color: #D9D9D9;
+}
+.footer-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+}
+.footer-link__txt {
+    margin-top: 4px;
+}
+.footer-link__svg {
+    fill: #fff;
+    margin-right: 15px;
+    transition: .5s;
+}
+.footer-link:hover {
+    color: #82CCDB;
+}
+.footer-link:hover .footer-link__svg {
+    fill: #82CCDB;
+}
+.footer-link:active {
+    transition: none;
+    color: #82CCDB;
+}
+.footer-link:active .footer-link__txt {
+    text-decoration: underline;
+}
+.footer-link:active .footer-link__svg {
+    transition: none;
+    fill: #82CCDB;
+}
+
+/* menu */
+.footer-menu__link {
+    padding: 3px 0;
+    display: inline-block;
+    color: rgba(255, 255, 255, .55);
+    text-decoration: none;
+    transition: .5s;
+}
+.footer-menu__link:hover {
+    color: #82CCDB;
+}
+.footer-menu__link:active {
+    color: #82CCDB;
+    text-decoration: underline;
+    transition: none;
+}

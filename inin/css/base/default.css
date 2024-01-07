@@ -49,6 +49,12 @@ a:hover {
     color: var(--color-accent);
     text-decoration-style: dashed;
 }
+.link-aqua {
+    color: #82CCDB;
+}
+.link-aqua:hover {
+    color: #2DB4C9;
+}
 
 
 /* Heading */
@@ -98,6 +104,9 @@ strong, b {
 .font-12 {
     font-size: 12px;
 }
+.font-14 {
+    font-size: 14px;
+}
 .font-17 {
     font-size: 17px;
 }
@@ -106,6 +115,9 @@ strong, b {
 }
 .font-25 {
     font-size: 25px;
+}
+.font-30 {
+    font-size: 30px;
 }
 .font-35 {
     font-size: 35px;
@@ -245,17 +257,20 @@ textarea {
 .c-accent {
     color: var(--color-accent);
 }
-.c-darklight {
-    color: var(--color-darklight);
-}
-.c-silver {
-    color: var(--color-silver);
-}
 .c-black {
     color: var(--color-black);
 }
 .c-white {
     color: var(--color-white);
+}
+.c-light {
+    color: #D9D9D9;
+}
+.c-darklight {
+    color: var(--color-darklight);
+}
+.c-silver {
+    color: var(--color-silver);
 }
 
 

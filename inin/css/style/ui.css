@@ -33,6 +33,7 @@
    cursor: pointer;
    border: 0;
    text-align: center;
+   position: relative;
 }
 .btn__ico {
    width: 15px;
@@ -65,6 +66,7 @@
 .btn:hover {
    color: #fff;
    transform: scale(1.1);
+   z-index: 1;
 }
 .btn--light:hover {
    color: var(--color-accent);
@@ -280,6 +282,13 @@
    left: 0;
    top: 0;
 }
+/* blue style */
+.progress-line.-blue {
+   background-color: rgba(130, 204, 219, 0.15);
+}
+.progress-line.-blue .progress-line__bar {
+   background-color: #0090A7;
+}
 
 
 /* CircleIcon */
@@ -296,4 +305,43 @@
    width: 13px;
    height: 13px;
    fill: #fff;
+}
+
+
+
+/* Avatar */
+.ui-avatar {
+   width: 80px;
+   height: 80px;
+   overflow: hidden;
+   border-radius: 15px;
+}
+
+
+/* Tabs */
+.tab-nav {
+   display: flex;
+   justify-content: flex-end;
+   padding-right: 50px;
+}
+.tab-nav__item {
+   padding: 0 10px;
+}
+.tab-nav__link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 52px;
+   border-radius: 8px 8px 0px 0px;
+   background-color: rgba(245, 246, 248, 0.9);
+   font-size: 20px;
+   color: #66747A;
+   font-weight: normal;
+   text-decoration: none;
+   padding: 10px 25px;
+}
+.active .tab-nav__link {
+   background-color: #fff;
+   font-weight: bold;
+   color: #525D62;
 }
