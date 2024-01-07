@@ -1,19 +1,33 @@
-/* Mont */
-/* ------ */
-
-/*-Regular*/
+/* fonts: MONT */
+/*- Light */
 @font-face {
 	font-family: 'Mont';
-	src: url('../fonts/mont/400/MontBook.woff2') format('woff2'),
-		  url('../fonts/mont/400/MontBook.woff') format('woff');
-	font-weight: 400;
+	src: url('../fonts/mont/light/mont-light.woff2') format('woff2'),
+		  url('../fonts/mont/light/mont-light.woff') format('woff');
+	font-weight: 300;
 	font-style: normal;
 }
-
-/*-Heavy*/
+/*- Regular */
 @font-face {
 	font-family: 'Mont';
-	src: url('../fonts/mont/800/MontHeavy.woff2') format('woff2'),
-		  url('../fonts/mont/800/MontHeavy.woff') format('woff');
-	font-weight: 800;
+	src: url('../fonts/mont/regular/mont-regular.woff2') format('woff2'),
+		  url('../fonts/mont/regular/mont-regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+/*- SemiBold */
+@font-face {
+	font-family: 'Mont';
+	src: url('../fonts/mont/semibold/mont-semibold.woff2') format('woff2'),
+		  url('../fonts/mont/semibold/mont-semibold.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+/*- Bold */
+@font-face {
+	font-family: 'Mont';
+	src: url('../fonts/mont/bold/mont-bold.woff2') format('woff2'),
+		  url('../fonts/mont/bold/mont-bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
 }
