@@ -1,5 +1,6 @@
 :root {
 	--color-accent: #d91135;
+	--color-accent-hover: #3187b4;
 	--color-black: #0f0d23;
 	--color-white: #fff;
 	--color-silver: #c2c2c2;
@@ -23,8 +24,12 @@ body {
 	margin: 0 auto;
 }
 .container {
-	max-width: 1750px !important;
 	width: 100%;
+	max-width: 1710px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* link */
@@ -58,10 +63,15 @@ h1, h2, h3, h4, h5, h6,
 	margin-top: 0;
 }
 h1, .h1 {
-	font-size: 52px;
+	font-size: 59px;
+	line-height: 1.02;
+	letter-spacing: .035em;
+	margin-bottom: 35px;
 }
 h2, .h2 {
 	font-size: 48px;
+	letter-spacing: .025em;
+	margin-bottom: 31px;
 }
 h3, .h3 {
 	font-size: 34px;
@@ -77,18 +87,19 @@ h6, .h6 {
 }
 .section-heading {
 	font-size: 48px;
-	padding-left: 60px;
+	padding-left: 64px;
 	margin-left: 0px;
 	position: relative;
 }
 .section-heading::before {
 	content: "";
-	width: 50px;
+	width: 30px;
 	height: 5px;
 	background-color: var(--color-accent);
 	position: absolute;
-	left: 0;
-	top: 22px;
+	left: 1px;
+	top: 50%;
+	margin-top: -3px;
 }
 
 /*Forms*/
@@ -198,17 +209,14 @@ textarea:focus {
 }
 
 /*text weight*/
-.t-normal {
-	font-weight: normal;
-}
-.t-medium {
-	font-weight: 500;
-}
-.t-bold {
-	font-weight: bold;
+.weight-700 {
+	font-weight: 700;
 }
 
 /* colors */
 .color-accent {
 	color: var(--color-accent);
+}
+.color-white {
+	color: #fff;
 }

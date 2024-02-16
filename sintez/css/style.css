@@ -4,8 +4,10 @@
 /* base */
 @import "base/normalize.css";
 @import "base/default.css";
-@import "base/grid.css";
 
 /* style */
 @import "style/ui.css";
 @import "style/section.css";
+
+/* libs */
+@import "libs/swiper.css";
