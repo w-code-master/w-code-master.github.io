@@ -1,8 +1,0 @@
---- site :
-https://browsersync.io/
-
---- install :
-npm install -g browser-sync
-
---- start :
-browser-sync start --server --files "css/*.css, css/*/*.css, *.html, js/*/*.js"
