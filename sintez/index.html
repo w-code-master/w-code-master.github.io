@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Sintez-Digital</title>
 
    <!-- favicon -->
-   <link rel="icon" type="image/png" href="img/favicon.png" sizes="32x32" />
+   <link href="img/favicon.png" sizes="32x32" rel="icon" type="image/png"/>
    
+	<!-- style -->
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
 
+	<!-- scripts -->
 	<script src="js/jquery.js" defer></script>
-	<script src="js/swiper.js" defer></script>
-	<script src="js/jquery.malihu.PageScroll2id.js" defer></script>
-	<script src="js/beefup.min.js" defer></script>
 	<script src="js/dynamic-adapt.js" defer></script>
+	<script src="js/pagescroll.js" defer></script>
+	<script src="js/swiper.js" defer></script>
+	<script src="js/masked.js" defer></script>
 	<script src="js/marquee.js" defer></script>
-	<script src="js/maskedinput.js" defer></script>
-	<script src="js/waypoints.min.js" defer></script>
+	<script src="js/beefup.js" defer></script>
+	<script src="js/waypoints.js" defer></script>
 	<script src="js/animate-css.js" defer></script>
-	<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+	<script src="js/simplebar.js"></script>
 	<script src="js/main.js" defer></script>
 
 </head>
@@ -1275,11 +1278,17 @@
 				</ul>
 			</nav>
 			<div class="phone-panel__action">
-				<a class="btn btn-outline-white entry--call-modal anim-bounceIn">
-					<div class="btn__txt">Обсудить проект</div>
+				<a class="link anim-fadeInDown" href="#">
+					<span class="link__txt">Презентация <span class="color-dark">(5МБ — PDF)</span></span>
+					<svg class="link__ico">
+						<use href="img/svg/sprite.svg#i-download"></use>
+					</svg>
 				</a>
 				<a class="btn btn-trans btn-white anim-bounceIn" href="tel:88004466789">
 					<div class="btn__txt">8 800 44 66 789</div>
+				</a>
+				<a class="btn btn-outline-white entry--call-modal anim-bounceIn">
+					<div class="btn__txt">Обсудить проект</div>
 				</a>
 			</div>
 		</div>

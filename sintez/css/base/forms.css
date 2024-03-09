@@ -41,7 +41,7 @@ input[type="text"]:focus,
 textarea:focus {
 	outline: 0;
    background-color: rgba(255,255,255,.1);
-	border-color: var(--color-accent-hover);
+	border-color: var(--color-accent);
    color: var(--color-accent-hover);
 }
 
@@ -84,6 +84,14 @@ textarea:focus {
    padding-bottom: 8px;
 	padding-left: 4px;
 }
+.input__label-danger,
+.textarea__label-danger {
+	font-size: 75%;
+	color: var(--color-accent);
+	position: relative;
+	left: 3px;
+	top: -5px;
+}
 
 
 .check{
@@ -102,6 +110,9 @@ textarea:focus {
 	top:50%;
 	margin-top:-10px;
    border-radius: 6px;
+}
+._dark .check__box {
+	border-color: #78788a;
 }
 .check__box:before{
 	content:'';

@@ -95,3 +95,25 @@
 .phone-panel__action .btn:nth-child(2) {
    animation-delay: 1.2s;
 }
+.phone-panel__action .link {
+   animation-delay: 1.5s;
+}
+
+.bread.animated {
+   animation-delay: 1s;
+   animation-duration: 1.5s;
+}
+
+.quiz-progress.animated {
+   animation-delay: .75s;
+}
+.quiz__title.animated {
+   animation-delay: 1.2s;
+}
+
+.quiz-choise.animated {
+   animation-delay: 1.5s;
+}
+.quiz-form.animated {
+   animation-delay: 1.2s;
+}

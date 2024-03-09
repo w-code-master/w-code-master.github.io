@@ -149,7 +149,6 @@ $(function() {
 	$('.anim-fadeIn').animated('fadeIn');
 	$('.anim-fadeInDown').animated('fadeInDown');
 	$('.anim-fadeInUp').animated('fadeInUp');
-	$('.anim-fadeInUpBig').animated('fadeInUpBig');
 	
 	$('.anim-fadeInRightBig').animated('fadeInRightBig');
 	$('.anim-fadeInLeftBig').animated('fadeInLeftBig');
