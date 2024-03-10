@@ -1,3 +1,22 @@
+.index-page .header-top.animated {
+   animation-delay: 2.5s;
+}
+.index-page .header-service.animated {
+   animation-delay: 3.25s;
+}
+.index-page .header-offer__heading.animated {
+   animation-delay: 3.5s;
+}
+.index-page .header-offer__txt.animated {
+   animation-delay: 3.75s;
+}
+.index-page .header-offer__action-btn {
+   animation-delay: 4.5s;
+}
+.index-page .header-offer__action-link {
+   animation-delay: 4.75s;
+}
+
 .header-top.animated {
    animation-delay: .5s;
 }

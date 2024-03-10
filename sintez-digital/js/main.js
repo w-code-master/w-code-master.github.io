@@ -8,9 +8,9 @@ $(function() {
       counter++;
       c++;
          
-      if(counter == 400) {
+      if(counter == 222) {
          clearInterval(i);
-         $(".loading-page").fadeOut(700);
+         $(".loading-page").fadeOut(1000);
       }
    }, 10);
 
