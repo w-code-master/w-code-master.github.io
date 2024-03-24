@@ -133,7 +133,10 @@ $(function() {
    $('.tel-masked').mask('+7 (999) 999 - 99 - 99');
 
 
-   $('.popup-link').magnificPopup();
+   $('.popup-link').magnificPopup({
+      type: 'inline',
+      fixedContentPos: true
+   });
 
 
 
