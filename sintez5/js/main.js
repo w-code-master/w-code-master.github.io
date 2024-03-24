@@ -135,10 +135,21 @@ $(function() {
 
 
    $('.work-block__action .btn, .work-box__btn').magnificPopup({
-      type: "inline",
-      fixedContentPos: true,
-      removalDelay: 300,
-      mainClass: 'mfp-width-zoom',
+      type: 'inline',          // Custom settings, never mind
+      fixedContentPos: true,  // Custom settings, never mind
+      fixedBgPos: true,        // Custom settings, never mind
+
+      callbacks: {
+
+         open: function() {                        // When you open the
+            $('body').css('overflow', 'hidden');  // window, the element
+         },                                        // "body" is used "overflow: hidden".
+
+         close: function() {                       // When the window
+            $('body').css('overflow', '');        // is closed, the 
+         },                                        // "overflow" gets the initial value.
+
+      },
       callbacks: {
          beforeOpen: function () {
             this.st.mainClass = this.st.el.attr('data-effect');
