@@ -1,0 +1,131 @@
+.index-page .header-top.animated {
+   animation-delay: 2.5s;
+}
+.index-page .header-service.animated {
+   animation-delay: 3.25s;
+}
+.index-page .header-offer__heading.animated {
+   animation-delay: 3.5s;
+}
+.index-page .header-offer__txt.animated {
+   animation-delay: 3.75s;
+}
+.index-page .header-tags {
+   animation-delay: 4.25s;
+}
+
+.header-top.animated {
+   animation-delay: .5s;
+}
+.header-offer__heading.animated {
+   animation-delay: 1.5s;
+}
+.header-offer__txt.animated {
+   animation-delay: 1.75s;
+   animation-duration: 2s;
+}
+.header-offer__action-btn {
+   animation-delay: 2.5s;
+}
+.header-offer__action-link {
+   animation-delay: 2.75s;
+}
+.services__card.animated:nth-child(2) {
+   animation-delay: .15s;
+}
+.services__card.animated:nth-child(3) {
+   animation-delay: .3s;
+}
+.services__card.animated:nth-child(4) {
+   animation-delay: .45s;
+}
+.services__card.animated:nth-child(6) {
+   animation-delay: .15s;
+}
+.services__card.animated:nth-child(7) {
+   animation-delay: .3s;
+}
+
+.about-us .in-numbers__item.animated:nth-child(2) {
+   animation-delay: .15s;
+}
+.about-us .in-numbers__item.animated:nth-child(3) {
+   animation-delay: .3s;
+}
+
+.bitrix__lists .ul.animated:nth-child(1) {
+   animation-delay: .3s;
+}
+.bitrix__logo.animated {
+   animation-delay: 1.5s;
+}
+.competence__item:nth-child(1) {
+   animation-delay: .15s;
+}
+.competence__item:nth-child(2) {
+   animation-delay: .3s;
+}
+.competence__item:nth-child(3) {
+   animation-delay: .45s;
+}
+.competence__item:nth-child(4) {
+   animation-delay: .6s;
+}
+
+.consut-form__inputs .input.animated:nth-child(2) {
+   animation-delay: .15s;
+}
+.consut-form__action .btn.animated {
+   animation-delay: .3s;
+}
+.consut-form__agreement.animated {
+   animation-delay: .6s;
+}
+
+.article-item.animated:nth-child(2) {
+   animation-delay: .15s;
+}
+.article-item.animated:nth-child(3) {
+   animation-delay: .3s;
+}
+.article-item.animated:nth-child(4) {
+   animation-delay: .45s;
+}
+
+.phone-panel__menu .menu__item:nth-child(2) {
+   animation-delay: .2s;
+}
+.phone-panel__menu .menu__item:nth-child(3) {
+   animation-delay: .4s;
+}
+.phone-panel__menu .menu__item:nth-child(4) {
+   animation-delay: .6s;
+}
+.phone-panel__action .btn {
+   animation-delay: 1s;
+}
+.phone-panel__action .btn:nth-child(2) {
+   animation-delay: 1.2s;
+}
+.phone-panel__action .link {
+   animation-delay: 1.5s;
+}
+
+.bread.animated {
+   animation-delay: 1s;
+   animation-duration: 1.5s;
+}
+
+.quiz-progress.animated {
+   animation-delay: .75s;
+}
+.quiz__title.animated {
+   animation-delay: 1.2s;
+}
+
+.quiz-choise.animated {
+   animation-delay: 1.5s;
+}
+.quiz-form.animated {
+   animation-delay: 1.2s;
+}
