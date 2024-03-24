@@ -135,9 +135,10 @@ $(function() {
 
 
    $('.work-block__action .btn, .work-box__btn').magnificPopup({
-      type: 'inline',
-      removalDelay: 500,
+      type: "inline",
       fixedContentPos: true,
+      removalDelay: 300,
+      mainClass: 'mfp-width-zoom',
       callbacks: {
          beforeOpen: function () {
             this.st.mainClass = this.st.el.attr('data-effect');
