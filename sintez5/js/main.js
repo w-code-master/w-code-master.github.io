@@ -130,15 +130,19 @@ $(function() {
       openSingle: true
    });
    
+
    $('.tel-masked').mask('+7 (999) 999 - 99 - 99');
 
 
-   $('.popup-link').magnificPopup({
+   $('.work-block__action .btn, .work-box__btn').magnificPopup({
       type: 'inline',
-      fixedContentPos: true
+      removalDelay: 500,
+      fixedContentPos: true,
+      callbacks: {
+         beforeOpen: function () {
+            this.st.mainClass = this.st.el.attr('data-effect');
+      }}
    });
-
-
 
    // $('.anim-zoomIn').animated('zoomIn');
 
@@ -169,14 +173,5 @@ $(function() {
 	// $('.anim-rotateInDownLeft').animated('rotateInDownLeft');
 
 	// $('.anim-rubberBand').animated('rubberBand');
-
-   $('.work-block__action .btn, .work-box__btn').magnificPopup({
-      type: 'inline',
-      removalDelay: 500,
-      callbacks: {
-         beforeOpen: function () {
-            this.st.mainClass = this.st.el.attr('data-effect');
-      }}
-   });
 
 });
