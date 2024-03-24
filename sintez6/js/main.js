@@ -1,21 +1,21 @@
 $(function() {
 
-   // var counter = 0;
-   // var c = 0;
-   // var i = setInterval(function(){
-   //    // $(".loading-page__h").html(c + "%");
-   //    // $(".loading-page__hr").css("width", c + "%");
-   //    $("html").addClass("overflow-y-hidden");
+   var counter = 0;
+   var c = 0;
+   var i = setInterval(function(){
+      // $(".loading-page__h").html(c + "%");
+      // $(".loading-page__hr").css("width", c + "%");
+      $("html").addClass("overflow-y-hidden");
       
-   //    counter++;
-   //    c++;
+      counter++;
+      c++;
          
-   //    if(counter == 222) {
-   //       clearInterval(i);
-   //       $(".loading-page").fadeOut(1000);
-   //       $("html").removeClass("overflow-y-hidden");
-   //    }
-   // }, 10);
+      if(counter == 222) {
+         clearInterval(i);
+         $(".loading-page").fadeOut(1000);
+         $("html").removeClass("overflow-y-hidden");
+      }
+   }, 10);
 
    // menu
 	$(".sandwich-box").click(function() {
