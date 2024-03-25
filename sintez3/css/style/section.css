@@ -515,9 +515,6 @@
 	width: 33.33%;
 	padding: 0 22px 56px;
 }
-.work-boxs__item .work-box {
-	height: 100%;
-}
 .work-box {
 	min-height: 430px;
 	background: #100e23 url("../../img/work-box.jpg") no-repeat center top;
