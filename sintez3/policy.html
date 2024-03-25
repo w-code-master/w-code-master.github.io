@@ -3,9 +3,8 @@
 <head>
 
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<title>Sintez-Digital</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- favicon -->
 	<link href="img/favicon.png" sizes="32x32" rel="icon" type="image/png"/>
@@ -17,7 +16,7 @@
 <body class="page">
 
 	<!-- Header -->
-	<section class="header-top anim-fadeInDown">
+	<header class="header-top anim-fadeInDown">
 		<div class="container">
 			<div class="header__logo">
 				<a class="logo">
@@ -40,9 +39,9 @@
 						</div>
 					</a>
 				</div>
-				<div class="header__action">
+				<div class="header-top__action d-none d-md-inline">
 					<a class="btn btn-solid btn-normal entry--call-modal">
-						<div class="btn__txt">Заказать проект</div>
+						<div class="btn__txt">Обсудить проект</div>
 						<div class="btn__circle-box -right">
 							<svg class="btn__ico btn__ico-right">
 								<use href="img/svg/sprite.svg#i-right"></use>
@@ -61,7 +60,7 @@
 				</div>
 			</aside>
 		</div>
-	</section>
+	</header>
 
 	<!-- Main -->
 	<main class="main">
@@ -214,14 +213,14 @@
 						</a>
 					</div>
 					<div class="footer-contact__polityc weight-500">
-						<a class="footer-contact__link d-inline d-sm-none" href="#">Политика<br class="d-none d-sm-inline"> конфиденциальности</a>
+						<a class="footer-contact__link d-inline d-sm-none" href="policy.html">Политика<br class="d-none d-sm-inline"> конфиденциальности</a>
 					</div>
 				</div>
 			</div>
 			<div class="footer__copy">
 				<div class="container">
 					<p class="footer__copy-txt">© 2012 - 2024 Sintez.Digital</p>
-					<a class="footer__copy-link d-none d-sm-inline" href="#">Политика конфиденциальности</a>
+					<a class="footer__copy-link d-none d-sm-inline" href="#policy.html">Политика конфиденциальности</a>
 				</div>
 			</div>
 		</div>
@@ -293,19 +292,19 @@
 				<nav class="phone-panel__menu anim-bounceIn">
 					<ul class="menu">
 						<li class="menu__item anim-fadeInUp">
-							<a class="menu__link" href="#">Наши компетенции</a>
+							<a class="menu__link" href="index.html#s-services">Наши компетенции</a>
 						</li>
 						<li class="menu__item anim-fadeInUp">
-							<a class="menu__link" href="#s-project">Примеры работ</a>
+							<a class="menu__link" href="index.html#s-project">Примеры работ</a>
 						</li>
 						<li class="menu__item anim-fadeInUp">
-							<a class="menu__link" href="#s-media">Медиацентр</a>
+							<a class="menu__link" href="index.html#s-media">Медиацентр</a>
 						</li>
 						<li class="menu__item anim-fadeInUp">
-							<a class="menu__link" href="#s-job">Вакансии</a>
+							<a class="menu__link" href="index.html#s-job">Вакансии</a>
 						</li>
 						<li class="menu__item anim-fadeInUp">
-							<a class="menu__link" href="#s-contact">Контакты</a>
+							<a class="menu__link" href="index.html#s-contact">Контакты</a>
 						</li>
 					</ul>
 				</nav>
@@ -352,7 +351,6 @@
 
 	<!-- scripts -->
 	<script src="js/jquery.js"></script>
-	<script src="js/dynamic-adapt.js"></script>
 	<script src="js/pagescroll.js"></script>
 	<script src="js/swiper.js"></script>
 	<script src="js/masked.js"></script>

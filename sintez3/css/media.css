@@ -4,10 +4,6 @@
 html {
    font-size: 9px;
 }
-.header__action {
-   margin-right: 25px;
-   margin-left: 25px;
-}
 .section-heading::before {
    left: 15px;
 }
@@ -80,6 +76,18 @@ html {
 .header-offer {
    min-height: 526px;
 }
+.work-boxs .work-box {
+   min-height: auto;
+}
+.work-boxs .work-box__preview {
+   width: 354px;
+   height: 222px;
+}
+.work-boxs .work-box__preview-screen {
+   width: 300px;
+   height: 188px;
+   margin-top: 9px;
+}
 }
 
 /* 1400px */
@@ -103,14 +111,6 @@ html {
 .header-offer {
    padding-top: 20px;
    padding-bottom: 60px;
-}
-.header-offer__action {
-   display: flex;
-   padding-top: 20px;
-   align-items: center;
-}
-.header-offer__action-btn {
-   margin-right: 15px;
 }
 .header-art {
    background-image: url("../img/media/1400/header.jpg");
@@ -239,7 +239,7 @@ html {
 
 /* 1200px */
 @media only screen and (max-width : 1200px) {
-
+.header-offer__txt
 h2, .h2 {
    margin-bottom: 20px;
 }
@@ -255,20 +255,20 @@ h2, .h2 {
    border-radius: 0 0 40px 40px;
 }
 .header-art {
-   background-image: url(../img/media/1200/header.jpg);
+   background-image: url("../img/media/1200/header.jpg");
 }
 .header__call {
    margin-right: 14px;
 }
-.header__action .btn {
-   height: 54px;
-}
 .header__sandwich {
    margin-right: 0;
 }
-.header__action {
-   margin-right: 15px;
-   margin-left: 15px;
+.header-offer__txt {
+   max-width: 500px;
+}
+.header-top__action .btn {
+   height: 50px;
+   font-size: 2rem;
 }
 
 .phone-panel__content {
@@ -287,6 +287,14 @@ h2, .h2 {
    height: 50px;
 }
 
+.swiper-clients,
+.clients__box {
+   border-radius: 15px;
+}
+
+.work {
+   padding-bottom: 90px;
+}
 .work-block {
    width: 100%;
 }
@@ -714,7 +722,7 @@ h1, .h1 {
    max-width: 450px;
 }
 .page-inner {
-   padding-top: 90px;
+   padding-top: 100px;
 }
 .bread {
    font-size: 2rem;
@@ -757,9 +765,6 @@ h1, .h1 {
 .header-top {
    padding-top: 12px;
    padding-bottom: 12px;
-}
-.header__action {
-   display: none;
 }
 .header-offer {
    height: 460px;
@@ -883,8 +888,8 @@ h1, .h1 {
    font-size: 3.5rem;
 }
 .call-modal__close {
-   right: 4px;
-   top: 68px;
+   right: 22px;
+    top: 80px;
 }
 .call-modal__close svg {
    width: 45px;
@@ -1164,17 +1169,9 @@ input[type="email"], input[type="password"], input[type="tel"], input[type="text
 .header-offer__txt {
    max-width: 340px;
    font-size: 1.8rem;
-   margin-bottom: 10px;
-}
-.header-offer .btn {
-   height: 47px;
 }
 .marquee-text__item {
    opacity: .6;
-}
-.header-offer__action {
-   flex-direction: column;
-   align-items: initial;
 }
 .header-art {
    opacity: .3;

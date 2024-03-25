@@ -3,9 +3,8 @@
 <head>
 
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<title>Sintez-Digital</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    <!-- favicon -->
    <link href="img/favicon.png" sizes="32x32" rel="icon" type="image/png"/>
@@ -15,6 +14,62 @@
 
 </head>
 <body class="page index-page">
+
+	<!-- Loader -->
+	<!-- <div class="loading-page">
+		<div class="swiper swiper-loader">
+			<div class="swiper-wrapper">
+				<div class="swiper-loader__slide swiper-slide">
+					<div class="swiper-loader__item">
+						<div class="swiper-loader__ico">
+							<svg><use href="img/svg/sprite.svg#i-check-arrow"></use></svg>
+						</div>
+						<div class="swiper-loader__txt">Чистим комментарии...</div>
+					</div>
+				</div>
+				<div class="swiper-loader__slide swiper-slide">
+					<div class="swiper-loader__item">
+						<div class="swiper-loader__ico">
+							<svg><use href="img/svg/sprite.svg#i-check-arrow"></use></svg>
+						</div>
+						<div class="swiper-loader__txt">Сбрасываем кеш...</div>
+					</div>
+				</div>
+				<div class="swiper-loader__slide swiper-slide">
+					<div class="swiper-loader__item">
+						<div class="swiper-loader__ico">
+							<svg><use href="img/svg/sprite.svg#i-check-arrow"></use></svg>
+						</div>
+						<div class="swiper-loader__txt">Верстаем квиз опрос...</div>
+					</div>
+				</div>
+				<div class="swiper-loader__slide swiper-slide">
+					<div class="swiper-loader__item">
+						<div class="swiper-loader__ico">
+							<svg><use href="img/svg/sprite.svg#i-check-arrow"></use></svg>
+						</div>
+						<div class="swiper-loader__txt">Поднимаем упавший сервер...</div>
+					</div>
+				</div>
+				<div class="swiper-loader__slide swiper-slide">
+					<div class="swiper-loader__item">
+						<div class="swiper-loader__ico">
+							<svg><use href="img/svg/sprite.svg#i-check-arrow"></use></svg>
+						</div>
+						<div class="swiper-loader__txt">Это вообще кто-то читает?...</div>
+					</div>
+				</div>
+				<div class="swiper-loader__slide swiper-slide">
+					<div class="swiper-loader__item">
+						<div class="swiper-loader__ico">
+							<svg><use href="img/svg/sprite.svg#i-check-arrow"></use></svg>
+						</div>
+						<div class="swiper-loader__txt">Придумываем ещё одну строчку...</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
 
 	<!-- Header -->
 	<section class="header-top anim-fadeInDown">
@@ -40,9 +95,9 @@
 						</div>
 					</a>
 				</div>
-				<div class="header__action">
+				<div class="header-top__action">
 					<a class="btn btn-solid btn-normal entry--call-modal">
-						<div class="btn__txt">Заказать проект</div>
+						<div class="btn__txt">Обсудить проект</div>
 						<div class="btn__circle-box -right">
 							<svg class="btn__ico btn__ico-right">
 								<use href="img/svg/sprite.svg#i-right"></use>
@@ -72,18 +127,17 @@
 						интернет-магазины,<br class="d-none d-md-inline">
 						промо-сайты
 					</h1>
-					<p class="header-offer__txt anim-fadeInUp">Создаем уникальные сайты и продвигаем их<br class="d-none d-md-inline"> <strong class="color-accent weight-700">в диджитал-пространстве</strong>, увеличивая узнаваемость<br class="d-none d-md-inline"> и прибыль вашего бизнеса.</p>
-					<ul class="header-tags anim-fadeInUp">
-						<li class="header-tags__item"><a class="header-tags__link" href="#">#Интернет-магазин</a></li>
-						<li class="header-tags__item"><a class="header-tags__link" href="#">#SEO</a></li>
-						<li class="header-tags__item"><a class="header-tags__link" href="#">#Фирменный стиль</a></li>
-						<li class="header-tags__item"><a class="header-tags__link" href="#">#SMM</a></li>
-						<li class="header-tags__item"><a class="header-tags__link" href="#">#Web-дизайн</a></li>
-						<li class="header-tags__item"><a class="header-tags__link" href="#">#Сайт-каталог</a></li>
-						<li class="header-tags__item"><a class="header-tags__link" href="#">#Медицина</a></li>
-						<li class="header-tags__item"><a class="header-tags__link" href="#">#Landing Page</a></li>
-						<li class="header-tags__item"><a class="header-tags__link" href="#">#Корпоративный сайт</a></li>
-					</ul>
+					<p class="header-offer__txt anim-fadeInUp">Создаем уникальные сайты и продвигаем их<br class="d-sm-none"> <strong class="color-accent weight-700">в диджитал-пространстве</strong>, увеличивая узнаваемость<br class="d-none d-xxl-inline"> и прибыль вашего бизнеса.</p>
+					<div class="header-offer__action anim-fadeInUp">
+						<a class="btn btn-solid entry--call-modal">
+							<div class="btn__txt">Обсудить проект</div>
+							<div class="btn__circle-box -right">
+								<svg class="btn__ico btn__ico-right">
+									<use href="img/svg/sprite.svg#i-right"></use>
+								</svg>
+							</div>
+						</a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -94,7 +148,7 @@
 	<main class="main">
 
 		<!-- Services -->
-		<section class="services container">
+		<section class="services container" id="s-services">
 			<div class="services__header">
 				<h2 class="section-heading _line-top anim-fadeInLeft">Наши<br> компетенции</h2>
 				<p class="services__header-txt d-none d-md-inline anim-fadeInRight">Мы любим и умеем делать сложные проекты.<br> Используем современные технологии.</p>
@@ -293,7 +347,7 @@
 		</section>
 		
 		<!-- AboutUs -->
-		<section class="about-us">
+		<section class="about-us anim-fadeInUp">
 			<div class="about-us__inner">
 				<div class="about-us__content">
 					<p class="about-us__desc anim-fadeInUp">У вас будет целая <span class="color-accent">команда</span> превосходных специалистов вместо одного маркетолога, а также отчёты о достигнутых результатах, возможность получения консультаций и помощь<br class="d-none d-lg-inline"> по всем вопросам продвижения в интернете.</p>
@@ -384,7 +438,7 @@
 			<!-- Cards-->
 			<div class="work-cards d-none d-xl-flex">
 				<!-- Brick-to-Brick -->
-				<div class="work-cards__item anim-zoomIn">
+				<div class="work-cards__item anim-slideInRight">
 					<div class="work-block">
 						<div class="work-block__inner">
 							<div class="work-block__aside">
@@ -429,7 +483,7 @@
 					</div>
 				</div>
 				<!-- Kamin -->
-				<div class="work-cards__item anim-zoomIn">
+				<div class="work-cards__item anim-slideInRight">
 					<div class="work-block">
 						<div class="work-block__inner">
 							<div class="work-block__aside">
@@ -616,7 +670,7 @@
 			<div class="swiper-work-cards-wrap d-xl-none">
 				<div class="swiper-work-cards swiper">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide anim-zoomIn">
+						<div class="swiper-slide anim-slideInRight">
 							<!-- Brick-to-Brick -->
 							<div class="work-block">
 								<div class="work-block__inner">
@@ -661,7 +715,7 @@
 								</picture>
 							</div>
 						</div>
-						<div class="swiper-slide anim-zoomIn">
+						<div class="swiper-slide anim-slideInRight">
 							<!-- Kamin -->
 							<div class="work-block">
 								<div class="work-block__inner">
@@ -953,10 +1007,10 @@
 						</ul>
 					</div>
 					<div class="competence">
-						<img class="competence__item anim-rotateInDownLeft" src="img/competence/1.svg" width="146" alt="bitrix">
-						<img class="competence__item anim-rotateInDownLeft" src="img/competence/2.svg" width="146" alt="bitrix">
-						<img class="competence__item anim-rotateInDownLeft" src="img/competence/3.svg" width="164" alt="bitrix">
-						<img class="competence__item anim-rotateInDownLeft" src="img/competence/4.svg" width="164" alt="bitrix">
+						<img class="competence__item anim-bounceIn" src="img/competence/1.svg" width="146" alt="bitrix">
+						<img class="competence__item anim-bounceIn" src="img/competence/2.svg" width="146" alt="bitrix">
+						<img class="competence__item anim-bounceIn" src="img/competence/3.svg" width="164" alt="bitrix">
+						<img class="competence__item anim-bounceIn" src="img/competence/4.svg" width="164" alt="bitrix">
 					</div>
 				</div>
 			</div>
@@ -1518,14 +1572,14 @@
 						</a>
 					</div>
 					<div class="footer-contact__polityc weight-500">
-						<a class="footer-contact__link d-inline d-sm-none" href="#">Политика<br class="d-none d-sm-inline"> конфиденциальности</a>
+						<a class="footer-contact__link d-inline d-sm-none" href="policy.html">Политика<br class="d-none d-sm-inline"> конфиденциальности</a>
 					</div>
 				</div>
 			</div>
 			<div class="footer__copy">
 				<div class="container">
 					<p class="footer__copy-txt">© 2012 - 2024 Sintez.Digital</p>
-					<a class="footer__copy-link d-none d-sm-inline" href="#">Политика конфиденциальности</a>
+					<a class="footer__copy-link d-none d-sm-inline" href="policy.html">Политика конфиденциальности</a>
 				</div>
 			</div>
 		</div>
@@ -1597,7 +1651,7 @@
 				<nav class="phone-panel__menu anim-bounceIn">
 					<ul class="menu">
 						<li class="menu__item anim-fadeInUp">
-							<a class="menu__link" href="#">Наши компетенции</a>
+							<a class="menu__link" href="#s-services">Наши компетенции</a>
 						</li>
 						<li class="menu__item anim-fadeInUp">
 							<a class="menu__link" href="#s-project">Примеры работ</a>
@@ -1654,64 +1708,8 @@
 		</div>
 	</div>
 
-	<!-- <div class="loading-page">
-		<div class="swiper swiper-loader">
-			<div class="swiper-wrapper">
-				<div class="swiper-loader__slide swiper-slide">
-					<div class="swiper-loader__item">
-						<div class="swiper-loader__ico">
-							<svg><use href="img/svg/sprite.svg#i-check-arrow"></use></svg>
-						</div>
-						<div class="swiper-loader__txt">Чистим комментарии...</div>
-					</div>
-				</div>
-				<div class="swiper-loader__slide swiper-slide">
-					<div class="swiper-loader__item">
-						<div class="swiper-loader__ico">
-							<svg><use href="img/svg/sprite.svg#i-check-arrow"></use></svg>
-						</div>
-						<div class="swiper-loader__txt">Сбрасываем кеш...</div>
-					</div>
-				</div>
-				<div class="swiper-loader__slide swiper-slide">
-					<div class="swiper-loader__item">
-						<div class="swiper-loader__ico">
-							<svg><use href="img/svg/sprite.svg#i-check-arrow"></use></svg>
-						</div>
-						<div class="swiper-loader__txt">Верстаем квиз опрос...</div>
-					</div>
-				</div>
-				<div class="swiper-loader__slide swiper-slide">
-					<div class="swiper-loader__item">
-						<div class="swiper-loader__ico">
-							<svg><use href="img/svg/sprite.svg#i-check-arrow"></use></svg>
-						</div>
-						<div class="swiper-loader__txt">Поднимаем упавший сервер...</div>
-					</div>
-				</div>
-				<div class="swiper-loader__slide swiper-slide">
-					<div class="swiper-loader__item">
-						<div class="swiper-loader__ico">
-							<svg><use href="img/svg/sprite.svg#i-check-arrow"></use></svg>
-						</div>
-						<div class="swiper-loader__txt">Это вообще кто-то читает?...</div>
-					</div>
-				</div>
-				<div class="swiper-loader__slide swiper-slide">
-					<div class="swiper-loader__item">
-						<div class="swiper-loader__ico">
-							<svg><use href="img/svg/sprite.svg#i-check-arrow"></use></svg>
-						</div>
-						<div class="swiper-loader__txt">Придумываем ещё одну строчку...</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-
 	<!-- scripts -->
 	<script src="js/jquery.js"></script>
-	<script src="js/dynamic-adapt.js"></script>
 	<script src="js/pagescroll.js"></script>
 	<script src="js/swiper.js"></script>
 	<script src="js/masked.js"></script>

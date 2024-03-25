@@ -409,7 +409,7 @@
     height: 50px;
     cursor: pointer;
 }
-.sandwich-box.active {
+.sandwich-box._active {
     background-color: transparent;
 }
 .sandwich-icon {
@@ -439,20 +439,20 @@
 .sandwich-box:hover .sw-top {
     background-color: #fff;
 }
-.sandwich-box.active .sw-bottom,
-.sandwich-box.active .sw-center,
-.sandwich-box.active .sw-top {
+.sandwich-box._active .sw-bottom,
+.sandwich-box._active .sw-center,
+.sandwich-box._active .sw-top {
     background-color: var(--color-accent);
 }
-.sandwich-box.active .sw-top {
+.sandwich-box._active .sw-top {
     top: 8px;
     transform: rotate(-45deg);
 }
-.sandwich-box.active .sw-center {
+.sandwich-box._active .sw-center {
     top: 6px;
     transform: rotate(45deg);
 }
-.sandwich-box.active .sw-bottom {
+.sandwich-box._active .sw-bottom {
     opacity: 0;
     top: 0;
     transform: rotate(180deg);
