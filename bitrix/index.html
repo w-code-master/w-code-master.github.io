@@ -30,8 +30,12 @@
 				</div>
 				<div class="col-auto ms-auto">
 					<div class="messenger mt-2 me-3">
-						<a href="#" class="messenger__link anim-bounceIn"><svg class="_i-whatsapp"><use href="img/svg/sprite.svg#i-whatsapp"></use></svg></a>
-						<a href="#" class="messenger__link anim-bounceIn"><svg><use href="img/svg/sprite.svg#i-telegram"></use></svg></a>
+						<div class="messenger__item anim-bounceIn">
+							<a href="#" class="messenger__link"><svg class="_i-whatsapp"><use href="img/svg/sprite.svg#i-whatsapp"></use></svg></a>
+						</div>
+						<div class="messenger__item anim-bounceIn">
+							<a href="#" class="messenger__link"><svg><use href="img/svg/sprite.svg#i-telegram"></use></svg></a>
+						</div>
 					</div>
 					<!-- <div class="callbox row align-items-center">
 						<div class="callbox__info col-auto">
@@ -69,29 +73,14 @@
 						<p><strong>помощь в настройке</strong><br class="d-md-none"> и интеграции CRM-систем и 1С</p>
 					</li>
 				</ul>
-				<div class="call-modal mfp-hide" id="modal1"> <!-- class="mfp-hide" -->
-					<form class="call-modal__inner">
-						<h6 class="call-modal__title">Заполните форму ниже,</h6>
-						<p class="call-modal__text">чтобы записаться на бесплатную консультацию вашего проекта</p>
-						<div class="call-modal__input"><input type="text" placeholder="Введите имя"></div>
-						<div class="call-modal__input"><input type="tel" placeholder="Введите номер телефона"></div>
-						<div class="call-modal__action">
-							<button class="btn">Обсудить проект</button>
-						</div>
-						<div class="confidentiality row">
-							<div class="col-auto"><svg class="confidentiality__icon"><use href="img/svg/sprite.svg#i-shield"></use></svg></div>
-							<div class="col">
-								<p class="confidentiality__text">Нажимая кнопку «оставить заявку», вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
-							</div>
-						</div>
-						<button type="button" class="mfp-close">&#215;</button>
-					</form>
-				</div>
 				<div class="header-offer-action">
-					<a class="btn anim-bounceIn" href="#modal1">
-						<div class="btn__text">Оставить заявку</div>
-						<svg class="btn__icon _identification"><use href="img/svg/sprite.svg#i-identification"></use></svg>
-					</a>
+					<div class="header-offer-action__btn anim-bounceIn">
+						<a class="btn" href="#modal1">
+							<div class="btn__text">Оставить заявку</div>
+							<svg class="btn__icon _identification"><use href="img/svg/sprite.svg#i-identification"></use></svg>
+							<span class="btn__glare"></span>
+						</a>
+					</div>
 					<svg class="header-offer-action__line anim-fadeIn">
 						<use href="img/svg/sprite.svg#i-stroke-line"></use>
 					</svg>
@@ -115,6 +104,7 @@
 					<span class="-text-light">РАБОТЫ САЙТА<br> И КОРРЕКТИРОВКА ОШИБОК</span>
 				</h6>
 				<p class="hero-service__text">Ежедневно проверяем<br> сайт на вирусы<br> и некорректную работу страниц, оперативно исправляем ошибки</p>
+				<div class="hero-service__number">01</div>
 			</div>
 			<div class="hero-service__block anim-bounceIn">
 				<i class="hero-service__icon icon-discount"></i>
@@ -123,6 +113,7 @@
 					<span class="-text-light">КОНТЕНТА, НАПОЛНЕНИЕ<br> КАТАЛОГА ТОВАРАМИ</span>
 				</h6>
 				<p class="hero-service__text">сайте баннеров, текстов, новостей, графических элементов, наполнение сайта товарами</p>
+				<div class="hero-service__number">02</div>
 			</div>
 			<div class="hero-service__block anim-bounceIn">
 				<i class="hero-service__icon icon-thinking"></i>
@@ -134,6 +125,7 @@
 					</span>
 				</h6>
 				<p class="hero-service__text">Верстка сайта,<br> адаптация под мобильные устройства, исправления ошибок в исходном коде, оптимизация скорости загрузки</p>
+				<div class="hero-service__number">03</div>
 			</div>
 			<div class="hero-service__block anim-bounceIn">
 				<i class="hero-service__icon icon-onlinelesson"></i>
@@ -145,6 +137,7 @@
 					</span>
 				</h6>
 				<p class="hero-service__text">Интеграция CRM, подключение IP-<br>телефонии и других<br> систем для автоматизации</p>
+				<div class="hero-service__number">04</div>
 			</div>
 		</div>
 		<div class="swiper swiper-service anim-bounceIn">
@@ -160,6 +153,7 @@
 							</span>
 						</h6>
 						<p class="hero-service__text">Верстка сайта,<br> адаптация под мобильные устройства, исправления ошибок в исходном коде, оптимизация скорости загрузки</p>
+						<div class="hero-service__number">01</div>
 					</div>
 				</div>
 				<div class="swiper-slide">
@@ -170,6 +164,7 @@
 							<span class="-text-light">КОНТЕНТА, НАПОЛНЕНИЕ<br> КАТАЛОГА ТОВАРАМИ</span>
 						</h6>
 						<p class="hero-service__text">сайте баннеров, текстов, новостей, графических элементов, наполнение сайта товарами</p>
+						<div class="hero-service__number">02</div>
 					</div>
 				</div>
 				<div class="swiper-slide">
@@ -183,6 +178,7 @@
 							</span>
 						</h6>
 						<p class="hero-service__text">Верстка сайта,<br> адаптация под мобильные устройства, исправления ошибок в исходном коде, оптимизация скорости загрузки</p>
+						<div class="hero-service__number">03</div>
 					</div>
 				</div>
 				<div class="swiper-slide">
@@ -196,13 +192,37 @@
 							</span>
 						</h6>
 						<p class="hero-service__text">Интеграция CRM, подключение IP-<br>телефонии и других<br> систем для автоматизации</p>
+						<div class="hero-service__number">04</div>
 					</div>
 				</div>
 			</div>
 			<div class="swiper-pagination"></div>
 		</div>
 	</section>
+
 	<div class="hero__img d-none d-md-block"><img class="d-block" src="img/man.webp" alt=""></div>
+
+	<div class="call-modal mfp-hide" id="modal1">
+		<form class="call-modal__inner">
+			<h6 class="call-modal__title">Заполните форму ниже,</h6>
+			<p class="call-modal__text">чтобы записаться на бесплатную консультацию вашего проекта</p>
+			<div class="call-modal__input"><input type="text" placeholder="Введите имя"></div>
+			<div class="call-modal__input"><input type="tel" placeholder="Введите номер телефона"></div>
+			<div class="call-modal__action">
+				<button class="btn">
+					Обсудить проект
+					<span class="btn__glare"></span>
+				</button>
+			</div>
+			<div class="confidentiality row">
+				<div class="col-auto"><svg class="confidentiality__icon"><use href="img/svg/sprite.svg#i-shield"></use></svg></div>
+				<div class="col">
+					<p class="confidentiality__text">Нажимая кнопку «оставить заявку», вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+				</div>
+			</div>
+			<button type="button" class="mfp-close">&#215;</button>
+		</form>
+	</div>
 
 	<script src="js/jquery.js"></script>
 	<script src="js/magnific.js"></script>

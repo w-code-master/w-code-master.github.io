@@ -17,6 +17,8 @@
     box-shadow: 0 0 35px rgba(0,121,238,.7);
     column-gap: 28px;
     transition: .5s;
+    position: relative;
+    overflow: hidden;
 }
 .btn:hover {
    color: #fff;
@@ -29,6 +31,38 @@
 .btn__icon._identification {
 	width: 25px;
 	height: 25px;
+}
+.btn__glare {
+    display: block;
+    width: 50px;
+    height: 150px;
+    left: -100px;
+    top: -20px;
+    background: #fff;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    z-index: 1;
+    transform: rotate(35deg);
+    /* animation-delay: 3s; */
+    animation-name: slideme;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    animation-iteration-count: infinite;
+    filter: blur(15px);
+    opacity: .85;
+}
+@keyframes slideme {
+	0% {
+		left: -150px;
+	}
+
+    50% {
+        left: 100%;
+    }
+
+	100% {
+		left: 150%;
+	}
 }
 
 
@@ -106,15 +140,16 @@
     column-gap: 20px;
 }
 .messenger__link {
+    display: block;
     transition: .3s;
 }
 .messenger__link:hover {
     transform: scale(1.2);
 }
-.messenger__link:nth-child(1).animated {
+.messenger__item:nth-child(1).animated {
     animation-delay: 1s;
 }
-.messenger__link:nth-child(2).animated {
+.messenger__item:nth-child(2).animated {
     animation-delay: 1.3s;
 }
 .messenger svg {
