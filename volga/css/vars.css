@@ -1,0 +1,9 @@
+:root {
+	--color-black: #1C1C1C;
+	--color-dark: #3A3A3A;
+	--color-white: white;
+	--color-accent: #f56147;
+	
+	--link-default: #4d7df5;
+	--link-default-hover: #46bd43;
+}

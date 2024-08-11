@@ -1,0 +1,26 @@
+/* HERO */
+.hero-s {
+   min-height: 100vh;
+   height: 100%;
+}
+.hero-s__inner {
+   min-height: 100%;
+   position: relative;
+   z-index: 1;
+}
+.hero-s-img {
+}
+
+
+/* Header */
+.header {
+   padding: 12px 0;
+   margin-bottom: 50px;
+   font-size: 1.5rem;
+}
+
+
+/* Offer */
+.offer-s {
+   padding: 20px 0;
+}

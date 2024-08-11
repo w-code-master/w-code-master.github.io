@@ -1,0 +1,63 @@
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="text"],
+textarea {
+	height: 58px;
+	background-color: transparent;
+	padding: 0 7px;
+	font: 300 2.8rem 'MuseoSans', sans-serif;
+	border: none;
+	border-bottom: 1px solid #adbbd7;
+	transition: border-bottom 0.5s, background-color 0.5s;
+	color: var(--color-accent-hover);
+	letter-spacing: .01em;
+	color: #777c90;
+}
+
+textarea {
+	max-width: 870px;
+	width: 100%;
+	height: auto;
+	min-height: 140px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	resize: none;
+}
+
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="tel"]:hover,
+input[type="text"]:hover,
+textarea:hover {
+	background-color: rgba(255,255,255,.1);
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+textarea:focus {
+	outline: 0;
+   background-color: rgba(255,255,255,.1);
+	border-color: var(--color-accent);
+   color: var(--color-accent-hover);
+}
+
+/*Placeholder*/
+::placeholder {
+	color: #777c90;
+	transition: .75s;
+}
+:hover::placeholder {
+	color: #95a2d5;
+}
+:focus::placeholder {
+	color: rgba(255,255,255,.2);
+}
+
+/*Selection*/
+::selection {
+	background-color: rgba(57, 174, 169, .3);
+	color: #000;
+}
