@@ -15,8 +15,15 @@
 }
 @font-face {
 	font-family: 'Gilroy';
+	src: url('fonts/gilroy/bold/gilroy-bold.woff2') format('woff2'),
+		  url('fonts/gilroy/bold/gilroy-bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gilroy';
 	src: url('fonts/gilroy/extrabold/gilroy-extrabold.woff2') format('woff2'),
 		  url('fonts/gilroy/extrabold/gilroy-extrabold.woff') format('woff');
-	font-weight: bold;
+	font-weight: 800;
 	font-style: normal;
 }

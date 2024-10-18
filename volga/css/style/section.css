@@ -1,7 +1,9 @@
 /* HERO */
 .hero-s {
-   min-height: 100vh;
-   height: 100%;
+   max-width: 1920px;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
 }
 .hero-s__inner {
    min-height: 100%;
@@ -16,11 +18,10 @@
 .header {
    padding: 12px 0;
    margin-bottom: 50px;
-   font-size: 1.5rem;
 }
 
 
 /* Offer */
 .offer-s {
-   padding: 20px 0;
+   padding: 20px 0 40px;
 }

@@ -14,11 +14,11 @@
 
 </head>
 <body>
-	<!-- HERO -->
-   <div class="hero-s -bg-dark -color-white">
-		<div class="hero-s__inner d-flex flex-column">
+	<!-- Hero -->
+   <div class="hero-s -bg-dark -color-white" style="margin-bottom: -200px;">
+		<div class="hero-s__inner d-flex flex-column" style="padding-bottom: 220px;">
 			<!-- Header -->
-			<header class="header">
+			<header class="header -text-sm">
 				<div class="container">
 					<div class="row row-cols-auto justify-content-between">
 						<div class="col">
@@ -42,12 +42,12 @@
 						</div>
 						<div class="col">
 							<div>Либо напишите на почту:</div>
-							<a class="-link-xl -link-white -link-decor-none -text-bold" href="#">info@npp-ric.ru</a>
+							<a class="-link-white -link-decor-none -text-xl -text-bold" href="#">info@npp-ric.ru</a>
 						</div>
 						<div class="col">
 							<div class="-text-xxsm">Звоните, ПН-ПТ с 9:00 до 18:00</div>
-							<a class="-link-xl -link-white -link-decor-none -text-bold" href="#">+7 (927) 715-74-43</a><br>
-							<a class="-link-xl -link-white -link-decor-none -text-bold" href="#">+7 (927) 715-74-55</a>
+							<a class="-link-white -link-decor-none -text-xl -text-bold" href="#">+7 (927) 715-74-43</a><br>
+							<a class="-link-white -link-decor-none -text-xl -text-bold" href="#">+7 (927) 715-74-55</a>
 						</div>
 					</div>
 				</div>
@@ -92,32 +92,54 @@
 
 		</div>
 	</div>
-
-	<section class="pt-5 pb-5">
-		<div class="container">
-			<div class="row">
-				<div class="col-8">
-					<h4 class="mb-4">
-						Заполните форму и <b class="-color-accent">в течение 3 дней</b> получите профессиональный расчёт стоимости БТП <br> под ваш проект <b class="-color-accent">в 3 вариантах комплектации</b>
-					</h4>
-					<p class="-text-xl -text-light">
-						Подберём оборудование дешевле, без ущерба характеристикам и ресурсу. <br> При необходимости внесём изменения или разработаем проект с нуля.
-					</p>
+	
+	<!-- OfferForm -->
+	<section class="offer-callform">
+		<div class="container-1530 py-5 -bg-light -radius-30">
+			<div class="container py-5">
+				<div class="row pt-2">
+					<div class="col-8">
+						<h4 class="mb-4">
+							Заполните форму и <b class="-color-accent">в течение 3 дней</b> получите профессиональный расчёт стоимости БТП <br> под ваш проект <b class="-color-accent">в 3 вариантах комплектации</b>
+						</h4>
+						<p class="-text-xl -text-light">
+							Подберём оборудование дешевле, без ущерба характеристикам и ресурсу. <br> При необходимости внесём изменения или разработаем проект с нуля.
+						</p>
+					</div>
+					<div class="col-4">
+						<ul class="pt-3">
+							<li class="d-flex pb-5 mb-3">
+								<div class="-color-darkcyan -text-bold me-4 mt-1">01</div>
+								<div>
+									<h6 class="-text-xl mb-3">Под любые задачи</h6>
+									<p>Индивидуальные, центральные, блочные, модульные тепловые пункты для ГВС, отопления, вентиляции</p>
+								</div>
+							</li>
+							<li class="d-flex pb-5 mb-3">
+								<div class="-color-darkcyan -text-bold me-4 mt-1">02</div>
+								<div>
+									<h6 class="-text-xl mb-3">Для любых объектов</h6>
+									<p>Многоквартирные дома, офисные здания, торговые центры, промышленные объекты, быстровозводимые модульные конструкции</p>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<div class="col-4">
-					<ul class="pt-3">
-						<li class="pb-5 mb-3">
-							<h6 class="-text-xl mb-3">Под любые задачи</h6>
-							<p>Индивидуальные, центральные, блочные, модульные тепловые пункты для ГВС, отопления, вентиляции</p>
-						</li>
-						<li>
-							<h6 class="-text-xl mb-3">Для любых объектов</h6>
-							<p>Многоквартирные дома, офисные здания, торговые центры, промышленные объекты, быстровозводимые модульные конструкции</p>
-						</li>
-					</ul>
+				<div class="row row-cols-auto mb-4">
+					<div class="col">
+						<div class="-text-sm -text-bold mb-3">Укажите ваше имя</div>
+						<input class="d-block -input-white" type="text" placeholder="Имя">
+					</div>
+					<div class="col">
+						<div class="-text-sm -text-bold mb-3">Укажите контактный номер</div>
+						<input class="d-block -input-white" type="text" placeholder="+7 (___) ___-__-__">
+					</div>
+					<div class="col align-self-end">
+						<a class="btn" href="#">Расчитать стоимость БТП</a>
+					</div>
 				</div>
+				<p class="-text-xsm pb-2">*Нажимая кнопку «Расчитать стоимость БТП», вы соглашаетесь с условиями <a class="-link-darkcyan" href="#">Политики конфиденциальности</a></p>
 			</div>
-			<p class="-text-xsm">*Нажимая кнопку «Расчитать стоимость БТП», вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a></p>
 		</div>
 	</section>
 
@@ -131,20 +153,52 @@
 				</h2>
 				<p class="-text-light -text-xxl">Гарантированно пройдете любую надзорную проверку без штрафов и предписаний</p>
 			</header>
-			<div class="row">
-				<div class="col-5">
-					<h6 class="mb-5">Выполняем ключевые требования свода правил <b class="-color-accent">СП 510.1325800.2022:</b></h6>
-					<ul class="list px-5 mb-5">
-						<li class="list__item mb-4">Обеспечение энергоэффективности систем.</li>
-						<li class="list__item mb-4">Автоматизация процессов регулирования и управления.</li>
-						<li class="list__item mb-4">Учета тепловой энергии.</li>
-						<li class="list__item mb-4">Соблюдение требований по шумо- и виброизоляции.</li>
-						<li class="list__item mb-4">Обеспечение возможности проведения технического обслуживания и ремонта оборудования.</li>
-					</ul>
-					<h6 class="pt-3">Соблюдаем требования других <b class="-color-accent">нормативных актов</b> по документам и в производстве</h6>
+			<div class="row" style="margin-bottom: -450px;">
+				<div class="col offset-1">
+					<picture class="d-block">
+						<img class="-radius-30" src="img/image-1438.jpg" alt="image">
+					</picture>
+				</div>
+			</div>
+			<div class="row -bg-light -radius-30 py-5 z-1" style="left: -700px;">
+				<div class="col offset-6 py-5">
+					<div class="ps-5">
+						<h6 class="mb-5">Выполняем ключевые требования свода <br> правил <b class="-color-accent">СП 510.1325800.2022:</b></h6>
+						<ul class="list px-5 mb-5">
+							<li class="list__item mb-4">Обеспечение энергоэффективности систем.</li>
+							<li class="list__item mb-4">Автоматизация процессов регулирования и управления.</li>
+							<li class="list__item mb-4">Учета тепловой энергии.</li>
+							<li class="list__item mb-4">Соблюдение требований по шумо- и виброизоляции.</li>
+							<li class="list__item mb-4">Обеспечение возможности проведения технического <br> обслуживания и ремонта оборудования.</li>
+						</ul>
+						<h6 class="pt-3">Соблюдаем требования других <b class="-color-accent">нормативных <br> актов</b> по документам и в производстве</h6>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<section class="pt-5 pb-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-7">
+					<h2 class="-text-extrabold mb-5">ООО «НПП РИЦ САМАРА»<br> — завод с полным производственным циклом, обеспечиваем стабильно высокое <span class="-color-accent">качество заводского уровня</span></h2>
+					<p class="-text-xxl">Производим и поставляем готовый протестированный <b class="-text-medium">продукт в блочном исполнении</b>, монтируем и обучаем персонал клиента</p>
+				</div>
+				<div class="col-5">
+					<article class="post">
+						<picture class="post-pic">
+							<img src="img/post1.jpg" alt="#">
+						</picture>
+						<div class="post-descr">
+							<div>01</div>
+							<p>Две производственные площадки в географическом центре страны</p>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+	
 </body>
 </html>

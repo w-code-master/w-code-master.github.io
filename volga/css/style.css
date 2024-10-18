@@ -11,6 +11,8 @@
 
 
 /* style */
+@import "style/styleguide.css";
+@import "style/components.css";
 @import "style/section.css";
 @import "style/ui.css";
 
