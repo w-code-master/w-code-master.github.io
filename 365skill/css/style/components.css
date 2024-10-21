@@ -1,0 +1,27 @@
+.btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 42px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	background-color: var(--color-blue);
+	color: #fff;
+	border-radius: 6px;
+	cursor: pointer;
+
+	transition: .5s;
+}
+.btn__icon {
+	fill: white;
+}
+.btn:hover {
+   background-color: blueviolet;
+   color: #fff;
+   text-decoration: none;
+}
