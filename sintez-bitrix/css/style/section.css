@@ -38,7 +38,7 @@
     flex-direction: column;
     row-gap: 10px;
     letter-spacing: .026em;
-    margin-bottom: 61px;
+    margin-bottom: 14px;
 }
 .header-offer-list__item {
     display: flex;
@@ -58,15 +58,29 @@
 .header-offer-action .btn {
     padding-right: 40px;
 }
+.header-offer-action__line {
+    fill: none;
+    stroke-width: 2px;
+    stroke: #fff;
+    width: 72px;
+    height: 90px;
+    margin-left: 31px;
+    position: relative;
+    top: 6px;
+}
 
 .confidentiality {
     padding-left: 72px;
+}
+.confidentiality__icon {
+    width: 30px;
 }
 .confidentiality__text {
     color: #9d9d9d;
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: .05em;
+    margin-left: 3px;
 }
 .confidentiality__text a {
     color: #9d9d9d;
@@ -104,15 +118,18 @@
 .hero-service__icon {
     display: inline-flex;
     align-items: center;
-    height: 70px;
-    font-size: 50px;
+    height: 67px;
+    font-size: 44px;
     background: linear-gradient(to right, #006ae5, #00a2ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
     margin-bottom: 2px;
+    margin-left: 12px;
 }
+.hero-service__icon.icon-discount { font-size: 52px; margin-left: 8px; position: relative; top: -4px; }
+.hero-service__icon.icon-thinking { font-size: 42px; position: relative; top: -3px; }
 .hero-service__title {
     letter-spacing: .055em;
     font-size: 15px;
