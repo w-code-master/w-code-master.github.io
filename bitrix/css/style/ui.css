@@ -1,0 +1,144 @@
+.btn {
+	display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    padding-left: 58px;
+    padding-right: 58px;
+    letter-spacing: .015em;
+    font-size: 21px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    background: #0086f2 linear-gradient(to right, #006ae5 0%,#00a2ff 100%);
+    color: #fff;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0 0 35px rgba(0,121,238,.7);
+    column-gap: 28px;
+    transition: .5s;
+}
+.btn:hover {
+   color: #fff;
+   text-decoration: none;
+   transform: scale(1.1);
+}
+.btn__icon {
+	fill: white;
+}
+.btn__icon._identification {
+	width: 25px;
+	height: 25px;
+}
+
+
+.hr-line {
+	height: 1px;
+	background-color: #A2A9AD;
+}
+
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.logo__ico {
+    width: 66px;
+    height: 66px;
+    margin-right: 14px;
+    fill: #fff;
+}
+.logo__txt {
+	width: 267px;
+    height: 34.5px;
+    margin-top: -6px;
+    fill: #fff;
+}
+/* hover */
+.logo:hover {
+    color: inherit;
+}
+
+
+.callbox {
+
+}
+.callbox__info {
+	text-align: right;
+}
+.callbox__text {
+	color: #686868;
+	line-height: 1.4;
+}
+.callbox__tel {
+	font-size: 2.4rem;
+	color: white;
+	text-decoration: none;
+	transition: .3s;
+	line-height: 1.1;
+}
+.callbox__tel ._small {
+	font-size: 16px;
+}
+.callbox__tel:hover {
+	text-decoration: none;
+	color: #85bb15;
+}
+.callbox__icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 42px;
+	height: 42px;
+	border-radius: 6px;
+	background-color: #85bb15;
+}
+.callbox__icon svg {
+	fill: white;
+}
+
+
+.messenger {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.messenger__link {
+    transition: .3s;
+}
+.messenger__link:hover {
+    transform: scale(1.2);
+}
+.messenger__link:nth-child(1).animated {
+    animation-delay: 1s;
+}
+.messenger__link:nth-child(2).animated {
+    animation-delay: 1.3s;
+}
+.messenger svg {
+    width: 44px;
+    height: 44px;
+}
+.messenger ._i-whatsapp {
+    width: 40px;
+    height: 40px;
+}
+
+
+.accent-heading {
+    font: 5rem/1 'BebasNeue';
+}
+.accent-heading__text {
+	display: inline-block;
+    background-color: #222632;
+    padding: 16px 23px 7px 27px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 15px rgba(4,8,40,.25);
+    letter-spacing: .06em;
+}
+.accent-heading__text._big {
+	font-size: 5.8rem;
+    padding: 12px 18px 1px 27px;
+}
