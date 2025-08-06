@@ -139,7 +139,7 @@
     color: black;
 }
 .swiper-service {
-    display: none;
+    display: none !important;
     margin: -113px -42px 15px -42px !important;
 }
 .swiper-service .hero-service__block {

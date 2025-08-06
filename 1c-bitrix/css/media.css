@@ -113,7 +113,7 @@
    display: none;
 }
 .swiper-service {
-   display: block;
+   display: block !important;
 }
 }
 
