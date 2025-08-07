@@ -89,11 +89,11 @@
 }
 
 html, body {
+	overflow-x: hidden;
 }
 
 html {
 	font-size: 10px;
-	overflow-x: hidden;
 	min-height: 100%;
 	position: relative;
 }
