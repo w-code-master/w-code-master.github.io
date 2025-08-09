@@ -1,0 +1,122 @@
+.header .logo {
+    margin-left: -8px;
+}
+.header-top {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+.header-top__aside {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+
+.hero {
+    padding-top: 4.4rem;
+    margin-bottom: 125px;
+}
+.hero-content {
+    max-width: 700px;
+}
+.hero-content__heading {
+    font-family: "Montserrat";
+    font-weight: 500;
+    line-height: 1.25;
+    margin-bottom: 4.6rem;
+}
+.hero-content__text {
+    font-size: 1.74rem;
+    letter-spacing: .045rem;
+    line-height: 1.12;
+    margin-bottom: 5.4rem;
+}
+.hero-content__btn {
+    margin-bottom: 3.4rem;
+}
+.hero-content__btn .btn._big {
+    padding-right: 4.4rem;
+}
+.hero-img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -117px;
+}
+
+.reviews-avatars {
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+    margin-bottom: 4.3rem;
+}
+.reviews-avatars__img {
+	width: 160px;
+}
+.reviews-avatars__img img {
+	width: 100%;
+	display: block;
+}
+.reviews-avatars__text {
+	font-size: 1.3rem;
+	line-height: 1.4;
+	position: relative;
+	top: 1px;
+}
+
+
+.current-offers-info {
+    display: flex;
+    color: var(--color-darklight);
+    column-gap: 7px;
+    letter-spacing: .055rem;
+    margin-bottom: 25px;
+}
+.current-offers-info__icon {
+    flex-shrink: 0;
+    width: 30px;
+    height: 20px;
+    fill: var(--color-darklight);
+    opacity: .3;
+}
+
+
+.user-info-protection {
+    display: flex;
+    color: var(--color-darklight);
+    column-gap: 7px;
+    letter-spacing: .055rem;
+    line-height: 1.2;
+}
+.user-info-protection__icon {
+    flex-shrink: 0;
+    width: 30px;
+    height: 24px;
+    fill: var(--color-darklight);
+}
+
+
+.features-hero {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.features-hero__item {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.features-hero__icon {
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    background-color: #e8f2fe;
+    border-radius: 8px;
+}
+.features-hero__text {
+    font-size: 1.45rem;
+    color: var(--color-darklight);
+}
