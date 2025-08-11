@@ -8,6 +8,7 @@
 
 /* libs */
 @import "libs/bootstrap-grid.css";
+@import "libs/swiper.css";
 
 
 
@@ -146,7 +147,7 @@
 }
 
 .darkmode {
-	background: #000;
+	background: var(--color-black);
 	color: #fff;
 }
 

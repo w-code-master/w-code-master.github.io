@@ -12,6 +12,7 @@
 }
 
 /* Fonts */
+
 @font-face {
 	font-family: 'Mont';
 	src: url(../fonts/mont/Mont-Regular.woff2) format('woff2');
@@ -32,6 +33,7 @@
 	src: url(../fonts/mont/Mont-Bold.woff2) format('woff2');
 	font-weight: bold;
 }
+
 @font-face {
 	font-family: 'Montserrat';
 	src: url(../fonts/montserrat/Montserrat-SemiBold.woff2) format('woff2');
@@ -41,6 +43,11 @@
 	font-family: 'Montserrat';
 	src: url(../fonts/montserrat/Montserrat-Bold.woff2) format('woff2');
 	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Archive';
+	src: url(../fonts/archive/Archive.woff2) format('woff2');
 }
 
 *,
@@ -57,8 +64,7 @@ html {
 body {
 	color: var(--color-dark);
 	background-color: var(--color-white);
-	font: normal 1.42rem 'Mont', sans-serif;
-	letter-spacing: .04rem;
+	font: normal 1.4rem/1.5 'Mont', sans-serif;
 	min-height: 100vh;
 	margin: 0;
 }
@@ -131,14 +137,14 @@ input[type="tel"],
 input[type="text"],
 textarea {
 	width: 100%;
-    padding: 2.2rem 1.6rem;
+    padding: 1.8rem 1.6rem;
     border-radius: 1rem;
     border: 1px solid #dcdfe7;
-    background: #fff;
+    background: white;
     box-shadow: 0px 0px 29px 0px rgba(68, 89, 126, 0.11) inset;
     outline: none;
     color: #44597e;
-    font-size: 1.4rem;
+	font: 1.4rem 'Mont', sans-serif;
 }
 input.d-block,
 textarea.d-block {
@@ -149,15 +155,12 @@ textarea {
 	max-width: 870px;
 	width: 100%;
 	height: auto;
-	min-height: 140px;
+	min-height: 102px;
 	padding-top: 12px;
 	padding-bottom: 12px;
 	resize: none;
 }
 
-input.-input-white {
-	background-color: #fff;
-}
 
 
 input[type="email"]:focus,
@@ -166,12 +169,14 @@ input[type="tel"]:focus,
 input[type="text"]:focus,
 textarea:focus {
 	border-color: var(--color-accent);
+	box-shadow: none;
 }
 
 /*Placeholder*/
 ::placeholder {
 	transition: .5s;
-	color: rgba(0,0,0,.3);
+	color: #9ca7bc;
+	font-size: 1.2rem;
 }
 :focus::placeholder {
 	color: transparent;
@@ -207,6 +212,9 @@ textarea:focus {
 }
 .-text-normal {
 	font-weight: normal;
+}
+.-text-semibold {
+	font-weight: 500;
 }
 .-text-bold {
 	font-weight: bold;
