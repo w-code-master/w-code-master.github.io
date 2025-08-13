@@ -1,3 +1,42 @@
+/* Fonts */
+@font-face {
+	font-family: "Mont";
+	src: url(../fonts/mont/Mont-Regular.woff2) format('woff2');
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Mont";
+	src: url(../fonts/mont/Mont-Light.woff2) format('woff2');
+	font-weight: 300;
+}
+@font-face {
+	font-family: "Mont";
+	src: url(../fonts/mont/Mont-SemiBold.woff2) format('woff2');
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Mont";
+	src: url(../fonts/mont/Mont-Bold.woff2) format('woff2');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url(../fonts/montserrat/Montserrat-SemiBold.woff2) format('woff2');
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Montserrat";
+	src: url(../fonts/montserrat/Montserrat-Bold.woff2) format('woff2');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Archive";
+	src: url(../fonts/archive/Archive.woff2) format('woff2');
+}
+
+
 :root {
 	--color-light: #f2f5f8;
 	--color-accent: #0081ff;
@@ -6,48 +45,11 @@
 	--color-blacklight: #303030;
 
 	--color-dark: #44597e;
+	--color-dark: #0b121e;
 	--color-darklight: #7e8897;
+	--color-darkaccent: #242938;
 	
 	--color-silver: #b3b3b3;
-}
-
-/* Fonts */
-
-@font-face {
-	font-family: 'Mont';
-	src: url(../fonts/mont/Mont-Regular.woff2) format('woff2');
-	font-weight: normal;
-}
-@font-face {
-	font-family: 'Mont';
-	src: url(../fonts/mont/Mont-Light.woff2) format('woff2');
-	font-weight: 300;
-}
-@font-face {
-	font-family: 'Mont';
-	src: url(../fonts/mont/Mont-SemiBold.woff2) format('woff2');
-	font-weight: 500;
-}
-@font-face {
-	font-family: 'Mont';
-	src: url(../fonts/mont/Mont-Bold.woff2) format('woff2');
-	font-weight: bold;
-}
-
-@font-face {
-	font-family: 'Montserrat';
-	src: url(../fonts/montserrat/Montserrat-SemiBold.woff2) format('woff2');
-	font-weight: 500;
-}
-@font-face {
-	font-family: 'Montserrat';
-	src: url(../fonts/montserrat/Montserrat-Bold.woff2) format('woff2');
-	font-weight: bold;
-}
-
-@font-face {
-	font-family: 'Archive';
-	src: url(../fonts/archive/Archive.woff2) format('woff2');
 }
 
 *,
@@ -125,8 +127,8 @@ h6, .h6 {
 	max-width: 1194px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-right: 12px;
-	padding-left: 12px;
+	padding-right: 1.2rem;
+	padding-left: 1.2rem;
 }
 
 

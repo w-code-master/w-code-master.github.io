@@ -26,8 +26,8 @@
 .swiper-button-next ._arrow,
 .swiper-button-prev ._arrow {
     fill: var(--color-accent);
-    width: 12px;
-    height: 16px;
+    width: 1.2rem;
+    height: 1.6rem;
 }
 .swiper-button-prev ._arrow {
     transform: rotate(180deg);
