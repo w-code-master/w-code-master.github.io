@@ -1,21 +1,188 @@
-/* fonts */
-@import "base/fonts.css";
-
 /* base */
-@import "base/normalize.css";
-@import "base/default.css";
-@import "base/util.css";
-@import "base/forms.css";
+@import "base.css";
 
 /* style */
+@import "style/blocks.css";
 @import "style/ui.css";
-@import "style/section.css";
-@import "style/animate.css";
+
 
 /* libs */
+@import "libs/bootstrap-grid.css";
 @import "libs/swiper.css";
-@import "libs/animate-css.css";
-@import "libs/simplebar.css";
 
-/* media */
-@import "media.css";
+
+@keyframes rotation {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes transformScale {
+	from {
+		transform: scale(0);
+	}
+
+	to {
+		transform: scale(1);
+	}
+}
+
+.darkmode-btn {
+	background-color: #fff;
+	width: 4.4rem;
+	height: 4.4rem;
+	border-radius: 50%;
+	align-items: center;
+	cursor: pointer;
+}
+
+.darkmode-btn__indicator {
+	background-color: #0081ff;
+	width: 4.4rem;
+	height: 4.4rem;
+	border-radius: 50%;
+	position: absolute;
+	transition: transform 0.3s ease;
+}
+
+.darkmode-btn__icon-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.darkmode-btn__icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	fill: #fff;
+}
+.darkmode-btn__icon svg {
+	width: 2.3rem;
+	height: 2.3rem;
+}
+
+.darkmode-btn__icon-moon,
+.darkmode-btn__icon-sun {
+	display: none;
+}
+
+.darkmode-btn__icon.darkmode-moon .darkmode-btn__icon-sun {
+	display: block;
+}
+
+.darkmode-btn__icon.darkmode-moon.animated .darkmode-btn__icon-sun {
+	animation: transformScale 0.5s;
+}
+
+.darkmode-btn__icon.darkmode-sun .darkmode-btn__icon-moon {
+	display: block;
+}
+
+.darkmode-btn__icon.darkmode-sun.animated .darkmode-btn__icon-moon {
+	animation: rotation 0.5s;
+}
+
+.darkmode {
+	--color-silver: #e3e3e3;
+	--color-darklight: #acbfdc;
+	--color-black: #101a2a;
+
+	background-color: var(--color-black);
+	color: #fff;
+}
+
+.darkmode .header-top {
+	background-color: rgba(5, 7, 12, 0.75);
+}
+.darkmode .hero-content__heading ._normal {
+	color: white;
+}
+.darkmode .hero-content__heading .-color-accent {
+	color: var(--color-accent);
+}
+.darkmode .hero-content__heading ._small {
+	color: white;
+}
+.darkmode .hero-content__text {
+	color: var(--color-silver);
+}
+
+.darkmode ._scrolled .logo-text {
+	color: var(--color-light);
+}
+
+.darkmode .logo__icon,
+.darkmode .logo__text {
+	fill: var(--color-light);
+}
+
+.darkmode .portfolio-card:after {
+    content: "";
+    width: 100%;
+    height: 30rem;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(7, 27, 75, 0.85) 100%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.darkmode .portfolio-card__info ._text {
+	text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+
+.darkmode .lead-form {
+    border: 1px solid rgba(255,255,255,.1);
+}
+.darkmode .lead-form._free-audit {
+	background: linear-gradient(to top, var(--color-darkaccent) 0%,var(--color-black) 100%);
+	border: 1px solid rgba(255,255,255,.15);
+}
+.darkmode .work-steps-post__block {
+	background-color: var(--color-darkaccent);
+	border: 1px solid rgba(255,255,255,.1);
+}
+.darkmode .work-steps-post__title {
+	color: white;
+}
+.darkmode .work-steps-post__item ._corner {
+	fill: #3f4761;
+}
+.darkmode .working {
+	background-color: var(--color-darkaccent);
+}
+.darkmode .working__corner-top {
+	fill: var(--color-darkaccent);
+}
+.darkmode .working__arrow-down {
+	fill: var(--color-light);
+}
+.darkmode .working-item {
+	background-color: var(--color-black);
+	border: 1px solid rgba(255,255,255,.15);
+}
+.darkmode .reviews__block {
+	background-color: var(--color-darkaccent);
+	border-color: rgba(255,255,255,.1);
+}
+.darkmode .reviews__name,
+.darkmode .reviews__descrp {
+	color: white;
+}
+.darkmode .contact {
+	background-color: var(--color-darkaccent);
+	border: 1px solid rgba(255,255,255,.1);
+}
+.darkmode .contact__link-big {
+	color: white;
+}
+.darkmode .contact-form {
+	background-color: var(--color-black);
+	border: 1px solid rgba(255,255,255,.15);
+}
+.darkmode {
+	
+}

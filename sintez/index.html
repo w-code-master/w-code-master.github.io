@@ -3,1303 +3,676 @@
 <head>
 
 	<meta charset="UTF-8">
+	<title>Sintez</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>Sintez-Digital</title>
 
    <!-- favicon -->
    <link href="img/favicon.png" sizes="32x32" rel="icon" type="image/png"/>
    
 	<!-- style -->
 	<link rel="stylesheet" href="css/style.css">
-
-	<!-- scripts -->
-	<script src="js/jquery.js" defer></script>
-	<script src="js/dynamic-adapt.js" defer></script>
-	<script src="js/pagescroll.js" defer></script>
-	<script src="js/swiper.js" defer></script>
-	<script src="js/masked.js" defer></script>
-	<script src="js/marquee.js" defer></script>
-	<script src="js/beefup.js" defer></script>
-	<script src="js/waypoints.js" defer></script>
-	<script src="js/animate-css.js" defer></script>
-	<script src="js/simplebar.js"></script>
-	<script src="js/main.js" defer></script>
+	<link rel="stylesheet" href="css/media.css">
 
 </head>
-<body class="page">
-
-	<!-- Header -->
-	<section class="header-top anim-fadeInDown">
-		<div class="container">
-			<div class="header__logo">
-				<a class="logo">
-					<svg class="logo__ico">
-						<use href="img/svg/logos.svg#i-sintez"></use>
-					</svg>
-					<div class="logo__txt">Синтез</div>
-				</a>
-			</div>
-			<nav class="header__menu">
-				<ul class="menu">
-					<li class="menu__item">
-						<a class="menu__link" href="#s-project">Проекты</a>
-					</li>
-					<li class="menu__item">
-						<a class="menu__link" href="#s-media">Медиацентр</a>
-					</li>
-					<li class="menu__item">
-						<a class="menu__link" href="#s-job">Вакансии</a>
-					</li>
-					<li class="menu__item">
-						<a class="menu__link" href="#s-contact">Контакты</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="header__call">
-				<a class="callbox" href="tel:88004466789">
-					<svg class="callbox__ico">
-						<use href="img/svg/sprite.svg#i-tel"></use>
-					</svg>
-					<div class="callbox__aside">
-						<div class="callbox__tel">8 800 44 66 789</div>
-						<div class="callbox__txt">с 10:00 до 19:00 (пн-пт)</div>
-					</div>
-				</a>
-			</div>
-			<div class="header__action">
-				<a class="btn btn-solid btn-normal entry--call-modal"  data-da="header-offer__action-btn, 0, 1400">
-					<div class="btn__txt">Заказать проект</div>
-					<div class="btn__circle-box -right">
-						<svg class="btn__ico btn__ico-right">
-							<use href="img/svg/sprite.svg#i-right"></use>
-						</svg>
-					</div>
-				</a>
-			</div>
-		</div>
-	</section>
+<body>
+	
 	<header class="header">
-		<div class='marquee-text anim-fadeInDown'>
-			<div class="marquee-text__item">Комплексный маркетинг</div>
-			<div class="marquee-text__item">Разработка сайтов</div>
-			<div class="marquee-text__item">Обслуживание сайтов</div>
-			<div class="marquee-text__item">Продвижение</div>
-			<div class="marquee-text__item">Брендинг</div>
-			<div class="marquee-text__item">Рекламно-сувенирная продукция</div>
-		</div>
-		<section class="header-service anim-fadeIn">
-			<div class="container">
-				<ul class="header-service__list">
-					<li>Комплексный маркетинг</li>
-					<li>Разработка сайтов</li>
-					<li>Обслуживание сайтов</li>
-					<li>Продвижение</li>
-					<li>Брендинг</li>
-					<li>Рекламно-сувенирная продукция</li>
-				</ul>
-				<div class="header-service__pdf">
-					<a class="link" href="#" data-da="header-offer__action-link, 0, 1400">
-						<span class="link__txt">Презентация <span class="color-dark">(5МБ — PDF)</span></span>
-						<svg class="link__ico">
-							<use href="img/svg/sprite.svg#i-download"></use>
-						</svg>
-					</a>
-				</div>
-			</div>
-		</section>
-		<section class="header-hero">
-			<div class="container">
-				<div class="header-offer">
-					<h1 class="header-offer__heading h1 anim-zoomIn">Веб-разработка и  продвижение в <span class="color-accent">digital</span></h1>
-					<p class="header-offer__txt anim-fadeInUp">Разрабатываем уникальные сайты и продвигаем их в диджитал-пространстве, увеличивая узнаваемость и прибыль вашего бизнеса.</p>
-					<div class="header-offer__action">
-						<div class="header-offer__action-btn anim-bounceIn"></div>
-						<div class="header-offer__action-link anim-fadeInUp"></div>
+		<section class="header-top">
+			<div class="container-fix">
+				<div class="row align-items-center">
+					<div class="col-auto">
+						<div class="header__logo">
+							<a class="logo">
+								<svg class="logo__icon">
+									<use href="img/svg/sprite.svg#i-logo-icon"></use>
+								</svg>
+								<svg class="logo__text">
+									<use href="img/svg/sprite.svg#i-logo-text"></use>
+								</svg>
+							</a>
+							<h5 class="logo-text">Комплексное интернет-продвижение<br>с гарантией результата</h5>
+						</div>
+					</div>
+					<div class="col-auto ms-auto">
+						<div class="header-top__aside">
+							<div class="messenger">
+								<div class="messenger__item">
+									<a href="#" class="messenger__link"><svg class="_i-whatsapp"><use href="img/svg/sprite.svg#i-whatsapp"></use></svg></a>
+								</div>
+								<div class="messenger__item">
+									<a href="#" class="messenger__link"><svg><use href="img/svg/sprite.svg#i-telegram"></use></svg></a>
+								</div>
+							</div>
+							<div class="darkmode-btn">
+								<div class="darkmode-btn__indicator">
+									<div class="darkmode-btn__icon-container">
+										<div class="darkmode-btn__icon">
+											<svg class="darkmode-btn__icon-moon">
+												<use href="./img/svg/sprite.svg#i-sun"></use>
+											</svg>
+											<svg class="darkmode-btn__icon-sun">
+												<use href="./img/svg/sprite.svg#i-moon"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<div class="header-art"></div>
+
+		<section class="hero">
+			<div class="container-fix">
+				<div class="reviews-avatars">
+					<div class="reviews-avatars__img">
+						<img src="img/avatars.webp" alt="avatars">
+					</div>
+					<div class="reviews-avatars__text"><span class="_normal">100+</span> довольных<br> клиентов</div>
+				</div>
+				<article class="hero-content">
+					<h1 class="hero-content__heading">
+						<span class="_normal">Комплексный</span><br>
+						<strong class="_normal -color-accent">интернет-маркетинг</strong><br>
+						<span class="_small">для малого и среднего бизнеса</span>
+					</h1>
+					<p class="hero-content__text">Разработка, продвижение и поддержка интернет-проектов<br class="d-none d-sm-inline"> для увеличения прибыли в бизнесе с гарантией результата</p>
+					<div class="hero-content__btn">
+						<a class="btn" href="#">
+							<svg class="btn__icon _target">
+								<use href="img/svg/sprite.svg#i-target"></use>
+							</svg>
+							<span class="btn__text-normal">Обсудить проект</span>
+						</a>
+					</div>
+					<div class="current-offers-info">
+						<svg class="current-offers-info__icon"><use href="img/svg/sprite.svg#i-restart"></use></svg>
+						<p class="current-offers-info">Только актуальные предложения на&nbsp;05&nbsp;апреля&nbsp;2025г&nbsp;.</p>
+					</div>
+					<div class="user-info-protection">
+						<svg class="user-info-protection__icon"><use href="img/svg/sprite.svg#i-shield"></use></svg>
+						<p>Нажимая на кнопку «Обсудить проект», я&nbsp;даю согласие&nbsp;на<br class="d-none d-sm-inline"> обработку персональных данных и&nbsp;соглашаюсь<br class="d-none d-sm-inline"> <a href="#">с&nbsp;политикой конфиденциальности</a></p>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<div class="hero-img">
+			<img src="img/hero.webp" alt="hero">
+		</div>
 	</header>
 
-	<div class="sandwich-box anim-fadeInRight">
-		<div class="sandwich-icon">
-			<div class="sw-top"></div>
-			<div class="sw-center"></div>
-			<div class="sw-bottom"></div>
-		</div>
-	</div>
-
-	<!-- Main -->
 	<main class="main">
+		<div class="container-fix">
 
-		<!-- Services -->
-		<section class="services container">
-			<h2 class="section-heading anim-fadeInLeft">Наше предложения Вам</h2>
-			<div class="services__offers">
-				<div class="services__card anim-bounceIn">
-					<div class="services__card-inner">
-						<div class="services__card-ico">
-							<svg class="services__ico1">
-								<use href="img/svg/icons.svg#i-service1"></use>
-							</svg>
-						</div>
-						<h4 class="services__card-title">Комплексный маркетинг</h4>
-						<p class="services__card-txt">Используем принцип омниканальности. Погружаемся в Ваш бизнес на всех уровнях маркетинговой воронки</p>
-						<div class="services__card-action">
-							<a class="btn btn-outline" href="#">Подробнее</a>
-						</div>
+			<section class="features-hero">
+				<div class="features-hero__item">
+					<div class="iconbox">
+						<svg class="_icon-stroke"><use href="img/svg/sprite.svg#i-bell"></use></svg>
 					</div>
+					<p class="features-hero__text">Наши решения увеличивают<br> конверсию и продажи</p>
 				</div>
-				<div class="services__card anim-bounceIn">
-					<div class="services__card-inner">
-						<div class="services__card-ico">
-							<svg class="services__ico2">
-								<use href="img/svg/icons.svg#i-service2"></use>
-							</svg>
-						</div>
-						<h4 class="services__card-title">Разработка сайтов</h4>
-						<p class="services__card-txt">Создаём сайты под любые задачи. От быстрых лендингов до сложного e-commerce</p>
-						<div class="services__card-action">
-							<a class="btn btn-outline" href="#">Подробнее</a>
-						</div>
+				<div class="features-hero__item">
+					<div class="iconbox">
+						<svg class="_icon-stroke"><use href="img/svg/sprite.svg#i-diagram"></use></svg>
 					</div>
+					<p class="features-hero__text">Сайты заточены<br> под рекламный трафик</p>
 				</div>
-				<div class="services__card anim-bounceIn">
-					<div class="services__card-inner">
-						<div class="services__card-ico">
-							<svg class="services__ico3">
-								<use href="img/svg/icons.svg#i-service3"></use>
-							</svg>
-						</div>
-						<h4 class="services__card-title">SEO-продвижение</h4>
-						<p class="services__card-txt">Привлекаем максимум органического трафика. Параллельно работаем над юзабилити сайта</p>
-						<div class="services__card-action">
-							<a class="btn btn-outline" href="#">Подробнее</a>
-						</div>
+				<div class="features-hero__item">
+					<div class="iconbox">
+						<svg class="_icon-stroke"><use href="img/svg/sprite.svg#i-cup"></use></svg>
 					</div>
+					<p class="features-hero__text">Современный дизайн, выделяющий<br> Вас среди конкурентов</p>
 				</div>
-				<div class="services__card anim-bounceIn">
-					<div class="services__card-inner">
-						<div class="services__card-ico">
-							<svg class="services__ico4">
-								<use href="img/svg/icons.svg#i-service4"></use>
-							</svg>
-						</div>
-						<h4 class="services__card-title">Контекстная реклама</h4>
-						<p class="services__card-txt">Добываем качественный рекламный трафик. Увеличиваем количество заявок</p>
-						<div class="services__card-action">
-							<a class="btn btn-outline" href="#">Подробнее</a>
-						</div>
+				<div class="features-hero__item">
+					<div class="iconbox">
+						<svg class="_icon-stroke"><use href="img/svg/sprite.svg#i-note"></use></svg>
 					</div>
+					<p class="features-hero__text">Продающие тексты,<br> написанные под ЦА</p>
 				</div>
-				<div class="services__card anim-bounceIn">
-					<div class="services__card-inner">
-						<div class="services__card-ico">
-							<svg class="services__ico5">
-								<use href="img/svg/icons.svg#i-service5"></use>
-							</svg>
-						</div>
-						<h4 class="services__card-title">Брендинг</h4>
-						<p class="services__card-txt">Отражаем индивидуальность бренда в логотипе. Делаем уникальный дизайн, который привлекает внимание и повышает узнаваемость.</p>
-						<div class="services__card-action">
-							<a class="btn btn-outline" href="#">Подробнее</a>
-						</div>
-					</div>
+			</section>
+
+			<section class="portfolio">
+				<div class="section-heading">
+					<h6 class="section-heading__text">Понимая, что при выборе подрядчика на разработку проекта главное - результат, поэтому</h6>
+					<h3 class="section-heading__title h3">Предлагаем сразу ознакомиться с&nbsp;примерами наших работ</h3>
 				</div>
-				<div class="services__card anim-bounceIn">
-					<div class="services__card-inner">
-						<div class="services__card-ico">
-							<svg class="services__ico6">
-								<use href="img/svg/icons.svg#i-service6"></use>
-							</svg>
-						</div>
-						<h4 class="services__card-title">Обслуживание сайтов</h4>
-						<p class="services__card-txt">Техническое сопровождение сайта, оперативное исправление багов и доработка юзабилити</p>
-						<div class="services__card-action">
-							<a class="btn btn-outline" href="#">Подробнее</a>
-						</div>
-					</div>
+				<div class="portfolio-tags">
+					<span class="portfolio-tags__item">Ремонт</span>
+					<span class="portfolio-tags__item">Право</span>
+					<span class="portfolio-tags__item">Стоматология</span>
+					<span class="portfolio-tags__item">Кухни на заказ</span>
+					<span class="portfolio-tags__item">Клининг</span>
+					<span class="portfolio-tags__item">Недвижимость</span>
+					<span class="portfolio-tags__item">Строительство</span>
+					<span class="portfolio-tags__item _active">+ 27 сферы</span>
 				</div>
-				<div class="services__card services__card--big anim-bounceIn">
-					<div class="services__card-inner">
-						<div class="services__card-ico">
-							<svg class="services__ico7">
-								<use href="img/svg/icons.svg#i-service7"></use>
-							</svg>
-						</div>
-						<h4 class="services__card-title">Рекламно-сувенирная продукция</h4>
-						<p class="services__card-txt">Брендированная продукция с символикой компаний,<br> мероприятий или мерч знаменитостей</p>
-						<div class="services__card-action">
-							<a class="btn btn-outline" href="#">Подробнее</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="services-slider">
-				<div class="swiper-services swiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide anim-zoomIn">
-							<div class="services__card">
-								<div class="services__card-inner">
-									<div class="services__card-ico">
-										<svg class="services__ico1">
-											<use href="img/svg/icons.svg#i-service1"></use>
-										</svg>
-									</div>
-									<h4 class="services__card-title">Комплексный маркетинг</h4>
-									<p class="services__card-txt">Используем принцип омниканальности. Погружаемся в Ваш бизнес на всех уровнях маркетинговой воронки</p>
-									<div class="services__card-action">
-										<a class="btn btn-outline" href="#">Подробнее</a>
-									</div>
+				<div class="portfolio__content">
+					<div class="portfolio__item">
+						<div class="portfolio-card">
+							<div class="portfolio-card__img"><img src="img/portfolio/preview/1.jpg" alt="1"></div>
+							<div class="portfolio-card__info">
+								<div class="_text">
+									<p>Лендинг: Геодезические изыскания любой сложности в Москве и МО</p>
+								</div>
+								<div class="_btn">
+									<a class="btn _normal _light" href="#">Посмотреть проект</a>
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide anim-zoomIn">
-							<div class="services__card">
-								<div class="services__card-inner">
-									<div class="services__card-ico">
-										<svg class="services__ico2">
-											<use href="img/svg/icons.svg#i-service2"></use>
-										</svg>
-									</div>
-									<h4 class="services__card-title">Разработка сайтов</h4>
-									<p class="services__card-txt">Создаём сайты под любые задачи. От быстрых лендингов до сложного e-commerce</p>
-									<div class="services__card-action">
-										<a class="btn btn-outline" href="#">Подробнее</a>
-									</div>
+					</div>
+					<div class="portfolio__item">
+						<div class="portfolio-card">
+							<div class="portfolio-card__img"><img src="img/portfolio/preview/2.jpg" alt="2"></div>
+							<div class="portfolio-card__info">
+								<div class="_text">
+									<p>Портал: Доступная медицина в каждый дом. Online запись к врачу.</p>
+								</div>
+								<div class="_btn">
+									<a class="btn _normal _light" href="#">Посмотреть проект</a>
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide anim-zoomIn">
-							<div class="services__card">
-								<div class="services__card-inner">
-									<div class="services__card-ico">
-										<svg class="services__ico3">
-											<use href="img/svg/icons.svg#i-service3"></use>
-										</svg>
-									</div>
-									<h4 class="services__card-title">SEO-продвижение</h4>
-									<p class="services__card-txt">Привлекаем максимум органического трафика. Параллельно работаем над юзабилити сайта</p>
-									<div class="services__card-action">
-										<a class="btn btn-outline" href="#">Подробнее</a>
-									</div>
+					</div>
+					<div class="portfolio__item">
+						<div class="portfolio-card">
+							<div class="portfolio-card__img"><img src="img/portfolio/preview/3.jpg" alt="3"></div>
+							<div class="portfolio-card__info">
+								<div class="_text">
+									<p>Сайт: Комплексная правовая поддержка бизнеса - ЮК «ФОКС»</p>
+								</div>
+								<div class="_btn">
+									<a class="btn _normal _light" href="#">Посмотреть проект</a>
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide anim-zoomIn">
-							<div class="services__card">
-								<div class="services__card-inner">
-									<div class="services__card-ico">
-										<svg class="services__ico4">
-											<use href="img/svg/icons.svg#i-service4"></use>
-										</svg>
-									</div>
-									<h4 class="services__card-title">Контекстная реклама</h4>
-									<p class="services__card-txt">Добываем качественный рекламный трафик. Увеличиваем количество заявок</p>
-									<div class="services__card-action">
-										<a class="btn btn-outline" href="#">Подробнее</a>
-									</div>
+					</div>
+					<div class="portfolio__item">
+						<div class="portfolio-card">
+							<div class="portfolio-card__img"><img src="img/portfolio/preview/4.jpg" alt="4"></div>
+							<div class="portfolio-card__info">
+								<div class="_text">
+									<p>Сайт: ООО “Стахановский  вагоностроительный завод”</p>
+								</div>
+								<div class="_btn">
+									<a class="btn _normal _light" href="#">Посмотреть проект</a>
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide anim-zoomIn">
-							<div class="services__card">
-								<div class="services__card-inner">
-									<div class="services__card-ico">
-										<svg class="services__ico5">
-											<use href="img/svg/icons.svg#i-service5"></use>
-										</svg>
-									</div>
-									<h4 class="services__card-title">Брендинг</h4>
-									<p class="services__card-txt">Отражаем индивидуальность бренда в логотипе. Делаем уникальный дизайн, который привлекает внимание и повышает узнаваемость.</p>
-									<div class="services__card-action">
-										<a class="btn btn-outline" href="#">Подробнее</a>
-									</div>
+					</div>
+					<div class="portfolio__item">
+						<div class="portfolio-card">
+							<div class="portfolio-card__img"><img src="img/portfolio/preview/5.jpg" alt="5"></div>
+							<div class="portfolio-card__info">
+								<div class="_text">
+									<p>Лендинг: Агентство нежвижимости<br> №1 в Казани по подбору квартир</p>
+								</div>
+								<div class="_btn">
+									<a class="btn _normal _light" href="#">Посмотреть проект</a>
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide anim-zoomIn">
-							<div class="services__card">
-								<div class="services__card-inner">
-									<div class="services__card-ico">
-										<svg class="services__ico6">
-											<use href="img/svg/icons.svg#i-service6"></use>
-										</svg>
-									</div>
-									<h4 class="services__card-title">Обслуживание сайтов</h4>
-									<p class="services__card-txt">Техническое сопровождение сайта, оперативное исправление багов и доработка юзабилити</p>
-									<div class="services__card-action">
-										<a class="btn btn-outline" href="#">Подробнее</a>
-									</div>
+					</div>
+					<div class="portfolio__item">
+						<div class="portfolio-card">
+							<div class="portfolio-card__img"><img src="img/portfolio/preview/6.jpg" alt="6"></div>
+							<div class="portfolio-card__info">
+								<div class="_text">
+									<p>Сайт: От разработки проекта до запуска БТП «под ключ»</p>
+								</div>
+								<div class="_btn">
+									<a class="btn _normal _light" href="#">Посмотреть проект</a>
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide anim-zoomIn">
-							<div class="services__card">
-								<div class="services__card-inner">
-									<div class="services__card-ico">
-										<svg class="services__ico7">
-											<use href="img/svg/icons.svg#i-service7"></use>
-										</svg>
-									</div>
-									<h4 class="services__card-title">Рекламно-сувенирная продукция</h4>
-									<p class="services__card-txt">Брендированная продукция с символикой компаний, мероприятий или мерч знаменитостей</p>
-									<div class="services__card-action">
-										<a class="btn btn-outline" href="#">Подробнее</a>
-									</div>
+					</div>
+					<div class="portfolio__item">
+						<div class="portfolio-card">
+							<div class="portfolio-card__img"><img src="img/portfolio/preview/7.jpg" alt="7"></div>
+							<div class="portfolio-card__info">
+								<div class="_text">
+									<p>Портал: Глобальная страховая<br> онлайн-платформа INin.one</p>
+								</div>
+								<div class="_btn">
+									<a class="btn _normal _light" href="#">Посмотреть проект</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio__item">
+						<div class="portfolio-card">
+							<div class="portfolio-card__img"><img src="img/portfolio/preview/8.jpg" alt="8"></div>
+							<div class="portfolio-card__info">
+								<div class="_text">
+									<p>Сайт: Многофункциональный проект для  одной из ведущих клиник г.Москва</p>
+								</div>
+								<div class="_btn">
+									<a class="btn _normal _light" href="#">Посмотреть проект</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="swiper-pagination swiper-services-nav"></div>
-			</div>
+			</section>
+
+			<form class="lead-form">
+				<div class="row">
+					<div class="col lead-form__content">
+						<h3 class="lead-form__title">Раскройте потенциал<br> вашего бренда с&nbsp;нами</h3>
+						<p class="lead-form__text">Каждый проект уникален, оставьте заявку и&nbsp;мы<br class="d-none d-sm-inline d-lg-none"> вышлем&nbsp;вам<br class="d-none d-lg-inline"> коммерческое предложение</p>
+						<label class="lead-form__label" for="sdw7r3ko2">Телефон Whats App или @Telegram</label>
+						<div class="lead-form__input-and-button">
+							<div class="input-and-button">
+								<div class="input-block">
+									<input id="sdw7r3ko2" type="tel" placeholder="+7 (___) ___-__-__">
+									<div class="input-block__icon">
+										<svg class="_icon-tel"><use href="img/svg/sprite.svg#i-tel"></use></svg>
+									</div>
+								</div>
+								<button class="btn"><span class="-text-uppercase -text-bold">Получить предложение</span></button>
+							</div>
+						</div>
+						<div class="terms-user-agreement">
+							<label class="choise">
+								<input class="choise__input" type="checkbox" id="7sas9dd4r5sd">
+								<span class="choise__box"><svg class="_icon"><use href="img/svg/sprite.svg#i-chek"></use></svg></span>
+							</label>
+							<label class="terms-user-agreement__text" for="7sas9dd4r5sd">Я принимаю условия <a href="#">пользовательского соглашения</a> и даю свое согласие на&nbsp;обработку <a href="#">персональных данных</a></label>
+						</div>
+						<ul class="lead-form-list">
+							<li class="lead-form-list__item">
+								<div class="iconbox _white _small">
+									<svg class="_icon-stroke _i-chat"><use href="img/svg/sprite.svg#i-chat"></use></svg>
+								</div>
+								<p>Обсудим детали проекта</p>
+							</li>
+							<li class="lead-form-list__item">
+								<div class="iconbox _white _small">
+									<svg class="_icon-stroke"><use href="img/svg/sprite.svg#i-card"></use></svg>
+								</div>
+								<p>Проработаем 2-3 вариант КП</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-auto">
+						<img class="lead-form__design" src="img/design.png" alt="design">
+					</div>
+				</div>
+			</form>
+
+			<section class="work-steps">
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<div class="work-steps__heading">
+							<div class="section-heading _no-line">
+								<h6 class="section-heading__text">Привлекаем целевых клиентов<br> и окупаем рекламу в первый месяц</h6>
+								<h3 class="section-heading__title h3">Делаем не просто картинку, а&nbsp;готовый инструмент по привлечению клиентов</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="work-steps-post">
+							<div class="work-steps-post__item">
+								<div class="work-steps-post__block">
+									<div class="work-steps-post__header">
+										<div class="work-steps-post__icon">
+											<svg><use href="img/svg/sprite.svg#i-on-target"></use></svg>
+										</div>
+										<h6 class="work-steps-post__title">Продающий дизайн</h6>
+									</div>
+									<div class="work-steps-post__text">
+										<p>Перед началом разработки мы глубоко анализируем Ваш бизнес, создаем прототипы - создаём интерфейс, который&nbsp;не&nbsp;только удобен, но и мотивирует клиентов к&nbsp;покупкам.</p>
+									</div>
+								</div>
+								<svg class="_corner"><use href="img/svg/sprite.svg#i-block-corner"></use></svg>
+							</div>
+							<div class="work-steps-post__item">
+								<div class="work-steps-post__block">
+									<div class="work-steps-post__header">
+										<div class="work-steps-post__icon">
+											<svg><use href="img/svg/sprite.svg#i-block"></use></svg>
+										</div>
+										<h6 class="work-steps-post__title">Создаем контент</h6>
+									</div>
+									<div class="work-steps-post__text">
+										<p>Экономим ваше время и разрабатываем уникальный контент для привлечения и удержания клиентов на сайте. Учитываем все ваши пожелания в процессе, сопровождаем на каждом этапе реализации проекта.</p>
+									</div>
+								</div>
+								<svg class="_corner"><use href="img/svg/sprite.svg#i-block-corner"></use></svg>
+							</div>
+							<div class="work-steps-post__item">
+								<div class="work-steps-post__block">
+									<div class="work-steps-post__header">
+										<div class="work-steps-post__icon">
+											<svg><use href="img/svg/sprite.svg#i-document-flow"></use></svg>
+										</div>
+										<h6 class="work-steps-post__title">Документооборот</h6>
+									</div>
+									<div class="work-steps-post__text">
+										<p>Фиксируем все условия в официальном договоре: сроки, этапы, объем работ, гарантийные обязательства. Предоставляем полный пакет закрывающих документов, обмениваемся ими через ЭДО.</p>
+									</div>
+								</div>
+								<svg class="_corner"><use href="img/svg/sprite.svg#i-block-corner"></use></svg>
+							</div>
+							<div class="work-steps-post__item">
+								<div class="work-steps-post__block">
+									<div class="work-steps-post__header">
+										<div class="work-steps-post__icon">
+											<svg class="_icon-target-eye"><use href="img/svg/sprite.svg#i-target-eye"></use></svg>
+										</div>
+										<h6 class="work-steps-post__title">Высокая окупаемость</h6>
+									</div>
+									<div class="work-steps-post__text">
+										<p>После запуска мы поддерживаем Ваш проект:<br class="d-none d-ml-inline"> если что-то сломается или потребуется доработка, исправим оперативно. А с помощью индивидуального подхода мы делаем сайты мощным инструментом<br class="d-none d-xl-inline"> для увеличения прибыли. </p>
+									</div>
+								</div>
+								<svg class="_corner"><use href="img/svg/sprite.svg#i-block-corner"></use></svg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+		<section class="working">
+			<div class="container-fix">
+				<div class="section-heading _no-line">
+					<h3 class="section-heading__title h3">Разбили процесс разработки<br> на прозрачные этапы</h3>
+				</div>
+				<div class="working__content">
+					<div class="working-item">
+						<div class="working-item__heading">
+							<div class="working-item__number">1</div>
+							<div class="working-item__title">Брифинг, техническое задание и&nbsp;составление концепта</div>
+						</div>
+						<div class="working-item__content">
+							<ul class="list">
+								<li class="list__item">
+									<i class="ui-check"><svg><use href="img/svg/sprite.svg#i-chek"></use></svg></i>
+									<p>Определение целей проекта и предпочтений заказчика через опросный лист, а также анализ и изучение рынка и аудитории для выявления ключевых факторов&nbsp;успеха.</p>
+								</li>
+								<li class="list__item">
+									<i class="ui-check"><svg><use href="img/svg/sprite.svg#i-chek"></use></svg></i>
+									<p>Создаем список требований к сайту, фиксируем задачи, собираем дополнительную информацию, необходимую для&nbsp;разработки, создаем концепт с&nbsp;референсами</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="working-item">
+						<div class="working-item__heading">
+							<div class="working-item__number">2</div>
+							<div class="working-item__title">Прототип, текст и&nbsp;концепция дизайна сайта</div>
+						</div>
+						<div class="working-item__content">
+							<ul class="list">
+								<li class="list__item">
+									<i class="ui-check"><svg><use href="img/svg/sprite.svg#i-chek"></use></svg></i>
+									<p>Определяем количество блоков, продумываем пользовательский путь, создаём предварительный набросок&nbsp;дизайна.</p>
+								</li>
+								<li class="list__item">
+									<i class="ui-check"><svg><use href="img/svg/sprite.svg#i-chek"></use></svg></i>
+									<p>Разрабатываем дизайн первых трёх блоков, чтобы увидеть стилистическое направление будущего&nbsp;проекта.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="working-item">
+						<div class="working-item__heading">
+							<div class="working-item__number">3</div>
+							<div class="working-item__title">Разработка и&nbsp;тестирование проекта</div>
+						</div>
+						<div class="working-item__content">
+							<ul class="list">
+								<li class="list__item pe-5">
+									<i class="ui-check"><svg><use href="img/svg/sprite.svg#i-chek"></use></svg></i>
+									<p>Преобразование дизайн-макета в код, создание адаптивной верстки для корректного отображения на&nbsp;всех типах&nbsp;устройств.</p>
+								</li>
+								<li class="list__item">
+									<i class="ui-check"><svg><use href="img/svg/sprite.svg#i-chek"></use></svg></i>
+									<p>Проверка работоспособности сайта, скорости загрузки, корректности отображения в различных браузерах и на разных устройствах.</p>
+								</li>
+								<li class="list__item">
+									<i class="ui-check"><svg><use href="img/svg/sprite.svg#i-chek"></use></svg></i>
+									<p>Подключаем необходимые сервисы: сервисы аналитики сайта, SEO-сервисы, CRM, виджеты&nbsp;и&nbsp;т.&nbsp;д.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<svg class="working__corner-top"><use href="img/svg/sprite.svg#i-corner-top"></use></svg>
+			<svg class="working__arrow-down"><use href="img/svg/sprite.svg#i-arrow"></use></svg>
 		</section>
 		
-		<!-- AboutUs -->
-		<section class="about-us">
-			<div class="about-us__inner">
-				<div class="about-us__content">
-					<p class="about-us__desc anim-fadeInUp">У вас будет целая <span class="color-accent">команда</span> превосходных специалистов вместо одного маркетолога, а также отчёты о достигнутых результатах, возможность получения консультаций и помощь<br class="d-none d-lg-inline"> по всем вопросам продвижения в интернете.</p>
-					<div class="in-numbers">
-						<div class="in-numbers__item anim-fadeInLeft">
-							<div class="in-numbers__num">12 лет</div>
-							<div class="in-numbers__txt">опыта и развития</div>
+		<form class="lead-form _free-audit container-fix">
+			<div class="row">
+				<div class="col-12 col-lg">
+					<div class="lead-form__soon-img"><img src="img/soon.png" alt=""></div>
+					<h3 class="lead-form__title-normal -text-semibold pt-3 mb-4 mb-xl-5">Получите бесплатный аудит<br class="d-none d-sm-inline d-lg-none"> вашей ниши и&nbsp;прогноз конверсии</h3>
+					<ul class="lead-form-list">
+						<li class="lead-form-list__item">
+							<svg class="lead-form-list__arrow _white"><use href="img/svg/sprite.svg#i-chek"></use></svg>
+							<p>Анализируем показатели</p>
+						</li>
+						<li class="lead-form-list__item">
+							<svg class="lead-form-list__arrow _white"><use href="img/svg/sprite.svg#i-chek"></use></svg>
+							<p>Настроим инфраструктуру</p>
+						</li>
+						<li class="lead-form-list__item">
+							<svg class="lead-form-list__arrow _white"><use href="img/svg/sprite.svg#i-chek"></use></svg>
+							<p>Разработаем скрипты продаж</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-12 col-lg-auto lead-form__content">
+					<label class="lead-form__label" for="d274r3k1o">Телефон Whats App или @Telegram</label>
+					<div class="lead-form__input-and-button">
+						<div class="input-and-button">
+							<div class="input-block">
+								<input id="d274r3k1o" type="tel" placeholder="+7 (___) ___-__-__">
+								<div class="input-block__icon">
+									<svg class="_icon-tel"><use href="img/svg/sprite.svg#i-tel"></use></svg>
+								</div>
+							</div>
+							<button class="btn"><span class="-text-uppercase -text-bold">Получить предложение</span></button>
 						</div>
-						<div class="in-numbers__item anim-fadeInLeft">
-							<div class="in-numbers__num">175 +</div>
-							<div class="in-numbers__txt">запущено проектов</div>
-						</div>
-						<div class="in-numbers__item anim-fadeInLeft">
-							<div class="in-numbers__num">32</div>
-							<div class="in-numbers__txt">постоянный штат</div>
-						</div>
+					</div>
+					<div class="terms-user-agreement mb-0">
+						<label class="choise">
+							<input class="choise__input" type="checkbox" id="i8y4re2o">
+							<span class="choise__box"><svg class="_icon"><use href="img/svg/sprite.svg#i-chek"></use></svg></span>
+						</label>
+						<label class="terms-user-agreement__text" for="i8y4re2o">Я принимаю условия <a href="#">пользовательского соглашения</a> и&nbsp;даю свое согласие на&nbsp;обработку <a href="#">персональных&nbsp;данных</a></label>
 					</div>
 				</div>
-				<div class="about-us__art"></div>
 			</div>
-		</section>
+		</form>
 
-		<!-- Clients -->
-		<section class="clients">
-			<div class="container">
-				<header class="clients__header">
-					<div class="clients__heading">
-						<h2 class="section-heading anim-fadeInDown">Нам доверяют</h2>
-					</div>
-					<div class="clients__desc anim-fadeInRight">
-						<p>Мы <span class="color-accent">сделали счастливыми огромное количество клиентов</span> из разных областей —<br class="d-none d-md-inline"> начиная от детских школ и заканчивая медицинскими предприятиями</p>
-					</div>
-				</header>
-				<div class="swiper-clients swiper">
+		<div class="container-fix">
+
+			<section class="reviews">
+				<div class="section-heading">
+					<h6 class="section-heading__text">Наша сила —дружелюбный менеджменти соблюдение сроков</h6>
+					<h3 class="section-heading__title">Отзывы клиентов<br> это подтверждают</h3>
+				</div>
+				<div class="reviews-swiper swiper">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide anim-bounceIn">
-							<a class="clients__box" href="#" target="_blank">
-								<div class="clients__logo clients__logo-kamin"></div>
-							</a>
-						</div>
-						<div class="swiper-slide anim-bounceIn">
-							<a class="clients__box" href="#" target="_blank">
-								<div class="clients__logo clients__logo-dinamika"></div>
-							</a>
-						</div>
-						<div class="swiper-slide anim-bounceIn">
-							<a class="clients__box" href="#" target="_blank">
-								<div class="clients__logo clients__logo-ragrad"></div>
-							</a>
-						</div>
-						<div class="swiper-slide anim-bounceIn">
-							<a class="clients__box" href="#" target="_blank">
-								<div class="clients__logo clients__logo-houseboat"></div>
-							</a>
-						</div>
-						<div class="swiper-slide anim-bounceIn">
-							<a class="clients__box" href="#" target="_blank">
-								<div class="clients__logo clients__logo-genomics"></div>
-							</a>
-						</div>
-						<div class="swiper-slide anim-bounceIn">
-							<a class="clients__box" href="#" target="_blank">
-								<div class="clients__logo clients__logo-madars"></div>
-							</a>
-						</div>
-						<div class="swiper-slide anim-bounceIn">
-							<a class="clients__box" href="#" target="_blank">
-								<div class="clients__logo clients__logo-stylebooks"></div>
-							</a>
-						</div>
-						<div class="swiper-slide anim-bounceIn">
-							<a class="clients__box" href="#" target="_blank">
-								<div class="clients__logo clients__logo-styleeco"></div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Work -->
-		<section class="work container" id="s-project">
-			<div class="swiper-work-nav">
-				<div class="swiper-work-next">
-					<svg>
-						<use href="img/svg/sprite.svg#i-rightline-big"></use>
-					</svg>
-				</div>
-			</div>
-			<div class="swiper-work swiper">
-				<div class="swiper-wrapper">
-					<!-- slide-1 -->
-					<div class="swiper-slide anim-zoomIn">
-						<div class="work-block">
-							<div class="work-block__inner">
-								<div class="work-block__aside">
-									<div class="work-block__conv">
-										<div class="work-block__conv-num">5.6<small>%</small></div>
-										<div class="work-block__conv-txt">конверсия<br> в заявку</div>
+						<div class="swiper-slide">
+							<div class="reviews__block">
+								<div class="reviews__header row">
+									<div class="col-auto">
+										<div class="reviews__avatar"><img src="img/avatar1.jpg" alt="1"></div>
+									</div>
+									<div class="col">
+										<div class="reviews__name mb-1 pt-1">Бармин В.</div>
+										<div class="reviews__working">Руководитель компании “Древодел 52”</div>
 									</div>
 								</div>
-								<div class="work-block__content">
-									<div class="work-block__name">Компания «Brick to brick»</div>
-									<h4 class="work-block__title">5 заказов на 1,5 млн.<br> рублей на ремонт квартир<br> в Смоленске и области</h4>
-									<p class="work-block__desc">Разработали квиз-сайт, запустили Директ<br> + контекст и подключили CRM-систему</p>
-									<div class="work-block__statistic">
-										<div class="work-block__statistic-item">
-											<div class="work-block__statistic-ico">
-												<img src="img/ico/money.png" alt="ico">
-											</div>
-											<div class="work-block__statistic-txt weight-700">Рост чистой<br> прибыли на 100%</div>
-										</div>
-										<div class="work-block__statistic-item">
-											<div class="work-block__statistic-ico">
-												<img src="img/ico/phone.png" alt="ico">
-											</div>
-											<div class="work-block__statistic-txt">Более 120<br> заявок в месяц</div>
+								<div class="reviews__descrp">
+									<p>Обратился в компанию Синтез для создания сайта. Отличные&nbsp;дружелюбные клиентоориентированные ребята.</p>
+									<p>Все спокойно , поэтапно , качественно , учитывая все мои пожелания и реализуя их через призму компетентных навыков вотворили мою мечту в дизнь  Советую  Результат вас поралует!</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="reviews__block">
+								<div class="reviews__header row">
+									<div class="col-auto">
+										<div class="reviews__avatar"><img src="img/avatar2.jpg" alt="2"></div>
+									</div>
+									<div class="col">
+										<div class="reviews__name mb-1 pt-1">Савенко А.С.</div>
+										<div class="reviews__working">Генеральный директор ЮК FOX</div>
+									</div>
+								</div>
+								<div class="reviews__descrp">
+									<p>От лица нашей компании выражаем благодарность агентству за&nbsp;профессиональную работу над разработкой и<br class="d-none d-xl-inline"> продвижением нашего сайта.</p>
+									<p>Результаты превзошли ожидания, и мы уже видим рост интереса к&nbsp;нашему бренду</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="reviews__block">
+								<div class="reviews__header row">
+									<div class="col-auto">
+										<div class="reviews__avatar"><img src="img/avatar1.jpg" alt="1"></div>
+									</div>
+									<div class="col">
+										<div class="reviews__name mb-1 pt-1">Бармин В.</div>
+										<div class="reviews__working">Руководитель компании “Древодел 52”</div>
+									</div>
+								</div>
+								<div class="reviews__descrp">
+									<p>Обратился в компанию Синтез для создания сайта. Отличные&nbsp;дружелюбные клиентоориентированные ребята.</p>
+									<p>Все спокойно , поэтапно , качественно , учитывая все мои пожелания и реализуя их через призму компетентных навыков вотворили мою мечту в дизнь  Советую  Результат вас поралует!</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="reviews__block">
+								<div class="reviews__header row">
+									<div class="col-auto">
+										<div class="reviews__avatar"><img src="img/avatar2.jpg" alt="2"></div>
+									</div>
+									<div class="col">
+										<div class="reviews__name mb-1 pt-1">Савенко А.С.</div>
+										<div class="reviews__working">Генеральный директор ЮК FOX</div>
+									</div>
+								</div>
+								<div class="reviews__descrp">
+									<p>От лица нашей компании выражаем благодарность агентству за&nbsp;профессиональную работу над разработкой и<br> продвижением нашего сайта.</p>
+									<p>Результаты превзошли ожидания, и мы уже видим рост интереса к&nbsp;нашему бренду</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-prev reviews-swiper-prev"><svg class="_arrow"><use href="img/svg/sprite.svg#i-arrow"></use></svg></div>
+					<div class="swiper-button-next reviews-swiper-next"><svg class="_arrow"><use href="img/svg/sprite.svg#i-arrow"></use></svg></div>
+				</div>
+			</section>
+
+			<section class="contact">
+				<div class="row">
+					<div class="col-12 col-md">
+						<div class="contact__title pt-4 pb-5 mt-3">Хватит уже листать,<br> давайте пообщаемся?</div>
+						<div class="mb-5">
+							<div class="contact__subtitle">Позвоните:</div>
+							<a class="contact__link-big" href="tel:+79503787272">+7 (950) 378 72-72</a>
+						</div>
+						<div class="mb-5">
+							<div class="contact__subtitle">Отправьте запрос на почту</div>
+							<a class="contact__link-big" href="mailto:info@sintez-digital.ru">info@sintez-digital.ru</a>
+						</div>
+					</div>
+					<div class="col-12 col-md">
+						<form class="contact-form">
+							<div class="row gx-3 gx-lg-5 mb-4 mb-lg-5 pb-1">
+								<div class="col">
+									<label class="contact__label" for="ho9s6elv80">Имя*</label>
+									<input type="text" placeholder="Введите ваше имя" id="ho9s6elv80">
+								</div>
+								<div class="col">
+									<label class="contact__label" for="ho9s3az6">Номер телефона</label>
+									<div class="input-block d-flex">
+										<input id="ho9s3az6" type="tel" placeholder="+7 (___) ___-__-__">
+										<div class="input-block__icon">
+											<svg class="_icon-tel"><use href="img/svg/sprite.svg#i-tel"></use></svg>
 										</div>
 									</div>
-									<div class="work-block__action">
-										<a class="btn btn-solid" href="#">
-											<div class="btn__txt">Подробнее...</div>
-											<div class="btn__circle-box -right">
-												<svg class="btn__ico btn__ico-right">
-													<use href="img/svg/sprite.svg#i-right"></use>
-												</svg>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 mb-5">
+									<label class="contact__label" for="ho2b7d6w0">Опишите будущий проект</label>
+									<textarea class="d-block" id="ho2b7d6w0" placeholder="Опишите что Вы хотите получить от проекта"></textarea>
+								</div>
+								<div class="col-12 mb-5">
+									<div class="contact-choise__wrap">
+										<span class="contact-choise__label contact__label">Как с вами связаться:</span>
+										<div class="contact-choise">
+											<div class="contact-choise__item">
+												<label class="choise">
+													<input class="choise__input" type="radio" name="choise-contact" checked id="ka8e5c1rgvs5">
+													<span class="choise__box"><svg class="_icon"><use href="img/svg/sprite.svg#i-chek"></use></svg></span>
+												</label>
+												<label class="contact-choise__text" for="ka8e5c1rgvs5">Телефон</label>
 											</div>
+											<div class="contact-choise__item">
+												<label class="choise">
+													<input class="choise__input" type="radio" name="choise-contact" id="kd42sw35c8p">
+													<span class="choise__box"><svg class="_icon"><use href="img/svg/sprite.svg#i-chek"></use></svg></span>
+												</label>
+												<label class="contact-choise__text" for="kd42sw35c8p">Telegram</label>
+											</div>
+											<div class="contact-choise__item">
+												<label class="choise">
+													<input class="choise__input" type="radio" name="choise-contact" id="y2us5as4fdf7">
+													<span class="choise__box"><svg class="_icon"><use href="img/svg/sprite.svg#i-chek"></use></svg></span>
+												</label>
+												<label class="contact-choise__text" for="y2us5as4fdf7">WhatsApp</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="terms-user-agreement _small mb-4 mb-lg-5">
+										<label class="choise _small">
+											<input class="choise__input" type="checkbox" id="s8q2s73sw42x">
+											<span class="choise__box"><svg class="_icon"><use href="img/svg/sprite.svg#i-chek"></use></svg></span>
+										</label>
+										<label class="terms-user-agreement__text" for="s8q2s73sw42x">Я принимаю условия <a href="#">пользовательского соглашения</a> и&nbsp;даю свое согласие на&nbsp;обработку <a href="#">персональных&nbsp;данных</a></label>
+									</div>
+									<div class="d-flex justify-content-center pt-4">
+										<a class="btn _big" href="#">
+											<div class="-text-bold -text-uppercase">Получить предложение</div>
 										</a>
 									</div>
 								</div>
-							</div>
-							<picture class="work-block__pic">
-								<source srcset="img/media/768/work/01.jpg" media="(max-width: 768px)" />
-								<img src="img/work/01.jpg" alt="01">
-							</picture>
-						</div>
-					</div>
-					<!-- slide-2 -->
-					<div class="swiper-slide anim-zoomIn">
-						<div class="work-block -white">
-							<div class="work-block__inner">
-								<div class="work-block__aside">
-									<div class="work-block__conv -blue">
-										<div class="work-block__conv-num">5.6<small>%</small></div>
-										<div class="work-block__conv-txt">конверсия<br> в заявку</div>
-									</div>
-								</div>
-								<div class="work-block__content">
-									<div class="work-block__name">Компания «РА ГАРД»</div>
-									<h4 class="work-block__title">200 заявок по 417 рублей<br> в нише по инженерным изысканиям в Москве и МО</h4>
-									<p class="work-block__desc">Разработали квиз-сайт, запустили Директ + контекст и подключили CRM-систему</p>
-									<div class="work-block__statistic">
-										<div class="work-block__statistic-item">
-											<div class="work-block__statistic-ico">
-												<img src="img/ico/money.png" alt="ico">
-											</div>
-											<div class="work-block__statistic-txt weight-700">Рост прибыли<br> более чем в 4 раза</div>
-										</div>
-										<div class="work-block__statistic-item">
-											<div class="work-block__statistic-ico">
-												<img src="img/ico/phone.png" alt="ico">
-											</div>
-											<div class="work-block__statistic-txt">Более 120<br> заявок в месяц</div>
-										</div>
-									</div>
-									<div class="work-block__action">
-										<a class="btn btn-solid" href="#">
-											<div class="btn__txt">Подробнее...</div>
-											<div class="btn__circle-box -right">
-												<svg class="btn__ico btn__ico-right">
-													<use href="img/svg/sprite.svg#i-right"></use>
-												</svg>
-											</div>
-										</a>
-									</div>
-								</div>
-							</div>
-							<picture class="work-block__pic">
-								<source srcset="img/media/768/work/02.jpg" media="(max-width: 768px)" />
-								<img src="img/work/02.jpg" alt="02">
-							</picture>
-						</div>
-					</div>
-					<!-- slide-3 -->
-					<div class="swiper-slide anim-zoomIn">
-						<div class="work-block">
-							<div class="work-block__inner">
-								<div class="work-block__aside">
-									<div class="work-block__conv">
-										<div class="work-block__conv-num">7.3<small>%</small></div>
-										<div class="work-block__conv-txt">конверсия<br> в заявку</div>
-									</div>
-								</div>
-								<div class="work-block__content">
-									<div class="work-block__name">Компания «Народный Камин»</div>
-									<h4 class="work-block__title">30 заявок по 343 руб<br> за 10 дней работы<br> на установку каминов</h4>
-									<p class="work-block__desc">Разработали квиз-сайт, запустили Директ<br> + контекст и подключили CRM-систему</p>
-									<div class="work-block__statistic">
-										<div class="work-block__statistic-item">
-											<div class="work-block__statistic-ico">
-												<img src="img/ico/money.png" alt="ico">
-											</div>
-											<div class="work-block__statistic-txt weight-700">Увеличение<br> клиентов вдвое</div>
-										</div>
-										<div class="work-block__statistic-item">
-											<div class="work-block__statistic-ico">
-												<img src="img/ico/phone.png" alt="ico">
-											</div>
-											<div class="work-block__statistic-txt">Более 120<br> заявок в месяц</div>
-										</div>
-									</div>
-									<div class="work-block__action">
-										<a class="btn btn-solid" href="#">
-											<div class="btn__txt">Подробнее...</div>
-											<div class="btn__circle-box -right">
-												<svg class="btn__ico btn__ico-right">
-													<use href="img/svg/sprite.svg#i-right"></use>
-												</svg>
-											</div>
-										</a>
-									</div>
-								</div>
-							</div>
-							<picture class="work-block__pic">
-								<source srcset="img/media/768/work/03.jpg" media="(max-width: 768px)" />
-								<img src="img/work/03.jpg" alt="03">
-							</picture>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-pagination swiper-work-nav"></div>
-			</div>
-			
-		</section>
-
-		<!-- Bitrix -->
-		<section class="bitrix">
-			<div class="container">
-				<div class="bitrix__content">
-					<h5 class="bitrix__title h5 anim-fadeInDown">Сотрудничество с Битрикс</h5>	
-					<h3 class="bitrix__heading h3 anim-fadeIn">Наше агентство является<br> сертифицированым <strong class="color-accent">партнером 1С-Битрикс</strong></h3>	
-					<p class="bitrix__subtitle h6 anim-fadeInUp">Почему мы выбираем Bitrix вместе с 1С:</p>	
-					<div class="bitrix__lists">
-						<ul class="ul anim-fadeInLeft">
-							<li>Создание крупных<br class="d-md-none"> и масштабных проектов</li>
-							<li>Масштабируемая и<br class="d-md-none"> отказоустойчивая система</li>
-							<li>Идеален для интернет<br class="d-md-none"> магазинов</li>
-							<li>Технология композитного<br class="d-md-none"> сайта в сотни раз<br class="d-none d-md-inline"> увеличивает<br class="d-md-none"> скорость загрузки сайта</li>
-							<li>Легкое управление сайтом</li>
-						</ul>
-						<ul class="ul d-none d-sm-inline anim-fadeInLeft">
-							<li>Надежная система<br class="d-md-none"> безопасности</li>
-							<li>Встроенный модуль<br class="d-md-none"> SEO продвижения</li>
-							<li>Бесплатная круглосуточная<br class="d-md-none"> поддержка</li>
-							<li>Регулярный выпуск<br class="d-md-none"> обновлений.<br class="d-none d-md-inline"> Система<br class="d-md-none"> постоянно развивается.</li>
-							<li>Бесплатное облачное<br class="d-md-none"> хранилище</li>
-						</ul>
-					</div>
-					<div class="competence">
-						<img class="competence__item anim-rotateInDownLeft" src="img/competence/1.svg" width="146" alt="bitrix">
-						<img class="competence__item anim-rotateInDownLeft" src="img/competence/2.svg" width="146" alt="bitrix">
-						<img class="competence__item anim-rotateInDownLeft" src="img/competence/3.svg" width="164" alt="bitrix">
-						<img class="competence__item anim-rotateInDownLeft" src="img/competence/4.svg" width="164" alt="bitrix">
-					</div>
-				</div>
-			</div>
-			<svg class="bitrix__logo">
-				<use href="img/svg/sprite.svg#i-bitrix"></use>
-			</svg>
-			<div class="bitrix-gold-certified">
-				<img src="img/gold-certified.png" width="120" alt="certified">
-			</div>
-		</section>
-
-		<!-- Consult -->
-		<section class="consut">
-			<div class="container">
-				<header class="section-heading anim-fadeInLeft">
-					<h2 class="section-heading__title weight-500">Запишитесь на <strong class="color-accent">бесплатную<br> комплексную диагностику</strong> бизнеса,</h2>
-					<h3 class="section-heading__txt weight-300">которая позволит заложить маркетинговую стратегию <strong class="weight-500 color-accent">на&nbsp;3-6 месяцев вперед</strong></h3>
-				</header>
-			</div>
-			<div class="consut__content">
-				<div class="consut__container container">
-					<div class="consut__advantage">
-						<h5 class="accent-title anim-slideInDown"><span class="accent-title__txt">Во время комплексной диагностики, <strong class="weight-500">вы узнаете:</strong></span></h5>
-						<ul class="list-point">
-							<li class="list-point__item anim-slideInLeft">
-								<div class="list-point__ico">
-									<svg class="list-point__svg _ico1">
-										<use href="img/svg/sprite.svg#i-graph"></use>
-									</svg>
-								</div>
-								<p class="list-point__txt"><b class="weight-500">Какие инструменты должны быть запущены</b> и<br class="d-none d-xl-inline"> к каким показателям мы должны прийти</p>
-							</li>
-							<li class="list-point__item anim-slideInLeft">
-								<div class="list-point__ico">
-									<svg class="list-point__svg _ico2">
-										<use href="img/svg/sprite.svg#i-business"></use>
-									</svg>
-								</div>
-								<p class="list-point__txt"><b class="weight-500">Узкие места в процессе продаж,</b> которые в<br class="d-none d-xl-inline"> данный момент крадут вашу прибыль</p>
-							</li>
-							<li class="list-point__item anim-slideInLeft">
-								<div class="list-point__ico">
-									<svg class="list-point__svg _ico3">
-										<use href="img/svg/sprite.svg#i-clock"></use>
-									</svg>
-								</div>
-								<p class="list-point__txt"><b class="weight-500">Срок окупаемости</b> внедренной<br class="d-none d-xl-inline"> маркетинговой системы</p>
-							</li>
-						</ul>
-					</div>
-					<div class="consut__form">
-						<form class="consut-form">
-							<div class="consut-form__inputs">
-								<div class="input anim-bounceIn">
-									<div class="input__label">
-										<label for="input-name">Имя</label>
-									</div>
-									<input type="text" placeholder="Ваше имя" id="input-name">
-								</div>
-								<div class="input anim-bounceIn">
-									<div class="input__label">
-										<label for="input-phone">Телефон</label>
-									</div>
-									<input type="tel" placeholder="+7 (ххх) ххх - хх - хх" id="input-phone">
-								</div>
-							</div>
-							<div class="consut-form__action">
-								<button class="btn btn-solid anim-zoomIn">
-									<div class="btn__txt">Отправить заявку</div>
-									<div class="btn__circle-box -right">
-										<svg class="btn__ico btn__ico-right">
-											<use href="img/svg/sprite.svg#i-right"></use>
-										</svg>
-									</div>
-								</button>
-							</div>
-							<div class="consut-form__agreement anim-fadeIn">
-								<label class="check">
-									<input class="check__input" type="checkbox" required>
-									<span class="check__box"></span>
-									<p class="consut-form__agreement-txt">Оставляя заявку, вы даёте согласие на <a href="#">обработку ваших персональных данных,</a><br class="d-none d-lg-inline"> а также подтверждаете, что вам исполнилось 18 лет</p>
-								</label>
 							</div>
 						</form>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<!-- Article -->
-		<section class="article" id="s-media">
-			<div class="container">
-				<header class="article__header">
-					<div class="article__header-heading">
-						<h2 class="section-heading anim-fadeInLeft">Медиацентр</h2>
-					</div>
-					<div class="article__header-btn anim-bounceInRight">
-						<a class="btn btn-outline btn-small" href="#">Больше статей</a>
-					</div>
-				</header>
-				<div class="article__post">
-					<div class="article-item anim-bounceIn">
-						<div class="article-item__inner">
-							<div class="article-item__logo">
-								<svg class="logo-spark" width="189" height="50">
-									<use href="img/svg/logos.svg#i-spark"></use>
-								</svg>
-							</div>
-							<div class="article-item__txt">
-								<p>Всплывающие окна на мебельном сайте: раздражитель или лид-магнит для новых клиентов?</p>
-							</div>
-							<div class="article-item__links">
-								<a href="#">#Кейсы</a>
-								<a href="#">#Продвижение</a>
-								<a href="#">#Обслуживание сайтов</a>
-							</div>
-						</div>
-					</div>
-					<div class="article-item anim-bounceIn">
-						<div class="article-item__inner">
-							<div class="article-item__logo">
-								<svg class="logo-ppc" width="212" height="41">
-									<use href="img/svg/logos.svg#i-ppc"></use>
-								</svg>
-							</div>
-							<div class="article-item__txt">
-								<p>Как дать доступ к рекламному
-									кабинету Yandex диркт и какие
-									сложности могут возникнуть?</p>
-							</div>
-							<div class="article-item__links">
-								<a href="#">#Кейсы</a>
-								<a href="#">#Продвижение</a>
-								<a href="#">#Обслуживание сайтов</a>
-							</div>
-						</div>
-					</div>
-					<div class="article-item anim-bounceIn">
-						<div class="article-item__inner">
-							<div class="article-item__logo">
-								<div class="logo">
-									<svg class="logo__ico">
-										<use href="img/svg/logos.svg#i-sintez"></use>
-									</svg>
-									<div class="logo__txt">Синтез</div>
-								</div>
-							</div>
-							<div class="article-item__txt">
-								<p>Для чего нужен сайт <br>
-									компании ?</p>
-							</div>
-							<div class="article-item__links">
-								<a href="#">#Статьи</a>
-								<a href="#">#Разработка сайта</a>
-							</div>
-						</div>
-					</div>
-					<div class="article-item anim-bounceIn">
-						<div class="article-item__inner">
-							<div class="article-item__logo">
-								<svg class="logo-vc" width="53" height="50">
-									<use href="img/svg/logos.svg#i-vc"></use>
-								</svg>
-							</div>
-							<div class="article-item__txt">
-								<p>Наточил я свой топор, 
-									головешек полон двор! 
-									Продвигаем мастерскую по
-									заточке ножей и инструментов
-									в онлайн</p>
-							</div>
-							<div class="article-item__links">
-								<a href="#">#SEO</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-article swiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide anim-zoomIn">
-							<div class="article-item">
-								<div class="article-item__inner">
-									<div class="article-item__logo">
-										<svg class="logo-spark" width="142" height="38">
-											<use href="img/svg/logos.svg#i-spark"></use>
-										</svg>
-									</div>
-									<div class="article-item__txt">
-										<p>Всплывающие окна на мебельном сайте: раздражитель или лид-магнит для новых клиентов?</p>
-									</div>
-									<div class="article-item__links">
-										<a href="#">#Кейсы</a>
-										<a href="#">#Продвижение</a>
-										<a href="#">#Обслуживание сайтов</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide anim-zoomIn">
-							<div class="article-item">
-								<div class="article-item__inner">
-									<div class="article-item__logo">
-										<svg class="logo-ppc" width="159" height="31">
-											<use href="img/svg/logos.svg#i-ppc"></use>
-										</svg>
-									</div>
-									<div class="article-item__txt">
-										<p>Как дать доступ к рекламному
-											кабинету Yandex диркт и какие
-											сложности могут возникнуть?</p>
-									</div>
-									<div class="article-item__links">
-										<a href="#">#Кейсы</a>
-										<a href="#">#Продвижение</a>
-										<a href="#">#Обслуживание сайтов</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide anim-zoomIn">
-							<div class="article-item">
-								<div class="article-item__inner">
-									<div class="article-item__logo">
-										<div class="logo">
-											<svg class="logo__ico">
-												<use href="img/svg/logos.svg#i-sintez"></use>
-											</svg>
-											<div class="logo__txt">Синтез</div>
-										</div>
-									</div>
-									<div class="article-item__txt">
-										<p>Для чего нужен сайт <br>
-											компании ?</p>
-									</div>
-									<div class="article-item__links">
-										<a href="#">#Статьи</a>
-										<a href="#">#Разработка сайта</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide anim-zoomIn">
-							<div class="article-item">
-								<div class="article-item__inner">
-									<div class="article-item__logo">
-										<svg class="logo-vc" width="40" height="38">
-											<use href="img/svg/logos.svg#i-vc"></use>
-										</svg>
-									</div>
-									<div class="article-item__txt">
-										<p>Наточил я свой топор, 
-											головешек полон двор! 
-											Продвигаем мастерскую по
-											заточке ножей и инструментов
-											в онлайн</p>
-									</div>
-									<div class="article-item__links">
-										<a href="#">#SEO</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-pagination swiper-article-nav"></div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Job -->
-		<section class="job" id="s-job">
-			<div class="container">
-				<article class="job-article">
-					<h2 class="section-heading anim-fadeInLeft">Работа в команде Синтеза</h2>
-					<p class="section-desc weight-500 anim-fadeInUp">Мы занимаемся <strong class="color-accent">интернет-маркетингом с 2012 года</strong> — разрабатываем комплексные стратегии,<br class="d-none d-xl-inline"> создаём и продвигаем сайты, запускаем рекламные кампании. Работаем с проектами<br class="d-none d-xl-inline"> любого уровня сложности — в нашем портфолио клиенты из самых различных отраслей и регионов России</p>
-				</article>
-			</div>
-			<div class="job-beefup">
-				<!-- item-1 -->
-				<div class="job-beefup__item beefup anim-slideInUp">
-					<div class="beefup__head">
-						<div class="beefup__heading">Менеджер по продажам</div>
-						<div class="beefup__toggle">
-							<svg class="beefup__toggle-arrow"><use href="img/svg/sprite.svg#i-arrow-down"></use></svg>
-							<svg class="beefup__toggle-close"><use href="img/svg/sprite.svg#i-close"></use></svg>
-						</div>
-					</div>
-					<div class="beefup__body">
-						<div class="job-beefup__body">
-							<aside class="job-beefup__aside">
-								<picture>
-									<source srcset="img/emoji-maneger.png" width="80" media="(max-width: 768px)" />
-									<img src="img/emoji-maneger.png" width="120" alt=emoji">
-								</picture>
-							</aside>
-							<div class="job-beefup__content">
-								<p class="job-beefup__txt">Для взаимодействия с нашими клиентами и расширения их базы мы ищем человека, способного налаживать контакты с руководителями предприятий и маркетологами, менеджерами проектов и инженерами, дизайнерами и верстальщиками. По сути, все, что нужно уметь — это общаться с людьми: грамотно, четко и располагающе к себе. Все, что нужно знать — это нашу внутреннюю «кухню» (но это уже в процессе).</p>
-								<div class="job-beefup__lists">
-									<div class="job-beefup__list">
-										<h5 class="accent-title">
-											<span class="accent-title__txt">Требования к<br class="d-lg-none"> соискателю</span>
-										</h5>
-										<ul class="ul ul-line">
-											<li>Коммуникабельность</li>
-											<li>Грамотный русский язык</li>
-											<li>Умение ясно излагать свои мысли</li>
-											<li>Базовые навыки Word, Excel</li>
-										</ul>
-									</div>
-									<div class="job-beefup__list">
-										<h5 class="accent-title">
-											<span class="accent-title__txt">Условия</span>
-										</h5>
-										<ul class="ul ul-line">
-											<li>Офис, 9:00—18:00</li>
-											<li>Оплачиваемые отпуски, больничные</li>
-											<li>Официальное трудоустройство</li>
-											<li>Карьерный рост</li>
-										</ul>
-									</div>
-								</div>
-								<div class="job-beefup__action">
-									<a class="btn btn-trans btn-small btn-white" href="#">
-										<div class="btn__txt weight-500">Отправить резюме</div>
-										<div class="btn__circle-box -right">
-											<svg class="btn__ico btn__ico-right">
-												<use href="img/svg/sprite.svg#i-right"></use>
-											</svg>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- item-2 -->
-				<div class="job-beefup__item beefup anim-slideInUp">
-					<div class="beefup__head">
-						<div class="beefup__heading">Специалист по контекстной рекламе</div>
-						<div class="beefup__toggle">
-							<svg class="beefup__toggle-arrow"><use href="img/svg/sprite.svg#i-arrow-down"></use></svg>
-							<svg class="beefup__toggle-close"><use href="img/svg/sprite.svg#i-close"></use></svg>
-						</div>
-					</div>
-					<div class="beefup__body">
-						<div class="job-beefup__body">
-							<aside class="job-beefup__aside">
-								<picture>
-									<source srcset="img/emoji-arrow.png" width="80" media="(max-width: 768px)" />
-									<img src="img/emoji-arrow.png" width="120" alt=emoji">
-								</picture>
-							</aside>
-							<div class="job-beefup__content">
-								<p class="job-beefup__txt">Работа с аккаунтами наших клиентов в соцсетях. Необходимо знать, как определить аудиторию, в какую сторону сменить стратегию продвижения и нужно ли ее менять вообще. Настройка и ведение рекламных кампаний в соцсетях, подбор и составление ТЗ на публикации.</p>
-								<div class="job-beefup__lists">
-									<div class="job-beefup__list">
-										<h5 class="accent-title">
-											<span class="accent-title__txt">Требования к<br class="d-lg-none"> соискателю</span>
-										</h5>
-										<ul class="ul ul-line">
-											<li>Яндекс.Директ</li>
-											<li>Английский язык (базовый уровень)</li>
-											<li>Грамотный русский</li>
-											<li>Опыт работа от 2 лет</li>
-										</ul>
-									</div>
-									<div class="job-beefup__list">
-										<h5 class="accent-title">
-											<span class="accent-title__txt">Условия</span>
-										</h5>
-										<ul class="ul ul-line">
-											<li>Офис, 9:00—18:00, либо 10:00—19:00</li>
-											<li>Оплачиваемые отпуски, больничные</li>
-											<li>Официальное трудоустройство</li>
-											<li>Карьерный рост</li>
-										</ul>
-									</div>
-								</div>
-								<div class="job-beefup__action">
-									<a class="btn btn-trans btn-small btn-white" href="#">
-										<div class="btn__txt weight-500">Отправить резюме</div>
-										<div class="btn__circle-box -right">
-											<svg class="btn__ico btn__ico-right">
-												<use href="img/svg/sprite.svg#i-right"></use>
-											</svg>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- item-3 -->
-				<div class="job-beefup__item beefup anim-slideInUp">
-					<div class="beefup__head">
-						<div class="beefup__heading">SMM-менеджер</div>
-						<div class="beefup__toggle">
-							<svg class="beefup__toggle-arrow"><use href="img/svg/sprite.svg#i-arrow-down"></use></svg>
-							<svg class="beefup__toggle-close"><use href="img/svg/sprite.svg#i-close"></use></svg>
-						</div>
-					</div>
-					<div class="beefup__body">
-						<div class="job-beefup__body">
-							<aside class="job-beefup__aside">
-								<picture>
-									<source srcset="img/emoji-surfer.png" width="80" media="(max-width: 768px)" />
-									<img src="img/emoji-surfer.png" width="120" alt=emoji">
-								</picture>
-							</aside>
-							<div class="job-beefup__content">
-								<p class="job-beefup__txt">Работа с аккаунтами наших клиентов в соцсетях. Необходимо знать, как определить аудиторию, в какую сторону сменить стратегию продвижения и нужно ли ее менять вообще. Настройка и ведение рекламных кампаний в соцсетях, подбор и составление ТЗ на публикации.</p>
-								<div class="job-beefup__lists">
-									<div class="job-beefup__list">
-										<h5 class="accent-title">
-											<span class="accent-title__txt">Требования к<br class="d-lg-none"> соискателю</span>
-										</h5>
-										<ul class="ul ul-line">
-											<li>Знание Facebook Business Manager</li>
-											<li>Знание форматов публикаций</li>
-											<li>Умение эффективно распределять бюджет</li>
-											<li>Английский язык (базовый уровень)</li>
-											<li>Усидчивость, пунктуальность</li>
-										</ul>
-									</div>
-									<div class="job-beefup__list">
-										<h5 class="accent-title">
-											<span class="accent-title__txt">Условия</span>
-										</h5>
-										<ul class="ul ul-line">
-											<li>Офис, 9:00—18:00</li>
-											<li>Оплачиваемые отпуски, больничные</li>
-											<li>Официальное трудоустройство</li>
-											<li>Карьерный рост</li>
-										</ul>
-									</div>
-								</div>
-								<div class="job-beefup__action">
-									<a class="btn btn-trans btn-small btn-white" href="#">
-										<div class="btn__txt weight-500">Отправить резюме</div>
-										<div class="btn__circle-box -right">
-											<svg class="btn__ico btn__ico-right">
-												<use href="img/svg/sprite.svg#i-right"></use>
-											</svg>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- item-4 -->
-				<div class="job-beefup__item beefup anim-slideInUp">
-					<div class="beefup__head">
-						<div class="beefup__heading">Программист PHP</div>
-						<div class="beefup__toggle">
-							<svg class="beefup__toggle-arrow"><use href="img/svg/sprite.svg#i-arrow-down"></use></svg>
-							<svg class="beefup__toggle-close"><use href="img/svg/sprite.svg#i-close"></use></svg>
-						</div>
-					</div>
-					<div class="beefup__body">
-						<div class="job-beefup__body">
-							<aside class="job-beefup__aside">
-								<picture>
-									<source srcset="img/emoji-man.png" width="80" media="(max-width: 768px)" />
-									<img src="img/emoji-man.png" width="120" alt=emoji">
-								</picture>
-							</aside>
-							<div class="job-beefup__content">
-								<p class="job-beefup__txt">Для разработки с нуля и поддержки существующих проектов нам требуется опытный программист, которого не удивишь словами «система контроля версий», Gulp и  «Битрикс» (на самом деле, этих слов еще больше).</p>
-								<div class="job-beefup__lists">
-									<div class="job-beefup__list">
-										<h5 class="accent-title">
-											<span class="accent-title__txt">Требования к<br class="d-lg-none"> соискателю</span>
-										</h5>
-										<ul class="ul ul-line">
-											<li>Опыт от 3-х лет</li>
-											<li>Знание одного из популярных фреймворков</li>
-											<li>Умение ориентироваться в чужом коде</li>
-											<li>Умение оценивать временные затраты</li>
-										</ul>
-									</div>
-									<div class="job-beefup__list">
-										<h5 class="accent-title">
-											<span class="accent-title__txt">Условия</span>
-										</h5>
-										<ul class="ul ul-line">
-											<li>Офис, 9:00—18:00, либо 10:00—19:00</li>
-											<li>Оплачиваемые отпуски, больничные</li>
-											<li>Официальное трудоустройство</li>
-											<li>Карьерный рост</li>
-										</ul>
-									</div>
-								</div>
-								<div class="job-beefup__action">
-									<a class="btn btn-trans btn-small btn-white" href="#">
-										<div class="btn__txt weight-500">Отправить резюме</div>
-										<div class="btn__circle-box -right">
-											<svg class="btn__ico btn__ico-right">
-												<use href="img/svg/sprite.svg#i-right"></use>
-											</svg>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		</div>
 
 	</main>
 
-	<!-- Footer -->
-	<footer class="footer" id="s-contact">
-		<div class="footer__inner">
-			<div class="container">
-				<h2 class="section-heading anim-fadeInLeft">Контакты</h2>
-				<div class="footer-contact">
-					<div class="footer-contact__row">
-						<div class="footer-contact__item anim-slideInUp">
-							<h6 class="footer-contact__title">Телефон</h6>
-							<a class="footer-contact__link" href="tel:88004466789">8 800 44 66 789</a>
-						</div>
-						<div class="footer-contact__item anim-slideInUp">
-							<h6 class="footer-contact__title">E-mail</h6>
-							<a class="footer-contact__link" href="mailto:info@sintez.digital">info@sintez.digital</a>
-						</div>
-						<div class="footer-contact__item contact__item-social anim-bounceIn">
-							<h6 class="footer-contact__title">Соц. сети</h6>
-							<div class="social-box">
-								<a href="#" class="social-box__btn social-box__vk">
-									<svg class="social-box__ico">
-										<use href="img/svg/sprite.svg#i-vk"></use>
-									</svg>
-								</a>
-								<a href="#" class="social-box__btn social-box__tg">
-									<svg class="social-box__ico">
-										<use href="img/svg/sprite.svg#i-tg"></use>
-									</svg>
-								</a>
-								<a href="#" class="social-box__btn social-box__vb">
-									<svg class="social-box__ico">
-										<use href="img/svg/sprite.svg#i-vb"></use>
-									</svg>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="footer-contact__row">
-						<div class="footer-contact__item footer-contact__address anim-slideInUp">
-							<h6 class="footer-contact__title">Адрес</h6>
-							<p class="footer-contact__txt">г. Нижний Новгород, Варварская улица, 32 оф. 170</p>
-						</div>
-					</div>
-					<div class="footer-contact__action">
-						<a class="btn btn-outline-white entry--call-modal anim-bounceIn">
-							<div class="btn__txt">Обсудить проект</div>
-							<div class="btn__circle-box -right">
-								<svg class="btn__ico btn__ico-right">
-									<use href="img/svg/sprite.svg#i-right"></use>
-								</svg>
-							</div>
-						</a>
-					</div>
-					<div class="footer-contact__polityc weight-500">
-						<a class="footer-contact__link d-inline d-sm-none" href="#">Политика<br class="d-none d-sm-inline"> конфиденциальности</a>
-					</div>
-				</div>
-			</div>
-			<div class="footer__copy">
-				<div class="container">
-					<p class="footer__copy-txt">© 2012 - 2024 Sintez.Digital</p>
-					<a class="footer__copy-link d-none d-sm-inline" href="#">Политика конфиденциальности</a>
-				</div>
+	<footer class="footer">
+		<div class="container-fix">
+			<div class="row pt-5 pb-4">
+				<div class="col-12 col-sm">© 2012 — 2025. ООО Синтез -  диджитал агентство</div>
+				<div class="col-12 col-sm-auto"><a href="#">Политика обработки персональных данных</a></div>
 			</div>
 		</div>
-		<div class="footer-art"></div>
 	</footer>
 
-	<div class="call-modal">
-		<div class="call-modal__close">
-			<svg>
-				<use href="img/svg/sprite.svg#i-closed"></use>
-			</svg>
-		</div>
-		<div class="call-modal__inner" data-simplebar>
-			<div class="container">
-				<h2 class="section-heading">Давайте обсудим проект</h2>
-				<form class="call-modal__form" action="#">
-					<div class="call-modal__input-row">
-						<div class="call-modal__input">
-							<div class="input">
-								<div class="input__label">
-									<label for="input-name1">Имя</label>
-								</div>
-								<input type="text" placeholder="Ваше имя" id="input-name1">
-							</div>
-						</div>
-						<div class="call-modal__input">
-							<div class="input">
-								<div class="input__label">
-									<label for="input-phone1">Телефон</label>
-								</div>
-								<input type="tel" placeholder="+7 (ххх) ххх - хх - хх" id="input-phone1">
-							</div>
-						</div>
-					</div>
-					<div class="call-modal__textarea">
-						<div class="textarea">
-							<div class="textarea__label">
-								<label for="textarea-desc">Проект</label>
-							</div>
-							<textarea id="textarea-desc" placeholder="Опишите Ваш проект ( необязательно )"></textarea>
-						</div>
-					</div>
-					<div class="call-modal__action">
-						<button class="btn btn-solid">
-							<div class="btn__txt">Отправить заявку</div>
-							<div class="btn__circle-box -right">
-								<svg class="btn__ico btn__ico-right">
-									<use href="img/svg/sprite.svg#i-right"></use>
-								</svg>
-							</div>
-						</button>
-					</div>
-					<div class="consut-form__agreement">
-						<label class="check">
-							<input class="check__input" type="checkbox" required>
-							<span class="check__box"></span>
-							<p class="consut-form__agreement-txt">Оставляя заявку, вы даёте согласие на <a href="#">обработку ваших персональных данных,</a><br class="d-none d-lg-inline"> а также подтверждаете, что вам исполнилось 18 лет</p>
-						</label>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-
-	<div class="phone-panel">
-		<div class="phone-panel__inner">
-			<nav class="phone-panel__menu">
-				<ul class="menu">
-					<li class="menu__item anim-fadeInUp">
-						<a class="menu__link" href="#s-project">Проекты</a>
-					</li>
-					<li class="menu__item anim-fadeInUp">
-						<a class="menu__link" href="#s-media">Медиацентр</a>
-					</li>
-					<li class="menu__item anim-fadeInUp">
-						<a class="menu__link" href="#s-job">Вакансии</a>
-					</li>
-					<li class="menu__item anim-fadeInUp">
-						<a class="menu__link" href="#s-contact">Контакты</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="phone-panel__action">
-				<a class="link anim-fadeInDown" href="#">
-					<span class="link__txt">Презентация <span class="color-dark">(5МБ — PDF)</span></span>
-					<svg class="link__ico">
-						<use href="img/svg/sprite.svg#i-download"></use>
-					</svg>
-				</a>
-				<a class="btn btn-trans btn-white anim-bounceIn" href="tel:88004466789">
-					<div class="btn__txt">8 800 44 66 789</div>
-				</a>
-				<a class="btn btn-outline-white entry--call-modal anim-bounceIn">
-					<div class="btn__txt">Обсудить проект</div>
-				</a>
-			</div>
-		</div>
-	</div>
-
-	<div class='loading-page'>
-		<div class="loading-page__counter">
-			<div class="loading-page__p">loading</div>
-			<div class="loading-page__h">0%</div>
-			<div class="loading-page__hr"></div>
-		</div>
-	</div>
+	<script src="js/darkmode.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/swiper.js"></script>
+	<script src="js/main.js"></script>
+	
 </body>
 </html>
