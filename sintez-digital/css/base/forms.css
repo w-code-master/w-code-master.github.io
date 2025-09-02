@@ -94,13 +94,13 @@ textarea:focus {
 }
 
 
-.check{
+.check {
 	cursor: pointer;
-    position: relative;
-    padding-left: 41px;
-    letter-spacing: .025em;
+	position: relative;
+	padding-left: 41px;
+	letter-spacing: .025em;
 }
-.check__box{
+.check__box {
 	position:absolute;
 	width:20px;
 	height:20px;
@@ -109,38 +109,38 @@ textarea:focus {
 	left:0;
 	top:50%;
 	margin-top:-10px;
-   border-radius: 6px;
+	border-radius: 6px;
 }
 ._dark .check__box {
 	border-color: #78788a;
 }
-.check__box:before{
+.check__box:before {
 	content:'';
 	height:10px;
 	width:10px;
-	background-color: var(--color-accent-hover);
+	background-color: var(--color-accent);
 	transition:.5s;
 	position:absolute;
 	left:50%;
 	top:50%;
 	margin:-5px 0 0 -5px;
 	visibility:hidden;
-	opacity:0
+	opacity:0;
 }
-.check__input{
+.check__input {
 	position:absolute;
 	width:1px;
 	height:1px;
 	overflow:hidden;
-	clip:rect(0 0 0 0)
+	clip:rect(0 0 0 0);
 }
-.check__input:focus+.check__box{
-	box-shadow:0 0 0 .2rem rgba(0,123,255,.35)
+.check__input:focus+.check__box {
+	box-shadow:0 0 0 .2rem rgba(0,123,255,.35);
 }
-.check__input:checked+.check__box:before{
+.check__input:checked+.check__box:before {
 	visibility:visible;
-	opacity:1
+	opacity:1;
 }
-.check__input:disabled+.check__box{
-	opacity:.4
+.check__input:disabled+.check__box {
+	opacity:.4;
 }

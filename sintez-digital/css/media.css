@@ -4,25 +4,8 @@
 html {
    font-size: 9px;
 }
-.header__action {
-   margin-right: 25px;
-   margin-left: 25px;
-}
-.header-service__pdf {
-   margin-right: 25px;
-}
-.header-service__list {
-   margin-left: 10px;
-}
 .section-heading::before {
    left: 15px;
-}
-.header-service__list {
-   flex-shrink: 0;
-   font-size: 1.5rem;
-}
-.header-service__list li {
-   margin-left: 30px;
 }
 .services__card-inner,
 .article-item__inner {
@@ -37,6 +20,15 @@ html {
 }
 .consut__advantage {
    padding-left: 0;
+}
+
+.work-boxs__inner {
+   padding-left: 11px;
+   padding-right: 11px;
+}
+.work-boxs__item {
+   padding-left: 11px;
+   padding-right: 11px;
 }
 
 .footer {
@@ -81,6 +73,21 @@ html {
 .quiz__heading {
    margin-bottom: 20px;
 }
+.header-offer {
+   min-height: 526px;
+}
+.work-boxs .work-box {
+   min-height: auto;
+}
+.work-boxs .work-box__preview {
+   width: 354px;
+   height: 222px;
+}
+.work-boxs .work-box__preview-screen {
+   width: 300px;
+   height: 188px;
+   margin-top: 9px;
+}
 }
 
 /* 1400px */
@@ -98,20 +105,6 @@ html {
 .ul-line li::before {
    top: 7px;
 }
-.header__menu {
-   margin-left: 30px;
-}
-.header__call {
-   margin-right: 20px;
-}
-.header__menu {
-   margin-left: auto;
-   padding-left: 0;
-}
-.header__action {
-   margin-left: 0;
-   margin-right: 0;
-}
 .header-hero {
    padding: 0;
 }
@@ -119,16 +112,22 @@ html {
    padding-top: 20px;
    padding-bottom: 60px;
 }
-.header-offer__action {
-   display: flex;
-   padding-top: 20px;
-   align-items: center;
-}
-.header-offer__action-btn {
-   margin-right: 15px;
-}
 .header-art {
-   background-image: url(../img/media/1400/header.jpg);
+   background-image: url("../img/media/1400/header.jpg");
+}
+.header-tags {
+   max-width: 650px;
+}
+
+.phone-panel,
+.call-modal {
+   background-image: url("../img/media/1400/modal-bg.jpg");
+}
+.phone-panel__content .section-heading {
+   margin-bottom: 35px;
+}
+.contact-item {
+   min-height: 100px;
 }
 
 .services__offers {
@@ -206,7 +205,7 @@ html {
 
 .call-modal__close {
    top: 99px;
-   right: 24px;
+   right: 46px;
 }
 .call-modal__close svg {
    width: 50px;
@@ -240,32 +239,40 @@ html {
 
 /* 1200px */
 @media only screen and (max-width : 1200px) {
-
+.header-offer__txt
 h2, .h2 {
    margin-bottom: 20px;
 }
-.logo {
-   font-size: 30px;
+.logo__ico {
+   width: 50px;
+   height: 50px;
+}
+.logo__txt {
+   width: 200px;
+   height: 27px;
 }
 .header {
    border-radius: 0 0 40px 40px;
 }
-.header-service__list {
-   width: 100%;
-   justify-content: center;
-   margin-left: 0;
-   font-size: 1.6rem;
-}
-.header-service__list li {
-   margin-left: 10px;
-   margin-right: 10px;
-}
-.header-offer {
-   max-width: 600px;
-   min-height: 400px;
-}
 .header-art {
-   background-image: url(../img/media/1200/header.jpg);
+   background-image: url("../img/media/1200/header.jpg");
+}
+.header__call {
+   margin-right: 14px;
+}
+.header__sandwich {
+   margin-right: 0;
+}
+.header-offer__txt {
+   max-width: 500px;
+}
+.header-top__action .btn {
+   height: 50px;
+   font-size: 2rem;
+}
+
+.phone-panel__content {
+   padding: 30px 25px 20px;
 }
 
 .services {
@@ -278,6 +285,18 @@ h2, .h2 {
 }
 .services__card .btn {
    height: 50px;
+}
+
+.swiper-clients,
+.clients__box {
+   border-radius: 15px;
+}
+
+.work {
+   padding-bottom: 90px;
+}
+.work-block {
+   width: 100%;
 }
 
 .about-us__art {
@@ -341,6 +360,21 @@ h2, .h2 {
    height: 54px;
 }
 
+.work-cards {
+   padding-left: 10px;
+   padding-right: 10px;
+   margin-bottom: 20px;
+}
+.work-cards__item {
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.work-boxs__item {
+   width: 50%;
+   padding-bottom: 35px;
+}
+
 .btn {
    height: 60px;
    font-size: 2.1rem;
@@ -359,9 +393,6 @@ h2, .h2 {
    height: 18px;
 }
 
-.bitrix {
-   border-radius: 30px;
-}
 .bitrix__logo {
    opacity: .6;
 }
@@ -417,6 +448,10 @@ h2, .h2 {
    padding: 25px;
 }
 
+.call-modal__close {
+   right: 21px;
+}
+
 
 }
 
@@ -457,9 +492,6 @@ h1, .h1 {
    padding-left: 20px;
    padding-right: 20px;
 }
-.sandwich-box {
-   display: block;
-}
 .section-heading {
    font-size: 4.6rem;
 }
@@ -470,7 +502,7 @@ h1, .h1 {
 .header {
    border-radius: 0 0 30px 30px;
 }
-.header__menu {
+.header__call {
    display: none;
 }
 .header__logo {
@@ -479,9 +511,6 @@ h1, .h1 {
 .header-top {
    padding-top: 15px;
    padding-bottom: 15px;
-}
-.header__call {
-   margin-right: 60px;
 }
 .header-offer {
    margin-left: 18px;
@@ -497,15 +526,14 @@ h1, .h1 {
    width: 38px;
    height: 38px;
 }
-.header-service {
-   display: none;
-}
 .header-art {
-   background-image: url(../img/media/992/header.jpg);
+   background-image: url("../img/media/992/header.jpg");
 }
-.marquee-text {
-   display: block;
+
+.contact-item {
+   min-height: 80px;
 }
+
 .services {
    padding-bottom: 30px;
 }
@@ -532,7 +560,7 @@ h1, .h1 {
    font-size: 2rem;
 }
 .clients {
-   padding-bottom: 65px;
+   padding-bottom: 45px;
 }
 .clients__heading {
    margin-top: 0;
@@ -547,14 +575,22 @@ h1, .h1 {
 .swiper-work::after {
    display: none;
 }
+
 .work {
    padding-bottom: 65px;
    padding-right: 0;
 }
 .work-block {
    width: 100%;
-   min-height: 500px;
+   min-height: 470px;
 }
+.work-box:hover .work-box__action {
+   height: 56px;
+}
+.work-modal {
+   padding: 20px;
+}
+
 .bitrix::before,
 .bitrix::after,
 .bitrix__logo {
@@ -644,16 +680,6 @@ h1, .h1 {
 .footer-contact__item:last-child {
    margin-right: 0;
 }
-.menu {
-   height: 100%;
-   flex-direction: column;
-}
-.menu__link {
-   width: 100%;
-   font-size: 3rem;
-   padding-left: 0;
-   padding-right: 0;
-}
 .footer-art {
    background-image: url(../img/media/992/footer.jpg);
 }
@@ -661,14 +687,7 @@ h1, .h1 {
    display: none;
 }
 .call-modal__inner {
-   padding-top: 100px;
-}
-.call-modal__close {
-   top: 86px;
-}
-.call-modal__close svg {
-   width: 60px;
-   height: 60px;
+   padding-top: 120px;
 }
 .call-modal .section-heading {
    margin-left: -18px;
@@ -703,7 +722,7 @@ h1, .h1 {
    max-width: 450px;
 }
 .page-inner {
-   padding-top: 90px;
+   padding-top: 100px;
 }
 .bread {
    font-size: 2rem;
@@ -736,12 +755,26 @@ h1, .h1 {
    width: 36px;
    height: 36px;
 }
+.logo__txt {
+   width: 180px;
+   height: 23px;
+}
 .header {
    padding-top: 70px;
 }
 .header-top {
    padding-top: 12px;
    padding-bottom: 12px;
+}
+.header-offer {
+   height: 460px;
+   padding-bottom: 30px;
+}
+.header-offer__txt {
+   font-size: 2.2rem;
+}
+.btn-normal .btn__circle-box.-right {
+   margin-left: 14px;
 }
 .header-art {
    left: 70px;
@@ -759,6 +792,18 @@ h1, .h1 {
    width: 70%;
    padding-left: 40px;
    padding-right: 40px;
+}
+.work-box {
+   min-height: auto;
+}
+.work-box__preview {
+   width: 354px;
+   height: 222px;
+}
+.work-box__preview-screen {
+   width: 300px;
+   height: 188px;
+   margin-top: 9px;
 }
 .competence {
    justify-content: center;
@@ -813,14 +858,6 @@ h1, .h1 {
 .call-modal .section-heading {
    max-width: 480px;
 }
-.call-modal__close {
-   right: 7px;
-   top: 94px;
-}
-.call-modal__close svg {
-   width: 50px;
-   height: 50px;
-}
 
 .quiz__title {
    margin-bottom: 25px;
@@ -837,6 +874,13 @@ h1, .h1 {
 /* 576px */
 @media only screen and (max-width : 576px) {
 
+.mfp-close {
+   width: 26px;
+   height: 26px;
+   right: 30px;
+   top: 30px;
+}
+
 .call-modal .section-heading {
    max-width: 400px;
    margin-left: -25px;
@@ -844,8 +888,8 @@ h1, .h1 {
    font-size: 3.5rem;
 }
 .call-modal__close {
-   right: 4px;
-   top: 68px;
+   right: 22px;
+    top: 80px;
 }
 .call-modal__close svg {
    width: 45px;
@@ -862,6 +906,15 @@ h1, .h1 {
    font-size: 2.2rem;
 }
 
+.phone-panel__inner {
+   padding-left: 40px;
+   padding-right: 40px;
+}
+.phone-panel__content .section-heading {
+   margin-bottom: 20px;
+   margin-left: -50px;
+}
+
 h1, .h1 {
    font-size: 4.6rem;
    margin-bottom: 25px;
@@ -870,6 +923,16 @@ input[type="email"], input[type="password"], input[type="tel"], input[type="text
    height: 48px;
    font-size: 2.5rem;
 }
+
+.logo__txt {
+   width: 160px;
+   height: 20px;
+}
+
+.menu__link {
+   font-size: 3.2rem;
+}
+
 .section-heading {
    padding-left: 50px;
    font-size: 4rem;
@@ -896,9 +959,6 @@ input[type="email"], input[type="password"], input[type="tel"], input[type="text
    left: 0;
    top: 50px;
    opacity: .6;
-}
-.header-offer__txt {
-   max-width: 340px;
 }
 .services {
    padding-top: 40px;
@@ -1089,6 +1149,9 @@ input[type="email"], input[type="password"], input[type="tel"], input[type="text
 .header-offer__heading {
    margin-left: 0;
 }
+.header-tags {
+   display: none;
+}
 .sandwich-box {
    right: 0;
 }
@@ -1102,25 +1165,13 @@ input[type="email"], input[type="password"], input[type="tel"], input[type="text
 }
 .header-offer {
    min-height: auto;
-   padding-bottom: 50px;
 }
 .header-offer__txt {
    max-width: 340px;
    font-size: 1.8rem;
-   margin-bottom: 10px;
-}
-.header-offer .btn {
-   height: 47px;
 }
 .marquee-text__item {
    opacity: .6;
-}
-.header-offer__action {
-   flex-direction: column;
-   align-items: initial;
-}
-.header-offer__action-link {
-   display: none;
 }
 .header-art {
    opacity: .3;
@@ -1248,7 +1299,6 @@ input[type="email"], input[type="password"], input[type="tel"], input[type="text
    margin-left: 20px;
    margin-right: 20px;
    padding-bottom: 60px;
-   border-radius: 20px;
 }
 .bitrix::before, .bitrix::after {
    width: 172px;
@@ -1326,9 +1376,6 @@ input[type="email"], input[type="password"], input[type="tel"], input[type="text
 }
 .article__header {
    margin-bottom: 0;
-}
-.article__header-btn {
-   display: none;
 }
 .article__post {
    display: none;

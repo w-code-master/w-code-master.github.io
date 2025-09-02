@@ -3,9 +3,8 @@
 <head>
 
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<title>Sintez-Digital</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    <!-- favicon -->
    <link href="img/favicon.png" sizes="32x32" rel="icon" type="image/png"/>
@@ -13,21 +12,64 @@
 	<!-- style -->
 	<link rel="stylesheet" href="css/style.css">
 
-	<!-- scripts -->
-	<script src="js/jquery.js" defer></script>
-	<script src="js/dynamic-adapt.js" defer></script>
-	<script src="js/pagescroll.js" defer></script>
-	<script src="js/swiper.js" defer></script>
-	<script src="js/masked.js" defer></script>
-	<script src="js/marquee.js" defer></script>
-	<script src="js/beefup.js" defer></script>
-	<script src="js/waypoints.js" defer></script>
-	<script src="js/animate-css.js" defer></script>
-	<script src="js/simplebar.js"></script>
-	<script src="js/main.js" defer></script>
-
 </head>
-<body class="page">
+<body class="page index-page">
+
+	<!-- Loader -->
+	<!-- <div class="loading-page">
+		<div class="swiper swiper-loader">
+			<div class="swiper-wrapper">
+				<div class="swiper-loader__slide swiper-slide">
+					<div class="swiper-loader__item">
+						<div class="swiper-loader__ico">
+							<svg><use href="img/svg/sprite.svg#i-check-arrow"></use></svg>
+						</div>
+						<div class="swiper-loader__txt">Чистим комментарии...</div>
+					</div>
+				</div>
+				<div class="swiper-loader__slide swiper-slide">
+					<div class="swiper-loader__item">
+						<div class="swiper-loader__ico">
+							<svg><use href="img/svg/sprite.svg#i-check-arrow"></use></svg>
+						</div>
+						<div class="swiper-loader__txt">Сбрасываем кеш...</div>
+					</div>
+				</div>
+				<div class="swiper-loader__slide swiper-slide">
+					<div class="swiper-loader__item">
+						<div class="swiper-loader__ico">
+							<svg><use href="img/svg/sprite.svg#i-check-arrow"></use></svg>
+						</div>
+						<div class="swiper-loader__txt">Верстаем квиз опрос...</div>
+					</div>
+				</div>
+				<div class="swiper-loader__slide swiper-slide">
+					<div class="swiper-loader__item">
+						<div class="swiper-loader__ico">
+							<svg><use href="img/svg/sprite.svg#i-check-arrow"></use></svg>
+						</div>
+						<div class="swiper-loader__txt">Поднимаем упавший сервер...</div>
+					</div>
+				</div>
+				<div class="swiper-loader__slide swiper-slide">
+					<div class="swiper-loader__item">
+						<div class="swiper-loader__ico">
+							<svg><use href="img/svg/sprite.svg#i-check-arrow"></use></svg>
+						</div>
+						<div class="swiper-loader__txt">Это вообще кто-то читает?...</div>
+					</div>
+				</div>
+				<div class="swiper-loader__slide swiper-slide">
+					<div class="swiper-loader__item">
+						<div class="swiper-loader__ico">
+							<svg><use href="img/svg/sprite.svg#i-check-arrow"></use></svg>
+						</div>
+						<div class="swiper-loader__txt">Придумываем ещё одну строчку...</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
 
 	<!-- Header -->
 	<section class="header-top anim-fadeInDown">
@@ -37,85 +79,64 @@
 					<svg class="logo__ico">
 						<use href="img/svg/logos.svg#i-sintez"></use>
 					</svg>
-					<div class="logo__txt">Синтез</div>
-				</a>
-			</div>
-			<nav class="header__menu">
-				<ul class="menu">
-					<li class="menu__item">
-						<a class="menu__link" href="#s-project">Проекты</a>
-					</li>
-					<li class="menu__item">
-						<a class="menu__link" href="#s-media">Медиацентр</a>
-					</li>
-					<li class="menu__item">
-						<a class="menu__link" href="#s-job">Вакансии</a>
-					</li>
-					<li class="menu__item">
-						<a class="menu__link" href="#s-contact">Контакты</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="header__call">
-				<a class="callbox" href="tel:88004466789">
-					<svg class="callbox__ico">
-						<use href="img/svg/sprite.svg#i-tel"></use>
+					<svg class="logo__txt">
+						<use href="img/svg/logos.svg#i-sintez-text"></use>
 					</svg>
-					<div class="callbox__aside">
-						<div class="callbox__tel">8 800 44 66 789</div>
-						<div class="callbox__txt">с 10:00 до 19:00 (пн-пт)</div>
-					</div>
 				</a>
 			</div>
-			<div class="header__action">
-				<a class="btn btn-solid btn-normal entry--call-modal"  data-da="header-offer__action-btn, 0, 1400">
-					<div class="btn__txt">Заказать проект</div>
-					<div class="btn__circle-box -right">
-						<svg class="btn__ico btn__ico-right">
-							<use href="img/svg/sprite.svg#i-right"></use>
+			<aside class="header-top__aside">
+				<div class="header__call">
+					<a class="callbox" href="tel:89524466789">
+						<svg class="callbox__ico">
+							<use href="img/svg/sprite.svg#i-tel"></use>
 						</svg>
-					</div>
-				</a>
-			</div>
-		</div>
-	</section>
-	<header class="header">
-		<div class='marquee-text anim-fadeInDown'>
-			<div class="marquee-text__item">Комплексный маркетинг</div>
-			<div class="marquee-text__item">Разработка сайтов</div>
-			<div class="marquee-text__item">Обслуживание сайтов</div>
-			<div class="marquee-text__item">Продвижение</div>
-			<div class="marquee-text__item">Брендинг</div>
-			<div class="marquee-text__item">Рекламно-сувенирная продукция</div>
-		</div>
-		<section class="header-service anim-fadeIn">
-			<div class="container">
-				<ul class="header-service__list">
-					<li>Комплексный маркетинг</li>
-					<li>Разработка сайтов</li>
-					<li>Обслуживание сайтов</li>
-					<li>Продвижение</li>
-					<li>Брендинг</li>
-					<li>Рекламно-сувенирная продукция</li>
-				</ul>
-				<div class="header-service__pdf">
-					<a class="link" href="#" data-da="header-offer__action-link, 0, 1400">
-						<span class="link__txt">Презентация <span class="color-dark">(5МБ — PDF)</span></span>
-						<svg class="link__ico">
-							<use href="img/svg/sprite.svg#i-download"></use>
-						</svg>
+						<div class="callbox__aside">
+							<div class="callbox__tel">8 (952) 44 66 789</div>
+						</div>
 					</a>
 				</div>
-			</div>
-		</section>
+				<div class="header-top__action d-none d-sm-inline">
+					<a class="btn btn-solid btn-normal entry--call-modal">
+						<div class="btn__txt">Обсудить проект</div>
+						<div class="btn__circle-box -right">
+							<svg class="btn__ico btn__ico-right">
+								<use href="img/svg/sprite.svg#i-right"></use>
+							</svg>
+						</div>
+					</a>
+				</div>
+				<div class="header__sandwich">
+					<div class="sandwich-box anim-fadeInRight">
+						<div class="sandwich-icon">
+							<div class="sw-top"></div>
+							<div class="sw-center"></div>
+							<div class="sw-bottom"></div>
+						</div>
+					</div>
+				</div>
+			</aside>
+		</div>
+	</section>
+
+	<header class="header">
 		<section class="header-hero">
 			<div class="container">
 				<div class="header-offer">
-					<h1 class="header-offer__heading h1 anim-zoomIn">Веб-разработка и  продвижение в <span class="color-accent">digital</span></h1>
-					<p class="header-offer__txt anim-fadeInUp">Разрабатываем уникальные сайты и продвигаем их в диджитал-пространстве, увеличивая узнаваемость и прибыль вашего бизнеса.</p>
-					<div class="header-offer__action">
-						<div class="header-offer__action-btn anim-bounceIn"></div>
-						<div class="header-offer__action-link anim-fadeInUp"></div>
+					<h1 class="header-offer__heading h1 anim-zoomIn">
+						<span class="color-accent">Разрабатываем</span> онлайн-сервисы,<br class="d-none d-md-inline">
+						интернет-магазины,<br class="d-none d-md-inline">
+						промо-сайты
+					</h1>
+					<p class="header-offer__txt anim-fadeInUp">Создаем уникальные сайты и продвигаем их<br class="d-sm-none"> <strong class="color-accent weight-700">в диджитал-пространстве</strong>, увеличивая узнаваемость<br class="d-none d-xxl-inline"> и прибыль вашего бизнеса.</p>
+					<div class="header-offer__action anim-fadeInUp">
+						<a class="btn btn-solid entry--call-modal">
+							<div class="btn__txt">Обсудить проект</div>
+							<div class="btn__circle-box -right">
+								<svg class="btn__ico btn__ico-right">
+									<use href="img/svg/sprite.svg#i-right"></use>
+								</svg>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -123,116 +144,97 @@
 		<div class="header-art"></div>
 	</header>
 
-	<div class="sandwich-box anim-fadeInRight">
-		<div class="sandwich-icon">
-			<div class="sw-top"></div>
-			<div class="sw-center"></div>
-			<div class="sw-bottom"></div>
-		</div>
-	</div>
-
 	<!-- Main -->
 	<main class="main">
 
 		<!-- Services -->
-		<section class="services container">
-			<h2 class="section-heading anim-fadeInLeft">Наше предложения Вам</h2>
+		<section class="services container" id="s-services">
+			<div class="services__header">
+				<h2 class="section-heading _line-top anim-fadeInLeft">Наши<br> компетенции</h2>
+				<p class="services__header-txt d-none d-md-inline anim-fadeInRight">Мы любим и умеем делать сложные проекты.<br> Используем современные технологии.</p>
+			</div>
 			<div class="services__offers">
 				<div class="services__card anim-bounceIn">
 					<div class="services__card-inner">
 						<div class="services__card-ico">
-							<svg class="services__ico1">
-								<use href="img/svg/icons.svg#i-service1"></use>
-							</svg>
+							<img class="services__ico-marketing" src="img/icons/service/marketing.png" width="50" alt="marketing">
 						</div>
 						<h4 class="services__card-title">Комплексный маркетинг</h4>
 						<p class="services__card-txt">Используем принцип омниканальности. Погружаемся в Ваш бизнес на всех уровнях маркетинговой воронки</p>
 						<div class="services__card-action">
-							<a class="btn btn-outline" href="#">Подробнее</a>
+							<a class="btn btn-outline entry--call-modal" href="#">Подробнее</a>
 						</div>
 					</div>
 				</div>
 				<div class="services__card anim-bounceIn">
 					<div class="services__card-inner">
 						<div class="services__card-ico">
-							<svg class="services__ico2">
-								<use href="img/svg/icons.svg#i-service2"></use>
-							</svg>
+							<img class="services__ico-dev" src="img/icons/service/dev.png" width="58" alt="dev">
 						</div>
 						<h4 class="services__card-title">Разработка сайтов</h4>
 						<p class="services__card-txt">Создаём сайты под любые задачи. От быстрых лендингов до сложного e-commerce</p>
 						<div class="services__card-action">
-							<a class="btn btn-outline" href="#">Подробнее</a>
+							<a class="btn btn-outline entry--call-modal">Подробнее</a>
 						</div>
 					</div>
 				</div>
 				<div class="services__card anim-bounceIn">
 					<div class="services__card-inner">
 						<div class="services__card-ico">
-							<svg class="services__ico3">
-								<use href="img/svg/icons.svg#i-service3"></use>
-							</svg>
+							<img class="services__ico-seo" src="img/icons/service/seo.png" width="61" alt="seo">
 						</div>
 						<h4 class="services__card-title">SEO-продвижение</h4>
 						<p class="services__card-txt">Привлекаем максимум органического трафика. Параллельно работаем над юзабилити сайта</p>
 						<div class="services__card-action">
-							<a class="btn btn-outline" href="#">Подробнее</a>
+							<a class="btn btn-outline entry--call-modal">Подробнее</a>
 						</div>
 					</div>
 				</div>
 				<div class="services__card anim-bounceIn">
 					<div class="services__card-inner">
 						<div class="services__card-ico">
-							<svg class="services__ico4">
-								<use href="img/svg/icons.svg#i-service4"></use>
-							</svg>
+							<img class="services__ico-ads" src="img/icons/service/ads.png" width="58" alt="ads">
 						</div>
 						<h4 class="services__card-title">Контекстная реклама</h4>
 						<p class="services__card-txt">Добываем качественный рекламный трафик. Увеличиваем количество заявок</p>
 						<div class="services__card-action">
-							<a class="btn btn-outline" href="#">Подробнее</a>
+							<a class="btn btn-outline entry--call-modal">Подробнее</a>
 						</div>
 					</div>
 				</div>
 				<div class="services__card anim-bounceIn">
 					<div class="services__card-inner">
 						<div class="services__card-ico">
-							<svg class="services__ico5">
-								<use href="img/svg/icons.svg#i-service5"></use>
-							</svg>
+							<img class="services__ico-branding" src="img/icons/service/branding.png" width="48" alt="branding">
 						</div>
 						<h4 class="services__card-title">Брендинг</h4>
 						<p class="services__card-txt">Отражаем индивидуальность бренда в логотипе. Делаем уникальный дизайн, который привлекает внимание и повышает узнаваемость.</p>
 						<div class="services__card-action">
-							<a class="btn btn-outline" href="#">Подробнее</a>
+							<a class="btn btn-outline entry--call-modal">Подробнее</a>
 						</div>
 					</div>
 				</div>
 				<div class="services__card anim-bounceIn">
 					<div class="services__card-inner">
 						<div class="services__card-ico">
-							<svg class="services__ico6">
-								<use href="img/svg/icons.svg#i-service6"></use>
-							</svg>
+							<img class="services__ico-service" src="img/icons/service/service.png" width="58" alt="service">
 						</div>
 						<h4 class="services__card-title">Обслуживание сайтов</h4>
 						<p class="services__card-txt">Техническое сопровождение сайта, оперативное исправление багов и доработка юзабилити</p>
 						<div class="services__card-action">
-							<a class="btn btn-outline" href="#">Подробнее</a>
+							<a class="btn btn-outline entry--call-modal">Подробнее</a>
 						</div>
 					</div>
 				</div>
 				<div class="services__card services__card--big anim-bounceIn">
 					<div class="services__card-inner">
 						<div class="services__card-ico">
-							<svg class="services__ico7">
-								<use href="img/svg/icons.svg#i-service7"></use>
-							</svg>
+							<img class="services__ico-souvenir" src="img/icons/service/souvenir.png" width="58" alt="souvenir">
 						</div>
 						<h4 class="services__card-title">Рекламно-сувенирная продукция</h4>
 						<p class="services__card-txt">Брендированная продукция с символикой компаний,<br> мероприятий или мерч знаменитостей</p>
 						<div class="services__card-action">
-							<a class="btn btn-outline" href="#">Подробнее</a>
+							<a class="btn btn-outline entry--call-modal">Подробнее</a>
 						</div>
 					</div>
 				</div>
@@ -244,14 +246,12 @@
 							<div class="services__card">
 								<div class="services__card-inner">
 									<div class="services__card-ico">
-										<svg class="services__ico1">
-											<use href="img/svg/icons.svg#i-service1"></use>
-										</svg>
+										<img class="services__ico-marketing" src="img/icons/service/marketing.png" width="50" alt="marketing">
 									</div>
 									<h4 class="services__card-title">Комплексный маркетинг</h4>
 									<p class="services__card-txt">Используем принцип омниканальности. Погружаемся в Ваш бизнес на всех уровнях маркетинговой воронки</p>
 									<div class="services__card-action">
-										<a class="btn btn-outline" href="#">Подробнее</a>
+										<a class="btn btn-outline entry--call-modal">Подробнее</a>
 									</div>
 								</div>
 							</div>
@@ -260,14 +260,12 @@
 							<div class="services__card">
 								<div class="services__card-inner">
 									<div class="services__card-ico">
-										<svg class="services__ico2">
-											<use href="img/svg/icons.svg#i-service2"></use>
-										</svg>
+										<img class="services__ico-dev" src="img/icons/service/dev.png" width="58" alt="dev">
 									</div>
 									<h4 class="services__card-title">Разработка сайтов</h4>
 									<p class="services__card-txt">Создаём сайты под любые задачи. От быстрых лендингов до сложного e-commerce</p>
 									<div class="services__card-action">
-										<a class="btn btn-outline" href="#">Подробнее</a>
+										<a class="btn btn-outline entry--call-modal">Подробнее</a>
 									</div>
 								</div>
 							</div>
@@ -276,14 +274,12 @@
 							<div class="services__card">
 								<div class="services__card-inner">
 									<div class="services__card-ico">
-										<svg class="services__ico3">
-											<use href="img/svg/icons.svg#i-service3"></use>
-										</svg>
+										<img class="services__ico-seo" src="img/icons/service/seo.png" width="61" alt="seo">
 									</div>
 									<h4 class="services__card-title">SEO-продвижение</h4>
 									<p class="services__card-txt">Привлекаем максимум органического трафика. Параллельно работаем над юзабилити сайта</p>
 									<div class="services__card-action">
-										<a class="btn btn-outline" href="#">Подробнее</a>
+										<a class="btn btn-outline entry--call-modal">Подробнее</a>
 									</div>
 								</div>
 							</div>
@@ -292,14 +288,12 @@
 							<div class="services__card">
 								<div class="services__card-inner">
 									<div class="services__card-ico">
-										<svg class="services__ico4">
-											<use href="img/svg/icons.svg#i-service4"></use>
-										</svg>
+										<img class="services__ico-ads" src="img/icons/service/ads.png" width="58" alt="ads">
 									</div>
 									<h4 class="services__card-title">Контекстная реклама</h4>
 									<p class="services__card-txt">Добываем качественный рекламный трафик. Увеличиваем количество заявок</p>
 									<div class="services__card-action">
-										<a class="btn btn-outline" href="#">Подробнее</a>
+										<a class="btn btn-outline entry--call-modal">Подробнее</a>
 									</div>
 								</div>
 							</div>
@@ -308,14 +302,12 @@
 							<div class="services__card">
 								<div class="services__card-inner">
 									<div class="services__card-ico">
-										<svg class="services__ico5">
-											<use href="img/svg/icons.svg#i-service5"></use>
-										</svg>
+										<img class="services__ico-branding" src="img/icons/service/branding.png" width="48" alt="branding">
 									</div>
 									<h4 class="services__card-title">Брендинг</h4>
 									<p class="services__card-txt">Отражаем индивидуальность бренда в логотипе. Делаем уникальный дизайн, который привлекает внимание и повышает узнаваемость.</p>
 									<div class="services__card-action">
-										<a class="btn btn-outline" href="#">Подробнее</a>
+										<a class="btn btn-outline entry--call-modal">Подробнее</a>
 									</div>
 								</div>
 							</div>
@@ -324,14 +316,12 @@
 							<div class="services__card">
 								<div class="services__card-inner">
 									<div class="services__card-ico">
-										<svg class="services__ico6">
-											<use href="img/svg/icons.svg#i-service6"></use>
-										</svg>
+										<img class="services__ico-service" src="img/icons/service/service.png" width="58" alt="service">
 									</div>
 									<h4 class="services__card-title">Обслуживание сайтов</h4>
 									<p class="services__card-txt">Техническое сопровождение сайта, оперативное исправление багов и доработка юзабилити</p>
 									<div class="services__card-action">
-										<a class="btn btn-outline" href="#">Подробнее</a>
+										<a class="btn btn-outline entry--call-modal">Подробнее</a>
 									</div>
 								</div>
 							</div>
@@ -340,14 +330,12 @@
 							<div class="services__card">
 								<div class="services__card-inner">
 									<div class="services__card-ico">
-										<svg class="services__ico7">
-											<use href="img/svg/icons.svg#i-service7"></use>
-										</svg>
+										<img class="services__ico-souvenir" src="img/icons/service/souvenir.png" width="58" alt="souvenir">
 									</div>
 									<h4 class="services__card-title">Рекламно-сувенирная продукция</h4>
 									<p class="services__card-txt">Брендированная продукция с символикой компаний, мероприятий или мерч знаменитостей</p>
 									<div class="services__card-action">
-										<a class="btn btn-outline" href="#">Подробнее</a>
+										<a class="btn btn-outline entry--call-modal">Подробнее</a>
 									</div>
 								</div>
 							</div>
@@ -359,13 +347,13 @@
 		</section>
 		
 		<!-- AboutUs -->
-		<section class="about-us">
+		<section class="about-us anim-fadeInUp">
 			<div class="about-us__inner">
 				<div class="about-us__content">
 					<p class="about-us__desc anim-fadeInUp">У вас будет целая <span class="color-accent">команда</span> превосходных специалистов вместо одного маркетолога, а также отчёты о достигнутых результатах, возможность получения консультаций и помощь<br class="d-none d-lg-inline"> по всем вопросам продвижения в интернете.</p>
 					<div class="in-numbers">
 						<div class="in-numbers__item anim-fadeInLeft">
-							<div class="in-numbers__num">12 лет</div>
+							<div class="in-numbers__num">14 лет</div>
 							<div class="in-numbers__txt">опыта и развития</div>
 						</div>
 						<div class="in-numbers__item anim-fadeInLeft">
@@ -373,7 +361,7 @@
 							<div class="in-numbers__txt">запущено проектов</div>
 						</div>
 						<div class="in-numbers__item anim-fadeInLeft">
-							<div class="in-numbers__num">32</div>
+							<div class="in-numbers__num">12</div>
 							<div class="in-numbers__txt">постоянный штат</div>
 						</div>
 					</div>
@@ -390,7 +378,11 @@
 						<h2 class="section-heading anim-fadeInDown">Нам доверяют</h2>
 					</div>
 					<div class="clients__desc anim-fadeInRight">
-						<p>Мы <span class="color-accent">сделали счастливыми огромное количество клиентов</span> из разных областей —<br class="d-none d-md-inline"> начиная от детских школ и заканчивая медицинскими предприятиями</p>
+						<p>
+							Исследовали и получили <b class="color-accent weight-500">реальные</b> результаты <b class="color-accent weight-500">в 60+ нишах</b>
+							Поэтому с вероятность 90% уже знаем какие инструменты
+							будут <b class="color-accent weight-500">качественно работать</b> в вашем бизнесе
+						</p>
 					</div>
 				</header>
 				<div class="swiper-clients swiper">
@@ -441,156 +433,679 @@
 		</section>
 
 		<!-- Work -->
-		<section class="work container" id="s-project">
-			<div class="swiper-work-nav">
-				<div class="swiper-work-next">
-					<svg>
-						<use href="img/svg/sprite.svg#i-rightline-big"></use>
-					</svg>
+		<section class="work" id="s-project">
+
+			<!-- Cards-->
+			<div class="work-cards d-none d-xl-flex">
+				<!-- Brick-to-Brick -->
+				<div class="work-cards__item anim-slideInRight">
+					<div class="work-block">
+						<div class="work-block__inner">
+							<div class="work-block__aside">
+								<div class="work-block__conv">
+									<div class="work-block__conv-num">5.6<small>%</small></div>
+									<div class="work-block__conv-txt">конверсия<br> в заявку</div>
+								</div>
+							</div>
+							<div class="work-block__content">
+								<div class="work-block__name">Компания «Brick to brick»</div>
+								<h4 class="work-block__title">5 заказов на 1,5 млн.<br> рублей на ремонт квартир<br> в Смоленске и области</h4>
+								<p class="work-block__desc">Разработали квиз-сайт, запустили Директ<br> + контекст и подключили CRM-систему</p>
+								<div class="work-block__statistic">
+									<div class="work-block__statistic-item">
+										<div class="work-block__statistic-ico">
+											<img src="img/ico/money.png" width="36" alt="ico">
+										</div>
+										<div class="work-block__statistic-txt weight-700">Рост чистой<br> прибыли на 100%</div>
+									</div>
+									<div class="work-block__statistic-item">
+										<div class="work-block__statistic-ico">
+											<img src="img/ico/phone.png" width="25" alt="ico">
+										</div>
+										<div class="work-block__statistic-txt">Более 120<br> заявок в месяц</div>
+									</div>
+								</div>
+								<div class="work-block__action">
+									<a class="btn btn-solid" href="#work-brick" data-effect="mfp-move-horizontal">
+										<div class="btn__txt">Подробнее...</div>
+										<div class="btn__circle-box -right">
+											<svg class="btn__ico btn__ico-right">
+												<use href="img/svg/sprite.svg#i-right"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<picture class="work-block__pic">
+							<img src="img/work/brick/brick-preview.jpg" alt="brick-to-brick">
+						</picture>
+					</div>
+				</div>
+				<!-- Kamin -->
+				<div class="work-cards__item anim-slideInRight">
+					<div class="work-block">
+						<div class="work-block__inner">
+							<div class="work-block__aside">
+								<div class="work-block__conv">
+									<div class="work-block__conv-num">7.3<small>%</small></div>
+									<div class="work-block__conv-txt">конверсия<br> в заявку</div>
+								</div>
+							</div>
+							<div class="work-block__content">
+								<div class="work-block__name">Компания «Народный Камин»</div>
+								<h4 class="work-block__title">30 заявок по 343 руб<br> за 10 дней работы<br> на установку каминов</h4>
+								<p class="work-block__desc">Разработали квиз-сайт, запустили Директ<br> + контекст и подключили CRM-систему</p>
+								<div class="work-block__statistic">
+									<div class="work-block__statistic-item">
+										<div class="work-block__statistic-ico">
+											<img src="img/ico/money.png" width="36" alt="ico">
+										</div>
+										<div class="work-block__statistic-txt weight-700">Увеличение<br> клиентов вдвое</div>
+									</div>
+									<div class="work-block__statistic-item">
+										<div class="work-block__statistic-ico">
+											<img src="img/ico/phone.png" width="25" alt="ico">
+										</div>
+										<div class="work-block__statistic-txt">Более 120<br> заявок в месяц</div>
+									</div>
+								</div>
+								<div class="work-block__action">
+									<a class="btn btn-solid" href="#work-kamin" data-effect="mfp-move-horizontal">
+										<div class="btn__txt">Подробнее...</div>
+										<div class="btn__circle-box -right">
+											<svg class="btn__ico btn__ico-right">
+												<use href="img/svg/sprite.svg#i-right"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<picture class="work-block__pic">
+							<img src="img/work/kamin/kamin-preview.jpg" alt="Kamin">
+						</picture>
+					</div>
 				</div>
 			</div>
-			<div class="swiper-work swiper">
-				<div class="swiper-wrapper">
-					<!-- slide-1 -->
-					<div class="swiper-slide anim-zoomIn">
-						<div class="work-block">
-							<div class="work-block__inner">
-								<div class="work-block__aside">
-									<div class="work-block__conv">
-										<div class="work-block__conv-num">5.6<small>%</small></div>
-										<div class="work-block__conv-txt">конверсия<br> в заявку</div>
-									</div>
-								</div>
-								<div class="work-block__content">
-									<div class="work-block__name">Компания «Brick to brick»</div>
-									<h4 class="work-block__title">5 заказов на 1,5 млн.<br> рублей на ремонт квартир<br> в Смоленске и области</h4>
-									<p class="work-block__desc">Разработали квиз-сайт, запустили Директ<br> + контекст и подключили CRM-систему</p>
-									<div class="work-block__statistic">
-										<div class="work-block__statistic-item">
-											<div class="work-block__statistic-ico">
-												<img src="img/ico/money.png" alt="ico">
-											</div>
-											<div class="work-block__statistic-txt weight-700">Рост чистой<br> прибыли на 100%</div>
-										</div>
-										<div class="work-block__statistic-item">
-											<div class="work-block__statistic-ico">
-												<img src="img/ico/phone.png" alt="ico">
-											</div>
-											<div class="work-block__statistic-txt">Более 120<br> заявок в месяц</div>
+			
+			<!-- swiperCards -->
+			<div class="swiper-work-cards-wrap d-xl-none">
+				<div class="swiper-work-cards swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide anim-slideInRight">
+							<!-- Brick-to-Brick -->
+							<div class="work-block">
+								<div class="work-block__inner">
+									<div class="work-block__aside">
+										<div class="work-block__conv">
+											<div class="work-block__conv-num">5.6<small>%</small></div>
+											<div class="work-block__conv-txt">конверсия<br> в заявку</div>
 										</div>
 									</div>
-									<div class="work-block__action">
-										<a class="btn btn-solid" href="#">
-											<div class="btn__txt">Подробнее...</div>
-											<div class="btn__circle-box -right">
-												<svg class="btn__ico btn__ico-right">
-													<use href="img/svg/sprite.svg#i-right"></use>
-												</svg>
+									<div class="work-block__content">
+										<div class="work-block__name">Компания «Brick to brick»</div>
+										<h4 class="work-block__title">5 заказов на 1,5 млн.<br> рублей на ремонт квартир<br> в Смоленске и области</h4>
+										<p class="work-block__desc">Разработали квиз-сайт, запустили Директ<br> + контекст и подключили CRM-систему</p>
+										<div class="work-block__statistic">
+											<div class="work-block__statistic-item">
+												<div class="work-block__statistic-ico">
+													<img src="img/ico/money.png" width="36" alt="ico">
+												</div>
+												<div class="work-block__statistic-txt weight-700">Рост чистой<br> прибыли на 100%</div>
 											</div>
-										</a>
+											<div class="work-block__statistic-item">
+												<div class="work-block__statistic-ico">
+													<img src="img/ico/phone.png" width="25" alt="ico">
+												</div>
+												<div class="work-block__statistic-txt">Более 120<br> заявок в месяц</div>
+											</div>
+										</div>
+										<div class="work-block__action">
+											<a class="btn btn-solid" href="#work-brick" data-effect="mfp-move-horizontal">
+												<div class="btn__txt">Подробнее...</div>
+												<div class="btn__circle-box -right">
+													<svg class="btn__ico btn__ico-right">
+														<use href="img/svg/sprite.svg#i-right"></use>
+													</svg>
+												</div>
+											</a>
+										</div>
 									</div>
 								</div>
+								<picture class="work-block__pic">
+									<img src="img/work/brick/brick-preview.jpg" alt="brick-to-brick">
+								</picture>
 							</div>
-							<picture class="work-block__pic">
-								<source srcset="img/media/768/work/01.jpg" media="(max-width: 768px)" />
-								<img src="img/work/01.jpg" alt="01">
-							</picture>
 						</div>
-					</div>
-					<!-- slide-2 -->
-					<div class="swiper-slide anim-zoomIn">
-						<div class="work-block -white">
-							<div class="work-block__inner">
-								<div class="work-block__aside">
-									<div class="work-block__conv -blue">
-										<div class="work-block__conv-num">5.6<small>%</small></div>
-										<div class="work-block__conv-txt">конверсия<br> в заявку</div>
-									</div>
-								</div>
-								<div class="work-block__content">
-									<div class="work-block__name">Компания «РА ГАРД»</div>
-									<h4 class="work-block__title">200 заявок по 417 рублей<br> в нише по инженерным изысканиям в Москве и МО</h4>
-									<p class="work-block__desc">Разработали квиз-сайт, запустили Директ + контекст и подключили CRM-систему</p>
-									<div class="work-block__statistic">
-										<div class="work-block__statistic-item">
-											<div class="work-block__statistic-ico">
-												<img src="img/ico/money.png" alt="ico">
-											</div>
-											<div class="work-block__statistic-txt weight-700">Рост прибыли<br> более чем в 4 раза</div>
-										</div>
-										<div class="work-block__statistic-item">
-											<div class="work-block__statistic-ico">
-												<img src="img/ico/phone.png" alt="ico">
-											</div>
-											<div class="work-block__statistic-txt">Более 120<br> заявок в месяц</div>
+						<div class="swiper-slide anim-slideInRight">
+							<!-- Kamin -->
+							<div class="work-block">
+								<div class="work-block__inner">
+									<div class="work-block__aside">
+										<div class="work-block__conv">
+											<div class="work-block__conv-num">7.3<small>%</small></div>
+											<div class="work-block__conv-txt">конверсия<br> в заявку</div>
 										</div>
 									</div>
-									<div class="work-block__action">
-										<a class="btn btn-solid" href="#">
-											<div class="btn__txt">Подробнее...</div>
-											<div class="btn__circle-box -right">
-												<svg class="btn__ico btn__ico-right">
-													<use href="img/svg/sprite.svg#i-right"></use>
-												</svg>
+									<div class="work-block__content">
+										<div class="work-block__name">Компания «Народный Камин»</div>
+										<h4 class="work-block__title">30 заявок по 343 руб<br> за 10 дней работы<br> на установку каминов</h4>
+										<p class="work-block__desc">Разработали квиз-сайт, запустили Директ<br> + контекст и подключили CRM-систему</p>
+										<div class="work-block__statistic">
+											<div class="work-block__statistic-item">
+												<div class="work-block__statistic-ico">
+													<img src="img/ico/money.png" width="36" alt="ico">
+												</div>
+												<div class="work-block__statistic-txt weight-700">Увеличение<br> клиентов вдвое</div>
 											</div>
-										</a>
+											<div class="work-block__statistic-item">
+												<div class="work-block__statistic-ico">
+													<img src="img/ico/phone.png" width="25" alt="ico">
+												</div>
+												<div class="work-block__statistic-txt">Более 120<br> заявок в месяц</div>
+											</div>
+										</div>
+										<div class="work-block__action">
+											<a class="btn btn-solid" href="#work-kamin" data-effect="mfp-move-horizontal">
+												<div class="btn__txt">Подробнее...</div>
+												<div class="btn__circle-box -right">
+													<svg class="btn__ico btn__ico-right">
+														<use href="img/svg/sprite.svg#i-right"></use>
+													</svg>
+												</div>
+											</a>
+										</div>
 									</div>
 								</div>
+								<picture class="work-block__pic">
+									<img src="img/work/kamin/kamin-preview.jpg" alt="Kamin">
+								</picture>
 							</div>
-							<picture class="work-block__pic">
-								<source srcset="img/media/768/work/02.jpg" media="(max-width: 768px)" />
-								<img src="img/work/02.jpg" alt="02">
-							</picture>
-						</div>
-					</div>
-					<!-- slide-3 -->
-					<div class="swiper-slide anim-zoomIn">
-						<div class="work-block">
-							<div class="work-block__inner">
-								<div class="work-block__aside">
-									<div class="work-block__conv">
-										<div class="work-block__conv-num">7.3<small>%</small></div>
-										<div class="work-block__conv-txt">конверсия<br> в заявку</div>
-									</div>
-								</div>
-								<div class="work-block__content">
-									<div class="work-block__name">Компания «Народный Камин»</div>
-									<h4 class="work-block__title">30 заявок по 343 руб<br> за 10 дней работы<br> на установку каминов</h4>
-									<p class="work-block__desc">Разработали квиз-сайт, запустили Директ<br> + контекст и подключили CRM-систему</p>
-									<div class="work-block__statistic">
-										<div class="work-block__statistic-item">
-											<div class="work-block__statistic-ico">
-												<img src="img/ico/money.png" alt="ico">
-											</div>
-											<div class="work-block__statistic-txt weight-700">Увеличение<br> клиентов вдвое</div>
-										</div>
-										<div class="work-block__statistic-item">
-											<div class="work-block__statistic-ico">
-												<img src="img/ico/phone.png" alt="ico">
-											</div>
-											<div class="work-block__statistic-txt">Более 120<br> заявок в месяц</div>
-										</div>
-									</div>
-									<div class="work-block__action">
-										<a class="btn btn-solid" href="#">
-											<div class="btn__txt">Подробнее...</div>
-											<div class="btn__circle-box -right">
-												<svg class="btn__ico btn__ico-right">
-													<use href="img/svg/sprite.svg#i-right"></use>
-												</svg>
-											</div>
-										</a>
-									</div>
-								</div>
-							</div>
-							<picture class="work-block__pic">
-								<source srcset="img/media/768/work/03.jpg" media="(max-width: 768px)" />
-								<img src="img/work/03.jpg" alt="03">
-							</picture>
 						</div>
 					</div>
 				</div>
-				<div class="swiper-pagination swiper-work-nav"></div>
+				<div class="swiper-pagination swiper-work-cards-nav"></div>
+			</div>
+			<!-- Boxs -->
+			<div class="work-boxs">
+				<div class="work-boxs__inner">
+					<!-- Diamond -->
+					<div class="work-boxs__item anim-bounceIn">
+						<div class="work-box">
+							<div class="work-box__preview">
+								<div class="work-box__preview-screen">
+									<img src="img/work/diamond/diamond-preview.jpg" alt="Diamond">
+								</div>
+							</div>
+							<div class="work-box__title">Детейлинг студия “DIAMOND AUTO”</div>
+							<div class="work-box__action">
+								<div class="work-box__cat">Landing page</div>
+								<a class="work-box__btn btn btn-trans" href="#work-diamond" data-effect="mfp-move-horizontal">
+									<div class="btn__txt">Подробнее...</div>
+									<div class="btn__circle-box -right">
+										<svg class="btn__ico btn__ico-right">
+											<use href="img/svg/sprite.svg#i-right"></use>
+										</svg>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- Elektro -->
+					<div class="work-boxs__item anim-bounceIn">
+						<div class="work-box">
+							<div class="work-box__preview">
+								<div class="work-box__preview-screen">
+									<img src="img/work/elektro/elektro-preview.jpg" alt="Elektro">
+								</div>
+							</div>
+							<div class="work-box__title">Компания “Электромонтаж”</div>
+							<div class="work-box__action">
+								<div class="work-box__cat">Landing page</div>
+								<a class="work-box__btn btn btn-trans" href="#work-elektro" data-effect="mfp-move-horizontal">
+									<div class="btn__txt">Подробнее...</div>
+									<div class="btn__circle-box -right">
+										<svg class="btn__ico btn__ico-right">
+											<use href="img/svg/sprite.svg#i-right"></use>
+										</svg>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- Kitchen -->
+					<div class="work-boxs__item anim-bounceIn">
+						<div class="work-box">
+							<div class="work-box__preview">
+								<div class="work-box__preview-screen">
+									<img src="img/work/kitchen/kitchen-preview.jpg" alt="Kitchen">
+								</div>
+							</div>
+							<div class="work-box__title">Мебельная фирма “Moscow Kitchen”</div>
+							<div class="work-box__action">
+								<div class="work-box__cat">Landing page</div>
+								<a class="work-box__btn btn btn-trans" href="#work-kitchen" data-effect="mfp-move-horizontal">
+									<div class="btn__txt">Подробнее...</div>
+									<div class="btn__circle-box -right">
+										<svg class="btn__ico btn__ico-right">
+											<use href="img/svg/sprite.svg#i-right"></use>
+										</svg>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- KlimaNova -->
+					<div class="work-boxs__item anim-bounceIn">
+						<div class="work-box">
+							<div class="work-box__preview">
+								<div class="work-box__preview-screen">
+									<img src="img/work/klimanova/klimanova-preview.jpg" alt="KlimaNova">
+								</div>
+							</div>
+							<div class="work-box__title">Швейная фабрика “Klima Nova”</div>
+							<div class="work-box__action">
+								<div class="work-box__cat">Landing page</div>
+								<a class="work-box__btn btn btn-trans" href="#work-klimanova" data-effect="mfp-move-horizontal">
+									<div class="btn__txt">Подробнее...</div>
+									<div class="btn__circle-box -right">
+										<svg class="btn__ico btn__ico-right">
+											<use href="img/svg/sprite.svg#i-right"></use>
+										</svg>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- SVZ -->
+					<div class="work-boxs__item anim-bounceIn">
+						<div class="work-box">
+							<div class="work-box__preview">
+								<div class="work-box__preview-screen">
+									<img src="img/work/svz/svz-preview.jpg" alt="SVZ">
+								</div>
+							</div>
+							<div class="work-box__title">ООО “Стахановский вагоностроительный завод”</div>
+							<div class="work-box__action">
+								<div class="work-box__cat">Landing page</div>
+								<a class="work-box__btn btn btn-trans" href="#work-svz" data-effect="mfp-move-horizontal">
+									<div class="btn__txt">Подробнее...</div>
+									<div class="btn__circle-box -right">
+										<svg class="btn__ico btn__ico-right">
+											<use href="img/svg/sprite.svg#i-right"></use>
+										</svg>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- Medars -->
+					<div class="work-boxs__item anim-bounceIn">
+						<div class="work-box">
+							<div class="work-box__preview">
+								<div class="work-box__preview-screen">
+									<img src="img/work/medars/medars-preview.jpg" alt="Medars">
+								</div>
+							</div>
+							<div class="work-box__title">Медицинская компания “MedArs”</div>
+							<div class="work-box__action">
+								<div class="work-box__cat">Landing page</div>
+								<a class="work-box__btn btn btn-trans" href="#work-medars" data-effect="mfp-move-horizontal">
+									<div class="btn__txt">Подробнее...</div>
+									<div class="btn__circle-box -right">
+										<svg class="btn__ico btn__ico-right">
+											<use href="img/svg/sprite.svg#i-right"></use>
+										</svg>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- KlimaNova -->
+					<div class="work-boxs__item anim-bounceIn">
+						<div class="work-box">
+							<div class="work-box__preview">
+								<div class="work-box__preview-screen">
+									<img src="img/work/klimanova/klimanova-preview.jpg" alt="KlimaNova">
+								</div>
+							</div>
+							<div class="work-box__title">Швейная фабрика “Klima Nova”</div>
+							<div class="work-box__action">
+								<div class="work-box__cat">Landing page</div>
+								<a class="work-box__btn btn btn-trans" href="#work-klimanova" data-effect="mfp-move-horizontal">
+									<div class="btn__txt">Подробнее...</div>
+									<div class="btn__circle-box -right">
+										<svg class="btn__ico btn__ico-right">
+											<use href="img/svg/sprite.svg#i-right"></use>
+										</svg>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- SVZ -->
+					<div class="work-boxs__item anim-bounceIn">
+						<div class="work-box">
+							<div class="work-box__preview">
+								<div class="work-box__preview-screen">
+									<img src="img/work/svz/svz-preview.jpg" alt="SVZ">
+								</div>
+							</div>
+							<div class="work-box__title">ООО “Стахановский вагоностроительный завод”</div>
+							<div class="work-box__action">
+								<div class="work-box__cat">Landing page</div>
+								<a class="work-box__btn btn btn-trans" href="#work-svz" data-effect="mfp-move-horizontal">
+									<div class="btn__txt">Подробнее...</div>
+									<div class="btn__circle-box -right">
+										<svg class="btn__ico btn__ico-right">
+											<use href="img/svg/sprite.svg#i-right"></use>
+										</svg>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- Medars -->
+					<div class="work-boxs__item anim-bounceIn">
+						<div class="work-box">
+							<div class="work-box__preview">
+								<div class="work-box__preview-screen">
+									<img src="img/work/medars/medars-preview.jpg" alt="Medars">
+								</div>
+							</div>
+							<div class="work-box__title">Медицинская компания “MedArs”</div>
+							<div class="work-box__action">
+								<div class="work-box__cat">Landing page</div>
+								<a class="work-box__btn btn btn-trans" href="#work-medars" data-effect="mfp-move-horizontal">
+									<div class="btn__txt">Подробнее...</div>
+									<div class="btn__circle-box -right">
+										<svg class="btn__ico btn__ico-right">
+											<use href="img/svg/sprite.svg#i-right"></use>
+										</svg>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- KlimaNova -->
+					<div class="work-boxs__item anim-bounceIn">
+						<div class="work-box">
+							<div class="work-box__preview">
+								<div class="work-box__preview-screen">
+									<img src="img/work/klimanova/klimanova-preview.jpg" alt="KlimaNova">
+								</div>
+							</div>
+							<div class="work-box__title">Швейная фабрика “Klima Nova”</div>
+							<div class="work-box__action">
+								<div class="work-box__cat">Landing page</div>
+								<a class="work-box__btn btn btn-trans" href="#work-klimanova" data-effect="mfp-move-horizontal">
+									<div class="btn__txt">Подробнее...</div>
+									<div class="btn__circle-box -right">
+										<svg class="btn__ico btn__ico-right">
+											<use href="img/svg/sprite.svg#i-right"></use>
+										</svg>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- SVZ -->
+					<div class="work-boxs__item anim-bounceIn">
+						<div class="work-box">
+							<div class="work-box__preview">
+								<div class="work-box__preview-screen">
+									<img src="img/work/svz/svz-preview.jpg" alt="SVZ">
+								</div>
+							</div>
+							<div class="work-box__title">ООО “Стахановский вагоностроительный завод”</div>
+							<div class="work-box__action">
+								<div class="work-box__cat">Landing page</div>
+								<a class="work-box__btn btn btn-trans" href="#work-svz" data-effect="mfp-move-horizontal">
+									<div class="btn__txt">Подробнее...</div>
+									<div class="btn__circle-box -right">
+										<svg class="btn__ico btn__ico-right">
+											<use href="img/svg/sprite.svg#i-right"></use>
+										</svg>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- Medars -->
+					<div class="work-boxs__item anim-bounceIn">
+						<div class="work-box">
+							<div class="work-box__preview">
+								<div class="work-box__preview-screen">
+									<img src="img/work/medars/medars-preview.jpg" alt="Medars">
+								</div>
+							</div>
+							<div class="work-box__title">Медицинская компания “MedArs”</div>
+							<div class="work-box__action">
+								<div class="work-box__cat">Landing page</div>
+								<a class="work-box__btn btn btn-trans" href="#work-medars" data-effect="mfp-move-horizontal">
+									<div class="btn__txt">Подробнее...</div>
+									<div class="btn__circle-box -right">
+										<svg class="btn__ico btn__ico-right">
+											<use href="img/svg/sprite.svg#i-right"></use>
+										</svg>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- swiperBoxs -->
+			<!-- <div class="swiper-work-boxs-wrap d-xl-none">
+				<div class="swiper-work-boxs swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide anim-bounceIn">
+							<div class="work-box">
+								<div class="work-box__preview">
+									<div class="work-box__preview-screen">
+										<img src="img/work/diamond/diamond-preview.jpg" alt="Diamond">
+									</div>
+								</div>
+								<div class="work-box__title">Детейлинг студия “DIAMOND AUTO”</div>
+								<div class="work-box__action">
+									<div class="work-box__cat">Landing page</div>
+									<a class="work-box__btn btn btn-trans" href="#work-diamond" data-effect="mfp-move-horizontal">
+										<div class="btn__txt">Подробнее...</div>
+										<div class="btn__circle-box -right">
+											<svg class="btn__ico btn__ico-right">
+												<use href="img/svg/sprite.svg#i-right"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide anim-bounceIn">
+							<div class="work-box">
+								<div class="work-box__preview">
+									<div class="work-box__preview-screen">
+										<img src="img/work/elektro/elektro-preview.jpg" alt="Elektro">
+									</div>
+								</div>
+								<div class="work-box__title">Компания “Электромонтаж”</div>
+								<div class="work-box__action">
+									<div class="work-box__cat">Landing page</div>
+									<a class="work-box__btn btn btn-trans" href="#work-elektro" data-effect="mfp-move-horizontal">
+										<div class="btn__txt">Подробнее...</div>
+										<div class="btn__circle-box -right">
+											<svg class="btn__ico btn__ico-right">
+												<use href="img/svg/sprite.svg#i-right"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide anim-bounceIn">
+							<div class="work-box">
+								<div class="work-box__preview">
+									<div class="work-box__preview-screen">
+										<img src="img/work/kitchen/kitchen-preview.jpg" alt="Kitchen">
+									</div>
+								</div>
+								<div class="work-box__title">Мебельная фирма “Moscow Kitchen”</div>
+								<div class="work-box__action">
+									<div class="work-box__cat">Landing page</div>
+									<a class="work-box__btn btn btn-trans" href="#work-kitchen" data-effect="mfp-move-horizontal">
+										<div class="btn__txt">Подробнее...</div>
+										<div class="btn__circle-box -right">
+											<svg class="btn__ico btn__ico-right">
+												<use href="img/svg/sprite.svg#i-right"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide anim-bounceIn">
+							<div class="work-box">
+								<div class="work-box__preview">
+									<div class="work-box__preview-screen">
+										<img src="img/work/klimanova/klimanova-preview.jpg" alt="KlimaNova">
+									</div>
+								</div>
+								<div class="work-box__title">Швейная фабрика “Klima Nova”</div>
+								<div class="work-box__action">
+									<div class="work-box__cat">Landing page</div>
+									<a class="work-box__btn btn btn-trans" href="#work-klimanova" data-effect="mfp-move-horizontal">
+										<div class="btn__txt">Подробнее...</div>
+										<div class="btn__circle-box -right">
+											<svg class="btn__ico btn__ico-right">
+												<use href="img/svg/sprite.svg#i-right"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide anim-bounceIn">
+							<div class="work-box">
+								<div class="work-box__preview">
+									<div class="work-box__preview-screen">
+										<img src="img/work/svz/svz-preview.jpg" alt="SVZ">
+									</div>
+								</div>
+								<div class="work-box__title">ООО “Стахановский вагоностроительный завод”</div>
+								<div class="work-box__action">
+									<div class="work-box__cat">Landing page</div>
+									<a class="work-box__btn btn btn-trans" href="#work-svz" data-effect="mfp-move-horizontal">
+										<div class="btn__txt">Подробнее...</div>
+										<div class="btn__circle-box -right">
+											<svg class="btn__ico btn__ico-right">
+												<use href="img/svg/sprite.svg#i-right"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide anim-bounceIn">
+							<div class="work-box">
+								<div class="work-box__preview">
+									<div class="work-box__preview-screen">
+										<img src="img/work/medars/medars-preview.jpg" alt="Medars">
+									</div>
+								</div>
+								<div class="work-box__title">Медицинская компания “MedArs”</div>
+								<div class="work-box__action">
+									<div class="work-box__cat">Landing page</div>
+									<a class="work-box__btn btn btn-trans" href="#work-medars" data-effect="mfp-move-horizontal">
+										<div class="btn__txt">Подробнее...</div>
+										<div class="btn__circle-box -right">
+											<svg class="btn__ico btn__ico-right">
+												<use href="img/svg/sprite.svg#i-right"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination swiper-work-boxs-nav"></div>
+			</div> -->
+
+			<!-- modalWork -->
+			<div class="work-modals">
+				<!-- Brick-to-Brick -->
+				<div id="work-brick" class="mfp-hide mfp-with-anim">
+					<div class="work-modal">
+						<picture class="work-modal__img">
+							<source srcset="img/work/brick/brick-small.webp" media="(max-width: 768px)" />
+							<img src="img/work/brick/brick.webp" alt="Brick-to-Brick">
+						</picture>
+					</div>
+				</div>
+				<!-- Kamin -->
+				<div id="work-kamin" class="mfp-hide mfp-with-anim">
+					<div class="work-modal">
+						<picture class="work-modal__img">
+							<source srcset="img/work/kamin/kamin-small.webp" media="(max-width: 768px)" />
+							<img src="img/work/kamin/kamin.webp" alt="Kamin">
+						</picture>
+					</div>
+				</div>
+				<!-- Diamond -->
+				<div id="work-diamond" class="mfp-hide mfp-with-anim">
+					<div class="work-modal">
+						<picture class="work-modal__img">
+							<source srcset="img/work/diamond/diamond-small.webp" media="(max-width: 768px)" />
+							<img src="img/work/diamond/diamond.webp" alt="Diamond">
+						</picture>
+					</div>
+				</div>
+				<!-- Elektro -->
+				<div id="work-elektro" class="mfp-hide mfp-with-anim">
+					<div class="work-modal">
+						<picture class="work-modal__img">
+							<source srcset="img/work/elektro/elektro-small.webp" media="(max-width: 768px)" />
+							<img src="img/work/elektro/elektro.webp" alt="Elektro">
+						</picture>
+					</div>
+				</div>
+				<!-- Kitchen -->
+				<div id="work-kitchen" class="mfp-hide mfp-with-anim">
+					<div class="work-modal">
+						<picture class="work-modal__img">
+							<source srcset="img/work/kitchen/kitchen-small.webp" media="(max-width: 768px)" />
+							<img src="img/work/kitchen/kitchen.webp" alt="Kitchen">
+						</picture>
+					</div>
+				</div>
+				<!-- KlimaNova -->
+				<div id="work-klimanova" class="mfp-hide mfp-with-anim">
+					<div class="work-modal">
+						<picture class="work-modal__img">
+							<source srcset="img/work/klimanova/klimanova-small.webp" media="(max-width: 768px)" />
+							<img src="img/work/klimanova/klimanova.webp" alt="KlimaNova">
+						</picture>
+					</div>
+				</div>
+				<!-- SVZ -->
+				<div id="work-svz" class="mfp-hide mfp-with-anim">
+					<div class="work-modal">
+						<picture class="work-modal__img">
+							<source srcset="img/work/svz/svz-small.webp" media="(max-width: 768px)" />
+							<img src="img/work/svz/svz.webp" alt="SVZ">
+						</picture>
+					</div>
+				</div>
+				<!-- Medars -->
+				<div id="work-medars" class="mfp-hide mfp-with-anim">
+					<div class="work-modal">
+						<picture class="work-modal__img">
+							<source srcset="img/work/medars/medars-small.webp" media="(max-width: 768px)" />
+							<img src="img/work/medars/medars.webp" alt="Medars">
+						</picture>
+					</div>
+				</div>
 			</div>
 			
 		</section>
@@ -619,10 +1134,10 @@
 						</ul>
 					</div>
 					<div class="competence">
-						<img class="competence__item anim-rotateInDownLeft" src="img/competence/1.svg" width="146" alt="bitrix">
-						<img class="competence__item anim-rotateInDownLeft" src="img/competence/2.svg" width="146" alt="bitrix">
-						<img class="competence__item anim-rotateInDownLeft" src="img/competence/3.svg" width="164" alt="bitrix">
-						<img class="competence__item anim-rotateInDownLeft" src="img/competence/4.svg" width="164" alt="bitrix">
+						<img class="competence__item anim-bounceIn" src="img/competence/1.svg" width="146" alt="bitrix">
+						<img class="competence__item anim-bounceIn" src="img/competence/2.svg" width="146" alt="bitrix">
+						<img class="competence__item anim-bounceIn" src="img/competence/3.svg" width="164" alt="bitrix">
+						<img class="competence__item anim-bounceIn" src="img/competence/4.svg" width="164" alt="bitrix">
 					</div>
 				</div>
 			</div>
@@ -686,7 +1201,7 @@
 									<div class="input__label">
 										<label for="input-phone">Телефон</label>
 									</div>
-									<input type="tel" placeholder="+7 (ххх) ххх - хх - хх" id="input-phone">
+									<input class="tel-masked" type="tel" placeholder="+7 (ххх) ххх - хх - хх" id="input-phone">
 								</div>
 							</div>
 							<div class="consut-form__action">
@@ -718,9 +1233,6 @@
 				<header class="article__header">
 					<div class="article__header-heading">
 						<h2 class="section-heading anim-fadeInLeft">Медиацентр</h2>
-					</div>
-					<div class="article__header-btn anim-bounceInRight">
-						<a class="btn btn-outline btn-small" href="#">Больше статей</a>
 					</div>
 				</header>
 				<div class="article__post">
@@ -914,7 +1426,7 @@
 							<aside class="job-beefup__aside">
 								<picture>
 									<source srcset="img/emoji-maneger.png" width="80" media="(max-width: 768px)" />
-									<img src="img/emoji-maneger.png" width="120" alt=emoji">
+									<img src="img/emoji-maneger.png" width="120" alt="emoji">
 								</picture>
 							</aside>
 							<div class="job-beefup__content">
@@ -971,7 +1483,7 @@
 							<aside class="job-beefup__aside">
 								<picture>
 									<source srcset="img/emoji-arrow.png" width="80" media="(max-width: 768px)" />
-									<img src="img/emoji-arrow.png" width="120" alt=emoji">
+									<img src="img/emoji-arrow.png" width="120" alt="emoji">
 								</picture>
 							</aside>
 							<div class="job-beefup__content">
@@ -1028,7 +1540,7 @@
 							<aside class="job-beefup__aside">
 								<picture>
 									<source srcset="img/emoji-surfer.png" width="80" media="(max-width: 768px)" />
-									<img src="img/emoji-surfer.png" width="120" alt=emoji">
+									<img src="img/emoji-surfer.png" width="120" alt="emoji">
 								</picture>
 							</aside>
 							<div class="job-beefup__content">
@@ -1086,7 +1598,7 @@
 							<aside class="job-beefup__aside">
 								<picture>
 									<source srcset="img/emoji-man.png" width="80" media="(max-width: 768px)" />
-									<img src="img/emoji-man.png" width="120" alt=emoji">
+									<img src="img/emoji-man.png" width="120" alt="emoji">
 								</picture>
 							</aside>
 							<div class="job-beefup__content">
@@ -1187,14 +1699,14 @@
 						</a>
 					</div>
 					<div class="footer-contact__polityc weight-500">
-						<a class="footer-contact__link d-inline d-sm-none" href="#">Политика<br class="d-none d-sm-inline"> конфиденциальности</a>
+						<a class="footer-contact__link d-inline d-sm-none" href="policy.html">Политика<br class="d-none d-sm-inline"> конфиденциальности</a>
 					</div>
 				</div>
 			</div>
 			<div class="footer__copy">
 				<div class="container">
 					<p class="footer__copy-txt">© 2012 - 2024 Sintez.Digital</p>
-					<a class="footer__copy-link d-none d-sm-inline" href="#">Политика конфиденциальности</a>
+					<a class="footer__copy-link d-none d-sm-inline" href="policy.html">Политика конфиденциальности</a>
 				</div>
 			</div>
 		</div>
@@ -1225,7 +1737,7 @@
 								<div class="input__label">
 									<label for="input-phone1">Телефон</label>
 								</div>
-								<input type="tel" placeholder="+7 (ххх) ххх - хх - хх" id="input-phone1">
+								<input class="tel-masked" type="tel" placeholder="+7 (ххх) ххх - хх - хх" id="input-phone1">
 							</div>
 						</div>
 					</div>
@@ -1260,46 +1772,82 @@
 	</div>
 
 	<div class="phone-panel">
-		<div class="phone-panel__inner">
-			<nav class="phone-panel__menu">
-				<ul class="menu">
-					<li class="menu__item anim-fadeInUp">
-						<a class="menu__link" href="#s-project">Проекты</a>
-					</li>
-					<li class="menu__item anim-fadeInUp">
-						<a class="menu__link" href="#s-media">Медиацентр</a>
-					</li>
-					<li class="menu__item anim-fadeInUp">
-						<a class="menu__link" href="#s-job">Вакансии</a>
-					</li>
-					<li class="menu__item anim-fadeInUp">
-						<a class="menu__link" href="#s-contact">Контакты</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="phone-panel__action">
-				<a class="link anim-fadeInDown" href="#">
-					<span class="link__txt">Презентация <span class="color-dark">(5МБ — PDF)</span></span>
-					<svg class="link__ico">
-						<use href="img/svg/sprite.svg#i-download"></use>
-					</svg>
-				</a>
-				<a class="btn btn-trans btn-white anim-bounceIn" href="tel:88004466789">
-					<div class="btn__txt">8 800 44 66 789</div>
-				</a>
-				<a class="btn btn-outline-white entry--call-modal anim-bounceIn">
-					<div class="btn__txt">Обсудить проект</div>
-				</a>
+		<div class="phone-panel__inner" data-simplebar>
+			<div class="phone-panel__content">
+				<h2 class="section-heading anim-fadeInLeft">Синтез</h2>
+				<nav class="phone-panel__menu anim-bounceIn">
+					<ul class="menu">
+						<li class="menu__item anim-fadeInUp">
+							<a class="menu__link" href="#s-services">Наши компетенции</a>
+						</li>
+						<li class="menu__item anim-fadeInUp">
+							<a class="menu__link" href="#s-project">Примеры работ</a>
+						</li>
+						<li class="menu__item anim-fadeInUp">
+							<a class="menu__link" href="#s-media">Медиацентр</a>
+						</li>
+						<li class="menu__item anim-fadeInUp">
+							<a class="menu__link" href="#s-job">Вакансии</a>
+						</li>
+						<li class="menu__item anim-fadeInUp">
+							<a class="menu__link" href="#s-contact">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="phone-panel__action anim-fadeInUp">
+					<div class="phone-panel__action-row">
+						<div class="phone-panel__action-col">
+							<div class="contact-item">
+								<div class="contact-item__title">Позвоните нам</div>
+								<div class="contact-item__text">8 (952) 44 66 789</div>
+							</div>
+						</div>
+						<div class="phone-panel__action-col">
+							<div class="contact-item">
+								<div class="contact-item__title">Напишите нам</div>
+								<a class="contact-item__link" href="mailto:hello@sintez.digital">hello@sintez.digital</a>
+							</div>
+						</div>
+					</div>
+					<div class="phone-panel__action-row _align-items-center">
+						<div class="phone-panel__action-col">
+							<a class="btn btn-solid entry--call-modal">
+								<div class="btn__txt">Отправить заявку</div>
+								<div class="btn__circle-box -right">
+									<svg class="btn__ico btn__ico-right">
+										<use href="img/svg/sprite.svg#i-right"></use>
+									</svg>
+								</div>
+							</a>
+						</div>
+						<div class="phone-panel__action-col">
+							<a class="link anim-fadeInDown" href="#">
+								<span class="link__txt weight-500">Презентация</span>
+								<span class="color-dark">(5МБ — PDF)</span>
+								<svg class="link__ico">
+									<use href="img/svg/sprite.svg#i-download"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class='loading-page'>
-		<div class="loading-page__counter">
-			<div class="loading-page__p">loading</div>
-			<div class="loading-page__h">0%</div>
-			<div class="loading-page__hr"></div>
-		</div>
-	</div>
+	<!-- scripts -->
+	<script src="js/jquery.js"></script>
+	<script src="js/pagescroll.js"></script>
+	<script src="js/swiper.js"></script>
+	<script src="js/masked.js"></script>
+	<script src="js/beefup.js"></script>
+	<script src="js/waypoints.js"></script>
+	<script src="js/animate-css.js"></script>
+	<script src="js/simplebar.js"></script>
+	<script src="js/magnific.js"></script>
+	<script src="js/loadmore.js"></script>
+	
+	<script src="js/main.js"></script>
+	
 </body>
 </html>

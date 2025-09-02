@@ -1,11 +1,3 @@
-/* Colus */
-@font-face {
-	font-family: 'Colus';
-	src: url('../fonts/colus/colus.woff2') format('woff2'),
-		  url('../fonts/colus/colus.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
 /* MuseoSans-100 */
 @font-face {
 	font-family: 'MuseoSans';
@@ -36,5 +28,13 @@
 	src: url('../fonts/museo-sans/700/museo-sans-700.woff2') format('woff2'),
 		  url('../fonts/museo-sans/700/museo-sans-700.woff') format('woff');
 	font-weight: bold;
+	font-style: normal;
+}
+/* MuseoSans-900 */
+@font-face {
+	font-family: 'MuseoSans';
+	src: url('../fonts/museo-sans/900/museo-sans-900.woff2') format('woff2'),
+		  url('../fonts/museo-sans/900/museo-sans-900.woff') format('woff');
+	font-weight: 900;
 	font-style: normal;
 }

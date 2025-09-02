@@ -1,9 +1,21 @@
+.index-page .header-top.animated {
+   animation-delay: 2.5s;
+}
+.index-page .header-service.animated {
+   animation-delay: 3.25s;
+}
+.index-page .header-offer__heading.animated {
+   animation-delay: 3.5s;
+}
+.index-page .header-offer__txt.animated {
+   animation-delay: 3.75s;
+}
+.index-page .header-offer__action {
+   animation-delay: 4.25s;
+}
+
 .header-top.animated {
    animation-delay: .5s;
-}
-.header-service.animated {
-   animation-delay: 1.25s;
-   animation-duration: 1.5s;
 }
 .header-offer__heading.animated {
    animation-delay: 1.5s;
@@ -18,6 +30,7 @@
 .header-offer__action-link {
    animation-delay: 2.75s;
 }
+
 .services__card.animated:nth-child(2) {
    animation-delay: .15s;
 }
@@ -34,6 +47,24 @@
    animation-delay: .3s;
 }
 
+.work-cards__item.animated {
+   animation-duration: 1.5s;
+}
+.work-cards__item.animated:nth-child(even) {
+   animation-delay: .3s;
+}
+.work-boxs__item.animated:nth-child(2),
+.work-boxs__item.animated:nth-child(5) {
+   animation-delay: .3s;
+}
+.work-boxs__item.animated:nth-child(3),
+.work-boxs__item.animated:nth-child(6) {
+   animation-delay: .6s;
+}
+
+.about-us__desc.animated {
+   animation-delay: .15s;
+}
 .about-us .in-numbers__item.animated:nth-child(2) {
    animation-delay: .15s;
 }
@@ -47,6 +78,7 @@
 .bitrix__logo.animated {
    animation-delay: 1.5s;
 }
+
 .competence__item:nth-child(1) {
    animation-delay: .15s;
 }

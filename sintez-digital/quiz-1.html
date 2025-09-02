@@ -3,9 +3,8 @@
 <head>
 
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<title>Sintez-Digital</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- favicon -->
 	<link href="img/favicon.png" sizes="32x32" rel="icon" type="image/png"/>
@@ -13,80 +12,55 @@
 	<!-- style -->
 	<link rel="stylesheet" href="css/style.css">
 
-	<!-- scripts -->
-	<script src="js/jquery.js" defer></script>
-	<script src="js/dynamic-adapt.js" defer></script>
-	<script src="js/pagescroll.js" defer></script>
-	<script src="js/swiper.js" defer></script>
-	<script src="js/masked.js" defer></script>
-	<script src="js/marquee.js" defer></script>
-	<script src="js/beefup.js" defer></script>
-	<script src="js/waypoints.js" defer></script>
-	<script src="js/animate-css.js" defer></script>
-	<script src="js/simplebar.js"></script>
-	<script src="js/main.js" defer></script>
-
 </head>
 <body class="page">
 
 	<!-- Header -->
-	<section class="header-top anim-fadeInDown">
+	<header class="header-top anim-fadeInDown">
 		<div class="container">
 			<div class="header__logo">
 				<a class="logo">
 					<svg class="logo__ico">
 						<use href="img/svg/logos.svg#i-sintez"></use>
 					</svg>
-					<div class="logo__txt">Синтез</div>
-				</a>
-			</div>
-			<nav class="header__menu">
-				<ul class="menu">
-					<li class="menu__item">
-						<a class="menu__link" href="index.html#s-project">Проекты</a>
-					</li>
-					<li class="menu__item">
-						<a class="menu__link" href="index.html#s-media">Медиацентр</a>
-					</li>
-					<li class="menu__item">
-						<a class="menu__link" href="index.html#s-job">Вакансии</a>
-					</li>
-					<li class="menu__item">
-						<a class="menu__link" href="index.html#s-contact">Контакты</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="header__call">
-				<a class="callbox" href="tel:88004466789">
-					<svg class="callbox__ico">
-						<use href="img/svg/sprite.svg#i-tel"></use>
+					<svg class="logo__txt">
+						<use href="img/svg/logos.svg#i-sintez-text"></use>
 					</svg>
-					<div class="callbox__aside">
-						<div class="callbox__tel">8 800 44 66 789</div>
-						<div class="callbox__txt">с 10:00 до 19:00 (пн-пт)</div>
-					</div>
 				</a>
 			</div>
-         <div class="header__action d-none d-xl-block">
-				<a class="btn btn-solid btn-normal entry--call-modal">
-					<div class="btn__txt">Заказать проект</div>
-					<div class="btn__circle-box -right">
-						<svg class="btn__ico btn__ico-right">
-							<use href="img/svg/sprite.svg#i-right"></use>
+			<aside class="header-top__aside">
+				<div class="header__call">
+					<a class="callbox" href="tel:89524466789">
+						<svg class="callbox__ico">
+							<use href="img/svg/sprite.svg#i-tel"></use>
 						</svg>
+						<div class="callbox__aside">
+							<div class="callbox__tel">8 (952) 44 66 789</div>
+						</div>
+					</a>
+				</div>
+            <div class="header-top__action d-none d-sm-inline">
+					<a class="btn btn-solid btn-normal entry--call-modal">
+						<div class="btn__txt">Обсудить проект</div>
+						<div class="btn__circle-box -right">
+							<svg class="btn__ico btn__ico-right">
+								<use href="img/svg/sprite.svg#i-right"></use>
+							</svg>
+						</div>
+					</a>
+				</div>
+				<div class="header__sandwich">
+					<div class="sandwich-box anim-fadeInRight">
+						<div class="sandwich-icon">
+							<div class="sw-top"></div>
+							<div class="sw-center"></div>
+							<div class="sw-bottom"></div>
+						</div>
 					</div>
-				</a>
-			</div>
+				</div>
+			</aside>
 		</div>
-	</section>
-
-	<div class="sandwich-box anim-fadeInRight">
-		<div class="sandwich-icon">
-			<div class="sw-top"></div>
-			<div class="sw-center"></div>
-			<div class="sw-bottom"></div>
-		</div>
-	</div>
+	</header>
 
 	<!-- Main -->
 	<main class="main">
@@ -264,7 +238,7 @@
                               <div class="input__label">
                                  <label for="quiz-input-tel">Телефон<span class="color-accent">*</span></label>
                               </div>
-                              <input type="tel" placeholder="+7 (ххх) ххх - хх - хх" id="quiz-input-tel">
+                              <input class="tel-masked" type="tel" placeholder="+7 (ххх) ххх - хх - хх" id="quiz-input-tel">
                            </div>
                            <div class="input">
                               <div class="input__label">
@@ -391,14 +365,14 @@
 						</a>
 					</div>
 					<div class="footer-contact__polityc weight-500">
-						<a class="footer-contact__link d-inline d-sm-none" href="#">Политика<br class="d-none d-sm-inline"> конфиденциальности</a>
+						<a class="footer-contact__link d-inline d-sm-none" href="policy.html">Политика<br class="d-none d-sm-inline"> конфиденциальности</a>
 					</div>
 				</div>
 			</div>
 			<div class="footer__copy">
 				<div class="container">
 					<p class="footer__copy-txt">© 2012 - 2024 Sintez.Digital</p>
-					<a class="footer__copy-link d-none d-sm-inline" href="#">Политика конфиденциальности</a>
+					<a class="footer__copy-link d-none d-sm-inline" href="policy.html">Политика конфиденциальности</a>
 				</div>
 			</div>
 		</div>
@@ -429,7 +403,7 @@
 								<div class="input__label">
 									<label for="input-phone1">Телефон</label>
 								</div>
-								<input type="tel" placeholder="+7 (ххх) ххх - хх - хх" id="input-phone1">
+								<input class="tel-masked" type="tel" placeholder="+7 (ххх) ххх - хх - хх" id="input-phone1">
 							</div>
 						</div>
 					</div>
@@ -464,38 +438,80 @@
 	</div>
 
 	<div class="phone-panel">
-		<div class="phone-panel__inner">
-			<nav class="phone-panel__menu">
-				<ul class="menu">
-					<li class="menu__item anim-fadeInUp">
-						<a class="menu__link" href="index.html#s-project">Проекты</a>
-					</li>
-					<li class="menu__item anim-fadeInUp">
-						<a class="menu__link" href="index.html#s-media">Медиацентр</a>
-					</li>
-					<li class="menu__item anim-fadeInUp">
-						<a class="menu__link" href="index.html#s-job">Вакансии</a>
-					</li>
-					<li class="menu__item anim-fadeInUp">
-						<a class="menu__link" href="index.html#s-contact">Контакты</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="phone-panel__action">
-				<a class="link anim-fadeInDown" href="#">
-					<span class="link__txt">Презентация <span class="color-dark">(5МБ — PDF)</span></span>
-					<svg class="link__ico">
-						<use href="img/svg/sprite.svg#i-download"></use>
-					</svg>
-				</a>
-				<a class="btn btn-trans btn-white anim-bounceIn" href="tel:88004466789">
-					<div class="btn__txt">8 800 44 66 789</div>
-				</a>
-				<a class="btn btn-outline-white entry--call-modal anim-bounceIn">
-					<div class="btn__txt">Обсудить проект</div>
-				</a>
+		<div class="phone-panel__inner" data-simplebar>
+			<div class="phone-panel__content">
+				<h2 class="section-heading anim-fadeInLeft">Синтез</h2>
+				<nav class="phone-panel__menu anim-bounceIn">
+					<ul class="menu">
+						<li class="menu__item anim-fadeInUp">
+							<a class="menu__link" href="#">Наши компетенции</a>
+						</li>
+						<li class="menu__item anim-fadeInUp">
+							<a class="menu__link" href="#s-project">Примеры работ</a>
+						</li>
+						<li class="menu__item anim-fadeInUp">
+							<a class="menu__link" href="#s-media">Медиацентр</a>
+						</li>
+						<li class="menu__item anim-fadeInUp">
+							<a class="menu__link" href="#s-job">Вакансии</a>
+						</li>
+						<li class="menu__item anim-fadeInUp">
+							<a class="menu__link" href="#s-contact">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="phone-panel__action anim-fadeInUp">
+					<div class="phone-panel__action-row">
+						<div class="phone-panel__action-col">
+							<div class="contact-item">
+								<div class="contact-item__title">Позвоните нам</div>
+								<div class="contact-item__text">8 (952) 44 66 789</div>
+							</div>
+						</div>
+						<div class="phone-panel__action-col">
+							<div class="contact-item">
+								<div class="contact-item__title">Напишите нам</div>
+								<a class="contact-item__link" href="mailto:hello@sintez.digital">hello@sintez.digital</a>
+							</div>
+						</div>
+					</div>
+					<div class="phone-panel__action-row _align-items-center">
+						<div class="phone-panel__action-col">
+							<a class="btn btn-solid entry--call-modal">
+								<div class="btn__txt">Отправить заявку</div>
+								<div class="btn__circle-box -right">
+									<svg class="btn__ico btn__ico-right">
+										<use href="img/svg/sprite.svg#i-right"></use>
+									</svg>
+								</div>
+							</a>
+						</div>
+						<div class="phone-panel__action-col">
+							<a class="link anim-fadeInDown" href="#">
+								<span class="link__txt weight-500">Презентация</span>
+								<span class="color-dark">(5МБ — PDF)</span>
+								<svg class="link__ico">
+									<use href="img/svg/sprite.svg#i-download"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
+
+	<!-- scripts -->
+	<script src="js/jquery.js"></script>
+	<script src="js/pagescroll.js"></script>
+	<script src="js/swiper.js"></script>
+	<script src="js/masked.js"></script>
+	<script src="js/beefup.js"></script>
+	<script src="js/waypoints.js"></script>
+	<script src="js/animate-css.js"></script>
+	<script src="js/simplebar.js"></script>
+	<script src="js/magnific.js"></script>
+	
+	<script src="js/main.js"></script>
 </body>
 </html>
