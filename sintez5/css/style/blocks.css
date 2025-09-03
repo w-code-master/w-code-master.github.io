@@ -1027,15 +1027,6 @@ label.contact__label {
     padding: 2.6rem 2.1rem 2.5rem;
     letter-spacing: .08em;
 }
-.portfolio-modal__content-top {
-    position: relative;
-    padding: 3rem 0 0 3rem;
-}
-.portfolio-modal__content-top .portfolio-modal__close {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-}
 .portfolio-modal__content-top ._heading {
     max-width: 500px;
     padding-right: 100px;

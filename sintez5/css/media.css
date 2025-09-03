@@ -264,6 +264,15 @@ html {
 .portfolio-modal__aside {
    display: none;
 }
+.portfolio-modal__content-top {
+   position: relative;
+   padding: 3rem 0 0 3rem;
+}
+.portfolio-modal__content-top .portfolio-modal__close {
+   position: absolute;
+   top: 2rem;
+   right: 2rem;
+}
 
 
 }
