@@ -273,6 +273,9 @@ html {
    top: 2rem;
    right: 2rem;
 }
+.portfolio-modal__content-form {
+   padding: 2rem 0;
+}
 
 
 }

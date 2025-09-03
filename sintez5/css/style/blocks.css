@@ -1031,9 +1031,6 @@ label.contact__label {
     max-width: 500px;
     padding-right: 100px;
 }
-.portfolio-modal__content-form {
-    padding: 2rem 0;
-}
 .portfolio-modal__content-form .portfolio-modal__form {
     width: 100%;
     max-width: 299px;
