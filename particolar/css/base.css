@@ -87,6 +87,11 @@ table {
 	width: 100%;
 }
 
+/* Text size */
+.text-lg {
+	font-size: 2rem;
+}
+
 /* Text weight */
 .text-normal {
 	font-weight: normal;
@@ -98,6 +103,10 @@ table {
 	font-weight: bold;
 }
 
+/* Text align */
+.text-center {
+	text-align: center;
+}
 
 /* colors */
 .color-dark {

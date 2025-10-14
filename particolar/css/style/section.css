@@ -184,3 +184,80 @@
 .billing-address__row {
     column-gap: 5rem;
 }
+
+
+.transaction {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 810px; 
+    width: 100%;
+    margin: 0 auto;
+}
+.transaction-status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #9A9A9A;
+    text-align: center;
+    min-height: 248px;
+}
+.transaction-status__card {
+    fill: none;
+    stroke: #00FF00;
+    width: 6.2rem;
+    height: 6.2rem;
+}
+.transaction-status__info {
+    font-size: 2rem;
+    color: #00FF00;
+}
+.transaction-status._declined .transaction-status__info {
+    color: #FF1604;
+}
+.transaction-status._declined .transaction-status__card {
+    stroke: #FF1604;
+}
+
+.transaction-description {
+    font-size: 1.9rem;
+}
+.transaction-description__table {
+    padding-left: 10.5rem;
+    padding-right: 1rem;
+    font-size: 2rem;
+}
+
+
+.loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    MIN-height: 600px;
+    text-align: center;
+    padding: 5rem 3rem;
+    box-sizing: border-box;
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: #8C8C8C;
+}
+.loader-progress::part(value) {
+    stroke-width: .9rem;
+    stroke: #00CAF1;
+    stroke-linecap: round;
+}
+.loader-progress::part(circle) {
+    stroke-width: .9rem;
+    stroke: #D6F9FF;
+}
+.loader-progress::part(text) {
+    opacity: 0;
+}
+.loader-progress::part(base) {
+    width: 23.2rem;
+    height: 23.2rem;
+}
