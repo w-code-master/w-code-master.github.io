@@ -1,0 +1,42 @@
+
+SFP Test
+Payment
+Dashboard
+100.00 USD
+Success
+Payments
+Cards
+P2P Wallet
+P2P Payment
+WirePayments
+Virtual Terminal
+$Payout
+ഫി Reports
+Details
+Token:
+1B70mtFZTTXL13mFiHogbgqf
+Origin
+USA
+Card mask:
+****4441
+Type
+VISA
+Expiers
+04/2025
+Created date
+Card Holder:
+Ding Feng
+Sep 29, 2025, 1:44 PM
+Updated date Sep 29, 2025, 2:44 PM
+Refund
+Amount avalible for refund
+100 USD
+Refund count
+0
+Refund
+Callback
+Status
+Retry count
+Resend Callback
+delivered
+0
