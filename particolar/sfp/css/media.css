@@ -1,0 +1,87 @@
+/* Max-Width media */
+
+/* 1440px */
+@media only screen and (max-width : 1440px) {
+
+.app-content {
+   padding-right: 20px;
+}
+.nav {
+   padding-left: 10px;
+}
+
+}
+
+/* 1200px */
+@media only screen and (max-width : 1200px) {
+
+.app .table th {
+   font-size: 15px;
+   padding-right: 25px;
+}
+.app .table td {
+   font-size: 14px;
+    padding-right: 25px;
+}
+
+}
+
+/* 992px */
+@media only screen and (max-width : 991.98px) {
+
+.app .table th {
+   font-size: 15px;
+   padding-right: 25px;
+}
+.app .table td {
+   font-size: 14px;
+   padding-right: 25px;
+}
+.app-content {
+   padding-left: 20px;
+}
+
+.nav {
+   padding-top: 10px;
+}
+
+
+/* 768px */
+@media only screen and (max-width : 767.98px) {
+
+.app-content {
+   padding-left: 12px;
+   padding-right: 12px;
+}
+
+.user-bar__btn {
+   padding: 2px;
+}
+.user-bar__btn-icon {
+   width: 25px;
+   height: 25px;
+}
+
+}
+/* 576px */
+@media only screen and (max-width : 575.98px) {
+
+.filter-input__input._date {
+    width: 100%;
+}
+.filter-input__input._token {
+    width: 100%;
+}
+.filter-input__input._small-width {
+    width: 100%;
+}
+
+}
+
+
+/* Min-Width media */
+
+/* 1920px */
+@media only screen and (min-width : 1920px) {
+
+}
