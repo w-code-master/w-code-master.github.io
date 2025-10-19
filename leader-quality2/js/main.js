@@ -1,24 +1,24 @@
 $(document).ready(function() {
 
 // mobile nav
-// $(".burger-header").click(function() {
-//     $(".burger-header").toggleClass("active");
-//     $("html").toggleClass("overflow-y-hidden");
-// });
-// $(".nav li a").click(function() {
-//     $(".mobile-nav").fadeOut(300);
-//     $("html").removeClass("overflow-y-hidden");
-//     $(".burger-header").removeClass("active");
-// });
-// $(".burger-header").click(function() {
-//     if($(".mobile-nav").is(":visible")) {
-//         $(".mobile-nav").fadeOut(300);
-//         $("html").removeClass("overflow-y-hidden");
-//     } else {
-//         $(".mobile-nav").fadeIn(300);
-//         $("html").addClass("overflow-y-hidden");
-//     };
-// });
+$(".burger-header").click(function() {
+    $(".burger-header").toggleClass("active");
+    $("html").toggleClass("overflow-y-hidden");
+});
+$(".nav li a").click(function() {
+    $(".mobile-nav").fadeOut(300);
+    $("html").removeClass("overflow-y-hidden");
+    $(".burger-header").removeClass("active");
+});
+$(".burger-header").click(function() {
+    if($(".mobile-nav").is(":visible")) {
+        $(".mobile-nav").fadeOut(300);
+        $("html").removeClass("overflow-y-hidden");
+    } else {
+        $(".mobile-nav").fadeIn(300);
+        $("html").addClass("overflow-y-hidden");
+    };
+});
 
 const heroSlider = new Swiper('.hero-slider', {
     loop: true,

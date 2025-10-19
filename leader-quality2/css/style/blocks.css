@@ -278,7 +278,7 @@ a.nav__item {
 
 
 .mobile-nav {
-	/* display: none; */
+	display: none;
 	width: 100%;
 	height: 100vh;
 	background: #fff;
@@ -1288,12 +1288,12 @@ a.nav__item {
 .accredited__image img {
 	border-radius: var(--radius-large);
 }
-.accredited-partners ._list {
+.accredited-partners__list {
 	display: flex;
 	align-items: center;
 	column-gap: .8rem;
 }
-.accredited-partners ._list-item {
+.accredited-partners__item {
 	width: 6.4rem;
 	height: 6.4rem;
 	border-radius: 50%;
@@ -1302,7 +1302,7 @@ a.nav__item {
 	justify-content: center;
 	align-items: center;
 }
-.accredited-partners img._gerb {
+.accredited-partners ._gerb {
 	width: 3.6rem;
 }
 .accredited-partners ._text {

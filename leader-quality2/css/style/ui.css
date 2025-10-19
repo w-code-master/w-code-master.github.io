@@ -214,15 +214,16 @@
 	bottom: 0;
 }
 .burger.active ._top {
-    top: 8px;
+    top: 7px;
     transform: rotate(-45deg);
 }
 .burger.active ._center {
-    top: 6px;
+    top: 8px;
     transform: rotate(45deg);
+	width: 100%;
 }
 .burger.active ._bottom {
     opacity: 0;
-    top: 0;
+    bottom: 0;
     transform: rotate(180deg);
 }

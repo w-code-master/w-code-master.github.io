@@ -494,6 +494,11 @@ h4, .size-4 {
 .quiz-choise__block {
    height: 12.7rem;
 }
+.quiz-choise__title {
+   font-size: 1.65rem;
+   line-height: 1.3;
+   padding-top: 1.2rem;
+}
 .quiz-choise__img {
    height: 13.3rem;
 }
@@ -674,35 +679,159 @@ input[type="email"], input[type="password"], input[type="tel"], input[type="text
    min-height: 6rem;
 }
 
-.about-program {
-   padding: 2.5rem 0 6.1rem;
-}
 
 .section-heading-block ._text {
    font-size: 2rem;
    line-height: 1.52;
 }
 
+.about-program {
+   padding: 2.5rem 0 3.2rem;
+}
 .about-program__content {
    flex-wrap: wrap;
-   row-gap: 2rem;
+   row-gap: 1.8rem;
+   margin-bottom: 3.5rem;
 }
 .about-program__descrp {
+   height: 335px;
    order: 1;
+}
+.about-program__descrp-inner {
+   height: 335px;
 }
 .about-program__image {
    width: 100%;
+}
+.about-program .simplebar-content {
+   padding: 2rem 2rem !important;
+}
+.about-program .simplebar-track {
+   right: 1.2rem;
 }
 
 .partners-company__item {
    width: 50%;
 }
 
+.partners {
+    padding: 2.2rem 0 4.4rem;
+}
+.partners-company__item {
+   height: 8.9rem;
+}
+.partners-company__item._sber {
+   order: 1;
+}
+.partners-company__item._donstroy {
+   order: 2;
+}
+.partners-company__item._pik {
+   order: 3;
+}
+.partners-company__item._etalon {
+   order: 4;
+}
+.partners-company__item._samolet {
+   order: 5;
+}
+.partners-company__item._ingrad {
+   order: 6;
+}
+.partners-company__item._fsk {
+   order: 7;
+}
+.partners-company__item._composite {
+   order: 8;
+}
+.partners-company__item._granel {
+   order: 9;
+}
+.partners-company__item._gazprom {
+   order: 10;
+}
+.partners-company__item._sminex {
+   order: 11;
+}
+.partners-company__item._alfabank {
+   order: 12;
+}
+
+
+.accredited {
+    padding: 2.5rem 0 3.2rem;
+}
+.accredited-partners__item {
+   width: 5rem;
+   height: 5rem;
+}
+.accredited-partners ._gerb {
+	width: 2.6rem;
+}
+.accredited-partners ._sber {
+	width: 2.8rem;
+}
+.accredited-partners ._ptc {
+	width: 3.2rem;
+}
+.accredited-partners ._company7 {
+	width: 2.6rem;
+}
+.accredited-partners ._tec {
+	width: 2.4rem;
+}
+.accredited .section-heading-block ._text {
+   font-size: 1.8rem;
+   line-height: 1.45;
+}
+
+
 .about-company {
    flex-wrap: wrap;
+   padding: 1.5rem 0 2.4rem;
 }
 .about-company__img {
-   margin-bottom: 2rem;
+   margin-bottom: 2.7rem;
+}
+.about-company__content .section-heading {
+   font-size: 2.6rem;
+   line-height: 1.2;
+   letter-spacing: 0;
+}
+.about-company__content ._text {
+   font-size: 1.77rem;
+}
+.about-company .btn {
+   display: flex;
+}
+
+.lead-form {
+   padding: 2.4rem 2.2rem 2.1rem;
+   margin-bottom: 4.5rem;
+}
+.lead-form__header {
+   margin-bottom: .8rem;
+}
+.lead-form__header ._text {
+   line-height: 1.54;
+}
+.lead-form__bg-layer {
+   display: none;
+}
+.lead-form__row {
+   padding-top: 1.2rem;
+   padding-bottom: 1.2rem;
+}
+.lead-form__inform {
+   font-size: 1.34rem;
+   line-height: 1.5;
+}
+
+.nice-select.select-line {
+   padding-top: .2rem;
+}
+.nice-select .arrow {
+   right: .8rem;
 }
 
 

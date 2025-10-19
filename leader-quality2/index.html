@@ -129,7 +129,7 @@
 		</div>
 	</nav>
 
-	<div class="mobile-nav px-4 d-none">
+	<div class="mobile-nav px-4">
 
 		<div class="row py-3 align-items-center">
 			<div class="col-auto">
@@ -156,46 +156,36 @@
             <ul>
                 <li class="nav__li">
                     <label class="nav__item" for="#ffe84rhbhyfgwu333">
-                        <span class="nav__item-icon">
-                            <svg class="_pay"><use href="img/sprite.svg#i-pay"></use></svg>
-                        </span>
                         <span class="nav__item-text">Наши услуги</span>
                     </label>
                     <div class="nav-sub__wrap">
                         <input class="nav-sub__toggle" type="checkbox" id="#ffe84rhbhyfgwu333">
                         <svg class="nav__item-arrow"><use href="img/sprite.svg#i-down"></use></svg>
                         <ul class="nav-sub">
-                            <li><a href="#">Cards</a></li>
-                            <li><a href="#">P2P Wallet</a></li>
-                            <li><a href="#">P2P Payment</a></li>
-                            <li><a href="#">WirePayments</a></li>
-                            <li><a href="#">Virtual Terminal</a></li>
+                            <li><a href="#">Услуга Lorem.</a></li>
+							<li><a href="#">Услуга Lorem, ipsum.</a></li>
+							<li><a href="#">Услуга - Lorem.</a></li>
                         </ul>
                     </div>
                 </li>
                 <li class="nav__li">
                     <label class="nav__item" for="#fcejdje4595304hdf22">
-                        <span class="nav__item-icon">
-                            <svg class="_money"><use href="img/sprite.svg#i-money"></use></svg>
-                        </span>
-                        <span class="nav__item-text">Payout</span>
+                        <span class="nav__item-text">Наши проекты</span>
                     </label>
                     <div class="nav-sub__wrap">
                         <input class="nav-sub__toggle" type="checkbox" id="#fcejdje4595304hdf22">
                         <svg class="nav__item-arrow"><use href="img/sprite.svg#i-down"></use></svg>
                         <ul class="nav-sub">
-                            <li><a href="#">P2P Wallet</a></li>
-                            <li><a href="#">P2P Payment</a></li>
-                            <li><a href="#">WirePayments</a></li>
+                            <li><a href="#">Проект Lorem.</a></li>
+							<li><a href="#">Проект Lorem, ipsum.</a></li>
+							<li><a href="#">Проект - Lorem.</a></li>
+							<li><a href="#">Проект em, ipsum.</a></li>
                         </ul>
                     </div>
                 </li>
                 <li class="nav__li">
                     <a class="nav__item" href="#">
-                        <span class="nav__item-icon">
-                            <svg><use href="img/sprite.svg#i-rating"></use></svg>
-                        </span>
-                        <span class="nav__item-text">Reports</span>
+                        <span class="nav__item-text">Lorem.</span>
                     </a>
                 </li>
             </ul>
@@ -787,7 +777,7 @@
 								<svg><use href="img/svg/sprite.svg#i-cheked-bold"></use></svg>
 							</div>
 							<h6 class="_heading size-6">Используем сертифицированные материалы</h6>
-							<p class="_text">Известные бренды, такие как Технониколь, Рубитекс, SIKA. <br class="d-sm-none"> Строгое соблюдение<br class="d-none d-sm-inline"> технологии.</p>
+							<p class="_text">Известные бренды, такие как Технониколь,&nbsp;Рубитекс,&nbsp;SIKA. <br class="d-sm-none"> Строгое соблюдение<br class="d-none d-sm-inline"> технологии.</p>
 						</div>
 						<div class="peculiarities__card col-12 col-sm-6 col-xl-4">
 							<div class="ui-circle-cheked mb-3">
@@ -1136,10 +1126,10 @@
 			</div>
 		</section>
 
-		<section class="about-program block-bg-light mb-5">
-			<div class="section-heading-block pt-3 mb-5 pb-2">
-				<h2 class="section-heading font-jost text-medium mb-3">Рекомендуй и <span class="color-green">зарабатывай вместе с&nbsp;нами</span></h2>
-				<p class="_text text-light">Приглашаем специалистов и компании на долгосрочное сотрудничество.<br class="d-none d-lg-inline"> Наша&nbsp;программа — это возможность получать стабильный доход.</p>
+		<section class="about-program block-bg-light mb-3 mb-sm-5">
+			<div class="section-heading-block pt-3 mb-3 mb-sm-5 pb-2">
+				<h2 class="section-heading font-jost text-medium mb-3">Рекомендуй и <span class="color-green">зарабатывай вместе&nbsp;с&nbsp;нами</span></h2>
+				<p class="_text text-light mb-3">Приглашаем специалистов и компании на долгосрочное сотрудничество.<br class="d-none d-lg-inline"> Наша&nbsp;программа — это возможность получать стабильный доход.</p>
 			</div>
 			<div class="about-program__content">
 				<div class="about-program__descrp">
@@ -1180,16 +1170,17 @@
 						</ul>
 					</div>
 				</div>
-				<div class="about-program__image">
-					<img src="img/about-program.jpg" alt="about-program">
-				</div>
+				<picture class="about-program__image">
+					<source srcset="img/about/program/work@mobile.jpg" media="(max-width: 576px)">
+					<img src="img/about/program/work@desktop.jpg" alt="about-program">
+				</picture>
 			</div>
-			<div class="about-program-btns row">
-				<div class="col-auto">
-					<a href="#" class="btn _green"><b class="text-medium text-uppercase">Стать партнёром</b></a>
+			<div class="about-program-btns gy-4 row">
+				<div class="col col-sm-auto">
+					<a href="#" class="btn _green d-flex"><b class="text-medium text-uppercase">Стать партнёром</b></a>
 				</div>
-				<div class="col-auto">
-					<a href="#" class="btn _white">
+				<div class="col col-sm-auto">
+					<a href="#" class="btn _white d-flex">
 						<b class="text-medium text-uppercase">О программе</b>
 						<svg class="btn__icon _fill-black _arrow-right">
 							<use href="img/svg/sprite.svg#i-arrow-right"></use>
@@ -1200,58 +1191,69 @@
 		</section>
 
 		<section class="partners">
-			<div class="section-heading-block pt-3 mb-5 pb-4">
-				<h2 class="section-heading font-jost text-normal mb-3"><strong class="text-medium">Ключевые</strong> заказчики и партнёры</h2>
+			<div class="section-heading-block pt-3 pb-4 mb-3 mb-sm-5">
+				<h2 class="section-heading font-jost text-normal mb-3">
+					<strong class="text-medium">Ключевые</strong> <br class="d-sm-none"> заказчики и партнёры
+				</h2>
 				<p class="_text text-light">С 2018 года выполнили работы на более чем 500 объектах&nbsp;по&nbsp;всей&nbsp;РФ</p>
 			</div>
 			<div class="partners-company">
 				<div class="partners-company__inner">
-					<picture class="partners-company__item">
+					<picture class="partners-company__item _sber">
+						<source srcset="img/svg/partners/sber.svg" width="130" media="(max-width: 576px)" />
 						<source srcset="img/svg/partners/sber.svg" width="100" media="(max-width: 992px)" />
 						<img src="img/svg/partners/sber.svg" alt="#">
 					</picture>
-					<picture class="partners-company__item">
+					<picture class="partners-company__item _pik">
 						<source srcset="img/svg/partners/pik.svg" width="50" media="(max-width: 992px)" />
 						<img src="img/svg/partners/pik.svg" alt="#">
 					</picture>
-					<picture class="partners-company__item">
+					<picture class="partners-company__item _samolet">
+						<source srcset="img/svg/partners/samolet.svg" width="100" media="(max-width: 576px)" />
 						<source srcset="img/svg/partners/samolet.svg" width="110" media="(max-width: 992px)" />
 						<img src="img/svg/partners/samolet.svg" alt="#">
 					</picture>
-					<picture class="partners-company__item">
+					<picture class="partners-company__item _fsk">
 						<source srcset="img/svg/partners/fsk.svg" width="70" media="(max-width: 992px)" />
 						<img src="img/svg/partners/fsk.svg" alt="#">
 					</picture>
-					<picture class="partners-company__item">
+					<picture class="partners-company__item _donstroy">
+						<source srcset="img/svg/partners/donstroy.svg" width="100" media="(max-width: 576px)" />
 						<source srcset="img/svg/partners/donstroy.svg" width="110" media="(max-width: 992px)" />
 						<img src="img/svg/partners/donstroy.svg" alt="#">
 					</picture>
-					<picture class="partners-company__item">
+					<picture class="partners-company__item _etalon">
+						<source srcset="img/svg/partners/etalon.svg" width="90" media="(max-width: 576px)" />
 						<source srcset="img/svg/partners/etalon.svg" width="110" media="(max-width: 992px)" />
 						<img src="img/svg/partners/etalon.svg" alt="#">
 					</picture>
-					<picture class="partners-company__item">
+					<picture class="partners-company__item _ingrad">
+						<source srcset="img/svg/partners/ingrad.svg" width="80" media="(max-width: 576px)" />
 						<source srcset="img/svg/partners/ingrad.svg" width="90" media="(max-width: 992px)" />
 						<img src="img/svg/partners/ingrad.svg" alt="#">
 					</picture>
-					<picture class="partners-company__item">
+					<picture class="partners-company__item _composite">
+						<source srcset="img/svg/partners/composite.svg" width="146" media="(max-width: 576px)" />
 						<source srcset="img/svg/partners/composite.svg" width="160" media="(max-width: 992px)" />
 						<source srcset="img/svg/partners/composite.svg" width="210" media="(max-width: 1315px)" />
 						<img src="img/svg/partners/composite.svg" alt="#">
 					</picture>
-					<picture class="partners-company__item">
+					<picture class="partners-company__item _granel">
+						<source srcset="img/svg/partners/granel.svg" width="116" media="(max-width: 576px)" />
 						<source srcset="img/svg/partners/granel.svg" width="90" media="(max-width: 992px)" />
 						<img src="img/svg/partners/granel.svg" alt="#">
 					</picture>
-					<picture class="partners-company__item">
+					<picture class="partners-company__item _sminex">
+						<source srcset="img/svg/partners/sminex.svg" width="80" media="(max-width: 576px)" />
 						<source srcset="img/svg/partners/sminex.svg" width="90" media="(max-width: 992px)" />
 						<img src="img/svg/partners/sminex.svg" alt="#">
 					</picture>
-					<picture class="partners-company__item">
+					<picture class="partners-company__item _gazprom">
 						<source srcset="img/svg/partners/gazprom.svg" width="140" media="(max-width: 992px)" />
 						<img src="img/svg/partners/gazprom.svg" alt="#">
 					</picture>
-					<picture class="partners-company__item">
+					<picture class="partners-company__item _alfabank">
+						<source srcset="img/svg/partners/alfabank.svg" width="110" media="(max-width: 576px)" />
 						<source srcset="img/svg/partners/alfabank.svg" width="140" media="(max-width: 992px)" />
 						<img src="img/svg/partners/alfabank.svg" alt="#">
 					</picture>
@@ -1262,44 +1264,48 @@
 		<section class="accredited block-bg-light mb-5">
 			<div class="row mb-5">
 				<div class="col">
-					<div class="section-heading-block mb-5">
-						<h2 class="section-heading font-jost text-medium mb-3 pt-3">Аккредитованы<br> на государственных площадках</h2>
+					<div class="section-heading-block mb-4 mb-sm-5">
+						<h2 class="section-heading font-jost text-medium mb-3 pt-3">
+							Аккредитованы<br class="d-none d-sm-inline"> на <br class="d-sm-none">
+							государственных площадках
+						</h2>
 					</div>
 				</div>
 				<div class="col-auto">
 					<div class="accredited-partners">
-						<ul class="_list mb-3">
-							<li class="_list-item">
+						<div class="accredited-partners__list mb-3">
+							<div class="accredited-partners__item">
 								<img class="_gerb" src="img/gerb.png" alt="#">
-							</li>
-							<li class="_list-item">
-								<img src="img/svg/sber.svg" alt="#">
-							</li>
-							<li class="_list-item">
-								<img src="img/svg/ptc.svg" alt="#">
-							</li>
-							<li class="_list-item">
-								<img src="img/svg/company7.svg" alt="#">
-							</li>
-							<li class="_list-item">
-								<img src="img/svg/tec.svg" alt="#">
-							</li>
-						</ul>
+							</div>
+							<div class="accredited-partners__item">
+								<img class="_sber" src="img/svg/sber.svg" alt="#">
+							</div>
+							<div class="accredited-partners__item">
+								<img class="_ptc" src="img/svg/ptc.svg" alt="#">
+							</div>
+							<div class="accredited-partners__item">
+								<img class="_company7" src="img/svg/company7.svg" alt="#">
+							</div>
+							<div class="accredited-partners__item">
+								<img class="_tec" src="img/svg/tec.svg" alt="#">
+							</div>
+						</div>
 						<div class="_text color-green">И ещё более 15+ наших партнёров</div>
 					</div>
 				</div>
 			</div>
-			<div class="accredited__image mb-5">
-				<img class="objectfit-cover" src="img/accredited.jpg" alt="#">
-			</div>
-			<div class="row gy-4 align-items-center pt-3">
+			<picture class="accredited__image d-block mb-3 mb-sm-5">
+				<source srcset="img/accredited/accredited@mobile.jpg" media="(max-width: 576px)" />
+				<img class="objectfit-cover" src="img/accredited/accredited@desktop.jpg" alt="#">
+			</picture>
+			<div class="row gy-5 gy-sm-4 align-items-center pt-3">
 				<div class="col-12 col-lg-8">
 					<div class="section-heading-block">
 						<p class="_text text-light">Мы аккредитованы на федеральных площадках и активно<br class="d-none d-xl-inline"> работаем по госконтрактам. Готовы участвовать в тендерах —<br class="d-none d-xl-inline"> будем рады вашим приглашениям.</p>
 					</div>
 				</div>
-				<div class="col-12 col-lg-auto ms-auto">
-					<a class="btn" href="#"><strong class="text-medium text-uppercase">Пригласить на тендер</strong></a>
+				<div class="col-12 col-sm-auto ms-0 ms-lg-auto">
+					<a class="btn d-flex" href="#"><strong class="text-medium text-uppercase">Пригласить на тендер</strong></a>
 				</div>
 			</div>
 		</section>
@@ -1310,11 +1316,11 @@
 			</picture>
 			<aside class="about-company__content">
 				<div class="section-heading-block pb-4">
-					<h2 class="section-heading font-jost text-medium mb-4">Собрали команду специалистов со&nbsp;стажем от 5 лет в&nbsp;сфере промышленного ремонта</h2>
+					<h2 class="section-heading font-jost text-medium mb-2 mb-sm-4">Собрали команду специалистов со&nbsp;стажем от 5 лет в&nbsp;сфере промышленного ремонта</h2>
 				</div>
-				<div class="_text">
-					<p class="mb-4">Наша команда — это квалифицированные специалисты с опытом от&nbsp;5&nbsp;лет в устройстве промышленных объектов. Мы работаем на&nbsp;участках разного масштаба: от производственных цехов и складов до торговых помещений и автосервисов.</p>
-					<p>Предлагаем надёжные решения, обеспечивающие долговечность и&nbsp;функциональность покрытий. Работаем по договору, строго соблюдаем сроки, используем проверенные материалы и подходим к&nbsp;каждому проекту индивидуально. Помогаем подобрать оптимальное решение с учётом нагрузок, условий эксплуатации и бюджета.</p>
+				<div class="_text mb-3 mb-sm-0">
+					<p class="mb-4">Наша команда — это квалифицированные специалисты с опытом <br class="d-sm-none"> от&nbsp;5&nbsp;лет в устройстве промышленных объектов. Мы работаем на&nbsp;участках разного масштаба: от производственных цехов и складов до торговых помещений и&nbsp;автосервисов.</p>
+					<p>Предлагаем надёжные решения, обеспечивающие долговечность и&nbsp;функциональность покрытий. Работаем по договору, строго соблюдаем сроки, используем проверенные материалы и&nbsp;подходим к&nbsp;каждому проекту индивидуально. Помогаем подобрать оптимальное решение с учётом нагрузок, условий эксплуатации и бюджета.</p>
 				</div>
 				<div class="mt-auto">
 					<a href="#" class="btn _light mt-4">
@@ -1329,8 +1335,8 @@
 
 		<form class="lead-form">
 			<div class="lead-form__header">
-				<h2 class="section-heading font-jost mb-4">Найдем оптимальное решение <span class="text-normal">для&nbsp;вашей задачи</span></h2>
-				<p class="_text">Отправьте данные и мы рассчитаем объём, подготовим смету и подберём необходимый материал для вашего объекта</p>
+				<h2 class="section-heading font-jost mb-2 mb-sm-4">Найдем оптимальное решение <span class="text-normal">для&nbsp;вашей задачи</span></h2>
+				<p class="_text">Отправьте данные и мы рассчитаем объём, подготовим смету и подберём необходимый материал для вашего объекта</p>
 			</div>
 			<div class="row">
 				<div class="col-12 col-xxl-9">
@@ -1354,7 +1360,9 @@
 							</select>
 						</div>
 						<div class="col pt-4">
-							<input type="file">
+							<div class="pt-5 pt-sm-0">
+								<input class="mt-3 mt-sm-0" type="file">
+							</div>
 						</div>
 					</div>
 					<div class="lead-form__row row gy-4">
@@ -1364,12 +1372,12 @@
 						<div class="col">
 							<input class="input-line d-block" type="email" placeholder="Ваш email">
 						</div>
-						<div class="col pt-3 pt-lg-0">
+						<div class="col pt-5 pt-lg-0">
 							<button class="btn d-flex"><span class="text-uppercase font-jost text-medium">Отправить</span></button>
 						</div>
 					</div>
-					<div class="pt-4">
-						<p class="lead-form__inform">Нажимая на кнопку «Отправить», вы соглашаетесь с <a href="#">политикой конфиденциальности</a> и подтверждаете согласие на <a href="#">обработку персональных данных</a></p>
+					<div class="pt-2 pt-sm-4">
+						<p class="lead-form__inform">Нажимая на кнопку «Отправить», вы соглашаетесь с <a href="#">политикой конфиденциальности</a> и&nbsp;подтверждаете согласие на <a href="#">обработку персональных данных</a></p>
 					</div>
 				</div>
 			</div>
