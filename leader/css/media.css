@@ -62,6 +62,19 @@
     padding-right: 0;
 }
 
+.aside-form {
+   width: 290px;
+}
+
+.inner-page__text {
+   font-size: 1.7rem;
+}
+
+.give-guarantee__img {
+   margin-right: -100px !important;
+   margin-left: -50px;
+}
+
 }
 
 /* 992px */
@@ -147,6 +160,11 @@ html {
 
 .footer ._center {
    order: -1;
+}
+
+.give-guarantee__img {
+   margin-right: -150px !important;
+   margin-left: -150px;
 }
 
 }
@@ -351,6 +369,7 @@ h5, .size-5 {
 .quiz-helper {
 	font-size: 1.6rem;
 }
+
 
 }
 
@@ -911,6 +930,11 @@ input[type="email"], input[type="password"], input[type="tel"], input[type="text
 .contactbox ._address {
    font-size: 2.4rem;
 }
+
+.mobile-nav__header {
+   padding-right: 48px;
+}
+
 
 }
 

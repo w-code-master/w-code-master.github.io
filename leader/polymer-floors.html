@@ -16,46 +16,71 @@
 <body>
 	
 	<header class="header">
-		<div class="container">
+		<div class="container _gap">
 			<div class="row align-items-center">
 				<div class="col-auto">
 					<a class="header__logo logo" href="#">
-						<img class="logo__img" src="img/svg/logo.svg" alt="logo">
+						<picture>
+							<source srcset="img/svg/logo.svg" width="138" media="(max-width: 576px)">
+							<source srcset="img/svg/logo.svg" width="162" media="(max-width: 768px)">
+							<img src="img/svg/logo.svg" alt="logo">
+						</picture>
 						<span class="logo__text">Работаем в Москве<br> и Московской области</span>
 					</a>
 				</div>
-				<div class="col-auto ms-auto">
+				<div class="col-auto ms-auto d-none d-md-flex">
 					<div class="contact-box _align-right">
 						<div class="contact-box__item">
-							<svg class="_icon"><use href="img/svg/sprite.svg#i-tel"></use></svg>
+							<svg class="_icon">
+								<use href="img/svg/sprite.svg#i-tel"></use>
+							</svg>
 							<strong class="_text">+7 999 969-66-95</strong>
 						</div>
 						<div class="contact-box__text">Звоните с 09:30 до 19:00 (по МСК)</div>
 					</div>
 				</div>
-				<div class="col-auto">
+				<div class="col-auto ms-auto ms-md-0">
 					<div class="messenger">
 						<div class="messenger__item">
-							<a href="#" class="messenger__link _telegram"><svg class="_icon"><use href="img/svg/sprite.svg#i-telegram"></use></svg></a>
+							<a href="#" class="messenger__link _telegram">
+								<svg class="_icon">
+									<use href="img/svg/sprite.svg#i-telegram"></use>
+								</svg>
+							</a>
 						</div>
 						<div class="messenger__item">
-							<a href="#" class="messenger__link _whatsapp"><svg class="_icon"><use href="img/svg/sprite.svg#i-whatsapp"></use></svg></a>
+							<a href="#" class="messenger__link _whatsapp">
+								<svg class="_icon">
+									<use href="img/svg/sprite.svg#i-whatsapp"></use>
+								</svg>
+							</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-auto">
-					<a class="btn _light" href="#">
-						Пригласить на тендер
-						<svg class="btn__icon _right-down"><use href="img/svg/sprite.svg#i-right-down"></use></svg>
+				<div class="col-auto d-none d-md-flex">
+					<a class="header__action btn _light" href="#">
+						<span>Пригласить на тендер</span>
+						<svg class="btn__icon _right-down">
+							<use href="img/svg/sprite.svg#i-right-down"></use>
+						</svg>
 					</a>
+				</div>
+				<div class="col-auto ps-4 ps-sm-0 d-md-none">
+					<div class="burger burger-header">
+						<div class="burger__icon">
+							<div class="_top"></div>
+							<div class="_center"></div>
+							<div class="_bottom"></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</header>
 
 	<nav class="menu">
-		<div class="container">
-			<ul class="menu__list">
+		<div class="container _gap">
+			<ul class="menu__list d-none d-lg-flex">
 				<li class="menu__item">
 					<a class="menu__link">
 						Наши услуги
@@ -104,7 +129,95 @@
 		</div>
 	</nav>
 
-	<main class="inner-page container">
+	<div class="mobile-nav">
+
+		<div class="mobile-nav__header row align-items-center">
+			<div class="col-auto">
+				<a class="logo" href="#">
+					<img src="img/svg/logo.svg" width="138" alt="logo">
+				</a>
+			</div>
+			<div class="col-auto ms-auto">
+				<div class="messenger-outline pt-3">
+					<a class="messenger-outline__item" href="#">
+						<svg><use href="img/svg/sprite.svg#i-tel-outline"></use></svg>
+					</a>
+					<a class="messenger-outline__item" href="#">
+						<svg class="_whatsapp"><use href="img/svg/sprite.svg#i-whatsapp-outline"></use></svg>
+					</a>
+					<a class="messenger-outline__item" href="#">
+						<svg class="_telegram"><use href="img/svg/sprite.svg#i-telegram-outline"></use></svg>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<ul class="nav">
+			<li class="nav__li">
+				<label class="nav__item" for="#ffe84rhbhyfgwu333">
+					<span class="nav__item-text">Наши услуги</span>
+				</label>
+				<div class="nav-sub__wrap">
+					<input class="nav-sub__toggle" type="checkbox" id="#ffe84rhbhyfgwu333">
+					<svg class="nav__item-arrow"><use href="img/svg/sprite.svg#i-down"></use></svg>
+					<ul class="nav-sub">
+						<li><a href="#">Услуга Lorem.</a></li>
+						<li><a href="#">Услуга Lorem, ipsum.</a></li>
+						<li><a href="#">Услуга - Lorem.</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="nav__li">
+				<label class="nav__item" for="#fcejdje4595304hdf22">
+					<span class="nav__item-text">Наши проекты</span>
+				</label>
+				<div class="nav-sub__wrap">
+					<input class="nav-sub__toggle" type="checkbox" id="#fcejdje4595304hdf22">
+					<svg class="nav__item-arrow"><use href="img/svg/sprite.svg#i-down"></use></svg>
+					<ul class="nav-sub">
+						<li><a href="#">Проект Lorem.</a></li>
+						<li><a href="#">Проект Lorem, ipsum.</a></li>
+						<li><a href="#">Проект - Lorem.</a></li>
+						<li><a href="#">Проект em, ipsum.</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="nav__li">
+				<a class="nav__item" href="#">
+					<span class="nav__item-text">Принцип работы</span>
+				</a>
+			</li>
+			<li class="nav__li">
+				<a class="nav__item" href="#">
+					<span class="nav__item-text">О компании</span>
+				</a>
+			</li>
+			<li class="nav__li">
+				<a class="nav__item" href="#">
+					<span class="nav__item-text">Контакты</span>
+				</a>
+			</li>
+		</ul>
+		<div class="contact-box mb-4 pb-2">
+			<div class="contact-box__item">
+				<svg class="_icon">
+					<use href="img/svg/sprite.svg#i-tel-outline"></use>
+				</svg>
+				<strong class="_text">+7 999 969-66-95</strong>
+			</div>
+			<div class="contact-box__text">с 09:30 до 19:00 (по московскому времени)</div>
+		</div>
+		<div class="row">
+			<div class="col-auto">
+				<a class="btn _light d-flex mb-4" href="#">
+					Пригласить на тендер
+					<svg class="btn__icon _right-down"><use href="img/svg/sprite.svg#i-right-down"></use></svg>
+				</a>
+			</div>
+		</div>
+    </div>
+
+	<main class="inner-page container _gap">
 
         <ul class="breadcrumbs mb-4">
             <li class="breadcrumbs__item">
@@ -141,20 +254,23 @@
 				</div>
 
 				<div class="row mb-5 pb-4">
-					<div class="col pt-3">
+					<div class="col-12 col-md pt-3 mb-5 mb-md-0">
 						<h5 class="heading-5 font-jost mb-4 pb-2">Преимущества</h5>
                 		<p class="inner-page__text">Полимерные полы это долговечность и идеальная ровность поверхности без швов. Они выдерживают высокую механическую и химическую нагрузку, легко моются и сохраняют презентабельный вид долгие годы. Такие покрытия позволяют быстро вводить помещение в эксплуатацию и существенно экономят на ремонте в дальнейшем. Мы работаем только с проверенными материалами и гарантируем качество укладки.</p>
 					</div>
-					<div class="col">
-						<div class="ps-4">
-							<img class="objectfit-cover radius-large" src="img/polymer-floors/2.jpg" alt="#">
+					<div class="col-12 col-md">
+						<div class="ps-0 ps-md-4">
+							<picture style="height: 100px;">
+								<source srcset="img/polymer-floors/2.jpg" height="260" media="(max-width: 768px)">
+								<img class="img-autowidth radius-large" src="img/polymer-floors/2.jpg" alt="#">
+							</picture>
 						</div>
 					</div>
 				</div>
 
 				<div class="pt-3 pb-4 mb-2">
 					<h5 class="heading-5 font-jost mb-4 pb-2">Фототографии с объектов</h5>
-					<div class="row gx-5">
+					<div class="row gx-4 gx-md-5">
 						<div class="col-6">
 							<img class="objectfit-cover radius-large" src="img/polymer-floors/3.jpg" alt="#">
 						</div>
@@ -170,7 +286,7 @@
 					<hr class="hr">
 				</div>
             </div>
-            <div class="col-auto">
+            <div class="col-auto d-none d-lg-flex">
 				<form class="aside-form">
 					<h4 class="aside-form__title mb-3">Уже через 30 минут</h4>
 					<p class="aside-form__text mb-4">После заполнения формы вышлем&nbsp;вам расчет стоимости и&nbsp;предварительную смету</p>
@@ -216,18 +332,18 @@
 					</div>
 				</div>
 				<div class="col-auto pt-3 align-self-end">
-					<img class="d-block me-4" src="img/polymer-floors/document.jpg" alt="#">
+					<img class="give-guarantee__img d-block me-4" src="img/polymer-floors/document.jpg" alt="#">
 				</div>
 			</div>
 		</div>
 
 		<div class="equipment-slider swiper mb-4 pb-1">
 			<div class="row pt-5 mb-5">
-				<div class="col-7 pt-2">
+				<div class="col-12 col-sm-9 col-md-7 pt-2">
 					<h4 class="heading-4 font-jost mb-4">Современное оборудование</h4>
 					<p class="inner-page__text">Используем оборудование от надёжных производителей. Благодаря этому качественно прозводим работы, что позволяет быть <strong>в ТОПе среди конкурентов</strong></p>
 				</div>
-				<div class="col-auto ms-auto align-self-end">
+				<div class="col-auto ms-auto align-self-end d-none d-sm-flex">
 					<div class="swiper-button-block _static">
 						<div class="swiper-button-prev equipment-slider-prev">
 							<svg class="_arrow-prev">
@@ -324,7 +440,7 @@
 							<img class="objectfit-cover radius-large" src="img/polymer-floors/service1.jpg" alt="">
 						</div>
 						<h6 class="other-services-card__title">Полусухая стяжка с переносной станцией</h6>
-						<p class="other-services-card__text">Подходит, когда нет возможности разместить пневмонагнетатель на объекте. Подходит, когда&nbsp;нет&nbsp;возможности разместить пневмона...</p>
+						<p class="other-services-card__text">Подходит, когда нет возможности разместить пневмонагнетатель на объекте. Подходит, когда нет&nbsp;возможности разместить пневмона...</p>
 					</div>
 				</div>
 				<div class="swiper-slide">
@@ -361,63 +477,95 @@
 	</main>
 
 	<footer class="footer">
-		<div class="container">
+		<div class="container _gap">
 			<section class="footer__content">
 				<div class="row">
-					<aside class="col-3">
+					<aside class="col-12 col-sm-6 col-lg-3 _left">
 						<div class="footer__asideleft">
 							<a class="logo" href="#">
 								<img class="logo__img" src="img/svg/logo-white.svg" alt="logo">
 							</a>
-							<p class="logo-descrp">Ремонт и обустройство промышленных объектов любой сложности в Москве и МО</p>
-							<a class="btn _light d-flex mb-4" href="#">
-								Пригласить на тендер
-								<svg class="btn__icon _right-down"><use href="img/svg/sprite.svg#i-right-down"></use></svg>
-							</a>
-							<a class="btn d-flex" href="#">Оставить заявку на расчет</a>
+							<p class="logo-descrp">Ремонт и обустройство промышленных объектов любой сложности в&nbsp;Москве&nbsp;и&nbsp;МО</p>
+							<div class="row">
+								<div class="col-12 col-sm-11 col-md-9 col-lg-12">
+									<a class="btn _light d-flex mb-4" href="#">
+										Пригласить на тендер
+										<svg class="btn__icon _right-down"><use href="img/svg/sprite.svg#i-right-down"></use></svg>
+									</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 col-sm-11 col-md-9 col-lg-12">
+									<a class="btn d-flex" href="#">Оставить заявку на расчет</a>
+								</div>
+							</div>
 						</div>
 					</aside>
-					<nav class="col-6">
+					<nav class="col-12 col-lg-6 _center mb-3 mb-sm-5 mb-lg-0">
 						<div class="row pt-2">
-							<div class="col">
-								<h6 class="mb-4 ps-5">Устройство полов</h6>
-								<ul class="footer-menu ps-5">
-									<li><a href="#">Полусухая стяжка<br> (при помощи переносной станции) «полуручка»</a></li>
-									<li><a href="#">Полусухая стяжка<br> (полная механизация) «насос»</a></li>
-									<li><a href="#">Полистеролбетон</a></li>
-									<li><a href="#">Шумоизоляция пола</a></li>
-									<li><a href="#">Бетонные полы<br> с добавлением топпинга</a></li>
-									<li><a href="#">Полимерные полы</a></li>
-								</ul>
+							<div class="col-12 col-sm">
+								<div class="footer-menu ps-0 ms-0 ms-sm-3 ps-lg-4">
+									<label class="footer-menu__header" for="#de43easd3456">
+										<span class="footer-menu__title">Устройство полов</span>
+									</label>
+									<div class="footer-menu__sub">
+										<input class="footer-menu__toggle" type="checkbox" id="#de43easd3456">
+										<ul class="footer-menu__list">
+											<li><a href="#">Полусухая стяжка<br> (при помощи переносной станции) «полуручка»</a></li>
+											<li><a href="#">Полусухая стяжка<br> (полная механизация) «насос»</a></li>
+											<li><a href="#">Полистеролбетон</a></li>
+											<li><a href="#">Шумоизоляция пола</a></li>
+											<li><a href="#">Бетонные полы<br> с добавлением <br class="d-sm-none"> топпинга</a></li>
+											<li><a href="#">Полимерные полы</a></li>
+										</ul>
+										<svg class="footer-menu__arrow"><use href="img/svg/sprite.svg#i-down"></use></svg>
+									</div>
+								</div>
 							</div>
-							<div class="col">
-								<h6 class="mb-4">Отраслевые решения</h6>
-								<ul class="footer-menu mb-4">
-									<li><a href="#">Механизированная<br> штукатурка стен</a></li>
-									<li><a href="#">Возведение межкомнатных<br> перегородок</a></li>
-									<li><a href="#">Шумоизоляция стен</a></li>
-								</ul>
-								<h6 class="mb-4">Компания</h6>
-								<ul class="footer-menu">
-									<li><a href="#">Наши услуги</a></li>
-									<li><a href="#">Наши проекты</a></li>
-									<li><a href="#">Принцип работы</a></li>
-									<li><a href="#">О компании</a></li>
-									<li><a href="#">Контакты</a></li>
-								</ul>
+							<div class="col-12 col-sm">
+								<div class="footer-menu ps-0 ps-lg-1">
+									<label class="footer-menu__header" for="#deed246wlc04s1">
+										<span class="footer-menu__title">Отраслевые решения</span>
+									</label>
+									<div class="footer-menu__sub">
+										<input class="footer-menu__toggle" type="checkbox" id="#deed246wlc04s1">
+										<ul class="footer-menu__list">
+											<li><a href="#">Механизированная<br> штукатурка стен</a></li>
+											<li><a href="#">Возведение межкомнатных<br> перегородок</a></li>
+											<li><a href="#">Шумоизоляция стен</a></li>
+										</ul>
+										<svg class="footer-menu__arrow"><use href="img/svg/sprite.svg#i-down"></use></svg>
+									</div>
+								</div>
+								<div class="footer-menu ps-0 ps-lg-1">
+									<label class="footer-menu__header" for="#dfr854fw32d06ge">
+										<span class="footer-menu__title">Компания</span>
+									</label>
+									<div class="footer-menu__sub">
+										<input class="footer-menu__toggle" type="checkbox" id="#dfr854fw32d06ge">
+										<ul class="footer-menu__list">
+											<li><a href="#">Наши услуги</a></li>
+											<li><a href="#">Наши проекты</a></li>
+											<li><a href="#">Принцип работы</a></li>
+											<li><a href="#">О компании</a></li>
+											<li><a href="#">Контакты</a></li>
+										</ul>
+										<svg class="footer-menu__arrow"><use href="img/svg/sprite.svg#i-down"></use></svg>
+									</div>
+								</div>
 							</div>
 						</div>
 					</nav>
-					<aside class="col-3">
-						<div class="contactbox">
+					<aside class="col-12 col-sm-6 col-lg-3 _right">
+						<div class="contactbox ps-1">
 							<div>
-								<div><a class="contactbox__item" href="tel:+79999696695"><span class="size-4">+7 999 969-66-95</span></a></div>
+								<div><a class="contactbox__item" href="tel:+79999696695"><span class="size-4 _tel">+7 999 969-66-95</span></a></div>
 								<div class="helper-small"><span class="_text">Звоните с 09:30 до 19:00 (по МСК)</span></div>
 							</div>
-							<div>
-								<a class="contactbox__item" href="mailto:info@delaempol.pro">info@delaempol.pro</a>
+							<div class="mb-2 mb-sm-0">
+								<a class="contactbox__item _mail" href="mailto:info@delaempol.pro">info@delaempol.pro</a>
 							</div>
-							<address class="contactbox__item">111141, г. Москва, ул. Плеханова 7</address>
+							<address class="contactbox__item _address mb-3 mb-sm-0">111141, г. Москва, ул. <br class="d-sm-none"> Плеханова 7</address>
 							<div class="messenger">
 								<div class="messenger__item">
 									<a href="#" class="messenger__link _telegram"><svg class="_icon"><use href="img/svg/sprite.svg#i-telegram"></use></svg></a>
@@ -431,8 +579,12 @@
 				</div>
 			</section>
 			<div class="footer-bottom row">
-				<div class="col-auto">© Лидер Качества. 2001-2023</div>
-				<div class="col-auto ms-auto text-right"><a href="#">Политика обработки персональных данных</a></div>
+				<div class="col-12 col-sm-auto">
+					<p class="mb-2 mb-sm-0">© Лидер Качества. 2001-2023</p>
+				</div>
+				<div class="col-12 col-sm-auto ms-0 ms-sm-auto">
+					<a href="#">Политика обработки персональных данных</a>
+				</div>
 			</div>
 		</div>
 	</footer>

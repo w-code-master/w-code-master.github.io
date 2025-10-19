@@ -78,9 +78,20 @@ const reviewSlider = new Swiper('.review-slider', {
 
 const equipmentSlider = new Swiper('.equipment-slider', {
     loop: true,
-    slidesPerView: 4,
     autoHeight: false,
+    slidesPerView: 1,
     spaceBetween: 20,
+    breakpoints: {
+        576: {
+            slidesPerView: 2
+        },
+        860: {
+            slidesPerView: 3
+        },
+        1300: {
+            slidesPerView: 4
+        }
+    },
     navigation: {
         nextEl: '.equipment-slider-next',
         prevEl: '.equipment-slider-prev',
@@ -88,15 +99,23 @@ const equipmentSlider = new Swiper('.equipment-slider', {
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
-        // dynamicBullets: true
+        dynamicBullets: true
     }
 });
 
 const otherServicesSlider = new Swiper('.other-services-slider', {
     loop: true,
-    slidesPerView: 3,
+    slidesPerView: 1,
     autoHeight: false,
     spaceBetween: 20,
+    breakpoints: {
+        576: {
+            slidesPerView: 2
+        },
+        992: {
+            slidesPerView: 3
+        }
+    },
     navigation: {
         nextEl: '.other-services-slider-next',
         prevEl: '.other-services-slider-prev',
@@ -104,7 +123,7 @@ const otherServicesSlider = new Swiper('.other-services-slider', {
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
-        // dynamicBullets: true
+        dynamicBullets: true
     }
 });
 
