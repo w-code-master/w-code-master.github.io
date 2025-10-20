@@ -19,6 +19,13 @@
     border-radius: 8px;
     background-color: #fff;
 }
+.login-form .reset-pass {
+    font-size: 1.4rem;
+    color: var(--color-accent);
+}
+.login-form .reset-pass:hover {
+    text-decoration: none;
+}
 .login-form__rows {
     display: flex;
     flex-direction: column;
@@ -205,6 +212,7 @@
     background-color: #9A9A9A;
     text-align: center;
     min-height: 248px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 .transaction-status__card {
     fill: none;
