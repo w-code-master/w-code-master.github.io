@@ -108,19 +108,19 @@
                     </div>
                 </div>
                 <div class="col col-lg-12 pt-0 pt-lg-3 pb-2">
-                    <p class="fs-3">Cards</p>
+                    <p class="fs-3">Filters</p>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col mb-2">
                     <div class="filter row g-2 align-items-center">
-                        <div class="col-12 col-sm-auto">
+                        <div class="col-auto">
                             <div class="filter">
                                 <div class="w-dropdown">
                                     <div class="w-dropdown-item">
                                         <div class="filter-input">
-                                            <input class="filter-input__input _date" type="text" placeholder="Date">
+                                            <input class="filter-input__input _date" type="text" placeholder="Is between">
                                             <div class="filter-circle-btn">
                                                 <svg class="filter-circle-btn__icon"><use href="img/sprite.svg#i-plus"></use></svg>
                                             </div>
@@ -178,76 +178,204 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-auto">
-                            <div class="filter">
-                                <div class="filter-input">
-                                    <input class="filter-input__input _token" type="text" placeholder="Token">
-                                    <div class="filter-circle-btn">
-                                        <svg class="filter-circle-btn__icon"><use href="img/sprite.svg#i-plus"></use></svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-auto">
-                            <div class="filter">
-                                <div class="filter-input">
-                                    <input class="filter-input__input _small-width" type="text" placeholder="Order ID">
-                                    <div class="filter-circle-btn">
-                                        <svg class="filter-circle-btn__icon"><use href="img/sprite.svg#i-plus"></use></svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-auto">
-                            <div class="filter">
-                                <div class="filter-input">
-                                    <input class="filter-input__input _small-width" type="text" placeholder="Status">
-                                    <div class="filter-circle-btn">
-                                        <svg class="filter-circle-btn__icon"><use href="img/sprite.svg#i-plus"></use></svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-auto">
-                            <div class="filter">
-                                <div class="filter-input">
-                                    <input class="filter-input__input _small-width" type="email" placeholder="Email">
-                                    <div class="filter-circle-btn">
-                                        <svg class="filter-circle-btn__icon"><use href="img/sprite.svg#i-plus"></use></svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-auto">
+                        <div class="col-auto">
                             <div class="filter">
                                 <div class="w-dropdown">
-                                    <div class="w-dropdown-item d-flex">
-                                        <div class="filter-add-btn">
+                                    <div class="w-dropdown-item">
+                                        <div class="filter-input">
+                                            <input class="filter-input__input _date" type="text" placeholder="is in the last">
                                             <div class="filter-circle-btn">
                                                 <svg class="filter-circle-btn__icon"><use href="img/sprite.svg#i-plus"></use></svg>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="w-dropdown-block">
-                                        <div class="filter-add">
-                                            <button class="filter-add__item">
-                                                <div class="filter-circle-btn">
-                                                    <svg class="filter-circle-btn__icon"><use href="img/sprite.svg#i-plus"></use></svg>
+                                        <div class="filter-dropdown">
+                                            <div class="line-bottom-gray py-2 px-3">
+                                                <span class="fs-5">Filter by: date and time</span>
+                                            </div>
+                                            <div class="row pt-3 px-2 gy-2">
+                                                <div class="col-12 pb-1">
+                                                    <select>
+                                                        <option value="1">Is in the last</option>
+                                                        <option>Is between</option>
+                                                        <option value="2">Another option</option>
+                                                        <option value="3" disabled>A disabled option</option>
+                                                        <option value="4">Potato</option>
+                                                    </select>
                                                 </div>
-                                                <div class="filter-add__text">Amount</div>
-                                            </button>
-                                            <button class="filter-add__item">
-                                                <div class="filter-circle-btn">
-                                                    <svg class="filter-circle-btn__icon"><use href="img/sprite.svg#i-plus"></use></svg>
+                                                <div class="col-12">
+                                                    <div class="row align-items-center gx-2">
+                                                        <div class="col-auto">
+                                                            <div class="filter-icon mx-2">
+                                                                <svg><use href="img/sprite.svg#i-down-right"></use></svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <input id="datepicker-last" class="filter-date__small" type="text">
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <select class="select-small">
+                                                                <option value="1">hours</option>
+                                                                <option value="2">days</option>
+                                                                <option value="4">week</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="filter-add__text">Currency</div>
-                                            </button>
-                                            <button class="filter-add__item">
-                                                <div class="filter-circle-btn">
-                                                    <svg class="filter-circle-btn__icon"><use href="img/sprite.svg#i-plus"></use></svg>
+                                                <div class="col-12 px-4 py-2">
+                                                    <div class="pt-1">
+                                                        <button type="button" class="filter-date__btn btn btn-primary btn-lg w-100">Apply</button>
+                                                    </div>
                                                 </div>
-                                                <div class="filter-add__text">Card Mask</div>
-                                            </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="filter">
+                                <div class="w-dropdown">
+                                    <div class="w-dropdown-item">
+                                        <div class="filter-input">
+                                            <input class="filter-input__input _date" type="text" placeholder="amount">
+                                            <div class="filter-circle-btn">
+                                                <svg class="filter-circle-btn__icon"><use href="img/sprite.svg#i-plus"></use></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-dropdown-block">
+                                        <div class="filter-dropdown">
+                                            <div class="line-bottom-gray py-2 px-3">
+                                                <span class="fs-5">Filter by: amount</span>
+                                            </div>
+                                            <div class="row pt-3 px-2 gy-2">
+                                                <div class="col-12 pb-1">
+                                                    <select>
+                                                        <option value="1">Amount</option>
+                                                        <option>Is between</option>
+                                                        <option value="2">Another option</option>
+                                                        <option value="3" disabled>A disabled option</option>
+                                                        <option value="4">Potato</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row align-items-center gx-2">
+                                                        <div class="col-auto">
+                                                            <div class="filter-icon mx-2">
+                                                                <svg><use href="img/sprite.svg#i-down-right"></use></svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <input id="datepicker-last" class="filter-date__small" type="text">
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <span>and</span>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <input id="datepicker-last" class="filter-date__small" type="text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 px-4 py-2">
+                                                    <div class="pt-1">
+                                                        <button type="button" class="filter-date__btn btn btn-primary btn-lg w-100">Apply</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="filter">
+                                <div class="w-dropdown">
+                                    <div class="w-dropdown-item">
+                                        <div class="filter-input">
+                                            <input class="filter-input__input _date" type="text" placeholder="status">
+                                            <div class="filter-circle-btn">
+                                                <svg class="filter-circle-btn__icon"><use href="img/sprite.svg#i-plus"></use></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-dropdown-block">
+                                        <div class="filter-dropdown">
+                                            <div class="line-bottom-gray py-2 px-3">
+                                                <span class="fs-5">Filter by: status</span>
+                                            </div>
+                                            <div class="row pt-3 px-2 gy-2">
+                                                <div class="col-12">
+                                                    <div class="filter-status">
+                                                        <label class="filter-status__item">
+                                                            <input class="filter-status__checkbox" type="checkbox">
+                                                            <span>option 1</span>
+                                                        </label>
+                                                        <label class="filter-status__item">
+                                                            <input class="filter-status__checkbox" type="checkbox">
+                                                            <span>option 2</span>
+                                                        </label>
+                                                        <label class="filter-status__item">
+                                                            <input class="filter-status__checkbox" type="checkbox">
+                                                            <span>option 3</span>
+                                                        </label>
+                                                        <label class="filter-status__item">
+                                                            <input class="filter-status__checkbox" type="checkbox">
+                                                            <span>option 4</span>
+                                                        </label>
+                                                        <label class="filter-status__item">
+                                                            <input class="filter-status__checkbox" type="checkbox">
+                                                            <span>option 5</span>
+                                                        </label>
+                                                        <label class="filter-status__item">
+                                                            <input class="filter-status__checkbox" type="checkbox">
+                                                            <span>option 6</span>
+                                                        </label>
+                                                        <label class="filter-status__item">
+                                                            <input class="filter-status__checkbox" type="checkbox">
+                                                            <span>option 7</span>
+                                                        </label>
+                                                        <label class="filter-status__item">
+                                                            <input class="filter-status__checkbox" type="checkbox">
+                                                            <span>option 8</span>
+                                                        </label>
+                                                        <label class="filter-status__item">
+                                                            <input class="filter-status__checkbox" type="checkbox">
+                                                            <span>option 9</span>
+                                                        </label>
+                                                        <label class="filter-status__item">
+                                                            <input class="filter-status__checkbox" type="checkbox">
+                                                            <span>option 10</span>
+                                                        </label>
+                                                        <label class="filter-status__item">
+                                                            <input class="filter-status__checkbox" type="checkbox">
+                                                            <span>option 11</span>
+                                                        </label>
+                                                        <label class="filter-status__item">
+                                                            <input class="filter-status__checkbox" type="checkbox">
+                                                            <span>option 12</span>
+                                                        </label>
+                                                        <label class="filter-status__item">
+                                                            <input class="filter-status__checkbox" type="checkbox">
+                                                            <span>option 13</span>
+                                                        </label>
+                                                        <label class="filter-status__item">
+                                                            <input class="filter-status__checkbox" type="checkbox">
+                                                            <span>option 14</span>
+                                                        </label>
+                                                        <label class="filter-status__item">
+                                                            <input class="filter-status__checkbox" type="checkbox">
+                                                            <span>option 15</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 px-4 py-2">
+                                                    <div class="pt-1">
+                                                        <button type="button" class="filter-date__btn btn btn-primary btn-lg w-100">Apply</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -255,62 +383,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-auto mb-2">
-                    <button type="button" class="btn btn-outline-info btn-sm _radius"><span class="px-2">Export</span></button>
-                </div>
-            </div>
-
-            <div class="table-wrap">
-                <table class="table table-line">
-                    <thead class="fw-bolder">
-                        <tr>
-                            <th>Date</th>
-                            <th>Token</th>
-                            <th>Order ID</th>
-                            <th>Type</th>
-                            <th>CardMask</th>
-                            <th>Status</th>
-                            <th>Email</th>
-                            <th>Amount</th>
-                            <th>Currency</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>Sep 29, 2025</th>
-                            <td>asda123...</td>
-                            <td>asda123</td>
-                            <td>Pay</td>
-                            <th>*****4444</th>
-                            <td class="text-success">Approved</td>
-                            <td>asdfg@gmail.com</td>
-                            <td>100.00</td>
-                            <td>USD</td>
-                        </tr>
-                        <tr>
-                            <th>Jun 24, 2025</th>
-                            <td>asda123</td>
-                            <td>asda123</td>
-                            <td>Refund</td>
-                            <th>*****4433</th>
-                            <td class="text-success">Approved</td>
-                            <td>test@test.com</td>
-                            <td>200.00</td>
-                            <td>USD</td>
-                        </tr>
-                        <tr>
-                            <th>May 6, 2025</th>
-                            <td>fwefsd12</td>
-                            <td>fwefsd12</td>
-                            <td>Pay</td>
-                            <th>*****3322</th>
-                            <td class="text-danger">Declined</td>
-                            <td>afighasafg@sec*****</td>
-                            <td>25.12</td>
-                            <td>EUR</td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
             
         </section>
@@ -386,6 +458,7 @@
     <script>
         $("#datepicker-from").fdatepicker();
         $("#datepicker-to").fdatepicker();
+        $("#datepicker-last").fdatepicker();
     </script>
 
 </body>

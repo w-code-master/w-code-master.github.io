@@ -222,6 +222,27 @@ input.filter-input__input::placeholder {
 .filter-input__input._small-width {
     width: 120px;
 }
+.filter-input__input._width-100 {
+    width: 100%;
+}
+
+.filter-status {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    max-height: 240px;
+    overflow-y: auto;
+    padding-left: 10px;
+}
+.filter-status__item {
+    display: flex;
+    column-gap: 8px;
+}
+.filter-status__checkbox {
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+}
 
 .filter-circle-btn {
     width: 24px;
@@ -269,7 +290,8 @@ input.filter-input__input::placeholder {
     height: 16px;
     cursor: pointer;
 }
-input.filter-date__input {
+input.filter-date__input,
+input.filter-date__small {
     width: 82px;
     height: 25px;
     font-size: 13px;
@@ -331,6 +353,12 @@ input.filter-date__input {
 }
 .filter-add__item:hover .filter-circle-btn__icon {
     fill: #fff;
+}
+
+.filter-icon svg {
+    fill: var(--color-accent);
+    width: 14px;
+    height: 14px;
 }
 
 
@@ -668,4 +696,30 @@ input.filter-date__input {
 
 .nice-select.select-line .list {
 	width: 100%;
+}
+
+.nice-select.select-small {
+    height: 26px;
+    line-height: 26px;
+    padding-left: 8px;
+    padding-right: 24px;
+}
+.nice-select.select-small .arrow {
+    width: 12px;
+    height: 12px;
+    right: 7px;
+    top: 7px;
+}
+.nice-select.select-small .current {
+    font-size: 13px;
+}
+.nice-select.select-small.open .list {
+    min-width: 200px;
+}
+.nice-select.select-small .option {
+    line-height: 30px;
+    min-height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 12px;
 }
