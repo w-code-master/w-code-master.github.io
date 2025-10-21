@@ -1,0 +1,39 @@
+/* Max-Width media */
+
+/* 1534px */
+@media only screen and (max-width : 1534px) {
+   
+.header-nav {
+   column-gap: 0;
+   padding-left: 0;
+}
+.header-nav__item {
+   padding: 1.6rem 2.1rem;
+   font-size: 2.3rem;
+}
+
+.logo__img {
+   width: 72px;
+}
+.logo__text {
+   font-size: 3.4rem;
+}
+
+}
+
+/* 1200px */
+@media only screen and (max-width : 1200px) {
+
+.header__nav {
+   order: 2;
+}
+
+}
+
+
+/* Min-Width media */
+
+/* 1920px */
+@media only screen and (min-width : 1920px) {
+
+}
