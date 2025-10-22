@@ -1,0 +1,123 @@
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    color: #000;
+}
+.logo__img {
+    width: 89px;
+}
+.logo__text {
+    font-weight: bold;
+    font-size: 3.6rem;
+}
+/* small */
+.logo.sm {
+    column-gap: 2rem;
+}
+.logo.sm .logo__img {
+    width: 61px;
+}
+.logo.sm .logo__text {
+    font-size: 2.4rem;
+}
+
+.entry-lk {
+	display: inline-flex;
+    align-items: center;
+    column-gap: 1.6rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.entry-lk svg {
+	width: 2.6rem;
+	height: 2.6rem;
+	fill: var(--accent);
+	flex-shrink: 0;
+}
+
+/* Buttons */
+.btn {
+	display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.56rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 1.2rem 4rem 1.1rem;
+    letter-spacing: -.025em;
+    border: 1px solid transparent;
+    background-color: var(--accent);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s ease-out;
+}
+/* style */
+.btn-gray {
+    background-color: #EFEFEF;
+    color: #000;
+}
+/* size */
+.btn-sm {
+    height: 4.6rem;
+    font-size: 2.1rem;
+}
+
+
+/* Links */
+.link-gray {
+    display: inline-flex;
+    column-gap: 10px;
+    text-decoration: none;
+    color: #939393;
+    transition: .2s ease-out;
+}
+.link-gray .icon {
+    width: 22px;
+    height: 22px;
+    fill: #939393;
+    flex-shrink: 0;
+    transition: .2s ease-out;
+}
+.link-gray .text {
+    text-decoration: underline;
+}
+.link-gray:hover {
+    color: var(--accent);
+}
+.link-gray:hover .icon {
+    fill: var(--accent);
+}
+.link-gray.sm {
+    font-size: 14px;
+}
+
+
+/* scroll */
+.scroll-top {
+    width: 4.5rem;
+    height: 4.5rem;
+    border: 1px solid #EFEFEF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s ease-out;
+}
+.scroll-top svg {
+    width: 1.1rem;
+    height: 2rem;
+    stroke: #767676;
+    transition: .2s ease-out;
+}
+.scroll-top:hover {
+    border-color: var(--accent);
+    background-color: var(--accent);
+}
+.scroll-top:hover svg {
+    stroke: #fff;
+}
