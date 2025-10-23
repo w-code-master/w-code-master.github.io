@@ -26,9 +26,10 @@ $('.header-nav__item.item3').click(function() {
 
 
 const swiperHero = new Swiper('.swiper-hero',{
+    loop: true,
+    autoHeight: true,
     pagination: {
-        el: '.swiper-pagination',
-        dynamicBullets: true
+        el: '.swiper-pagination'
     }
 });
 
@@ -38,15 +39,32 @@ const swiperPackage = new Swiper('.swiper-package', {
     spaceBetween: 23,
     autoHeight: true,
     breakpoints: {
-        576: {
+        768: {
             slidesPerView: 2
         },
         992: {
             slidesPerView: 3,
-            spaceBetween: 33
+            spaceBetween: 30
         },
         1400: {
             slidesPerView: 4,
+            spaceBetween: 43
+        }
+    },
+});
+
+const swiperProduct = new Swiper('.swiper-product', {
+    loop: true,
+    slidesPerView: 1.2,
+    spaceBetween: 23,
+    autoHeight: true,
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 33
+        },
+        1400: {
+            slidesPerView: 3,
             spaceBetween: 43
         }
     },

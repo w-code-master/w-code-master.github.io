@@ -1,0 +1,193 @@
+/* Max-Width media */
+
+/* 1600px */
+@media only screen and (max-width : 1600px) {
+
+.swiper-hero .swiper-pagination {
+   left: 40px !important;
+   width: auto !important;
+   margin-left: 0;
+}
+
+}
+
+/* 1534px */
+@media only screen and (max-width : 1534px) {
+   
+.header-nav {
+   column-gap: 0;
+   padding-left: 0;
+}
+.header-nav__item {
+   padding: 1.6rem 2.1rem;
+   font-size: 2.3rem;
+}
+
+.logo__img {
+   width: 72px;
+}
+.logo__text {
+   font-size: 3.4rem;
+}
+
+.hero-content__inner {
+   padding-right: 70px;
+}
+
+.footer .scroll-top {
+   right: 12px;
+}
+
+}
+
+/* 1400px */
+@media only screen and (max-width : 1400px) {
+
+html {
+   font-size: 9px;
+}
+
+.hero-content__inner {
+   padding-right: 210px;
+}
+.hero-offer {
+   width: 450px;
+}
+
+.package__nav {
+   column-gap: 5rem;
+}
+
+.news-posts {
+   margin-left: -12px;
+   margin-right: -12px;
+}
+.news-posts > * {
+   padding-left: 12px;
+   padding-right: 12px;
+}
+.news-card.horizontal {
+   margin-bottom: 3rem;
+}
+
+.footer-nav {
+   width: 230px;
+}
+.footer-menu-wrap {
+   width: 470px;
+}
+.footer-contact {
+   width: auto;
+}
+.footer-messanger {
+   column-gap: 2.2rem;
+}
+
+}
+
+/* 1200px */
+@media only screen and (max-width : 1200px) {
+
+.header__nav {
+   order: 2;
+}
+
+.hero-container {
+   flex-direction: column;
+}
+.hero-content__inner {
+   padding-right: 0;
+   padding-bottom: 5rem;
+   min-height: auto;
+   margin-left: auto;
+   margin-right: auto;
+}
+.swiper-hero .swiper-pagination {
+   bottom: 344px !important;
+}
+.hero-graphica__decor._three {
+   top: 212px;
+}
+.hero-graphica {
+   left: 0;
+}
+.hero-graphica__img._internet {
+   margin-left: 0;
+}
+.hero-offer {
+   width: 800px;
+   margin: 0 auto 40px;
+   padding-top: 0;
+}
+.hero-offer__action {
+   justify-content: center;
+   padding-left: 68px;
+}
+.hero-offer__heading {
+   width: 100%;
+}
+
+.news-card__descrp {
+   padding: 2.2rem .8rem 2.2rem 1.5rem;
+}
+
+.contact-content {
+   padding-left: 20px;
+}
+.contact-info,
+.contact-form,
+.faq-content {
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.footer-nav,
+.footer-menu-wrap {
+   width: auto;
+   padding-right: 20px;
+}
+.footer .logo {
+   margin-left: 0;
+}
+.footer-content {
+   padding-left: 8.8rem;
+}
+
+}
+
+/* 992px */
+@media only screen and (max-width : 992px) {
+
+.news-card .h4 {
+   font-size: 3rem;
+}
+.news-posts {
+   margin-left: -6px;
+   margin-right: -6px;
+}
+.news-posts > * {
+   padding-left: 6px;
+   padding-right: 6px;
+}
+.hero-advantage._gift {
+   margin: 54px 214px 0 auto;
+}
+.hero-advantage._sound {
+   margin: 13rem 210px 0 auto;
+}
+.swiper-hero .swiper-pagination {
+   display: none;
+}
+.footer-menu-col {
+   order: 2;
+}
+   
+}
+
+
+/* Min-Width media */
+
+/* 1920px */
+@media only screen and (min-width : 1920px) {
+
+}
