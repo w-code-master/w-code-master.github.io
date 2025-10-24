@@ -1,0 +1,729 @@
+/* Max-Width media */
+
+/* 1600px */
+@media only screen and (max-width : 1600px) {
+
+.swiper-hero .swiper-pagination {
+   left: 40px !important;
+   width: auto !important;
+   margin-left: 0;
+}
+
+}
+
+/* 1534px */
+@media only screen and (max-width : 1534px) {
+   
+.header-nav {
+   column-gap: 0;
+   padding-left: 0;
+}
+.header-nav__item {
+   padding: 1.6rem 2.1rem;
+   font-size: 2.3rem;
+}
+
+.logo__img {
+   width: 7.2rem;
+}
+.logo__text {
+   font-size: 3.4rem;
+}
+
+.hero-content__inner {
+   padding-right: 70px;
+}
+
+.footer .scroll-top {
+   right: 12px;
+}
+
+.package__content {
+   padding-left: 0;
+   padding-right: 0;
+}
+.swiper-package {
+   padding-left: 20px;
+   padding-right: 20px;
+}
+.swiper-product {
+   padding-left: 20px;
+   padding-right: 20px;
+   margin-left: -20px;
+   margin-right: -20px;
+}
+
+}
+
+/* 1400px */
+@media only screen and (max-width : 1400px) {
+
+html {
+   font-size: 9px;
+}
+
+.hero-content__inner {
+   padding-right: 210px;
+}
+.hero-offer {
+   width: 450px;
+}
+
+.package__nav {
+   column-gap: 5rem;
+}
+
+.news-posts {
+   margin-left: -12px;
+   margin-right: -12px;
+}
+.news-posts > * {
+   padding-left: 12px;
+   padding-right: 12px;
+}
+.news-card.horizontal {
+   margin-bottom: 3rem;
+}
+
+.footer-nav {
+   width: 230px;
+}
+.footer-menu-wrap {
+   width: 470px;
+}
+.footer-contact {
+   width: auto;
+}
+.footer-messanger {
+   column-gap: 2.2rem;
+}
+
+}
+
+/* 1200px */
+@media only screen and (max-width : 1200px) {
+
+.header__nav {
+   order: 2;
+}
+
+.hero-container {
+   flex-direction: column;
+}
+.hero-content__inner {
+   padding-right: 0;
+   padding-bottom: 5rem;
+   min-height: auto;
+   margin-left: auto;
+   margin-right: auto;
+}
+.swiper-hero .swiper-pagination {
+   bottom: 344px !important;
+}
+.hero-graphica__decor._three {
+   top: 212px;
+}
+.hero-graphica {
+   left: 0;
+}
+.hero-graphica__img._internet {
+   margin-left: 0;
+}
+.hero-offer {
+   width: 800px;
+   margin: 0 auto 40px;
+   padding-top: 0;
+}
+.hero-offer__action {
+   justify-content: center;
+   padding-left: 68px;
+}
+.hero-offer__heading {
+   width: 100%;
+}
+
+.news-card__descrp {
+   padding: 2.2rem .8rem 2.2rem 1.5rem;
+}
+
+.contact-content {
+   padding-left: 20px;
+}
+.contact-info,
+.contact-form,
+.faq-content {
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.footer-nav,
+.footer-menu-wrap {
+   width: auto;
+   padding-right: 20px;
+}
+.footer .logo {
+   margin-left: 0;
+}
+.footer-content {
+   padding-left: 8.8rem;
+}
+
+.tariffs__table th {
+   padding-right: 4rem;
+   padding-left: 4rem;
+}
+
+
+
+}
+
+/* 992px */
+@media only screen and (max-width : 992px) {
+
+.news-card .h4 {
+   font-size: 3rem;
+}
+.news-posts {
+   margin-left: -6px;
+   margin-right: -6px;
+}
+.news-posts > * {
+   padding-left: 6px;
+   padding-right: 6px;
+}
+.hero-advantage._gift {
+   margin: 54px 214px 0 auto;
+}
+.hero-advantage._sound {
+   margin: 13rem 210px 0 auto;
+}
+.swiper-hero .swiper-pagination {
+   display: none;
+}
+.footer-menu-col {
+   order: 2;
+}
+
+.tariffs__heading {
+   font-size: 4.8rem;
+}
+   
+}
+
+/* 768px */
+@media only screen and (max-width : 768px) {
+
+html {
+   font-size: 8px;
+}
+
+.hero-offer {
+   width: 100%;
+}
+.hero-content__inner {
+   width: 100%;
+}
+.hero-graphica__circle {
+   width: 600px;
+   height: 600px;
+   margin: 0 auto;
+   left: 0;
+}
+.hero-advantage._gift {
+   margin: 5rem 1.4rem 0 auto;
+}
+.hero-advantage._wifi {
+   margin: 5rem 0 0 4rem;
+}
+.hero-advantage._tv {
+   margin-left: 0;
+}
+.hero-advantage._sound {
+   margin: 5rem 0 0 auto;
+}
+.hero-advantage._video {
+   margin: 6rem 0 0 4rem;
+}
+.hero-graphica__decor {
+   width: 366px;
+   height: 142px;
+}
+.hero-graphica__decor._three {
+   width: 142px;
+   height: 366px;
+   left: 39px;
+   top: initial;
+   bottom: 80px;
+}
+.hero-graphica__decor._four {
+   width: 142px;
+   height: 366px;
+   top: 70px;
+   left: initial;
+   right: -30px;
+}
+.hero-graphica__img._internet {
+   top: initial;
+   bottom: 107px;
+}
+.hero-graphica__img._tv {
+   top: initial;
+   bottom: 107px;
+}
+.hero-offer__action {
+   padding-left: 125px;
+}
+
+.technologies-graphic {
+   margin: 80px 0 0;
+}
+.technologies__text {
+   max-width: 450px;
+}
+
+.news-posts > * {
+   margin-bottom: 30px;
+}
+.news-card__descrp {
+   min-height: auto;
+   padding: 25px;
+}
+
+.payment-content.dark::after {
+   left: -30px;
+}
+.payment-bonus {
+   max-width: 100%;
+}
+
+.contact-content {
+   padding-left: 0;
+}
+.contact-form {
+   margin: 0 0 15px 0;
+}
+
+
+}
+
+/* 576px */
+@media only screen and (max-width : 576px) {
+
+h1, .h1 {
+	font-size: 3.6rem;
+}
+h2, .h2 {
+   font-size: 3rem;
+}
+h3, .h3 {
+   font-size: 2.6rem;
+}
+h4, .h4 {
+   font-size: 2.2rem;
+}
+h5, .h5 {
+   font-size: 2rem;
+}
+
+input[type="email"], input[type="password"], input[type="tel"], input[type="text"], textarea {
+   height: 5rem;
+   font-size: 1.75rem;
+}
+textarea {
+   min-height: 12.4rem;
+}
+
+.header {
+   padding: 1rem 0 2.1rem;
+}
+.logo {
+   column-gap: 1.2rem;
+}
+.logo__img {
+   width: 4rem;
+}
+.logo__text {
+   font-size: 2rem;
+}
+.entry-lk {
+   column-gap: 1rem;
+   font-size: 1.5rem;
+}
+.entry-lk svg {
+   width: 2rem;
+   height: 2rem;
+}
+.header__nav {
+   display: none;
+}
+.swiper-hero .swiper-slide {
+   padding-top: 2.1rem;
+}
+.hero-offer {
+   padding-top: 6px;
+   margin-bottom: 33px;
+}
+.hero-offer__heading {
+   font-size: 3rem;
+   margin-bottom: 2.2rem;
+}
+.hero-offer__text {
+   font-size: 1.7rem;
+   letter-spacing: -.023em;
+}
+.hero-offer__action {
+   padding: 0;
+   justify-content: flex-start;
+}
+.hero-offer__action .arrow {
+   margin-left: 3rem;
+   width: 49px;
+   position: relative;
+   left: -31px;
+   top: 2px;
+}
+.btn {
+   font-size: 1.8rem;
+   padding: .7rem 3rem .6rem;
+}
+.btn-sm {
+   height: 3.9rem;
+}
+
+.hero-offer__text {
+   margin-bottom: .8rem;
+}
+.hero-content__inner {
+   padding: 0 0 4rem;
+}
+.hero-advantage {
+   padding: 1rem 1rem;
+   width: 28rem;
+   font-size: 1.6rem;
+   column-gap: 1.8rem;
+}
+.hero-advantage__icon {
+   width: 5.4rem;
+   height: 5.4rem;
+}
+.hero-advantage__icon svg {
+   width: 3rem;
+   height: 3rem;
+}
+.hero-advantage._speed {
+   margin-left: 0px;
+}
+.hero-advantage._gift {
+   margin: 3rem 0 0 auto;
+   width: 23.4rem;
+}
+.hero-advantage._wifi {
+   margin: 2.8rem 0 0 0;
+}
+.hero-graphica__circle {
+   width: 315px;
+   height: 315px;
+   left: 20px;
+   top: 54px;
+}
+.hero-graphica__decor {
+   width: 256px;
+   height: 92px;
+}
+.hero-graphica__decor._one {
+   right: 17px;
+   top: 57px;
+}
+.hero-graphica__decor._two {
+   left: 0px;
+   top: initial;
+   bottom: 50px;
+}
+.hero-graphica__decor._three {
+   height: 256px;
+   width: 92px;
+   left: 14px;
+   bottom: -20px;
+}
+.hero-graphica__decor._four {
+   height: 256px;
+      width: 92px;
+      top: initial;
+      bottom: 70px;
+}
+.hero-graphica__img._internet {
+   bottom: 36px;
+}
+.hero-graphica__img._tv {
+   top: initial;
+   bottom: -14px;
+   margin-left: 70px;
+}
+.hero-advantage._sound {
+   margin-top: 3rem;
+}
+.hero-advantage._video {
+   margin: 3rem 0 0 3rem;
+}
+
+.package {
+   padding: 4rem 0 4.4rem;
+}
+.package__nav {
+   margin-bottom: 2.9rem;
+   column-gap: .5rem;
+}
+.package__label {
+   font-size: 1.7rem;
+}
+.package__label.active::after {
+   width: 8.8rem;
+   height: .8rem;
+}
+.swiper-package {
+   padding-left: 73px;
+}
+.package-card__header {
+   height: 7.5rem;
+   font-size: 2.5rem;
+}
+.package-card__header .icon {
+   width: 3.4rem;
+   height: 3rem;
+}
+.package-card__content {
+   padding: 2.4rem 1rem 2.4rem;
+}
+.package-list {
+   font-size: 1.75rem;
+   row-gap: 1.55rem;
+}
+.package-list__icon .icon {
+   width: 2.4rem;
+   height: 2.4rem;
+   top: 0;
+}
+.package-action {
+   margin: 0 10px;
+}
+.package-action__price {
+   font-size: 2rem;
+}
+
+.swiper-package .swiper-pagination {
+   display: block;
+   margin-left: -25px;
+}
+
+.technologies {
+   padding: 5rem 0 3.8rem;
+}
+.technologies__text {
+   font-size: 1.63rem;
+   padding-top: 4px;
+   margin-bottom: 4rem;
+}
+.technologies__list {
+   font-size: 2rem;
+   row-gap: 3.24rem;
+}
+.technologies__list-item {
+   column-gap: 1.6rem;
+}
+.technologies-graphic {
+   margin: 37px -5px 0;
+}
+
+.product {
+   padding: 5rem 0 4rem;
+}
+.product .h3 {
+   font-size: 3rem;
+}
+.swiper-product {
+   padding-left: 44px;
+}
+.swiper-product .swiper-pagination {
+   display: block;
+   margin-left: -11px;
+}
+.product-card::after {
+   display: none;
+}
+.product-img {
+   height: 212px;
+}
+.product-heading {
+   padding-bottom: 2.2rem;
+}
+.product-heading h4 {
+   font-size: 2.6rem;
+}
+.product-list {
+   padding-bottom: 10px;
+   padding-left: 0;
+   margin-right: -20px;
+}
+.product-price {
+   padding: 1.6rem 2rem;
+}
+.product-price__summa {
+   font-size: 2.3rem;
+}
+
+.footer-content {
+   padding-left: 9.8rem;
+}
+
+.news {
+   padding: 5.4rem 0 1.2rem;
+}
+.news-card__img {
+   height: 151px;
+}
+.news-card .h4 {
+   font-size: 2.48rem;
+}
+.news-card__descrp {
+   font-size: 1.75rem;
+   padding: 23px 23px 26px 23px;
+}
+
+.payment-content {
+   padding: 5rem 0;
+}
+.payment .h4 {
+   font-size: 3rem;
+}
+.payment-content__text {
+   font-size: 1.8rem;
+}
+.payment-percent {
+   min-width: 77px;
+}
+.payment-bonus__list {
+   row-gap: 1.4rem;
+}
+.payment-bonus__info {
+   padding: 1.8rem 1.5rem 1.3rem;
+   letter-spacing: .045em;
+}
+.payment-pay {
+   padding-left: 0;
+}
+.payment-list {
+   font-size: 1.73rem;
+}
+.payment-list__item {
+   column-gap: 1.5rem;
+}
+.payment-banking__subtitle {
+   letter-spacing: .05em;
+   margin-bottom: 2.5rem;
+}
+
+.faq {
+   padding: 5rem 20px;
+}
+.faq-heading {
+   margin-bottom: 3.6rem;
+}
+.faq-heading .h3 {
+   font-size: 3rem;
+}
+.faq-item {
+   font-size: 1.75rem;
+}
+.faq-content {
+   padding: .9rem 2.4rem;
+}
+.beefup__toggle {
+   top: 1rem;
+}
+.is-open .beefup__toggle {
+   top: 1.2rem;
+}
+.beefup__toggle-arrow {
+   width: 1rem;
+   height: 1.6rem;
+}
+.beefup__head button {
+   padding: 1.1rem 1rem 1.15rem 2.6rem;
+}
+.beefup__body {
+   padding: .6rem 0 2rem 2.6rem;
+   font-size: 1.7rem;
+}
+
+.contact {
+   padding: 5rem 0;
+}
+.contact-form {
+   padding: 3.4rem 3.6rem 2rem;
+}
+.contact-form .h4 {
+   font-size: 2.5rem;
+}
+.contact-form .btn-sm {
+   height: 4.6rem;
+}
+.contact-item {
+   margin-bottom: 2rem;
+}
+.contact-info {
+   padding: 3rem 3.2rem 3rem;
+}
+.contact-map {
+   height: 322px;
+}
+
+.logo.sm {
+   column-gap: 1.7rem;
+}
+.logo.sm .logo__img {
+   width: 6.3rem;
+}
+.logo.sm .logo__text {
+   font-size: 2rem;
+}
+
+.footer .scroll-top {
+   right: -1px;
+   top: 6px;
+}
+.footer-content {
+   padding: .7rem 0 6rem 8rem;
+}
+.footer-nav {
+   padding-bottom: 28px;
+   font-size: 1.8rem;
+   row-gap: 1rem;
+}
+.footer-contact__item .icon {
+   width: 2.4rem;
+   height: 2.4rem;
+}
+.footer-title {
+   font-size: 1.8rem;
+}
+.footer-menu {
+   row-gap: 1.6rem;
+   font-size: 1.7rem;
+}
+.footer-copyright {
+   font-size: 1.5rem;
+   padding-left: 0;
+}
+
+.modal-form {
+   padding: 8rem 3rem !important;
+}
+.modal-form .btn {
+   padding: 1.7rem 3rem 1.6rem;
+}
+
+.tariffs__heading {
+   font-size: 3rem;
+}
+
+}

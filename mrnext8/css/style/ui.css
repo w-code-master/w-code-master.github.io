@@ -1,0 +1,309 @@
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    color: #000;
+}
+.logo__img {
+    width: 8.9rem;
+}
+.logo__text {
+    font-weight: bold;
+    font-size: 3.6rem;
+}
+/* small */
+.logo.sm {
+    column-gap: 2rem;
+}
+.logo.sm .logo__img {
+    width: 61px;
+}
+.logo.sm .logo__text {
+    font-size: 2.4rem;
+}
+
+.entry-lk {
+	display: inline-flex;
+    align-items: center;
+    column-gap: 1.6rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2rem;
+	transition: .2s ease-out;
+}
+.entry-lk svg {
+	width: 2.6rem;
+	height: 2.6rem;
+	fill: var(--accent);
+	flex-shrink: 0;
+}
+.entry-lk:hover {
+	color: var(--accent);
+}
+
+/* Buttons */
+.btn {
+	display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.56rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 1.2rem 4rem 1.1rem;
+    letter-spacing: -.025em;
+    border: 1px solid transparent;
+    background-color: var(--accent);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s ease-out;
+}
+.btn:hover {
+	transform: scale(1.05);
+	background-color: #74ea95;
+}
+/* style */
+.btn-gray {
+    background-color: #EFEFEF;
+    color: #000;
+}
+/* size */
+.btn-sm {
+    height: 4.6rem;
+    font-size: 2.1rem;
+}
+
+
+/* Links */
+.link-gray {
+    display: inline-flex;
+    column-gap: 10px;
+    text-decoration: none;
+    color: #939393;
+    transition: .2s ease-out;
+}
+.link-gray .icon {
+    width: 22px;
+    height: 22px;
+    fill: #939393;
+    flex-shrink: 0;
+    transition: .2s ease-out;
+}
+.link-gray .text {
+    text-decoration: underline;
+}
+.link-gray:hover {
+    color: var(--accent);
+}
+.link-gray:hover .icon {
+    fill: var(--accent);
+}
+.link-gray.sm {
+    font-size: 14px;
+}
+
+
+/* scroll */
+.scroll-top {
+    width: 4.5rem;
+    height: 4.5rem;
+    border: 1px solid #EFEFEF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s ease-out;
+}
+.scroll-top svg {
+    width: 1.1rem;
+    height: 2rem;
+    stroke: #767676;
+    transition: .2s ease-out;
+}
+.scroll-top:hover {
+    border-color: var(--accent);
+    background-color: var(--accent);
+}
+.scroll-top:hover svg {
+    stroke: #fff;
+}
+
+
+
+/* SELECT */
+.nice-select {
+	-webkit-tap-highlight-color: transparent;
+	background-color: #0B314C;
+	border-radius: 5px;
+	box-sizing: border-box;
+	clear: both;
+	cursor: pointer;
+	display: block;
+	font-size: 1.6rem;
+	font-weight: normal;
+	height: 5.2rem;
+	outline: none;
+	padding-left: 2.6rem;
+	padding-right: 4rem;
+	position: relative;
+	text-align: left !important;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	white-space: nowrap;
+	width: auto;
+    position: relative;
+}
+
+.nice-select:active,
+.nice-select.open,
+.nice-select:focus {
+	border-color: #999;
+}
+
+.nice-select .arrow {
+    width: 1.4rem;
+    height: 1.4rem;
+    right: 2.5rem;
+    top: 2rem;
+    fill: none;
+    stroke: #fff;
+    position: absolute;
+    transform: rotate(90deg);
+    transition: .2s ease-out;
+}
+
+.nice-select.open .arrow {
+	transform: rotate(270deg);
+}
+
+.nice-select.open .list {
+    width: 100%;
+	opacity: 1;
+	pointer-events: auto;
+	-webkit-transform: scale(1) translateY(0);
+	-ms-transform: scale(1) translateY(0);
+	transform: scale(1) translateY(0);
+    background-color: #0B314C;
+    color: #fff;
+}
+
+.nice-select .current {
+    font-size: 1.6rem;
+    margin: 1.6rem 0;
+    display: inline-block;
+}
+
+.nice-select.disabled {
+	border-color: #ededed;
+	color: #999;
+	pointer-events: none;
+}
+
+.nice-select.disabled:after {
+	border-color: #cccccc;
+}
+
+.nice-select.wide {
+	width: 100%;
+}
+
+.nice-select.wide .list {
+	left: 0 !important;
+	right: 0 !important;
+}
+
+.nice-select.right {
+	float: right;
+}
+
+.nice-select.right .list {
+	left: auto;
+	right: 0;
+}
+
+.nice-select.small {
+	font-size: 12px;
+	height: 36px;
+	line-height: 34px;
+}
+
+.nice-select.small:after {
+	height: 4px;
+	width: 4px;
+}
+
+.nice-select.small .option {
+	line-height: 34px;
+	min-height: 34px;
+}
+
+.nice-select .list {
+	background-color: #0B314C;
+	box-sizing: border-box;
+	opacity: 0;
+	overflow: hidden;
+	padding: 4px 0 0 0;
+	pointer-events: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	-webkit-transform-origin: 50% 0;
+	-ms-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+	-webkit-transform: scale(0.75) translateY(-21px);
+	-ms-transform: scale(0.75) translateY(-21px);
+	transform: scale(0.75) translateY(-21px);
+	-webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+	transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+	z-index: 9;
+    margin-top: -4px;
+    border-radius: 0 0 5px 5px;
+}
+
+.nice-select .list:hover .option:not(:hover) {
+	background-color: transparent !important;
+}
+
+.nice-select .option {
+	cursor: pointer;
+	font-weight: 300;
+	line-height: 40px;
+	list-style: none;
+	min-height: 40px;
+	outline: none;
+	padding-left: 2.6rem;
+	padding-right: 4rem;
+	text-align: left;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.nice-select .option:hover,
+.nice-select .option.focus,
+.nice-select .option.selected.focus {
+	background-color: rgba(13, 110, 253, .2);
+}
+
+.nice-select .option.selected {
+	font-weight: bold;
+}
+
+.nice-select .option.disabled {
+	background-color: transparent;
+	color: #999;
+	cursor: default;
+}
+
+.no-csspointerevents .nice-select .list {
+	display: none;
+}
+
+.no-csspointerevents .nice-select.open .list {
+	display: block;
+}
