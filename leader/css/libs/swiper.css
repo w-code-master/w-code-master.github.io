@@ -662,7 +662,7 @@ button.swiper-pagination-bullet {
     height: 4.8rem;
     background-color: var(--light);
     border-radius: .8rem;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 .swiper-button-next._white,
 .swiper-button-prev._white {
@@ -674,6 +674,7 @@ button.swiper-pagination-bullet {
     height: 14px;
     stroke: var(--black);
     fill: none;
+    transition: 0.3s ease-out;
 }
 .swiper-button-block ._arrow-prev {
     transform: rotate(-180deg);
@@ -681,6 +682,15 @@ button.swiper-pagination-bullet {
 .swiper-button-next:after,
 .swiper-button-prev:after {
     display: none;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: var(--blue);
+}
+.swiper-button-next:hover ._arrow-next,
+.swiper-button-prev:hover ._arrow-prev {
+    stroke: #fff;
 }
 
 .swiper-button-block._static {

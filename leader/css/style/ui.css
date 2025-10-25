@@ -36,7 +36,7 @@
 	color: #fff;
 	border-radius: var(--radius);
 	cursor: pointer;
-	transition: .5s;
+	transition: .3s ease-out;
 	column-gap: 1rem;
 	line-height: 1.2;
 }
@@ -47,6 +47,7 @@
 	width: 2rem;
 	height: 2rem;
 	fill: white;
+	transition: .3s ease-out;
 	flex-shrink: 0;
 }
 .btn .btn__icon._fill-black {
@@ -68,6 +69,13 @@
 	width: 2.1rem;
 	height: 1rem;
 }
+.btn:hover {
+	background-color: var(--blue);
+	color: #fff;
+}
+.btn:hover ._arrow-right {
+	fill: #fff !important;
+}
 /* text */
 .btn ._small-text {
 	font-size: 1.3rem;
@@ -84,17 +92,31 @@
 .btn._light .btn__icon {
 	fill: var(--accent);
 }
+.btn._light:hover {
+	background-color: var(--blue);
+	color: #fff;
+}
+.btn._light:hover ._right-down {
+	fill: #fff;
+}
 /* white */
 .btn._white {
 	background-color: white;
 	color: var(--black);
 }
-.btn._light .btn__icon {
+.btn._white .btn__icon {
 	fill: var(--accent);
+}
+.btn._white:hover {
+	background-color: var(--blue);
+	color: #fff;
 }
 /* green */
 .btn._green {
 	background-color: var(--green);
+}
+.btn._green:hover {
+	background-color: var(--blue);
 }
 
 
@@ -226,4 +248,49 @@
     opacity: 0;
     bottom: 0;
     transform: rotate(180deg);
+}
+
+
+.btn-more {
+	display: inline-flex;
+	align-items: center;
+	text-decoration: none;
+	column-gap: 1rem;
+}
+.btn-more__text {
+	color: #232324;
+	text-decoration: underline;
+	text-decoration-color: #DB0000;
+	text-decoration-style: dashed;
+	text-underline-offset: 4px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 13px;
+	transition: .3s ease-out;
+}
+.btn-more__icon {
+	flex-shrink: 0;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .3s ease-out;
+}
+.btn-more__icon svg {
+	width: 2rem;
+	height: 1rem;
+	fill: #DB0000;
+	transition: .3s ease-out;
+}
+.btn-more:hover .btn-more__text {
+	color: var(--accent);
+}
+.btn-more:hover .btn-more__icon {
+	background-color: var(--accent);
+}
+.btn-more:hover svg {
+	fill: #fff;
 }

@@ -7,32 +7,17 @@
    max-width: 36rem;
 }
 
+.container._gap {
+   padding-left: 1.5rem;
+   padding-right: 1.5rem;
+}
+
 }
 /* 1200px */
 @media only screen and (max-width : 1199.98px) {
 
 .header__logo .logo__text {
    display: none;
-}
-
-.company-card {
-   column-gap: 2rem;
-}
-.company-card__img {
-   width: 46%;
-}
-.company-card__table ._descrp,
-.company-card__table ._price {
-   font-size: 1.7rem;
-}
-.company-card__table ._action {
-   font-size: 1.5rem;
-}
-.company-card__file ._text {
-   font-size: 1.4rem;
-}
-.company-card__contact {
-   padding: 2.6rem 2.2rem 2.5rem;
 }
 
 .peculiarities__contract {
@@ -167,22 +152,17 @@ html {
    margin-left: -150px;
 }
 
+.aside-form {
+   margin-left: 0;
+   width: 100%;
+   max-width: 440px;
+   margin: 0 auto 3rem;
+}
+
 }
 
 /* 868px */
 @media only screen and (max-width : 868px) {
-
-.company-card {
-   flex-direction: column;
-}
-.company-card__img {
-   width: 100%;
-   max-height: 400px;
-   margin-bottom: 4rem;
-}
-.company-card__contact ._title {
-   max-width: 275px;
-}
 
 .quiz__aside {
    display: none;
@@ -296,38 +276,6 @@ h5, .size-5 {
 .company {
 	padding-bottom: 6.5rem;
 }
-.company-card__title {
-   letter-spacing: .05em;
-   margin-bottom: 1.3rem;
-}
-.company-card__table ._descrp, .company-card__table ._price {
-   font-size: 1.85rem;
-   letter-spacing: .048em;
-   line-height: 1.62;
-}
-.company-card__table td {
-	padding-bottom: 1.9rem;
-}
-.company-card__table ._action {
-   font-size: 1.8rem;
-}
-.company-card__action .btn {
-   letter-spacing: .07em;
-}
-.company-card__file {
-	column-gap: 1.2rem;
-}
-.company-card__file ._text {
-   font-size: 2rem;
-   letter-spacing: -.01em;
-}
-.company-card__contact {
-   padding: 3.8rem 3.2rem 3.5rem;
-}
-.company-card__contact ._title {
-	font-size: 2.1rem;
-	line-height: 1.35;
-}
 
 .quiz .section-heading {
 	letter-spacing: .13rem;
@@ -368,6 +316,26 @@ h5, .size-5 {
 }
 .quiz-helper {
 	font-size: 1.6rem;
+}
+
+.menu {
+   margin-bottom: 4.7rem;
+}
+
+.inner-page .heading-3 {
+   font-size: 2.6rem;
+}
+
+.inner-page .heading-4 {
+   font-size: 2.45rem;
+}
+
+.give-guarantee__content {
+   padding: 3.2rem 3rem 3rem;
+}
+
+.other-services-card__img {
+   height: 220px;
 }
 
 
@@ -447,51 +415,6 @@ h4, .size-4 {
 
 .company {
    padding-bottom: 4.5rem;
-}
-.company-card__img {
-   margin-bottom: 3rem;
-   max-height: inherit;
-}
-.company-card__table {
-   display: flex !important;
-   flex-direction: column;
-   border-top: 1px solid #D7D7D7;
-   margin-bottom: 2rem;
-}
-.company-card__table .d-tr {
-   display: flex;
-   flex-wrap: wrap;
-   border-bottom: 1px solid #D7D7D7;
-   padding: 1.8rem 0;
-}
-.company-card__table .d-td {
-   display: block;
-}
-.company-card__table ._descrp {
-   width: 100%;
-   font-size: 1.6rem;
-   padding: 0 0 1.6rem 0;
-}
-.company-card__table ._price {
-   width: 50%;
-   text-align: left;
-   font-size: 2.1rem;
-   font-weight: bold;
-}
-.company-card__table ._action {
-   width: 50%;
-}
-.company-card__file ._text {
-   font-size: 1.6rem;
-}
-.company-card__action {
-   margin-bottom: 1rem;
-}
-.company-card__contact {
-   padding: 2.2rem 1rem 2rem 2.2rem;
-}
-.company-card__contact .contact-box {
-   align-items: flex-start;
 }
 
 .quiz {
@@ -933,6 +856,21 @@ input[type="email"], input[type="password"], input[type="tel"], input[type="text
 
 .mobile-nav__header {
    padding-right: 48px;
+}
+
+.inner-page .heading-3 {
+   font-size: 2.2rem;
+}
+
+.give-guarantee__text {
+   font-size: 1.6rem;
+}
+.give-guarantee__subtext {
+    font-size: 1.4rem;
+}
+
+.other-services-card__text {
+   font-size: 1.6rem;
 }
 
 

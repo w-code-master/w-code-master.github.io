@@ -104,6 +104,9 @@ body {
 a {
 	color: var(--green);
 }
+a:hover {
+	color: var(--blue);
+}
 ul, ol {
 	list-style: none;
 	padding-left: 0;
