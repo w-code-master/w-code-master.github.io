@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- favicon -->
+   <link href="img/favicon.png" sizes="32x32" rel="icon" type="image/png"/>
+   
+	<!-- style -->
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+	<div class="payment-wrap text-medium pt-5">
+        <div class="pt-2 pb-2"></div>
+		<h6 class="text-medium mb-5">Payment details:</h6>
+        <table class="payment-table mb-5">
+            <tr>
+                <td>Shop name:</td>
+                <td class="color-dark">Test Shop</td>
+            </tr>
+            <tr>
+                <td>Product description:</td>
+                <td class="color-dark">Pay for Book holder</td>
+            </tr>
+            <tr>
+                <td>Payment amount:</td>
+                <td class="color-dark">100 USD</td>
+            </tr>
+        </table>
+
+        <div class="pt-4 pb-4">
+            <div class="mb-1">Email</div>
+            <div class="row">
+                <div class="col-8 col-sm-5 pe-2">
+                    <input class="input _block _border _center" type="email" placeholder="example@example.com">
+                </div>
+            </div>
+        </div>
+
+        <div class="cardbank pt-3">
+            <form>
+                <div class="cardbank-card-front">
+                    <div class="cardbank-card _front">
+                        <div class="cardbank-card__inner">
+                            
+                            <div class="py-0 py-sm-5 mb-4 mb-sm-5"></div>
+                            
+                            <div class="row mb-4">
+                                <div class="col-12 col-sm-8">
+                                    <div class="pe-2 mb-3">
+                                        <div class="mb-1">CARD NUMBER</div>
+                                        <input class="input _block _center" type="text" placeholder="XXXX XXXX XXX XXXX">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 col-sm-8">
+                                    <div class="mb-4 mb-sm-0">
+                                        <div class="mb-1">CARDHOLDER NAME</div>
+                                        <input class="input _block _center" type="text" placeholder="CARDHOLDER NAME">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <div class="mb-1">EXPIRATION</div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <input class="input _inline _center" type="text" placeholder="MM">
+                                        </div>
+                                        <div class="col">
+                                            <input class="input _inline _center" type="text" placeholder="YY">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cardbank-card-back">
+                    <div class="cardbank-card-back__content">
+                        <div class="cardbank-card _back">
+                            <div class="cardbank-card__inner">
+                                <div class="cardbank-card__cvv">
+                                    <div>
+                                        <div class="mb-1">CVV/CVV2</div>
+                                        <input class="input" type="text" placeholder="XXX">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-powerdby text-normal pt-2">Powerd by <a class="text-medium" href="#">particolar</a></div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center pt-3">
+                    <div class="col-auto">
+                        <div class="pe-5 me-5">
+                            <button class="btn btn-accent" type="submit">
+                                <span class="pe-4 ps-4">PAY 100$</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+	</div>
+
+    <div class="payment-services pb-5">
+        <picture>
+            <!-- <source srcset="img/svg/partners/sber.svg" width="100" media="(max-width: 992px)" /> -->
+            <img src="img/payment/pci.jpg" width="95" alt="pci">
+        </picture>
+        <picture>
+            <!-- <source srcset="img/svg/partners/sber.svg" width="100" media="(max-width: 992px)" /> -->
+            <img src="img/payment/visa.jpg" width="60" alt="visa">
+        </picture>
+        <picture>
+            <!-- <source srcset="img/svg/partners/sber.svg" width="100" media="(max-width: 992px)" /> -->
+            <img src="img/payment/mastercard.jpg" width="60" alt="mastercard">
+        </picture>
+        <picture>
+            <!-- <source srcset="img/svg/partners/sber.svg" width="100" media="(max-width: 992px)" /> -->
+            <img src="img/payment/oi.jpg" width="66" alt="oi">
+        </picture>
+        <picture>
+            <!-- <source srcset="img/svg/partners/sber.svg" width="100" media="(max-width: 992px)" /> -->
+            <img src="img/payment/amex.jpg" width="66" alt="amex">
+        </picture>
+    </div>
+
+    <div class="pb-5"></div>
+	
+</body>
+</html>
