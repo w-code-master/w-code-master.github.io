@@ -1,0 +1,273 @@
+.login-wrap {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+}
+.login-logo {
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem .7rem;
+}
+.login-form {
+    width: 100%;
+    max-width: 642px;
+    padding: 2rem 8.4rem 7.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+}
+.login-form .reset-pass {
+    font-size: 1.4rem;
+    color: var(--color-accent);
+}
+.login-form .reset-pass:hover {
+    text-decoration: none;
+}
+.login-form__rows {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    padding-bottom: 1rem;
+}
+.login-form__rows .row {
+    align-items: center;
+}
+.login-form .input {
+    height: 4.2rem;
+}
+
+
+.payment-wrap {
+    width: 100%;
+    max-width: 638px;
+    padding: 2rem 2rem;
+    margin: 0 auto;
+}
+.payment-table tr:last-child td {
+    padding-bottom: 0;
+}
+.payment-table td {
+    padding-bottom: 1.1rem;
+}
+
+
+.cardbank-card {
+    width: 45.8rem;
+    min-height: 28.4rem;
+    padding: 1.6rem 3.3rem 2.4rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2.5rem;
+    background-color: var(--color-dark);
+    color: #fff;
+    position: relative;
+}
+.cardbank-card__inner {
+    position: relative;
+    z-index: 1;
+}
+
+.cardbank-card-front {
+    margin-bottom: -23.9rem;
+}
+.cardbank-card-back {
+    display: flex;
+    flex-direction: column;
+}
+.cardbank-card-back__content {
+    margin-left: auto;
+}
+
+.cardbank-card._front {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+.cardbank-card._back {
+    border-radius: 1.5rem;
+    padding-right: 3rem;
+    width: 43.7rem;
+}
+.cardbank-card._back::before {
+    content: "";
+    position: absolute;
+    top: 33px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+}
+
+.cardbank-card._visa {
+    background-color: #0031D0;
+}
+.cardbank-card._visa .input {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.cardbank-card._visa .input:focus {
+    background-color: #fff;
+}
+
+.cardbank-card._mastercard {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #989898;
+}
+
+.cardbank-card .input {
+    color: #333;
+}
+.cardbank-card .input::placeholder {
+    color: #fff;
+}
+.cardbank-card .input:focus::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.cardbank-card__cvv {
+    padding-top: 131px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.cardbank-card__cvv .input {
+    min-width: auto;
+    width: 7.5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    text-align: center;
+}
+
+.cardbank-visa {
+    position: relative;
+    min-height: 90px;
+}
+.cardbank-visa__logo {
+    width: 13rem;
+    height: 13rem;
+    position: absolute;
+    right: 2px;
+    top: -2.8rem;
+    fill: #fff;
+}
+
+.cardbank-mastercard {
+    position: relative;
+    min-height: 9rem;
+}
+.cardbank-mastercard__logo {
+    width: 9rem;
+    position: absolute;
+    right: 0;
+    top: -1.5rem;
+}
+
+.payment-powerdby {
+    color: var(--color-dark);
+    font-size: 1.37rem;
+}
+.payment-powerdby a {
+    color: var(--color-dark);
+    transition: .3s ease-out;
+}
+.payment-powerdby a:hover {
+    color: var(--color-accent);
+}
+
+
+.payment-services {
+    width: 100%;
+    max-width: 638px;
+    padding: .6rem 2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem 6rem;
+}
+
+
+.billing-address__row {
+    column-gap: 5rem;
+}
+
+
+.transaction {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 810px; 
+    width: 100%;
+    margin: 0 auto;
+}
+.transaction-status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #9A9A9A;
+    text-align: center;
+    min-height: 248px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.transaction-status__card {
+    fill: none;
+    stroke: #00FF00;
+    width: 6.2rem;
+    height: 6.2rem;
+}
+.transaction-status__info {
+    font-size: 2rem;
+    color: #00FF00;
+}
+.transaction-status._declined .transaction-status__info {
+    color: #FF1604;
+}
+.transaction-status._declined .transaction-status__card {
+    stroke: #FF1604;
+}
+
+.transaction-description {
+    font-size: 1.9rem;
+}
+.transaction-description__table {
+    padding-left: 10.5rem;
+    padding-right: 1.2rem;
+    font-size: 2rem;
+}
+
+
+.loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    MIN-height: 600px;
+    text-align: center;
+    padding: 5rem 3rem;
+    box-sizing: border-box;
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: #8C8C8C;
+}
+.loader-progress::part(value) {
+    stroke-width: .9rem;
+    stroke: #00CAF1;
+    stroke-linecap: round;
+}
+.loader-progress::part(circle) {
+    stroke-width: .9rem;
+    stroke: #D6F9FF;
+}
+.loader-progress::part(text) {
+    opacity: 0;
+}
+.loader-progress::part(base) {
+    width: 23.2rem;
+    height: 23.2rem;
+}

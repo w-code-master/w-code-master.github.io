@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon -->
+    <link href="img/favicon.png" sizes="32x32" rel="icon" type="image/png"/>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+    <main class="app">
+
+        <aside class="app-aside d-none d-lg-block">
+            <nav class="nav">
+                <ul>
+                    <li class="nav__li">
+                        <a class="nav__item" href="#">
+                            <span class="nav__item-icon">
+                                <svg class="_home"><use href="img/sprite.svg#i-home"></use></svg>
+                            </span>
+                            <span class="nav__item-text">SFP Test</span>
+                        </a>
+                        <div class="py-4 mb-2"></div>
+                    </li>
+                    <li class="nav__li">
+                        <label class="nav__item" for="#de43easd3456">
+                            <span class="nav__item-icon">
+                                <svg class="_pay"><use href="img/sprite.svg#i-pay"></use></svg>
+                            </span>
+                            <span class="nav__item-text">Payments</span>
+                        </label>
+                        <div class="nav-sub__wrap">
+                            <input class="nav-sub__toggle" type="checkbox" id="#de43easd3456">
+                            <svg class="nav__item-arrow"><use href="img/sprite.svg#i-down"></use></svg>
+                            <ul class="nav-sub">
+                                <li><a href="#">Cards</a></li>
+                                <li><a href="#">P2P Wallet</a></li>
+                                <li><a href="#">P2P Payment</a></li>
+                                <li><a href="#">WirePayments</a></li>
+                                <li><a href="#">Virtual Terminal</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__li">
+                        <label class="nav__item" for="#dss874hf02de7t">
+                            <span class="nav__item-icon">
+                                <svg class="_money"><use href="img/sprite.svg#i-money"></use></svg>
+                            </span>
+                            <span class="nav__item-text">Payout</span>
+                        </label>
+                        <div class="nav-sub__wrap">
+                            <input class="nav-sub__toggle" type="checkbox" id="#dss874hf02de7t">
+                            <svg class="nav__item-arrow"><use href="img/sprite.svg#i-down"></use></svg>
+                            <ul class="nav-sub">
+                                <li><a href="#">P2P Wallet</a></li>
+                                <li><a href="#">P2P Payment</a></li>
+                                <li><a href="#">WirePayments</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__li">
+                        <a class="nav__item" href="#">
+                            <span class="nav__item-icon">
+                                <svg><use href="img/sprite.svg#i-rating"></use></svg>
+                            </span>
+                            <span class="nav__item-text">Reports</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="app-content">
+
+            <div class="row">
+                <div class="col-auto ms-auto pe-3 pe-xl-5 order-2 order-lg-0">
+                    <div class="row gx-3 align-items-center">
+                        <div class="col pb-2 pb-lg-0">
+                            <div class="user-bar me-0 pe-0 me-xl-4 pe-xl-3">
+                                <div class="user-bar__item">
+                                    <button class="user-bar__btn">
+                                        <svg class="user-bar__btn-icon"><use href="img/sprite.svg#i-user"></use></svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pb-2 pb-lg-0 d-lg-none">
+                            <div class="sandwich-box">
+                                <div class="sandwich-icon">
+                                    <div class="sw-top"></div>
+                                    <div class="sw-center"></div>
+                                    <div class="sw-bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-4 mb-2">
+                <h4 class="heading-line fs-4 text-normal pb-1 pt-2">Payment</h4>
+            </div>
+            <div class="row align-items-center py-2 mb-3">
+                <div class="col-auto">
+                    <div class="fs-4">100.00 USD</div>
+                </div>
+                <div class="col-auto ps-5">
+                    <div class="ps-3">
+                        <button type="button" class="btn btn-lg btn-success">Success</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-2">
+                <h4 class="heading-line fs-4 text-normal pb-1">Details</h4>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12 col-xl-10 col-xxl-8">
+                    <div class="table-wrap">
+                        <table class="table small-text">
+                            <tbody>
+                                <tr>
+                                    <td class="pb-1">Token:</td>
+                                    <td>
+                                        <div class="token-address">
+                                            <div>1B70mtFZTTXL13mFiHogbgqf</div>
+                                            <button class="token-address__copy">
+                                                <svg><use href="img/sprite.svg#i-copy"></use></svg>
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td>Origin</td>
+                                    <td>USA</td>
+                                </tr>
+                                <tr>
+                                    <td class="pb-1">Card mask:</td>
+                                    <td>****4441</td>
+                                    <td>Type</td>
+                                    <td>Visa</td>
+                                </tr>
+                                <tr>
+                                    <td class="pb-1">Expiers</td>
+                                    <td>04/2025</td>
+                                    <td>Created date</td>
+                                    <td>Sep 29, 2025, 1:44 PM</td>
+                                </tr>
+                                <tr>
+                                    <td class="pb-1">Card Holder:</td>
+                                    <td>Ding Feng</td>
+                                    <td>Updated date</td>
+                                    <td>Sep 29, 2025, 2:44 PM</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <h4 class="heading-line fs-4 text-normal pb-1">Refund</h4>
+            </div>
+            <div class="row mb-4 pb-1">
+                <div class="col-12 col-md-8 col-xl-6 col-xxl-4">
+                    <div class="table-wrap">
+                        <table class="table small-text">
+                            <tbody>
+                                <tr>
+                                    <td class="pb-4">Amount avalible for refund</td>
+                                    <td>100 USD</td>
+                                </tr>
+                                <tr>
+                                    <td  class="pb-3">Refund count</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button type="button" class="btn btn-outline-danger btn-sm _radius"><span class="px-2">Refund</span></button>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <h4 class="heading-line fs-4 text-normal pb-1">Callback</h4>
+            </div>
+            <div class="row mb-4 pb-1">
+                <div class="col-12 col-md-8 col-xl-6 col-xxl-4">
+                    <div class="table-wrap">
+                        <table class="table small-text">
+                            <tbody>
+                                <tr>
+                                    <td class="pb-4">Status</td>
+                                    <td>delivered</td>
+                                </tr>
+                                <tr>
+                                    <td  class="pb-3">Retry count</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button type="button" class="btn btn-outline-warning btn-sm _radius"><span class="px-2">Resend Callback</span></button>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    
+    <div class="wrapper-nav">
+        <nav class="nav">
+            <ul>
+                <li class="nav__li">
+                    <a class="nav__item" href="#">
+                        <span class="nav__item-icon">
+                            <svg class="_home"><use href="img/sprite.svg#i-home"></use></svg>
+                        </span>
+                        <span class="nav__item-text">SFP Test</span>
+                    </a>
+                    <div class="py-4 mb-2"></div>
+                </li>
+                <li class="nav__li">
+                    <label class="nav__item" for="#ffe84rhbhyfgwu333">
+                        <span class="nav__item-icon">
+                            <svg class="_pay"><use href="img/sprite.svg#i-pay"></use></svg>
+                        </span>
+                        <span class="nav__item-text">Payments</span>
+                    </label>
+                    <div class="nav-sub__wrap">
+                        <input class="nav-sub__toggle" type="checkbox" id="#ffe84rhbhyfgwu333">
+                        <svg class="nav__item-arrow"><use href="img/sprite.svg#i-down"></use></svg>
+                        <ul class="nav-sub">
+                            <li><a href="#">Cards</a></li>
+                            <li><a href="#">P2P Wallet</a></li>
+                            <li><a href="#">P2P Payment</a></li>
+                            <li><a href="#">WirePayments</a></li>
+                            <li><a href="#">Virtual Terminal</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav__li">
+                    <label class="nav__item" for="#fcejdje4595304hdf22">
+                        <span class="nav__item-icon">
+                            <svg class="_money"><use href="img/sprite.svg#i-money"></use></svg>
+                        </span>
+                        <span class="nav__item-text">Payout</span>
+                    </label>
+                    <div class="nav-sub__wrap">
+                        <input class="nav-sub__toggle" type="checkbox" id="#fcejdje4595304hdf22">
+                        <svg class="nav__item-arrow"><use href="img/sprite.svg#i-down"></use></svg>
+                        <ul class="nav-sub">
+                            <li><a href="#">P2P Wallet</a></li>
+                            <li><a href="#">P2P Payment</a></li>
+                            <li><a href="#">WirePayments</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav__li">
+                    <a class="nav__item" href="#">
+                        <span class="nav__item-icon">
+                            <svg><use href="img/sprite.svg#i-rating"></use></svg>
+                        </span>
+                        <span class="nav__item-text">Reports</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
