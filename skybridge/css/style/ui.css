@@ -1,0 +1,102 @@
+/* Logo */
+.logo {
+	display: inline-flex;
+	align-items: center;
+	text-decoration: none;
+}
+.logo__icon {
+	width: 24px;
+	height: 24px;
+}
+.logo__text {
+	color: initial;
+	font-size: 2rem;
+}
+
+
+/* Buttons */
+.btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	min-height: 5rem;
+	padding: 1rem 3.7rem;
+
+	font-size: 1.6rem;
+	text-align: center;
+	text-decoration: none;
+	background-color: var(--color-accent);
+	color: #fff;
+	border-radius: 1rem;
+	cursor: pointer;
+
+	transition: .2s;
+}
+/* hover */
+.btn:hover {
+   background-color: var(--color-accent);
+   color: #fff;
+   text-decoration: none;
+}
+/* size */
+.btn.-small {
+	min-height: 4rem;
+	padding: .6rem 2.7rem;
+}
+
+
+/* ContactsBar */
+.contacts-bar {
+	display: flex;
+	gap: 1rem;
+}
+.contacts-bar__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 4rem;
+	height: 4rem;
+	background-color: var(--color-black);
+	border-radius: 5px;
+}
+.contacts-bar__icon {
+	fill: white;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+
+/* IconBox */
+.icon-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 5rem;
+	height: 5rem;
+	background-color: var(--color-accent);
+	border-radius: 1rem;
+}
+.icon-box__icon {
+	width: 2.4rem;
+	fill: #fff;
+}
+.icon-box__icon.-doc-success {
+	width: 1.8rem;
+	height: 2.2rem;
+}
+
+
+/* CardBlock */
+.card-block {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	row-gap: 2rem;
+	background-color: #fff;
+	border-radius: 2rem;
+	padding: 2.5rem 3rem;
+}
+.card-block__text {
+	opacity: .8;
+}
