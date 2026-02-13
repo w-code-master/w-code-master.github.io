@@ -1,0 +1,124 @@
+.header {
+    padding: 12px 0;
+    margin-bottom: 3rem;
+    position: relative;
+}
+.header__inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1630px;
+    padding: 0 var(--gutter-x);
+    margin: 0 auto;
+}
+.header__menu {
+    width: 100%;
+    padding-right: 2rem;
+}
+.header__logo {
+    padding: 0 3rem;
+    position: relative;
+    top: 3px;
+}
+.header__aside {
+    width: 100%;
+    display: flex;
+    padding-left: 2rem;
+}
+.header-contact {
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 3.9rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+.header-contact__tel {
+    font: 500 3.3rem "AlumniSans";
+    color: #fff;
+    text-decoration: none;
+}
+.header__calculate-btn.btn._small .btn__text {
+    font: 1.15rem "RoadRadio";
+    padding: 1.2rem 1.1rem 1.2rem 1.6rem;
+}
+
+
+/* Hero */
+.hero {
+    max-width: 1430px;
+    padding: 2.4rem var(--gutter-x);
+    margin: 0 auto;
+    min-height: 150px;
+}
+.hero__heading {
+    text-align: center;
+    margin-bottom: 4.8rem;
+    font-size: clamp(3.5rem, 8vw, 11rem);
+}
+.hero__action {
+    text-align: center;
+}
+
+
+/* Advantages */
+.advantages {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2.1rem 0;
+}
+.advantages-slider {
+    text-align: center;
+}
+.advantages-slider .swiper-wrapper {
+    width: auto;
+    display: inline-flex;
+    text-align: center;
+}
+.advantages-slider .swiper-slide {
+    display: inline;
+    width: auto;
+}
+.advantages-post {
+    padding: 1rem 3rem 1rem 2.8rem;
+    text-align: left;
+}
+.advantages-post__title {
+    display: inline-block;
+    font: 500 1.7rem "Manrope";
+    letter-spacing: -.095em;
+    margin-bottom: .9rem;
+}
+.advantages-post__title::before {
+    content: "[ ";
+    color: var(--color-accent);
+}
+.advantages-post__title::after {
+    content: " ]";
+    color: var(--color-accent);
+}
+.advantages-post__text {
+    color: var(--color-gray);
+    font-size: 1.4rem;
+    line-height: 1.2;
+    letter-spacing: -.016em;
+}
+
+
+.lighter-glare {
+	width: 200px;
+	height: 209px;
+	background: #D3A168;
+	filter: blur(250px);
+    z-index: -1;
+}
+.lighter1 {
+	position: absolute;
+	right: -80px;
+	top: 0px;
+}
+.lighter2 {
+	position: absolute;
+	left: -13px;
+	top: 649px;
+}
