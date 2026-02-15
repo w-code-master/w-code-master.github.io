@@ -1,14 +1,13 @@
 .header {
     padding: 12px 0;
     margin-bottom: 3rem;
-    position: relative;
 }
 .header__inner {
     display: flex;
     align-items: center;
     width: 100%;
     max-width: 1630px;
-    padding: 0 var(--gutter-x);
+    padding: 0 var(--gap-x-15);
     margin: 0 auto;
 }
 .header__menu {
@@ -42,19 +41,22 @@
     font: 1.15rem "RoadRadio";
     padding: 1.2rem 1.1rem 1.2rem 1.6rem;
 }
+.header__burger.burger {
+    display: none;
+}
 
 
 /* Hero */
 .hero {
     max-width: 1430px;
-    padding: 2.4rem var(--gutter-x);
+    padding: 2.4rem var(--gap-x-15);
     margin: 0 auto;
     min-height: 150px;
 }
 .hero__heading {
     text-align: center;
     margin-bottom: 4.8rem;
-    font-size: clamp(3.5rem, 8vw, 11rem);
+    font-size: clamp(4.4rem, 8vw, 11rem);
 }
 .hero__action {
     text-align: center;
@@ -113,12 +115,210 @@
     z-index: -1;
 }
 .lighter1 {
-	position: absolute;
-	right: -80px;
-	top: 0px;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    margin-left: 640px;
 }
 .lighter2 {
 	position: absolute;
-	left: -13px;
+	left: 50%;
 	top: 649px;
+    margin-left: -972px;
+}
+
+
+.mobile-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    z-index: 9;
+    display: none;
+}
+
+
+/* Working */
+.working {
+    position: relative;
+    padding: 3rem 0;
+    margin-bottom: 4.6rem;
+}
+.working .circle-badge {
+    position: absolute;
+    left: 50%;
+    top: -5.8rem;
+    z-index: 2;
+    margin-left: 63.7rem;
+}
+.working-slider {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    text-align: center;
+}
+.working-slider .swiper-wrapper {
+    width: auto;
+    display: inline-flex;
+    text-align: center;
+}
+.working-slider .swiper-slide {
+    display: inline;
+    width: auto;
+}
+.working-item {
+    display: block;
+}
+.working-item__img {
+    display: block;
+    height: 428px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.working-item__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.working__action {
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+
+/* toAction */
+.to-action {
+    padding: 50px 10px;
+}
+.to-action__inner {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #353535;
+    border-radius: 30px;
+    min-height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+.to-action__inner::before,
+.to-action__inner::after {
+    content: "";
+    position: absolute;
+    width: 310px;
+    height: 448px;
+    background: rgba(179, 118, 52, 0.76);
+    filter: blur(103.913px);
+    border-radius: 50%;
+    pointer-events: none;
+}
+.to-action__inner::before {
+    left: -122px;
+    bottom: -300px;
+}
+.to-action__inner::after {
+    right: -180px;
+    top: -254px;
+}
+.to-action__content {
+    padding: 5.9rem 0 5rem 7.8rem;
+    margin-right: -70px;
+    position: relative;
+    z-index: 2;
+}
+.to-action__heading {
+    font: 700 7.7rem/0.87 "AlumniSans";
+    margin-bottom: 3.6rem;
+}
+.to-action__text {
+    max-width: 540px;
+    color: var(--color-gray);
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin-bottom: 4.2rem;
+    letter-spacing: -.018em;
+}
+.to-action__plan {
+    width: 736px;
+    min-height: 462px;
+    height: 100%;
+    background: url("../../img/to-action/plan.webp") no-repeat left center / cover;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Catalog */
+.catalog__header {
+    display: flex;
+    max-width: 1630px;
+    padding: 0 var(--gap-x-15);
+    margin: 0 auto;
+}
+.catalog__heading {
+    flex: 0 0 auto;
+    padding-right: 8.4rem;
+    max-width: 650px;
+}
+.catalog__tabs-nav {
+    flex-grow: 1;
+}
+.catalog-tabs {
+    display: flex;
+    border-radius: 20px;
+    justify-content: flex-end;
+}
+.catalog-tabs__item {
+    flex: 0 1 211px;
+}
+.catalog-tabs__btn {
+    height: 100%;
+    min-height: 7.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-left: none;
+    font: 500 2.5rem/1 "AlumniSans";
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #BFBFBF;
+    border: 1px solid rgba(194, 194, 194, .35);
+    border-left: none;
+    padding: 1.5rem;
+}
+.catalog-tabs__item:first-child .catalog-tabs__btn {
+    border-left: 1px solid rgba(194, 194, 194, .35);
+    border-radius: 10px 0 0 10px;
+}
+.catalog-tabs__item:last-child .catalog-tabs__btn {
+    border-radius: 0 10px 10px 0;
+}
+
+
+/* Mission */
+.mission {
+    max-width: 1652px;
+    margin: 0 auto;
+    padding: 26px;
+    position: relative;
+}
+.mission .section-heading {
+    margin-bottom: 2rem;
+}
+.mission__picture {
+    display: block;
+}
+.mission__picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.mission .lighter-glare {
+    position: absolute;
+    left: 50%;
+    top: 92px;
+    margin-left: 709px;
 }
