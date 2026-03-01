@@ -1,0 +1,299 @@
+:root {
+	--color-dark: #323232;
+	--color-gray: #6c7278;
+	--color-light: #f6f8fa;
+	--color-accent: #a00c1e;
+	--color-primary: #172f66;
+	--color-primarylight: #6b97d6;
+}
+
+/* Fonts */
+/* Inter */
+@font-face {
+	font-family: "Inter";
+	src: url(../fonts/inter/Inter-Regular.woff2) format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Inter";
+	src: url(../fonts/inter/Inter-Medium.woff2) format("woff2");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Inter";
+	src: url(../fonts/inter/Inter-SemiBold.woff2) format("woff2");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Inter";
+	src: url(../fonts/inter/Inter-Bold.woff2) format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+html {
+	font-size: 10px;
+	height: -webkit-fill-available;
+}
+
+body {
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	color: #222326;
+	background-color: var(--color-light);
+	font:
+		normal 1.2rem/1.2 "Inter",
+		sans-serif;
+	letter-spacing: -0.015em;
+	min-height: 100dvh;
+	min-height: -webkit-fill-available;
+}
+
+ul,
+ol {
+	list-style: none;
+	padding-left: 0;
+}
+p,
+label,
+address,
+ul,
+ol {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+strong,
+b {
+	font-weight: 700;
+}
+
+h1,
+.heading-1 {
+	font-size: 3rem;
+	font-weight: 700;
+	margin: 0;
+}
+h2,
+.heading-2 {
+	font-size: 2.6rem;
+	font-weight: 700;
+	margin: 0;
+}
+h3,
+.heading-3 {
+	font-size: 2.2rem;
+	font-weight: 700;
+	margin: 0;
+}
+h4,
+.heading-4 {
+	font-size: 1.8rem;
+	font-weight: 700;
+	margin: 0;
+}
+h5,
+.heading-5 {
+	font-size: 1.6rem;
+	font-weight: 700;
+	margin: 0;
+}
+h6,
+.heading-6 {
+	font-size: 1.4rem;
+	font-weight: 700;
+	margin: 0;
+}
+
+/* Forms */
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="text"],
+textarea {
+	height: 52px;
+	min-width: 100%;
+	padding: 1px 1.5rem 0;
+	font:
+		500 1.3rem "Inter",
+		sans-serif;
+	color: #222326;
+	background-color: #f6f8fa;
+	transition: 0.5s;
+	border-radius: 10px;
+	border: none;
+	letter-spacing: -0.015em;
+}
+
+textarea {
+	max-width: 870px;
+	width: 100%;
+	height: auto;
+	min-height: 140px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	resize: none;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+textarea:focus {
+	outline: 0;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/*Placeholder*/
+::placeholder {
+	transition: 0.5s;
+	color: #bcbcbc;
+}
+:focus::placeholder {
+	color: transparent;
+}
+
+/*Selection*/
+::selection {
+	background-color: orangered;
+	color: #fff;
+}
+
+/* text align */
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+
+/* text sizes */
+.text-14 {
+	font-size: 1.4rem;
+}
+
+/* text weight */
+.weight-400 {
+	font-weight: 400;
+}
+.weight-500 {
+	font-weight: 500;
+}
+.weight-600 {
+	font-weight: 600;
+}
+.weight-700 {
+	font-weight: 700;
+}
+
+/* line height */
+.line-height-140 {
+	line-height: 140%;
+}
+
+/* colors */
+.color-black {
+	color: #1a1c1e;
+}
+.color-white {
+	color: #fff;
+}
+.color-eee {
+	color: #eee;
+}
+.color-d4 {
+	color: #d4d4d4;
+}
+.color-8e {
+	color: #8e8e8e;
+}
+.color-53 {
+	color: #535353;
+}
+.color-b7 {
+	color: #b7b7b9;
+}
+
+/* background colors */
+.bg-white {
+	background-color: #fff;
+}
+.bg-light {
+	background-color: var(--color-light);
+}
+.bg-primarylight {
+	background-color: var(--color-primarylight);
+}
+
+/* border radius */
+.radius-10 {
+	border-radius: 1rem;
+}
+.radius-15 {
+	border-radius: 1.5rem;
+}
+
+/* animations delay */
+.delay-01s {
+	animation-delay: 0.1s;
+}
+.delay-015s {
+	animation-delay: 0.15s;
+}
+.delay-02s {
+	animation-delay: 0.2s;
+}
+.delay-025s {
+	animation-delay: 0.25s;
+}
+.delay-03s {
+	animation-delay: 0.3s;
+}
+.delay-04s {
+	animation-delay: 0.4s;
+}
+.delay-05s {
+	animation-delay: 0.5s;
+}
+.delay-06s {
+	animation-delay: 0.6s;
+}
+.delay-07s {
+	animation-delay: 0.7s;
+}
+.delay-075s {
+	animation-delay: 0.75s;
+}
+.delay-08s {
+	animation-delay: 0.8s;
+}
+.delay-09s {
+	animation-delay: 0.9s;
+}
+.delay-1s {
+	animation-delay: 1s;
+}
+.delay-1s {
+	animation-delay: 1s;
+}
