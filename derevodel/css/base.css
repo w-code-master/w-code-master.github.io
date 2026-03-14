@@ -3,6 +3,7 @@
 	--color-accent: #d3a168;
 	--color-accent-hover: #ef7c59;
 	--color-gray: #c8c8c8;
+	--color-danger: #ff7777;
 
 	--gap-x-15: 15px;
 	--gap-x-26: 26px;
@@ -174,6 +175,9 @@ h6,
 .color-white {
 	color: white;
 }
+.color-danger {
+	color: var(--color-danger);
+}
 
 /* Text */
 .text-uppercase {
@@ -285,6 +289,40 @@ textarea:focus {
 }
 
 /* list */
+.list._check {
+	.list__item {
+		padding-left: 0;
+		display: flex;
+		column-gap: 2rem;
+		margin-bottom: 2.6rem;
+		margin-right: 0;
+	}
+	.list__item::before {
+		display: none;
+	}
+	.list__icon {
+		flex-shrink: 0;
+		width: 2.6rem;
+		height: 2.6rem;
+		border-radius: 50%;
+		background-color: var(--color-accent);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		svg {
+			fill: none;
+			stroke: #fff;
+			width: 1rem;
+			height: 1rem;
+		}
+	}
+}
+.list__text {
+	font-size: 1.8rem;
+	color: #c8c8c8;
+	padding-top: 0.2rem;
+	letter-spacing: -0.02em;
+}
 .list__item {
 	position: relative;
 	min-height: 20px;
@@ -319,6 +357,12 @@ textarea:focus {
 
 .link {
 	color: var(--color-accent);
+	&._danger {
+		color: var(--color-danger);
+	}
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 @keyframes spin {

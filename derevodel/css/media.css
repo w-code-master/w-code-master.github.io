@@ -197,6 +197,22 @@
 	.footer__aside {
 		padding-right: 0;
 	}
+
+	.view-project {
+		padding-top: 210px;
+	}
+	.view-project__steps {
+		padding: 38px 48px 56px;
+	}
+	.view-project__image {
+		margin-top: 0;
+	}
+	.block-step__text {
+		margin-right: 0;
+	}
+	.view-project .project-nav {
+		width: 100%;
+	}
 }
 
 /* 1200px */
@@ -489,6 +505,34 @@
 	.contacts__social-text {
 		display: none;
 	}
+
+	.view-project__steps {
+		padding: 28px 32px 38px;
+	}
+
+	.project-photo {
+		width: 1570px;
+		margin-left: -785px !important;
+		.swiper-slide {
+			width: 500px;
+			height: 322px;
+		}
+		.swiper-prev,
+		.swiper-next {
+			position: static;
+			margin: 0;
+		}
+	}
+
+	.view-project-plan {
+		gap: 12px;
+		flex-wrap: wrap;
+	}
+	.view-project-plan__item {
+		width: calc(50% - 6px);
+		border-radius: 10px;
+		overflow: hidden;
+	}
 }
 
 /* 768px */
@@ -722,6 +766,40 @@
 			text-decoration: none;
 		}
 	}
+
+	.view-project {
+		padding-top: 70px;
+		.view-project__header,
+		.view-project__container {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.project-nav {
+			position: static;
+			padding-bottom: 10px;
+			flex-wrap: wrap;
+			gap: 10px;
+			left: 0;
+			padding: 0 15px 30px;
+		}
+		.project-nav__item {
+			flex: 1 0 auto;
+		}
+		.project-nav__btn,
+		.project-nav__item:first-child .project-nav__btn,
+		.project-nav__item:last-child .project-nav__btn {
+			border-radius: 10px;
+		}
+		.project-nav__btn {
+			min-height: 6.6rem;
+			padding: 1.5px 2rem;
+			border-left: 1px solid rgba(194, 194, 194, 0.35);
+		}
+	}
+	.view-project__steps {
+		margin-left: 15px !important;
+		margin-right: 15px !important;
+	}
 }
 
 /* 576px */
@@ -762,7 +840,7 @@
 		max-width: 420px;
 	}
 	.advantages {
-		padding: 1.4rem 0;
+		padding: 3rem 0;
 	}
 	.advantages-slider .swiper-wrapper {
 		padding-left: 2rem;
@@ -1401,13 +1479,41 @@
 		font-size: 1.4rem;
 		margin-right: -15px;
 	}
-}
 
-.modal-form .form-block__header {
-	text-align: center;
-}
-.modal-form .form-block__heading {
-	font-size: 35px;
+	.project-nav__btn {
+		min-height: 5.8rem;
+		font-size: 2rem;
+	}
+
+	.project-photo {
+		width: 1120px;
+		margin-left: -560px !important;
+		.swiper-slide {
+			width: 350px;
+			height: 225px;
+		}
+	}
+	.view-project__header .heading-2 {
+		font-size: 5rem;
+		text-align: center;
+	}
+
+	.view-project-plan__item {
+		width: 100%;
+	}
+	.view-project__steps {
+		.heading-2 {
+			text-align: center;
+			font-size: 5rem;
+		}
+	}
+
+	.modal-form .form-block__header {
+		text-align: center;
+		.form-block__heading {
+			font-size: 4.5rem;
+		}
+	}
 }
 
 /* 480px */
@@ -1423,6 +1529,18 @@
 				min-width: 0;
 			}
 		}
+	}
+	.project-photo__wrap {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.project-photo {
+		width: 100%;
+		margin-left: 0 !important;
+		left: 0;
+	}
+	.view-project__steps {
+		padding: 18px 15px 22px;
 	}
 }
 
@@ -1524,6 +1642,22 @@
 @media only screen and (max-width: 375px) {
 	.look-card__img {
 		height: 146px;
+	}
+	.project-photo {
+		.swiper-slide {
+			height: 170px;
+		}
+	}
+	.view-project__header {
+		margin-bottom: 6rem;
+	}
+	.view-project__steps {
+		padding: 0;
+		background-color: transparent;
+		&::before,
+		&::after {
+			display: none;
+		}
 	}
 }
 

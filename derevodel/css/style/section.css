@@ -70,7 +70,7 @@
 .advantages {
 	max-width: 1400px;
 	margin: 0 auto;
-	padding: 2.1rem 0 1.8rem;
+	padding: 4rem 0;
 }
 .advantages-slider {
 	text-align: center;
@@ -157,11 +157,28 @@
 		height: 36px;
 	}
 }
+@keyframes menuSlideShow {
+	0% {
+		transform: translateX(210px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+@keyframes menuSlideHide {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(210px);
+	}
+}
 .mobile-panel__inner {
 	display: flex;
 	min-height: 100vh;
 	position: relative;
 	overflow-y: auto;
+	overflow-x: hidden;
 }
 .mobile-panel__container {
 	width: 210px;
@@ -171,6 +188,12 @@
 	flex-direction: column;
 	position: relative;
 	padding: 43px 15px 23px 24px;
+}
+.mobile-panel.active .mobile-panel__container {
+	animation: menuSlideShow 0.2s linear;
+}
+.mobile-panel.active .mobile-panel__container.active {
+	animation: menuSlideHide 0.2s linear;
 }
 .mobile-panel__close {
 	width: 2.3rem;
@@ -900,6 +923,7 @@
 	height: 364px;
 	overflow: hidden;
 	position: relative;
+	background-color: #fff;
 
 	&::after {
 		content: "";
@@ -984,6 +1008,7 @@
 	overflow: hidden;
 	cursor: pointer;
 	position: relative;
+	background-color: #fff;
 
 	&::after {
 		content: "";
@@ -1051,6 +1076,12 @@
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+}
+.look-review__modal {
+	iframe {
+		width: 100%;
+		height: 400px;
+	}
 }
 
 .reviews {
@@ -1603,11 +1634,294 @@
 
 .modal-form {
 	.form-block {
-		padding: 40px 18px;
+		padding: 50px 18px 30px;
 		border-radius: 30px;
 	}
 	.form-block__inner {
 		max-width: 393px;
 		margin: 0 auto;
 	}
+	.form-block__heading {
+		font-size: 6rem;
+	}
+}
+
+.view-project {
+	width: 100%;
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 246px 0 66px;
+	position: relative;
+	background-color: #2b2b2b;
+	border-radius: 10px;
+	.project-nav {
+		width: calc(50% - 66px);
+		position: absolute;
+		left: 66px;
+		top: 66px;
+	}
+	.heading-2 {
+		font-size: 7rem;
+	}
+	.btn__text {
+		font: 1.7rem "RoadRadio";
+		letter-spacing: -0.024em;
+	}
+}
+.view-project__header {
+	margin-bottom: 9.3rem;
+	padding-left: 66px;
+	padding-right: 66px;
+	.heading-2 {
+		margin-bottom: 2rem;
+	}
+	.list {
+		margin-bottom: 4.6rem;
+	}
+	.view-project__image {
+		margin-left: 0;
+		margin-bottom: 2rem;
+	}
+}
+.view-project__image {
+	display: block;
+	max-height: 52rem;
+	border-radius: 10px;
+	background-color: #d1d1d1;
+	overflow: hidden;
+	margin-top: -179px;
+	margin-left: 24px;
+	img {
+		display: block;
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.project-nav {
+	display: flex;
+}
+.project-nav__item {
+	flex: 0 1 211px;
+}
+.project-nav__btn {
+	height: 100%;
+	min-height: 7.6rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-left: none;
+	font: 500 2.5rem/0.94 "AlumniSans";
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #bfbfbf;
+	border: 1px solid rgba(194, 194, 194, 0.35);
+	border-left: none;
+	padding: 1.5rem;
+}
+.project-nav__item:first-child .project-nav__btn {
+	border-left: 1px solid rgba(194, 194, 194, 0.35);
+	border-radius: 10px 0 0 10px;
+}
+.project-nav__item:last-child .project-nav__btn {
+	border-radius: 0 10px 10px 0;
+}
+.project-nav__btn.active {
+	border: 1px solid var(--color-accent);
+	background-color: var(--color-accent);
+	color: #fff;
+}
+
+.view-project__steps {
+	background-color: #323232;
+	padding: 58px 68px 76px;
+	margin-left: 66px !important;
+	margin-right: 66px !important;
+	border-radius: 30px;
+	position: relative;
+	overflow: hidden;
+
+	&::before,
+	&::after {
+		content: "";
+		width: 284px;
+		height: 856px;
+		background: rgba(179, 118, 52, 0.38);
+		filter: blur(103.913px);
+		border-radius: 50%;
+		position: absolute;
+		pointer-events: none;
+	}
+	&::before {
+		top: -484px;
+		right: -170px;
+	}
+	&::after {
+		bottom: -500px;
+		left: -115px;
+	}
+}
+.view-project__steps.g-4 {
+	--bs-gutter-y: 2rem;
+	--bs-gutter-x: 2rem;
+}
+
+.block-step {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	min-height: 229px;
+	border: 1px solid #616161;
+	border-radius: 10px;
+	padding: 2.4rem 2.4rem 2.2rem;
+	&._accent {
+		background: var(--color-accent) url("../../img/house.png") no-repeat right bottom;
+	}
+}
+a.block-step {
+	color: #fff;
+	text-decoration: none;
+	transition: 0.3s;
+	&:hover {
+		background-color: var(--color-accent-hover);
+	}
+}
+.block-step__icon {
+	width: 3.7rem;
+	height: 3.7rem;
+	border-radius: 5px;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	svg {
+		width: 11px;
+		height: 11px;
+		fill: var(--color-accent);
+		&._stroke {
+			fill: none;
+			stroke: var(--color-accent);
+		}
+	}
+}
+.block-step__title {
+	font: 700 15px / 1.2 "Manrope";
+	margin-bottom: 1.2rem;
+	letter-spacing: -0.025em;
+}
+.block-step__text {
+	color: #b3b3b3;
+	font-size: 13px;
+	margin-right: -15px;
+	letter-spacing: -0.027em;
+}
+.block-step__caption {
+	font-size: 14px;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 1rem;
+}
+.block-step__caption::before,
+.block-step__caption::after {
+	position: relative;
+	font-size: 15px;
+	color: var(--color-accent);
+	top: -1px;
+}
+.block-step__caption::before {
+	content: "[";
+	margin-right: 0.3rem;
+}
+.block-step__caption::after {
+	content: "]";
+	margin-left: 0.3rem;
+}
+
+.project-photo__wrap {
+	max-width: 1600px;
+	width: 100%;
+	overflow: hidden;
+}
+.project-photo {
+	width: 2502px;
+	position: relative;
+	left: 50%;
+	margin-left: -1251px !important;
+	padding-bottom: 1px !important;
+	.swiper-slide {
+		width: 767px;
+		height: 494px;
+		background-color: #8c8c8c;
+		border-radius: 10px;
+		overflow: hidden;
+		&::after {
+			content: "";
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			background-color: rgba(45, 45, 45, 0.19);
+			transition: 0.5s;
+		}
+		&:hover::after {
+			opacity: 0;
+		}
+	}
+	.swiper-prev {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		z-index: 2;
+		margin-top: -2.95rem;
+		margin-left: -462px;
+		z-index: 2;
+	}
+	.swiper-next {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		z-index: 2;
+		margin-top: -2.95rem;
+		margin-left: 404px;
+		z-index: 2;
+	}
+}
+.view-project__container {
+	padding-left: 66px;
+	padding-right: 66px;
+}
+.view-project-plan {
+	display: flex;
+}
+.view-project-plan__item {
+}
+
+.privacy-policy {
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+	.list {
+		margin-bottom: 2.5rem;
+	}
+	.list__item {
+		font-size: 1.5rem;
+		color: #c7c7c7;
+		line-height: 105%;
+		padding: 0 0 0 2.5rem;
+		margin-bottom: 1.5rem;
+		&::before {
+			width: 4px;
+			height: 4px;
+			top: 0.3rem;
+			left: 0.9rem;
+			margin-top: 0;
+			background-color: #c7c7c7;
+		}
+	}
+}
+.privacy-policy__title {
+	font: 700 1.5rem "Manrope";
+	margin-bottom: 1rem;
 }
