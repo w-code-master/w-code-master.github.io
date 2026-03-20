@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<title>AdMirra - Сервис аналитики и рекламы</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- favicon -->
+		<link href="img/favicon.png" sizes="32x32" rel="icon" type="image/png" />
+
+		<!-- style -->
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="entry">
+			<div class="entry-aside anim-fadeInLeft">
+				<img class="logo" src="img/logo.png" alt="logo" />
+				<form class="entry-form">
+					<h2 class="heading-1 weight-500 mb-4 pb-3">
+						<span class="weight-300">Добро пожаловать!</span> <br />
+						Войдите в&nbsp;систему
+					</h2>
+					<div class="entry-social">
+						<a class="btn _normal _yandex" href="#">
+							<div class="btn__inner">
+								<i class="icon-yandex"></i>
+								<span class="btn__text">Войти с Яндекс ID</span>
+							</div>
+						</a>
+						<a class="btn _normal _vk" href="#">
+							<div class="btn__inner">
+								<i class="icon-vk"></i>
+								<span class="btn__text">Войти через ВК</span>
+							</div>
+						</a>
+						<a class="btn _normal _max" href="#">
+							<div class="btn__inner">
+								<i class="icon-max"></i>
+								<span class="btn__text">Войти через Max</span>
+							</div>
+						</a>
+					</div>
+					<div class="or-line">
+						<div class="or-line__text">или</div>
+					</div>
+					<div class="row gy-4">
+						<div class="col-12 col-sm-6">
+							<div class="input-row">
+								<label class="input-row__label" for="dej733fgw">Имя <span class="_required">*</span></label>
+								<input class="input" id="dej733fgw" type="text" placeholder="Введите ваше имя" required />
+							</div>
+						</div>
+						<div class="col-12 col-sm-6">
+							<div class="input-row">
+								<label class="input-row__label" for="dwd722eb3r2">Фамилия <span class="_required">*</span></label>
+								<input class="input" id="dwd722eb3r2" type="text" placeholder="Введите вашу фамилию" required />
+							</div>
+						</div>
+					</div>
+					<div class="input-row">
+						<label class="input-row__label" for="dew43dfwjw">E-mail <span class="_required">*</span></label>
+						<input class="input" id="dew43dfwjw" type="email" placeholder="Введите ваш email" required />
+					</div>
+					<div class="input-row">
+						<label class="input-row__label" for="edde83hejdow">Пароль <span class="_required">*</span></label>
+						<div class="input-row__pass">
+							<input class="input" id="edde83hejdow" type="password" placeholder="Введите пароль" required />
+							<a class="input-eye" href="#" onclick="return show_hide_password(this);">
+								<svg class="input-eye__on"><use href="img/svg/sprite.svg#eye-on"></use></svg>
+								<svg class="input-eye__off"><use href="img/svg/sprite.svg#eye-off"></use></svg>
+							</a>
+						</div>
+						<script>
+							function show_hide_password(target) {
+								var input = document.getElementById("edde83hejdow");
+								if (input.getAttribute("type") == "password") {
+									target.classList.add("view");
+									input.setAttribute("type", "text");
+								} else {
+									target.classList.remove("view");
+									input.setAttribute("type", "password");
+								}
+								return false;
+							}
+						</script>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="choise">
+								<label class="choise-checkbox">
+									<input class="choise-checkbox__input" type="checkbox" id="swJ86Plus6w" />
+									<span class="choise-checkbox__box">
+										<svg><use href="img/svg/sprite.svg#check"></use></svg>
+									</span>
+								</label>
+								<label class="choise__text weight-500 pe-3" for="swJ86Plus6w">Запомнить меня</label>
+							</div>
+						</div>
+						<div class="col-auto"><a class="link weight-600" href="#">Забыли пароль?</a></div>
+					</div>
+					<div>
+						<a class="d-flex btn _medium _radius-12 text-15" href="#">
+							<div class="btn__inner"><span class="btn__text">ВОЙТИ В ЛИЧНЫЙ КАБИНЕТ</span></div>
+						</a>
+					</div>
+					<div class="d-flex flex-wrap justify-content-center justify-content-xl-start weight-500">
+						У вас нет аккаунта ?
+						<a class="link weight-600" href="#">Зарегистрироваться</a>
+					</div>
+				</form>
+			</div>
+			<div class="entry-art anim-fadeInRight">
+				<div class="entry-art__inner">
+					<picture class="entry-art__fox">
+						<img src="img/fox-welcome.webp" alt="fox" />
+					</picture>
+					<div class="entry-art__ui1"></div>
+					<div class="entry-art__ui2"></div>
+					<div class="entry-art__ui3"></div>
+					<div class="entry-art__ui4"></div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.js" defer></script>
+		<script src="js/swiper.js" defer></script>
+		<script src="js/beefup.js" defer></script>
+		<script src="js/easytabs.js" defer></script>
+		<script src="js/animate-css.js" defer></script>
+		<script src="js/waypoints.js" defer></script>
+		<script src="js/main.js" defer></script>
+	</body>
+</html>
