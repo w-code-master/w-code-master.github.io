@@ -1,5 +1,34 @@
 /* Max-Width media */
 
+/* 1750px */
+@media only screen and (max-width: 1750px) {
+	.entry-art {
+		width: 820px;
+	}
+}
+
+/* 1500px */
+@media only screen and (max-width: 1500px) {
+	.entry-art {
+		width: 620px;
+	}
+	.entry-art__fox {
+		right: -210px;
+	}
+	.entry-art__ui1 {
+		left: -28px;
+	}
+	.entry-art__ui2 {
+		right: -90px;
+	}
+	.entry-art__ui3 {
+		left: -28px;
+	}
+	.entry-art__ui4 {
+		right: -80px;
+	}
+}
+
 /* 1400px */
 @media only screen and (max-width: 1400px) {
 	.service {
@@ -9,7 +38,6 @@
 		border-radius: 0;
 	}
 }
-s
 
 /* 1300px */
 @media only screen and (max-width: 1300px) {
@@ -80,6 +108,38 @@ s
 			--bs-gutter-y: 2rem;
 		}
 	}
+
+	.offer {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.offer__inner {
+		border-radius: 0;
+		&::before {
+			display: none;
+		}
+	}
+
+	.integrations-slider {
+		width: calc(100% + 350px);
+	}
+
+	.entry-art {
+		display: none;
+	}
+	.entry-aside {
+		.logo {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.heading-1 {
+			text-align: center;
+		}
+	}
+
+	.head-page {
+		border-radius: 0 0 3rem 3rem;
+	}
 }
 
 /* 992px */
@@ -109,6 +169,32 @@ s
 	}
 	.white-label__action {
 		padding: 2rem 0 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.footer-bottom__inner {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 3rem;
+	}
+	.footer-bottom__center {
+		width: 100%;
+		order: 1;
+	}
+	.footer-bottom__left {
+		width: auto;
+		column-gap: 3rem;
+		.footer-bottom__menu {
+			width: 130px;
+		}
+	}
+	.footer-bottom__right {
+		width: auto;
+	}
+	.footer-bottom__menu {
+		width: 200px;
 	}
 }
 
@@ -127,6 +213,11 @@ s
 	}
 	.hero {
 		margin-bottom: 0;
+	}
+	.hero-advantages__item {
+		max-width: 555px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.hero__content {
 		padding-top: 5rem;
@@ -156,12 +247,10 @@ s
 		}
 	}
 
-	.offer {
-		padding-left: 0;
-		padding-right: 0;
-	}
-	.offer__inner {
-		border-radius: 0;
+	.about-item {
+		max-width: 555px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.to-action._horizontal {
@@ -174,6 +263,20 @@ s
 		}
 		.btn {
 			margin-right: 0;
+		}
+	}
+
+	.footer {
+		.subscribe-email {
+			flex-direction: column;
+		}
+	}
+	.footer-top {
+		flex-wrap: wrap;
+		justify-content: center;
+		row-gap: 3rem;
+		.subscribe-email {
+			width: 100%;
 		}
 	}
 }
@@ -206,6 +309,148 @@ s
 	}
 	.service__content {
 		padding-top: 0;
+	}
+
+	.tariff-tabs__item a {
+		min-width: auto;
+	}
+	.tariff-card .to-action__info {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.tariff-card__content {
+		row-gap: 2rem;
+	}
+
+	.footer-bottom__inner {
+		justify-content: flex-start;
+	}
+	.footer-bottom__left {
+		width: 100%;
+		.footer-bottom__menu {
+			width: 100%;
+		}
+	}
+	.footer-bottom__menu {
+		padding-left: 10px;
+	}
+
+	.integrations-slider {
+		margin-top: 0;
+		margin-bottom: 0;
+		.swiper-slide {
+			min-width: 22rem;
+			min-height: 9rem;
+			font-size: 1.7rem;
+		}
+	}
+
+	.entry-social {
+		flex-wrap: wrap;
+		justify-content: center;
+		.btn {
+			width: 40%;
+		}
+	}
+
+	.head-page {
+		border-radius: 0 0 2srem 2srem;
+	}
+	.head-page__inner {
+		.header {
+			margin-bottom: 7rem;
+		}
+	}
+}
+
+/* 460px */
+@media only screen and (max-width: 460px) {
+	.hero__inner {
+		padding-top: 2rem;
+		min-height: auto;
+	}
+	.logo {
+		width: 13rem;
+	}
+	.hero__content {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+		.heading-1 {
+			font-size: 2.8rem;
+			margin: 0 -2rem;
+		}
+	}
+	.hero__description {
+		font-size: 1.8rem;
+	}
+	.to-action {
+		.btn._big {
+			padding-left: 3rem;
+			padding-right: 3rem;
+		}
+		&._horizontal .to-action__info {
+			min-width: 270px;
+		}
+	}
+	.btn {
+		&._big {
+			min-height: 9rem;
+			font-size: 1.45rem;
+		}
+	}
+	.hero-advantages__item {
+		padding-bottom: 3rem;
+	}
+
+	.heading-1 {
+		font-size: 3rem;
+	}
+	.heading-2 {
+		font-size: 2.7rem;
+	}
+
+	.about {
+		.heading-1 {
+			margin-bottom: 3.5rem;
+		}
+	}
+
+	.about-item__content {
+		&._one {
+			padding-bottom: 140px;
+			background-size: 430px;
+		}
+		&._three {
+			background-size: 450px;
+			padding-bottom: 270px;
+			background-position: -25px bottom;
+		}
+		&._four {
+			padding-bottom: 250px;
+			background-size: 620px;
+		}
+		._fox {
+			right: 10px;
+			width: 280px;
+		}
+	}
+
+	.service__inner {
+		padding: 6rem 1rem 7.4rem;
+	}
+	.service__content {
+		row-gap: 6rem;
+		margin-bottom: 7rem;
+	}
+
+	.faq__hero {
+		padding: 3rem 2rem;
+	}
+
+	.entry-social {
+		.btn {
+			width: 100%;
+		}
 	}
 }
 
