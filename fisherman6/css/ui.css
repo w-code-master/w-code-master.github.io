@@ -41,6 +41,10 @@
 		.btn__ico {
 			fill: var(--accent);
 		}
+		&:hover {
+			border-color: var(--primary);
+			color: var(--primary);
+		}
 	}
 	&:has(.btn__icon) {
 		padding: 1rem 1rem 1rem 3rem;
