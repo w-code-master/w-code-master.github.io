@@ -144,6 +144,14 @@
 			margin-top: -50rem;
 		}
 	}
+	&:has(.tour-video-wrap) {
+		.bg-one__inner {
+			padding-top: 300px;
+		}
+		.tour-video-wrap {
+			margin-bottom: -250px;
+		}
+	}
 }
 .bg-one__inner {
 	background: #d2cbc0 url(../img/bg-one.jpg) no-repeat center top / cover;
@@ -772,6 +780,7 @@
 	background: var(--dark) url(../img/bg-about-tour.png) no-repeat center / cover;
 	color: var(--white);
 	border-radius: 3rem;
+	margin-bottom: -120px;
 }
 .about-tour__map {
 	width: 688px;
