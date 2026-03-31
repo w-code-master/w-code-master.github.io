@@ -1,4 +1,12 @@
 $(document).ready(function () {
+	// intlTelInput validation
+	var inputKeyTel = document.querySelector(".inputKeyTel");
+	inputKeyTel.addEventListener("keypress", function (e) {
+		if (e.which < 48 || e.which > 57) {
+			e.preventDefault();
+		}
+	});
+
 	new Swiper(".current-tours-slider", {
 		slidesPerView: 4,
 		spaceBetween: 10,
@@ -47,41 +55,25 @@ $(document).ready(function () {
 		loop: true,
 	});
 
+	new Swiper(".galleryArticle", {
+		slidesPerView: 3,
+		spaceBetween: 10,
+		loop: true,
+	});
+
 	$(".faq-item").beefup({
 		openSingle: true,
 		trigger: ".faq-head",
 		content: ".faq-body",
+	});
+	$(".spoiler-item").beefup({
+		trigger: ".spoiler-head",
+		content: ".spoiler-body",
 	});
 
 	$(".program-tabs").easytabs({
 		tabs: ".program-tabs__item",
 		defaultTab: ".program-tabs__item:nth-child(1)",
 		updateHash: false,
-	});
-
-	// intlTelInput
-	var inputCountryTel1 = document.querySelector(".inputCountryTel");
-	window.intlTelInput(inputCountryTel1, {
-		separateDialCode: true,
-		preferredCountries: ["ru", "ua", "by"],
-	});
-	// intlTelInput
-	var inputCountryTel2 = document.querySelector(".inputCountryTel2");
-	window.intlTelInput(inputCountryTel2, {
-		separateDialCode: true,
-		preferredCountries: ["ru", "ua", "by"],
-	});
-	// intlTelInput
-	var inputCountryTel3 = document.querySelector(".inputCountryTel3");
-	window.intlTelInput(inputCountryTel3, {
-		separateDialCode: true,
-		preferredCountries: ["ru", "ua", "by"],
-	});
-	// intlTelInput validation
-	var inputKeyTel = document.querySelector(".inputKeyTel");
-	inputKeyTel.addEventListener("keypress", function (e) {
-		if (e.which < 48 || e.which > 57) {
-			e.preventDefault();
-		}
 	});
 });

@@ -1616,5 +1616,25 @@
 		<script src="js/intlTelInput.min.js"></script>
 		<script src="js/beefup.js" defer></script>
 		<script src="js/main.js" defer></script>
+		<script>
+			// intlTelInput
+			var inputCountryTel1 = document.querySelector(".inputCountryTel");
+			window.intlTelInput(inputCountryTel1, {
+				separateDialCode: true,
+				preferredCountries: ["ru", "ua", "by"],
+			});
+			// intlTelInput
+			var inputCountryTel2 = document.querySelector(".inputCountryTel2");
+			window.intlTelInput(inputCountryTel2, {
+				separateDialCode: true,
+				preferredCountries: ["ru", "ua", "by"],
+			});
+			// intlTelInput
+			var inputCountryTel3 = document.querySelector(".inputCountryTel3");
+			window.intlTelInput(inputCountryTel3, {
+				separateDialCode: true,
+				preferredCountries: ["ru", "ua", "by"],
+			});
+		</script>
 	</body>
 </html>

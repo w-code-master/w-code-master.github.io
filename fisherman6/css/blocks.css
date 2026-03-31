@@ -573,6 +573,24 @@
 	padding: 3rem;
 	border-radius: 8px;
 }
+/* white style */
+.faq-item._white {
+	&.is-open .faq-head button {
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+	}
+	.faq-head button {
+		background-color: var(--white);
+		color: var(--dark-opacity-80);
+		transition: 0.5s;
+	}
+	.faq-plus {
+		background-color: var(--light);
+	}
+	.faq-body {
+		padding-top: 5rem;
+		margin-top: -2rem;
+	}
+}
 
 .section-text {
 	display: flex;
@@ -1444,4 +1462,99 @@ input.search-control__input {
 	height: 100%;
 	overflow: hidden;
 	border-radius: 2rem;
+}
+
+.article-header {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 3rem;
+}
+.article-header__content {
+	display: flex;
+	flex-direction: column;
+	row-gap: 2.5rem;
+	flex-grow: 1;
+	max-width: 600px;
+	padding-top: 3rem;
+}
+.article-header__picture {
+	flex-shrink: 0;
+	width: 650px;
+	display: block;
+	border-radius: 3rem;
+	overflow: hidden;
+}
+.article-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	column-gap: 3rem;
+	padding: 10rem 0;
+}
+.article-content {
+	width: 500px;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	row-gap: 4rem;
+}
+.article-aside {
+	flex-shrink: 0;
+	width: 49rem;
+}
+
+.spoiler-item {
+	background-color: #f6ede0;
+	border-radius: 3rem;
+	padding-bottom: 1.5rem;
+	&.is-open {
+		.spoiler-head__arrow {
+			transform: rotate(180deg);
+		}
+	}
+}
+.spoiler-head button {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2.5rem 3rem;
+	width: 100%;
+	border: 0;
+	cursor: pointer;
+	background-color: transparent;
+	border-radius: 3rem;
+	margin-bottom: -1.5rem;
+	&:hover {
+		.spoiler-head__arrow {
+			background-color: rgba(255, 255, 255, 0.4);
+		}
+		.spoiler-head__title {
+			color: var(--accent);
+		}
+	}
+}
+.spoiler-head__title {
+	font: 3rem/1.1 "Montserrat";
+	transition: 0.5s;
+}
+.spoiler-head__arrow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	transition: 0.5s;
+	margin-right: -1rem;
+	svg {
+		width: 1.4rem;
+		height: 2.6rem;
+		fill: var(--accent);
+	}
+}
+.spoiler-body {
+	position: relative;
+	z-index: 1;
+	padding: 0.5rem 2.5rem 1.5rem;
 }

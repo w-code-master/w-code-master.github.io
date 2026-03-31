@@ -806,9 +806,16 @@
 
 		<script src="js/jquery.js" defer></script>
 		<script src="js/swiper.js" defer></script>
-		<script src="js/intlTelInput.min.js"></script>
 		<script src="js/beefup.js" defer></script>
-		<script src="js/easytabs.js" defer></script>
+		<script src="js/intlTelInput.min.js"></script>
 		<script src="js/main.js" defer></script>
+		<script>
+			// intlTelInput
+			var inputCountryTel1 = document.querySelector(".inputCountryTel");
+			window.intlTelInput(inputCountryTel1, {
+				separateDialCode: true,
+				preferredCountries: ["ru", "ua", "by"],
+			});
+		</script>
 	</body>
 </html>
