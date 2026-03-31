@@ -1499,8 +1499,36 @@ input.search-control__input {
 	row-gap: 4rem;
 }
 .article-aside {
+	background-color: var(--white);
 	flex-shrink: 0;
 	width: 49rem;
+	padding: 3rem;
+	border-radius: 3rem;
+	align-self: flex-start;
+}
+.article-aside__cards {
+	display: flex;
+	flex-direction: column;
+	row-gap: 2.5rem;
+	.card-block {
+		border-bottom: 1px solid rgba(66, 61, 55, 0.15);
+		border-radius: 0;
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+	.card-block__img {
+		height: 260px;
+		border-radius: 2rem;
+	}
+	.card-block__content {
+		padding: 2.5rem 0;
+		row-gap: 2rem;
+	}
+	.card-block__title {
+		font-size: 2.5rem;
+		line-height: 1.2;
+	}
 }
 
 .spoiler-item {
