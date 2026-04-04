@@ -15,25 +15,59 @@
 		<div class="header-wrap">
 			<header class="header _white">
 				<a class="logo" href="#"></a>
-				<nav class="menu">
+				<div class="burger d-xl-none">
+					<div class="burger__icon">
+						<div class="_top"></div>
+						<div class="_center"></div>
+						<div class="_bottom"></div>
+					</div>
+				</div>
+				<nav class="menu d-none d-xl-block">
 					<ul class="menu__list">
-						<li class="menu__item"><a href="#">Направления</a></li>
-						<li class="menu__item"><a href="#">Виды туров</a></li>
-						<li class="menu__item"><a href="#">Сезоны</a></li>
-						<li class="menu__item"><a href="#">Фото и отзывы</a></li>
-						<li class="menu__item"><a href="#">Блог</a></li>
-						<li class="menu__item"><a href="#">О нас</a></li>
-						<li class="menu__item"><a href="#">Контакты</a></li>
+						<li class="menu__item">
+							<a class="menu__link">Каталог туров</a>
+							<svg class="menu__arrow"><use href="img/svg/sprite.svg#down"></use></svg>
+							<div class="menu-sub">
+								<ul class="menu-sub__inner">
+									<li><a href="#">VIP туры</a></li>
+									<li><a href="#">Тур выходного дня</a></li>
+									<li><a href="#">Тур с проживанием</a></li>
+									<li><a href="#">Тур на Байкал</a></li>
+									<li><a href="#">Экспедиция</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Направления</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Виды туров</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Сезоны</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Фото и отзывы</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Блог</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">О нас</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Контакты</a>
+						</li>
 					</ul>
 				</nav>
 				<aside class="header__aside">
 					<a class="header__tel" href="tel:+79999999999">+7 999 999 99 99</a>
 					<div class="d-flex">
 						<a class="btn _small" href="#">
-							<span class="btn__text">Связаться с нами</span>
+							<span class="btn__text">Связаться с&nbsp;нами</span>
 						</a>
-						<a class="btn _small _outline" href="#">
-							<span class="btn__text">Разместить свой тур</span>
+						<a class="btn _small _outline d-none d-sm-inline-flex" href="#">
+							<span class="btn__text">Разместить свой&nbsp;тур</span>
 						</a>
 					</div>
 				</aside>
@@ -59,14 +93,17 @@
 			<header class="article-header">
 				<article class="article-header__content">
 					<h1 class="heading-3">Как ловить омуля зимой: снасти, техника и&nbsp;советы</h1>
+					<picture class="d-block d-md-none">
+						<img class="object-fit-cover radius-30" src="img/article/header.jpg" alt="#" />
+					</picture>
 					<p class="opacity-80">Зимняя ловля омуля — это особый вид рыбалки, который требует понимания поведения рыбы, правильного подбора снастей и соблюдения техники ловли. В&nbsp;отличие от летнего сезона, зимой омуль держится на глубине, реагирует на определённые приманки и чувствителен к подаче. В этой статье разберём, какловить омуля зимой, какие снасти использовать, на что обращать внимание при выборе места и как повысить шансы на стабильный клёв</p>
-					<div class="row align-items-center">
-						<div class="col-auto">
+					<div class="row g-4 align-items-center">
+						<div class="col-auto d-none d-sm-block">
 							<div class="avatar-6x6">
 								<img class="object-fit-cover" src="img/avatar-100x100.jpg" alt="#" />
 							</div>
 						</div>
-						<div class="col-3">
+						<div class="col-auto">
 							<div class="list__item">
 								<i class="list__icon">
 									<svg><use href="img/svg/sprite.svg#clock"></use></svg>
@@ -77,7 +114,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-3">
+						<div class="col-auto">
 							<div class="list__item">
 								<i class="list__icon">
 									<svg class="_user"><use href="img/svg/sprite.svg#user"></use></svg>
@@ -126,17 +163,17 @@
 						<img class="object-fit-cover radius-30" src="img/article/img-1.jpg" alt="#" />
 					</picture>
 
-					<div class="col-9">
+					<div class="col-12 col-sm-9">
 						<h4 class="heading-5 mb-4">Когда омуль активен зимой</h4>
 						<p class="opacity-80">Зимой омуль сохраняет активность, но его поведение зависит от фазы сезона и погодных условий. В начале зимы клёв обычно стабильнее, в середине — более избирательный. Лучшее время для ловли — утренние и дневные часы при спокойной погоде.</p>
 					</div>
 
-					<div class="col-9">
+					<div class="col-12 col-sm-9">
 						<h4 class="heading-5 mb-4">Где искать омуля подо льдом</h4>
 						<p class="opacity-80">Омуль чаще держится в толще воды, а не у самого дна. Перспективны участки с ровным рельефом и слабым течением. Важно проверять разные горизонты и не засиживаться на одной лунке.</p>
 					</div>
 
-					<div class="col-9">
+					<div class="col-12 col-sm-9">
 						<h4 class="heading-5 mb-4">Снасти для зимней ловли омуля</h4>
 						<p class="opacity-80 mb-2">Для ловли используют лёгкие и чувствительные снасти:</p>
 						<div class="mb-2 ms-3">
@@ -163,15 +200,16 @@
 									<img class="object-fit-cover radius-30" src="img/article/gallery-1.jpg" alt="#" />
 								</div>
 							</div>
+							<div class="swiper-pagination position-fix"></div>
 						</div>
 					</div>
 
-					<div class="col-9">
+					<div class="col-12 col-sm-9">
 						<h4 class="heading-5 mb-4">Техника ловли: как правильно подавать</h4>
 						<p class="opacity-80">Омуль лучше реагирует на плавную игру без резких движений. Основная техника — медленный подъём, паузы и смена глубины. Если поклёвок нет, стоит менять ритм или место ловли.</p>
 					</div>
 
-					<div class="col-9">
+					<div class="col-12 col-sm-9">
 						<h4 class="heading-5 mb-4">Частые ошибки начинающих</h4>
 						<div class="mb-5 ms-3">
 							<ul class="list gy-1 _dotted _dark">
@@ -184,7 +222,7 @@
 						<p class="opacity-80">Исправление этих ошибок заметно повышает результат.</p>
 					</div>
 
-					<div class="col-9">
+					<div class="col-12 col-sm-9">
 						<h4 class="heading-5 mb-4">Что взять с собой на зимнюю рыбалку</h4>
 						<p class="opacity-80 mb-2">Комфорт и безопасность важны не меньше снастей:</p>
 						<div class="ms-3">
@@ -202,7 +240,7 @@
 						<img class="object-fit-cover radius-30" src="img/article/img-2.jpg" alt="#" />
 					</picture>
 
-					<div class="col-9">
+					<div class="col-12 col-sm-9">
 						<h4 class="heading-5 mb-4">Итог и рекомендации</h4>
 						<p class="opacity-80">Зимняя ловля омуля требует терпения и внимания к деталям. Правильные снасти, аккуратная подача и активный поиск рыбы дают стабильный результат даже в сложных условиях.</p>
 					</div>
@@ -248,7 +286,7 @@
 
 					<hr class="hr-line my-4" />
 
-					<div class="col-9">
+					<div class="col-12 col-sm-9">
 						<div class="row">
 							<div class="col-auto">
 								<div class="avatar-9x9">
@@ -313,14 +351,14 @@
 			</div>
 		</div>
 
-		<div class="container-xxl px-5">
-			<section class="current-tours">
+		<div class="container-xxl px-0 px-sm-5">
+			<section class="current-tours pl">
 				<header class="section-heading text-center">
 					<h2 class="heading-3"><span class="color-accent">Туры</span> по теме</h2>
 				</header>
 				<div class="current-tours-slider__wrap">
 					<div class="swiper current-tours-slider">
-						<div class="swiper-wrapper">
+						<div class="swiper-wrapper ps-3 ps-sm-0">
 							<div class="swiper-slide">
 								<div class="card-block _mod-one">
 									<picture class="card-block__img">
@@ -722,13 +760,14 @@
 								</div>
 							</div>
 						</div>
+						<div class="swiper-pagination position-fix d-sm-none"></div>
 					</div>
-					<div class="swiper-prev current-tours__prev">
+					<div class="swiper-prev current-tours__prev d-none d-sm-block">
 						<svg class="_left">
 							<use href="img/svg/sprite.svg#left"></use>
 						</svg>
 					</div>
-					<div class="swiper-next current-tours__next">
+					<div class="swiper-next current-tours__next d-none d-sm-block">
 						<svg class="_right">
 							<use href="img/svg/sprite.svg#right"></use>
 						</svg>
@@ -740,26 +779,22 @@
 		<div class="action-form justify-content-end mb-5">
 			<div class="action-form__inner">
 				<div class="row w-100">
-					<div class="col-5">
-						<h3 class="heading-3 mb-4 pb-3"> Поможем подобрать лучший тур </h3>
-						<p class="opacity-80">
-							Скажите, куда хотите поехать и какой формат рыбалки вам <br />
-							подходит. Подберём тур в течение дня и предложим несколько <br />
-							вариантов по бюджету и сезону
-						</p>
+					<div class="col-12 col-sm-10 col-md-7 col-xl-5">
+						<h3 class="heading-3 mb-4 pb-3"> Поможем подобрать лучший&nbsp;тур </h3>
+						<p class="col-12 col-xxl-9 opacity-80"> Скажите, куда хотите поехать и&nbsp;какой формат рыбалки вам подходит. Подберём тур в&nbsp;течение дня и&nbsp;предложим несколько вариантов по бюджету и&nbsp;сезону </p>
 					</div>
-					<div class="col-7 align-self-end">
+					<div class="col-12 col-xl-7 align-self-end">
 						<form class="action-form__form">
 							<div class="row g-3 mb-3">
-								<div class="col-auto">
+								<div class="col-12 col-sm-8 col-md-4">
 									<input type="text" placeholder="Ваше имя" />
 								</div>
-								<div class="col-auto">
+								<div class="col-12 col-sm-8 col-md-4">
 									<input class="inputCountryTel inputKeyTel" name="phone" type="tel" placeholder="(999) 999-99-99" />
 								</div>
-								<div class="col-auto">
+								<div class="col-12 col-sm-8 col-md-4">
 									<button class="btn" type="submit">
-										<span class="btn__text">Отправить заявку</span>
+										<span class="btn__text">Отправить&nbsp;заявку</span>
 										<i class="btn__icon">
 											<svg><use href="img/svg/sprite.svg#right-up"></use></svg>
 										</i>
@@ -775,7 +810,7 @@
 										</span>
 									</label>
 									<label class="choise__text" for="swJ86Plus6w">
-										Я подтверждаю ознакомление и даю <a class="link _white" href="#">Согласие на обработку моих персональных данных</a> <br />
+										Я подтверждаю ознакомление и даю <a class="link _white" href="#">Согласие на обработку моих персональных данных</a> <br class="d-none d-md-inline" />
 										в порядке и на условиях, указанных в <a class="link _white" href="#">Политике обработки персональных данных</a>
 									</label>
 								</div>
@@ -795,7 +830,7 @@
 					<h2 class="heading-3">Похожие статьи</h2>
 				</header>
 				<div class="row">
-					<div class="col-4">
+					<div class="col-12 col-sm-6 col-md-4">
 						<div class="card-block">
 							<picture class="card-block__img">
 								<img class="object-fit-cover" src="img/current-tours/01.jpg" alt="#" />
@@ -811,7 +846,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-12 col-sm-6 col-md-4">
 						<div class="card-block">
 							<picture class="card-block__img">
 								<img class="object-fit-cover" src="img/current-tours/01.jpg" alt="#" />
@@ -827,7 +862,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-12 col-sm-6 col-md-4">
 						<div class="card-block">
 							<picture class="card-block__img">
 								<img class="object-fit-cover" src="img/current-tours/01.jpg" alt="#" />
@@ -847,7 +882,7 @@
 			</section>
 			<div class="useful-section">
 				<div class="row g-3">
-					<div class="col-5">
+					<div class="col-12 col-lg-5">
 						<div class="bg-white">
 							<h4 class="heading-4 mb-4">Полезные разделы</h4>
 							<p class="col-11 mb-5">Мы собрали полезные разделы о рыбалке и рыболовных турах: форматы поездок, сезонные особенности и подборки туров. Используйте их, чтобы быстрее ориентироваться в материалах блога и находить подходящие варианты для отдыха</p>
@@ -875,8 +910,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-7">
+					<div class="col-12 col-lg-7">
 						<picture class="useful-section__photo">
+							<source srcset="img/useful-photo@sm.jpg" media="(max-width: 576px)" />
 							<img class="object-fit-cover" src="img/useful-photo.jpg" alt="#" />
 						</picture>
 					</div>

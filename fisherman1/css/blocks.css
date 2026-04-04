@@ -644,7 +644,7 @@
 	color: var(--white);
 	border-radius: 8px;
 	cursor: pointer;
-	padding: 10px 10px 10px 30px;
+	padding: 1rem 1rem 1rem 3rem;
 	border: 0;
 	font-size: 1.8rem;
 	text-align: left;
@@ -1593,8 +1593,8 @@ input.search-control__input {
 	padding-top: 3rem;
 }
 .article-header__picture {
-	flex-shrink: 0;
-	width: 650px;
+	width: 100%;
+	max-width: 650px;
 	display: block;
 	border-radius: 3rem;
 	overflow: hidden;

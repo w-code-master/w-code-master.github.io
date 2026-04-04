@@ -106,9 +106,21 @@ $(document).ready(function () {
 	});
 
 	new Swiper(".galleryArticle", {
-		slidesPerView: 3,
+		slidesPerView: 1,
 		spaceBetween: 8,
 		loop: true,
+		breakpoints: {
+			576: {
+				slidesPerView: 2,
+			},
+			768: {
+				slidesPerView: 3,
+			},
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			dynamicBullets: true,
+		},
 	});
 
 	new Swiper(".sliderCards", {
