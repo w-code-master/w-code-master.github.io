@@ -106,6 +106,7 @@
 	&:active {
 		transition: 0.1s;
 		transform: scale(1.02);
+		box-shadow: inset 0px 0px 20px #6187a7;
 		&::after {
 			transition: 0.1s;
 			opacity: 1;
@@ -125,6 +126,9 @@
 	&._outline-primary {
 		background: none;
 		border: 1px solid #e1e1e1;
+		&:active {
+			box-shadow: none;
+		}
 
 		&::after {
 			display: none;
@@ -523,4 +527,12 @@
 
 .darkmode-btn__icon.darkmode-sun.animated .darkmode-btn__icon-moon {
 	animation: rotation 0.5s;
+}
+
+.lightBlurBg {
+	width: 422px;
+	height: 422px;
+	background: rgba(37, 99, 235, 0.4);
+	filter: blur(277px);
+	border-radius: 50%;
 }

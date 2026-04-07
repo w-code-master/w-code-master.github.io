@@ -31,6 +31,7 @@
 	flex-grow: 1;
 	display: flex;
 	margin: 0 auto;
+	position: relative;
 }
 .main-aside {
 	flex-shrink: 0;
@@ -41,10 +42,32 @@
 	background-color: var(--bgLayout);
 	border-radius: 0 0 1.5rem 1.5rem;
 	border-top: 1px solid rgba(0, 0, 0, 0.05);
+	position: relative;
+	z-index: 2;
 }
 .main-section {
 	flex-grow: 1;
 	padding: 3rem 2.5rem;
+	position: relative;
+	z-index: 2;
+}
+.main__bg1,
+.main__bg2,
+.main__bg3 {
+	position: absolute;
+	left: 50%;
+	margin-left: -754px;
+	top: 180px;
+	transition: 1s;
+	opacity: 0;
+}
+.main__bg2 {
+	margin-left: 350px;
+	top: 400px;
+}
+.main__bg3 {
+	margin-left: -754px;
+	top: 1100px;
 }
 
 /* navigation */

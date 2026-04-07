@@ -12,10 +12,13 @@
 	--darkLightHover: #2c365e;
 	--white80: rgba(255, 255, 255, 0.8);
 
-	color: #fff;
-
 	.logo {
 		background-image: url(../img/logo-white.png);
+	}
+	.main__bg1,
+	.main__bg2,
+	.main__bg3 {
+		opacity: 1;
 	}
 	.circle-arrow {
 		background-color: var(--light);
@@ -41,6 +44,9 @@
 	.btn {
 		&._outline-primary {
 			border-color: rgba(225, 225, 225, 0.35);
+			&:hover {
+				border-color: var(--accent);
+			}
 		}
 	}
 	.tariff-tabs__item a {
