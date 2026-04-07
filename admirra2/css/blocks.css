@@ -67,7 +67,8 @@
 }
 .main__bg3 {
 	margin-left: -754px;
-	top: 1100px;
+	top: inherit;
+	bottom: 0;
 }
 
 /* navigation */
