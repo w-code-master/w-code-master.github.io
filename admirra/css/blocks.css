@@ -280,7 +280,7 @@
 		position: absolute;
 		left: 0;
 		top: 0;
-		background-image: url("../../img/pattern.png");
+		background-image: url("../img/pattern.png");
 		background-size: 77px;
 		opacity: 0.25;
 	}
