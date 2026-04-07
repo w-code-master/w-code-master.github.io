@@ -16,6 +16,20 @@
 			<div class="header__inner">
 				<div class="header__logo">
 					<a class="logo" href="#">AdMirra</a>
+					<button class="darkmode-btn">
+						<div class="darkmode-btn__indicator">
+							<div class="darkmode-btn__icon-container">
+								<div class="darkmode-btn__icon">
+									<svg class="darkmode-btn__icon-moon">
+										<use href="img/svg/sprite.svg#sun"></use>
+									</svg>
+									<svg class="darkmode-btn__icon-sun">
+										<use href="img/svg/sprite.svg#moon"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</button>
 				</div>
 				<div class="header__content">
 					<div class="row gy-2">
@@ -27,7 +41,7 @@
 											<div class="avatar-36x36"><img class="img-cover" src="img/avatars/avatar-36x36.png" alt="#" /></div>
 											<div class="dropdown-head__info">
 												<div>Трафик агентство</div>
-												<div class="text-10 gray60">Отчеты агентства в одном месте</div>
+												<div class="_subtext">Отчеты агентства в одном месте</div>
 											</div>
 											<div class="circle-arrow">
 												<svg><use href="img/svg/sprite.svg#arrow"></use></svg>
@@ -73,6 +87,14 @@
 											<span class="btn__text">Перейти на тариф Старт</span>
 											<div class="btn__icon-plus">+</div>
 										</div>
+									</a>
+								</div>
+								<div class="col-auto">
+									<a class="btn-ui" href="#">
+										<div class="btn-ui__icon">
+											<svg><use href="img/svg/sprite.svg#bell"></use></svg>
+										</div>
+										<div class="btn-ui__helper">2</div>
 									</a>
 								</div>
 								<div class="col-auto">
@@ -158,6 +180,19 @@
 						</a>
 					</div>
 				</nav>
+				<div class="mt-auto">
+					<hr class="hr-line" />
+					<div class="navigation my-2">
+						<div class="navigation-item mb-0">
+							<a class="navigation-link" href="#">
+								<i class="navigation-icon">
+									<svg><use href="img/svg/sprite.svg#question"></use></svg>
+								</i>
+								<span class="navigation-text">Поддержка</span>
+							</a>
+						</div>
+					</div>
+				</div>
 			</aside>
 			<section class="main-section">
 				<div class="section-header pt-4 mt-1">
@@ -614,9 +649,7 @@
 								</div>
 							</div>
 							<div class="col-12 col-lg-6 col-xxl-4">
-								<picture class="white-label__ui">
-									<img src="img/white-label/ui.png" alt="ui" />
-								</picture>
+								<div class="white-label__ui"></div>
 							</div>
 							<div class="col-12 col-xl-12 col-xxl-4">
 								<div class="white-label__action">
@@ -643,6 +676,7 @@
 			</section>
 		</main>
 
+		<script src="js/darkmode.js" defer></script>
 		<script src="js/jquery.js" defer></script>
 		<script src="js/beefup.js" defer></script>
 		<script src="js/easytabs.js" defer></script>
