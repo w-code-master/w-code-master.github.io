@@ -171,6 +171,10 @@ th {
 	vertical-align: middle;
 }
 
+.table-container {
+	overflow-x: auto;
+}
+
 .overflow-y-hidden {
 	overflow-y: hidden;
 }

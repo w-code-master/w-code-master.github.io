@@ -302,3 +302,20 @@
 	border-radius: 10rem;
 	font-size: 1.1rem;
 }
+
+.action-btn-ui {
+	width: 3.2rem;
+	height: 2.5rem;
+	border-radius: 0.3rem;
+	background-color: rgba(245, 247, 249, 0.6);
+	position: relative;
+	svg {
+		width: 1.9rem;
+		height: 0.5rem;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		fill: #d9d9d9;
+	}
+}

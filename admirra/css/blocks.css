@@ -120,6 +120,7 @@
 	padding: 3rem 2.5rem;
 	position: relative;
 	z-index: 2;
+	overflow: hidden;
 }
 .main__lightBg {
 	position: absolute;

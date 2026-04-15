@@ -200,4 +200,8 @@
 	.sidebar-panel__aside {
 		background-color: var(--bgPage);
 	}
+
+	.action-btn-ui {
+		background-color: var(--darkLight);
+	}
 }

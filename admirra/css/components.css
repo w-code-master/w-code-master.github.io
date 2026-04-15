@@ -446,6 +446,12 @@
 			right: 2rem;
 		}
 	}
+	&._action {
+		min-width: 28rem;
+		&._right {
+			right: -4rem;
+		}
+	}
 }
 .dropdown-block {
 	background-color: #fff;
@@ -491,6 +497,7 @@
 	}
 }
 .dropdown-menu-item {
+	width: 100%;
 	display: flex;
 	align-items: center;
 	font-size: 1.4rem;
@@ -498,6 +505,10 @@
 	text-decoration: none;
 	padding: 0.5rem 0;
 	transition: 0.2s;
+	cursor: pointer;
+	color: inherit;
+	border: 0;
+	background-color: transparent;
 	&._danger {
 		color: var(--danger);
 		.dropdown-menu-item__icon svg {
@@ -512,6 +523,7 @@
 		}
 	}
 	&:hover {
+		color: var(--accent);
 		.dropdown-menu-item__icon {
 			svg {
 				fill: var(--accent);
@@ -538,7 +550,8 @@
 			fill: none;
 			stroke: var(--gray);
 		}
-		&._moon {
+		&._moon,
+		&._sm {
 			width: 1.8rem;
 			height: 1.8rem;
 		}
@@ -546,6 +559,10 @@
 			width: 2.3rem;
 			height: 2.3rem;
 			margin-left: 0.4rem;
+		}
+		&._lg {
+			width: 2.5rem;
+			height: 2.5rem;
 		}
 	}
 }

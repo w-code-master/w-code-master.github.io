@@ -1,5 +1,5 @@
 const body = document.querySelector("body");
-const btn = document.querySelector(".darkmode-btn");
+const btn = document.querySelector(".dropdown-menu-item._darkmode");
 const icon = document.querySelector(".darkmode-btn__indicator");
 
 //to save the dark mode use the object "local storage".
