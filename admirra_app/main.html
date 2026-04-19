@@ -1,0 +1,1185 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Отчет по проекту - Admirra</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- favicon -->
+		<link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
+		<link rel="shortcut icon" href="img/favicon/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+		<meta name="apple-mobile-web-app-title" content="AdMirra" />
+		<link rel="manifest" href="img/favicon/site.webmanifest" />
+
+		<!-- style -->
+		<link rel="stylesheet" href="css/style.css" />
+
+		<link href="https://cdn.jsdelivr.net/npm/air-datepicker@3.6.0/air-datepicker.min.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__inner">
+				<div class="header__aside">
+					<a class="logo" href="#">AdMirra</a>
+					<button class="header__aside-btn d-none d-xxxl-block">
+						<div class="circle-arrow _light">
+							<svg><use href="img/svg/sprite.svg#arrow"></use></svg>
+						</div>
+					</button>
+				</div>
+				<div class="header__content">
+					<div class="row gy-2">
+						<div class="col-auto">
+							<div class="row gy-2 align-items-center">
+								<div class="col-auto d-none d-xl-block">
+									<div class="dropdown">
+										<button class="dropdown-head">
+											<div class="avatar-36x36"><img class="img-cover" src="img/avatars/avatar-36x36.png" alt="#" /></div>
+											<div class="dropdown-head__info">
+												<div>Трафик агентство</div>
+												<div class="_subtext">Отчеты агентства в одном месте</div>
+											</div>
+											<div class="circle-arrow">
+												<svg><use href="img/svg/sprite.svg#arrow"></use></svg>
+											</div>
+										</button>
+										<div class="dropdown-body">
+											<div class="dropdown-block pt-4 pb-2 weight-500">
+												<h6 class="text-12 uppercase gray56 px-4 py-2">Мои проекты</h6>
+												<ul class="dropdown-menu text-14 mb-2">
+													<li>
+														<a class="dropdown-menu__link" href="#">
+															<span>Все проекты</span>
+														</a>
+													</li>
+													<li>
+														<a class="dropdown-menu__link" href="#">
+															<span>Admirra</span>
+														</a>
+													</li>
+													<li>
+														<a class="dropdown-menu__link active" href="#">
+															<span>Fisherman</span>
+														</a>
+													</li>
+												</ul>
+												<a class="dropdown-link" href="#">
+													<svg class="dropdown-link__icon _stroke"><use href="img/svg/sprite.svg#plus"></use></svg>
+													<span>Создать новый проект</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-auto d-none d-xxl-block">
+									<div class="d-flex align-items-center">
+										<div class="px-4">
+											<div class="mb-1 weight-500 gray500">Ваш тариф: <b class="weight-700">Старт</b></div>
+											<div class="text-10 gray60">Действует до 31.05.2026</div>
+										</div>
+										<div class="ps-2 ms-1">
+											<a class="btn _outline-primary" href="#">
+												<div class="btn__inner">
+													<span class="btn__text">Продлить</span>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-auto align-self-center ms-auto">
+							<div class="row gy-2 align-items-center">
+								<div class="col-auto d-none d-lg-block">
+									<a class="btn" href="#">
+										<div class="btn__inner">
+											<span class="btn__text">Предложить идею</span>
+											<div class="btn__icon">
+												<svg><use href="img/svg/sprite.svg#idea"></use></svg>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="col-auto d-none d-xxxl-block">
+									<a class="btn _primary" href="#">
+										<div class="btn__inner">
+											<span class="btn__text">Перейти на тариф Старт</span>
+											<div class="btn__icon-plus">+</div>
+										</div>
+									</a>
+								</div>
+								<div class="col-auto">
+									<div class="dropdown">
+										<button class="dropdown-head _no-style">
+											<div class="btn-ui">
+												<div class="btn-ui__icon">
+													<svg><use href="img/svg/sprite.svg#bell"></use></svg>
+												</div>
+												<div class="btn-ui__helper">2</div>
+											</div>
+										</button>
+										<div class="dropdown-body">
+											<div class="dropdown-block">
+												<div class="p-4 weight-600 text-16">Уведомления</div>
+												<hr class="hr-line" />
+												<div class="p-5 text-center text-12 gray">Нет уведомлений</div>
+												<hr class="hr-line" />
+												<div class="p-4 text-center">
+													<a class="link" href="#">Показать все уведомления</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-auto">
+									<div class="dropdown _normal">
+										<button class="dropdown-head">
+											<div class="avatar-30x30"><img class="img-cover" src="img/avatars/avatar-30x30.png" alt="#" /></div>
+											<div class="dropdown-head__info d-none d-md-flex">Дмитрий Степанов</div>
+											<div class="circle-arrow">
+												<svg><use href="img/svg/sprite.svg#arrow"></use></svg>
+											</div>
+										</button>
+										<div class="dropdown-body _right">
+											<div class="dropdown-block">
+												<div class="p-4">
+													<div class="text-15 weight-600 mb-1">Дмитрий Степанов</div>
+													<div class="text-12 gray75">mailbox@gmail.com</div>
+												</div>
+												<hr class="hr-line" />
+												<div class="py-3">
+													<a class="dropdown-menu-item _darkmode">
+														<div class="dropdown-menu-item__icon">
+															<svg class="_moon"><use href="img/svg/sprite.svg#moon"></use></svg>
+														</div>
+														<span class="pe-3">Темная тема</span>
+														<button class="darkmode-btn ms-auto me-4">
+															<div class="darkmode-btn__indicator"> </div>
+														</button>
+													</a>
+													<a class="dropdown-menu-item" href="#">
+														<div class="dropdown-menu-item__icon">
+															<svg class="_stroke"><use href="img/svg/sprite.svg#user"></use></svg>
+														</div>
+														<span class="pe-3">Профиль</span>
+													</a>
+													<a class="dropdown-menu-item" href="#">
+														<div class="dropdown-menu-item__icon">
+															<svg><use href="img/svg/sprite.svg#setting"></use></svg>
+														</div>
+														<span class="pe-3">Настройки</span>
+													</a>
+													<a class="dropdown-menu-item _danger" href="#">
+														<div class="dropdown-menu-item__icon">
+															<svg class="_exit"><use href="img/svg/sprite.svg#exit"></use></svg>
+														</div>
+														<span class="pe-3">Выход</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-auto d-xxxl-none">
+									<div class="burger">
+										<div class="burger__icon">
+											<div class="_top"></div>
+											<div class="_center"></div>
+											<div class="_bottom"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="main-container">
+				<aside class="main-aside d-none d-xxxl-flex">
+					<nav class="navigation">
+						<div class="navigation-item subMenu">
+							<a class="navigation-link" href="#">
+								<i class="navigation-icon">
+									<svg class="_stroke"><use href="img/svg/sprite.svg#grid"></use></svg>
+								</i>
+								<span class="navigation-text">Проекты</span>
+								<div class="circle-arrow">
+									<svg><use href="img/svg/sprite.svg#arrow"></use></svg>
+								</div>
+							</a>
+							<div class="navigation-submenu">
+								<div class="navigation-subitem">
+									<a class="navigation-sublink" href="#">Аналитика проекта</a>
+								</div>
+								<div class="navigation-subitem">
+									<a class="navigation-sublink" href="#">AI отчет по проекту</a>
+								</div>
+							</div>
+						</div>
+						<div class="navigation-item">
+							<a class="navigation-link" href="#">
+								<i class="navigation-icon">
+									<svg><use href="img/svg/sprite.svg#layers"></use></svg>
+								</i>
+								<span class="navigation-text">Интеграции</span>
+							</a>
+						</div>
+						<div class="navigation-item">
+							<a class="navigation-link" href="#">
+								<i class="navigation-icon">
+									<svg><use href="img/svg/sprite.svg#chat"></use></svg>
+								</i>
+								<span class="navigation-text">Квалификатор лидов</span>
+							</a>
+						</div>
+						<div class="navigation-item">
+							<a class="navigation-link" href="#">
+								<i class="navigation-icon">
+									<svg><use href="img/svg/sprite.svg#group"></use></svg>
+								</i>
+								<span class="navigation-text">Команда</span>
+							</a>
+						</div>
+						<div class="navigation-item">
+							<a class="navigation-link" href="#">
+								<i class="navigation-icon">
+									<svg><use href="img/svg/sprite.svg#clock"></use></svg>
+								</i>
+								<span class="navigation-text">История</span>
+							</a>
+						</div>
+						<div class="navigation-item">
+							<a class="navigation-link" href="#">
+								<i class="navigation-icon">
+									<svg><use href="img/svg/sprite.svg#setting"></use></svg>
+								</i>
+								<span class="navigation-text">Настройки</span>
+							</a>
+						</div>
+					</nav>
+					<div class="mt-auto">
+						<hr class="hr-line" />
+						<div class="navigation my-2">
+							<div class="navigation-item mb-0">
+								<a class="navigation-link" href="#">
+									<i class="navigation-icon">
+										<svg><use href="img/svg/sprite.svg#question"></use></svg>
+									</i>
+									<span class="navigation-text">Поддержка</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</aside>
+				<section class="main-section">
+					<div class="section-header pt-4">
+						<h6 class="section-header__descrp mb-1">
+							<span class="dotty _lime mt-2"></span>
+							Общая аналитика по всем активным&nbsp;проектам
+						</h6>
+						<h3 class="heading-3">Отчет по проекту: Дейтелинг&nbsp;Иркутск</h3>
+					</div>
+					<div class="row gy-3 mb-5">
+						<div class="col-12 col-lg">
+							<div class="row gy-3">
+								<div class="col-12 col-sm-auto">
+									<select class="wide">
+										<option value="1">Все каналы</option>
+										<option value="2">Каналы 1</option>
+										<option value="3">Каналы 2</option>
+									</select>
+								</div>
+								<div class="col-12 col-sm-auto">
+									<select class="wide">
+										<option value="1">Компании</option>
+										<option value="2">Компания 1</option>
+										<option value="3">Компания 2</option>
+									</select>
+								</div>
+								<div class="col-12 col-sm-auto">
+									<select class="wide">
+										<option value="1">Свой период</option>
+										<option value="2">Период 1</option>
+										<option value="3">Период 2</option>
+									</select>
+								</div>
+								<div class="col-12 col-sm-auto">
+									<div class="datepiker-item">
+										<input class="datepiker-item__input" id="datepikerProjectReport" type="text" />
+										<div class="datepiker-item__icons">
+											<svg class="datepiker-item__calendar"><use href="img/svg/sprite.svg#datepiker"></use></svg>
+											<div class="circle-arrow _light _sm">
+												<svg><use href="img/svg/sprite.svg#arrow"></use></svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-auto">
+							<a class="btn _primary w-100" href="#">
+								<div class="btn__inner">
+									<span class="btn__text">Скачать отчет в&nbsp;PDF</span>
+									<div class="btn__icon">
+										<svg class="_download"><use href="img/svg/sprite.svg#download"></use></svg>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-12 col-sm-auto">
+							<a class="btn _primary w-100" href="#">
+								<div class="btn__inner">
+									<span class="btn__text">Скачать отчет в&nbsp;Telegram</span>
+									<div class="btn__icon">
+										<svg class="_download"><use href="img/svg/sprite.svg#download"></use></svg>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="row g-4 mb-4">
+						<div class="col-12 col-sm-6 col-xxl-4">
+							<div class="data-card">
+								<div class="data-card__header">
+									<div class="d-flex">
+										<div class="iconbox _light _lg">
+											<svg class="_wallet"><use href="img/svg/sprite.svg#wallet"></use></svg>
+										</div>
+										<div class="ps-4 align-self-center">
+											<h4 class="data-card__header-title mb-3 text-20 weight-500 gray500">Расходы</h4>
+											<p class="text-15 weight-300 gray56">За период</p>
+										</div>
+									</div>
+									<div class="ms-auto ps-3">
+										<a class="circle-btn" href="#">
+											<svg><use href="img/svg/sprite.svg#up"></use></svg>
+										</a>
+									</div>
+								</div>
+								<span class="data-card__price weight-600">90,190.55&nbsp;₽</span>
+								<div class="d-flex align-items-center">
+									<div class="me-4 pe-0 pe-md-3">
+										<div class="badge _success _xl">
+											<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+											+15.6%
+										</div>
+									</div>
+									<div class="data-card__result-info weight-500"><strong>+1.4k</strong> <span class="gray56">за эту неделю</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-xxl-4">
+							<div class="data-card">
+								<div class="data-card__header">
+									<div class="d-flex">
+										<div class="iconbox _light _lg">
+											<svg><use href="img/svg/sprite.svg#diagrama"></use></svg>
+										</div>
+										<div class="ps-4 align-self-center">
+											<h4 class="data-card__header-title mb-3 text-20 weight-500 gray500">Показы</h4>
+											<p class="text-15 weight-300 gray56">По всем каналам</p>
+										</div>
+									</div>
+									<div class="ms-auto ps-3">
+										<a class="circle-btn" href="#">
+											<svg><use href="img/svg/sprite.svg#up"></use></svg>
+										</a>
+									</div>
+								</div>
+								<span class="data-card__price weight-600">120,302</span>
+								<div class="d-flex align-items-center">
+									<div class="me-4 pe-0 pe-md-3">
+										<div class="badge _success _xl">
+											<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+											+15.6%
+										</div>
+									</div>
+									<div class="data-card__result-info weight-500"><strong>+1.4k</strong> <span class="gray56">за эту неделю</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-xxl-4">
+							<div class="data-card">
+								<div class="data-card__header">
+									<div class="d-flex">
+										<div class="iconbox _light _lg">
+											<svg><use href="img/svg/sprite.svg#cursore"></use></svg>
+										</div>
+										<div class="ps-4 align-self-center">
+											<h4 class="data-card__header-title mb-3 text-20 weight-500 gray500">Клики</h4>
+											<p class="text-15 weight-300 gray56">Все переходы</p>
+										</div>
+									</div>
+									<div class="ms-auto ps-3">
+										<a class="circle-btn" href="#">
+											<svg><use href="img/svg/sprite.svg#up"></use></svg>
+										</a>
+									</div>
+								</div>
+								<span class="data-card__price weight-600">967</span>
+								<div class="d-flex align-items-center">
+									<div class="me-4 pe-0 pe-md-3">
+										<div class="badge _success _xl">
+											<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+											+15.6%
+										</div>
+									</div>
+									<div class="data-card__result-info weight-500"><strong>-213</strong> <span class="gray56">за эту неделю</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-xxl-4">
+							<div class="data-card">
+								<div class="data-card__header">
+									<div class="d-flex">
+										<div class="iconbox _light _lg">
+											<svg><use href="img/svg/sprite.svg#diagrama-circle"></use></svg>
+										</div>
+										<div class="ps-4 align-self-center">
+											<h4 class="data-card__header-title mb-3 text-20 weight-500 gray500">CPC</h4>
+											<p class="text-15 weight-300 gray56">Стоимость клика</p>
+										</div>
+									</div>
+									<div class="ms-auto ps-3">
+										<a class="circle-btn" href="#">
+											<svg><use href="img/svg/sprite.svg#up"></use></svg>
+										</a>
+									</div>
+								</div>
+								<span class="data-card__price weight-600">9,63&nbsp;₽</span>
+								<div class="d-flex align-items-center">
+									<div class="me-4 pe-0 pe-md-3">
+										<div class="badge _success _xl">
+											<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+											+15.6%
+										</div>
+									</div>
+									<div class="data-card__result-info weight-500"><strong>+1.4k</strong> <span class="gray56">за эту неделю</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-xxl-4">
+							<div class="data-card">
+								<div class="data-card__header">
+									<div class="d-flex">
+										<div class="iconbox _light _lg">
+											<svg><use href="img/svg/sprite.svg#calendar"></use></svg>
+										</div>
+										<div class="ps-4 align-self-center">
+											<h4 class="data-card__header-title mb-3 text-20 weight-500 gray500">Лиды</h4>
+											<p class="text-15 weight-300 gray56">По всем каналам</p>
+										</div>
+									</div>
+									<div class="ms-auto ps-3">
+										<a class="circle-btn" href="#">
+											<svg><use href="img/svg/sprite.svg#up"></use></svg>
+										</a>
+									</div>
+								</div>
+								<span class="data-card__price weight-600">130&nbsp;шт.</span>
+								<div class="d-flex align-items-center">
+									<div class="me-4 pe-0 pe-md-3">
+										<div class="badge _success _xl">
+											<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+											+15.6%
+										</div>
+									</div>
+									<div class="data-card__result-info weight-500"><strong>+1.4k</strong> <span class="gray56">за эту неделю</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-xxl-4">
+							<div class="data-card">
+								<div class="data-card__header">
+									<div class="d-flex">
+										<div class="iconbox _light _lg">
+											<svg><use href="img/svg/sprite.svg#ok"></use></svg>
+										</div>
+										<div class="ps-4 align-self-center">
+											<h4 class="data-card__header-title mb-3 text-20 weight-500 gray500">CPA</h4>
+											<p class="text-15 weight-300 gray56">Стоимость лида</p>
+										</div>
+									</div>
+									<div class="ms-auto ps-3">
+										<a class="circle-btn" href="#">
+											<svg><use href="img/svg/sprite.svg#up"></use></svg>
+										</a>
+									</div>
+								</div>
+								<span class="data-card__price weight-600">963&nbsp;₽</span>
+								<div class="d-flex align-items-center">
+									<div class="me-4 pe-0 pe-md-3">
+										<div class="badge _danger _xl">
+											<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-down"></use></svg>
+											-15.6%
+										</div>
+									</div>
+									<div class="data-card__result-info weight-500"><strong>-213</strong> <span class="gray56">за эту неделю</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-xxl-8">
+							<div class="data-card p-0">
+								<div class="row">
+									<div class="col-12 col-lg-6">
+										<div class="data-card__goals">
+											<div class="data-card__header">
+												<div class="d-flex">
+													<div class="iconbox _light _lg">
+														<svg><use href="img/svg/sprite.svg#platforme"></use></svg>
+													</div>
+													<div class="ps-4 align-self-center">
+														<h4 class="data-card__header-title mb-3 text-20 weight-500 gray500">Статистика по ключевым&nbsp;целям</h4>
+														<p class="text-15 weight-300 gray56">За период</p>
+													</div>
+												</div>
+											</div>
+											<div class="info-row">
+												<h6>Звонки:</h6>
+												<div class="info-row__decor-line"></div>
+												<strong class="weight-700">14 шт.</strong>
+												<div class="badge _success _md">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+											<div class="info-row">
+												<h6>Лиды с&nbsp;quiz:</h6>
+												<div class="info-row__decor-line"></div>
+												<strong class="weight-700">57 шт.</strong>
+												<div class="badge _success _md">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+											<div class="info-row">
+												<h6>Лиды с&nbsp;форм:</h6>
+												<div class="info-row__decor-line"></div>
+												<strong class="weight-700">63 шт.</strong>
+												<div class="badge _success _md">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-lg-6">
+										<div class="total-card">
+											<div class="total-card__inner">
+												<div class="weight-500">Итого:</div>
+												<div class="total-card__units">250 <span class="things">шт.</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="white-block radius-normal mb-4">
+						<div class="pt-2">
+							<h4 class="mb-3 text-20 weight-500 gray500">Статистика по ключевым&nbsp;целям</h4>
+							<p class="text-15 weight-300 gray56">За период</p>
+						</div>
+						<div class="table-container mt-5 mb-3">
+							<table class="table-style text-15">
+								<thead>
+									<tr>
+										<th>Название&nbsp;кампании</th>
+										<th>Расход</th>
+										<th>Показы</th>
+										<th>Клики</th>
+										<th>CPC</th>
+										<th>Лиды</th>
+										<th>CPA</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="linen">
+										<td>
+											<div class="td">Дейтелинг Про Иркутск</div>
+										</td>
+										<td>
+											<div class="td">
+												<span class="nowrap-text">90,190.55 ₽</span>
+												<div class="badge _success _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="td">
+												<span>120,302</span>
+												<div class="badge _success _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="td">
+												<span>967</span>
+												<div class="badge _success _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="td">
+												<span class="nowrap-text">9,63 ₽</span>
+												<div class="badge _success _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="td">
+												<span class="nowrap-text">130 шт.</span>
+												<div class="badge _success _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="td">
+												<span class="nowrap-text">963 ₽</span>
+												<div class="badge _danger _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-down"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr class="lightyellow">
+										<td>
+											<div class="td">Дейтелинг Про Иркутск</div>
+										</td>
+										<td>
+											<div class="td">
+												<span class="nowrap-text">90,190.55 ₽</span>
+												<div class="badge _success _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="td">
+												<span>120,302</span>
+												<div class="badge _success _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="td">
+												<span>967</span>
+												<div class="badge _success _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="td">
+												<span class="nowrap-text">9,63 ₽</span>
+												<div class="badge _success _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="td">
+												<span class="nowrap-text">130 шт.</span>
+												<div class="badge _success _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="td">
+												<span class="nowrap-text">963 ₽</span>
+												<div class="badge _danger _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-down"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr class="aquamarine">
+										<td>
+											<div class="td">Дейтелинг Про Иркутск</div>
+										</td>
+										<td>
+											<div class="td">
+												<span class="nowrap-text">90,190.55 ₽</span>
+												<div class="badge _success _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="td">
+												<span>120,302</span>
+												<div class="badge _success _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="td">
+												<span>967</span>
+												<div class="badge _success _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="td">
+												<span class="nowrap-text">9,63 ₽</span>
+												<div class="badge _success _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="td">
+												<span class="nowrap-text">130 шт.</span>
+												<div class="badge _success _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="td">
+												<span class="nowrap-text">963 ₽</span>
+												<div class="badge _danger _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-down"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr class="aliceblue">
+										<td>
+											<div class="td">Дейтелинг Про Иркутск</div>
+										</td>
+										<td>
+											<div class="td">
+												<span class="nowrap-text">90,190.55 ₽</span>
+												<div class="badge _success _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="td">
+												<span>120,302</span>
+												<div class="badge _success _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="td">
+												<span>967</span>
+												<div class="badge _success _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="td">
+												<span class="nowrap-text">9,63 ₽</span>
+												<div class="badge _success _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="td">
+												<span class="nowrap-text">130 шт.</span>
+												<div class="badge _success _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="td">
+												<span class="nowrap-text">963 ₽</span>
+												<div class="badge _danger _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-down"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr class="lavender">
+										<td>
+											<div class="td">Дейтелинг Про Иркутск</div>
+										</td>
+										<td>
+											<div class="td">
+												<span class="nowrap-text">90,190.55 ₽</span>
+												<div class="badge _success _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="td">
+												<span>120,302</span>
+												<div class="badge _success _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="td">
+												<span>967</span>
+												<div class="badge _success _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="td">
+												<span class="nowrap-text">9,63 ₽</span>
+												<div class="badge _success _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="td">
+												<span class="nowrap-text">130 шт.</span>
+												<div class="badge _success _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-up"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="td">
+												<span class="nowrap-text">963 ₽</span>
+												<div class="badge _danger _sm">
+													<svg class="badge__icon"><use href="img/svg/sprite.svg#rating-down"></use></svg>
+													+15.6%
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="white-block radius-normal mb-4">
+						<div class="py-2 mb-5">
+							<h4 class="mb-3 text-20 weight-500 gray500">Лучшие посты</h4>
+							<p class="text-15 weight-300 gray56">По эффективности за период </p>
+						</div>
+						<div class="best-post">
+							<a class="best-post__item" href="#">
+								<picture class="best-post__picture">
+									<img src="img/best-posts/01.jpg" alt="#" />
+								</picture>
+							</a>
+							<a class="best-post__item" href="#">
+								<picture class="best-post__picture">
+									<img src="img/best-posts/02.jpg" alt="#" />
+								</picture>
+							</a>
+							<a class="best-post__item" href="#">
+								<picture class="best-post__picture">
+									<img src="img/best-posts/03.jpg" alt="#" />
+								</picture>
+							</a>
+							<a class="best-post__item" href="#">
+								<picture class="best-post__picture">
+									<img src="img/best-posts/04.jpg" alt="#" />
+								</picture>
+							</a>
+						</div>
+					</div>
+
+					<div class="white-block radius-normal mb-4">
+						<div class="row g-4 mb-5">
+							<div class="col-auto pe-5">
+								<div class="d-flex">
+									<div class="iconbox _light _lg">
+										<svg class="_wallet"><use href="img/svg/sprite.svg#wallet"></use></svg>
+									</div>
+									<div class="ps-4 align-self-center">
+										<h4 class="data-card__header-title mb-3 text-20 weight-500 gray500">Комментарий к отчету</h4>
+										<p class="text-15 weight-300 gray56">за отчетный период</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-auto">
+								<button class="btn _outline-gray">
+									<div class="btn__inner">
+										<span class="btn__text">Редактировать</span>
+										<div class="btn__icon ms-2">
+											<svg><use href="img/svg/sprite.svg#edit-pen"></use></svg>
+										</div>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="col-12 col-xl-11 text-15 lh-150 gray500">
+							<p class="weight-600 mb-5 pb-3">
+								Анализ эффективности услуг показал, что при правильном распределения количества заказов по услугам (при неизменном количестве клиентов, заказов и&nbsp;стоимости услуг), выручку <span class="nowrap-text">с 7 518 180,00</span> рублей можно увеличить до <span class="nowrap-text">8 424 100,00.</span> То есть дополнительная выручка составит <span class="nowrap-text">905 920,00 рублей.</span> Если перераспределение количества услуг выполнить невозможно (или невозможно в полном объёме),
+								необходимо изменить тарификацию услуг с максимальным приближением по выручке на 1% заказов.
+							</p>
+							<p class="mb-5 pb-3">
+								Из отчёта видно, что самой объединяющей услугой является Ликвидация последствий. Вместе с этой услугой чаще всего приобретают Анализ состояния, Сосредоточение внимания, Нагнетание тумана и Утепление фасада. Таким образом, клиенты приобретающие услугу Ликвидация последствий без сопутствующих услуг, с наибольшей вероятностью приобретут вышеперечисленные сопутствующие услуги. Исходя из этого необходимо формировать задание отделу продаж, а отделу маркетинга планировать
+								соответствующие маркетинговые активности (акции, распродажи и т. д.).
+							</p>
+							<p class="mb-5 pb-3">
+								Когортный анализ выручки позволяет: <br />
+								• оценить степень вклада каждого поколения клиентов в общую выручку;<br />
+								• определить время жизни каждого поколения покупателей; <br />
+								• зафиксировать период массового оттока поколения;<br />
+								• определить целесообразность дополнительных исследований в случае явного «вымирания» поколений
+							</p>
+							<p class="pb-3">
+								Из отчёта видно, что самой объединяющей услугой является Ликвидация последствий. Вместе с этой услугой чаще всего приобретают Анализ состояния, Сосредоточение внимания, Нагнетание тумана и Утепление фасада. Таким образом, клиенты приобретающие услугу Ликвидация последствий без сопутствующих услуг, с наибольшей вероятностью приобретут вышеперечисленные сопутствующие услуги. Исходя из этого необходимо формировать задание отделу продаж, а отделу маркетинга планировать
+								соответствующие маркетинговые активности (акции, распродажи и т. д.).
+							</p>
+						</div>
+					</div>
+
+					<div class="row g-4 py-4">
+						<div class="col-12 col-sm m-0"></div>
+						<div class="col-12 col-sm-auto">
+							<a class="btn _primary w-100" href="#">
+								<div class="btn__inner">
+									<span class="btn__text">Скачать отчет в&nbsp;PDF</span>
+									<div class="btn__icon">
+										<svg class="_download"><use href="img/svg/sprite.svg#download"></use></svg>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-12 col-sm-auto">
+							<a class="btn _primary w-100" href="#">
+								<div class="btn__inner">
+									<span class="btn__text">Скачать отчет в&nbsp;Telegram</span>
+									<div class="btn__icon">
+										<svg class="_download"><use href="img/svg/sprite.svg#download"></use></svg>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="main__lightBg _pos1"><div class="lightBlurBg"></div></div>
+			<div class="main__lightBg _pos2"><div class="lightBlurBg"></div></div>
+			<div class="main__lightBg _pos3"><div class="lightBlurBg"></div></div>
+		</main>
+
+		<div class="sidebar-panel">
+			<div class="sidebar-panel__aside">
+				<div class="p-4 pb-0 d-xl-none">
+					<div class="dropdown d-block">
+						<button class="dropdown-head w-100">
+							<div class="avatar-36x36"><img class="img-cover" src="img/avatars/avatar-36x36.png" alt="#" /></div>
+							<div class="dropdown-head__info">
+								<div>Трафик агентство</div>
+								<div class="_subtext">Отчеты агентства в&nbsp;одном&nbsp;месте</div>
+							</div>
+							<div class="circle-arrow">
+								<svg><use href="img/svg/sprite.svg#arrow"></use></svg>
+							</div>
+						</button>
+						<div class="dropdown-body">
+							<div class="dropdown-block pt-4 pb-2 weight-500">
+								<h6 class="text-12 uppercase gray56 px-4 py-2">Мои проекты</h6>
+								<ul class="dropdown-menu text-14 mb-2">
+									<li>
+										<a class="dropdown-menu__link" href="#">
+											<span>Все проекты</span>
+										</a>
+									</li>
+									<li>
+										<a class="dropdown-menu__link" href="#">
+											<span>Admirra</span>
+										</a>
+									</li>
+									<li>
+										<a class="dropdown-menu__link active" href="#">
+											<span>Fisherman</span>
+										</a>
+									</li>
+								</ul>
+								<a class="dropdown-link" href="#">
+									<svg class="dropdown-link__icon _stroke"><use href="img/svg/sprite.svg#plus"></use></svg>
+									<span>Создать новый проект</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<nav class="navigation">
+					<div class="navigation-item subMenu">
+						<a class="navigation-link" href="#">
+							<i class="navigation-icon">
+								<svg class="_stroke"><use href="img/svg/sprite.svg#grid"></use></svg>
+							</i>
+							<span class="navigation-text">Проекты</span>
+							<div class="circle-arrow">
+								<svg><use href="img/svg/sprite.svg#arrow"></use></svg>
+							</div>
+						</a>
+						<div class="navigation-submenu">
+							<div class="navigation-subitem">
+								<a class="navigation-sublink" href="#">Аналитика проекта</a>
+							</div>
+							<div class="navigation-subitem">
+								<a class="navigation-sublink" href="#">AI отчет по проекту</a>
+							</div>
+						</div>
+					</div>
+					<div class="navigation-item">
+						<a class="navigation-link" href="#">
+							<i class="navigation-icon">
+								<svg><use href="img/svg/sprite.svg#layers"></use></svg>
+							</i>
+							<span class="navigation-text">Интеграции</span>
+						</a>
+					</div>
+					<div class="navigation-item">
+						<a class="navigation-link" href="#">
+							<i class="navigation-icon">
+								<svg><use href="img/svg/sprite.svg#chat"></use></svg>
+							</i>
+							<span class="navigation-text">Квалификатор лидов</span>
+						</a>
+					</div>
+					<div class="navigation-item">
+						<a class="navigation-link" href="#">
+							<i class="navigation-icon">
+								<svg><use href="img/svg/sprite.svg#group"></use></svg>
+							</i>
+							<span class="navigation-text">Команда</span>
+						</a>
+					</div>
+					<div class="navigation-item">
+						<a class="navigation-link" href="#">
+							<i class="navigation-icon">
+								<svg><use href="img/svg/sprite.svg#clock"></use></svg>
+							</i>
+							<span class="navigation-text">История</span>
+						</a>
+					</div>
+					<div class="navigation-item">
+						<a class="navigation-link" href="#">
+							<i class="navigation-icon">
+								<svg><use href="img/svg/sprite.svg#setting"></use></svg>
+							</i>
+							<span class="navigation-text">Настройки</span>
+						</a>
+					</div>
+				</nav>
+				<div class="mt-auto">
+					<hr class="hr-line" />
+					<div class="px-4 py-5">
+						<div class="row g-3">
+							<div class="col-12 d-xxl-none">
+								<div class="d-flex align-items-center">
+									<div class="pe-4">
+										<div class="mb-1 weight-500 gray500">Ваш тариф: <b class="weight-700">Старт</b></div>
+										<div class="text-10 gray60">Действует до 31.05.2026</div>
+									</div>
+									<div class="ps-2 ms-1">
+										<a class="btn _outline-primary" href="#">
+											<div class="btn__inner">
+												<span class="btn__text">Продлить</span>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<a class="btn _primary d-flex" href="#">
+									<div class="btn__inner">
+										<span class="btn__text">Перейти на тариф Старт</span>
+										<div class="btn__icon-plus">+</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-12 d-lg-none">
+								<a class="btn d-flex" href="#">
+									<div class="btn__inner">
+										<span class="btn__text">Предложить идею</span>
+										<div class="btn__icon">
+											<svg><use href="img/svg/sprite.svg#idea"></use></svg>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<hr class="hr-line" />
+					<div class="navigation my-2">
+						<div class="navigation-item mb-0">
+							<a class="navigation-link" href="#">
+								<i class="navigation-icon">
+									<svg><use href="img/svg/sprite.svg#question"></use></svg>
+								</i>
+								<span class="navigation-text">Поддержка</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/darkmode.js" defer></script>
+		<script src="js/jquery.js" defer></script>
+		<script src="js/beefup.js" defer></script>
+		<script src="js/easytabs.js" defer></script>
+		<script src="js/nice-select.js" defer></script>
+		<script src="js/main.js" defer></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.6.0/air-datepicker.min.js"></script>
+		<script>
+			window.onload = function () {
+				new AirDatepicker("#datepikerProjectReport", {
+					multipleDates: 2,
+					selectedDates: ["2026-04-01", "2026-04-30"],
+					range: true,
+					multipleDatesSeparator: " - ",
+				});
+			};
+		</script>
+	</body>
+</html>
