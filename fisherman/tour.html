@@ -1,0 +1,1497 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Карточка тура</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- favicon -->
+		<link href="img/favicon.png" sizes="32x32" rel="icon" type="image/png" />
+
+		<!-- style -->
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="header-wrap">
+			<header class="header _white">
+				<a class="logo" href="#"></a>
+				<div class="burger d-xl-none">
+					<div class="burger__icon">
+						<div class="_top"></div>
+						<div class="_center"></div>
+						<div class="_bottom"></div>
+					</div>
+				</div>
+				<nav class="menu d-none d-xl-block">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a class="menu__link">Каталог туров</a>
+							<svg class="menu__arrow"><use href="img/svg/sprite.svg#down"></use></svg>
+							<div class="menu-sub">
+								<ul class="menu-sub__inner">
+									<li><a href="#">VIP туры</a></li>
+									<li><a href="#">Тур выходного дня</a></li>
+									<li><a href="#">Тур с проживанием</a></li>
+									<li><a href="#">Тур на Байкал</a></li>
+									<li><a href="#">Экспедиция</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Направления</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Виды туров</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Сезоны</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Фото и отзывы</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Блог</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">О нас</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<aside class="header__aside">
+					<a class="header__tel" href="tel:+79999999999">+7 999 999 99 99</a>
+					<div>
+						<a class="btn _small" href="#">
+							<span class="btn__text">Связаться с&nbsp;нами</span>
+						</a>
+						<a class="btn _small _outline d-none d-sm-inline-flex" href="#">
+							<span class="btn__text">Разместить свой&nbsp;тур</span>
+						</a>
+					</div>
+				</aside>
+			</header>
+		</div>
+
+		<div class="mobile-nav">
+			<div class="mobile-nav__inner">
+				<div class="mobile-nav__wrap">
+					<div class="mobile-nav__logo">
+						<a class="logo" href="#"></a>
+					</div>
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a class="nav__link" href="#">Каталог туров</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">Направления</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">Виды туров</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">Сезоны</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">Фото и отзывы</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">Блог</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">О нас</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<button class="mobile-nav__close">
+						<svg><use href="img/svg/sprite.svg#close"></use></svg>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-xxl px-3 px-sm-5">
+			<ul class="bread-crumbs">
+				<li class="bread-crumbs__item">
+					<a class="bread-crumbs__link" href="#">Главная</a>
+				</li>
+				<li class="bread-crumbs__item">
+					<a class="bread-crumbs__link" href="#">Каталог туров</a>
+				</li>
+				<li class="bread-crumbs__item">
+					<a class="bread-crumbs__link" href="#">Красноярский край</a>
+				</li>
+				<li class="bread-crumbs__item">Тур «Название тура»</li>
+			</ul>
+			<div class="tour-card">
+				<div class="d-lg-none">
+					<h2 class="tour-card__heading heading-2 mb-5">
+						Рыболовная экспедиция <br />
+						на север <span class="color-accent">Красноярского края</span>
+					</h2>
+				</div>
+				<div class="tour-card__img">
+					<picture class="tour-card__img-pic">
+						<source srcset="img/card-tour/preview-vertical@md.jpg" media="(max-width: 768px)" />
+						<source srcset="img/card-tour/preview-horizontal.jpg" media="(max-width: 992px)" />
+						<img class="object-fit-cover d-block" src="img/card-tour/preview-vertical.jpg" alt="#" />
+					</picture>
+					<div class="rating-box">
+						<div class="rating-box__stars">
+							<svg><use href="img/svg/sprite.svg#star"></use></svg>
+							<svg><use href="img/svg/sprite.svg#star"></use></svg>
+							<svg><use href="img/svg/sprite.svg#star"></use></svg>
+							<svg><use href="img/svg/sprite.svg#star"></use></svg>
+							<svg><use href="img/svg/sprite.svg#star"></use></svg>
+						</div>
+						<p>Максимально комфортные условия для отдыха и проживания в тайге</p>
+					</div>
+				</div>
+				<div class="tour-card__content">
+					<div class="d-none d-lg-block">
+						<h2 class="tour-card__heading heading-2 mb-4">
+							Рыболовная <br />
+							экспедиция на север <span class="color-accent">Красноярского края</span>
+						</h2>
+					</div>
+					<p class="tour-card__descrp-text opacity-80">Это большое автономное путешествие вдали от&nbsp;цивилизации, без сотовой связи и&nbsp;интернета с&nbsp;минимальной вероятностью встретить людей на своём пути. Вас ждут живописные таёжные места, реки богатые тайменем, хариусом, ленком, щукой и&nbsp;окунем</p>
+					<div class="row gy-4 py-5">
+						<div class="pt-2 col-6 col-sm-4">
+							<div class="list__item">
+								<i class="list__icon">
+									<svg><use href="img/svg/sprite.svg#clock"></use></svg>
+								</i>
+								<div>
+									<strong>Длительность</strong> <br />
+									<span>6 дней</span>
+								</div>
+							</div>
+						</div>
+						<div class="pt-2 col-6 col-sm-4">
+							<div class="list__item">
+								<i class="list__icon">
+									<svg class="_loc"><use href="img/svg/sprite.svg#loc"></use></svg>
+								</i>
+								<div>
+									<strong>Регион</strong> <br />
+									<span>Красноярский край</span>
+								</div>
+							</div>
+						</div>
+						<div class="pt-2 col-6 col-sm-4">
+							<div class="list__item">
+								<i class="list__icon">
+									<svg class="_tent"><use href="img/svg/sprite.svg#tent"></use></svg>
+								</i>
+								<div>
+									<strong>Проживание</strong> <br />
+									<span>домики на турбазе</span>
+								</div>
+							</div>
+						</div>
+						<div class="pt-2 col-6 col-sm-4">
+							<div class="list__item">
+								<i class="list__icon">
+									<svg class="_thermometer"><use href="img/svg/sprite.svg#thermometer"></use></svg>
+								</i>
+								<div>
+									<strong>Сезон</strong> <br />
+									<span>лето, осень</span>
+								</div>
+							</div>
+						</div>
+						<div class="pt-2 col-6 col-sm-4">
+							<div class="list__item">
+								<i class="list__icon">
+									<svg class="_user"><use href="img/svg/sprite.svg#user"></use></svg>
+								</i>
+								<div>
+									<strong>Группа </strong> <br />
+									<span>6-8 человек</span>
+								</div>
+							</div>
+						</div>
+						<div class="pt-2 col-6 col-sm-4">
+							<div class="list__item">
+								<i class="list__icon">
+									<svg class="_fork"><use href="img/svg/sprite.svg#fork"></use></svg>
+								</i>
+								<div>
+									<strong>Питание</strong> <br />
+									<span>включено</span>
+								</div>
+							</div>
+						</div>
+						<div class="pt-2 col-6 col-sm-4">
+							<div class="list__item">
+								<i class="list__icon">
+									<svg class="_fish"><use href="img/svg/sprite.svg#fish"></use></svg>
+								</i>
+								<div>
+									<strong>Вид рыбы</strong> <br />
+									<span>хариус, ленок, таймень, щука,&nbsp;окунь</span>
+								</div>
+							</div>
+						</div>
+						<div class="pt-2 col-6 col-sm-4">
+							<div class="list__item">
+								<i class="list__icon">
+									<svg class="_boat"><use href="img/svg/sprite.svg#boat"></use></svg>
+								</i>
+								<div>
+									<strong>Транспорт </strong> <br />
+									<span>
+										3 водометные <br />
+										экспедиционные лодки
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="pt-2 col-6 col-sm-4">
+							<div class="list__item">
+								<i class="list__icon">
+									<svg class="_flag"><use href="img/svg/sprite.svg#flag"></use></svg>
+								</i>
+								<div>
+									<strong>Сопровождение </strong> <br />
+									<span>2 гида</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="py-2 mb-5">
+						<a href="#">Смотреть свободные даты ⟶</a>
+					</div>
+					<div class="row gy-3 align-items-center">
+						<div class="col-auto col-xl-4">
+							<div class="price-box">
+								<div class="price-box__title">Цена:</div>
+								<div class="price-box__price">
+									<strong>220 000</strong>
+									<div class="price-box__text">руб. с человека</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<a class="btn _normal" href="#">
+								<span class="btn__text">Забронировать&nbsp;тур</span>
+								<i class="btn__icon">
+									<svg><use href="img/svg/sprite.svg#right-up"></use></svg>
+								</i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bg-one">
+			<div class="bg-white">
+				<header class="section-heading text-center px-3">
+					<h2 class="heading-3"><span class="color-accent">Фото и видео</span> тура от&nbsp;гида </h2>
+					<p>
+						Реальные снимки, видео и впечатления туристов из поездок <br class="d-none d-sm-inline" />
+						по&nbsp;Байкалу, Карелии, Владивостоке и&nbsp;другим регионам
+					</p>
+				</header>
+				<div class="container-xxl">
+					<div class="slider-photo-wrap">
+						<div class="swiper slider-photo">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img class="object-fit-cover" src="img/slider-photo/01.jpg" alt="#" />
+								</div>
+								<div class="swiper-slide">
+									<img class="object-fit-cover" src="img/slider-photo/02.jpg" alt="#" />
+								</div>
+								<div class="swiper-slide">
+									<img class="object-fit-cover" src="img/slider-photo/03.jpg" alt="#" />
+								</div>
+								<div class="swiper-slide">
+									<img class="object-fit-cover" src="img/slider-photo/04.jpg" alt="#" />
+								</div>
+								<div class="swiper-slide">
+									<img class="object-fit-cover" src="img/slider-photo/01.jpg" alt="#" />
+								</div>
+								<div class="swiper-slide">
+									<img class="object-fit-cover" src="img/slider-photo/02.jpg" alt="#" />
+								</div>
+								<div class="swiper-slide">
+									<img class="object-fit-cover" src="img/slider-photo/03.jpg" alt="#" />
+								</div>
+								<div class="swiper-slide">
+									<img class="object-fit-cover" src="img/slider-photo/04.jpg" alt="#" />
+								</div>
+							</div>
+							<div class="swiper-pagination position-fix d-sm-none"></div>
+						</div>
+						<div class="slider-photo__prev swiper-prev _light d-none d-sm-block">
+							<svg class="_left">
+								<use href="img/svg/sprite.svg#left"></use>
+							</svg>
+						</div>
+						<div class="slider-photo__next swiper-next _light d-none d-sm-block">
+							<svg class="_right">
+								<use href="img/svg/sprite.svg#right"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="about-tour">
+				<div class="container-xxl">
+					<div class="row">
+						<div class="col-12 col-sm-6 order-1 order-sm-0">
+							<div class="about-tour__map">
+								<img class="about-tour__routemap" src="img/svg/route-map.svg" />
+								<div class="loc-marker _marker1">
+									<div class="loc-marker__img">
+										<img class="object-fit-cover" src="img/location-marker/01.jpg" alt="#" />
+									</div>
+									<svg class="loc-marker__marker"><use href="img/svg/sprite.svg#loc-marker"></use></svg>
+								</div>
+								<div class="loc-marker _marker2">
+									<div class="loc-marker__img">
+										<img class="object-fit-cover" src="img/location-marker/02.jpg" alt="#" />
+									</div>
+									<svg class="loc-marker__marker"><use href="img/svg/sprite.svg#loc-marker"></use></svg>
+								</div>
+								<div class="loc-marker _marker3">
+									<div class="loc-marker__img">
+										<img class="object-fit-cover" src="img/location-marker/03.jpg" alt="#" />
+									</div>
+									<svg class="loc-marker__marker"><use href="img/svg/sprite.svg#loc-marker"></use></svg>
+								</div>
+								<div class="tour-author">
+									<div class="tour-author__avatar">
+										<img class="object-fit-cover" src="img/avatar-100x100.jpg" alt="#" />
+									</div>
+									<div class="tour-author__descrp">
+										<strong>Иван Алексеев</strong>
+										<div>гид-рыболов</div>
+										<a class="link" href="#">перейти в карточку гида</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6">
+							<article class="about-tour__descrp">
+								<h2 class="heading-3 mb-5">О туре</h2>
+								<p>
+									Тур идеально подходит и&nbsp;для новичков, <br class="d-none d-md-inline" />
+									и&nbsp;для опытных рыболовов, которые хотят провести несколько дней на природе <br class="d-none d-md-inline" />
+									и&nbsp;поймать трофей
+								</p>
+								<p>Этот тур подходит тем, кто хочет комфортную рыбалку в&nbsp;Красноярском крае с&nbsp;проживанием, питанием и&nbsp;идом</p>
+								<p>
+									Маршрут проходит по проверенным <br class="d-none d-md-inline" />
+									местам, где стабильно ловится хариус, <br class="d-none d-md-inline" />
+									щука и&nbsp;окунь
+								</p>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="tour-video-wrap">
+				<div class="container-xxl px-3 px-sm-5">
+					<div class="tour-video">
+						<span class="play-btn _white"></span>
+						<img class="object-fit-cover" src="img/tour-video-preview.jpg" alt="#" />
+					</div>
+				</div>
+			</div>
+			<div class="bg-one__inner _inverse-bg">
+				<div class="container-xxl px-5">
+					<section class="daily-program">
+						<header class="section-heading text-center">
+							<h2 class="heading-3">Программа по дням</h2>
+						</header>
+						<div class="program-tabs">
+							<div class="program-tabs__nav">
+								<div class="program-tabs__item"><a href="#day1">1 день</a></div>
+								<div class="program-tabs__item"><a href="#day2">2 день</a></div>
+								<div class="program-tabs__item"><a href="#day3">3 день</a></div>
+								<div class="program-tabs__item"><a href="#day4">4 день</a></div>
+							</div>
+							<div id="day1" class="daily-program__content">
+								<div class="row gx-3">
+									<div class="col-12 col-sm-6">
+										<div class="daily-program__descrp">
+											<div class="daily-program__caption">День 1</div>
+											<h4 class="daily-program__title">Прибытие в Красноярск</h4>
+											<div class="group-icon">
+												<svg class="icon _air"><use href="img/svg/sprite.svg#air"></use></svg>
+												<svg class="icon _car"><use href="img/svg/sprite.svg#car"></use></svg>
+											</div>
+											<ul class="list _dotted">
+												<li class="list__item">Встреча в Красноярске</li>
+												<li class="list__item">Трансфер на базу</li>
+												<li class="list__item">Размещение</li>
+												<li class="list__item">Инструктаж, выход на первую рыбалку</li>
+												<li class="list__item">Ужин, баня</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6">
+										<div class="daily-program__img">
+											<img class="object-fit-cover" src="img/daily-program/01.jpg" alt="#" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="day2" class="daily-program__content">
+								<div class="row">
+									<div class="col-12 col-sm-6">
+										<div class="daily-program__descrp">
+											<div class="daily-program__caption">День 2</div>
+											<h4 class="daily-program__title">Прибытие в Красноярск</h4>
+											<div class="group-icon">
+												<svg class="icon _air"><use href="img/svg/sprite.svg#air"></use></svg>
+												<svg class="icon _car"><use href="img/svg/sprite.svg#car"></use></svg>
+											</div>
+											<ul class="list _dotted">
+												<li class="list__item">Встреча в Красноярске</li>
+												<li class="list__item">Трансфер на базу</li>
+												<li class="list__item">Размещение</li>
+												<li class="list__item">Инструктаж, выход на первую рыбалку</li>
+												<li class="list__item">Ужин, баня</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6">
+										<div class="daily-program__img">
+											<img class="object-fit-cover" src="img/daily-program/01.jpg" alt="#" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="day3" class="daily-program__content">
+								<div class="row">
+									<div class="col-12 col-sm-6">
+										<div class="daily-program__descrp">
+											<div class="daily-program__caption">День 3</div>
+											<h4 class="daily-program__title">Прибытие в Красноярск</h4>
+											<div class="group-icon">
+												<svg class="icon _air"><use href="img/svg/sprite.svg#air"></use></svg>
+												<svg class="icon _car"><use href="img/svg/sprite.svg#car"></use></svg>
+											</div>
+											<ul class="list _dotted">
+												<li class="list__item">Встреча в Красноярске</li>
+												<li class="list__item">Трансфер на базу</li>
+												<li class="list__item">Размещение</li>
+												<li class="list__item">Инструктаж, выход на первую рыбалку</li>
+												<li class="list__item">Ужин, баня</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6">
+										<div class="daily-program__img">
+											<img class="object-fit-cover" src="img/daily-program/01.jpg" alt="#" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="day4" class="daily-program__content">
+								<div class="row">
+									<div class="col-12 col-sm-6">
+										<div class="daily-program__descrp">
+											<div class="daily-program__caption">День 4</div>
+											<h4 class="daily-program__title">Прибытие в Красноярск</h4>
+											<div class="group-icon">
+												<svg class="icon _air"><use href="img/svg/sprite.svg#air"></use></svg>
+												<svg class="icon _car"><use href="img/svg/sprite.svg#car"></use></svg>
+											</div>
+											<ul class="list _dotted">
+												<li class="list__item">Встреча в Красноярске</li>
+												<li class="list__item">Трансфер на базу</li>
+												<li class="list__item">Размещение</li>
+												<li class="list__item">Инструктаж, выход на первую рыбалку</li>
+												<li class="list__item">Ужин, баня</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6">
+										<div class="daily-program__img">
+											<img class="object-fit-cover" src="img/daily-program/01.jpg" alt="#" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-xxl px-3 px-sm-5">
+			<section class="about-lager">
+				<div class="row g-3">
+					<div class="col-12 col-md-6 order-1 order-md-0">
+						<div class="swiper slider-image">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img class="object-fit-cover" src="img/slider-image/01.jpg" alt="#" />
+								</div>
+								<div class="swiper-slide">
+									<img class="object-fit-cover" src="img/slider-image/01.jpg" alt="#" />
+								</div>
+							</div>
+							<div class="slider-image__prev swiper-prev _light">
+								<svg class="_left">
+									<use href="img/svg/sprite.svg#left"></use>
+								</svg>
+							</div>
+							<div class="slider-image__next swiper-next _light">
+								<svg class="_right">
+									<use href="img/svg/sprite.svg#right"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="about-lager__descrp">
+							<h3 class="heading-3 font-onest weight-400 mb-5 pb-2">Про наш лагерь</h3>
+							<div class="col-11 col-sm-8 col-md-10 col-xl-8">
+								<ul class="list _dotted gy-3">
+									<li class="list__item">Двухместные шатры для сна и отдыха (спим на раскладушках с самонадувающихся ковриками, комфортные спальники и подушки)</li>
+									<li class="list__item">
+										В каждом шатре стоит автономный <br />
+										отопитель и кондиционер
+									</li>
+									<li class="list__item">Большая кухонная зона с деревянной мебелью, шатрами от дождя и сеткой от комаров</li>
+									<li class="list__item">Генератор для освещения лагеря, зарядки телефонов и другой техники</li>
+									<li class="list__item">Два холодильника, один для продуктов, второй для охлаждения напитков</li>
+									<li class="list__item">Палатка баня с парилкой и помывочной зоной</li>
+									<li class="list__item">Палатка туалет</li>
+									<li class="list__item">Хозблок для ваших вещей, чтобы было больше места в спальных шатрах</li>
+									<li class="list__item">Коптильня холодного и горячего копчения</li>
+									<li class="list__item">Дегидратор для сушки рыбы, вакууматор</li>
+									<li class="list__item">В каждой лодке термоконтейнер с хладоэлементами для напитков</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="tour-price">
+				<div class="row gy-5">
+					<div class="col-12 col-sm-7 col-lg-5">
+						<h4 class="tour-price__title">В стоимость включено:</h4>
+						<div class="row">
+							<div class="col-6">
+								<ul class="list gy-3">
+									<li class="list__item">
+										<i class="list__icon">
+											<svg><use href="img/svg/sprite.svg#ok"></use></svg>
+										</i>
+										<span>Трансфер из Красноярска и&nbsp;обратно</span>
+									</li>
+									<li class="list__item">
+										<i class="list__icon">
+											<svg><use href="img/svg/sprite.svg#ok"></use></svg>
+										</i>
+										<span>Заброска в тайгу</span>
+									</li>
+									<li class="list__item">
+										<i class="list__icon">
+											<svg><use href="img/svg/sprite.svg#ok"></use></svg>
+										</i>
+										<span>Рыболовные снасти</span>
+									</li>
+									<li class="list__item">
+										<i class="list__icon">
+											<svg><use href="img/svg/sprite.svg#ok"></use></svg>
+										</i>
+										<span>Всё необходимое туристическое снаряжение</span>
+									</li>
+								</ul>
+							</div>
+							<div class="col-6">
+								<ul class="list gy-3">
+									<li class="list__item">
+										<i class="list__icon">
+											<svg><use href="img/svg/sprite.svg#ok"></use></svg>
+										</i>
+										<span>Услуги гидов и повара</span>
+									</li>
+									<li class="list__item">
+										<i class="list__icon">
+											<svg><use href="img/svg/sprite.svg#ok"></use></svg>
+										</i>
+										<span>Ежедневная баня</span>
+									</li>
+									<li class="list__item">
+										<i class="list__icon">
+											<svg><use href="img/svg/sprite.svg#ok"></use></svg>
+										</i>
+										<span>Спутниковая связь</span>
+									</li>
+									<li class="list__item">
+										<i class="list__icon">
+											<svg><use href="img/svg/sprite.svg#ok"></use></svg>
+										</i>
+										<span>Питание</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-5 col-lg-3">
+						<h4 class="tour-price__title">В стоимость не включено:</h4>
+						<ul class="list gy-3">
+							<li class="list__item">
+								<i class="list__icon">
+									<svg class="_dark"><use href="img/svg/sprite.svg#not"></use></svg>
+								</i>
+								<span>Авиабилеты</span>
+							</li>
+							<li class="list__item">
+								<i class="list__icon">
+									<svg class="_dark"><use href="img/svg/sprite.svg#not"></use></svg>
+								</i>
+								<span>Проживание в гостинице</span>
+							</li>
+							<li class="list__item">
+								<i class="list__icon">
+									<svg class="_dark"><use href="img/svg/sprite.svg#not"></use></svg>
+								</i>
+								<span>Алкоголь</span>
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 col-sm-7 col-lg-4">
+						<div class="tour-price__result">
+							<h4 class="heading-4 weight-600 color-accent mb-4">Стоимость тура</h4>
+							<div class="row gy-4 pt-5 align-items-center">
+								<div class="col-auto">
+									<div class="price-box pe-4">
+										<div class="price-box__price">
+											<strong>220 000</strong>
+											<div class="price-box__text">руб. с человека</div>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<a class="btn" href="#">
+										<span class="btn__text">Забронировать&nbsp;тур</span>
+										<i class="btn__icon">
+											<svg><use href="img/svg/sprite.svg#right-up"></use></svg>
+										</i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="tour-dates">
+				<div class="tour-dates__inner">
+					<h2 class="heading-3 text-center mb-5">Даты проведения тура</h2>
+					<div class="container-md pt-5">
+						<div class="row g-3">
+							<div class="col-12 col-sm-6">
+								<div class="tour-dates-card">
+									<div class="tour-dates-card__left">
+										<div class="tour-dates-card__month">
+											<svg class="_icon"><use href="img/svg/sprite.svg#calendar"></use></svg>
+											<span>Июнь</span>
+										</div>
+										<div class="tour-dates-card__caption">свободные даты уточняйте</div>
+									</div>
+									<div class="tour-dates-card__dates">
+										<div>21.06 - 26.06</div>
+										<div>27.06 - 2.07</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6">
+								<div class="tour-dates-card">
+									<div class="tour-dates-card__left">
+										<div class="tour-dates-card__month">
+											<svg class="_icon"><use href="img/svg/sprite.svg#calendar"></use></svg>
+											<span>Август</span>
+										</div>
+										<div class="tour-dates-card__caption">свободные даты уточняйте</div>
+									</div>
+									<div class="tour-dates-card__dates">
+										<div>2.08 - 7.08</div>
+										<div>8.08 - 13.08</div>
+										<div>14.08 - 19.08</div>
+										<div>20.08 - 25.08</div>
+										<div>26.07 - 31.08</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6">
+								<div class="tour-dates-card">
+									<div class="tour-dates-card__left">
+										<div class="tour-dates-card__month">
+											<svg class="_icon"><use href="img/svg/sprite.svg#calendar"></use></svg>
+											<span>Июль</span>
+										</div>
+										<div class="tour-dates-card__caption">свободные даты уточняйте</div>
+									</div>
+									<div class="tour-dates-card__dates">
+										<div>3.07 - 8.07</div>
+										<div>9.07 - 14.07</div>
+										<div>15.07 - 20.07</div>
+										<div>21.07 - 26.07</div>
+										<div>27.07 - 1.08</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6">
+								<div class="tour-dates-card">
+									<div class="tour-dates-card__left">
+										<div class="tour-dates-card__month">
+											<svg class="_icon"><use href="img/svg/sprite.svg#calendar"></use></svg>
+											<span>Сентябрь</span>
+										</div>
+										<div class="tour-dates-card__caption">свободные даты уточняйте</div>
+									</div>
+									<div class="tour-dates-card__dates">
+										<div>1.09 - 6.09</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tour-dates__bg">
+					<img class="object-fit-cover" src="img/action-form/bg-three.jpg" alt="#" />
+				</div>
+			</section>
+
+			<section class="gathering-place">
+				<header class="section-heading text-center">
+					<div><span class="note-mark">Карта</span></div>
+					<h2 class="heading-3">Место сбора</h2>
+					<p>
+						г . Иркутск <br />
+						ЖД-вокзал или аэропорт
+					</p>
+				</header>
+				<div class="gathering-place__map"><iframe src="https://yandex.ru/map-widget/v1/org/irkutsk_passazhirskiy/1008442726/?ll=104.340618%2C52.240351&z=10.72" frameborder="1" allowfullscreen="true" style="position: relative"></iframe></div>
+			</section>
+		</div>
+
+		<div class="bg-one">
+			<div class="container-xxl px-3 px-sm-5">
+				<section class="tour-operator">
+					<div class="tour-operator__content">
+						<div class="zindex-1">
+							<div class="tour-operator__heading">
+								<h3 class="heading-3 font-onest weight-400 mb-5">Оператор тура</h3>
+							</div>
+							<div class="row g-3">
+								<div class="col-6">
+									<div class="tour-operator__card">
+										<div class="tour-operator__card-icon">
+											<svg class="icon _fish"><use href="img/svg/sprite.svg#fish-fill"></use></svg>
+										</div>
+										<p class="tour-operator__card-text">
+											Оператор <br />
+											<span class="opacity-80">Название оператора</span>
+										</p>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="tour-operator__card">
+										<div class="tour-operator__card-icon">
+											<svg class="icon _boat"><use href="img/svg/sprite.svg#boat-fill"></use></svg>
+										</div>
+										<p class="tour-operator__card-text">Собственные лодки и&nbsp;лицензии</p>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="tour-operator__card">
+										<div class="tour-operator__card-icon">
+											<svg class="icon"><use href="img/svg/sprite.svg#chat"></use></svg>
+										</div>
+										<p class="tour-operator__card-text">140+ положительных отзывов</p>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="tour-operator__card _accent">
+										<div class="tour-operator__card-icon">
+											<svg class="icon"><use href="img/svg/sprite.svg#loc-fill"></use></svg>
+										</div>
+										<p class="tour-operator__card-text">12 лет организуют рыбалки в&nbsp;Красноярском крае</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<picture class="tour-operator__bg">
+						<source srcset="img/tour-operator@sm.jpg" media="(max-width: 576px)" />
+						<source srcset="img/tour-operator@lg.jpg" media="(max-width: 992px)" />
+						<img class="object-fit-cover" src="img/tour-operator.jpg" alt="#" />
+					</picture>
+				</section>
+			</div>
+			<div class="bg-one__inner">
+				<div class="container-xxl px-3 px-sm-5">
+					<section class="faq pb-5">
+						<header class="section-heading text-center">
+							<div><span class="note-mark">FAQ</span></div>
+							<h2 class="heading-3">
+								Отвечаем на
+								<span class="color-accent">
+									популярные <br />
+									вопросы
+								</span>
+							</h2>
+						</header>
+						<div class="faq-item">
+							<div class="faq-head">
+								<h5>Нужен ли опыт?</h5>
+								<div class="faq-plus">
+									<svg><use href="img/svg/sprite.svg#plus"></use></svg>
+								</div>
+							</div>
+							<div class="faq-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe et non aperiam ducimus.</p>
+							</div>
+						</div>
+						<div class="faq-item">
+							<div class="faq-head">
+								<h5>Что по безопасности?</h5>
+								<div class="faq-plus">
+									<svg><use href="img/svg/sprite.svg#plus"></use></svg>
+								</div>
+							</div>
+							<div class="faq-body">
+								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint commodi doloribus earum, esse laudantium animi fuga dolorem autem illum cupiditate nobis alias provident ut possimus harum delectus aspernatur quas. Quos?</p>
+							</div>
+						</div>
+						<div class="faq-item">
+							<div class="faq-head">
+								<h5>Можно приехать с детьми?</h5>
+								<div class="faq-plus">
+									<svg><use href="img/svg/sprite.svg#plus"></use></svg>
+								</div>
+							</div>
+							<div class="faq-body">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quod voluptatibus distinctio ut adipisci quis unde voluptates rerum praesentium, delectus provident, eum accusantium, nulla eaque dolorem assumenda quos ducimus voluptas nihil consectetur possimus consequuntur corporis? Quaerat consectetur iure impedit nulla eum. Corporis ratione provident quas? Error velit inventore excepturi dignissimos!</p>
+							</div>
+						</div>
+						<div class="faq-item">
+							<div class="faq-head">
+								<h5>Какая погода?</h5>
+								<div class="faq-plus">
+									<svg><use href="img/svg/sprite.svg#plus"></use></svg>
+								</div>
+							</div>
+							<div class="faq-body">
+								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum dolorem quod asperiores quis esse, fugiat eius nostrum amet odit accusamus odio, facere blanditiis placeat at expedita.</p>
+							</div>
+						</div>
+					</section>
+					<section class="current-tours">
+						<header class="section-heading text-center">
+							<div><span class="note-mark">Рыбные места</span></div>
+							<h2 class="heading-3"><span class="color-accent">Актуальные</span> туры по&nbsp;России</h2>
+						</header>
+						<div class="current-tours-slider__wrap">
+							<div class="swiper current-tours-slider">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="card-block _mod-one">
+											<picture class="card-block__img">
+												<img class="object-fit-cover" src="img/current-tours/01.jpg" alt="#" />
+											</picture>
+											<div class="card-block__content">
+												<h4 class="card-block__title">Тур зимний омуль</h4>
+												<ul class="list">
+													<li class="list__item">
+														<i class="list__icon">
+															<svg><use href="img/svg/sprite.svg#clock"></use></svg>
+														</i>
+														<span>туры от 3 до 14 дней</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_thermometer"><use href="img/svg/sprite.svg#thermometer"></use></svg>
+														</i>
+														<span>зимняя и летняя рыбалка</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_fish"><use href="img/svg/sprite.svg#fish"></use></svg>
+														</i>
+														<span>рыбалка на омуля</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_loc"><use href="img/svg/sprite.svg#loc"></use></svg>
+														</i>
+														<span>рыбалка по рекам Иркутской&nbsp;области</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_user"><use href="img/svg/sprite.svg#user"></use></svg>
+														</i>
+														<span>группы от 2-х человек</span>
+													</li>
+												</ul>
+												<div class="d-flex justify-content-center mt-auto">
+													<a class="btn _normal" href="#">
+														<span class="btn__text ps-5 pe-4">Перейти в раздел</span>
+														<i class="btn__icon">
+															<svg><use href="img/svg/sprite.svg#right-up"></use></svg>
+														</i>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="card-block _mod-one">
+											<picture class="card-block__img">
+												<img class="object-fit-cover" src="img/current-tours/02.jpg" alt="#" />
+											</picture>
+											<div class="card-block__content">
+												<h4 class="card-block__title">Тур зимний омуль</h4>
+												<ul class="list">
+													<li class="list__item">
+														<i class="list__icon">
+															<svg><use href="img/svg/sprite.svg#clock"></use></svg>
+														</i>
+														<span>туры от 3 до 14 дней</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_thermometer"><use href="img/svg/sprite.svg#thermometer"></use></svg>
+														</i>
+														<span>зимняя и летняя рыбалка</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_fish"><use href="img/svg/sprite.svg#fish"></use></svg>
+														</i>
+														<span>рыбалка на омуля</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_loc"><use href="img/svg/sprite.svg#loc"></use></svg>
+														</i>
+														<span>рыбалка по рекам Иркутской&nbsp;области</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_user"><use href="img/svg/sprite.svg#user"></use></svg>
+														</i>
+														<span>группы от 2-х человек</span>
+													</li>
+												</ul>
+												<div class="d-flex justify-content-center mt-auto">
+													<a class="btn _normal" href="#">
+														<span class="btn__text ps-5 pe-4">Перейти в раздел</span>
+														<i class="btn__icon">
+															<svg><use href="img/svg/sprite.svg#right-up"></use></svg>
+														</i>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="card-block _mod-one">
+											<picture class="card-block__img">
+												<img class="object-fit-cover" src="img/current-tours/03.jpg" alt="#" />
+											</picture>
+											<div class="card-block__content">
+												<h4 class="card-block__title">Тур зимний омуль</h4>
+												<ul class="list">
+													<li class="list__item">
+														<i class="list__icon">
+															<svg><use href="img/svg/sprite.svg#clock"></use></svg>
+														</i>
+														<span>туры от 3 до 14 дней</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_thermometer"><use href="img/svg/sprite.svg#thermometer"></use></svg>
+														</i>
+														<span>зимняя и летняя рыбалка</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_fish"><use href="img/svg/sprite.svg#fish"></use></svg>
+														</i>
+														<span>рыбалка на омуля</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_loc"><use href="img/svg/sprite.svg#loc"></use></svg>
+														</i>
+														<span>рыбалка по рекам Иркутской&nbsp;области</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_user"><use href="img/svg/sprite.svg#user"></use></svg>
+														</i>
+														<span>группы от 2-х человек</span>
+													</li>
+												</ul>
+												<div class="d-flex justify-content-center mt-auto">
+													<a class="btn _normal" href="#">
+														<span class="btn__text ps-5 pe-4">Перейти в раздел</span>
+														<i class="btn__icon">
+															<svg><use href="img/svg/sprite.svg#right-up"></use></svg>
+														</i>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="card-block _mod-one">
+											<picture class="card-block__img">
+												<img class="object-fit-cover" src="img/current-tours/04.jpg" alt="#" />
+											</picture>
+											<div class="card-block__content">
+												<h4 class="card-block__title">Тур зимний омуль</h4>
+												<ul class="list">
+													<li class="list__item">
+														<i class="list__icon">
+															<svg><use href="img/svg/sprite.svg#clock"></use></svg>
+														</i>
+														<span>туры от 3 до 14 дней</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_thermometer"><use href="img/svg/sprite.svg#thermometer"></use></svg>
+														</i>
+														<span>зимняя и летняя рыбалка</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_fish"><use href="img/svg/sprite.svg#fish"></use></svg>
+														</i>
+														<span>рыбалка на омуля</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_loc"><use href="img/svg/sprite.svg#loc"></use></svg>
+														</i>
+														<span>рыбалка по рекам Иркутской&nbsp;области</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_user"><use href="img/svg/sprite.svg#user"></use></svg>
+														</i>
+														<span>группы от 2-х человек</span>
+													</li>
+												</ul>
+												<div class="d-flex justify-content-center mt-auto">
+													<a class="btn _normal" href="#">
+														<span class="btn__text ps-5 pe-4">Перейти в раздел</span>
+														<i class="btn__icon">
+															<svg><use href="img/svg/sprite.svg#right-up"></use></svg>
+														</i>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="card-block _mod-one">
+											<picture class="card-block__img">
+												<img class="object-fit-cover" src="img/current-tours/01.jpg" alt="#" />
+											</picture>
+											<div class="card-block__content">
+												<h4 class="card-block__title">Тур зимний омуль</h4>
+												<ul class="list">
+													<li class="list__item">
+														<i class="list__icon">
+															<svg><use href="img/svg/sprite.svg#clock"></use></svg>
+														</i>
+														<span>туры от 3 до 14 дней</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_thermometer"><use href="img/svg/sprite.svg#thermometer"></use></svg>
+														</i>
+														<span>зимняя и летняя рыбалка</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_fish"><use href="img/svg/sprite.svg#fish"></use></svg>
+														</i>
+														<span>рыбалка на омуля</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_loc"><use href="img/svg/sprite.svg#loc"></use></svg>
+														</i>
+														<span>рыбалка по рекам Иркутской&nbsp;области</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_user"><use href="img/svg/sprite.svg#user"></use></svg>
+														</i>
+														<span>группы от 2-х человек</span>
+													</li>
+												</ul>
+												<div class="d-flex justify-content-center mt-auto">
+													<a class="btn _normal" href="#">
+														<span class="btn__text ps-5 pe-4">Перейти в раздел</span>
+														<i class="btn__icon">
+															<svg><use href="img/svg/sprite.svg#right-up"></use></svg>
+														</i>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="card-block _mod-one">
+											<picture class="card-block__img">
+												<img class="object-fit-cover" src="img/current-tours/02.jpg" alt="#" />
+											</picture>
+											<div class="card-block__content">
+												<h4 class="card-block__title">Тур зимний омуль</h4>
+												<ul class="list">
+													<li class="list__item">
+														<i class="list__icon">
+															<svg><use href="img/svg/sprite.svg#clock"></use></svg>
+														</i>
+														<span>туры от 3 до 14 дней</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_thermometer"><use href="img/svg/sprite.svg#thermometer"></use></svg>
+														</i>
+														<span>зимняя и летняя рыбалка</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_fish"><use href="img/svg/sprite.svg#fish"></use></svg>
+														</i>
+														<span>рыбалка на омуля</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_loc"><use href="img/svg/sprite.svg#loc"></use></svg>
+														</i>
+														<span>рыбалка по рекам Иркутской&nbsp;области</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_user"><use href="img/svg/sprite.svg#user"></use></svg>
+														</i>
+														<span>группы от 2-х человек</span>
+													</li>
+												</ul>
+												<div class="d-flex justify-content-center mt-auto">
+													<a class="btn _normal" href="#">
+														<span class="btn__text ps-5 pe-4">Перейти в раздел</span>
+														<i class="btn__icon">
+															<svg><use href="img/svg/sprite.svg#right-up"></use></svg>
+														</i>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="card-block _mod-one">
+											<picture class="card-block__img">
+												<img class="object-fit-cover" src="img/current-tours/03.jpg" alt="#" />
+											</picture>
+											<div class="card-block__content">
+												<h4 class="card-block__title">Тур зимний омуль</h4>
+												<ul class="list">
+													<li class="list__item">
+														<i class="list__icon">
+															<svg><use href="img/svg/sprite.svg#clock"></use></svg>
+														</i>
+														<span>туры от 3 до 14 дней</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_thermometer"><use href="img/svg/sprite.svg#thermometer"></use></svg>
+														</i>
+														<span>зимняя и летняя рыбалка</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_fish"><use href="img/svg/sprite.svg#fish"></use></svg>
+														</i>
+														<span>рыбалка на омуля</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_loc"><use href="img/svg/sprite.svg#loc"></use></svg>
+														</i>
+														<span>рыбалка по рекам Иркутской&nbsp;области</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_user"><use href="img/svg/sprite.svg#user"></use></svg>
+														</i>
+														<span>группы от 2-х человек</span>
+													</li>
+												</ul>
+												<div class="d-flex justify-content-center mt-auto">
+													<a class="btn _normal" href="#">
+														<span class="btn__text ps-5 pe-4">Перейти в раздел</span>
+														<i class="btn__icon">
+															<svg><use href="img/svg/sprite.svg#right-up"></use></svg>
+														</i>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="card-block _mod-one">
+											<picture class="card-block__img">
+												<img class="object-fit-cover" src="img/current-tours/04.jpg" alt="#" />
+											</picture>
+											<div class="card-block__content">
+												<h4 class="card-block__title">Тур зимний омуль</h4>
+												<ul class="list">
+													<li class="list__item">
+														<i class="list__icon">
+															<svg><use href="img/svg/sprite.svg#clock"></use></svg>
+														</i>
+														<span>туры от 3 до 14 дней</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_thermometer"><use href="img/svg/sprite.svg#thermometer"></use></svg>
+														</i>
+														<span>зимняя и летняя рыбалка</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_fish"><use href="img/svg/sprite.svg#fish"></use></svg>
+														</i>
+														<span>рыбалка на омуля</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_loc"><use href="img/svg/sprite.svg#loc"></use></svg>
+														</i>
+														<span>рыбалка по рекам Иркутской&nbsp;области</span>
+													</li>
+													<li class="list__item">
+														<i class="list__icon">
+															<svg class="_user"><use href="img/svg/sprite.svg#user"></use></svg>
+														</i>
+														<span>группы от 2-х человек</span>
+													</li>
+												</ul>
+												<div class="d-flex justify-content-center mt-auto">
+													<a class="btn _normal" href="#">
+														<span class="btn__text ps-5 pe-4">Перейти в раздел</span>
+														<i class="btn__icon">
+															<svg><use href="img/svg/sprite.svg#right-up"></use></svg>
+														</i>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-pagination position-fix d-sm-none"></div>
+							</div>
+							<div class="swiper-prev _light current-tours__prev d-none d-sm-block">
+								<svg class="_left">
+									<use href="img/svg/sprite.svg#left"></use>
+								</svg>
+							</div>
+							<div class="swiper-next _light current-tours__next d-none d-sm-block">
+								<svg class="_right">
+									<use href="img/svg/sprite.svg#right"></use>
+								</svg>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div class="action-form choose-tour-1 justify-content-end">
+				<div class="action-form__inner">
+					<div class="row w-100">
+						<div class="col-12 col-sm-10 col-md-7 col-xl-5">
+							<h3 class="heading-3 mb-4 pb-3"> Поможем подобрать лучший&nbsp;тур </h3>
+							<p class="col-12 col-xxl-9 opacity-80"> Скажите, куда хотите поехать и&nbsp;какой формат рыбалки вам подходит. Подберём тур в&nbsp;течение дня и&nbsp;предложим несколько вариантов по бюджету и&nbsp;сезону </p>
+						</div>
+						<div class="col-12 col-xl-7 align-self-end">
+							<form class="action-form__form">
+								<div class="row g-3 mb-3">
+									<div class="col-12 col-sm-8 col-md-4">
+										<input type="text" placeholder="Ваше имя" />
+									</div>
+									<div class="col-12 col-sm-8 col-md-4">
+										<input class="inputCountryTel inputKeyTel" name="phone" type="tel" placeholder="(999) 999-99-99" />
+									</div>
+									<div class="col-12 col-sm-8 col-md-4">
+										<button class="btn" type="submit">
+											<span class="btn__text">Отправить&nbsp;заявку</span>
+											<i class="btn__icon">
+												<svg><use href="img/svg/sprite.svg#right-up"></use></svg>
+											</i>
+										</button>
+									</div>
+								</div>
+								<div class="d-flex">
+									<div class="choise">
+										<label class="choise-checkbox">
+											<input class="choise-checkbox__input" type="checkbox" id="swJ86Plus6w" />
+											<span class="choise-checkbox__box">
+												<svg><use href="img/svg/sprite.svg#check"></use></svg>
+											</span>
+										</label>
+										<label class="choise__text" for="swJ86Plus6w">
+											Я подтверждаю ознакомление и даю <a class="link _white" href="#">Согласие на обработку моих персональных данных</a> <br class="d-none d-md-inline" />
+											в порядке и на условиях, указанных в <a class="link _white" href="#">Политике обработки персональных данных</a>
+										</label>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<picture class="action-form__bg">
+					<img class="object-fit-cover" src="img/action-form/bg-one.jpg" alt="#" />
+				</picture>
+			</div>
+		</div>
+
+		<article class="section-text">
+			<p class="opacity-80">
+				Комфортный тур на север Красноярского края с проживанием, питанием и работой <br />
+				гида. Вы будете рыбачить в красивых бухтах, где хорошо ловится хариус, ленок, <br />
+				таймень, щука, окунь. Программа подходит для начинающих и опытных рыбаков <br />
+				и включает проверенные точки
+			</p>
+		</article>
+
+		<footer class="footer">
+			<div class="container-xxl px-5">
+				<div class="footer-content">
+					<div class="footer-content__left">
+						<a class="logo" href="#"></a>
+						<div class="social-group">
+							<a class="social-btn _vk" href="#">
+								<svg><use href="img/svg/social.svg#vk"></use></svg>
+							</a>
+							<a class="social-btn _max" href="#">
+								<svg><use href="img/svg/social.svg#max"></use></svg>
+							</a>
+							<a class="social-btn _telegram" href="#">
+								<svg><use href="img/svg/social.svg#telegram"></use></svg>
+							</a>
+							<a class="social-btn _dzen" href="#">
+								<svg><use href="img/svg/social.svg#dzen"></use></svg>
+							</a>
+							<a class="social-btn _pikabu" href="#">
+								<img src="img/svg/pikabu.svg" alt="#" />
+							</a>
+							<a class="social-btn _ok" href="#">
+								<svg><use href="img/svg/social.svg#ok"></use></svg>
+							</a>
+							<a class="social-btn _instagram" href="#">
+								<svg><use href="img/svg/social.svg#instagram"></use></svg>
+							</a>
+							<a class="social-btn _youtube" href="#">
+								<svg><use href="img/svg/social.svg#youtube"></use></svg>
+							</a>
+							<a class="social-btn _avito" href="#">
+								<svg><use href="img/svg/social.svg#avito"></use></svg>
+							</a>
+						</div>
+					</div>
+					<div class="footer-content__nav">
+						<h6 class="footer__title">Навигация</h6>
+						<nav class="footer-menu">
+							<div><a href="#">Каталог туров</a></div>
+							<div><a href="#">Направления</a></div>
+							<div><a href="#">Виды туров</a></div>
+							<div><a href="#">Сезоны</a></div>
+							<div><a href="#">Фото и отзывы</a></div>
+							<div><a href="#">Блог</a></div>
+							<div><a href="#">О нас</a></div>
+							<div><a href="#">Контакты</a></div>
+						</nav>
+					</div>
+					<div class="footer-content__feedback">
+						<h6 class="footer__title">Обратная связь</h6>
+						<nav class="footer-menu">
+							<div><a href="#">Оставить заявку</a></div>
+							<div><a href="#">Подобрать тур</a></div>
+							<div><a href="#">Разместить свой тур</a></div>
+						</nav>
+					</div>
+					<div class="footer-content__aside">
+						<form class="footer-sending">
+							<h6 class="footer__title">Подписаться на рассылку туров</h6>
+							<input class="input d-flex w-100 mb-3" type="email" name="footer-email" placeholder="Введите ваш e-mail" />
+							<div class="choise opacity-80 mb-3">
+								<label class="choise-checkbox">
+									<input class="choise-checkbox__input" type="checkbox" id="df32et5yfew" />
+									<span class="choise-checkbox__box">
+										<svg><use href="img/svg/sprite.svg#check"></use></svg>
+									</span>
+								</label>
+								<label class="choise__text" for="df32et5yfew"><a href="#">Согласие на обработку моих персональных данных</a> в&nbsp;порядке и на условиях, указанных в <a href="#">Политике обработки персональных данных</a></label>
+							</div>
+							<div class="choise opacity-80 mb-3">
+								<label class="choise-checkbox">
+									<input class="choise-checkbox__input" type="checkbox" id="ddwe3ttfw32wd" />
+									<span class="choise-checkbox__box">
+										<svg><use href="img/svg/sprite.svg#check"></use></svg>
+									</span>
+								</label>
+								<label class="choise__text" for="ddwe3ttfw32wd">
+									<a href="#">
+										Согласие на получение рекламно- <br />
+										информационной рассылки
+									</a>
+								</label>
+							</div>
+							<button class="btn _small" type="submit">
+								<span class="btn__text">Подписаться</span>
+								<i class="btn__icon">
+									<svg><use href="img/svg/sprite.svg#right-up"></use></svg>
+								</i>
+							</button>
+						</form>
+						<div class="footer-contact">
+							<h6 class="footer__title">Наши контакты</h6>
+							<div><a class="footer__tel" href="tel:+79999999999">+7 999 999 99 99</a></div>
+							<div><a class="footer__email" href="mailto:mail@yandex.ru">mail@yandex.ru</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-nav"></div>
+			</div>
+		</footer>
+
+		<script src="js/jquery.js" defer></script>
+		<script src="js/swiper.js" defer></script>
+		<script src="js/intlTelInput.min.js"></script>
+		<script src="js/beefup.js" defer></script>
+		<script src="js/easytabs.js" defer></script>
+		<script src="js/main.js" defer></script>
+		<script>
+			// intlTelInput
+			var inputCountryTel1 = document.querySelector(".inputCountryTel");
+			window.intlTelInput(inputCountryTel1, {
+				separateDialCode: true,
+				preferredCountries: ["ru", "ua", "by"],
+			});
+		</script>
+	</body>
+</html>
