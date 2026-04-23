@@ -1,0 +1,967 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Каталог туров</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- favicon -->
+		<link href="img/favicon.png" sizes="32x32" rel="icon" type="image/png" />
+
+		<!-- style -->
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="header-wrap">
+			<header class="header _white">
+				<a class="logo" href="#"></a>
+				<div class="burger d-xl-none">
+					<div class="burger__icon">
+						<div class="_top"></div>
+						<div class="_center"></div>
+						<div class="_bottom"></div>
+					</div>
+				</div>
+				<nav class="menu d-none d-xl-block">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a class="menu__link">Каталог туров</a>
+							<svg class="menu__arrow"><use href="img/svg/sprite.svg#down"></use></svg>
+							<div class="menu-sub">
+								<ul class="menu-sub__inner">
+									<li><a href="#">VIP туры</a></li>
+									<li><a href="#">Тур выходного дня</a></li>
+									<li><a href="#">Тур с проживанием</a></li>
+									<li><a href="#">Тур на Байкал</a></li>
+									<li><a href="#">Экспедиция</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Направления</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Виды туров</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Сезоны</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Фото и отзывы</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Блог</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">О нас</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<aside class="header__aside">
+					<a class="header__tel" href="tel:+79999999999">+7 999 999 99 99</a>
+					<div>
+						<a class="btn _small entry-modal-form" href="#form-modal">
+							<span class="btn__text">Связаться с&nbsp;нами</span>
+						</a>
+						<a class="btn _small _outline d-none d-sm-inline-flex" href="#">
+							<span class="btn__text">Разместить свой&nbsp;тур</span>
+						</a>
+					</div>
+				</aside>
+			</header>
+		</div>
+
+		<div class="mobile-nav">
+			<div class="mobile-nav__inner">
+				<div class="mobile-nav__wrap">
+					<div class="mobile-nav__logo">
+						<a class="logo" href="#"></a>
+					</div>
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a class="nav__link" href="#">Каталог туров</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">Направления</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">Виды туров</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">Сезоны</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">Фото и отзывы</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">Блог</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">О нас</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<button class="mobile-nav__close">
+						<svg><use href="img/svg/sprite.svg#close"></use></svg>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-xxl px-5">
+			<ul class="bread-crumbs">
+				<li class="bread-crumbs__item">
+					<a class="bread-crumbs__link" href="#">Главная</a>
+				</li>
+				<li class="bread-crumbs__item">Каталог туров</li>
+			</ul>
+		</div>
+
+		<div class="container-xxl px-0 px-sm-5">
+			<section class="section-header">
+				<div class="section-header__content">
+					<h1 class="heading-3 mb-4 pb-3">Каталог маршрутов для&nbsp;рыбалки</h1>
+					<div class="section-header__text">
+						<p>Рыболовные туры по лучшим водоёмам России — от Байкала до Карелии и Якутии. Удобные фильтры помогут подобрать идеальный тур по сезону, виду рыбы, формату&nbsp;и продолжительности</p>
+					</div>
+				</div>
+				<div class="section-header__bg">
+					<img class="object-fit-cover" src="img/section-header/02.jpg" alt="#" />
+				</div>
+			</section>
+		</div>
+
+		<div class="container-xxl px-5">
+			<section class="catalog">
+				<form class="catalog-aside">
+					<div>
+						<h4 class="catalog-aside__title">
+							<span>Регион рыбалки</span>
+						</h4>
+						<div class="group-choise">
+							<div class="choise _normal">
+								<label class="choise-checkbox">
+									<input class="choise-checkbox__input" type="checkbox" id="swe9edf7eh" />
+									<span class="choise-checkbox__box">
+										<svg><use href="img/svg/sprite.svg#check"></use></svg>
+									</span>
+								</label>
+								<label class="choise__text" for="swe9edf7eh">Байкал</label>
+							</div>
+							<div class="choise _normal">
+								<label class="choise-checkbox">
+									<input class="choise-checkbox__input" type="checkbox" id="wdd83j3dc" checked />
+									<span class="choise-checkbox__box">
+										<svg><use href="img/svg/sprite.svg#check"></use></svg>
+									</span>
+								</label>
+								<label class="choise__text" for="wdd83j3dc">Карелия</label>
+							</div>
+							<div class="choise _normal">
+								<label class="choise-checkbox">
+									<input class="choise-checkbox__input" type="checkbox" id="dwdwor300dssw" checked />
+									<span class="choise-checkbox__box">
+										<svg><use href="img/svg/sprite.svg#check"></use></svg>
+									</span>
+								</label>
+								<label class="choise__text" for="dwdwor300dssw">Камчатка</label>
+							</div>
+							<div class="choise _normal">
+								<label class="choise-checkbox">
+									<input class="choise-checkbox__input" type="checkbox" id="wde43223fy5" />
+									<span class="choise-checkbox__box">
+										<svg><use href="img/svg/sprite.svg#check"></use></svg>
+									</span>
+								</label>
+								<label class="choise__text" for="wde43223fy5">Астрахань</label>
+							</div>
+							<div class="choise _normal">
+								<label class="choise-checkbox">
+									<input class="choise-checkbox__input" type="checkbox" id="we4522eju67" />
+									<span class="choise-checkbox__box">
+										<svg><use href="img/svg/sprite.svg#check"></use></svg>
+									</span>
+								</label>
+								<label class="choise__text" for="we4522eju67">Бурятия</label>
+							</div>
+						</div>
+					</div>
+					<hr class="hr-line" />
+					<div>
+						<h4 class="catalog-aside__title">
+							<span>Сезон рыбалки</span>
+						</h4>
+						<div class="group-choise">
+							<div class="choise _normal">
+								<label class="choise-checkbox">
+									<input class="choise-checkbox__input" type="checkbox" id="fe43sq1eh" />
+									<span class="choise-checkbox__box">
+										<svg><use href="img/svg/sprite.svg#check"></use></svg>
+									</span>
+								</label>
+								<label class="choise__text" for="fe43sq1eh">Весна</label>
+							</div>
+							<div class="choise _normal">
+								<label class="choise-checkbox">
+									<input class="choise-checkbox__input" type="checkbox" id="ef45632fgh56" checked />
+									<span class="choise-checkbox__box">
+										<svg><use href="img/svg/sprite.svg#check"></use></svg>
+									</span>
+								</label>
+								<label class="choise__text" for="ef45632fgh56">Лето</label>
+							</div>
+							<div class="choise _normal">
+								<label class="choise-checkbox">
+									<input class="choise-checkbox__input" type="checkbox" id="we3t4321eji7" checked />
+									<span class="choise-checkbox__box">
+										<svg><use href="img/svg/sprite.svg#check"></use></svg>
+									</span>
+								</label>
+								<label class="choise__text" for="we3t4321eji7">Осень</label>
+							</div>
+							<div class="choise _normal">
+								<label class="choise-checkbox">
+									<input class="choise-checkbox__input" type="checkbox" id="ewki764ddln" />
+									<span class="choise-checkbox__box">
+										<svg><use href="img/svg/sprite.svg#check"></use></svg>
+									</span>
+								</label>
+								<label class="choise__text" for="ewki764ddln">Зима</label>
+							</div>
+						</div>
+					</div>
+					<hr class="hr-line" />
+					<div>
+						<h4 class="catalog-aside__title">
+							<span>Вид рыбы</span>
+						</h4>
+						<div class="group-choise">
+							<div class="choise _normal">
+								<label class="choise-checkbox">
+									<input class="choise-checkbox__input" type="checkbox" id="fde93gnsaq2" />
+									<span class="choise-checkbox__box">
+										<svg><use href="img/svg/sprite.svg#check"></use></svg>
+									</span>
+								</label>
+								<label class="choise__text" for="fde93gnsaq2">Таймень</label>
+							</div>
+							<div class="choise _normal">
+								<label class="choise-checkbox">
+									<input class="choise-checkbox__input" type="checkbox" id="vlf04hd224" checked />
+									<span class="choise-checkbox__box">
+										<svg><use href="img/svg/sprite.svg#check"></use></svg>
+									</span>
+								</label>
+								<label class="choise__text" for="vlf04hd224">Хариус</label>
+							</div>
+							<div class="choise _normal">
+								<label class="choise-checkbox">
+									<input class="choise-checkbox__input" type="checkbox" id="feoge482vd8" checked />
+									<span class="choise-checkbox__box">
+										<svg><use href="img/svg/sprite.svg#check"></use></svg>
+									</span>
+								</label>
+								<label class="choise__text" for="feoge482vd8">Кижучь</label>
+							</div>
+							<div class="choise _normal">
+								<label class="choise-checkbox">
+									<input class="choise-checkbox__input" type="checkbox" id="vtrrw567qwcw" />
+									<span class="choise-checkbox__box">
+										<svg><use href="img/svg/sprite.svg#check"></use></svg>
+									</span>
+								</label>
+								<label class="choise__text" for="vtrrw567qwcw">Семга</label>
+							</div>
+						</div>
+					</div>
+					<hr class="hr-line" />
+					<div class="gy-30">
+						<h4 class="catalog-aside__title mb-0">
+							<span>Длительность тура, дней</span>
+						</h4>
+						<div class="pe-4 mb-2">
+							<div id="range-slider-days"></div>
+						</div>
+						<div class="from-to-control">
+							<div class="from-to-control__item">
+								<div class="from-to-control__caption">от</div>
+								<input class="_light" type="text" id="input-day-from" />
+							</div>
+							<span class="from-to-control__line">-</span>
+							<div class="from-to-control__item">
+								<div class="from-to-control__caption">до</div>
+								<input class="_light" type="text" id="input-day-to" />
+							</div>
+						</div>
+					</div>
+					<hr class="hr-line" />
+					<div class="gy-30">
+						<h4 class="catalog-aside__title mb-0">
+							<span>Стоимость тура, руб</span>
+						</h4>
+						<div class="pe-4 mb-2">
+							<div id="range-slider-price"></div>
+						</div>
+						<div class="from-to-control">
+							<div class="from-to-control__item">
+								<div class="from-to-control__caption">от</div>
+								<input class="_light" type="text" id="input-price-from" />
+							</div>
+							<span class="from-to-control__line">-</span>
+							<div class="from-to-control__item">
+								<div class="from-to-control__caption">до</div>
+								<input class="_light" type="text" id="input-price-to" />
+							</div>
+						</div>
+					</div>
+					<hr class="hr-line" />
+					<div>
+						<h4 class="catalog-aside__title">
+							<span>Формат тура</span>
+						</h4>
+						<div class="group-choise">
+							<div class="choise _normal">
+								<label class="choise-checkbox">
+									<input class="choise-checkbox__input" type="checkbox" id="rw2gthy42edw" />
+									<span class="choise-checkbox__box">
+										<svg><use href="img/svg/sprite.svg#check"></use></svg>
+									</span>
+								</label>
+								<label class="choise__text" for="rw2gthy42edw">Тур выходного дня</label>
+							</div>
+							<div class="choise _normal">
+								<label class="choise-checkbox">
+									<input class="choise-checkbox__input" type="checkbox" id="cff674fw3" checked />
+									<span class="choise-checkbox__box">
+										<svg><use href="img/svg/sprite.svg#check"></use></svg>
+									</span>
+								</label>
+								<label class="choise__text" for="cff674fw3">Тур с проживанием</label>
+							</div>
+							<div class="choise _normal">
+								<label class="choise-checkbox">
+									<input class="choise-checkbox__input" type="checkbox" id="frgt74gjkcwe" checked />
+									<span class="choise-checkbox__box">
+										<svg><use href="img/svg/sprite.svg#check"></use></svg>
+									</span>
+								</label>
+								<label class="choise__text" for="frgt74gjkcwe">Экспедиция</label>
+							</div>
+							<div class="choise _normal">
+								<label class="choise-checkbox">
+									<input class="choise-checkbox__input" type="checkbox" id="vfhi674cw2rhj" />
+									<span class="choise-checkbox__box">
+										<svg><use href="img/svg/sprite.svg#check"></use></svg>
+									</span>
+								</label>
+								<label class="choise__text" for="vfhi674cw2rhj">VIP туры</label>
+							</div>
+						</div>
+					</div>
+					<div class="row g-2">
+						<div class="col-auto">
+							<button class="btn _outline _normal px-4" type="reset">
+								<span class="btn__text">Сбросить фильтры</span>
+							</button>
+						</div>
+						<div class="col">
+							<button class="btn _normal px-4" type="submit">
+								<span class="btn__text">Показать&nbsp;туры</span>
+							</button>
+						</div>
+					</div>
+				</form>
+				<div class="catalog-content">
+					<div class="row g-2 mb-4">
+						<div class="col-auto">
+							<a class="btn _small _outline px-4" href="#">
+								<svg class="btn__ico"><use href="img/svg/sprite.svg#king"></use></svg>
+								<span class="btn__text">VIP туры</span>
+							</a>
+						</div>
+						<div class="col-auto">
+							<a class="btn _small _outline px-4" href="#">
+								<svg class="btn__ico"><use href="img/svg/sprite.svg#hot"></use></svg>
+								<span class="btn__text">Горящие туры</span>
+							</a>
+						</div>
+					</div>
+					<div class="catalog-filter-nav">
+						<button class="catalog-filter-nav__item _active">По популярности</button>
+						<button class="catalog-filter-nav__item">Дешевле</button>
+						<button class="catalog-filter-nav__item">Дороже</button>
+						<button class="catalog-filter-nav__item">По длительности</button>
+						<button class="catalog-filter-nav__item">По новизне</button>
+					</div>
+					<div class="row gx-2 gy-5">
+						<div class="col-12 col-sm-6 col-xl-4">
+							<div class="card-block">
+								<picture class="card-block__img">
+									<span class="note-mark _fill _normal _light">
+										<svg class="note-mark__icon"><use href="img/svg/sprite.svg#hot"></use></svg>
+										<span>Горящий тур</span>
+									</span>
+									<img class="object-fit-cover" src="img/popular/02.jpg" alt="#" />
+								</picture>
+								<div class="card-block__content">
+									<div>
+										<h4 class="card-block__title mb-2">Тур на Лену</h4>
+										<p>Рыбалка по рекам Красноярского края</p>
+									</div>
+									<ul class="list">
+										<li class="list__item">
+											<i class="list__icon">
+												<svg><use href="img/svg/sprite.svg#clock"></use></svg>
+											</i>
+											<span>туры от 3 до 14 дней</span>
+										</li>
+										<li class="list__item">
+											<i class="list__icon">
+												<svg class="_thermometer"><use href="img/svg/sprite.svg#thermometer"></use></svg>
+											</i>
+											<span>лето, весна</span>
+										</li>
+										<li class="list__item">
+											<i class="list__icon">
+												<svg class="_fish"><use href="img/svg/sprite.svg#fish"></use></svg>
+											</i>
+											<span>рыбалка на омуля</span>
+										</li>
+										<li class="list__item">
+											<i class="list__icon">
+												<svg class="_loc"><use href="img/svg/sprite.svg#loc"></use></svg>
+											</i>
+											<span>Красноярский край</span>
+										</li>
+										<li class="list__item">
+											<i class="list__icon">
+												<svg class="_user"><use href="img/svg/sprite.svg#user"></use></svg>
+											</i>
+											<span>группы от 2-х человек</span>
+										</li>
+									</ul>
+									<div class="row gy-3 pt-1 mt-auto">
+										<div class="col-12 mb-3">
+											<div class="card-block__price"><strong class="_caption">Цена:</strong> от 30 000 Р</div>
+										</div>
+										<div class="col-12">
+											<a class="btn _normal d-flex" href="#">
+												<span class="btn__text">Оставить заявку</span>
+											</a>
+										</div>
+										<div class="col-12">
+											<a class="btn _normal _outline d-flex" href="#">
+												<span class="btn__text">Подробнее о туре</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-xl-4">
+							<div class="card-block">
+								<picture class="card-block__img">
+									<img class="object-fit-cover" src="img/popular/01.jpg" alt="#" />
+								</picture>
+								<div class="card-block__content">
+									<div>
+										<h4 class="card-block__title mb-2">Тур на Лену</h4>
+										<p>Рыбалка по рекам Красноярского края</p>
+									</div>
+									<ul class="list">
+										<li class="list__item">
+											<i class="list__icon">
+												<svg><use href="img/svg/sprite.svg#clock"></use></svg>
+											</i>
+											<span>туры от 3 до 14 дней</span>
+										</li>
+										<li class="list__item">
+											<i class="list__icon">
+												<svg class="_thermometer"><use href="img/svg/sprite.svg#thermometer"></use></svg>
+											</i>
+											<span>лето, весна</span>
+										</li>
+										<li class="list__item">
+											<i class="list__icon">
+												<svg class="_fish"><use href="img/svg/sprite.svg#fish"></use></svg>
+											</i>
+											<span>рыбалка на омуля</span>
+										</li>
+										<li class="list__item">
+											<i class="list__icon">
+												<svg class="_loc"><use href="img/svg/sprite.svg#loc"></use></svg>
+											</i>
+											<span>Красноярский край</span>
+										</li>
+										<li class="list__item">
+											<i class="list__icon">
+												<svg class="_user"><use href="img/svg/sprite.svg#user"></use></svg>
+											</i>
+											<span>группы от 2-х человек</span>
+										</li>
+									</ul>
+									<div class="row gy-3 pt-1 mt-auto">
+										<div class="col-12 mb-3">
+											<div class="card-block__price"><strong class="_caption">Цена:</strong> от 30 000 Р</div>
+										</div>
+										<div class="col-12">
+											<a class="btn _normal d-flex" href="#">
+												<span class="btn__text">Оставить заявку</span>
+											</a>
+										</div>
+										<div class="col-12">
+											<a class="btn _normal _outline d-flex" href="#">
+												<span class="btn__text">Подробнее о туре</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-xl-4">
+							<div class="card-block">
+								<picture class="card-block__img">
+									<span class="note-mark _fill _normal _light">
+										<svg class="note-mark__icon"><use href="img/svg/sprite.svg#hot"></use></svg>
+										<span>Горящий тур</span>
+									</span>
+									<img class="object-fit-cover" src="img/popular/02.jpg" alt="#" />
+								</picture>
+								<div class="card-block__content">
+									<div>
+										<h4 class="card-block__title mb-2">Тур на Лену</h4>
+										<p>Рыбалка по рекам Красноярского края</p>
+									</div>
+									<ul class="list">
+										<li class="list__item">
+											<i class="list__icon">
+												<svg><use href="img/svg/sprite.svg#clock"></use></svg>
+											</i>
+											<span>туры от 3 до 14 дней</span>
+										</li>
+										<li class="list__item">
+											<i class="list__icon">
+												<svg class="_thermometer"><use href="img/svg/sprite.svg#thermometer"></use></svg>
+											</i>
+											<span>лето, весна</span>
+										</li>
+										<li class="list__item">
+											<i class="list__icon">
+												<svg class="_fish"><use href="img/svg/sprite.svg#fish"></use></svg>
+											</i>
+											<span>рыбалка на омуля</span>
+										</li>
+										<li class="list__item">
+											<i class="list__icon">
+												<svg class="_loc"><use href="img/svg/sprite.svg#loc"></use></svg>
+											</i>
+											<span>Красноярский край</span>
+										</li>
+										<li class="list__item">
+											<i class="list__icon">
+												<svg class="_user"><use href="img/svg/sprite.svg#user"></use></svg>
+											</i>
+											<span>группы от 2-х человек</span>
+										</li>
+									</ul>
+									<div class="row gy-3 pt-1 mt-auto">
+										<div class="col-12 mb-3">
+											<div class="card-block__price"><strong class="_caption">Цена:</strong> от 30 000 Р</div>
+										</div>
+										<div class="col-12">
+											<a class="btn _normal d-flex" href="#">
+												<span class="btn__text">Оставить заявку</span>
+											</a>
+										</div>
+										<div class="col-12">
+											<a class="btn _normal _outline d-flex" href="#">
+												<span class="btn__text">Подробнее о туре</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-xl-4">
+							<div class="card-block">
+								<picture class="card-block__img">
+									<img class="object-fit-cover" src="img/popular/01.jpg" alt="#" />
+								</picture>
+								<div class="card-block__content">
+									<div>
+										<h4 class="card-block__title mb-2">Тур на Лену</h4>
+										<p>Рыбалка по рекам Красноярского края</p>
+									</div>
+									<ul class="list">
+										<li class="list__item">
+											<i class="list__icon">
+												<svg><use href="img/svg/sprite.svg#clock"></use></svg>
+											</i>
+											<span>туры от 3 до 14 дней</span>
+										</li>
+										<li class="list__item">
+											<i class="list__icon">
+												<svg class="_thermometer"><use href="img/svg/sprite.svg#thermometer"></use></svg>
+											</i>
+											<span>лето, весна</span>
+										</li>
+										<li class="list__item">
+											<i class="list__icon">
+												<svg class="_fish"><use href="img/svg/sprite.svg#fish"></use></svg>
+											</i>
+											<span>рыбалка на омуля</span>
+										</li>
+										<li class="list__item">
+											<i class="list__icon">
+												<svg class="_loc"><use href="img/svg/sprite.svg#loc"></use></svg>
+											</i>
+											<span>Красноярский край</span>
+										</li>
+										<li class="list__item">
+											<i class="list__icon">
+												<svg class="_user"><use href="img/svg/sprite.svg#user"></use></svg>
+											</i>
+											<span>группы от 2-х человек</span>
+										</li>
+									</ul>
+									<div class="row gy-3 pt-1 mt-auto">
+										<div class="col-12 mb-3">
+											<div class="card-block__price"><strong class="_caption">Цена:</strong> от 30 000 Р</div>
+										</div>
+										<div class="col-12">
+											<a class="btn _normal d-flex" href="#">
+												<span class="btn__text">Оставить заявку</span>
+											</a>
+										</div>
+										<div class="col-12">
+											<a class="btn _normal _outline d-flex" href="#">
+												<span class="btn__text">Подробнее о туре</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-xl-4">
+							<div class="card-block">
+								<picture class="card-block__img">
+									<span class="note-mark _fill _normal _light">
+										<svg class="note-mark__icon"><use href="img/svg/sprite.svg#hot"></use></svg>
+										<span>Горящий тур</span>
+									</span>
+									<img class="object-fit-cover" src="img/popular/02.jpg" alt="#" />
+								</picture>
+								<div class="card-block__content">
+									<div>
+										<h4 class="card-block__title mb-2">Тур на Лену</h4>
+										<p>Рыбалка по рекам Красноярского края</p>
+									</div>
+									<ul class="list">
+										<li class="list__item">
+											<i class="list__icon">
+												<svg><use href="img/svg/sprite.svg#clock"></use></svg>
+											</i>
+											<span>туры от 3 до 14 дней</span>
+										</li>
+										<li class="list__item">
+											<i class="list__icon">
+												<svg class="_thermometer"><use href="img/svg/sprite.svg#thermometer"></use></svg>
+											</i>
+											<span>лето, весна</span>
+										</li>
+										<li class="list__item">
+											<i class="list__icon">
+												<svg class="_fish"><use href="img/svg/sprite.svg#fish"></use></svg>
+											</i>
+											<span>рыбалка на омуля</span>
+										</li>
+										<li class="list__item">
+											<i class="list__icon">
+												<svg class="_loc"><use href="img/svg/sprite.svg#loc"></use></svg>
+											</i>
+											<span>Красноярский край</span>
+										</li>
+										<li class="list__item">
+											<i class="list__icon">
+												<svg class="_user"><use href="img/svg/sprite.svg#user"></use></svg>
+											</i>
+											<span>группы от 2-х человек</span>
+										</li>
+									</ul>
+									<div class="row gy-3 pt-1 mt-auto">
+										<div class="col-12 mb-3">
+											<div class="card-block__price"><strong class="_caption">Цена:</strong> от 30 000 Р</div>
+										</div>
+										<div class="col-12">
+											<a class="btn _normal d-flex" href="#">
+												<span class="btn__text">Оставить заявку</span>
+											</a>
+										</div>
+										<div class="col-12">
+											<a class="btn _normal _outline d-flex" href="#">
+												<span class="btn__text">Подробнее о туре</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-xl-4">
+							<div class="card-block">
+								<picture class="card-block__img">
+									<img class="object-fit-cover" src="img/popular/01.jpg" alt="#" />
+								</picture>
+								<div class="card-block__content">
+									<div>
+										<h4 class="card-block__title mb-2">Тур на Лену</h4>
+										<p>Рыбалка по рекам Красноярского края</p>
+									</div>
+									<ul class="list">
+										<li class="list__item">
+											<i class="list__icon">
+												<svg><use href="img/svg/sprite.svg#clock"></use></svg>
+											</i>
+											<span>туры от 3 до 14 дней</span>
+										</li>
+										<li class="list__item">
+											<i class="list__icon">
+												<svg class="_thermometer"><use href="img/svg/sprite.svg#thermometer"></use></svg>
+											</i>
+											<span>лето, весна</span>
+										</li>
+										<li class="list__item">
+											<i class="list__icon">
+												<svg class="_fish"><use href="img/svg/sprite.svg#fish"></use></svg>
+											</i>
+											<span>рыбалка на омуля</span>
+										</li>
+										<li class="list__item">
+											<i class="list__icon">
+												<svg class="_loc"><use href="img/svg/sprite.svg#loc"></use></svg>
+											</i>
+											<span>Красноярский край</span>
+										</li>
+										<li class="list__item">
+											<i class="list__icon">
+												<svg class="_user"><use href="img/svg/sprite.svg#user"></use></svg>
+											</i>
+											<span>группы от 2-х человек</span>
+										</li>
+									</ul>
+									<div class="row gy-3 pt-1 mt-auto">
+										<div class="col-12 mb-3">
+											<div class="card-block__price"><strong class="_caption">Цена:</strong> от 30 000 Р</div>
+										</div>
+										<div class="col-12">
+											<a class="btn _normal d-flex" href="#">
+												<span class="btn__text">Оставить заявку</span>
+											</a>
+										</div>
+										<div class="col-12">
+											<a class="btn _normal _outline d-flex" href="#">
+												<span class="btn__text">Подробнее о туре</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="action-form justify-content-end">
+			<div class="action-form__inner">
+				<div class="row w-100">
+					<div class="col-12 col-sm-10 col-md-7 col-xl-5">
+						<h3 class="heading-3 mb-4 pb-3"> Поможем подобрать лучший&nbsp;тур </h3>
+						<p class="col-12 col-xxl-9 opacity-80"> Скажите, куда хотите поехать и&nbsp;какой формат рыбалки вам подходит. Подберём тур в&nbsp;течение дня и&nbsp;предложим несколько вариантов по бюджету и&nbsp;сезону </p>
+					</div>
+					<div class="col-12 col-xl-7 align-self-end">
+						<form class="action-form__form">
+							<div class="row g-3 mb-3">
+								<div class="col-12 col-sm-8 col-md-4">
+									<input type="text" placeholder="Ваше имя" />
+								</div>
+								<div class="col-12 col-sm-8 col-md-4">
+									<input class="inputCountryTel inputKeyTel" name="phone" type="tel" placeholder="(999) 999-99-99" />
+								</div>
+								<div class="col-12 col-sm-8 col-md-4">
+									<button class="btn" type="submit">
+										<span class="btn__text">Отправить&nbsp;заявку</span>
+										<i class="btn__icon">
+											<svg><use href="img/svg/sprite.svg#right-up"></use></svg>
+										</i>
+									</button>
+								</div>
+							</div>
+							<div class="d-flex">
+								<div class="choise">
+									<label class="choise-checkbox">
+										<input class="choise-checkbox__input" type="checkbox" id="swJ86Plus6w" />
+										<span class="choise-checkbox__box">
+											<svg><use href="img/svg/sprite.svg#check"></use></svg>
+										</span>
+									</label>
+									<label class="choise__text" for="swJ86Plus6w">
+										Я подтверждаю ознакомление и даю <a class="link _white" href="#">Согласие на обработку моих персональных данных</a> <br class="d-none d-md-inline" />
+										в порядке и на условиях, указанных в <a class="link _white" href="#">Политике обработки персональных данных</a>
+									</label>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<picture class="action-form__bg">
+				<img class="object-fit-cover" src="img/action-form/bg-one.jpg" alt="#" />
+			</picture>
+		</div>
+
+		<article class="section-text">
+			<p class="opacity-80 px-5">Рыболовные туры по России отличаются форматом, сезонностью и условиями проживания. В каталоге представлены как короткие поездки выходного дня, так и многодневные экспедиции с проживанием. Все&nbsp;туры публикуются с актуальными условиями и ценами</p>
+		</article>
+
+		<footer class="footer">
+			<div class="container-xxl px-5">
+				<div class="footer-content">
+					<div class="footer-content__left">
+						<a class="logo" href="#"></a>
+						<div class="social-group">
+							<a class="social-btn _vk" href="#">
+								<svg><use href="img/svg/social.svg#vk"></use></svg>
+							</a>
+							<a class="social-btn _max" href="#">
+								<svg><use href="img/svg/social.svg#max"></use></svg>
+							</a>
+							<a class="social-btn _telegram" href="#">
+								<svg><use href="img/svg/social.svg#telegram"></use></svg>
+							</a>
+							<a class="social-btn _dzen" href="#">
+								<svg><use href="img/svg/social.svg#dzen"></use></svg>
+							</a>
+							<a class="social-btn _pikabu" href="#">
+								<img src="img/svg/pikabu.svg" alt="#" />
+							</a>
+							<a class="social-btn _ok" href="#">
+								<svg><use href="img/svg/social.svg#ok"></use></svg>
+							</a>
+							<a class="social-btn _instagram" href="#">
+								<svg><use href="img/svg/social.svg#instagram"></use></svg>
+							</a>
+							<a class="social-btn _youtube" href="#">
+								<svg><use href="img/svg/social.svg#youtube"></use></svg>
+							</a>
+							<a class="social-btn _avito" href="#">
+								<svg><use href="img/svg/social.svg#avito"></use></svg>
+							</a>
+						</div>
+					</div>
+					<div class="footer-content__nav">
+						<h6 class="footer__title">Навигация</h6>
+						<nav class="footer-menu">
+							<div><a href="#">Каталог туров</a></div>
+							<div><a href="#">Направления</a></div>
+							<div><a href="#">Виды туров</a></div>
+							<div><a href="#">Сезоны</a></div>
+							<div><a href="#">Фото и отзывы</a></div>
+							<div><a href="#">Блог</a></div>
+							<div><a href="#">О нас</a></div>
+							<div><a href="#">Контакты</a></div>
+						</nav>
+					</div>
+					<div class="footer-content__feedback">
+						<h6 class="footer__title">Обратная связь</h6>
+						<nav class="footer-menu">
+							<div><a href="#">Оставить заявку</a></div>
+							<div><a href="#">Подобрать тур</a></div>
+							<div><a href="#">Разместить свой тур</a></div>
+						</nav>
+					</div>
+					<div class="footer-content__aside">
+						<form class="footer-sending">
+							<h6 class="footer__title">Подписаться на рассылку туров</h6>
+							<input class="input d-flex w-100 mb-3" type="email" name="footer-email" placeholder="Введите ваш e-mail" />
+							<div class="choise opacity-80 mb-3">
+								<label class="choise-checkbox">
+									<input class="choise-checkbox__input" type="checkbox" id="df32et5yfew" />
+									<span class="choise-checkbox__box">
+										<svg><use href="img/svg/sprite.svg#check"></use></svg>
+									</span>
+								</label>
+								<label class="choise__text" for="df32et5yfew"><a href="#">Согласие на обработку моих персональных данных</a> в&nbsp;порядке и на условиях, указанных в <a href="#">Политике обработки персональных данных</a></label>
+							</div>
+							<div class="choise opacity-80 mb-3">
+								<label class="choise-checkbox">
+									<input class="choise-checkbox__input" type="checkbox" id="ddwe3ttfw32wd" />
+									<span class="choise-checkbox__box">
+										<svg><use href="img/svg/sprite.svg#check"></use></svg>
+									</span>
+								</label>
+								<label class="choise__text" for="ddwe3ttfw32wd">
+									<a href="#">
+										Согласие на получение рекламно- <br />
+										информационной рассылки
+									</a>
+								</label>
+							</div>
+							<button class="btn _small" type="submit">
+								<span class="btn__text">Подписаться</span>
+								<i class="btn__icon">
+									<svg><use href="img/svg/sprite.svg#right-up"></use></svg>
+								</i>
+							</button>
+						</form>
+						<div class="footer-contact">
+							<h6 class="footer__title">Наши контакты</h6>
+							<div><a class="footer__tel" href="tel:+79999999999">+7 999 999 99 99</a></div>
+							<div><a class="footer__email" href="mailto:mail@yandex.ru">mail@yandex.ru</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-nav"></div>
+			</div>
+		</footer>
+
+		<div id="form-modal" class="modal-form mfp-hide mfp-with-anim">
+			<div class="mfp-close">
+				<svg class="icon"><use href="img/svg/sprite.svg#close"></use></svg>
+			</div>
+			<div class="row gy-4">
+				<div class="col-12 pb-4">
+					<h4 class="heading-4 text-center">Заказать звонок</h4>
+				</div>
+				<div class="col-12 pb-2">
+					<input class="input" type="text" placeholder="Имя" />
+				</div>
+				<div class="col-12 pb-2">
+					<input class="input masked-tel" type="tel" placeholder="Телефон" />
+				</div>
+				<div class="col-12 pb-4">
+					<button class="btn w-100" type="submit">Отправить</button>
+				</div>
+				<div class="col-12">
+					<p class="modal-form__agreement">
+						Нажимая кнопку отправить вы соглашаетесь <br />
+						с <a href="#">пользовательским соглашением</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery.js" defer></script>
+		<script src="js/magnific.js" defer></script>
+		<script src="js/masked.js" defer></script>
+		<script src="js/intlTelInput.min.js"></script>
+		<script src="js/nouislider.min.js" defer></script>
+		<script src="js/catalog.js" defer></script>
+	</body>
+</html>
