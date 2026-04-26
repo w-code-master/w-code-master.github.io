@@ -134,6 +134,15 @@ a {
 }
 
 /* Forms */
+.input,
+.textarea {
+	&.weight-500 {
+		font-weight: 500;
+	}
+	&.weight-600 {
+		font-weight: 600;
+	}
+}
 input[type="email"],
 input[type="password"],
 input[type="tel"],
@@ -141,14 +150,14 @@ input[type="text"],
 input[type="search"],
 textarea {
 	height: 6.2rem;
-	padding: 1px 1.7rem 0;
+	padding: 1px 2rem 0;
 	font:
-		400 1.6rem "Onest",
+		400 1.7rem "Onest",
 		sans-serif;
 	color: var(--dark);
 	background-color: var(--light);
 	transition: 0.5s;
-	border-radius: 8px;
+	border-radius: 8rem;
 	border: 1px solid transparent;
 
 	&:focus {
@@ -175,6 +184,7 @@ textarea {
 	padding-top: 12px;
 	padding-bottom: 12px;
 	resize: none;
+	border-radius: 2rem;
 }
 button {
 	font-family: "Onest";

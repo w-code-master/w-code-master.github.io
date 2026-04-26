@@ -1,6 +1,9 @@
 .iti {
 	position: relative;
 	display: inline-block;
+	input {
+		padding-top: 0.2rem;
+	}
 }
 .iti * {
 	box-sizing: border-box;
@@ -36,7 +39,7 @@
 	display: flex;
 	align-items: center;
 	height: 100%;
-	padding: 3px 6px 0 18px;
+	padding: 1px 6px 0 18px;
 }
 .iti__arrow {
 	margin-left: 6px;
@@ -135,7 +138,7 @@
 }
 .iti--separate-dial-code .iti__selected-dial-code {
 	margin-left: 6px;
-	font-size: 14px;
+	font-size: 13px;
 	order: 1;
 	padding-top: 1px;
 }

@@ -48,7 +48,15 @@
 	cursor: pointer;
 	position: absolute;
 	right: -4rem;
-	top: -4rem;
+	top: -3rem;
+	&:hover .icon {
+		fill: var(--accent);
+	}
+	&:active .icon {
+		transition: 0s;
+		fill: red;
+		transform: scale(1.1);
+	}
 }
 .mfp-close .icon {
 	fill: #fff;
@@ -57,9 +65,6 @@
 	width: 3.5rem;
 	height: 3.5rem;
 	transition: 0.2s ease-out;
-}
-.mfp-close:hover .icon {
-	stroke: #67d386;
 }
 
 .mfp-content {

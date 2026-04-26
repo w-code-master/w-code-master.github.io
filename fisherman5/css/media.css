@@ -5,8 +5,8 @@
 	}
 }
 
-/* 1400px */
-@media only screen and (max-width: 1400px) {
+/* 1500px */
+@media only screen and (max-width: 1500px) {
 	.action-form__bg {
 		border-radius: 0;
 	}
@@ -708,8 +708,8 @@
 	}
 
 	.mfp-close {
-		right: -0.5rem;
-		top: -5rem;
+		right: -2rem;
+		top: -4rem;
 	}
 }
 

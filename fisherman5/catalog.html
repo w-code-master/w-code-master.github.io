@@ -32,22 +32,51 @@
 									<li><a href="#">VIP туры</a></li>
 									<li><a href="#">Тур выходного дня</a></li>
 									<li><a href="#">Тур с проживанием</a></li>
-									<li><a href="#">Тур на Байкал</a></li>
 									<li><a href="#">Экспедиция</a></li>
 								</ul>
 							</div>
 						</li>
 						<li class="menu__item">
-							<a class="menu__link" href="#">Направления</a>
+							<a class="menu__link">Направления</a>
+							<svg class="menu__arrow"><use href="img/svg/sprite.svg#down"></use></svg>
+							<div class="menu-sub">
+								<ul class="menu-sub__inner">
+									<li><a href="#">Тур на Байкал</a></li>
+									<li><a href="#">Тур на Камчатку</a></li>
+									<li><a href="#">Тур в Астрахань</a></li>
+								</ul>
+							</div>
 						</li>
 						<li class="menu__item">
-							<a class="menu__link" href="#">Виды туров</a>
+							<a class="menu__link">Вид рыбы</a>
+							<svg class="menu__arrow"><use href="img/svg/sprite.svg#down"></use></svg>
+							<div class="menu-sub">
+								<ul class="menu-sub__inner">
+									<li><a href="#">Туры на тайменя</a></li>
+									<li><a href="#">Туры на окуня</a></li>
+									<li><a href="#">Туры на хариуса</a></li>
+									<li><a href="#">Туры на щуку</a></li>
+									<li><a href="#">Туры на форель</a></li>
+									<li><a href="#">Туры на судака</a></li>
+									<li><a href="#">Туры на семгу</a></li>
+									<li><a href="#">Туры на ленка</a></li>
+								</ul>
+							</div>
 						</li>
 						<li class="menu__item">
-							<a class="menu__link" href="#">Сезоны</a>
+							<a class="menu__link">Сезоны</a>
+							<svg class="menu__arrow"><use href="img/svg/sprite.svg#down"></use></svg>
+							<div class="menu-sub">
+								<ul class="menu-sub__inner">
+									<li><a href="#">Весна</a></li>
+									<li><a href="#">Лето</a></li>
+									<li><a href="#">Осень</a></li>
+									<li><a href="#">Зима</a></li>
+								</ul>
+							</div>
 						</li>
 						<li class="menu__item">
-							<a class="menu__link" href="#">Фото и отзывы</a>
+							<a class="menu__link" href="#">Фото и видео</a>
 						</li>
 						<li class="menu__item">
 							<a class="menu__link" href="#">Блог</a>
@@ -66,7 +95,7 @@
 						<a class="btn _small entry-modal-form" href="#form-modal">
 							<span class="btn__text">Связаться с&nbsp;нами</span>
 						</a>
-						<a class="btn _small _outline d-none d-sm-inline-flex" href="#">
+						<a class="btn _small d-none d-sm-inline-flex entry-modal-form" href="#form-modal-tour">
 							<span class="btn__text">Разместить свой&nbsp;тур</span>
 						</a>
 					</div>
@@ -140,7 +169,7 @@
 
 		<div class="container-xxl px-5">
 			<section class="catalog">
-				<form class="catalog-aside">
+				<form class="catalog-aside d-none d-md-flex">
 					<div>
 						<h4 class="catalog-aside__title">
 							<span>Регион рыбалки</span>
@@ -393,6 +422,287 @@
 							</a>
 						</div>
 					</div>
+
+					<!-- Фильтр моб.версия -->
+					<div class="mb-4 d-md-none">
+						<!-- Меню фильтра -->
+						<div class="directory-parameters">
+							<label class="directory-parameters__btn" for="filter-parameter-loc">
+								<svg><use href="img/svg/sprite.svg#loc-fill"></use></svg>
+								<span>Регион</span>
+							</label>
+							<label class="directory-parameters__btn" for="filter-parameter-fish">
+								<svg><use href="img/svg/sprite.svg#fish-fill"></use></svg>
+								<span>Вид рыбы</span>
+							</label>
+							<label class="directory-parameters__btn" for="filter-parameter-season">
+								<svg><use href="img/svg/sprite.svg#sun"></use></svg>
+								<span>Сезон</span>
+							</label>
+							<label class="directory-parameters__btn" for="filter-parameter-price">
+								<svg><use href="img/svg/sprite.svg#rub"></use></svg>
+								<span>Цена</span>
+							</label>
+							<label class="directory-parameters__btn" for="filter-parameter-format">
+								<svg><use href="img/svg/sprite.svg#spruce"></use></svg>
+								<span>Формат</span>
+							</label>
+							<label class="directory-parameters__btn" for="filter-parameter-days">
+								<svg><use href="img/svg/sprite.svg#calendar"></use></svg>
+								<span>Дней</span>
+							</label>
+						</div>
+
+						<!-- Фильтр - Регион -->
+						<div class="directory-filter">
+							<input class="directory-filter__toggle" id="filter-parameter-loc" type="radio" name="filter-parameters" />
+							<div class="directory-filter__content">
+								<h4 class="catalog-aside__title">
+									<span>Регион рыбалки</span>
+								</h4>
+								<div class="group-choise">
+									<div class="choise _normal">
+										<label class="choise-checkbox">
+											<input class="choise-checkbox__input" type="checkbox" id="efewr5432r4" />
+											<span class="choise-checkbox__box">
+												<svg><use href="img/svg/sprite.svg#check"></use></svg>
+											</span>
+										</label>
+										<label class="choise__text" for="efewr5432r4">Байкал</label>
+									</div>
+									<div class="choise _normal">
+										<label class="choise-checkbox">
+											<input class="choise-checkbox__input" type="checkbox" id="efwsfrey44323e3" checked />
+											<span class="choise-checkbox__box">
+												<svg><use href="img/svg/sprite.svg#check"></use></svg>
+											</span>
+										</label>
+										<label class="choise__text" for="efwsfrey44323e3">Карелия</label>
+									</div>
+									<div class="choise _normal">
+										<label class="choise-checkbox">
+											<input class="choise-checkbox__input" type="checkbox" id="cszsweqt56yse3" checked />
+											<span class="choise-checkbox__box">
+												<svg><use href="img/svg/sprite.svg#check"></use></svg>
+											</span>
+										</label>
+										<label class="choise__text" for="cszsweqt56yse3">Камчатка</label>
+									</div>
+									<div class="choise _normal">
+										<label class="choise-checkbox">
+											<input class="choise-checkbox__input" type="checkbox" id="erfseg7654wfe" />
+											<span class="choise-checkbox__box">
+												<svg><use href="img/svg/sprite.svg#check"></use></svg>
+											</span>
+										</label>
+										<label class="choise__text" for="erfseg7654wfe">Астрахань</label>
+									</div>
+									<div class="choise _normal">
+										<label class="choise-checkbox">
+											<input class="choise-checkbox__input" type="checkbox" id="dscsw235654dsa" />
+											<span class="choise-checkbox__box">
+												<svg><use href="img/svg/sprite.svg#check"></use></svg>
+											</span>
+										</label>
+										<label class="choise__text" for="dscsw235654dsa">Бурятия</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Фильтр - Вид рыбы -->
+						<div class="directory-filter">
+							<input class="directory-filter__toggle" id="filter-parameter-fish" type="radio" name="filter-parameters" />
+							<div class="directory-filter__content">
+								<h4 class="catalog-aside__title">
+									<span>Вид рыбы</span>
+								</h4>
+								<div class="group-choise">
+									<div class="choise _normal">
+										<label class="choise-checkbox">
+											<input class="choise-checkbox__input" type="checkbox" id="sasewqer543eq" />
+											<span class="choise-checkbox__box">
+												<svg><use href="img/svg/sprite.svg#check"></use></svg>
+											</span>
+										</label>
+										<label class="choise__text" for="sasewqer543eq">Таймень</label>
+									</div>
+									<div class="choise _normal">
+										<label class="choise-checkbox">
+											<input class="choise-checkbox__input" type="checkbox" id="foeud387n2de" checked="" />
+											<span class="choise-checkbox__box">
+												<svg><use href="img/svg/sprite.svg#check"></use></svg>
+											</span>
+										</label>
+										<label class="choise__text" for="foeud387n2de">Хариус</label>
+									</div>
+									<div class="choise _normal">
+										<label class="choise-checkbox">
+											<input class="choise-checkbox__input" type="checkbox" id="fsu8346bsdax" checked="" />
+											<span class="choise-checkbox__box">
+												<svg><use href="img/svg/sprite.svg#check"></use></svg>
+											</span>
+										</label>
+										<label class="choise__text" for="fsu8346bsdax">Кижучь</label>
+									</div>
+									<div class="choise _normal">
+										<label class="choise-checkbox">
+											<input class="choise-checkbox__input" type="checkbox" id="dfkjdu263vda" />
+											<span class="choise-checkbox__box">
+												<svg><use href="img/svg/sprite.svg#check"></use></svg>
+											</span>
+										</label>
+										<label class="choise__text" for="dfkjdu263vda">Семга</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Фильтр - Сезон -->
+						<div class="directory-filter">
+							<input class="directory-filter__toggle" id="filter-parameter-season" type="radio" name="filter-parameters" />
+							<div class="directory-filter__content">
+								<h4 class="catalog-aside__title">
+									<span>Сезон рыбалки</span>
+								</h4>
+								<div class="group-choise">
+									<div class="choise _normal">
+										<label class="choise-checkbox">
+											<input class="choise-checkbox__input" type="checkbox" id="sdmf8347fs" />
+											<span class="choise-checkbox__box">
+												<svg><use href="img/svg/sprite.svg#check"></use></svg>
+											</span>
+										</label>
+										<label class="choise__text" for="sdmf8347fs">Весна</label>
+									</div>
+									<div class="choise _normal">
+										<label class="choise-checkbox">
+											<input class="choise-checkbox__input" type="checkbox" id="sdjas1w3dss" checked="" />
+											<span class="choise-checkbox__box">
+												<svg><use href="img/svg/sprite.svg#check"></use></svg>
+											</span>
+										</label>
+										<label class="choise__text" for="sdjas1w3dss">Лето</label>
+									</div>
+									<div class="choise _normal">
+										<label class="choise-checkbox">
+											<input class="choise-checkbox__input" type="checkbox" id="boki37vxswr55" checked="" />
+											<span class="choise-checkbox__box">
+												<svg><use href="img/svg/sprite.svg#check"></use></svg>
+											</span>
+										</label>
+										<label class="choise__text" for="boki37vxswr55">Осень</label>
+									</div>
+									<div class="choise _normal">
+										<label class="choise-checkbox">
+											<input class="choise-checkbox__input" type="checkbox" id="sdsdd054j3bcd" />
+											<span class="choise-checkbox__box">
+												<svg><use href="img/svg/sprite.svg#check"></use></svg>
+											</span>
+										</label>
+										<label class="choise__text" for="sdsdd054j3bcd">Зима</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Фильтр - Цена -->
+						<div class="directory-filter">
+							<input class="directory-filter__toggle" id="filter-parameter-price" type="radio" name="filter-parameters" />
+							<div class="directory-filter__content">
+								<h4 class="catalog-aside__title mb-0">
+									<span>Стоимость тура, руб</span>
+								</h4>
+								<div class="py-4 pe-4 mb-2">
+									<div id="range-slider-price2"></div>
+								</div>
+								<div class="from-to-control">
+									<div class="from-to-control__item">
+										<div class="from-to-control__caption">от</div>
+										<input class="_light" type="text" id="input-price-from2" />
+									</div>
+									<span class="from-to-control__line">-</span>
+									<div class="from-to-control__item">
+										<div class="from-to-control__caption">до</div>
+										<input class="_light" type="text" id="input-price-to2" />
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Фильтр - Формат -->
+						<div class="directory-filter">
+							<input class="directory-filter__toggle" id="filter-parameter-format" type="radio" name="filter-parameters" />
+							<div class="directory-filter__content">
+								<h4 class="catalog-aside__title">
+									<span>Формат тура</span>
+								</h4>
+								<div class="group-choise">
+									<div class="choise _normal">
+										<label class="choise-checkbox">
+											<input class="choise-checkbox__input" type="checkbox" id="fccvf75jyj895" />
+											<span class="choise-checkbox__box">
+												<svg><use href="img/svg/sprite.svg#check"></use></svg>
+											</span>
+										</label>
+										<label class="choise__text" for="fccvf75jyj895">Тур выходного дня</label>
+									</div>
+									<div class="choise _normal">
+										<label class="choise-checkbox">
+											<input class="choise-checkbox__input" type="checkbox" id="gdfifj436eds" checked="" />
+											<span class="choise-checkbox__box">
+												<svg><use href="img/svg/sprite.svg#check"></use></svg>
+											</span>
+										</label>
+										<label class="choise__text" for="gdfifj436eds">Тур с проживанием</label>
+									</div>
+									<div class="choise _normal">
+										<label class="choise-checkbox">
+											<input class="choise-checkbox__input" type="checkbox" id="xssq3233rt0" checked="" />
+											<span class="choise-checkbox__box">
+												<svg><use href="img/svg/sprite.svg#check"></use></svg>
+											</span>
+										</label>
+										<label class="choise__text" for="xssq3233rt0">Экспедиция</label>
+									</div>
+									<div class="choise _normal">
+										<label class="choise-checkbox">
+											<input class="choise-checkbox__input" type="checkbox" id="cddfe445sdw2" />
+											<span class="choise-checkbox__box">
+												<svg><use href="img/svg/sprite.svg#check"></use></svg>
+											</span>
+										</label>
+										<label class="choise__text" for="cddfe445sdw2">VIP туры</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Фильтр - Дней -->
+						<div class="directory-filter">
+							<input class="directory-filter__toggle" id="filter-parameter-days" type="radio" name="filter-parameters" />
+							<div class="directory-filter__content">
+								<h4 class="catalog-aside__title mb-0">
+									<span>Длительность тура, дней</span>
+								</h4>
+								<div class="py-4 pe-4 mb-2">
+									<div id="range-slider-days2"></div>
+								</div>
+								<div class="from-to-control">
+									<div class="from-to-control__item">
+										<div class="from-to-control__caption">от</div>
+										<input class="_light" type="text" id="input-day-from2" />
+									</div>
+									<span class="from-to-control__line">-</span>
+									<div class="from-to-control__item">
+										<div class="from-to-control__caption">до</div>
+										<input class="_light" type="text" id="input-day-to2" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
 					<div class="catalog-filter-nav">
 						<button class="catalog-filter-nav__item _active">По популярности</button>
 						<button class="catalog-filter-nav__item">Дешевле</button>
@@ -774,6 +1084,11 @@
 							</div>
 						</div>
 					</div>
+					<div class="p-5 d-flex justify-content-center">
+						<a class="btn" href="#">
+							<span class="btn__text px-4">Смотреть еще туры</span>
+						</a>
+					</div>
 				</div>
 			</section>
 		</div>
@@ -935,15 +1250,19 @@
 			<div class="mfp-close">
 				<svg class="icon"><use href="img/svg/sprite.svg#close"></use></svg>
 			</div>
-			<div class="row gy-4">
-				<div class="col-12 pb-4">
-					<h4 class="heading-4 text-center">Заказать звонок</h4>
+			<form class="row gy-4">
+				<div class="col-12 pb-4 text-center">
+					<h4 class="heading-5 mb-4">Оставьте заявку ниже, чтобы мы могли связаться с Вами</h4>
+					<p class="opacity-60">
+						Подберем лучший рыболовный тур, <br />
+						подходящий под Ваши критерии
+					</p>
 				</div>
 				<div class="col-12 pb-2">
-					<input class="input" type="text" placeholder="Имя" />
+					<input class="input weight-500" type="text" placeholder="Имя" />
 				</div>
 				<div class="col-12 pb-2">
-					<input class="input masked-tel" type="tel" placeholder="Телефон" />
+					<input class="input weight-500 masked-tel" type="tel" placeholder="Телефон" />
 				</div>
 				<div class="col-12 pb-4">
 					<button class="btn w-100" type="submit">Отправить</button>
@@ -954,14 +1273,59 @@
 						с <a href="#">пользовательским соглашением</a>
 					</p>
 				</div>
+			</form>
+		</div>
+
+		<div id="form-modal-tour" class="modal-form mfp-hide mfp-with-anim">
+			<div class="mfp-close">
+				<svg class="icon"><use href="img/svg/sprite.svg#close"></use></svg>
 			</div>
+			<form class="row gy-4">
+				<div class="col-12 pb-4 text-center">
+					<h4 class="heading-5 mb-4">Хотите разместить свой рыболовный тур в нашем каталоге?</h4>
+					<p class="opacity-60">
+						Заполните форму ниже или позвоните нам по&nbsp;номеру телефона: +79500943392. <br />
+						Все туры проходят ручную проверку перед&nbsp;размещением.
+					</p>
+				</div>
+				<div class="col-12 pb-2">
+					<input class="input weight-500" type="text" placeholder="Имя" />
+				</div>
+				<div class="col-12 pb-2">
+					<input class="input weight-500 masked-tel" type="tel" placeholder="Телефон" />
+				</div>
+				<div class="col-12 pb-2">
+					<div class="select-item">
+						<select>
+							<option value="1">Регион тура</option>
+							<option value="2">Подпункт&nbsp;1</option>
+							<option value="3">Подпункт&nbsp;2</option>
+							<option value="4">Подпункт&nbsp;3</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-12 weight-500 pb-2">
+					<textarea class="textarea weight-500" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="col-12 pb-4">
+					<button class="btn w-100" type="submit">Отправить</button>
+				</div>
+				<div class="col-12">
+					<p class="modal-form__agreement">
+						Нажимая кнопку отправить вы соглашаетесь <br />
+						с <a href="#">пользовательским соглашением</a>
+					</p>
+				</div>
+			</form>
 		</div>
 
 		<script src="js/jquery.js" defer></script>
+		<script src="js/intlTelInput.min.js"></script>
+		<script src="js/beefup.js" defer></script>
 		<script src="js/magnific.js" defer></script>
 		<script src="js/masked.js" defer></script>
-		<script src="js/intlTelInput.min.js"></script>
 		<script src="js/nouislider.min.js" defer></script>
+		<script src="js/nice-select.js" defer></script>
 		<script src="js/catalog.js" defer></script>
 	</body>
 </html>

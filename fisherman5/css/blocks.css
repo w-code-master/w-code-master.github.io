@@ -181,6 +181,9 @@
 	&:has(.select-item__icon) .nice-select {
 		padding-left: 4.5rem;
 	}
+	&._radius-normal .nice-select {
+		border-radius: 8px;
+	}
 }
 .select-item__icon {
 	width: 2.3rem;
@@ -262,7 +265,7 @@
 	display: flex;
 	flex-direction: column;
 	row-gap: 1rem;
-	min-width: 250px;
+	min-width: 220px;
 	background-color: var(--white);
 	border-radius: 1.4rem;
 	padding: 2.5rem 3rem;
@@ -308,6 +311,9 @@
 			text-underline-offset: 5px;
 			text-decoration-color: var(--accent);
 			padding-right: 2rem;
+		}
+		&:hover .menu__link {
+			color: var(--accent);
 		}
 	}
 	&:hover {
@@ -561,10 +567,16 @@
 	left: 0;
 	top: 0;
 }
+.action-block__video {
+	position: absolute;
+	width: 101%;
+	left: 0;
+	top: 0;
+}
 .action-block__info {
 	max-width: 760px;
 	width: 100%;
-	background-color: var(--white);
+	background-color: rgba(255, 255, 255, 0.9);
 	padding: 7rem;
 	border-radius: 2rem;
 	margin: auto 0 0 auto;
@@ -612,7 +624,7 @@
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	max-width: 1400px;
+	max-width: 1500px;
 	min-height: 60.6rem;
 	position: relative;
 	margin: 0 auto;
@@ -1905,6 +1917,7 @@ input.search-control__input {
 		bottom: 0;
 		background: rgba(0, 0, 0, 0.9);
 		backdrop-filter: blur(12px);
+		-webkit-backface-visibility: hidden;
 	}
 }
 .mobile-nav__wrap {
@@ -1956,4 +1969,54 @@ input.search-control__input {
 }
 .modal-form__agreement {
 	font-size: 1.6rem;
+}
+
+.directory-parameters {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	padding-top: 1rem;
+}
+.directory-parameters__btn {
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	column-gap: 0.8rem;
+	padding: 0.5rem 1.5rem;
+	border-radius: 5rem;
+	min-height: 4.6rem;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	font-weight: 500;
+	transition: 0.3s;
+	svg {
+		width: 2rem;
+		height: 2rem;
+		fill: #444;
+		&._stroke {
+			stroke: #444;
+			fill: none;
+		}
+	}
+	&.active {
+		background-color: #fdead6;
+		border-color: var(--accent);
+		color: var(--accent);
+		svg {
+			fill: var(--accent);
+			&._stroke {
+				stroke: var(--accent);
+			}
+		}
+	}
+}
+
+.directory-filter__toggle {
+	display: none;
+	&:checked ~ .directory-filter__content {
+		display: block;
+	}
+}
+.directory-filter__content {
+	display: none;
+	padding: 2rem 0 1rem;
 }

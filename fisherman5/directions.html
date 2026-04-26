@@ -32,22 +32,51 @@
 									<li><a href="#">VIP туры</a></li>
 									<li><a href="#">Тур выходного дня</a></li>
 									<li><a href="#">Тур с проживанием</a></li>
-									<li><a href="#">Тур на Байкал</a></li>
 									<li><a href="#">Экспедиция</a></li>
 								</ul>
 							</div>
 						</li>
 						<li class="menu__item">
-							<a class="menu__link" href="#">Направления</a>
+							<a class="menu__link">Направления</a>
+							<svg class="menu__arrow"><use href="img/svg/sprite.svg#down"></use></svg>
+							<div class="menu-sub">
+								<ul class="menu-sub__inner">
+									<li><a href="#">Тур на Байкал</a></li>
+									<li><a href="#">Тур на Камчатку</a></li>
+									<li><a href="#">Тур в Астрахань</a></li>
+								</ul>
+							</div>
 						</li>
 						<li class="menu__item">
-							<a class="menu__link" href="#">Виды туров</a>
+							<a class="menu__link">Вид рыбы</a>
+							<svg class="menu__arrow"><use href="img/svg/sprite.svg#down"></use></svg>
+							<div class="menu-sub">
+								<ul class="menu-sub__inner">
+									<li><a href="#">Туры на тайменя</a></li>
+									<li><a href="#">Туры на окуня</a></li>
+									<li><a href="#">Туры на хариуса</a></li>
+									<li><a href="#">Туры на щуку</a></li>
+									<li><a href="#">Туры на форель</a></li>
+									<li><a href="#">Туры на судака</a></li>
+									<li><a href="#">Туры на семгу</a></li>
+									<li><a href="#">Туры на ленка</a></li>
+								</ul>
+							</div>
 						</li>
 						<li class="menu__item">
-							<a class="menu__link" href="#">Сезоны</a>
+							<a class="menu__link">Сезоны</a>
+							<svg class="menu__arrow"><use href="img/svg/sprite.svg#down"></use></svg>
+							<div class="menu-sub">
+								<ul class="menu-sub__inner">
+									<li><a href="#">Весна</a></li>
+									<li><a href="#">Лето</a></li>
+									<li><a href="#">Осень</a></li>
+									<li><a href="#">Зима</a></li>
+								</ul>
+							</div>
 						</li>
 						<li class="menu__item">
-							<a class="menu__link" href="#">Фото и отзывы</a>
+							<a class="menu__link" href="#">Фото и видео</a>
 						</li>
 						<li class="menu__item">
 							<a class="menu__link" href="#">Блог</a>
@@ -66,7 +95,7 @@
 						<a class="btn _small entry-modal-form" href="#form-modal">
 							<span class="btn__text">Связаться с&nbsp;нами</span>
 						</a>
-						<a class="btn _small _outline d-none d-sm-inline-flex" href="#">
+						<a class="btn _small d-none d-sm-inline-flex entry-modal-form" href="#form-modal-tour">
 							<span class="btn__text">Разместить свой&nbsp;тур</span>
 						</a>
 					</div>
@@ -149,7 +178,7 @@
 							</p>
 						</header>
 
-						<div class="row">
+						<div class="row justify-content-center">
 							<div class="col-11 col-sm-8 col-md-6 col-xl-4 pb-5 mb-5">
 								<form class="search-control">
 									<input class="search-control__input" type="search" name="search" placeholder="Начните вводить название региона" />
@@ -900,15 +929,19 @@
 			<div class="mfp-close">
 				<svg class="icon"><use href="img/svg/sprite.svg#close"></use></svg>
 			</div>
-			<div class="row gy-4">
-				<div class="col-12 pb-4">
-					<h4 class="heading-4 text-center">Заказать звонок</h4>
+			<form class="row gy-4">
+				<div class="col-12 pb-4 text-center">
+					<h4 class="heading-5 mb-4">Оставьте заявку ниже, чтобы мы могли связаться с Вами</h4>
+					<p class="opacity-60">
+						Подберем лучший рыболовный тур, <br />
+						подходящий под Ваши критерии
+					</p>
 				</div>
 				<div class="col-12 pb-2">
-					<input class="input" type="text" placeholder="Имя" />
+					<input class="input weight-500" type="text" placeholder="Имя" />
 				</div>
 				<div class="col-12 pb-2">
-					<input class="input masked-tel" type="tel" placeholder="Телефон" />
+					<input class="input weight-500 masked-tel" type="tel" placeholder="Телефон" />
 				</div>
 				<div class="col-12 pb-4">
 					<button class="btn w-100" type="submit">Отправить</button>
@@ -919,15 +952,59 @@
 						с <a href="#">пользовательским соглашением</a>
 					</p>
 				</div>
+			</form>
+		</div>
+
+		<div id="form-modal-tour" class="modal-form mfp-hide mfp-with-anim">
+			<div class="mfp-close">
+				<svg class="icon"><use href="img/svg/sprite.svg#close"></use></svg>
 			</div>
+			<form class="row gy-4">
+				<div class="col-12 pb-4 text-center">
+					<h4 class="heading-5 mb-4">Хотите разместить свой рыболовный тур в нашем каталоге?</h4>
+					<p class="opacity-60">
+						Заполните форму ниже или позвоните нам по&nbsp;номеру телефона: +79500943392. <br />
+						Все туры проходят ручную проверку перед&nbsp;размещением.
+					</p>
+				</div>
+				<div class="col-12 pb-2">
+					<input class="input weight-500" type="text" placeholder="Имя" />
+				</div>
+				<div class="col-12 pb-2">
+					<input class="input weight-500 masked-tel" type="tel" placeholder="Телефон" />
+				</div>
+				<div class="col-12 pb-2">
+					<div class="select-item">
+						<select>
+							<option value="1">Регион тура</option>
+							<option value="2">Подпункт&nbsp;1</option>
+							<option value="3">Подпункт&nbsp;2</option>
+							<option value="4">Подпункт&nbsp;3</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-12 weight-500 pb-2">
+					<textarea class="textarea weight-500" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="col-12 pb-4">
+					<button class="btn w-100" type="submit">Отправить</button>
+				</div>
+				<div class="col-12">
+					<p class="modal-form__agreement">
+						Нажимая кнопку отправить вы соглашаетесь <br />
+						с <a href="#">пользовательским соглашением</a>
+					</p>
+				</div>
+			</form>
 		</div>
 
 		<script src="js/jquery.js" defer></script>
 		<script src="js/swiper.js" defer></script>
+		<script src="js/intlTelInput.min.js"></script>
 		<script src="js/beefup.js" defer></script>
 		<script src="js/magnific.js" defer></script>
 		<script src="js/masked.js" defer></script>
-		<script src="js/intlTelInput.min.js"></script>
+		<script src="js/nice-select.js" defer></script>
 		<script src="js/main.js" defer></script>
 		<script>
 			// intlTelInput

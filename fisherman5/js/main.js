@@ -196,4 +196,7 @@ $(document).ready(function () {
 		trigger: ".spoiler-head",
 		content: ".spoiler-body",
 	});
+
+	// niceSelect
+	$("select").niceSelect();
 });
