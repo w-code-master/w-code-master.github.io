@@ -277,6 +277,13 @@
 	flex-shrink: 0;
 }
 
+.badge-outline {
+	display: inline-flex;
+	border-radius: 6rem;
+	border: 1px solid var(--accent);
+	padding: 0.7rem 1.9rem 0.6rem;
+}
+
 .note-mark {
 	display: inline-flex;
 	align-items: center;
@@ -506,6 +513,15 @@
 	._avatar {
 		width: 3rem;
 		height: 3rem;
+	}
+
+	&._sm {
+		width: 4rem;
+		height: 4rem;
+		svg {
+			width: 1.6rem;
+			height: 1.6rem;
+		}
 	}
 }
 
@@ -902,4 +918,17 @@
 }
 .nice-select.select-line .list {
 	width: 100%;
+}
+
+.rating-star {
+	display: flex;
+	column-gap: 0.4rem;
+	svg {
+		width: 1.86rem;
+		height: 1.86rem;
+		fill: var(--accent);
+	}
+	&._white svg {
+		fill: var(--white);
+	}
 }

@@ -449,6 +449,28 @@
 	.contacts__descrp-text {
 		max-width: 400px;
 	}
+
+	.about-our-advantages {
+		padding: 0;
+		&:has(.about-our-advantages__img) {
+			padding-top: 0;
+		}
+		.blur-block {
+			background-color: var(--accent);
+			padding-left: 3rem;
+			padding-right: 3rem;
+			&::after {
+				display: none;
+			}
+		}
+	}
+	.about-our-advantages__img {
+		position: static;
+	}
+
+	.about-advantage__item {
+		max-width: 100%;
+	}
 }
 
 /* 576px */
