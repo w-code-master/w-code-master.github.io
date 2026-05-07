@@ -1,0 +1,222 @@
+@media only screen and (max-width: 1300px) {
+	.hero-slider {
+		width: 70rem;
+	}
+
+	.our-objects__cards {
+		row-gap: 1.5rem;
+		margin-left: -0.75rem;
+		margin-right: -0.75rem;
+		> * {
+			padding-left: 0.75rem;
+			padding-right: 0.75rem;
+		}
+	}
+
+	.to-action__descrp {
+		max-width: 50rem;
+		padding-left: 0;
+		.text-20 {
+			font-size: 1.8rem;
+		}
+	}
+	.to-action__heading {
+		font-size: 4rem;
+		line-height: 1.1;
+	}
+	.to-action__form {
+		width: 42rem;
+		padding: 1rem 0 3rem 1.5rem;
+	}
+
+	.info-block {
+		padding: 6rem;
+	}
+
+	.to-consult {
+		padding: 6rem;
+	}
+}
+
+@media only screen and (max-width: 1150px) {
+	.hero {
+		flex-wrap: wrap;
+	}
+	.hero-slider {
+		width: 100%;
+	}
+	.hero-slide__heading {
+		max-width: 80rem;
+	}
+	.to-action {
+		flex-direction: column;
+		align-items: center;
+	}
+	.to-action__descrp {
+		max-width: 70rem;
+		padding-bottom: 4rem;
+		text-align: center;
+	}
+	.to-action__graphica {
+		order: 1;
+	}
+	.to-action__form {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		padding: 0 0 2rem;
+		gap: 1.5rem;
+	}
+	.info-block {
+		padding: 5rem 3rem;
+	}
+
+	.visual-card {
+		min-height: 45rem;
+		padding: 2.7rem 2rem;
+		.heading-5 {
+			font-size: 2.2rem;
+		}
+	}
+
+	.photos-slider__img {
+		height: 70rem;
+	}
+
+	.to-consult {
+		padding: 4rem;
+		.heading-2 {
+			font-size: 4rem;
+		}
+	}
+
+	.footer-contact {
+		max-width: 28em;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	html {
+		font-size: 8px;
+	}
+	.heading-2 {
+		font-size: 4rem;
+	}
+	.footer {
+		.ksi-stroy-caption {
+			margin-bottom: -1rem;
+		}
+	}
+	.footer-content__inner {
+		flex-wrap: wrap;
+	}
+	.footer-nav {
+		max-width: 40rem;
+		padding: 0 6rem;
+	}
+	.footer-contact {
+		padding-top: 5rem;
+		max-width: 100%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.to-action__form {
+		flex-direction: column;
+	}
+	.footer-nav {
+		max-width: 40rem;
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.heading-2 {
+		font-size: 3.7rem;
+	}
+
+	.hero-slide__header,
+	.hero-slide__action {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+	.hero-slide__heading {
+		font-size: 3.5rem;
+	}
+
+	.to-action__heading {
+		font-size: 3.2rem;
+	}
+
+	.info-block .text-35 {
+		font-size: 2.3rem;
+	}
+	.info-block__descrp {
+		font-size: 1.6rem;
+		padding-left: 2rem;
+	}
+
+	.photos-slider__img {
+		height: 60rem;
+	}
+
+	.swiper-btn {
+		&._center-left {
+			left: 2.5rem;
+		}
+		&._center-right {
+			right: 2.5rem;
+		}
+	}
+
+	.to-consult {
+		padding: 4rem 3rem;
+		.heading-2 {
+			font-size: 3rem;
+		}
+	}
+
+	.to-consult__manager {
+		width: 100%;
+	}
+
+	.contact-card {
+		column-gap: 2rem;
+		.avatar-102x102 {
+			width: 8rem;
+			height: 8rem;
+		}
+	}
+	.contact-card__content {
+		flex-grow: inherit;
+	}
+
+	.footer {
+		.ksi-stroy-caption {
+			margin-bottom: -0.2rem;
+		}
+	}
+	.footer-content {
+		padding: 5rem 0;
+	}
+	.footer-content__inner {
+		flex-direction: column;
+		row-gap: 4rem;
+	}
+	.footer-nav {
+		max-width: 100%;
+	}
+	.footer-contact {
+		padding-top: 0;
+	}
+}
+
+/* Min-Width media */
+
+/* 1920px */
+@media only screen and (min-width: 1920px) {
+	.hero-s {
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+	}
+}
