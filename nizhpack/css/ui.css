@@ -1,0 +1,29 @@
+.btn {
+	display: inline-flex;
+	align-items: center;
+	column-gap: 2rem;
+	min-height: 7.3rem;
+	padding: 0.9rem 3.9rem 1rem;
+	font-size: 1.4rem;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+	background-color: var(--accent);
+	color: #fff;
+	border-radius: 0.8rem;
+	cursor: pointer;
+	position: relative;
+	transition: 0.75s;
+	&:hover {
+		transform: scale(1.05);
+	}
+}
+.btn__icon {
+	width: 2rem;
+	height: 2rem;
+	fill: #fff;
+	transition: 0.75s;
+	margin-left: auto;
+	&._line-right {
+		width: 3.2rem;
+	}
+}
