@@ -3,6 +3,8 @@
 	--dark: #726b68;
 	--gray: #e4ddd6;
 	--accent: #f67e5d;
+
+	--radius-lg: 1.2rem;
 }
 
 *,
@@ -188,6 +190,14 @@ button {
 	text-transform: uppercase;
 }
 
+.text-20 {
+	font-size: 2rem;
+}
+
+.lh-150 {
+	line-height: 150%;
+}
+
 /* colors */
 .color-accent {
 	color: var(--accent);
@@ -199,7 +209,33 @@ button {
 	height: 100%;
 	object-fit: cover;
 }
+.img-cover-auto {
+	height: 100%;
+	object-fit: cover;
+}
 
 .w-100 {
 	width: 100%;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.6rem;
+}
+.list__item {
+	position: relative;
+	padding-left: 1.5rem;
+	font-size: 1.6rem;
+	line-height: 0.9;
+	&::before {
+		content: "";
+		width: 0.5rem;
+		height: 0.5rem;
+		border-radius: 50%;
+		background-color: #000;
+		position: absolute;
+		left: 0;
+		top: 0.5rem;
+	}
 }

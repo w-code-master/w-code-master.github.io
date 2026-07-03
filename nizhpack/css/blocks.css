@@ -235,7 +235,7 @@
 	height: 100%;
 	padding: 2rem;
 	background: linear-gradient(97deg, #e5dfd7 5%, #cbc2b9 98%);
-	border-radius: 1.2rem;
+	border-radius: var(--radius-lg);
 	text-decoration: none;
 	overflow: hidden;
 	position: relative;
@@ -244,6 +244,30 @@
 		z-index: 2;
 	}
 }
+a.service-card {
+	&:hover {
+		.btn-ico {
+			border-color: var(--accent);
+			svg {
+				fill: var(--accent);
+				&.stroke {
+					stroke: var(--accent);
+				}
+			}
+		}
+	}
+	&:active .btn-ico {
+		transition: 0s;
+		transform: scale(1.08);
+		svg {
+			fill: var(--accent);
+			&.stroke {
+				stroke: var(--accent);
+			}
+		}
+	}
+}
+
 .service-card__text {
 	max-width: 26rem;
 	font-size: 1.8rem;
@@ -276,7 +300,7 @@
 .card__img {
 	height: 29rem;
 	overflow: hidden;
-	border-radius: 1.2rem;
+	border-radius: var(--radius-lg);
 	background-color: var(--gray);
 }
 .card__title {
@@ -292,5 +316,204 @@
 
 .popular {
 	padding: 7rem 0;
+	margin: 4rem 0;
 	background-color: var(--gray);
+}
+
+.work {
+	padding: 4rem 0;
+}
+.work-catalog {
+	align-items: flex-start;
+	> * {
+	}
+}
+.work-card__img {
+	display: block;
+	height: 22.6rem;
+	overflow: hidden;
+	border-radius: var(--radius-lg);
+	position: relative;
+	margin-bottom: 1rem;
+	&.-size-xl {
+		height: 58.2rem;
+	}
+}
+.work-card__descrp {
+	padding-bottom: 1.5rem;
+	min-height: 10rem;
+}
+.work-card__title {
+	font-size: 2.8rem;
+	font-weight: 700;
+	margin-bottom: 0.8rem;
+}
+.work-card__badge {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding: 2rem;
+	row-gap: 1.5rem;
+}
+
+.action {
+	padding: 3rem;
+	background: linear-gradient(97deg, #f4efe8 5%, #cbc2b9 98%);
+	border-radius: var(--radius-lg);
+}
+
+.promotions-card {
+	height: 100%;
+	min-height: 52.1rem;
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.5rem;
+	background-color: #e1e1e0;
+	text-decoration: none;
+	border-radius: var(--radius-lg);
+	overflow: hidden;
+	padding: 3rem 0;
+	position: relative;
+	> * {
+		z-index: 1;
+	}
+	&::after {
+		content: "";
+		width: 33rem;
+		height: 100%;
+		background: linear-gradient(270deg, rgba(246, 248, 245, 0) 0%, #f5f7f6 50%, #f5f7f7 100%);
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.btn-ico {
+		border-color: #496654;
+		svg {
+			fill: #496654;
+			&.stroke {
+				stroke: #496654;
+			}
+		}
+	}
+}
+a.promotions-card {
+	&:hover {
+		.btn-ico {
+			border-color: var(--accent);
+			svg {
+				fill: var(--accent);
+				&.stroke {
+					stroke: var(--accent);
+				}
+			}
+		}
+	}
+	&:active .btn-ico {
+		transition: 0s;
+		transform: scale(1.08);
+		svg {
+			fill: var(--accent);
+			&.stroke {
+				stroke: var(--accent);
+			}
+		}
+	}
+}
+
+.promotions-card__img {
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 0;
+	img {
+		display: block;
+		height: 100%;
+	}
+}
+
+.discount-badge {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+	width: 14rem;
+	min-height: 13rem;
+	padding: 1rem 0 1rem 3rem;
+	background-color: #9fa0a5;
+	position: relative;
+	color: #fff;
+	font-size: 1.8rem;
+	&::before,
+	&::after {
+		content: "";
+		width: 5rem;
+		height: calc(50% + 2px);
+		background-color: #9fa0a5;
+		position: absolute;
+		left: 100%;
+		margin-left: -1px;
+	}
+	&::before {
+		clip-path: polygon(100% 0, 0 0, 0 100%);
+		top: 0;
+	}
+	&::after {
+		clip-path: polygon(100% 100%, 0 0, 0 100%);
+		bottom: 0;
+	}
+	/* styles */
+	&.-style-green {
+		background-color: #496654;
+		&::before,
+		&::after {
+			background-color: #496654;
+		}
+	}
+	&.-style-red {
+		background-color: #a12401;
+		&::before,
+		&::after {
+			background-color: #a12401;
+		}
+	}
+}
+.discount-badge__caption {
+	font-size: 2.4rem;
+	line-height: 0.7;
+}
+.discount-badge__discount {
+	font-size: 6rem;
+	line-height: 0.7;
+}
+
+.our-work__item {
+	height: 100%;
+	min-height: 26.9rem;
+	padding: 0 0 2rem 2rem;
+	background: linear-gradient(96deg, #efeae3 5%, #dfd7ce 98%);
+	border-radius: var(--radius-lg);
+}
+.our-work__number {
+	font-weight: 700;
+	font-size: 13.4rem;
+	line-height: 0.8;
+	text-align: right;
+	background: linear-gradient(180deg, #f0eeeb 0%, #d6cbbe 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	position: relative;
+	right: -0.5rem;
+	top: -1.5rem;
+}
+.our-work__title {
+	font-size: 3rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+.our-work__text {
+	max-width: 33rem;
+	padding-right: 1rem;
 }
