@@ -1,0 +1,241 @@
+:root {
+	--black: #202020;
+	--dark: #726b68;
+	--gray: #e4ddd6;
+	--accent: #f67e5d;
+
+	--radius-lg: 1.2rem;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+::placeholder {
+	transition: 0.5s;
+	color: #423d37;
+}
+:focus::placeholder {
+	color: rgb(66, 61, 55, 0.3);
+}
+
+::selection {
+	background-color: #218ce6;
+	color: #fff;
+}
+
+/* Fonts */
+/* YsabeauInfant */
+@font-face {
+	font-family: "YsabeauInfant";
+	src: url(../fonts/YsabeauInfant-Regular.woff2) format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "YsabeauInfant";
+	src: url(../fonts/YsabeauInfant-SemiBold.woff2) format("woff2");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "YsabeauInfant";
+	src: url(../fonts/YsabeauInfant-Bold.woff2) format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+/* DINProCondensed */
+@font-face {
+	font-family: "DINProCondensed";
+	src: url(../fonts/DINProCondensedBold.woff2) format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "DINProCondensed";
+	src: url(../fonts/DINProCondensedLight.woff2) format("woff2");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+html {
+	overflow-x: hidden;
+	font-size: 10px;
+}
+
+body {
+	min-height: 100dvh;
+	display: flex;
+	flex-direction: column;
+	background-color: #f2f0ef;
+	color: #000;
+	font:
+		400 1.6rem/1.2 "YsabeauInfant",
+		sans-serif;
+	font-optical-sizing: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+a {
+	color: var(--primary);
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+/* heading */
+[class*="heading-"] {
+	font-weight: 600;
+	line-height: 1;
+}
+.heading-1 {
+	font-size: 6rem;
+}
+.heading-2 {
+	font-size: 4.7rem;
+}
+.heading-3 {
+	font-size: 4rem;
+}
+.heading-4 {
+	font-size: 3.3rem;
+}
+.heading-5 {
+	font-size: 2.6rem;
+}
+.heading-6 {
+	font-size: 2rem;
+}
+
+/* Forms */
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="text"],
+textarea {
+	height: 6.2rem;
+	padding: 1px 1.7rem 0;
+	font:
+		400 16px "YsabeauInfant",
+		sans-serif;
+	color: #222;
+	background-color: #fff;
+	transition: 0.5s;
+	border-radius: 8px;
+	border: 1px solid transparent;
+
+	&:focus {
+		outline: 0;
+		border-color: var(--primary);
+	}
+}
+textarea {
+	max-width: 870px;
+	width: 100%;
+	height: auto;
+	min-height: 140px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	resize: none;
+}
+button {
+	font-family: "YsabeauInfant";
+}
+
+/* weight */
+.weight-300 {
+	font-weight: 300;
+}
+.weight-400 {
+	font-weight: 400;
+}
+.weight-500 {
+	font-weight: 500;
+}
+.weight-600 {
+	font-weight: 600;
+}
+.weight-700 {
+	font-weight: 700;
+}
+
+/* text */
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
+
+.no-wrap-text {
+	white-space: nowrap;
+}
+.text-upper {
+	text-transform: uppercase;
+}
+
+.text-20 {
+	font-size: 2rem;
+}
+
+.lh-150 {
+	line-height: 150%;
+}
+
+/* colors */
+.color-accent {
+	color: var(--accent);
+}
+
+/* image */
+.img-cover {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.img-cover-auto {
+	height: 100%;
+	object-fit: cover;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.6rem;
+}
+.list__item {
+	position: relative;
+	padding-left: 1.5rem;
+	font-size: 1.6rem;
+	line-height: 0.9;
+	&::before {
+		content: "";
+		width: 0.5rem;
+		height: 0.5rem;
+		border-radius: 50%;
+		background-color: #000;
+		position: absolute;
+		left: 0;
+		top: 0.5rem;
+	}
+}
